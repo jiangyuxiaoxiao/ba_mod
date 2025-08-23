@@ -25,7 +25,6 @@ BARE_SuperEvent_1_effect_1 = {
 		limit = { is_ai = no }
 		set_temp_variable = { BARE_SuperEvent_1_temp_var = token:BARE_SuperEvent_1_SECOND_EDEN_TREATY }
 		set_variable = { BARE_SuperEvent_1_var = BARE_SuperEvent_1_temp_var }
-		
 
 		hidden_effect = {
 			scoped_sound_effect = BARE_SuperEvent_Sound_SECOND_EDEN_TREATY
@@ -101,7 +100,6 @@ BARE_SuperEvent_2_effect_7 = {
 		
 }
 
-
 BARE_SuperEvent_2_effect_8 = {
 	every_country = {
 		limit = { is_ai = no }
@@ -127,6 +125,14 @@ BARE_SuperEvent_2_effect_9 = {
 		# }
 		
 		
+	}
+}
+
+BARE_SuperEvent_2_effect_10 = {
+	every_country = {
+		limit = { is_ai = no }
+		set_temp_variable = { BARE_SuperEvent_2_temp_var = token:BARE_SuperEvent_2_TRINITY_CRISIS }
+		BARE_SuperEvent_2_fire_super_event = yes
 	}
 }
 

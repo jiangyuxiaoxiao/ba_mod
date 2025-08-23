@@ -29,6 +29,7 @@ on_actions = {
 	}
 	on_daily = {
 		effect = {
+			Great_Game_set_major_daily = yes
 			#通用所有的计算
 			if = {
 				limit = {

@@ -256,9 +256,9 @@ focus_tree = {
 					PROGRESS = "80"
 					RANK = "2"
 				}
-				NOT = {
+				or = {
 					check_variable = {
-						ARI_mystic_progress < 80
+						ARI_mystic_progress > 79
 					}
 					check_variable = {
 						ARI_mystic_rank > 1
@@ -925,7 +925,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 5
+			factor = 10
 		}
 	}
 	#数秘术部分
@@ -1097,7 +1097,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 5
+			factor = 10
 		}
 	}
 	focus = {
@@ -1164,8 +1164,9 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
+			factor = 5
 			modifier = {
-				factor = 3
+				factor = 5
 				date > 2020.1.1
 			}
 		}
@@ -1202,9 +1203,10 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
+			factor = 5
 			modifier = {
 				factor = 3
-				date > 2021.1.1
+				date > 2020.1.1
 			}
 		}
 	}
@@ -1240,9 +1242,10 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
+			factor = 5
 			modifier = {
 				factor = 3
-				date > 2021.1.1
+				date > 2020.1.1
 			}
 		}
 	}
@@ -1289,7 +1292,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 5
 			modifier = {
-				factor = 3
+				factor = 5
 				date > 2020.1.1
 			}
 		}
@@ -1440,7 +1443,7 @@ focus_tree = {
 		ai_will_do = {
 			modifier = {
 				factor = 3
-				date > 2021.1.1
+				date > 2020.7.1
 			}
 		}
 	}
@@ -1475,7 +1478,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 3
+			factor = 5
 		}
 	}
 	focus = {
@@ -1492,9 +1495,13 @@ focus_tree = {
 		available = {
 			custom_override_tooltip = {
 				tooltip = ARI_traveller_operation_1_trigger_tt
-				check_variable = {
-					ARI_traveller_operation_prepare_progress = 100
+				or = {
+					check_variable = {
+						ARI_traveller_operation_prepare_progress = 100
+					}
+					is_ai = yes
 				}
+				
 			}
 			custom_override_tooltip = {
 				tooltip = ARI_traveller_operation_2_trigger_tt
@@ -1567,7 +1574,7 @@ focus_tree = {
 			factor = 100
 			modifier = {
 				factor = 0
-				date < 2021.7.1
+				date < 2021.1.1
 			}
 		}
 	}
@@ -1637,7 +1644,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 2
+			factor = 1000
 		}
 	}
 	focus = { #回收特战队
@@ -1677,7 +1684,7 @@ focus_tree = {
 			# }
 		}
 		ai_will_do = {
-			factor = 2
+			factor = 1000
 		}
 	}
 	focus = { #重申复仇理想
@@ -1713,7 +1720,7 @@ focus_tree = {
 			# unlock_decision_tooltip = ARI_get_back_revenge_spirit_de
 		}
 		ai_will_do = {
-			factor = 2
+			factor = 1000
 		}
 	}
 	focus = {
@@ -1798,7 +1805,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 2
+			factor =1000
 		}
 	}
 	focus = { #处理“叛徒”
@@ -1843,7 +1850,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 2
+			factor = 1000
 		}
 	}
 	focus = {
@@ -1902,7 +1909,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 2
+			factor = 1000
 		}
 	}
 	focus = {

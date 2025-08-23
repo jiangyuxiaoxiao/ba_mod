@@ -243,6 +243,18 @@ Hipper_test_decisions_categories = {
 		}
 	}
 
+	Fire_super_type2_event10_hipp = {
+		visible = {
+			is_debug = yes
+		}
+		available = {
+			is_ai = no
+		}
+		complete_effect = {
+			BARE_SuperEvent_2_effect_10 = yes
+		}
+	}
+
 	#################
 	#################
 	BAREXP_show_superevent1_gui = {

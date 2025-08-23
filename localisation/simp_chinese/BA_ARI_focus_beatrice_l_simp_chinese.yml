@@ -24,7 +24,7 @@
  ARI_justyna_projection_desc: "通过一件古代遗物，我们获得了召唤古代圣三一的宗教组织——尤斯蒂纳生徒会学生的方法。虽然我们目前只能制造她们的“投影”，但这些不会疼痛、不会害怕且战斗力不俗的存在绝对能够给圣三一那群养尊处优的大小姐们一点小小的“前辈震撼”。"
 
  ARI_has_mystic_progress: "§2神秘研究进度§!不低于§Y$PROGRESS$%§!"
- ARI_has_mystic_progress_justyna_projection: "§2神秘研究进度§!不低于§Y$PROGRESS$%§!或大于§Y$RANK$%§!级"
+ ARI_has_mystic_progress_justyna_projection: "§2神秘研究进度§!不低于§Y$PROGRESS$%§!或大于§Y$RANK$§!级"
  ARI_has_mystic_rank: "§2神秘研究§!已达到§Y$RANK$§!级"
  ARI_desiring_breakthrough: "渴望突破"
  ARI_desiring_breakthrough_desc: "我们的研究正进入一个瓶颈期，但夫人的脚步并不会就此停止。为了实现她的宏愿，她将调动一切可以调动的资源，来让自己迈入计划的下个阶段。"
@@ -103,7 +103,7 @@
 
 
  ARI_traveller_operation_1_trigger_tt: "“旅者”行动内部准备进度达到§Y100§!%，当前为[?ARI_traveller_operation_prepare_progress|Y2]%"
- ARI_traveller_operation_1_progress_low_tt: "当圣三一渗透进度达到50%以上时，每次成功渗透超出80%的部分，每1%都会额外转化为2.5%准备度。"
+ ARI_traveller_operation_1_progress_low_tt: "当圣三一渗透进度达到50%以上时，每次成功渗透超出50%的部分，每1%都会额外转化为2.5%准备度。"
 
  ARI_traveller_operation_2_trigger_tt: "“旅者”行动外部态势达到§Y时机已至§!/1000，当前为[Get_ARI_traveller_operation_2_progress]/[?ARI_traveller_operation_progress|Y2]"
  ARI_traveller_operation_2_progress_low_tt: "“旅者”行动的外部态势进度每天会增长§Y1§!\n提高§Y圣三一渗透进度§!和降低§Y圣三一团结度§!均可§G加快§!准备速度"

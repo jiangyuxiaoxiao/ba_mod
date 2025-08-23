@@ -474,3 +474,33 @@ Great_Game_cost_coins = {
 		max = 9999
 	}
 }
+
+
+Great_Game_set_major_daily = {
+	if = {
+		limit = {
+			is_major = no
+			or = {
+				tag = TRI
+				tag = GEH
+				tag = MIL
+				tag = ARI
+				tag = CEN
+				tag = VAL
+				tag = SRT
+				tag = SCH
+				tag = MIL
+				tag = ABY
+				tag = CAE
+				tag = CAP
+				tag = CAB
+				tag = CAH
+				tag = CAO
+				tag = SHA
+				tag = HYA
+				
+			}
+		}
+		set_major = yes
+	}
+}

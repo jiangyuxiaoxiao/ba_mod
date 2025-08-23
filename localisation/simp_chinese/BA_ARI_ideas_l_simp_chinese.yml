@@ -176,7 +176,7 @@ ARI_red_winter_overwhelming_fire: "红冬炮火压制"
  ARI_lesson_traveller_operation_desc: "我们的行动并非算得上成功，我们需要从这场行动中学习的东西还有很多。"
 
  ARI_cut_traveller_operation_debuff_1: "$ARI_catastrophic_traveller_operation$追加效果：\n部队组织度：§G+20%§!"
- ARI_cut_traveller_operation_debuff_2: "$ARI_catastrophic_traveller_operation$追加效果：\n部队攻击：§G+5%§!\n部队防御：§G+5%§!"
+ ARI_cut_traveller_operation_debuff_2: "$ARI_catastrophic_traveller_operation$追加效果：\n部队攻击：§G+10%§!\n部队防御：§G+10%§!"
  ARI_cut_traveller_operation_debuff_3: "$ARI_catastrophic_traveller_operation$追加效果：\n工厂产出：§G+25%§!\n消费品需求：§Y-25%§!"
  ARI_cut_traveller_operation_debuff_4: "$ARI_catastrophic_traveller_operation$追加效果：\n战争支持度：§G+20%§!\n稳定度：§G+20%§!"
  ARI_eden_action_chaos: "行动的混乱"

@@ -3880,49 +3880,49 @@ ARI_traveller_operation_caretaking_decisions = {
 			custom_override_tooltip = {
 				tooltip = ARI_get_back_special_force_count_nomore_for_5times_tt
 				##不触发超过五次
-				NOT = {
-					check_variable = { 
-						var = ARI_get_back_special_force_count
-						value = 5
-						compare = greater_than_or_equals
-					}
+				check_variable = {
+					ARI_lesson_traveller_operation_army_attack_factor < 0
 				}
 			}
 		}
 
 		available = {
-			has_manpower > 999
-			has_equipment = { infantry_equipment > 499 }
-			custom_override_tooltip = {
-				tooltip = {
-					localization_key = ARI_has_materials
-					AMOUNT = "100"
+			if = {
+				limit = {
+					is_ai = yes
 				}
-				check_variable = { ARI_materials > 99 }
-			}
-
-			custom_override_tooltip = {
-				tooltip = ARI_get_back_special_force_count_nomore_for_5times_tt
-				check_variable = {
-					ARI_lesson_traveller_operation_army_attack_factor > 0
+				always = yes
+			}else = {
+				has_manpower > 999
+				has_equipment = { infantry_equipment > 499 }
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = ARI_has_materials
+						AMOUNT = "100"
+					}
+					check_variable = { ARI_materials > 99 }
 				}
-				##不触发超过五次
-				# check_variable = { ARI_get_back_special_force_count < 6 }
 			}
 		}
 
 		days_remove = 30
 
 		complete_effect = {
-			add_manpower = -1000
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = -500
+			if = {
+				limit = {
+					is_ai = no
+				}
+				add_manpower = -1000
+				add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = -500
+					}
+					set_temp_variable = { material_change = -100 }
+					ARI_change_materials = yes
+				}
 			}
-			set_temp_variable = { material_change = -100 }
-			ARI_change_materials = yes
-		}
 		remove_effect = {
+			custom_effect_tooltip = ARI_get_back_special_force_count_nomore_for_5times_tt
 			custom_effect_tooltip = ARI_cut_traveller_operation_debuff_2
 			hidden_effect = {
 				# add_to_variable = { ARI_get_back_special_force_count = 1 }
@@ -3934,35 +3934,35 @@ ARI_traveller_operation_caretaking_decisions = {
 			}
 		}
 		ai_will_do = {
-			base = 3
-			modifier = {
-				factor = 0.6
-				check_variable = { ARI_materials < 300 }
-			}
-			modifier = {
-				factor = 0.8
-				check_variable = { ARI_materials < 800 }
-			}
-			modifier = {
-				factor = 10
-				check_variable = { ARI_materials > 1500 }
-			}
-			modifier = {
-				factor = 0.5
-				has_equipment = { infantry_equipment < 4000 }
-			}
-			modifier = {
-				factor = 0.5
-				has_manpower < 5000
-			}
-			modifier = {
-				factor = 5
-				has_manpower > 100000
-			}
-			modifier = {
-				factor = 5
-				has_equipment = { infantry_equipment > 12000 }
-			}
+			base = 1000
+			# modifier = {
+			# 	factor = 0.6
+			# 	check_variable = { ARI_materials < 300 }
+			# }
+			# modifier = {
+			# 	factor = 0.8
+			# 	check_variable = { ARI_materials < 800 }
+			# }
+			# modifier = {
+			# 	factor = 10
+			# 	check_variable = { ARI_materials > 1500 }
+			# }
+			# modifier = {
+			# 	factor = 0.5
+			# 	has_equipment = { infantry_equipment < 4000 }
+			# }
+			# modifier = {
+			# 	factor = 0.5
+			# 	has_manpower < 5000
+			# }
+			# modifier = {
+			# 	factor = 5
+			# 	has_manpower > 100000
+			# }
+			# modifier = {
+			# 	factor = 5
+			# 	has_equipment = { infantry_equipment > 12000 }
+			# }
 		}
 	}
 	ARI_get_back_revenge_spirit_de = { #重申复仇理想
