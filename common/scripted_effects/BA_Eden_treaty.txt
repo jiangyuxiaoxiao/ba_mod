@@ -80,12 +80,12 @@ Eden_treaty_change_weights = { #改变贡献度
 		add_to_temp_variable = { gain_factor = modifier@Eden_treaty_weights_gain_factor }
 		multiply_temp_variable = { weights_change = gain_factor }
 	}
-	custom_effect_tooltip = Eden_treaty_change_weights_tt
-	add_to_variable = { Eden_treaty_weights = weights_change }
 	clamp_variable = {
-		var = Eden_treaty_weights
+		var = weights_change
 		min = 0
 	}
+	custom_effect_tooltip = Eden_treaty_change_weights_tt
+	add_to_variable = { Eden_treaty_weights = weights_change }
 }
 Eden_treaty_next_phase = {
 	hidden_effect = {
