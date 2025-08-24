@@ -31,16 +31,16 @@ GEH_dualHeaded_Influence_Factor_Change = {
 	}
 
 	set_variable = {
-		GEH_dualHeaded_Influence_Factor_Hina_Text = GEH_dualHeaded_Influence_Factor
-	}
-	set_variable = {
-		GEH_dualHeaded_Influence_Factor_Makoto_Text = 1
-	}
-	subtract_from_variable = {
 		GEH_dualHeaded_Influence_Factor_Makoto_Text = GEH_dualHeaded_Influence_Factor
 	}
 	set_variable = {
-		GEH_dualHeaded_Influence_Factor_FRAME = GEH_dualHeaded_Influence_Factor
+		GEH_dualHeaded_Influence_Factor_Hina_Text = 1
+	}
+	subtract_from_variable = {
+		GEH_dualHeaded_Influence_Factor_Hina_Text = GEH_dualHeaded_Influence_Factor
+	}
+	set_variable = {
+		GEH_dualHeaded_Influence_Factor_FRAME = GEH_dualHeaded_Influence_Factor_Hina_Text
 	}
 	multiply_variable = {
 		GEH_dualHeaded_Influence_Factor_FRAME = 1000

@@ -1379,7 +1379,7 @@ ideas = {
 
             modifier = {
                 political_power_factor = -0.15
-                stability_weekly = -0.05
+                stability_weekly = -0.005
                 GEH_dualHeaded_Makoto_Weekly_factor = 0.003
                 GEH_societies_gourmet_research_destructive_weekly = -0.1
                 GEH_societies_com68_destructive_weekly = -0.1
@@ -1409,7 +1409,7 @@ ideas = {
 
             modifier = {
                 political_power_factor = 0.1
-                stability_weekly = -0.05
+                stability_weekly = -0.005
                 GEH_dualHeaded_Hina_Weekly_factor = 0.003
                 GEH_societies_hot_spring_activity_weekly = 0.1
                 GEH_societies_gourmet_research_activity_weekly = 0.1
