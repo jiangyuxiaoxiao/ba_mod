@@ -30,7 +30,7 @@ sp_ba_T1_assult_vehicle_project = {
             resources_cm = 10
         }
     }
-    complexity = sp_complexity.small
+    complexity = sp_complexity.medium
 
     ai_will_do = {
         base = 1.5
@@ -94,7 +94,7 @@ sp_ba_T2_assult_vehicle_project = {
             resources_cm = 15
         }
     }
-    complexity = sp_complexity.small
+    complexity = sp_complexity.medium
 
     ai_will_do = {
         base = 1.5
@@ -159,7 +159,7 @@ sp_ba_T3_assult_vehicle_project = {
             resources_cm = 20
         }
     }
-    complexity = sp_complexity.small
+    complexity = sp_complexity.medium
 
     ai_will_do = {
         base = 1.5
@@ -223,7 +223,7 @@ sp_ba_T4_assult_vehicle_project = {
             resources_cm = 25
         }
     }
-    complexity = sp_complexity.small
+    complexity = sp_complexity.medium
 
     ai_will_do = {
         base = 1.5
@@ -286,7 +286,7 @@ sp_ba_T5_assult_vehicle_project = {
             resources_cm = 30
         }
     }
-    complexity = sp_complexity.small
+    complexity = sp_complexity.medium
 
     ai_will_do = {
         base = 1.5
@@ -349,7 +349,7 @@ sp_ba_T1_mobile_vehicle_project = {
             resources_cm = 10
         }
     }
-    complexity = sp_complexity.small
+    complexity = sp_complexity.medium
 
     ai_will_do = {
         base = 1.5
@@ -413,7 +413,7 @@ sp_ba_T2_mobile_vehicle_project = {
             resources_cm = 15
         }
     }
-    complexity = sp_complexity.small
+    complexity = sp_complexity.medium
 
     ai_will_do = {
         base = 1.5
@@ -478,7 +478,7 @@ sp_ba_T3_mobile_vehicle_project = {
             resources_cm = 20
         }
     }
-    complexity = sp_complexity.small
+    complexity = sp_complexity.medium
 
     ai_will_do = {
         base = 1.5
@@ -542,7 +542,7 @@ sp_ba_T4_mobile_vehicle_project = {
             resources_cm = 25
         }
     }
-    complexity = sp_complexity.small
+    complexity = sp_complexity.medium
 
     ai_will_do = {
         base = 1.5
@@ -605,7 +605,7 @@ sp_ba_T5_mobile_vehicle_project = {
             resources_cm = 30
         }
     }
-    complexity = sp_complexity.small
+    complexity = sp_complexity.medium
 
     ai_will_do = {
         base = 1.5
@@ -668,7 +668,7 @@ sp_ba_T1_production_project = {
             resources_cm = 10
         }
     }
-    complexity = sp_complexity.small
+    complexity = sp_complexity.medium
 
     ai_will_do = {
         base = 1.5
@@ -732,7 +732,7 @@ sp_ba_T2_production_project = {
             resources_cm = 15
         }
     }
-    complexity = sp_complexity.small
+    complexity = sp_complexity.medium
 
     ai_will_do = {
         base = 1.5
@@ -797,7 +797,7 @@ sp_ba_T3_production_project = {
             resources_cm = 20
         }
     }
-    complexity = sp_complexity.small
+    complexity = sp_complexity.medium
 
     ai_will_do = {
         base = 1.5
@@ -861,7 +861,7 @@ sp_ba_T4_production_project = {
             resources_cm = 25
         }
     }
-    complexity = sp_complexity.small
+    complexity = sp_complexity.medium
 
     ai_will_do = {
         base = 1.5
@@ -924,7 +924,7 @@ sp_ba_T5_production_project = {
             resources_cm = 30
         }
     }
-    complexity = sp_complexity.small
+    complexity = sp_complexity.medium
 
     ai_will_do = {
         base = 1.5
