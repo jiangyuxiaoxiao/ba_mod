@@ -2805,31 +2805,31 @@ focus_tree = {
 				add_ideas = TRI_victory_trust_unity
 			}
 		}
-		focus = { #阿里乌斯之殇
-			id = TRI_fatal_strike_of_arius
-			icon = GFX_goal_TRI_fatal_strike_of_arius
-			relative_position_id = TRI_the_way_to_glory
-			prerequisite = { focus = TRI_the_way_to_glory }
-			cost = 5
-			x = -1
-			y = 1
-			search_filters = { FOCUS_FILTER_POLITICAL }
-			completion_reward = {
-				#TODO:
-				#触发事件：【阿里乌斯之殇】，通过选项以及先前重要事件的结果，玩家可以选择对阿里乌斯的态度：
-				#①直接吞并阿里乌斯作为非核心领土（可以通过国策获得核心）
-				#②使得阿里乌斯成为附庸国
-				#③使得阿里乌斯独立（if线内容，demo不展示）
-				country_event = TRI_events.45
-			}			
-		}
+		# focus = { #阿里乌斯之殇
+		# 	id = TRI_fatal_strike_of_arius
+		# 	icon = GFX_goal_TRI_fatal_strike_of_arius
+		# 	relative_position_id = TRI_the_way_to_glory
+		# 	prerequisite = { focus = TRI_the_way_to_glory }
+		# 	cost = 5
+		# 	x = -1
+		# 	y = 1
+		# 	search_filters = { FOCUS_FILTER_POLITICAL }
+		# 	completion_reward = {
+		# 		#TODO:
+		# 		#触发事件：【阿里乌斯之殇】，通过选项以及先前重要事件的结果，玩家可以选择对阿里乌斯的态度：
+		# 		#①直接吞并阿里乌斯作为非核心领土（可以通过国策获得核心）
+		# 		#②使得阿里乌斯成为附庸国
+		# 		#③使得阿里乌斯独立（if线内容，demo不展示）
+		# 		country_event = TRI_events.45
+		# 	}			
+		# }
 		focus = { #叛乱的余波
 			id = TRI_aftermath_of_rebellion
 			icon = GFX_goal_TRI_aftermath_of_rebellion
 			relative_position_id = TRI_the_way_to_glory
 			prerequisite = { focus = TRI_the_way_to_glory }
 			cost = 5
-			x = 1
+			x = 0
 			y = 1
 			search_filters = { FOCUS_FILTER_POLITICAL }
 			completion_reward = {
