@@ -1587,7 +1587,7 @@ focus_tree = {
 			focus = ARI_traveller_operation
 		}
 		allow_branch = {
-			has_completed_focus = ARI_traveller_operation
+		 	has_completed_focus = ARI_traveller_operation
 		}
 		available = {
 			always = no			#自动跳过
@@ -1923,9 +1923,9 @@ focus_tree = {
 		prerequisite = {
 			focus = ARI_fake_flag_operation
 		}
-		allow_branch = {
-			has_completed_focus = ARI_traveller_operation
-		}
+		# allow_branch = {
+		# 	has_completed_focus = ARI_traveller_operation
+		# }
 		available = {
 			always = no			#自动跳过
 		}
@@ -1956,7 +1956,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 2
+			factor = 1000
 		}
 	}
 	focus = {
@@ -1982,7 +1982,7 @@ focus_tree = {
 			unlock_decision_tooltip = ARI_send_sf_to_trinity
 		}
 		ai_will_do = {
-			factor = 2
+			factor = 1000
 		}
 	}
 	focus = {
@@ -2008,7 +2008,7 @@ focus_tree = {
 			unlock_decision_tooltip = ARI_control_trinity_border
 		}
 		ai_will_do = {
-			factor = 2
+			factor = 1000
 		}
 	}
 	focus = {
@@ -2038,7 +2038,7 @@ focus_tree = {
 			unlock_decision_tooltip = ARI_a_trip_to_gehenna
 		}
 		ai_will_do = {
-			factor = 2
+			factor = 1000
 		}
 	}
 	focus = {
@@ -2065,7 +2065,7 @@ focus_tree = {
 			unlock_decision_tooltip = ARI_join_food_seminar_club_activity
 		}
 		ai_will_do = {
-			factor = 2
+			factor = 1000
 		}
 	}
 	focus = {
@@ -2083,7 +2083,6 @@ focus_tree = {
 			focus = ARI_join_gehenna_club_fake
 		}
 		available = {
-			always = no			#自动跳过
 		}
 		cost = 3
 		x = 0
@@ -2097,7 +2096,7 @@ focus_tree = {
 			unlock_decision_category_tooltip = ARI_preparation_of_operation_eden_decisions
 		}
 		ai_will_do = {
-			factor = 2
+			factor = 1000
 		}
 	}
 	#TODO：需要在什么时候完成这个国策
