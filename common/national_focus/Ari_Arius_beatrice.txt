@@ -1540,6 +1540,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			custom_effect_tooltip = ARI_traveller_operation_tt
 			if = {
 				limit = {
 					check_variable = {
@@ -1586,9 +1587,9 @@ focus_tree = {
 		prerequisite = {
 			focus = ARI_traveller_operation
 		}
-		allow_branch = {
-		 	has_completed_focus = ARI_traveller_operation
-		}
+		# allow_branch = {
+		#  	has_completed_focus = ARI_traveller_operation
+		# }
 		available = {
 			always = no			#自动跳过
 		}
@@ -2092,6 +2093,7 @@ focus_tree = {
 			FOCUS_FILTER_ARMY
 		}
 		completion_reward = {
+			custom_effect_tooltip = ARI_prepare_operation_eden_tt
 			#解锁准备决议5
 			unlock_decision_category_tooltip = ARI_preparation_of_operation_eden_decisions
 		}

@@ -151,6 +151,9 @@ Eden_treaty_next_phase = {
 				country_event = Eden_pact.100
 				clear_variable = Eden_treaty_weights
 			}
+			ARI = {
+				country_event = Eden_pact.101
+			}
 		}
 		if = {
 			limit = { check_variable = { TRI_point > GEH_point } }

@@ -255,6 +255,23 @@ country_event = {
         }
     }
 }
+
+
+country_event = {
+    id = Eden_pact.101
+    title = Eden_pact.101.t
+    desc = Eden_pact.101.d
+    is_triggered_only = yes
+
+    immediate = {
+    }
+
+    option = {
+		name = Eden_pact.101.a
+    }
+    
+}
+
 #圣三一优势
 country_event = {
     id = Eden_pact.101

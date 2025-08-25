@@ -712,7 +712,11 @@ focus_tree = {
 					TRI_parliament_all_loyalty_change = yes
 				}
 				ai_will_do = {
-					factor = 3
+					factor = 10
+					modifier = { #ai开局一年后才会点情报局走流程
+						factor = 0
+						date < 2020.1.1
+					}
 				}
 			}
 			focus = { #潜藏于圣三一的叛徒

@@ -99,7 +99,7 @@
  ARI_fake_flag_operation_desc: "之前我们的行动只限于在圣三一或者格黑娜进行的单独侦察或破坏活动。而这次，我们将进行一次极为大胆的战略行动——通过伪装成圣三一和格黑娜的边境守军，我们将在圣三一和格黑娜的边界附近伪造一场“边界冲突”。当两个学校之间本就一触即发的紧张局势因为这件“小意外”而升级的时候，我们的机会就将出现…"
  ARI_traveller_operation: "“旅者”行动"
  ARI_traveller_operation_desc: "终于，我们积攒了足够的力量，能够对圣三一发起一场大规模的渗透作战。而刚好，夫人的研究也陷入了瓶颈，通过假装和我们的“合伙人”合作，我们有机会在从圣三一获取研究的关键资料的同时，让圣三一陷入无尽的混乱深渊。"
-
+ ARI_traveller_operation_tt:"§R时机稍纵即逝，我们的任何犹豫不决都可能会被敌人利用，尽快发起行动！§!"
 
 
  ARI_traveller_operation_1_trigger_tt: "“旅者”行动内部准备进度达到§Y100§!%，当前为[?ARI_traveller_operation_prepare_progress|Y2]%"
@@ -145,7 +145,7 @@
  ARI_join_gehenna_club_fake_desc: "种类繁多且活动频繁的社团是格黑娜的特色，而这种特色也给了我们的渗透带来了很大的方便。我们可以伪装为格黑娜学生并化妆为对应的社团部员，然后，让她们的活动稍微“失控”一点。。"
  ARI_prepare_operation_eden: "准备乐园行动"
  ARI_prepare_operation_eden_desc: "我们对格黑娜和圣三一的渗透获得了丰硕的成果，现在是准备舞台最后一幕的时候了——她们既然以不存在的乐园来命名她们的和平条约，那就让她们知道，所谓的“乐园”根本不存在，等待她们的只有我们的满腔怒火。"
-
+ ARI_prepare_operation_eden_tt:"§R我们将在她们庆祝条约的达成时发动行动，在此之前尽可能做好准备，这将决定行动的成果乃至我们的未来！§!"
  ARI_time_for_final_action: "行动时刻"
  ARI_time_for_final_action_desc: "时机已到，战鼓轰鸣。这是我们与圣三一乃至全基沃托斯的最后一战，愿敌人在我们的利刃之下颤抖败退！"
  ARI_suppress_resistance_eden_operation: "压制残余抵抗"

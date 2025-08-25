@@ -1717,7 +1717,15 @@ ARI_foreign_operations_decisions = {
 		days_remove = 30
 		days_re_enable = 150
 		remove_effect = {
-			country_event = ARI_beatrice_operations.19
+			if = {
+				limit = {
+					not = {
+						has_country_flag = ARI_beatrice_operations_19
+					}
+				}
+				set_country_flag = ARI_beatrice_operations_19
+				country_event = ARI_beatrice_operations.19
+			}
 			set_temp_variable = { material_change = 300 }
 			ARI_change_materials = yes
 			set_temp_variable = { revenge_progress_change = -10 }
@@ -1779,7 +1787,13 @@ ARI_foreign_operations_decisions = {
 			ARI_change_materials = yes
 		}
 		remove_effect = {
-			country_event = ARI_beatrice_operations.20
+			if = {
+				limit = {
+					has_country_flag = ARI_beatrice_operations_20
+				}
+				set_character_flag = ARI_beatrice_operations_20
+				country_event = ARI_beatrice_operations.20
+			}
 			set_temp_variable = { intelligence_change = 10 }
 			ARI_traveller_operation_prepare_progress_update_effect = yes
 			ARI_change_intelligence_in_TRI = yes
