@@ -15,12 +15,9 @@ spritetypes = {
 		name = "GFX_SL_state_lore_logo"
 		texturefile = "gfx/interface/state_lore/state_lore_logo.dds"
 	}
-	
 	### IMAGES GO HERE ###
 	# I highly recommend for y'all to put in winter images when convenient, i.e. when a good winter image is available. If none are available, you don't have to do stuff like whiten the image to do winter images.
-
 	# And, of course, when the climate of the nation is subtropic.
-
 	spritetype = {
 		name = "GFX_state_lore_img_1"
 		texturefile = "gfx/interface/state_lore/images/state_lore_img_1.dds"
@@ -93,7 +90,6 @@ spritetypes = {
 		name = "GFX_state_lore_img_18"
 		texturefile = "gfx/interface/state_lore/images/state_lore_img_18.dds"
 	}
-
 	spritetype = {
 		name = "GFX_state_lore_img_19"
 		texturefile = "gfx/interface/state_lore/images/state_lore_img_19.dds"
@@ -129,5 +125,189 @@ spritetypes = {
 	spritetype = {
 		name = "GFX_state_lore_img_27"
 		texturefile = "gfx/interface/state_lore/images/state_lore_img_27.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_28"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_28.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_29"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_29.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_30"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_30.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_31"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_31.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_32"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_32.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_33"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_33.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_34"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_34.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_35"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_35.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_36"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_36.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_37"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_37.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_38"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_38.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_39"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_39.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_40"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_40.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_41"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_41.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_42"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_42.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_43"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_43.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_44"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_44.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_45"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_45.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_46"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_46.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_47"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_47.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_48"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_48.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_49"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_49.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_50"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_50.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_51"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_51.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_52"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_52.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_53"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_53.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_54"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_54.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_55"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_55.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_56"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_56.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_57"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_57.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_58"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_58.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_59"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_59.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_60"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_60.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_61"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_61.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_62"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_62.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_63"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_63.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_64"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_64.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_65"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_65.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_66"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_66.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_67"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_67.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_68"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_68.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_69"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_69.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_70"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_70.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_71"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_71.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_72"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_72.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_73"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_73.dds"
 	}
 }
