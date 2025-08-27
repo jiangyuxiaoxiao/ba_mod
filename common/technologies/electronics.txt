@@ -624,8 +624,8 @@ technologies = {
 		dependencies = {
 			T1_electronic = 1
 		}
-		land_reinforce_rate = 0.01
-		coordination_bonus = 0.01
+		land_reinforce_rate = 0.015
+		coordination_bonus = 0.015
 
 		path = { 
 			leads_to_tech = Communication_Network_T2
@@ -650,8 +650,8 @@ technologies = {
 		dependencies = {
 			T2_electronic = 1
 		}
-		land_reinforce_rate = 0.01
-		coordination_bonus = 0.01
+		land_reinforce_rate = 0.015
+		coordination_bonus = 0.015
 
 		path = { 
 			leads_to_tech = Communication_Network_T3

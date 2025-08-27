@@ -127,7 +127,7 @@
  ARI_power_chaser_effect_change_8: "$ARI_power_chaser$\n追加效果：\n神秘步兵攻击：§G+5%§!\n神秘步兵防御：§G+5%§!\ns神秘步兵组织度：§G+10%§!"
  ARI_power_chaser_effect_change_9: "$ARI_power_chaser$\n追加效果：\n战争支持度：§G+10%§!\n消费品需求：§Y+10%§!"
  ARI_power_chaser_effect_change_10: "$ARI_power_chaser$\n追加效果：\n战争支持度：§G+5%§!\n稳定度：§Y+5%§!"
- ARI_power_chaser_effect_change_11: "$ARI_power_chaser$\n追加效果：\n神秘步兵攻击：§G+3%§!\n神秘步兵防御：§G+3%§!\n此外神秘步兵武器的造价额外下降§G2%§!"
+ ARI_power_chaser_effect_change_11: "$ARI_power_chaser$\n追加效果：\n神秘步兵攻击：§G+2%§!\n神秘步兵防御：§G+1%§!\n此外神秘步兵武器的造价额外下降§G2%§!"
 
 
  ARI_a_lesson_from_traveller_operation: "“旅者”行动的教训"
@@ -155,3 +155,5 @@
  ARI_eden_mystery_infantry_debuff_2_desc: "不知道是圣三一方面，还是那个来自夏莱的老师对我们的契约做了什么手脚，本已稳定的契约再次变得不稳定起来，而这则严重影响了我们投影士兵的战斗力。我们需要迅速想出解决办法，否则我们的前线很可能迅速陷入崩溃中。"
  ARI_eden_mystery_infantry_debuff_1: "被削弱的投影"
  ARI_eden_mystery_infantry_debuff_1_desc: "不知道是圣三一方面，还是那个来自夏莱的老师对我们的契约做了什么手脚，本已稳定的契约再次变得不稳定起来，而这则严重影响了我们投影士兵的战斗力。我们需要迅速想出解决办法，否则我们的前线很可能迅速陷入崩溃中。"
+ ARI_Eden_treaty_War_Forced_Attack: "强行发动进攻"
+ ARI_Eden_treaty_War_Forced_Defense: "死战不退"

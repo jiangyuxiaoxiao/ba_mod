@@ -154,6 +154,7 @@
  ARI_enhance_contract_power_desc: "尽管“公主”在叛徒的袭击受了伤，契约的力量也被大幅削弱，但这不是不可逆，让我们回到古圣堂，重新加强“契约”的力量，将毁灭重新带给敌人。"
  ARI_coordinate_reinforcement_troops: "协调增援部队"
  ARI_coordinate_reinforcement_troops_desc: "由于我们的指挥官从没有指挥过如此多的士兵进行作战，她们在进行战争计划的时候出现了明显的不适应和不协调。我们需要顺应目前的作战模式，对我们的指挥体系和部队安排进行灵活调整，从而确保我们部队在大军团战斗之中的战斗力。"
+ ARI_coordinate_reinforcement_troops_tt: "解锁用于应对消耗战的决议"
  ARI_put_evenything_on_bet: "赌上一切"
  ARI_put_evenything_on_bet_desc: "在最后的这场赌局中，“夫人”已经做好了将自己所拥有的一切全部压上牌桌的觉悟。为了能够战胜眼前的敌人，她将启封最后的预备队，并毫无顾忌地把她们投送到早已沦为炼狱的战场之上。毕竟，如果想要成就大事，怎能没有牺牲作为基石呢？/n/n§R至于那些被牺牲者的感受，则并不在夫人的考虑范围内§!"
 
@@ -283,10 +284,10 @@
  ARI_popularize_tactic_lessons_tt: "§Y$ARI_armed_students_modifier$§!追加效果：\n $MODIFIERS_ARMY_DEFENCE_FACTOR$：§G+10.0%§!\n $MODIFIER_ARMY_ORG_REGAIN$：§G+10.0%§!"
  ARI_spirit_of_revenge: "共同的复仇意志"
  ARI_spirit_of_revenge_desc: "我们拥有着共同的敌人、共同的目标以及共同的意志！这将驱使着我们的部队不断地升级与进化，直至完成复仇为止之前，我们将永不停息。"
- ARI_spirit_of_revenge_tt: "§Y$ARI_armed_students_modifier$§!追加效果：\n $MODIFIERS_ARMY_ATTACK_FACTOR$：§G+5.0%§!\n $MODIFIERS_ARMY_DEFENCE_FACTOR$：§G+10.0%§!"
+ ARI_spirit_of_revenge_tt: "§Y$ARI_armed_students_modifier$§!追加效果：\n $MODIFIERS_ARMY_DEFENCE_FACTOR$：§G+15.0%§!"
  ARI_charge_of_revenge: "复仇冲锋队"
  ARI_charge_of_revenge_desc: "我们从部队中精挑细选出了一些充满热忱，愿意身先士卒的学生组建出了一支‘复仇冲锋队’，她们将作为突入阵线的尖刀，，让敌人充分感受到我们的怒火与决心。"
- ARI_charge_of_revenge_tt: "§Y$ARI_armed_students_modifier$§!追加效果：\n $MODIFIER_ORG_LOSS_WHEN_MOVING$：§G-20.0%§!\n $MODIFIERS_ARMY_ATTACK_FACTOR$：§G+5.0%§!\n $MODIFIER_BREAKTHROUGH$：§G+10.0%§!"
+ ARI_charge_of_revenge_tt: "§Y$ARI_armed_students_modifier$§!追加效果：\n $MODIFIER_ORG_LOSS_WHEN_MOVING$：§G-20.0%§!\n $MODIFIER_BREAKTHROUGH$：§G+15.0%§!"
 
  ARI_foreign_combat_experience: "外界的战斗经验"
  ARI_foreign_combat_experience_desc: "我们的战术理论正在慢慢过时，外界已涌现出许多我们尚未了解新发明以及与之对应的学说，派遣观察员潜入到其他学院去研究学习最新的技术，并借此学习她们的战斗方式。"

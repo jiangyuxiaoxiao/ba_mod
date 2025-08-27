@@ -250,6 +250,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/ARI/idea_ARI_JSL.dds"
 	}
 	SpriteType = {
+		name = "GFX_idea_ARI_temp"
+		texturefile = "gfx/interface/ideas/ARI/idea_ARI_temp.dds"
+	}
+	SpriteType = {
 		name = "GFX_idea_ARI_light_support_equipment_idea"
 		texturefile = "gfx/interface/ideas/ARI/idea_ARI_light_support_equipment_idea.dds"
 	}

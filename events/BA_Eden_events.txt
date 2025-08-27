@@ -355,9 +355,6 @@ country_event = {
 			launch_nuke = {
 				province = 5612
 			}
-			launch_nuke = {
-				province = 7663
-			}
             if = {
 			    limit = { check_variable = { ARI_ZhunBeiDu < 46 } }
 			    set_global_flag = ARI_ZhunBeiDu_1_JieDuanBiaoZhi
@@ -435,13 +432,7 @@ news_event = {
             #给格黑娜、圣三一刷新一下国策
             if = {
                 limit = { original_tag = GEH }
-                mark_focus_tree_layout_dirty = yes
-                complete_national_focus = GEH_War_breaks_out
-                add_war_support = 0.05 #战争支持度修正
-				add_stability = -0.05 #稳定度修正
-				add_dynamic_modifier = {
-					modifier = GEH_a_unpredictable_attack #措手不及
-				}
+
 
 
 
@@ -452,30 +443,7 @@ news_event = {
             }
             else_if = {
                 limit = { original_tag = ARI }
-                country_event = {
-                    id = LS_GST.3
-                    days = 3
-                }
-                if = {
-                    limit = { has_global_flag = ARI_ZhunBeiDu_2_JieDuanBiaoZhi }
-                    for_each_loop = {
-                        array = global.ARI_ShouHaiZheMingDan_ER
-                        value = v
-                        var:v = {
-                            set_character_flag = ARI_BeiBangJia
-                        }
-                    }
-                }
-                else_if = {
-                    limit = { has_global_flag = ARI_ZhunBeiDu_3_JieDuanBiaoZhi }
-                    for_each_loop = {
-                        array = global.ARI_ShouHaiZheMingDan_SAN
-                        value = v
-                        var:v = {
-                            set_character_flag = ARI_BeiBangJia
-                        }
-                    }
-                }
+               
             }
         }
     }
@@ -512,6 +480,9 @@ news_event = {
                 limit = { is_ai = no }
                 BARE_SuperEvent_2_effect_7 = yes
             }
+            mark_focus_tree_layout_dirty = yes
+            complete_national_focus = GEH_War_breaks_out
+            Eden_treaty_war_GEH_debuff = yes
         }
 		ai_chance = {
 			base = 100
@@ -527,6 +498,20 @@ news_event = {
             if = {
                 limit = { is_ai = no }
                 BARE_SuperEvent_2_effect_7 = yes
+            }
+            country_event = {
+                id = LS_GST.3
+                days = 3
+            }
+            if = {
+                limit = { has_global_flag = ARI_ZhunBeiDu_2_JieDuanBiaoZhi }
+                Eden_treaty_war_cap_GEH_gps = yes
+            }
+            else_if = {
+                limit = { has_global_flag = ARI_ZhunBeiDu_3_JieDuanBiaoZhi }
+                Eden_treaty_war_cap_GEH_gps = yes
+                Eden_treaty_war_cap_GEH_cdc = yes
+                Eden_treaty_war_cap_Tri_jtf = yes
             }
         }
 		ai_chance = {
@@ -599,38 +584,12 @@ news_event = {
             #给格黑娜、圣三一刷新一下国策
             if = {
                 limit = { original_tag = GEH }
-                mark_focus_tree_layout_dirty = yes
-                complete_national_focus = GEH_War_breaks_out
             }
             else_if = {
                 limit = { original_tag = TRI }
             }
             else_if = {
                 limit = { original_tag = ARI }
-                country_event = {
-                    id = LS_GST.3
-                    days = 3
-                }
-                if = {
-                    limit = { has_global_flag = ARI_ZhunBeiDu_2_JieDuanBiaoZhi }
-                    for_each_loop = {
-                        array = global.ARI_ShouHaiZheMingDan_ER
-                        value = v
-                        var:v = {
-                            set_character_flag = ARI_BeiBangJia
-                        }
-                    }
-                }
-                else_if = {
-                    limit = { has_global_flag = ARI_ZhunBeiDu_3_JieDuanBiaoZhi }
-                    for_each_loop = {
-                        array = global.ARI_ShouHaiZheMingDan_SAN
-                        value = v
-                        var:v = {
-                            set_character_flag = ARI_BeiBangJia
-                        }
-                    }
-                }
             }
         }
     }
@@ -667,6 +626,9 @@ news_event = {
                 limit = { is_ai = no }
                 BARE_SuperEvent_2_effect_7 = yes
             }
+            mark_focus_tree_layout_dirty = yes
+            complete_national_focus = GEH_War_breaks_out
+            Eden_treaty_war_GEH_debuff = yes
         }
 		ai_chance = {
 			base = 100
@@ -682,6 +644,20 @@ news_event = {
             if = {
                 limit = { is_ai = no }
                 BARE_SuperEvent_2_effect_7 = yes
+            }
+            country_event = {
+                id = LS_GST.3
+                days = 3
+            }
+            if = {
+                limit = { has_global_flag = ARI_ZhunBeiDu_2_JieDuanBiaoZhi }
+                Eden_treaty_war_cap_GEH_gps = yes
+            }
+            else_if = {
+                limit = { has_global_flag = ARI_ZhunBeiDu_3_JieDuanBiaoZhi }
+                Eden_treaty_war_cap_GEH_gps = yes
+                Eden_treaty_war_cap_GEH_cdc = yes
+                Eden_treaty_war_cap_Tri_jtf = yes
             }
         }
 		ai_chance = {
@@ -746,7 +722,7 @@ news_event = {
     picture = GFX_news_event_eden_pact_attack
 	major = yes
 	is_triggered_only = yes
-    timeout_days = 2
+    timeout_days = 1
 
     immediate = {
         hidden_effect = {
@@ -754,38 +730,13 @@ news_event = {
             #给格黑娜、圣三一刷新一下国策
             if = {
                 limit = { original_tag = GEH }
-                mark_focus_tree_layout_dirty = yes
-                complete_national_focus = GEH_War_breaks_out
             }
             else_if = {
                 limit = { original_tag = TRI }
             }
             else_if = {
                 limit = { original_tag = ARI }
-                country_event = {
-                    id = LS_GST.3
-                    days = 3
-                }
-                if = {
-                    limit = { has_global_flag = ARI_ZhunBeiDu_2_JieDuanBiaoZhi }
-                    for_each_loop = {
-                        array = global.ARI_ShouHaiZheMingDan_ER
-                        value = v
-                        var:v = {
-                            set_character_flag = ARI_BeiBangJia
-                        }
-                    }
-                }
-                else_if = {
-                    limit = { has_global_flag = ARI_ZhunBeiDu_3_JieDuanBiaoZhi }
-                    for_each_loop = {
-                        array = global.ARI_ShouHaiZheMingDan_SAN
-                        value = v
-                        var:v = {
-                            set_character_flag = ARI_BeiBangJia
-                        }
-                    }
-                }
+            
             }
         }
     }
@@ -822,6 +773,9 @@ news_event = {
                 limit = { is_ai = no }
                 BARE_SuperEvent_2_effect_7 = yes
             }
+            mark_focus_tree_layout_dirty = yes
+            complete_national_focus = GEH_War_breaks_out
+            Eden_treaty_war_GEH_debuff = yes
         }
 		ai_chance = {
 			base = 100
@@ -838,6 +792,20 @@ news_event = {
                 limit = { is_ai = no }
                 BARE_SuperEvent_2_effect_7 = yes
             }
+            country_event = {
+                 id = LS_GST.3
+                 days = 3
+             }
+             if = {
+                 limit = { has_global_flag = ARI_ZhunBeiDu_2_JieDuanBiaoZhi }
+                 Eden_treaty_war_cap_GEH_gps = yes
+             }
+             else_if = {
+                 limit = { has_global_flag = ARI_ZhunBeiDu_3_JieDuanBiaoZhi }
+                 Eden_treaty_war_cap_GEH_gps = yes
+                 Eden_treaty_war_cap_GEH_cdc = yes
+                 Eden_treaty_war_cap_Tri_jtf = yes
+             }
         }
 		ai_chance = {
 			base = 100
