@@ -202,7 +202,7 @@ GEH_hot_spring_calc = {
 	clamp_variable = {
 		var = GEH_hot_spring_destructive
 		min = 0
-		max = 100
+		max = 99
 	}
 	if = {
 		limit = {
@@ -263,7 +263,7 @@ GEH_food_service_and_gourmet_research_calc = {
 	clamp_variable = {
 		var = GEH_gourmet_research_destructive
 		min = 0
-		max = 100
+		max = 99
 	}
 	if = {
 		limit = {
@@ -365,7 +365,7 @@ GEH_weekly_variable_change = {
 		clamp_variable = {
 		    var = GEH_com68_destructive
 		    min = 0
-		    max = 100
+		    max = 99
 	    }
 	}
 	    add_to_variable = {
