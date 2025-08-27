@@ -264,7 +264,7 @@ Eden_treaty_next_phase = {
 				clear_variable = Eden_treaty_weights
 			}
 			ARI = {
-				country_event = Eden_pact.101
+				country_event = Eden_pact.102
 			}
 		}
 		if = {
@@ -303,6 +303,13 @@ Eden_treaty_next_phase = {
 
 Eden_treaty_get_winner = {
 	hidden_effect = {
+		TRI = {
+			mark_focus_tree_layout_dirty = yes
+		}
+		GEH = {
+			mark_focus_tree_layout_dirty = yes
+
+		}
 		if = {
 			limit = {
 				check_variable = {
@@ -310,18 +317,18 @@ Eden_treaty_get_winner = {
 				}
 			}
 			set_global_flag = Eden_treaty_negotiation_TRI_win
-			TRI = {
-				country_event = {
-					id = Eden_pact.101
-					days = 2
-				}
-			}
-			GEH = {
-				country_event = {
-					id = Eden_pact.101
-					days = 2
-				}
-			}
+			# TRI = {
+			# 	country_event = {
+			# 		id = Eden_pact.101
+			# 		days = 2
+			# 	}
+			# }
+			# GEH = {
+			# 	country_event = {
+			# 		id = Eden_pact.101
+			# 		days = 2
+			# 	}
+			# }
 		}
 		else_if = {
 			limit = {
@@ -330,32 +337,32 @@ Eden_treaty_get_winner = {
 				}
 			}
 			set_global_flag = Eden_treaty_negotiation_GEH_win
-			TRI = {
-				country_event = {
-					id = Eden_pact.102
-					days = 2
-				}
-			}
-			GEH = {
-				country_event = {
-					id = Eden_pact.102
-					days = 2
-				}
-			}
+			# TRI = {
+			# 	country_event = {
+			# 		id = Eden_pact.102
+			# 		days = 2
+			# 	}
+			# }
+			# GEH = {
+			# 	country_event = {
+			# 		id = Eden_pact.102
+			# 		days = 2
+			# 	}
+			# }
 		}
 		else = {
-			TRI = {
-				country_event = {
-					id = Eden_pact.103
-					days = 2
-				}
-			}
-			GEH = {
-				country_event = {
-					id = Eden_pact.103
-					days = 2
-				}
-			}
+			# TRI = {
+			# 	country_event = {
+			# 		id = Eden_pact.103
+			# 		days = 2
+			# 	}
+			# }
+			# GEH = {
+			# 	country_event = {
+			# 		id = Eden_pact.103
+			# 		days = 2
+			# 	}
+			# }
 		}
 	}
 }
