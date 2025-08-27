@@ -858,7 +858,6 @@ GEH_societies_dec_category = {
             FROM = {
                 OWNER = {
                     tag = GEH 
-                    #check_variable = { GEH_gourmet_research_destructive < 100 }
                     check_variable = { GEH_gourmet_research_destructive > 80 }
                 }
                 has_state_flag = GEH_gourmet_research_damage
@@ -876,7 +875,6 @@ GEH_societies_dec_category = {
                         tag = GEH
                         OR = {
                             has_country_flag = GEH_hina_apprehend_gourmet_research
-                            #check_variable = { GEH_gourmet_research_destructive > 40 }
                             check_variable = { GEH_gourmet_research_destructive < 80 }
                         }                  
                     }
