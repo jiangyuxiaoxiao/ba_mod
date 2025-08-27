@@ -1541,7 +1541,7 @@ GEH_societies_dec_category = {
                         set_country_flag = GEH_hina_apprehend_gourmet_research
                         add_to_variable = { GEH_gourmet_research_activity = -6 }
                         add_to_variable = { GEH_gourmet_research_destructive = -12 } 
-                        GEH_hot_spring_calc = yes
+                        GEH_food_service_and_gourmet_research_calc = yes
                         country_event = {
                             id = GEH_discipline_committee_events.10
                         } 
