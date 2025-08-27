@@ -1,0 +1,30 @@
+spritetypes = {
+	spriteType = {
+		name = "GFX_mm_start_game"
+		texturefile = "gfx/interface/main_menu/mm_start_game.dds"
+	}
+	spriteType = {
+		name = "GFX_mm_credits"
+		texturefile = "gfx/interface/main_menu/mm_credits.dds"
+	}
+	spriteType = {
+		name = "GFX_mm_exit"
+		texturefile = "gfx/interface/main_menu/mm_exit.dds"
+	}
+	spriteType = {
+		name = "GFX_mm_mutiplayer"
+		texturefile = "gfx/interface/main_menu/mm_mutiplayer.dds"
+	}
+	spriteType = {
+		name = "GFX_mm_nudge"
+		texturefile = "gfx/interface/main_menu/mm_nudge.dds"
+	}
+	spriteType = {
+		name = "GFX_mm_personal_document"
+		texturefile = "gfx/interface/main_menu/mm_personal_document.dds"
+	}
+	spriteType = {
+		name = "GFX_mm_settings"
+		texturefile = "gfx/interface/main_menu/mm_settings.dds"
+	}
+}
