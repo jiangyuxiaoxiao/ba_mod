@@ -4051,8 +4051,8 @@ ARI_traveller_operation_caretaking_decisions = {
 			custom_effect_tooltip = ARI_cut_traveller_operation_debuff_3
 			hidden_effect = {
 				if = {
-					check_variable = {
-						ARI_lesson_traveller_operation_goods_factor > 0
+					limit = {
+						check_variable = { ARI_lesson_traveller_operation_goods_factor > 0 }
 					}
 					add_to_variable = { ARI_lesson_traveller_operation_industrial_capacity_factory = 0.25 }
 					add_to_variable = { ARI_lesson_traveller_operation_goods_factor = -0.25 }

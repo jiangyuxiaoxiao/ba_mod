@@ -1565,7 +1565,7 @@ focus_tree = {
 				}
 				ARITRI_coup_effect = yes
 				hidden_effect = {
-					country_event = bare_hidden_event.1
+					country_event = bare_long_text_hidden_event.1
 				}
 			}
 			
