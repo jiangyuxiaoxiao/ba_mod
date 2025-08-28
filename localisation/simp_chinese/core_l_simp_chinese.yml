@@ -1444,7 +1444,7 @@
  BROWSER_RELOAD: "刷新"
  BROWSER_FORUM: "论坛"
  BROWSER_HOME: "主页"
- RESEARCH: "研发"
+ RESEARCH: "         研发"  ##空格是对正按钮用的##
  RESEARCH_WITH_XP: "使用经验值进行研究"
  UNLOCK_WITH_XP: "解锁$XPICON$$VALUE|Y0$"
  BROWSER_LINK: "给超酷的链接留的位置"

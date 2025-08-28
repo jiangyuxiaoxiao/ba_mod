@@ -280,36 +280,32 @@ guiTypes = {
 	containerWindowType = {
 		name ="mainmenu_panel_bottom"
 		position = { x=0 y =0}
-		size = { width = 320 height = 450 }
-		Orientation = CENTER
-		Origo = center		
+		size = { width = 1280 height = 720 }
+		Orientation = lower_right
+		Origo = lower_right
 
 		positionType = {
 			name = "subscription_size"
 			position = { x = 320 y = 575 }
 		}
 				
-		background = {
-			name = "Background"		
-			quadTextureSprite ="GFX_tiled_window"
-		}
+		#background = {
+			#name = "Background"		
+			#quadTextureSprite ="GFX_tiled_window"
+		#}
 			
 		ButtonType = {
 			name = "single_player_button"
-			position = { x = 16 y = 18 }
-			quadTextureSprite ="GFX_main_lobby_button"
-			font = "hoi_24header"			
-			text = "FE_SINGLE_PLAYER"				
+			position = { x = 580 y = -70 }
+			quadTextureSprite ="GFX_mm_start_game"			
 			clicksound = click_default			
 			oversound = ui_menu_over
 		}
 
 		ButtonType = {
 			name = "multi_player_button"
-			position = { x = 16 y = 58}
-			quadTextureSprite ="GFX_main_lobby_button"
-			font = "hoi_24header"			
-			text = "FE_MULTI_PLAYER"			
+			position = { x = 555 y = 168}
+			quadTextureSprite ="GFX_mm_mutiplayer"			
 			clicksound = click_default
 			oversound = ui_menu_over
 		}
@@ -324,7 +320,7 @@ guiTypes = {
 		instantTextBoxType = {
 
 			name ="version_label"
-			position = { x = 35 y = 411 }
+			position = { x = 800 y = 500 }
 			textureFile = ""
 			font = "hoi_18b"
 			borderSize = {x = 0 y = 0}
@@ -342,27 +338,23 @@ guiTypes = {
 		
 		ButtonType = {
 			name = "settings_button"
-			position = { x = 16 y = 98 }
-			quadTextureSprite ="GFX_main_lobby_button"	
-			buttonText = "OPTIONS"
-			buttonFont = "hoi_24header"
+			position = { x = 1030 y = 178 }
+			quadTextureSprite ="GFX_mm_settings"	
 			clicksound = click_default
 			oversound = ui_menu_over
 		}
 		
 		buttonType = {
 			name = "career_profile_button"
-			position = { x = 16 y = 138 }
-			quadTextureSprite ="GFX_main_lobby_button"
-			buttonText = "MENU_BAR_CAREER_PROFILE"
-			buttonFont = "hoi_24header"
+			position = {  x = 435 y = 310 }
+			quadTextureSprite ="GFX_mm_personal_document"
 			clicksound = click_default
 			oversound = ui_menu_over
 		}
 		
 		iconType = {
 			name = "career_profile_button_star"
-			position = { x = -37 y = 155 }
+			position = { x = -37 y = 255 }
 			spriteType = "GFX_icon_best_in_career"
 			centerposition = yes
 			orientation = upper_right
@@ -371,7 +363,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "friends_button"
-			position = { x = 16 y = 178 }
+			position = { x = 9999 y = 9999 }
 			quadTextureSprite ="GFX_main_lobby_button"
 			buttonText = "MENU_BAR_FRIENDS"
 			buttonFont = "hoi_24header"
@@ -381,28 +373,24 @@ guiTypes = {
 
 		ButtonType = {
 			name = "credits_button"
-			position = {  x = 16 y = 218 }
-			quadTextureSprite ="GFX_main_lobby_button"	
-			buttonText = "FE_CREDITS"
-			buttonFont = "hoi_24header"
+			position = { x = 691 y = 315}
+			quadTextureSprite ="GFX_mm_credits"	
 			clicksound = click_default
 			oversound = ui_menu_over
 		}
 		
 		ButtonType = {
 			name = "nudge_button"
-			position = { x = 16 y = 258 }
-			quadTextureSprite ="GFX_main_lobby_button"	
-			buttonText = "Nudge!"
-			buttonFont = "hoi_24header"
+			position = { x = 1030 y = 245 }
+			quadTextureSprite ="GFX_mm_nudge"
+			clicksound = click_default
+			oversound = ui_menu_over
 		}
 
 		ButtonType = {
 			name = "exit_button"
-			position = { x = 16 y = 300 }
-			quadTextureSprite ="GFX_main_lobby_button"
-			font = "hoi_24header"			
-			text = "FE_EXIT"			
+			position = { x = 945 y = 320 }
+			quadTextureSprite ="GFX_mm_exit"		
 			clicksound = click_default
 			oversound = ui_menu_over
 			
@@ -410,13 +398,13 @@ guiTypes = {
 
 		iconType = {
 			name = "subscription_divider"
-			position = { x = 4 y = 336 }
+			position = { x = 9999 y = 9999 }
 			spriteType = "GFX_main_lobby_divider"
 		}
 
 		containerWindowType = {
 			name = "subscription_widget"
-			position = { x = 16 y = 352 }
+			position = { x = 9999 y = 9999 }
 			size = { width = 288 height = 108 }
 
 			ButtonType = {
@@ -431,7 +419,7 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "subscription_widget_subscribed"
-			position = { x = 16 y = 352 }
+			position = { x = 9999 y = 9999 }
 			size = { width = 288 height = 108 }
 
 			ButtonType = {
@@ -514,7 +502,7 @@ guiTypes = {
 		}
         containerWindowType = {
             name = "first_row"
-			position = { x=48 y=-17 }
+			position = { x=9999 y=9999 }
             ButtonType = {
                 name = "homepage_button"
                 position = { x=0 y=0 }
@@ -552,7 +540,7 @@ guiTypes = {
         }
         containerWindowType = {
             name = "second_row"
-			position = { x=30 y=19 }
+			position = { x=9999 y=9999 }
             ButtonType = {
                 name = "bluesky_button"
                 position = { x=0 y=0 }

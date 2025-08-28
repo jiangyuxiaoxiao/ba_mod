@@ -1,5 +1,5 @@
-##宜居度##
-##初始化宜居度效果##
+##战略储备##
+##初始化战略储备效果##
 ALF_initialize_livability_system_effect = {
     custom_effect_tooltip = initialize_livability_system_tt
     ##将黑市的每个省份加入数组
@@ -13,22 +13,30 @@ ALF_initialize_livability_system_effect = {
         }
     }
 
-    ##初始化宜居度所需数值##
+    ##初始化战略储备所需数值##
     ALF = {
+
+        ##默认战略储备：1点
         set_variable = {
             ALF.Livability_var = 1
         }
+
+        ##默认战略储备变化：0
         set_variable = {
             ALF.ALF_Livability_dynamic_modifier_var = 0
         }
+
+        ##为TAG增加战略储备变量
         ALF = {
             add_dynamic_modifier = {
                 modifier = ARI_Livability_dynamic_modifier
             }
         }
+
         ##测试用，记得最后删掉##
+        ##来自事件的每月战略储备消耗：6
         set_variable = {
-            ALF.Livability_from_event_var = 6
+            ALF.Livability_from_event_var = -6
         }
     }
 }
@@ -39,11 +47,7 @@ ALF_initialize_livability_system_effect = {
 ALF_calculate_livability_effect = {
     custom_effect_tooltip = ALF_calculate_livability_state_tt
 
-    ##计算目前宜居度
-    add_to_variable = {
-        ALF.Livability_var = modifier@ALF_Livability_int
-    }
-
+    ##每个省份消耗1点战略储备##
     ##获取省份数量##
     for_each_scope_loop = {
         array = global.black_market_state
@@ -52,35 +56,32 @@ ALF_calculate_livability_effect = {
                 is_owned_and_controlled_by = ALF
             }
             add_to_temp_variable = {
-                ALF.Livability_state_var = 1
+                ALF.Livability_state_var = -1
             }
         }
     }
-
-    ##计算省份带来的宜居度需求##
+    ##计算省份带来的战略储备需求##
     set_variable = {
         ALF.Livability_standard_var = ALF.Livability_state_var
     }
 
-    ##计算事件带来的宜居度需求##
+    ##计算剩余的战略储备
     add_to_variable = {
-        ALF.Livability_standard_var = ALF.Livability_from_event_var
-    }
-
-    ##计算目前的宜居度##
-    set_variable = {
-        ALF.Livability_quantity_d_var = ALF.Livability_var
-    }
-
-    ##计算宜居度的差值
-    subtract_from_variable = {
-        var = ALF.Livability_quantity_d_var
+        var = ALF.Livability_var
         value = ALF.Livability_standard_var
     }
+    add_to_variable = {
+        var = ALF.Livability_var
+        value = ALF.Livability_from_event_var
+    }
+    
+    ##计算本周期获得的战略储备##
+    add_to_variable = {
+        ALF.Livability_var = modifier@ALF_Livability_int
+    }
 
-    ##TODO：计算差值带来的效果，以buff形式写入动态精神中##
+    ##TODO：战略储备不足造成的效果，写入动态精神中
 }
-
 ##
 ALF_improve_livability_modifier_effect = {
     custom_effect_tooltip = ALF_improve_livability_modifier_effect_tt
