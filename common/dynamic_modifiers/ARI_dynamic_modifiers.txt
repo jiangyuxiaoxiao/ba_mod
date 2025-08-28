@@ -236,7 +236,7 @@ Eden_treaty_War_blood_march = {
 	army_attack_factor = Eden_treaty_War_blood_march_army_attack_factor
 	army_defence_factor = Eden_treaty_War_blood_march_army_defence_factor
 
-	ai_focus_aggressive_factor = 1	
+		
 	custom_effect_tooltip = Eden_treaty_War_blood_march_tt
 	remove_trigger = { 
 		or = {

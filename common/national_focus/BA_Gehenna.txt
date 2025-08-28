@@ -1425,8 +1425,9 @@ focus_tree = {
         cost = 4
         x = 0
         y = 1
-        prerequisite = {  focus =  GEH_Emergency_Rescue }
-        prerequisite = {  focus =  GEH_Gather_the_troops }
+        prerequisite = {  focus =  GEH_Emergency_Rescue
+                focus =  GEH_Gather_the_troops 
+            }
         search_filters = { FOCUS_FILTER_POLITICAL }
         available = {
             not = {
@@ -1634,7 +1635,7 @@ focus_tree = {
             #     remove_ideas = GEH_army_in_chaos 
             # }
 
-            add_ideas =  GEH_spare_no_effort_idea
+            # add_ideas =  GEH_spare_no_effort_idea
             unlock_decision_tooltip = GST_GEH_do_one_best
             unlock_decision_tooltip = GST_GEH_expel_war
 
