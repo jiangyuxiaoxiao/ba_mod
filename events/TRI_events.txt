@@ -32,6 +32,7 @@ country_event = {
                             id = TRI_autofocus.1
                             days = var:TRI_auto_focus_days
                         }
+                        #
                     }
                     remove_from_array = {
                         array = TRI_hoshubu_focus_line
@@ -1240,9 +1241,6 @@ country_event = {
 	is_triggered_only = yes
 	fire_only_once = yes
     immediate = {
-        hidden_effect = {
-            promote_character = TRI_missing_nagisa
-        }
     }
 
     option = {

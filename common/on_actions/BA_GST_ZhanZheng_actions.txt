@@ -36,68 +36,69 @@ on_actions = {
 			add_to_array = { global.GST_JS_ZBH = 172 }
 
 			#古圣堂之战 - 受害者名单
-			GEH = {
-				GEH_makoto = {
-					add_to_array = { global.ARI_ShouHaiZheMingDan_ER = THIS}
-					add_to_array = { global.ARI_ShouHaiZheMingDan_SAN = THIS}
-				}
-				GEH_iroha = {
-					add_to_array = { global.ARI_ShouHaiZheMingDan_ER = THIS}
-					add_to_array = { global.ARI_ShouHaiZheMingDan_SAN = THIS}
-				}
-				GEH_ibuki = {
-					add_to_array = { global.ARI_ShouHaiZheMingDan_ER = THIS }
-					add_to_array = { global.ARI_ShouHaiZheMingDan_SAN = THIS }
-				}
-				GEH_hina = {
-					add_to_array = { global.ARI_ShouHaiZheMingDan_SAN = THIS }
-				}
-				GEH_ako = {
-					add_to_array = { global.ARI_ShouHaiZheMingDan_SAN = THIS }
-				}
-				GEH_iori = {
-					add_to_array = { global.ARI_ShouHaiZheMingDan_SAN = THIS }
-				}
-				GEH_chinatsu = {
-					add_to_array = { global.ARI_ShouHaiZheMingDan_SAN = THIS }
-				}
-			}
+			#我受够了，直接写se吧
+			# GEH = {
+			# 	GEH_makoto = {
+			# 		add_to_array = { global.ARI_ShouHaiZheMingDan_ER = THIS}
+			# 		add_to_array = { global.ARI_ShouHaiZheMingDan_SAN = THIS}
+			# 	}
+			# 	GEH_iroha = {
+			# 		add_to_array = { global.ARI_ShouHaiZheMingDan_ER = THIS}
+			# 		add_to_array = { global.ARI_ShouHaiZheMingDan_SAN = THIS}
+			# 	}
+			# 	GEH_ibuki = {
+			# 		add_to_array = { global.ARI_ShouHaiZheMingDan_ER = THIS }
+			# 		add_to_array = { global.ARI_ShouHaiZheMingDan_SAN = THIS }
+			# 	}
+			# 	GEH_hina = {
+			# 		add_to_array = { global.ARI_ShouHaiZheMingDan_SAN = THIS }
+			# 	}
+			# 	GEH_ako = {
+			# 		add_to_array = { global.ARI_ShouHaiZheMingDan_SAN = THIS }
+			# 	}
+			# 	GEH_iori = {
+			# 		add_to_array = { global.ARI_ShouHaiZheMingDan_SAN = THIS }
+			# 	}
+			# 	GEH_chinatsu = {
+			# 		add_to_array = { global.ARI_ShouHaiZheMingDan_SAN = THIS }
+			# 	}
+			# }
 
-			TRI = {
-				# TRI_nagisa = {
-				# 	add_to_array = { global.ARI_ShouHaiZheMingDan_ER = THIS }
-				# 	add_to_array = { global.ARI_ShouHaiZheMingDan_SAN =  THIS }
-				# }
-				TRI_tsurugi  = {
-					add_to_array = { global.ARI_ShouHaiZheMingDan_ER = THIS }
-					add_to_array = { global.ARI_ShouHaiZheMingDan_SAN =  THIS }
-				}
-				TRI_hasumi = {
-					add_to_array = { global.ARI_ShouHaiZheMingDan_ER = THIS }
-					add_to_array = { global.ARI_ShouHaiZheMingDan_SAN =  THIS }
-				}
-				TRI_ichika = {
-					add_to_array = { global.ARI_ShouHaiZheMingDan_ER = THIS }
-					add_to_array = { global.ARI_ShouHaiZheMingDan_SAN =  THIS }
-				}
-				TRI_mashiro = {
-					add_to_array = { global.ARI_ShouHaiZheMingDan_ER = THIS }
-					add_to_array = { global.ARI_ShouHaiZheMingDan_SAN =  THIS }
-				}
+			# TRI = {
+			# 	# TRI_nagisa = {
+			# 	# 	add_to_array = { global.ARI_ShouHaiZheMingDan_ER = THIS }
+			# 	# 	add_to_array = { global.ARI_ShouHaiZheMingDan_SAN =  THIS }
+			# 	# }
+			# 	TRI_tsurugi  = {
+			# 		add_to_array = { global.ARI_ShouHaiZheMingDan_ER = THIS }
+			# 		add_to_array = { global.ARI_ShouHaiZheMingDan_SAN =  THIS }
+			# 	}
+			# 	TRI_hasumi = {
+			# 		add_to_array = { global.ARI_ShouHaiZheMingDan_ER = THIS }
+			# 		add_to_array = { global.ARI_ShouHaiZheMingDan_SAN =  THIS }
+			# 	}
+			# 	TRI_ichika = {
+			# 		add_to_array = { global.ARI_ShouHaiZheMingDan_ER = THIS }
+			# 		add_to_array = { global.ARI_ShouHaiZheMingDan_SAN =  THIS }
+			# 	}
+			# 	TRI_mashiro = {
+			# 		add_to_array = { global.ARI_ShouHaiZheMingDan_ER = THIS }
+			# 		add_to_array = { global.ARI_ShouHaiZheMingDan_SAN =  THIS }
+			# 	}
 
-				TRI_sakurako = {
-					add_to_array = { global.ARI_ShouHaiZheMingDan_ER = THIS }
-					add_to_array = { global.ARI_ShouHaiZheMingDan_SAN =  THIS }
-				}
-				TRI_hinata = {
-					add_to_array = { global.ARI_ShouHaiZheMingDan_ER = THIS }
-					add_to_array = { global.ARI_ShouHaiZheMingDan_SAN =  THIS }
-				}
-				TRI_mari = {
-					add_to_array = { global.ARI_ShouHaiZheMingDan_ER = THIS }
-					add_to_array = { global.ARI_ShouHaiZheMingDan_SAN =  THIS }
-				}
-			}
+			# 	TRI_sakurako = {
+			# 		add_to_array = { global.ARI_ShouHaiZheMingDan_ER = THIS }
+			# 		add_to_array = { global.ARI_ShouHaiZheMingDan_SAN =  THIS }
+			# 	}
+			# 	TRI_hinata = {
+			# 		add_to_array = { global.ARI_ShouHaiZheMingDan_ER = THIS }
+			# 		add_to_array = { global.ARI_ShouHaiZheMingDan_SAN =  THIS }
+			# 	}
+			# 	TRI_mari = {
+			# 		add_to_array = { global.ARI_ShouHaiZheMingDan_ER = THIS }
+			# 		add_to_array = { global.ARI_ShouHaiZheMingDan_SAN =  THIS }
+			# 	}
+			# }
 		}
 	}
 

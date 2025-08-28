@@ -193,7 +193,7 @@ GEH_emergency_time_decision_category = {
 	###营救学生
 	GEH_save_our_vip_students = {
 		visible = {
-			has_completed_focus = GEH_save_important_student
+			has_completed_focus = GEH_Emergency_Rescue
 			has_dynamic_modifier = {
 				modifier = GEH_a_unpredictable_attack
 			}
@@ -273,7 +273,7 @@ GEH_emergency_time_decision_category = {
 	#重新集结军队
 	GEH_reorganization_our_troop = {
 		visible = {
-			has_completed_focus = GEH_attack_key_point
+			has_completed_focus = GEH_Focus_attack
 			NOT = {
 				check_variable = { 
 					var = GEH_regroup_troop_count
@@ -311,29 +311,6 @@ GEH_emergency_time_decision_category = {
 		}
 	}
 
-
-	#组织进攻
-	GEH_reorganization_our_attack = {
-		visible = {
-			has_completed_focus = GEH_attack_key_point
-		}
-		available = {
-			command_power > 49
-		}
-
-		days_remove = 30
-
-		complete_effect = {
-			add_command_power = -50
-		}
-		
-		remove_effect = {
-			
-			140 = {
-				#TODO:消除古圣堂地区的{未经计划的攻势}——但我不知道这个modifier是啥
-			}
-		}
-	}
 }
 
 

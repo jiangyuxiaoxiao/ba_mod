@@ -712,7 +712,11 @@ focus_tree = {
 					TRI_parliament_all_loyalty_change = yes
 				}
 				ai_will_do = {
-					factor = 3
+					factor = 10
+					modifier = { #ai开局一年后才会点情报局走流程
+						factor = 0
+						date < 2020.1.1
+					}
 				}
 			}
 			focus = { #潜藏于圣三一的叛徒
@@ -2235,6 +2239,12 @@ focus_tree = {
 				
 				#民族精神【圣三一的团结】增加效果:支持席位超过50%时,每席位带来的稳定度提升降低0.5%
 				custom_effect_tooltip = TRI_unexpected_accident_tt
+				#添加通用限时民族精神
+				add_timed_idea = {
+					idea = Eden_treaty_War_lost_content
+					days = 15
+				}
+
 			}		
 		}
 		focus = { #先遣勘探
@@ -2248,7 +2258,20 @@ focus_tree = {
 			search_filters = { FOCUS_FILTER_POLITICAL }
 			completion_reward = {
 				#激活地区决议，用以寻找失踪的核心成员并解锁该地区的“消除未经计划的攻势”
-				unlock_decision_tooltip = GST_TRI_advance_exploration
+				unlock_decision_tooltip = GST_TRI_rescue_student
+
+				add_to_variable = {
+					Eden_treaty_War_dead_battle_land_reinforce_rate = 0.05
+				}
+				add_to_variable = {
+					Eden_treaty_War_dead_battle_air_accidents_factor = -0.06
+				}
+				add_to_variable = {
+					Eden_treaty_War_dead_battle_max_planning_factor = 0.15
+				}
+				force_update_dynamic_modifier = yes
+
+				custom_effect_tooltip = TRI_advance_exploration_tt
 			}
 		}
 		focus = { #唤醒职责
@@ -2265,7 +2288,7 @@ focus_tree = {
 				}
 			}
 			cost = 5
-			x = -1
+			x = 0
 			y = 1
 			search_filters = { FOCUS_FILTER_POLITICAL }
 			completion_reward = {
@@ -2281,41 +2304,41 @@ focus_tree = {
 				}
 			}
 		}
-		focus = { #绘制蓝图
-			id = TRI_draw_a_blueprint
-			icon = GFX_goal_TRI_draw_a_blueprint
-			relative_position_id = TRI_advance_exploration
-			prerequisite = { focus = TRI_advance_exploration }
-			cost = 5
-			x = 1
-			y = 1
-			search_filters = { FOCUS_FILTER_POLITICAL }
-			completion_reward = {
-				#可以在已经探索过的地区使用进一步的地区决议，用以消除该地区的“未经计划的攻势”
-				custom_effect_tooltip = TRI_draw_a_blueprint_tt
-				effect_tooltip = {
-					army_experience = 10
-				}
+		# focus = { #绘制蓝图
+		# 	id = TRI_draw_a_blueprint
+		# 	icon = GFX_goal_TRI_draw_a_blueprint
+		# 	relative_position_id = TRI_advance_exploration
+		# 	prerequisite = { focus = TRI_advance_exploration }
+		# 	cost = 5
+		# 	x = 1
+		# 	y = 1
+		# 	search_filters = { FOCUS_FILTER_POLITICAL }
+		# 	completion_reward = {
+		# 		#可以在已经探索过的地区使用进一步的地区决议，用以消除该地区的“未经计划的攻势”
+		# 		custom_effect_tooltip = TRI_draw_a_blueprint_tt
+		# 		effect_tooltip = {
+		# 			army_experience = 10
+		# 		}
 
-			}
-		}
+		# 	}
+		# }
 		focus = { #紧急救援
 			id = TRI_emergency_rescue
 			icon = GFX_goal_TRI_emergency_rescue
 			relative_position_id = TRI_awareness_of_responsibility
 			prerequisite = { focus = TRI_awareness_of_responsibility }
-			prerequisite = { focus = TRI_draw_a_blueprint }
+			# prerequisite = { focus = TRI_draw_a_blueprint }
 			cost = 5
-			x = 1
+			x = 0
 			y = 1
 			search_filters = { FOCUS_FILTER_POLITICAL }
 			completion_reward = {
 				#TODO:必须先对所有地区执行【探索地区决议】才可以激活，营救原剧情中对应的学生，使其在30天后可以再次被任命为将领或者顾问并消除【毁灭性打击】中军事debuff
-				custom_effect_tooltip = TRI_emergency_rescue_tt
-				effect_tooltip = {
-					set_temp_variable = { TRI_unity_change = 4 }
-					TRI_change_unity = yes
-				}
+				# custom_effect_tooltip = TRI_emergency_rescue_tt
+				# effect_tooltip = {
+				# 	set_temp_variable = { TRI_unity_change = 4 }
+				# 	TRI_change_unity = yes
+				# }
 				if = {
 					limit = { has_dynamic_modifier = { modifier = TRI_devastated_by_arius } }
 					custom_effect_tooltip = TRI_emergency_rescue_tt_2
@@ -2760,6 +2783,18 @@ focus_tree = {
 				}
 			}
 			completion_reward = {
+				custom_effect_tooltip = TRI_restrain_the_disaster_tt
+
+				add_to_variable = {
+					Eden_treaty_War_dead_battle_land_reinforce_rate = 0.05
+				}
+				add_to_variable = {
+					Eden_treaty_War_dead_battle_air_accidents_factor = -0.06
+				}
+				add_to_variable = {
+					Eden_treaty_War_dead_battle_max_planning_factor = 0.2
+				}
+				force_update_dynamic_modifier = yes
 	
 				#获得民族精神：【扫除威胁!】效果：(对【阿里乌斯】的战斗获得15%的攻击和防御加成;战备恢复速度+100%)——直到阿里乌斯被消灭。
 				add_ideas = TRI_sweep_threat
@@ -2805,31 +2840,31 @@ focus_tree = {
 				add_ideas = TRI_victory_trust_unity
 			}
 		}
-		focus = { #阿里乌斯之殇
-			id = TRI_fatal_strike_of_arius
-			icon = GFX_goal_TRI_fatal_strike_of_arius
-			relative_position_id = TRI_the_way_to_glory
-			prerequisite = { focus = TRI_the_way_to_glory }
-			cost = 5
-			x = -1
-			y = 1
-			search_filters = { FOCUS_FILTER_POLITICAL }
-			completion_reward = {
-				#TODO:
-				#触发事件：【阿里乌斯之殇】，通过选项以及先前重要事件的结果，玩家可以选择对阿里乌斯的态度：
-				#①直接吞并阿里乌斯作为非核心领土（可以通过国策获得核心）
-				#②使得阿里乌斯成为附庸国
-				#③使得阿里乌斯独立（if线内容，demo不展示）
-				country_event = TRI_events.45
-			}			
-		}
+		# focus = { #阿里乌斯之殇
+		# 	id = TRI_fatal_strike_of_arius
+		# 	icon = GFX_goal_TRI_fatal_strike_of_arius
+		# 	relative_position_id = TRI_the_way_to_glory
+		# 	prerequisite = { focus = TRI_the_way_to_glory }
+		# 	cost = 5
+		# 	x = -1
+		# 	y = 1
+		# 	search_filters = { FOCUS_FILTER_POLITICAL }
+		# 	completion_reward = {
+		# 		#TODO:
+		# 		#触发事件：【阿里乌斯之殇】，通过选项以及先前重要事件的结果，玩家可以选择对阿里乌斯的态度：
+		# 		#①直接吞并阿里乌斯作为非核心领土（可以通过国策获得核心）
+		# 		#②使得阿里乌斯成为附庸国
+		# 		#③使得阿里乌斯独立（if线内容，demo不展示）
+		# 		country_event = TRI_events.45
+		# 	}			
+		# }
 		focus = { #叛乱的余波
 			id = TRI_aftermath_of_rebellion
 			icon = GFX_goal_TRI_aftermath_of_rebellion
 			relative_position_id = TRI_the_way_to_glory
 			prerequisite = { focus = TRI_the_way_to_glory }
 			cost = 5
-			x = 1
+			x = 0
 			y = 1
 			search_filters = { FOCUS_FILTER_POLITICAL }
 			completion_reward = {

@@ -2,23 +2,24 @@
 GEH_degrade_debuff_of_troop = {
 	if = {
 		limit = { has_idea = GEH_army_in_chaos }
-		remove_ideas = GEH_army_in_chaos
+		swap_ideas = {
+			remove_idea = GEH_army_in_chaos 
+			add_idea = GEH_army_in_chaos_2
+		}
 	}
 
-	if = {
+	else_if = {
 		limit = { has_idea = GEH_army_in_chaos_2 }
 		swap_ideas = {
 			remove_idea = GEH_army_in_chaos_2 
-			add_idea = GEH_army_in_chaos
+			add_idea = GEH_army_in_chaos_3
 		}
 	}
 
-	if = {
+	else_if = {
 		limit = { has_idea = GEH_army_in_chaos_3 }
-		swap_ideas = {
-			remove_idea = GEH_army_in_chaos_3 
-			add_idea = GEH_army_in_chaos_2
-		}
+		remove_ideas = GEH_army_in_chaos_3
+		
 	}
 }
 
@@ -31,16 +32,16 @@ GEH_dualHeaded_Influence_Factor_Change = {
 	}
 
 	set_variable = {
-		GEH_dualHeaded_Influence_Factor_Hina_Text = GEH_dualHeaded_Influence_Factor
-	}
-	set_variable = {
-		GEH_dualHeaded_Influence_Factor_Makoto_Text = 1
-	}
-	subtract_from_variable = {
 		GEH_dualHeaded_Influence_Factor_Makoto_Text = GEH_dualHeaded_Influence_Factor
 	}
 	set_variable = {
-		GEH_dualHeaded_Influence_Factor_FRAME = GEH_dualHeaded_Influence_Factor
+		GEH_dualHeaded_Influence_Factor_Hina_Text = 1
+	}
+	subtract_from_variable = {
+		GEH_dualHeaded_Influence_Factor_Hina_Text = GEH_dualHeaded_Influence_Factor
+	}
+	set_variable = {
+		GEH_dualHeaded_Influence_Factor_FRAME = GEH_dualHeaded_Influence_Factor_Hina_Text
 	}
 	multiply_variable = {
 		GEH_dualHeaded_Influence_Factor_FRAME = 1000
@@ -201,7 +202,7 @@ GEH_hot_spring_calc = {
 	clamp_variable = {
 		var = GEH_hot_spring_destructive
 		min = 0
-		max = 100
+		max = 99
 	}
 	if = {
 		limit = {
@@ -262,7 +263,7 @@ GEH_food_service_and_gourmet_research_calc = {
 	clamp_variable = {
 		var = GEH_gourmet_research_destructive
 		min = 0
-		max = 100
+		max = 99
 	}
 	if = {
 		limit = {
@@ -364,7 +365,7 @@ GEH_weekly_variable_change = {
 		clamp_variable = {
 		    var = GEH_com68_destructive
 		    min = 0
-		    max = 100
+		    max = 99
 	    }
 	}
 	    add_to_variable = {

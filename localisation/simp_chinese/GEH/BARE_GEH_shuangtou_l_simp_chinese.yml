@@ -1,0 +1,41 @@
+﻿l_simp_chinese:
+ GEH_dualHeaded:0"双头政治"
+ GEH_dualHeaded_desc:0"空崎日奈——羽沼真琴\n      [?zhanbi_two|%]:[?GEH_dualHeaded_Influence_Factor|%]\n            [?hina_yingxiang]——[?makoto_yingxiang]"
+ GEH_dualHeaded_desc: "在格黑娜学园中，以羽沼真琴为首的万魔殿和以空崎日奈为首的风纪委员会是最为强大的两股势力。分别代表了格黑娜学园的两面，她们有些时候会在一些重大问题上达成共识，然而矛盾和冲突才是她们之间打交道的常态，万魔殿在名义上是格黑娜学园的学生会组织，但其对学园的掌控十分有限。而风纪委员会虽然掌握着格黑娜最为强大的武力，但繁杂的事务让她们很难抽出精力来与万魔殿争权夺利。因此至少在目前，她们达成了一种微妙的平衡。\n\n我们选择了试图维持万魔殿和风纪委员会的平衡，这意味着我们需要保证任意一方的影响力都不至于过于强大，否则将会产生严重的后果。"
+
+
+GEH_dualHeaded_Hina_Weekly_factor: "每周风纪委员会影响力变化："
+GEH_dualHeaded_Makoto_Weekly_factor: "每周万魔殿影响力变化："
+
+
+BARE_GEH_dualHeaded_influence_hina_Text: "[?GEH_dualHeaded_Influence_Factor_Hina_Text|%]"
+BARE_GEH_dualHeaded_influence_makoto_Text: "[?GEH_dualHeaded_Influence_Factor_Makoto_Text|%]"
+BARE_GEH_dualHeaded_influence_Text: "[Get_BARE_GEH_dualHeaded_influence_Text]"
+BARE_GEH_dualHeaded_influence_hina_2: "§i当前，风纪委员会的影响力占据主导地位§!"
+BARE_GEH_dualHeaded_influence_hina_1: "§i当前，风纪委员会的影响力有明显优势§!"
+BARE_GEH_dualHeaded_influence_normal: "§i当前，双方影响力不分伯仲§!"
+BARE_GEH_dualHeaded_influence_makoto_1: "§i当前，万魔殿的影响力有明显优势§!"
+BARE_GEH_dualHeaded_influence_makoto_2: "§i当前，万魔殿的影响力占据主导地位§!"
+
+
+
+
+
+
+GEH_dualHeaded_Influence_Factor_Change_Text_Right_Tooltip:"双头政治平衡条将向真琴方向偏移[?BARE_duelHead_Chance_temp|%]"
+GEH_dualHeaded_Influence_Factor_Change_Text_Left_Tooltip:"双头政治平衡条将向日奈方向偏移[?BARE_duelHead_Chance_temp|%]"
+
+
+
+
+
+GEH_societies_hot_spring_destructive_weekly: "每周温泉开发部破坏度变化"
+GEH_societies_gourmet_research_destructive_weekly: "每周美食研究部破坏度变化"
+GEH_societies_com68_destructive_weekly: "每周便利屋68破坏度变化"
+GEH_societies_hot_spring_activity_weekly: "每周美食研究部活跃度变化"
+GEH_societies_gourmet_research_activity_weekly: "每周温泉开发部活跃度变化"
+GEH_societies_com68_activity_weekly: "每周便利屋68活跃度变化"
+GEH_societies_discipline_committee_activity_weekly: "每周风纪委员会活跃度变化"
+GEH_societies_food_service_activity_weekly: "每周给食部活跃度变化"
+GEH_societies_discipline_committee_repression_weekly: "每周风纪委员会效率变化"
+GEH_societies_food_service_efficiency_weekly: "每周给食部效率变化"

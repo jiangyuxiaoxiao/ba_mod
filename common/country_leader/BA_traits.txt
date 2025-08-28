@@ -465,8 +465,8 @@ leader_traits = {
     leader_of_fukiinkai_ac = {
         random = no
 
-        army_infantry_attack_factor = 0.2
-        army_infantry_defence_factor = 0.2
+        combat_width_factor = -0.05
+        max_planning_factor = 0.1
 
         experience_gain_army = 0.3
     }
@@ -491,9 +491,9 @@ leader_traits = {
     set_the_tune_with_three_firing = {
         random = no
 
-        army_infantry_attack_factor = 0.3
+        army_attack_factor = 0.1
         army_org_factor = -0.1
-        army_infantry_defence_factor = -0.15
+        breakthrough_factor = -0.1
     }
 
     #风纪委医疗后援
@@ -524,8 +524,10 @@ leader_traits = {
     gehena_armored_general = {
         random = no
 
-        army_armor_attack_factor = 0.2
-        army_armor_defence_factor = 0.2
+        army_armor_attack_factor = 0.15
+        army_armor_defence_factor = 0.15
+
+        army_speed_factor = 0.075
     }  
 
     #懒散的中层管理者
@@ -549,8 +551,9 @@ leader_traits = {
     elegant_villain = {
         random = no
 
-        army_artillery_attack_factor = 0.1
-        army_artillery_defence_factor = 0.2
+        planning_speed = 0.2
+        max_planning_factor = -0.05
+        army_defence_factor = 0.15
         
     }
 
@@ -558,15 +561,63 @@ leader_traits = {
     gunpowder_and_little_devil = {
         random = no
 
-        army_artillery_attack_factor = 0.2
-        army_artillery_defence_factor = 0.1
+        equipment_bonus = {
+            light_fire_support_equipment = {
+                soft_attack = 0.1
+                instant = yes
+            }
+            apc_artillery_equipment = {
+                soft_attack = 0.1
+                build_cost_ic = -0.1
+                instant = yes
+            }
+            ifv_artillery_equipment = {
+                soft_attack = 0.1
+                build_cost_ic = -0.1
+                instant = yes
+            }
+
+            light_tank_artillery_chassis = {
+                soft_attack = 0.1
+                build_cost_ic = -0.1
+                instant = yes
+            }
+            medium_tank_artillery_chassis = {
+                soft_attack = 0.1
+                build_cost_ic = -0.1
+                instant = yes
+            }
+            heavy_tank_artillery_chassis = {
+               soft_attack = 0.1
+                build_cost_ic = -0.1
+                instant = yes
+            }
+
+            light_bm_artillery_chassis = {
+                soft_attack = 0.1
+                build_cost_ic = -0.1
+                instant = yes
+            }
+            medium_bm_artillery_chassis = {
+                soft_attack = 0.1
+                build_cost_ic = -0.1
+                instant = yes
+            }
+            heavy_bm_artillery_chassis = {
+                soft_attack = 0.1
+                build_cost_ic = -0.1
+                instant = yes
+            }
+
+        }
     }
 
     #冷静的军师
     experienced_army_staff = {
         random = no
-
-        army_org_factor = 0.2
+        planning_speed = 0.25
+        max_planning_factor = 0.15
+        recon_factor = 0.2
     }
 
     #盆中芳草
@@ -587,10 +638,9 @@ leader_traits = {
     #克苏鲁大厨
     cthulu_food = {
         random = no
-
-        army_attack_factor = 0.2
-        army_defence_factor = -0.25
-        army_org_factor = -0.15
+        army_org_factor = -0.03
+        supply_consumption_factor = -0.1
+        org_loss_at_low_org_factor = -0.25
 
     }
 
@@ -606,8 +656,8 @@ leader_traits = {
     great_eater = {
         random = no
 
-        army_attack_factor = 0.15
-        supply_consumption_factor = 0.1
+        army_defence_factor = 0.1
+        supply_consumption_factor = 0.025
 
     }
 
@@ -615,7 +665,8 @@ leader_traits = {
     lovely_little_fire_dragon = {
         random = no
 
-        army_attack_factor = 0.1
+        consumer_goods_factor = 0.1
+        terrain_penalty_reduction = 0.15
 
     }
 
@@ -738,8 +789,9 @@ leader_traits = {
     sword_of_arius = {
         random = no
 
-        army_attack_factor = 0.2
-        army_defence_factor = 0.2
+        army_attack_factor = 0.1
+        cas_damage_reduction = 0.1
+        air_superiority_bonus_in_combat = -0.15
 
         experience_gain_army = 0.3
     }
@@ -748,8 +800,10 @@ leader_traits = {
     string_of_nihilism = {
         random = no
 
-        army_attack_factor = 0.3
-        army_defence_factor = -0.15
+        army_strength_factor = -0.1
+        terrain_penalty_reduction = 0.25
+        max_planning_factor = 0.1
+        planning_speed = 0.2
     }
 
     #范围轰炸专家
@@ -1554,8 +1608,8 @@ leader_traits = {
     army_organizer = {
         random = no
         experience_gain_army = 0.3
-        army_org_factor = 0.2
-        experience_loss_factor = 0.2
+        army_org_factor = 0.1
+        experience_loss_factor = 0.1
     }
     
     #空军引领人

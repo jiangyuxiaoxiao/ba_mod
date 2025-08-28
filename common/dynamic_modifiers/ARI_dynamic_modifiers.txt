@@ -219,3 +219,71 @@ ARI_Gematria_member = {
 
 	custom_modifier_tooltip = ARI_Gematria_member_tt
 }
+
+
+Eden_treaty_War_blood_march = {
+	icon = "GFX_idea_ARI_JSL"
+
+	enable = { always = yes }
+	experience_loss_factor = Eden_treaty_War_blood_march_experience_loss_factor
+	attrition = Eden_treaty_War_blood_march_attrition
+	army_speed_factor = Eden_treaty_War_blood_march_army_speed_factor
+	army_strength_factor =Eden_treaty_War_blood_march_army_strength_factor
+	supply_consumption_factor = Eden_treaty_War_blood_march_supply_consumption_factor
+	army_org_factor = Eden_treaty_War_blood_march_army_org_factor
+	land_reinforce_rate = Eden_treaty_War_blood_march_land_reinforce_rate
+
+	army_attack_factor = Eden_treaty_War_blood_march_army_attack_factor
+	army_defence_factor = Eden_treaty_War_blood_march_army_defence_factor
+
+	ai_focus_aggressive_factor = 1	
+	custom_effect_tooltip = Eden_treaty_War_blood_march_tt
+	remove_trigger = { 
+		or = {
+			has_completed_focus = ARI_the_final_step
+			has_global_flag = Arius_defeated
+		}
+	}
+
+}
+
+
+Eden_treaty_War_dead_battle_TRI = {
+	icon = "GFX_idea_TRI_temp_idea"
+
+	land_reinforce_rate = Eden_treaty_War_dead_battle_land_reinforce_rate
+	max_planning_factor = Eden_treaty_War_dead_battle_max_planning_factor
+	air_accidents_factor = Eden_treaty_War_dead_battle_air_accidents_factor
+
+	army_core_attack_factor = Eden_treaty_War_dead_battle_army_core_attack_factor
+	army_core_defence_factor = Eden_treaty_War_dead_battle_army_core_defence_factor
+
+	army_morale_factor = Eden_treaty_War_dead_battle_army_morale_factor
+
+
+	enable = { always = yes }
+	remove_trigger = { 
+		has_global_flag = Arius_defeated
+	}
+
+}
+
+Eden_treaty_War_dead_battle_GEH = {
+	icon = "GFX_idea_GEH_temp_idea"
+
+
+	land_reinforce_rate = Eden_treaty_War_dead_battle_land_reinforce_rate
+	max_planning_factor = Eden_treaty_War_dead_battle_max_planning_factor
+	air_accidents_factor = Eden_treaty_War_dead_battle_air_accidents_factor
+
+	army_core_attack_factor = Eden_treaty_War_dead_battle_army_core_attack_factor
+	army_core_defence_factor = Eden_treaty_War_dead_battle_army_core_defence_factor
+
+	army_morale_factor = Eden_treaty_War_dead_battle_army_morale_factor
+
+	enable = { always = yes }
+	remove_trigger = { 
+		has_global_flag = Arius_defeated
+	}
+
+}

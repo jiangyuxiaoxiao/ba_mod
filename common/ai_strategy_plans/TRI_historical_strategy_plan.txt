@@ -19,7 +19,7 @@ ARI_historical_plan = {
 		TRI_calling_for_sisterhood
 		TRI_restart_domestic_struggle
 
-		TRI_expand_intellegence
+		
 		TRI_Bill_of_copper_olive #法案
 		TRI_turncoat_in_trinity
 		TRI_authorize_dove_faction
@@ -29,6 +29,8 @@ ARI_historical_plan = {
 		TRI_association_autonomy
 
 		TRI_Bill_of_disclosure #法案
+
+		TRI_expand_intellegence #ai情报局最后点，给阿里乌斯一点机会
 		
 	}
 
