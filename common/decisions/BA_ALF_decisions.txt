@@ -25,6 +25,8 @@ ALF_military_reform_decision_category = {
 	}
 }
 
+##宜居度系统##
+##扩展为资源系统，用来抽象地表达流亡者拥有的战略资源
 ALF_Livability_decision_category = {
 	ALF_Livability_decision_test = {
 		visible = {
@@ -48,6 +50,19 @@ ALF_Livability_decision_category = {
 		cost = 0
 		complete_effect = {
 			ALF_calculate_livability_effect = yes
+		}
+	}
+
+	ALF_improve_livability_test = {
+		visible = {
+			is_debug = yes
+		}
+		available = {
+			is_ai = no
+		}
+		cost = 0
+		complete_effect = {
+			ALF_improve_livability_modifier_effect = yes
 		}
 	}
 }
