@@ -1005,158 +1005,286 @@ GST_LS_ZZ_category = {
 			set_global_flag = Eden_treaty_has_been_signed
 		}
 	}
-	GST_YJ = {
-		icon = generic_research
-		priority = 10
-		visible = {
-			GEH = {
-				any_character = {
-					has_character_flag = ARI_BeiBangJia
-				}
-			}
-			NOT = {
-				original_tag = ARI
-			}
-		}
-		available = {
-			command_power > 29.9
-		}
+	# GST_YJ = {
+	# 	icon = generic_research
+	# 	priority = 10
+	# 	visible = {
+	# 		GEH = {
+	# 			any_character = {
+	# 				has_character_flag = ARI_BeiBangJia
+	# 			}
+	# 		}
+	# 		NOT = {
+	# 			original_tag = ARI
+	# 		}
+	# 	}
+	# 	available = {
+	# 		command_power > 29.9
+	# 	}
 
-		days_remove = 2
+	# 	days_remove = 2
 
-		complete_effect = {
-			add_command_power = -30
-		}
+	# 	complete_effect = {
+	# 		add_command_power = -30
+	# 	}
 
-		ai_will_do = {
-			base = 10
-		}
+	# 	ai_will_do = {
+	# 		base = 10
+	# 	}
 
-		remove_effect = {#营救决议
-			random_scope_in_array = {
-				array = global.ARI_ShouHaiZheMingDan_SAN
-				limit = { 
-					has_character_flag = ARI_BeiBangJia
-					has_nationality = GEH
-				}
-				custom_effect_tooltip = HELP_STU_LOC
-				hidden_effect = {
-					clr_character_flag = ARI_BeiBangJia
-					remove_from_array = {
-						array = global.ARI_ShouHaiZheMingDan_SAN
-						value = this
-					}
-				}
+	# 	remove_effect = {#营救决议
+	# 		random_scope_in_array = {
+	# 			array = global.ARI_ShouHaiZheMingDan_SAN
+	# 			limit = { 
+	# 				has_character_flag = ARI_BeiBangJia
+	# 				has_nationality = GEH
+	# 			}
+	# 			custom_effect_tooltip = HELP_STU_LOC
+	# 			hidden_effect = {
+	# 				clr_character_flag = ARI_BeiBangJia
+	# 				remove_from_array = {
+	# 					array = global.ARI_ShouHaiZheMingDan_SAN
+	# 					value = this
+	# 				}
+	# 			}
 				
-			}
-		}
-	}
+	# 		}
+	# 	}
+	# }
 
 }
 GST_LS_XC_DEBUFF_category = {
-	GST_TRI_advance_exploration = { #先遣勘探
+	# GST_TRI_advance_exploration = { #先遣勘探
+	# 	icon = generic_research
+	# 	priority = 11
+	# 	state_target = yes
+	# 	on_map_mode = map_only
+    # 	target_array = global.GST_JS_ZBH
+	# 	visible = {
+	# 		original_tag = TRI
+	# 		has_completed_focus = TRI_advance_exploration
+	# 	}
+	# 	target_trigger = {
+	# 		FROM = {
+	# 			is_owned_by = TRI
+	# 			NOT = {
+	# 				has_state_flag = TRI_advance_exploration
+	# 			}
+	# 		}
+	# 	}
+	# 	available = {
+	# 		command_power > 19.9
+	# 		has_manpower > 299
+	# 		has_equipment = { infantry_equipment > 299 }
+	# 		has_equipment = { support_equipment > 499 }
+	# 	}
+	# 	days_remove = 7
+	# 	complete_effect = {
+	# 		add_command_power = -20
+	# 		add_manpower = -300
+	# 		add_equipment_to_stockpile = {
+	# 			type = infantry_equipment
+	# 			amount = -300
+	# 		}
+	# 		add_equipment_to_stockpile = {
+	# 			type = support_equipment
+	# 			amount = -500
+	# 		}
+	# 	}
+	# 	remove_effect = {
+	# 		FROM = {
+	# 			set_state_flag = TRI_advance_exploration
+	# 		}
+	# 		if = {
+	# 			limit = {
+	# 				any_of_scopes = {
+	# 					array = global.ARI_ShouHaiZheMingDan_ER
+	# 					has_nationality = TRI
+	# 					NOT = { has_character_flag = TRI_character_found }
+	# 				}
+	# 			}
+	# 			hidden_effect = {
+	# 				random_scope_in_array = {
+	# 					array = global.ARI_ShouHaiZheMingDan_ER
+	# 					limit = {
+	# 						has_nationality = TRI
+	# 						NOT = { has_character_flag = TRI_character_found }
+	# 					}
+	# 					set_character_flag = TRI_character_found
+	# 					FROM = {
+	# 						set_variable = { GST_TRI_state_character = PREV }
+	# 					}
+	# 				}
+	# 			}
+				
+	# 			set_temp_variable = { TRI_unity_change = 1 }
+	# 			TRI_change_unity = yes
+	# 		}
+	# 		army_experience = 25
+	# 		if = {
+	# 			limit = { has_completed_focus = TRI_draw_a_blueprint }
+	# 			army_experience = 10
+	# 		}
+	# 		if = {
+	# 			limit = { has_completed_focus = TRI_emergency_rescue }
+	# 			set_temp_variable = { TRI_unity_change = 4 }
+	# 			TRI_change_unity = yes
+	# 		}
+	# 	}
+	# }
+	GST_Restore_Communication = {
 		icon = generic_research
-		priority = 11
-		state_target = yes
-		on_map_mode = map_only
-    	target_array = global.GST_JS_ZBH
+		priority = 10
+		activation = {
+			or = {
+				has_dynamic_modifier = {
+					modifier = Eden_treaty_War_dead_battle_TRI
+				}
+				has_dynamic_modifier = {
+					modifier = Eden_treaty_War_dead_battle_GEH
+				}
+			}
+		}
+		available = {
+			has_tech = Communication_Network_T3
+		}
+		days_mission_timeout = 30
+
+		timeout_effect = {
+			custom_effect_tooltip = GST_Restore_Communication_tt
+			add_to_variable = {
+				Eden_treaty_War_dead_battle_land_reinforce_rate = 0.05
+			}
+			add_to_variable = {
+				Eden_treaty_War_dead_battle_air_accidents_factor = -0.12
+			}
+			force_update_dynamic_modifier = yes
+		}
+		complete_effect = {
+			custom_effect_tooltip = GST_Restore_Communication_tt
+		}
+
+		is_good = yes
+	}
+
+
+	GST_Strengthen_Front_Line = {
+		visible = {
+			or = {
+				has_dynamic_modifier = {
+					modifier = Eden_treaty_War_dead_battle_TRI
+				}
+				has_dynamic_modifier = {
+					modifier = Eden_treaty_War_dead_battle_GEH
+				}
+			}
+		
+		}
+		cost = 75
+		fire_only_once = yes
+		available = {
+			command_power > 24.9
+			if = {
+				limit = {
+					original_tag = TRI
+				}
+				has_completed_focus = TRI_set_up_the_flag
+			}else_if = {
+				limit = {
+					original_tag = GEH
+				}
+				or = {
+					has_completed_focus = GEH_Gather_the_troops
+					has_completed_focus = GEH_Emergency_Rescue
+				}
+
+			}
+		}
+		days_remove = 45
+		complete_effect = {
+			add_command_power = -25
+		}
+		modifier = {
+			land_reinforce_rate = 0.05
+			army_org_factor = 0.15
+			army_defence_factor = 0.2
+			ground_attack_factor = 0.15
+			army_attack_factor = -0.05
+			army_strength_factor = -0.15
+		}
+
+		remove_effect = {
+			
+
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+
+	GST_Dispatch_Reserve_Officer = {
+		visible = {
+			or = {
+				has_dynamic_modifier = {
+					modifier = Eden_treaty_War_dead_battle_TRI
+				}
+				has_dynamic_modifier = {
+					modifier = Eden_treaty_War_dead_battle_GEH
+				}
+			}
+		
+		}
+		cost = 50
+		fire_only_once = yes
+		available = {
+			
+		}
+		days_remove = 30
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			custom_effect_tooltip = GST_Dispatch_Reserve_Officer_tt
+
+			set_variable = {
+				Eden_treaty_War_dead_battle_max_planning_factor = 0.15
+			}
+			set_variable = {
+				Eden_treaty_War_dead_battle_army_core_attack_factor = 0.05
+			}
+			set_variable = {
+				Eden_treaty_War_dead_battle_army_core_defence_factor = 0.05
+			}
+			set_variable = {
+				Eden_treaty_War_dead_battle_army_morale_factor = 0.05
+			}
+			force_update_dynamic_modifier = yes
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+
+
+	GST_TRI_rescue_student = {
 		visible = {
 			original_tag = TRI
+			any_character = {
+				has_character_flag = ARI_BeiBangJia
+			}
 			has_completed_focus = TRI_advance_exploration
 		}
-		target_trigger = {
-			FROM = {
-				is_owned_by = TRI
-				NOT = {
-					has_state_flag = TRI_advance_exploration
-				}
-			}
-		}
 		available = {
 			command_power > 19.9
 			has_manpower > 299
 			has_equipment = { infantry_equipment > 299 }
 			has_equipment = { support_equipment > 499 }
 		}
-		days_remove = 7
-		complete_effect = {
-			add_command_power = -20
-			add_manpower = -300
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = -300
-			}
-			add_equipment_to_stockpile = {
-				type = support_equipment
-				amount = -500
-			}
-		}
-		remove_effect = {
-			FROM = {
-				set_state_flag = TRI_advance_exploration
-			}
-			if = {
-				limit = {
-					any_of_scopes = {
-						array = global.ARI_ShouHaiZheMingDan_ER
-						has_nationality = TRI
-						NOT = { has_character_flag = TRI_character_found }
-					}
-				}
-				hidden_effect = {
-					random_scope_in_array = {
-						array = global.ARI_ShouHaiZheMingDan_ER
-						limit = {
-							has_nationality = TRI
-							NOT = { has_character_flag = TRI_character_found }
-						}
-						set_character_flag = TRI_character_found
-						FROM = {
-							set_variable = { GST_TRI_state_character = PREV }
-						}
-					}
-				}
-				
-				set_temp_variable = { TRI_unity_change = 1 }
-				TRI_change_unity = yes
-			}
-			army_experience = 25
-			if = {
-				limit = { has_completed_focus = TRI_draw_a_blueprint }
-				army_experience = 10
-			}
-			if = {
-				limit = { has_completed_focus = TRI_emergency_rescue }
-				set_temp_variable = { TRI_unity_change = 4 }
-				TRI_change_unity = yes
-			}
-		}
-	}
-	GST_TRI_rescue_student = {
-		state_target = yes
-		on_map_mode = map_and_decisions_view
-    	target_array = global.GST_JS_ZBH
-		target_trigger = {
-			FROM = {
-				has_variable = GST_TRI_state_character
-				var:GST_TRI_state_character = {
-					has_character_flag = ARI_BeiBangJia
-				}
-			}
-		}
-		visible = {
-			original_tag = TRI
-		}
-		available = {
-			all_owned_state = {
-				has_state_flag = TRI_advance_exploration
-			}
-			command_power > 19.9
-			has_manpower > 299
-			has_equipment = { infantry_equipment > 299 }
-			has_equipment = { support_equipment > 499 }
-		}
-		days_remove = 20
+		days_remove = 30
 		complete_effect = {
 			add_command_power = -30
 			add_manpower = -300
@@ -1170,122 +1298,263 @@ GST_LS_XC_DEBUFF_category = {
 			}
 		}
 		remove_effect = {
-			var:FROM.GST_TRI_state_character = {
-				custom_effect_tooltip = HELP_STU_LOC
-				hidden_effect = {
-					clr_character_flag = TRI_character_found
-					clr_character_flag = ARI_BeiBangJia
-					remove_from_array = {
-						array = global.ARI_ShouHaiZheMingDan_SAN
-						value = this
+			TRI = {
+				random_character = {
+					limit = {
+						has_character_flag = ARI_BeiBangJia
 					}
-					remove_from_array = {
-						array = global.ARI_ShouHaiZheMingDan_ER
-						value = this
+					custom_effect_tooltip = HELP_STU_LOC
+					hidden_effect = {
+						clr_character_flag = ARI_BeiBangJia
 					}
+					
 				}
-				
 			}
+		}
+
+		ai_will_do = {
+			factor = 5
+
 		}
 	}
 
 
-	GST_GEH_advance_exploration = { #先遣勘探
-		icon = generic_research
-		priority = 11
-		state_target = yes
-		on_map_mode = map_only
-    	target_array = global.GST_JS_ZBH
+	GST_TRI_they_shall_not_pass = {
 		visible = {
-			original_tag = GEH
-			has_completed_focus = GEH_advance_exploration
-			FROM = {
-				is_in_array = {
-					array = global.GST_JS_ZBH
-					value = THIS
-				}
-				is_owned_by = GEH
-				NOT = {
-					has_state_flag = GEH_advance_exploration
-				}
+			has_dynamic_modifier = {
+				modifier = Eden_treaty_War_dead_battle_TRI
 			}
+			has_completed_focus = TRI_set_up_the_flag
+		
 		}
-		available = {
-			command_power > 19.9
-			has_manpower > 299
-			has_equipment = { infantry_equipment > 299 }
-			has_equipment = { support_equipment > 499 }
-		}
-		days_remove = 7
-		complete_effect = {
-			add_command_power = -20
-			add_manpower = -300
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = -300
-			}
-			add_equipment_to_stockpile = {
-				type = support_equipment
-				amount = -500
-			}
-		}
-		remove_effect = {
-			FROM = {
-				set_state_flag = GEH_advance_exploration
-			}
-			if = {
-				limit = {
-					any_of_scopes = {
-						array = global.ARI_ShouHaiZheMingDan_ER
-						has_nationality = GEH
-						NOT = { has_character_flag = GEH_character_found }
-					}
-				}
-				hidden_effect = {
-					random_scope_in_array = {
-						array = global.ARI_ShouHaiZheMingDan_ER
-						limit = {
-							has_nationality = GEH
-							NOT = { has_character_flag = GEH_character_found }
-						}
-						set_character_flag = GEH_character_found
-						FROM = {
-							set_variable = { GST_GEH_state_character = PREV }
-						}
-					}
-				}
-				
-				set_temp_variable = { GEH_unity_change = 1 }
-				GEH_change_unity = yes
-			}
-			army_experience = 25
+		cost = 20
+		fire_only_once = yes
+
+		days_remove = 60
+		days_re_enable = 60
+
+
+		modifier = {
+			dig_in_speed_factor = 1
+			army_strength_factor = 0.15
+			army_core_attack_factor = 0.075
+			army_core_defence_factor = 0.075
 		}
 	}
+
+
+	GST_TRI_they_shall_not_pass = {
+		visible = {
+			has_dynamic_modifier = {
+				modifier = Eden_treaty_War_dead_battle_TRI
+			}
+			has_completed_focus = TRI_set_up_the_flag
+		
+		}
+		cost = 20
+
+		days_remove = 60
+		days_re_enable = 60
+
+
+		modifier = {
+			dig_in_speed_factor = 1
+			army_strength_factor = 0.15
+			army_core_attack_factor = 0.075
+			army_core_defence_factor = 0.075
+		}
+	}
+
+	GST_TRI_flag_to_victory = {
+		visible = {
+			has_dynamic_modifier = {
+				modifier = Eden_treaty_War_dead_battle_TRI
+			}
+			has_completed_focus = TRI_restrain_the_disaster
+		
+		}
+		fire_only_once = yes
+
+		days_remove = 120
+
+
+		modifier = {
+			breakthrough_factor = 0.15
+			ground_attack_factor = 0.15
+			army_org_factor = 0.1
+			army_core_attack_factor = 0.25
+			army_core_defence_factor = 0.25
+			land_reinforce_rate = -0.03
+			supply_consumption_factor = -0.1
+		}
+	}
+
+
+	GST_GEH_prevent_losses = {
+		visible = {
+			has_dynamic_modifier = {
+				modifier = Eden_treaty_War_dead_battle_GEH
+			}
+			or = {
+				has_completed_focus = GEH_Gather_the_troops
+				has_completed_focus = GEH_Emergency_Rescue
+			}
+		
+		}
+
+		cost = 25
+		days_remove = 90
+		days_re_enable = 150
+
+
+		modifier = {
+			army_strength_factor = 0.25
+			army_defence_factor = 0.15
+			army_morale_factor = 0.3
+			attrition = -0.15
+			experience_loss_factor = -0.15
+		}
+	}
+
+
+	GST_GEH_do_one_best = {
+		visible = {
+			has_dynamic_modifier = {
+				modifier = Eden_treaty_War_dead_battle_GEH
+			}
+			has_completed_focus = GEH_spare_no_effort
+		
+		}
+
+		available = {
+			command_power > 24.9
+		}
+
+		days_remove = 60
+		days_re_enable = 120
+
+
+		modifier = {
+			army_attack_factor = 0.15
+			breakthrough_factor = 0.2
+			land_reinforce_rate = 0.03
+			army_strength_factor = -0.1
+			army_org_factor = -0.15
+		}
+
+		complete_effect = {
+			add_command_power = -25
+		}
+	}
+
+
+	GST_GEH_expel_war = {
+		visible = {
+			has_dynamic_modifier = {
+				modifier = Eden_treaty_War_dead_battle_GEH
+			}
+			has_completed_focus = GEH_spare_no_effort
+		
+		}
+
+		cost = 25
+		days_remove = 120
+		fire_only_once = yes
+
+		modifier = {
+			breakthrough_factor = 0.15
+			land_reinforce_rate = 0.05
+			combat_width_factor = -0.25
+		}
+	}
+
+
+	# GST_GEH_advance_exploration = { #先遣勘探
+	# 	icon = generic_research
+	# 	priority = 11
+	# 	state_target = yes
+	# 	on_map_mode = map_only
+    # 	target_array = global.GST_JS_ZBH
+	# 	visible = {
+	# 		original_tag = GEH
+	# 		has_completed_focus = GEH_advance_exploration
+	# 		FROM = {
+	# 			is_in_array = {
+	# 				array = global.GST_JS_ZBH
+	# 				value = THIS
+	# 			}
+	# 			is_owned_by = GEH
+	# 			NOT = {
+	# 				has_state_flag = GEH_advance_exploration
+	# 			}
+	# 		}
+	# 	}
+	# 	available = {
+	# 		command_power > 19.9
+	# 		has_manpower > 299
+	# 		has_equipment = { infantry_equipment > 299 }
+	# 		has_equipment = { support_equipment > 499 }
+	# 	}
+	# 	days_remove = 7
+	# 	complete_effect = {
+	# 		add_command_power = -20
+	# 		add_manpower = -300
+	# 		add_equipment_to_stockpile = {
+	# 			type = infantry_equipment
+	# 			amount = -300
+	# 		}
+	# 		add_equipment_to_stockpile = {
+	# 			type = support_equipment
+	# 			amount = -500
+	# 		}
+	# 	}
+	# 	remove_effect = {
+	# 		FROM = {
+	# 			set_state_flag = GEH_advance_exploration
+	# 		}
+	# 		if = {
+	# 			limit = {
+	# 				any_of_scopes = {
+	# 					array = global.ARI_ShouHaiZheMingDan_ER
+	# 					has_nationality = GEH
+	# 					NOT = { has_character_flag = GEH_character_found }
+	# 				}
+	# 			}
+	# 			hidden_effect = {
+	# 				random_scope_in_array = {
+	# 					array = global.ARI_ShouHaiZheMingDan_ER
+	# 					limit = {
+	# 						has_nationality = GEH
+	# 						NOT = { has_character_flag = GEH_character_found }
+	# 					}
+	# 					set_character_flag = GEH_character_found
+	# 					FROM = {
+	# 						set_variable = { GST_GEH_state_character = PREV }
+	# 					}
+	# 				}
+	# 			}
+				
+	# 			set_temp_variable = { GEH_unity_change = 1 }
+	# 			GEH_change_unity = yes
+	# 		}
+	# 		army_experience = 25
+	# 	}
+	# }
 	GST_GEH_rescue_student = {
-		state_target = yes
-		on_map_mode = map_and_decisions_view
-    	target_array = global.GST_JS_ZBH
-		target_GEHgger = {
-			FROM = {
-				has_variable = GST_GEH_state_character
-				var:GST_GEH_state_character = {
-					has_character_flag = ARI_BeiBangJia
-				}
-			}
-		}
 		visible = {
 			original_tag = GEH
+			has_completed_focus = GEH_Emergency_Rescue
+			any_character = {
+				has_character_flag = ARI_BeiBangJia
+			}
 		}
 		available = {
-			all_owned_state = {
-				has_state_flag = GEH_advance_exploration
-			}
 			command_power > 19.9
 			has_manpower > 299
 			has_equipment = { infantry_equipment > 299 }
 			has_equipment = { support_equipment > 499 }
 		}
-		days_remove = 20
+		days_remove = 30
 		complete_effect = {
 			add_command_power = -30
 			add_manpower = -300
@@ -1299,406 +1568,412 @@ GST_LS_XC_DEBUFF_category = {
 			}
 		}
 		remove_effect = {
-			var:FROM.GST_GEH_state_character = {
-				custom_effect_tooltip = HELP_STU_LOC
-				hidden_effect = {
-					clr_character_flag = GEH_character_found
-					clr_character_flag = ARI_BeiBangJia
-					remove_from_array = {
-						array = global.ARI_ShouHaiZheMingDan_SAN
-						value = this
+			GEH = {
+				random_character = {
+					limit = {
+						has_character_flag = ARI_BeiBangJia
 					}
-					remove_from_array = {
-						array = global.ARI_ShouHaiZheMingDan_ER
-						value = this
+					custom_effect_tooltip = HELP_STU_LOC
+					hidden_effect = {
+						clr_character_flag = ARI_BeiBangJia
 					}
-				}
-				
-			}
-		}
-	}
-
-
-
-
-
-
-	GST_XC_DM_JingPiLiJie = { #消除精疲力竭 - 主动
-		icon = generic_research
-		priority = 11
-		state_target = yes #这是州定向决议
-    	target_array = global.GST_JS_ZBH
-		on_map_mode = map_and_decisions_view
-    	target_trigger = {
-			FROM = {
-				has_dynamic_modifier = {
-					modifier = TRI_ARI_GEH_JingPiLiJie
-					scope = ARI
-				}
-			}
-			if = {
-				limit = {
-					original_tag = TRI
-					FROM = { is_owned_by = TRI }
-				}
-				FROM = {
-					has_state_flag = TRI_advance_exploration
-				}
-			}
-    	}
-		visible = {
-			FROM = {
-				OR = { #检测该州是否有部队存在
-					is_controlled_by_ROOT_or_subject = yes
-					ROOT = {
-						divisions_in_state = {
-							size > 0
-							state = FROM
-						}
-					}
-					any_neighbor_state = { #检测该州周围是否有部队存在
-						OR = {
-							ROOT = {
-								divisions_in_state = {
-									size > 0
-									state = prev
-								}
-							}
-							is_controlled_by_ROOT_or_subject = yes
-						}
-					}
-				}
-			}
-		}
-		available = {
-			command_power > 14.9
-		}
-		days_remove = 21
-		complete_effect = {
-			add_command_power = -15
-		}
-
-		remove_effect = {
-			FROM = {
-				remove_dynamic_modifier = {
-					modifier = TRI_ARI_GEH_JingPiLiJie
-					scope = ARI
-				}
-				hidden_effect = {
-					remove_dynamic_modifier = {
-						modifier = TRI_ARI_GEH_JingPiLiJie
-						scope = TRI
-					}
-					remove_dynamic_modifier = {
-						modifier = TRI_ARI_GEH_JingPiLiJie
-						scope = GEH
-					}
-				}
-				
-			}
-		}
-		cancel_trigger = {
-			NOT = {
-				FROM = {
-					OR = { #检测该州是否有部队存在
-						is_controlled_by_ROOT_or_subject = yes
-						ROOT = {
-							divisions_in_state = {
-								size > 0
-								state = FROM
-							}
-						}
-						any_neighbor_state = { #检测该州周围是否有部队存在
-							OR = {
-								ROOT = {
-									divisions_in_state = {
-										size > 0
-										state = prev
-									}
-								}
-								is_controlled_by_ROOT_or_subject = yes
-							}
-						}
-					}
+					
 				}
 			}
 			
 		}
+
 		ai_will_do = {
-			base = 2
-			modifier = {
-				factor = 3
-				command_power > 50
-			}
-		}
-	}
-	GST_XC_DM_JingPiLiJie_AUTO = { #消除精疲力竭 - 自动
-		icon = generic_research
-		priority = 11
-		state_target = yes #这是州定向决议
-    	target_array = global.GST_JS_ZBH
-		on_map_mode = map_and_decisions_view
-    	target_trigger = {
-			FROM = {
-				has_dynamic_modifier = { modifier = TRI_ARI_GEH_JingPiLiJie }
-			}
-			if = {
-				limit = {
-					original_tag = TRI
-					FROM = { is_owned_by = TRI }
-				}
-				FROM = {
-					has_state_flag = TRI_advance_exploration
-				}
-			}
-    	}
-		visible = { #完全控制
-			FROM = {
-				OR = { #检测该州是否有部队存在
-					is_controlled_by_ROOT_or_subject = yes
-					ROOT = {
-						divisions_in_state = {
-							size > 0
-							state = FROM
-						}
-					}
-					any_neighbor_state = { #检测该州周围是否有部队存在
-						ROOT = {
-							divisions_in_state = {
-								size > 0
-								state = prev
-							}
-						}
-					}
-				}
-			}
-		}
-		days_remove = 90
-		remove_effect = {
-			FROM = {
-				custom_effect_tooltip = CW_fully_controlled_90_days
-				remove_dynamic_modifier = {
-					modifier = TRI_ARI_GEH_JingPiLiJie
-					scope = ARI
-				}
-				hidden_effect = {
-					remove_dynamic_modifier = {
-						modifier = TRI_ARI_GEH_JingPiLiJie
-						scope = TRI
-					}
-					remove_dynamic_modifier = {
-						modifier = TRI_ARI_GEH_JingPiLiJie
-						scope = GEH
-					}
-				}
-				
-			}
-		}
-		cancel_trigger = {
-			NOT = {
-				FROM = {
-					OR = {
-						is_fully_controlled_by = ROOT
-					}
-				}
-				any_subject_country = {
-					has_full_control_of_state = FROM
-				}
-			}
-		}
-		ai_will_do = {
-			base = 100
+			factor = 5
+
 		}
 	}
 
 
 
-	GST_XC_DM_JingPiLiJie_GEH = { #消除精疲力竭 - 主动
-		icon = generic_research
-		priority = 11
-		state_target = yes #这是州定向决议
-    	target_array = global.GST_JS_ZBH
-		on_map_mode = map_and_decisions_view
-    	target_trigger = {
-			FROM = {
-				has_dynamic_modifier = { modifier = TRI_ARI_GEH_JingPiLiJie }
-			}
-			if = {
-				limit = {
-					original_tag = GEH
-					has_completed_focus = GEH_Focus_attack
-					FROM = { is_owned_by = GEH }
-				}
-				FROM = {
-					has_state_flag = GEH_advance_exploration
-				}
-			}
-    	}
-		visible = {
+	
 
-			FROM = {
-				OR = { #检测该州是否有部队存在
-					is_controlled_by_ROOT_or_subject = yes
-					ROOT = {
-						divisions_in_state = {
-							size > 0
-							state = FROM
-						}
-					}
-					any_neighbor_state = { #检测该州周围是否有部队存在
-						OR = {
-							ROOT = {
-								divisions_in_state = {
-									size > 0
-									state = prev
-								}
-							}
-							is_controlled_by_ROOT_or_subject = yes
-						}
-					}
-				}
-			}
-		}
-		available = {
-			command_power > 14.9
-		}
-		days_remove = 21
-		complete_effect = {
-			add_command_power = -15
-		}
 
-		remove_effect = {
-			FROM = {
-				remove_dynamic_modifier = {
-					modifier = TRI_ARI_GEH_JingPiLiJie
-					scope = ARI
-				}
-				hidden_effect = {
-					remove_dynamic_modifier = {
-						modifier = TRI_ARI_GEH_JingPiLiJie
-						scope = TRI
-					}
-					remove_dynamic_modifier = {
-						modifier = TRI_ARI_GEH_JingPiLiJie
-						scope = GEH
-					}
-				}
+
+
+
+
+	# GST_XC_DM_JingPiLiJie = { #消除精疲力竭 - 主动
+	# 	icon = generic_research
+	# 	priority = 11
+	# 	state_target = yes #这是州定向决议
+    # 	target_array = global.GST_JS_ZBH
+	# 	on_map_mode = map_and_decisions_view
+    # 	target_trigger = {
+	# 		FROM = {
+	# 			has_dynamic_modifier = {
+	# 				modifier = TRI_ARI_GEH_JingPiLiJie
+	# 				scope = ARI
+	# 			}
+	# 		}
+	# 		if = {
+	# 			limit = {
+	# 				original_tag = TRI
+	# 				FROM = { is_owned_by = TRI }
+	# 			}
+	# 			FROM = {
+	# 				has_state_flag = TRI_advance_exploration
+	# 			}
+	# 		}
+    # 	}
+	# 	visible = {
+	# 		FROM = {
+	# 			OR = { #检测该州是否有部队存在
+	# 				is_controlled_by_ROOT_or_subject = yes
+	# 				ROOT = {
+	# 					divisions_in_state = {
+	# 						size > 0
+	# 						state = FROM
+	# 					}
+	# 				}
+	# 				any_neighbor_state = { #检测该州周围是否有部队存在
+	# 					OR = {
+	# 						ROOT = {
+	# 							divisions_in_state = {
+	# 								size > 0
+	# 								state = prev
+	# 							}
+	# 						}
+	# 						is_controlled_by_ROOT_or_subject = yes
+	# 					}
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	available = {
+	# 		command_power > 14.9
+	# 	}
+	# 	days_remove = 21
+	# 	complete_effect = {
+	# 		add_command_power = -15
+	# 	}
+
+	# 	remove_effect = {
+	# 		FROM = {
+	# 			remove_dynamic_modifier = {
+	# 				modifier = TRI_ARI_GEH_JingPiLiJie
+	# 				scope = ARI
+	# 			}
+	# 			hidden_effect = {
+	# 				remove_dynamic_modifier = {
+	# 					modifier = TRI_ARI_GEH_JingPiLiJie
+	# 					scope = TRI
+	# 				}
+	# 				remove_dynamic_modifier = {
+	# 					modifier = TRI_ARI_GEH_JingPiLiJie
+	# 					scope = GEH
+	# 				}
+	# 			}
 				
-			}
-		}
-		cancel_trigger = {
-			NOT = {
-				FROM = {
-					OR = { #检测该州是否有部队存在
-						is_controlled_by_ROOT_or_subject = yes
-						ROOT = {
-							divisions_in_state = {
-								size > 0
-								state = FROM
-							}
-						}
-						any_neighbor_state = { #检测该州周围是否有部队存在
-							OR = {
-								ROOT = {
-									divisions_in_state = {
-										size > 0
-										state = prev
-									}
-								}
-								is_controlled_by_ROOT_or_subject = yes
-							}
-						}
-					}
-				}
-			}
+	# 		}
+	# 	}
+	# 	cancel_trigger = {
+	# 		NOT = {
+	# 			FROM = {
+	# 				OR = { #检测该州是否有部队存在
+	# 					is_controlled_by_ROOT_or_subject = yes
+	# 					ROOT = {
+	# 						divisions_in_state = {
+	# 							size > 0
+	# 							state = FROM
+	# 						}
+	# 					}
+	# 					any_neighbor_state = { #检测该州周围是否有部队存在
+	# 						OR = {
+	# 							ROOT = {
+	# 								divisions_in_state = {
+	# 									size > 0
+	# 									state = prev
+	# 								}
+	# 							}
+	# 							is_controlled_by_ROOT_or_subject = yes
+	# 						}
+	# 					}
+	# 				}
+	# 			}
+	# 		}
 			
-		}
-		ai_will_do = {
-			base = 2
-			modifier = {
-				factor = 3
-				command_power > 50
-			}
-		}
-	}
-	GST_XC_DM_JingPiLiJie_AUTO_GEH = { #消除精疲力竭 - 自动
-		icon = generic_research
-		priority = 11
-		state_target = yes #这是州定向决议
-    	target_array = global.GST_JS_ZBH
-		on_map_mode = map_and_decisions_view
-    	target_trigger = {
-			FROM = {
-				has_dynamic_modifier = { modifier = TRI_ARI_GEH_JingPiLiJie }
-			}
-			if = {
-				limit = {
-					original_tag = GEH
-					FROM = { is_owned_by = GEH }
-				}
-				FROM = {
-					has_state_flag = GEH_advance_exploration
-				}
-			}
-    	}
-		visible = { #完全控制
-			FROM = {
-				OR = { #检测该州是否有部队存在
-					is_controlled_by_ROOT_or_subject = yes
-					ROOT = {
-						divisions_in_state = {
-							size > 0
-							state = FROM
-						}
-					}
-					any_neighbor_state = { #检测该州周围是否有部队存在
-						ROOT = {
-							divisions_in_state = {
-								size > 0
-								state = prev
-							}
-						}
-					}
-				}
-			}
-		}
-		days_remove = 90
-		remove_effect = {
-			FROM = {
-				custom_effect_tooltip = CW_fully_controlled_90_days
-				remove_dynamic_modifier = {
-					modifier = TRI_ARI_GEH_JingPiLiJie
-					scope = ARI
-				}
-				hidden_effect = {
-					remove_dynamic_modifier = {
-						modifier = TRI_ARI_GEH_JingPiLiJie
-						scope = TRI
-					}
-					remove_dynamic_modifier = {
-						modifier = TRI_ARI_GEH_JingPiLiJie
-						scope = GEH
-					}
-				}
+	# 	}
+	# 	ai_will_do = {
+	# 		base = 2
+	# 		modifier = {
+	# 			factor = 3
+	# 			command_power > 50
+	# 		}
+	# 	}
+	# }
+	# GST_XC_DM_JingPiLiJie_AUTO = { #消除精疲力竭 - 自动
+	# 	icon = generic_research
+	# 	priority = 11
+	# 	state_target = yes #这是州定向决议
+    # 	target_array = global.GST_JS_ZBH
+	# 	on_map_mode = map_and_decisions_view
+    # 	target_trigger = {
+	# 		FROM = {
+	# 			has_dynamic_modifier = { modifier = TRI_ARI_GEH_JingPiLiJie }
+	# 		}
+	# 		if = {
+	# 			limit = {
+	# 				original_tag = TRI
+	# 				FROM = { is_owned_by = TRI }
+	# 			}
+	# 			FROM = {
+	# 				has_state_flag = TRI_advance_exploration
+	# 			}
+	# 		}
+    # 	}
+	# 	visible = { #完全控制
+	# 		FROM = {
+	# 			OR = { #检测该州是否有部队存在
+	# 				is_controlled_by_ROOT_or_subject = yes
+	# 				ROOT = {
+	# 					divisions_in_state = {
+	# 						size > 0
+	# 						state = FROM
+	# 					}
+	# 				}
+	# 				any_neighbor_state = { #检测该州周围是否有部队存在
+	# 					ROOT = {
+	# 						divisions_in_state = {
+	# 							size > 0
+	# 							state = prev
+	# 						}
+	# 					}
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	days_remove = 90
+	# 	remove_effect = {
+	# 		FROM = {
+	# 			custom_effect_tooltip = CW_fully_controlled_90_days
+	# 			remove_dynamic_modifier = {
+	# 				modifier = TRI_ARI_GEH_JingPiLiJie
+	# 				scope = ARI
+	# 			}
+	# 			hidden_effect = {
+	# 				remove_dynamic_modifier = {
+	# 					modifier = TRI_ARI_GEH_JingPiLiJie
+	# 					scope = TRI
+	# 				}
+	# 				remove_dynamic_modifier = {
+	# 					modifier = TRI_ARI_GEH_JingPiLiJie
+	# 					scope = GEH
+	# 				}
+	# 			}
 				
-			}
-		}
-		cancel_trigger = {
-			NOT = {
-				FROM = {
-					OR = {
-						is_fully_controlled_by = ROOT
-					}
-				}
-				any_subject_country = {
-					has_full_control_of_state = FROM
-				}
-			}
-		}
-		ai_will_do = {
-			base = 100
-		}
-	}
+	# 		}
+	# 	}
+	# 	cancel_trigger = {
+	# 		NOT = {
+	# 			FROM = {
+	# 				OR = {
+	# 					is_fully_controlled_by = ROOT
+	# 				}
+	# 			}
+	# 			any_subject_country = {
+	# 				has_full_control_of_state = FROM
+	# 			}
+	# 		}
+	# 	}
+	# 	ai_will_do = {
+	# 		base = 100
+	# 	}
+	# }
+
+
+
+	# GST_XC_DM_JingPiLiJie_GEH = { #消除精疲力竭 - 主动
+	# 	icon = generic_research
+	# 	priority = 11
+	# 	state_target = yes #这是州定向决议
+    # 	target_array = global.GST_JS_ZBH
+	# 	on_map_mode = map_and_decisions_view
+    # 	target_trigger = {
+	# 		FROM = {
+	# 			has_dynamic_modifier = { modifier = TRI_ARI_GEH_JingPiLiJie }
+	# 		}
+	# 		if = {
+	# 			limit = {
+	# 				original_tag = GEH
+	# 				has_completed_focus = GEH_Focus_attack
+	# 				FROM = { is_owned_by = GEH }
+	# 			}
+	# 			FROM = {
+	# 				has_state_flag = GEH_advance_exploration
+	# 			}
+	# 		}
+    # 	}
+	# 	visible = {
+
+	# 		FROM = {
+	# 			OR = { #检测该州是否有部队存在
+	# 				is_controlled_by_ROOT_or_subject = yes
+	# 				ROOT = {
+	# 					divisions_in_state = {
+	# 						size > 0
+	# 						state = FROM
+	# 					}
+	# 				}
+	# 				any_neighbor_state = { #检测该州周围是否有部队存在
+	# 					OR = {
+	# 						ROOT = {
+	# 							divisions_in_state = {
+	# 								size > 0
+	# 								state = prev
+	# 							}
+	# 						}
+	# 						is_controlled_by_ROOT_or_subject = yes
+	# 					}
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	available = {
+	# 		command_power > 14.9
+	# 	}
+	# 	days_remove = 21
+	# 	complete_effect = {
+	# 		add_command_power = -15
+	# 	}
+
+	# 	remove_effect = {
+	# 		FROM = {
+	# 			remove_dynamic_modifier = {
+	# 				modifier = TRI_ARI_GEH_JingPiLiJie
+	# 				scope = ARI
+	# 			}
+	# 			hidden_effect = {
+	# 				remove_dynamic_modifier = {
+	# 					modifier = TRI_ARI_GEH_JingPiLiJie
+	# 					scope = TRI
+	# 				}
+	# 				remove_dynamic_modifier = {
+	# 					modifier = TRI_ARI_GEH_JingPiLiJie
+	# 					scope = GEH
+	# 				}
+	# 			}
+				
+	# 		}
+	# 	}
+	# 	cancel_trigger = {
+	# 		NOT = {
+	# 			FROM = {
+	# 				OR = { #检测该州是否有部队存在
+	# 					is_controlled_by_ROOT_or_subject = yes
+	# 					ROOT = {
+	# 						divisions_in_state = {
+	# 							size > 0
+	# 							state = FROM
+	# 						}
+	# 					}
+	# 					any_neighbor_state = { #检测该州周围是否有部队存在
+	# 						OR = {
+	# 							ROOT = {
+	# 								divisions_in_state = {
+	# 									size > 0
+	# 									state = prev
+	# 								}
+	# 							}
+	# 							is_controlled_by_ROOT_or_subject = yes
+	# 						}
+	# 					}
+	# 				}
+	# 			}
+	# 		}
+			
+	# 	}
+	# 	ai_will_do = {
+	# 		base = 2
+	# 		modifier = {
+	# 			factor = 3
+	# 			command_power > 50
+	# 		}
+	# 	}
+	# }
+	# GST_XC_DM_JingPiLiJie_AUTO_GEH = { #消除精疲力竭 - 自动
+	# 	icon = generic_research
+	# 	priority = 11
+	# 	state_target = yes #这是州定向决议
+    # 	target_array = global.GST_JS_ZBH
+	# 	on_map_mode = map_and_decisions_view
+    # 	target_trigger = {
+	# 		FROM = {
+	# 			has_dynamic_modifier = { modifier = TRI_ARI_GEH_JingPiLiJie }
+	# 		}
+	# 		if = {
+	# 			limit = {
+	# 				original_tag = GEH
+	# 				FROM = { is_owned_by = GEH }
+	# 			}
+	# 			FROM = {
+	# 				has_state_flag = GEH_advance_exploration
+	# 			}
+	# 		}
+    # 	}
+	# 	visible = { #完全控制
+	# 		FROM = {
+	# 			OR = { #检测该州是否有部队存在
+	# 				is_controlled_by_ROOT_or_subject = yes
+	# 				ROOT = {
+	# 					divisions_in_state = {
+	# 						size > 0
+	# 						state = FROM
+	# 					}
+	# 				}
+	# 				any_neighbor_state = { #检测该州周围是否有部队存在
+	# 					ROOT = {
+	# 						divisions_in_state = {
+	# 							size > 0
+	# 							state = prev
+	# 						}
+	# 					}
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	days_remove = 90
+	# 	remove_effect = {
+	# 		FROM = {
+	# 			custom_effect_tooltip = CW_fully_controlled_90_days
+	# 			remove_dynamic_modifier = {
+	# 				modifier = TRI_ARI_GEH_JingPiLiJie
+	# 				scope = ARI
+	# 			}
+	# 			hidden_effect = {
+	# 				remove_dynamic_modifier = {
+	# 					modifier = TRI_ARI_GEH_JingPiLiJie
+	# 					scope = TRI
+	# 				}
+	# 				remove_dynamic_modifier = {
+	# 					modifier = TRI_ARI_GEH_JingPiLiJie
+	# 					scope = GEH
+	# 				}
+	# 			}
+				
+	# 		}
+	# 	}
+	# 	cancel_trigger = {
+	# 		NOT = {
+	# 			FROM = {
+	# 				OR = {
+	# 					is_fully_controlled_by = ROOT
+	# 				}
+	# 			}
+	# 			any_subject_country = {
+	# 				has_full_control_of_state = FROM
+	# 			}
+	# 		}
+	# 	}
+	# 	ai_will_do = {
+	# 		base = 100
+	# 	}
+	# }
 
 
 	

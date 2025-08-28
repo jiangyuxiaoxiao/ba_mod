@@ -21,7 +21,7 @@
  GST_TRI_advance_exploration: "先遣侦察"
  GST_TRI_rescue_student: "营救§Y[?FROM.TRI_state_character.GetName]§!"
  GST_GEH_advance_exploration: "先遣侦察"
- GST_GEH_rescue_student: "营救§Y[?FROM.TRI_state_character.GetName]§!"
+ GST_GEH_rescue_student: "营救受困的格黑娜领导层"
  GST_XC_DM_JingPiLiJie: "组织在§Y[FROM.GetName]§!的作战"
  GST_XC_DM_JingPiLiJie_AUTO: "确保对§Y[FROM.GetName]§!的完全控制"
  GST_XC_DM_JingPiLiJie_GEH: "组织在§Y[FROM.GetName]§!的作战"
@@ -55,3 +55,17 @@
 
 GST_ZZ_ARI_ZHYB_TS_JDRW: "仪式准备-控制领土"
 GST_ZZ_ARI_ZHYB_TS_JDRW_desc: "尽可能控制多的领土，这样我们就有更多的“祭品”完成仪式，每控制一块领土，每月进度将上升1%"
+
+
+GST_Restore_Communication: "重建通讯网络"
+GST_Restore_Communication_tt: "$Eden_treaty_War_dead_battle_GEH$效果修正：\n增援率：§G+5.00%§!\n空军事故概率：§G-12.00%§!"
+GST_Dispatch_Reserve_Officer: "调度预备军官"
+GST_Dispatch_Reserve_Officer_tt: "$Eden_treaty_War_dead_battle_GEH$效果修正：\n计划上限：§G+15.00%§!\n陆军核心领土攻击：§G+5.00%§!\n陆军核心领土防御：§G+5.00%§!\n陆军组织度恢复：§G+10.00%§!"
+
+GST_Strengthen_Front_Line: "稳固战线"
+GST_TRI_they_shall_not_pass: "她们无法通过"
+GST_TRI_flag_to_victory: "把胜利的旗帜插到古圣堂去！"
+
+GST_GEH_prevent_losses: "遏止损失"
+GST_GEH_do_one_best: "尽人所能"
+GST_GEH_expel_war: "将灾祸关回魔盒中！"

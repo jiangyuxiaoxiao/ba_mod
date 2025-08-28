@@ -7,6 +7,10 @@ every_possible_country = {
 		NOT = {
 			TAG = HIL
 			TAG = KRO
+			TAG = CAO
+			TAG = CAP
+			TAG = CAB
+			TAG = CAH
 		}
 		has_idea = BARE_Global_Trusteeship_Area
 		

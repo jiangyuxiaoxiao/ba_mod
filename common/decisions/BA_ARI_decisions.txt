@@ -1717,7 +1717,15 @@ ARI_foreign_operations_decisions = {
 		days_remove = 30
 		days_re_enable = 150
 		remove_effect = {
-			country_event = ARI_beatrice_operations.19
+			if = {
+				limit = {
+					not = {
+						has_country_flag = ARI_beatrice_operations_19
+					}
+				}
+				set_country_flag = ARI_beatrice_operations_19
+				country_event = ARI_beatrice_operations.19
+			}
 			set_temp_variable = { material_change = 300 }
 			ARI_change_materials = yes
 			set_temp_variable = { revenge_progress_change = -10 }
@@ -1779,7 +1787,13 @@ ARI_foreign_operations_decisions = {
 			ARI_change_materials = yes
 		}
 		remove_effect = {
-			country_event = ARI_beatrice_operations.20
+			if = {
+				limit = {
+					has_country_flag = ARI_beatrice_operations_20
+				}
+				set_character_flag = ARI_beatrice_operations_20
+				country_event = ARI_beatrice_operations.20
+			}
 			set_temp_variable = { intelligence_change = 10 }
 			ARI_traveller_operation_prepare_progress_update_effect = yes
 			ARI_change_intelligence_in_TRI = yes
@@ -3456,7 +3470,7 @@ ARI_special_training_decisions = {
 			subtract_from_variable = { ARI_special_training_decisions_count = 1 }
 			army_experience = 25
 			custom_effect_tooltip = ARI_night_infiltration_warfare_tt
-			add_to_variable = { ARI_special_force_land_night_attack = 0.2 }
+			add_to_variable = { ARI_special_force_land_night_attack = 0.1 }
 		}
 		ai_will_do = {
 			base = 10
@@ -3516,7 +3530,7 @@ ARI_special_training_decisions = {
 			subtract_from_variable = { ARI_special_training_decisions_count = 1 }
 			army_experience = 25
 			custom_effect_tooltip = ARI_assault_warfare_tt
-			add_to_variable = { ARI_special_force_army_speed_factor = 0.05 }
+			# add_to_variable = { ARI_special_force_army_speed_factor = 0.05 }
 			add_to_variable = { special_forces_attack_factor = 0.1 }
 		}
 		ai_will_do = {
@@ -3584,7 +3598,7 @@ ARI_special_training_decisions = {
 			subtract_from_variable = { ARI_special_training_decisions_count = 1 }
 			custom_effect_tooltip = ARI_wilderness_survival_tt
 			add_to_variable = { ARI_special_force_out_of_supply_factor = -0.15 }
-			add_to_variable = { ARI_special_force_no_supply_grace = 48 }
+			add_to_variable = { ARI_special_force_no_supply_grace = 24 }
 		}
 		ai_will_do = {
 			base = 10
@@ -3847,8 +3861,8 @@ ARI_power_chaser_decisions = {
 
 				ARI_upgrade_mystery_weapon_buff = yes
 
-				add_to_variable = { ARI_power_chaser_modifier_army_sub_unit_category_special_infantry_defence_factor = 0.03 }
-				add_to_variable = { ARI_power_chaser_modifier_army_sub_unit_category_special_infantry_attack_factor = 0.03 }
+				add_to_variable = { ARI_power_chaser_modifier_army_sub_unit_category_special_infantry_defence_factor = 0.01 }
+				add_to_variable = { ARI_power_chaser_modifier_army_sub_unit_category_special_infantry_attack_factor = 0.02 }
 			}
 		}
 		ai_will_do = {
@@ -4513,8 +4527,10 @@ ARI_suppress_resistance_eden_decisions = {
 	ARI_suppress_resistance_eden_decision = {
 		visible = {
 			has_completed_focus = ARI_suppress_resistance_eden_operation
-			NOT = { has_idea = ARI_eden_action_chaos }
-			NOT = { has_idea = ARI_eden_action_chaos_2 }
+			or = {
+				has_idea = ARI_eden_action_chaos
+				has_idea = ARI_eden_action_chaos_2
+			}
 		}
 		available = {
 			has_army_experience > 25
@@ -4569,27 +4585,23 @@ ARI_suppress_resistance_eden_decisions = {
 	#加强契约力量
 	ARI_enhance_contract_power_eden_decision = {
 		visible = {
-			NOT = { has_idea = ARI_eden_mystery_infantry_debuff_1 }
-			NOT = { has_idea = ARI_eden_mystery_infantry_debuff_2 }
-			NOT = { has_idea = ARI_eden_mystery_infantry_debuff_3 }
-			NOT = { has_idea = ARI_eden_mystery_infantry_debuff_4 }
+			or = {
+				has_idea = ARI_eden_mystery_infantry_debuff_1
+				has_idea = ARI_eden_mystery_infantry_debuff_2
+				has_idea = ARI_eden_mystery_infantry_debuff_3
+				has_idea = ARI_eden_mystery_infantry_debuff_4
+			}
 			has_completed_focus =  ARI_enhance_contract_power
 		}
 		available = {
-			has_equipment = {
-				special_infantry_equipment > 499
-			}
+			
 		}
 
-		fire_only_once = yes
+		fire_only_once = no
 
-		days_remove = 60
+		days_remove = 45
 
 		complete_effect = {
-			add_equipment_to_stockpile = {
-				type = special_infantry_equipment
-				amount = -500
-			}
 		}
 
 		remove_effect = {
@@ -4599,7 +4611,7 @@ ARI_suppress_resistance_eden_decisions = {
 				create_unit = {
 					division = "division_template = \"圣徒会的投影\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
 					owner = ROOT
-					count = 6
+					count = 4
 				}
 			}
 		}
@@ -4623,6 +4635,13 @@ ARI_suppress_resistance_eden_decisions = {
 			has_completed_focus = ARI_put_evenything_on_bet
 		}
 		available = {
+			not = {
+				has_idea = ARI_eden_mystery_infantry_debuff_1
+				has_idea = ARI_eden_mystery_infantry_debuff_2
+				has_idea = ARI_eden_mystery_infantry_debuff_3
+				has_idea = ARI_eden_mystery_infantry_debuff_4
+			
+			}
 		}
 
 		fire_only_once = yes
@@ -4652,6 +4671,309 @@ ARI_suppress_resistance_eden_decisions = {
 				factor = 2
 				has_political_power > 200
 			}
+		}
+	}
+
+	#强令部队发起冲锋
+
+	ARI_Eden_treaty_War_Forced_Attack_decisions = {
+		visible = {
+			has_dynamic_modifier = {
+				modifier = Eden_treaty_War_blood_march
+			}
+			has_completed_focus = ARI_coordinate_reinforcement_troops
+		}
+
+		available = {
+
+		}
+
+		days_re_enable = 90
+		days_remove = 20
+
+		modifier = {
+			army_attack_factor = 0.3
+			army_speed_factor = 0.1
+			breakthrough_factor = 0.25
+			land_reinforce_rate = -0.03
+			army_morale_factor = -0.3
+		}
+
+
+
+		complete_effect = {
+			add_to_variable = {
+				ECW_progress_var = -10
+			}
+			ECW_clamp_all_vars_effect = yes
+			force_update_dynamic_modifier = yes
+			custom_effect_tooltip = ARI_Eden_treaty_War_Forced_Attack_decisions_tt_1
+		}
+
+		remove_effect = {
+			add_to_variable = {
+				Eden_treaty_War_blood_march_army_org_factor = -0.05
+			}
+			add_to_variable = {
+				Eden_treaty_War_blood_march_land_reinforce_rate = -0.02
+			}
+			add_to_variable = {
+				Eden_treaty_War_blood_march_army_strength_factor = -0.05
+			}
+			custom_effect_tooltip = ARI_Eden_treaty_War_Forced_Attack_decisions_tt_3
+			force_update_dynamic_modifier = yes
+		}
+
+		ai_will_do = {
+			base = 3
+		}
+		
+	}
+
+
+
+	ARI_Eden_treaty_War_Forced_Defense_decisions = {
+		visible = {
+			has_dynamic_modifier = {
+				modifier = Eden_treaty_War_blood_march
+			}
+			has_completed_focus = ARI_coordinate_reinforcement_troops
+		}
+
+		available = {
+
+		}
+
+		days_re_enable = 90
+		days_remove = 20
+
+		modifier = {
+			dig_in_speed_factor = 1
+			army_defence_factor = 0.3
+			coordination_bonus = 0.2
+			experience_loss_factor = 0.15
+		}
+
+
+
+		complete_effect = {
+			add_to_variable = {
+				ECW_progress_var = -10
+			}
+			ECW_clamp_all_vars_effect = yes
+			force_update_dynamic_modifier = yes
+			custom_effect_tooltip = ARI_Eden_treaty_War_Forced_Attack_decisions_tt_1
+		}
+
+		remove_effect = {
+			add_to_variable = {
+				Eden_treaty_War_blood_march_army_org_factor = -0.05
+			}
+			add_to_variable = {
+				Eden_treaty_War_blood_march_land_reinforce_rate = -0.02
+			}
+			custom_effect_tooltip = ARI_Eden_treaty_War_Forced_Attack_decisions_tt_2
+			force_update_dynamic_modifier = yes
+		}
+
+		ai_will_do = {
+			base = 3
+		}
+	}
+
+
+
+	ARI_Eden_treaty_War_Improve_Logistics_System = {
+		visible = {
+			has_dynamic_modifier = {
+				modifier = Eden_treaty_War_blood_march
+			}
+			has_completed_focus = ARI_coordinate_reinforcement_troops
+		}
+
+		available = {
+			has_tech = support_logistics_T3
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+		
+		}
+
+
+
+		complete_effect = {
+			
+		}
+
+		remove_effect = {
+			add_to_variable = {
+				Eden_treaty_War_blood_march_attrition = -0.2
+			}
+			add_to_variable = {
+				Eden_treaty_War_blood_march_experience_loss_factor = -0.05
+			}
+			add_to_variable = {
+				Eden_treaty_War_blood_march_supply_consumption_factor = 0.15
+			}
+			add_to_variable = {
+				Eden_treaty_War_blood_march_army_strength_factor = 0.1
+			}
+			custom_effect_tooltip = ARI_Eden_treaty_War_Improve_Logistics_System_tt
+			force_update_dynamic_modifier = yes
+		}
+
+		ai_will_do = {
+			base = 3
+		}
+	}
+
+
+	ARI_Eden_treaty_War_Plundering_Supplies = {
+		visible = {
+			has_dynamic_modifier = {
+				modifier = Eden_treaty_War_blood_march
+			}
+			has_completed_focus = ARI_coordinate_reinforcement_troops
+		}
+
+		available = {
+			or = {
+				190 = {
+					is_controlled_by = ROOT
+				}
+				120 = {
+					is_controlled_by = ROOT
+
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+		
+		}
+
+
+
+		complete_effect = {
+			
+		}
+
+		remove_effect = {
+			if = {
+				limit = {
+					190 = {
+						is_controlled_by = ROOT
+					}
+				}
+				190 = {
+					add_resistance = 20
+				}
+			}else_if = { 
+				limit = {
+					120 = {
+						is_controlled_by = ROOT
+					}
+				}
+				120 = {
+					add_resistance = 20
+				}
+			}
+
+
+			add_to_variable = {
+				Eden_treaty_War_blood_march_attrition = -0.3
+			}
+			add_to_variable = {
+				Eden_treaty_War_blood_march_experience_loss_factor = -0.05
+			}
+			add_to_variable = {
+				Eden_treaty_War_blood_march_army_strength_factor = 0.1
+			}
+			custom_effect_tooltip = ARI_Eden_treaty_War_Plundering_Supplies_tt
+			force_update_dynamic_modifier = yes
+		}
+
+		ai_will_do = {
+			base = 3
+		}
+	}
+
+	ARI_Eden_treaty_War_Captured_Weapons = {
+		visible = {
+			has_dynamic_modifier = {
+				modifier = Eden_treaty_War_blood_march
+			}
+			has_completed_focus = ARI_coordinate_reinforcement_troops
+		}
+
+		available = {
+			or = {
+				231 = {
+					is_controlled_by = ROOT
+				}
+				233 = {
+					is_controlled_by = ROOT
+
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+		
+		}
+
+
+
+		complete_effect = {
+			
+		}
+
+		remove_effect = {
+			if = {
+				limit = {
+					231 = {
+						is_controlled_by = ROOT
+					}
+				}
+				231 = {
+					add_resistance = 15
+				}
+			}else_if = { 
+				limit = {
+					233 = {
+						is_controlled_by = ROOT
+					}
+				}
+				233 = {
+					add_resistance = 15
+				}
+			}
+
+
+			add_to_variable = {
+				Eden_treaty_War_blood_march_army_speed_factor = 0.15
+			}
+			add_to_variable = {
+				Eden_treaty_War_blood_march_supply_consumption_factor = 0.1
+			}
+			add_to_variable = {
+				Eden_treaty_War_blood_march_army_attack_factor = 0.075
+			}
+			add_to_variable = {
+				Eden_treaty_War_blood_march_army_defence_factor = 0.075
+			}
+			custom_effect_tooltip = ARI_Eden_treaty_War_Improve_Logistics_System_tt
+			force_update_dynamic_modifier = yes
+		}
+
+		ai_will_do = {
+			base = 3
 		}
 	}
 }

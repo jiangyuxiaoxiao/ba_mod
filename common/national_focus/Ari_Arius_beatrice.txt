@@ -403,6 +403,9 @@ focus_tree = {
 		prerequisite = {
 			focus = ARI_traveller_operation
 		}
+		allow_branch = {
+		 	has_completed_focus = ARI_traveller_operation
+		}
 		available = {
 			custom_override_tooltip = {
 				tooltip = {
@@ -1540,6 +1543,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			custom_effect_tooltip = ARI_traveller_operation_tt
 			if = {
 				limit = {
 					check_variable = {
@@ -1923,9 +1927,9 @@ focus_tree = {
 		prerequisite = {
 			focus = ARI_fake_flag_operation
 		}
-		# allow_branch = {
-		# 	has_completed_focus = ARI_traveller_operation
-		# }
+		allow_branch = {
+			has_completed_focus = ARI_traveller_operation
+		}
 		available = {
 			always = no			#自动跳过
 		}
@@ -2092,6 +2096,7 @@ focus_tree = {
 			FOCUS_FILTER_ARMY
 		}
 		completion_reward = {
+			custom_effect_tooltip = ARI_prepare_operation_eden_tt
 			#解锁准备决议5
 			unlock_decision_category_tooltip = ARI_preparation_of_operation_eden_decisions
 		}
@@ -2178,6 +2183,9 @@ focus_tree = {
 			focus = ARI_time_for_final_action
 		}
 		available = {
+			has_dynamic_modifier = {
+				modifier = Eden_treaty_War_blood_march
+			}
 		}
 		cost = 3
 		x = 2
@@ -2186,7 +2194,7 @@ focus_tree = {
 			FOCUS_FILTER_ARMY
 		}
 		completion_reward = {
-			#TODO:允许阿里乌斯通过解除未经计划的攻势
+			custom_effect_tooltip = ARI_coordinate_reinforcement_troops_tt
 		}
 	}
 	focus = {
@@ -3829,10 +3837,7 @@ focus_tree = {
 			#强化精神“阿里乌斯武装学生部队”
 			custom_effect_tooltip = ARI_spirit_of_revenge_tt
 			add_to_variable = {
-				ARI_armed_students_modifier_army_attack_factor = 0.05
-			}
-			add_to_variable = {
-				ARI_armed_students_modifier_army_defence_factor = 0.1
+				ARI_armed_students_modifier_army_defence_factor = 0.15
 			}
 		}
 	}
@@ -3897,10 +3902,7 @@ focus_tree = {
 				ARI_armed_students_modifier_org_loss_when_moving = -0.2
 			}
 			add_to_variable = {
-				ARI_armed_students_modifier_army_attack_factor = 0.05
-			}
-			add_to_variable = {
-				ARI_armed_students_modifier_breakthrough_factor = 0.1
+				ARI_armed_students_modifier_breakthrough_factor = 0.15
 			}
 		}
 	}
