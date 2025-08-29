@@ -164,7 +164,12 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			custom_effect_tooltip = ALF_establish_law_enforement_team_focus_tt
-			load_oob = "ALF_oob_militias"
+			country_event = {
+				id = ALF.17
+			}
+			hidden_effect = {
+				load_oob = "ALF_oob_militias"
+			}
 		}
 	}
 	focus = {

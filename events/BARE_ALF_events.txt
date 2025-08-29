@@ -359,3 +359,16 @@ country_event = {
 		custom_effect_tooltip = ALF_raise_flag_tt
 	}
 }
+
+##自警团的兵
+country_event = {
+	id = ALF.17
+	#picture = GFX_common_event_gui_test
+	title = ALF.17.t
+	desc = ALF.17.desc
+	is_triggered_only = yes
+	option = {
+		name = ALF.17.a
+		add_war_support = 0.05
+	}
+}

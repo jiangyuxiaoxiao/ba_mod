@@ -275,7 +275,7 @@ ALF_war_plan_protect_wing_category = {
 		days_remove = 180
 		fire_only_once = yes
 		modifier = {
-			out_of_supply_factor = -0.5
+			out_of_supply_factor = -0.2
 		}
 		remove_effect = {
 		}
@@ -298,7 +298,7 @@ ALF_war_plan_protect_wing_category = {
 		remove_effect = {
 			add_equipment_to_stockpile = {
 				type = motorized_equipment
-				amount = 50
+				amount = 10
 				producer = ALF
 			}
 		}
@@ -316,6 +316,11 @@ ALF_war_plan_protect_wing_category = {
 			COS
 			HTG
 			AVG
+		}
+		available = {
+			FROM = {
+				has_war_with = ALF
+			}
 		}
 		targets_dynamic = yes
 		target_trigger = {
