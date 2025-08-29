@@ -1,0 +1,44 @@
+has_livability_1pts = {
+	custom_trigger_tooltip = has_livability_1pts_tt
+	check_variable = {
+		which = ALF.Livability_var
+		value = 1
+		comparison = greater_or_equal
+	}
+}
+
+has_livability_2pts = {
+	custom_trigger_tooltip = has_livability_2pts_tt
+	check_variable = {
+		which = ALF.Livability_var
+		value = 2
+		comparison = greater_or_equal
+	}
+}
+
+has_livability_3pts = {
+	custom_trigger_tooltip = has_livability_3pts_tt
+	check_variable = {
+		which = ALF.Livability_var
+		value = 2
+		comparison = greater_or_equal
+	}
+}
+
+has_livability_5pts = {
+	custom_trigger_tooltip = has_livability_5pts_tt
+	check_variable = {
+		which = ALF.Livability_var
+		value = 2
+		comparison = greater_or_equal
+	}
+}
+
+has_livability_10pts = {
+	custom_trigger_tooltip = has_livability_10pts_tt
+	check_variable = {
+		which = ALF.Livability_var
+		value = 2
+		comparison = greater_or_equal
+	}
+}

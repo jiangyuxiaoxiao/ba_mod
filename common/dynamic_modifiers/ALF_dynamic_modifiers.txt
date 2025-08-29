@@ -1,4 +1,4 @@
-ARI_Livability_dynamic_modifier = {
+ALF_Livability_dynamic_modifier = {
 	icon = "GFX_idea_unknown"
 	enable = { always = yes }
 

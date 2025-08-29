@@ -28,6 +28,119 @@ ALF_military_reform_decision_category = {
 ##宜居度系统##
 ##扩展为资源系统，用来抽象地表达流亡者拥有的战略资源
 ALF_Livability_decision_category = {
+	##恢复区域邮政系统
+	restore_state_mail_system_targeted_decision = {
+		state_target = yes
+		target_root_trigger = {
+			has_completed_focus = ALF_Reorganize_the_postal_system
+		}
+		##只有黑市省份在位于这一决议的范围##
+		target_array = global.black_market_state
+		target_trigger = {
+			FROM = {
+				NOT = {
+					has_state_flag = mail_system_restored_flag
+				}
+				is_owned_and_controlled_by = ALF
+			}
+		}
+		fire_only_once = yes
+		on_map_mode = map_and_decisions_view
+		#icon = my_icon
+		cost = 10
+		days_remove = 28
+		remove_effect = {
+			FROM = {
+				set_state_flag = mail_system_restored_flag
+			}
+			FROM.owner = {
+				ALF_small_improve_livability_modifier_effect = yes
+			}
+		}
+	}
+	ALF_Livability_count_down_mission = {
+		priority = 99
+		is_good = no
+		days_mission_timeout = 30
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+		}
+		timeout_effect = {
+			activate_mission = ALF_Livability_count_down_mission
+			ALF_calculate_livability_effect = yes
+		}
+	}
+	##用战略储备爆枪
+	ALF_Livability_for_infantry_equipment = {
+		visible = {
+			has_completed_focus = ALF_Enable_abandoned_inventory
+		}
+		available = {
+		}
+		custom_cost_trigger = {
+			has_livability_1pts = yes
+		}
+		custom_cost_text = decision_cost_has_livability_1pts
+		cost = 10
+		days_remove = 7
+		remove_effect = {
+			ALF_use_livability_1_pts = yes
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 500
+				producer = ALF
+			}
+		}
+	}
+	##用战略储备爆炮
+	ALF_Livability_for_artillery_equipment = {
+		visible = {
+			has_completed_focus = ALF_Enable_abandoned_inventory
+		}
+		available = {
+		}
+		custom_cost_trigger = {
+			has_livability_1pts = yes
+		}
+		custom_cost_text = decision_cost_has_livability_1pts
+		cost = 10
+		days_remove = 7
+		remove_effect = {
+			ALF_use_livability_1_pts = yes
+			add_equipment_to_stockpile = {
+				type = light_fire_support_equipment
+				amount = 50
+				producer = ALF
+			}
+		}
+	}
+	##用战略储备爆支援装备
+	ALF_Livability_for_support_equipment = {
+		visible = {
+			has_completed_focus = ALF_Enable_abandoned_inventory
+		}
+		available = {
+		}
+		custom_cost_trigger = {
+			has_livability_1pts = yes
+		}
+		custom_cost_text = decision_cost_has_livability_1pts
+		cost = 10
+		days_remove = 7
+		remove_effect = {
+			ALF_use_livability_1_pts = yes
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 100
+				producer = ALF
+			}
+		}
+	}
 	ALF_Livability_decision_test = {
 		visible = {
 			is_debug = yes
@@ -52,7 +165,6 @@ ALF_Livability_decision_category = {
 			ALF_calculate_livability_effect = yes
 		}
 	}
-
 	ALF_improve_livability_test = {
 		visible = {
 			is_debug = yes
@@ -62,55 +174,250 @@ ALF_Livability_decision_category = {
 		}
 		cost = 0
 		complete_effect = {
-			ALF_improve_livability_modifier_effect = yes
+			ALF_small_improve_livability_modifier_effect = yes
+			ALF_medium_improve_livability_modifier_effect = yes
+			ALF_large_improve_livability_modifier_effect = yes
 		}
 	}
 }
 
 ALF_war_plan_protect_wing_category = {
-	ALF_war_plan_protect_wing_timer_mission = {
+	##任务计时##
+	ALF_war_plan_protect_wing_trigger_mission = {
 		priority = 99
 		is_good = no
 		days_mission_timeout = 72
-
 		activation = {
 			always = no
 		}
+		available = {
+			657 = {
+				is_owned_and_controlled_by = ALF
+			}
+			200 = {
+				is_owned_and_controlled_by = ALF
+			}
+			201 = {
+				is_owned_and_controlled_by = ALF
+			}
+			198 = {
+				is_owned_and_controlled_by = ALF
+			}
+		}
+		complete_effect = {
+			set_country_flag = ALF_operation_protect_wing_has_completed_flag
+		}
+		timeout_effect = {
+			activate_mission = ALF_war_plan_protect_wing_trigger_mission
+		}
+	}
+	##先攻倒计时
+	ALF_war_plan_protect_wing_timer_mission = {
+		priority = 80
+		is_good = no
+		days_mission_timeout = 72
+		activation = {
+			always = no
+		}
+		war_with_on_timeout = HTG
+		war_with_on_timeout = COS
+		#war_with_on_timeout = ALF
 		available = {
 			NOT = {
 				country_exists = HTG
 				country_exists = COS
 			}
 		}
-		cost = 0
-		complete_effect = {
-			
+		remove_effect = {
+		}
+		timeout_effect = {
+			if = {
+				limit = {
+					HTG = {
+						NOT = {
+							has_war_with = ALF
+						}
+					}
+				}
+				HTG = {
+					declare_war_on = {
+						target = ALF
+						type = annex_everything
+					}
+				}
+			}
+			if = {
+				limit = {
+					COS = {
+						NOT = {
+							has_war_with = ALF
+						}
+					}
+				}
+				COS = {
+					declare_war_on = {
+						target = ALF
+						type = annex_everything
+					}
+				}
+			}
 		}
 	}
+	##加强前线补给##
+	ALF_protect_wing_enhance_supply_decision = {
+		visible = {
+			tag = ALF
+		}
+		available = {
+			has_war = yes
+		}
+		cost = 10
+		days_remove = 180
+		fire_only_once = yes
+		modifier = {
+			out_of_supply_factor = -0.5
+		}
+		remove_effect = {
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	##征用废弃卡车
+	ALF_protect_wing_supply_truck_decision = {
+		visible = {
+			tag = ALF
+		}
+		available = {
+			has_war = yes
+			has_completed_focus = ALF_operation_protect_wing
+		}
+		cost = 10
+		days_remove = 7
+		fire_only_once = yes
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = 50
+				producer = ALF
+			}
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	##加强攻势！
+	ALF_protect_wing_strength_frontline_decision = {
+		target_root_trigger = {
+			tag = ALF
+			has_completed_focus = ALF_operation_protect_wing
+		}
+		targets = {
+			COS
+			HTG
+			AVG
+		}
+		targets_dynamic = yes
+		target_trigger = {
+			FROM = {
+				has_war_with = ALF
+			}
+		}
+		cost = 20
+		fire_only_once = yes
+		modifier = {
+			army_attack_factor = 0.2
+			army_defence_factor = 0.1
+			breakthrough_factor = 0.5
+		}
+		days_remove = 30
+		remove_effect = {
 
+		}
+	}
+	##对金钗盗贼团宣战
 	ALF_war_with_HTG_decision = {
 		visible = {
 			tag = ALF
+			HTG = {
+				exists = yes
+			}
 		}
 		available = {
-			is_ai = no
+			has_completed_focus = ALF_operation_protect_wing
+			NOT = {
+				has_war_with = HTG
+			}
 		}
-		cost = 0
-		complete_effect = {
-			
+		cost = 10
+		days_remove = 7
+		war_with_on_remove = HTG
+		fire_only_once = yes
+		remove_effect = {
+			declare_war_on = {
+				target = HTG
+				type = ALF_pacify_target_wargoal
+			}
+		}
+		ai_will_do = {
+			factor = 1000
 		}
 	}
-
+	##对圣徒升天会宣战
 	ALF_war_with_COS_decision = {
 		visible = {
 			tag = ALF
+			COS = {
+				exists = yes
+			}
 		}
 		available = {
-			is_ai = no
+			has_completed_focus = ALF_operation_protect_wing
+			NOT = {
+				has_war_with = COS
+			}
 		}
-		cost = 0
-		complete_effect = {
-			
+		cost = 10
+		days_remove = 7
+		war_with_on_remove = COS
+		fire_only_once = yes
+		remove_effect = {
+			declare_war_on = {
+				target = COS
+				type = ALF_pacify_target_wargoal
+			}
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	##对旧学生会前哨开战
+	ALF_war_with_AVG_decision = {
+		visible = {
+			tag = ALF
+			has_completed_focus = ALF_target_AVG
+			AVG = {
+				exists = yes
+			}
+		}
+		available = {
+			has_completed_focus = ALF_target_AVG
+			NOT = {
+				has_war_with = AVG
+			}
+		}
+		cost = 10
+		days_remove = 7
+		war_with_on_remove = AVG
+		fire_only_once = yes
+		remove_effect = {
+			declare_war_on = {
+				target = AVG
+				type = ALF_pacify_target_wargoal
+			}
+		}
+		ai_will_do = {
+			factor = 1000
 		}
 	}
 }

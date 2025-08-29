@@ -9,7 +9,7 @@ ALF_military_reform_decision_category = {
 	scripted_gui = ALF_military_reform_decision_ui_progressbar_sg
 	visible_when_empty = yes
 
-	priority = 9999
+	priority = 9000
 }
 
 ##宜居度##
@@ -28,6 +28,7 @@ ALF_Livability_decision_category = {
 	priority = 9999
 }
 
+##庇护之羽行动
 ALF_war_plan_protect_wing_category = {
 	icon = generic_research
 	allowed = {
@@ -35,10 +36,10 @@ ALF_war_plan_protect_wing_category = {
 		tag = ALF
 	}
 	visible = {
-		is_debug = yes
+		has_country_flag = ALF_we_were_attacked_flag
 	}
 	#scripted_gui = ALF_military_reform_decision_ui_progressbar_sg
 	visible_when_empty = yes
 
-	priority = 9999
+	priority = 9800
 }

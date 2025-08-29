@@ -1,92 +1,182 @@
-##战略储备##
+####################
+##战略储备！！！
+####################
 ##初始化战略储备效果##
 ALF_initialize_livability_system_effect = {
-    custom_effect_tooltip = initialize_livability_system_tt
-    ##将黑市的每个省份加入数组
-    every_state = {
-        limit = {
-            is_core_of = A47
-        }
-        add_to_array = {
-            array = global.black_market_state
-            value = THIS.id
-        }
-    }
-
-    ##初始化战略储备所需数值##
-    ALF = {
-
-        ##默认战略储备：1点
-        set_variable = {
-            ALF.Livability_var = 1
-        }
-
-        ##默认战略储备变化：0
-        set_variable = {
-            ALF.ALF_Livability_dynamic_modifier_var = 0
-        }
-
-        ##为TAG增加战略储备变量
-        ALF = {
-            add_dynamic_modifier = {
-                modifier = ARI_Livability_dynamic_modifier
-            }
-        }
-
-        ##测试用，记得最后删掉##
-        ##来自事件的每月战略储备消耗：6
-        set_variable = {
-            ALF.Livability_from_event_var = -6
-        }
-    }
+	##将黑市的每个省份加入数组
+	hidden_effect = {
+		every_state = {
+			limit = {
+				is_core_of = A47
+			}
+			add_to_array = {
+				array = global.black_market_state
+				value = THIS.id
+			}
+		}
+	}
+	##初始化战略储备所需数值##
+	ALF = {
+		ALF_improve_livability_1_pts = yes
+		##为TAG增加战略储备变量
+		add_dynamic_modifier = {
+			modifier = ALF_Livability_dynamic_modifier
+		}
+	}
 }
 
 ##先计算宜居度导致的效果，再计算宜居度##
-
 ##计算所有宜居度相关数据
 ALF_calculate_livability_effect = {
-    custom_effect_tooltip = ALF_calculate_livability_state_tt
-
-    ##每个省份消耗1点战略储备##
-    ##获取省份数量##
-    for_each_scope_loop = {
-        array = global.black_market_state
-        if = {
-            limit = {
-                is_owned_and_controlled_by = ALF
-            }
-            add_to_temp_variable = {
-                ALF.Livability_state_var = -1
-            }
-        }
-    }
-    ##计算省份带来的战略储备需求##
-    set_variable = {
-        ALF.Livability_standard_var = ALF.Livability_state_var
-    }
-
-    ##计算剩余的战略储备
-    add_to_variable = {
-        var = ALF.Livability_var
-        value = ALF.Livability_standard_var
-    }
-    add_to_variable = {
-        var = ALF.Livability_var
-        value = ALF.Livability_from_event_var
-    }
-    
-    ##计算本周期获得的战略储备##
-    add_to_variable = {
-        ALF.Livability_var = modifier@ALF_Livability_int
-    }
-
-    ##TODO：战略储备不足造成的效果，写入动态精神中
+	custom_effect_tooltip = ALF_calculate_livability_state_tt
+	##每个省份消耗1点战略储备##
+	##获取省份数量##
+	for_each_scope_loop = {
+		array = global.black_market_state
+		if = {
+			limit = {
+				is_owned_and_controlled_by = ALF
+			}
+			add_to_temp_variable = {
+				ALF.Livability_state_var = -0.5
+			}
+		}
+	}
+	##计算省份带来的战略储备需求##
+	set_variable = {
+		ALF.Livability_standard_var = ALF.Livability_state_var
+	}
+	##计算剩余的战略储备
+	add_to_variable = {
+		var = ALF.Livability_var
+		value = ALF.Livability_standard_var
+	}
+	##计算本周期获得的战略储备##
+	add_to_variable = {
+		ALF.Livability_var = modifier@ALF_Livability_int
+	}
+	##TODO：战略储备不足造成的效果，写入动态精神中
 }
-##
-ALF_improve_livability_modifier_effect = {
-    custom_effect_tooltip = ALF_improve_livability_modifier_effect_tt
-    add_to_variable = {
-        ALF.ALF_Livability_dynamic_modifier_var = 0.1
-    }
-    force_update_dynamic_modifier = yes
+
+##战略储备获取##
+ALF_small_improve_livability_modifier_effect = {
+	custom_effect_tooltip = ALF_small_improve_livability_modifier_effect_tt
+	add_to_variable = {
+		ALF.ALF_Livability_dynamic_modifier_var = 0.25
+	}
+	force_update_dynamic_modifier = yes
+}
+
+ALF_medium_improve_livability_modifier_effect = {
+	custom_effect_tooltip = ALF_medium_improve_livability_modifier_effect_tt
+	add_to_variable = {
+		ALF.ALF_Livability_dynamic_modifier_var = 0.5
+	}
+	force_update_dynamic_modifier = yes
+}
+
+ALF_large_improve_livability_modifier_effect = {
+	custom_effect_tooltip = ALF_large_improve_livability_modifier_effect_tt
+	add_to_variable = {
+		ALF.ALF_Livability_dynamic_modifier_var = 1.0
+	}
+	force_update_dynamic_modifier = yes
+}
+
+##战略储备事件消耗##
+ALF_small_decrease_livability_modifier_effect = {
+	custom_effect_tooltip = ALF_small_decrease_livability_modifier_effect_tt
+	add_to_variable = {
+		ALF.ALF_Livability_dynamic_modifier_var = -0.25
+	}
+	force_update_dynamic_modifier = yes
+}
+
+ALF_medium_decrease_livability_modifier_effect = {
+	custom_effect_tooltip = ALF_medium_decrease_livability_modifier_effect_tt
+	add_to_variable = {
+		ALF.ALF_Livability_dynamic_modifier_var = -0.5
+	}
+	force_update_dynamic_modifier = yes
+}
+
+ALF_large_decrease_livability_modifier_effect = {
+	custom_effect_tooltip = ALF_large_decrease_livability_modifier_effect_tt
+	add_to_variable = {
+		ALF.ALF_Livability_dynamic_modifier_var = -1
+	}
+	force_update_dynamic_modifier = yes
+}
+
+
+##战略储备效果
+ALF_improve_livability_1_pts = {
+	custom_effect_tooltip = ALF_improve_livability_1_pts_tt
+	add_to_variable = {
+		ALF.Livability_var = 1
+	}
+}
+
+ALF_improve_livability_2_pts = {
+	custom_effect_tooltip = ALF_improve_livability_2_pts_tt
+	add_to_variable = {
+		ALF.Livability_var = 2
+	}
+}
+
+ALF_improve_livability_3_pts = {
+	custom_effect_tooltip = ALF_improve_livability_3_pts_tt
+	add_to_variable = {
+		ALF.Livability_var = 3
+	}
+}
+
+ALF_improve_livability_5_pts = {
+	custom_effect_tooltip = ALF_improve_livability_5_pts_tt
+	add_to_variable = {
+		ALF.Livability_var = 5
+	}
+}
+
+ALF_improve_livability_10_pts = {
+	custom_effect_tooltip = ALF_improve_livability_10_pts_tt
+	add_to_variable = {
+		ALF.Livability_var = 10
+	}
+}
+
+##消耗
+ALF_use_livability_1_pts = {
+	custom_effect_tooltip = ALF_use_livability_1_pts_tt
+	add_to_variable = {
+		ALF.Livability_var = -1
+	}
+}
+
+ALF_use_livability_2_pts = {
+	custom_effect_tooltip = ALF_use_livability_2_pts_tt
+	add_to_variable = {
+		ALF.Livability_var = -2
+	}
+}
+
+ALF_use_livability_3_pts = {
+	custom_effect_tooltip = ALF_use_livability_3_pts_tt
+	add_to_variable = {
+		ALF.Livability_var = -3
+	}
+}
+
+ALF_use_livability_5_pts = {
+	custom_effect_tooltip = ALF_use_livability_5_pts_tt
+	add_to_variable = {
+		ALF.Livability_var = -5
+	}
+}
+
+ALF_use_livability_10_pts = {
+	custom_effect_tooltip = ALF_use_livability_10_pts_tt
+	add_to_variable = {
+		ALF.Livability_var = -10
+	}
 }

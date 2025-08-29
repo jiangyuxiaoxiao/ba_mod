@@ -4,11 +4,14 @@ division_template = {
 	regiments = {
 		infantry_sf = {x = 0 y = 0}
 		infantry_sf = {x = 0 y = 1}
+		infantry = {x = 1 y = 0}
+		infantry = {x = 1 y = 1}
 	}
 
 	support = {
 		recon = { x = 0 y = 0}
 		signal_company = { x = 0 y = 1}
+		fire_support_team_su_la = { x = 1 y = 2 }
 	}
 }
 
