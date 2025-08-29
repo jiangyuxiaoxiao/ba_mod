@@ -8,7 +8,6 @@ ALF_military_reform_decision_category = {
 	}
 	scripted_gui = ALF_military_reform_decision_ui_progressbar_sg
 	visible_when_empty = yes
-
 	priority = 9000
 }
 
@@ -16,15 +15,16 @@ ALF_military_reform_decision_category = {
 ALF_Livability_decision_category = {
 	icon = generic_research
 	allowed = {
-		is_debug = yes
 		tag = ALF
 	}
 	visible = {
-		is_debug = yes
+		has_dynamic_modifier = {
+			modifier = ALF_Livability_dynamic_modifier
+			scope = ALF
+		}
 	}
 	#scripted_gui = ALF_military_reform_decision_ui_progressbar_sg
 	visible_when_empty = yes
-
 	priority = 9999
 }
 
@@ -32,7 +32,6 @@ ALF_Livability_decision_category = {
 ALF_war_plan_protect_wing_category = {
 	icon = generic_research
 	allowed = {
-		is_debug = yes
 		tag = ALF
 	}
 	visible = {
@@ -40,6 +39,5 @@ ALF_war_plan_protect_wing_category = {
 	}
 	#scripted_gui = ALF_military_reform_decision_ui_progressbar_sg
 	visible_when_empty = yes
-
 	priority = 9800
 }
