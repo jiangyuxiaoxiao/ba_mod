@@ -79,14 +79,21 @@ set_technology = {
 add_ideas = {
 	BARE_Combat_Readiness_Start_Idea
 	BARE_Global_Unacknowledged_College_Autonomous_Region
+
+	millaws_class_requirements
+	tralaws_closed_economy
 }
 
 set_politics = {
-	ruling_party = no_ideology
+	ruling_party = Egalitarianism_ideology
 	elections_allowed = no
 }
 set_popularities = {
-	no_ideology = 100
+	Egalitarianism_ideology = 55
+	Authoritarian_ideology = 10
+	Mysticism_ideology = 5
+	Progressivism_ideology = 10
+	Liberalism_ideology = 20
 }
 
 recruit_character = ALF_The_Leader

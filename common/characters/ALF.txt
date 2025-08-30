@@ -11,16 +11,26 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = no_ideology_type
+			ideology = ELM_ALF_Leader_type
 			desc = ALF_The_Leader_desc
 			traits = {
-				#flower_in_wars
+				#ALF_rise_again_trait
 			}
 			expire = "9999.1.1.1"
 			id = -1
 		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ALF_The_Leader_political_advisor
+			cost = 50
+			available = {
+				has_completed_focus = ALF_stand_our_ground
+			}
+			traits = {
+				ALF_silent_hardworker
+			}			
+		}
 	}
-
 	##桥野悦依
 	ALF_Washino_Yuei = {
 		name = ALF_Washino_Yuei_name
@@ -37,16 +47,24 @@ characters = {
 			visible = {
 				##
 			}
-			traits = {  }
+			traits = {
+			}
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 1
-			
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = ALF_Washino_Yuei_army_chief
+			cost = 50
+			#ledger = army
+			traits = {
+				ALF_strategist
+			}			
 		}
 	}
-
 	##吉泽弥生
 	ALF_Yoshizawa_Yayoi = {
 		name = ALF_Yoshizawa_Yayoi_name
@@ -60,10 +78,11 @@ characters = {
 			}
 		}
 		corps_commander = {
-		    visible = {
-			##
+			visible = {
+				##
 			}
-			traits = { }
+			traits = {
+			}
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -71,7 +90,6 @@ characters = {
 			logistics_skill = 1
 		}
 	}
-
 	##三枝悠波
 	ALF_Saegusa_Yuwa = {
 		name = ALF_Saegusa_Yuwa_name
@@ -85,10 +103,11 @@ characters = {
 			}
 		}
 		corps_commander = {
-		    visible = {
-			##
+			visible = {
+				##
 			}
-			traits = { }
+			traits = {
+			}
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -96,7 +115,6 @@ characters = {
 			logistics_skill = 1
 		}
 	}
-
 	##柴崎一花
 	ALF_Shibasaki_Ichika = {
 		name = ALF_Shibasaki_Ichika_name
@@ -110,10 +128,11 @@ characters = {
 			}
 		}
 		corps_commander = {
-		    visible = {
-			##
+			visible = {
+				##
 			}
-			traits = { }
+			traits = {
+			}
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -121,7 +140,6 @@ characters = {
 			logistics_skill = 1
 		}
 	}
-
 	##前冈好美
 	ALF_Maeoka_Yoshimi = {
 		name = ALF_Maeoka_Yoshimi_name
@@ -135,10 +153,11 @@ characters = {
 			}
 		}
 		corps_commander = {
-		    visible = {
-			##
+			visible = {
+				##
 			}
-			traits = { }
+			traits = {
+			}
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -146,7 +165,6 @@ characters = {
 			logistics_skill = 1
 		}
 	}
-
 	##茂木重树
 	ALF_Shigeki_Niki = {
 		name = ALF_Shigeki_Niki_name
@@ -160,10 +178,11 @@ characters = {
 			}
 		}
 		corps_commander = {
-		    visible = {
-			##
+			visible = {
+				##
 			}
-			traits = { }
+			traits = {
+			}
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -171,7 +190,6 @@ characters = {
 			logistics_skill = 1
 		}
 	}
-
 	##边美安柚
 	ALF_Henmi_Ayu = {
 		name = ALF_Henmi_Ayu_name
@@ -185,10 +203,11 @@ characters = {
 			}
 		}
 		corps_commander = {
-		    visible = {
-			##
+			visible = {
+				##
 			}
-			traits = { }
+			traits = {
+			}
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -196,7 +215,6 @@ characters = {
 			logistics_skill = 1
 		}
 	}
-
 	##森下佳穗
 	ALF_Morishita_Kaho = {
 		name = ALF_Morishita_Kaho_name
@@ -210,10 +228,11 @@ characters = {
 			}
 		}
 		corps_commander = {
-		    visible = {
-			##
+			visible = {
+				##
 			}
-			traits = { }
+			traits = {
+			}
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -221,7 +240,6 @@ characters = {
 			logistics_skill = 1
 		}
 	}
-
 	##乘松未留
 	ALF_Norimatsu_Miru = {
 		name = ALF_Norimatsu_Miru_name
@@ -235,10 +253,11 @@ characters = {
 			}
 		}
 		corps_commander = {
-		    visible = {
-			##
+			visible = {
+				##
 			}
-			traits = { }
+			traits = {
+			}
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -246,7 +265,6 @@ characters = {
 			logistics_skill = 1
 		}
 	}
-
 	##东江静
 	ALF_Toueshi_Dzuru = {
 		name = ALF_Toueshi_Dzuru_name
@@ -260,10 +278,11 @@ characters = {
 			}
 		}
 		corps_commander = {
-		    visible = {
-			##
+			visible = {
+				##
 			}
-			traits = { }
+			traits = {
+			}
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -271,7 +290,6 @@ characters = {
 			logistics_skill = 1
 		}
 	}
-
 	##蒲原美代子
 	ALF_Kabahara_Miyoko = {
 		name = ALF_Kabahara_Miyoko_name
@@ -285,10 +303,11 @@ characters = {
 			}
 		}
 		corps_commander = {
-		    visible = {
-			##
+			visible = {
+				##
 			}
-			traits = { }
+			traits = {
+			}
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -296,7 +315,6 @@ characters = {
 			logistics_skill = 1
 		}
 	}
-
 	##滩尾辉美
 	ALF_Nadao_Terumi = {
 		name = ALF_Nadao_Terumi_name
@@ -310,10 +328,11 @@ characters = {
 			}
 		}
 		corps_commander = {
-		    visible = {
-			##
+			visible = {
+				##
 			}
-			traits = { }
+			traits = {
+			}
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -321,7 +340,6 @@ characters = {
 			logistics_skill = 1
 		}
 	}
-
 	##小谷图奈
 	ALF_Kometani_Touna = {
 		name = ALF_Kometani_Touna_name
@@ -335,10 +353,11 @@ characters = {
 			}
 		}
 		corps_commander = {
-		    visible = {
-			##
+			visible = {
+				##
 			}
-			traits = { }
+			traits = {
+			}
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -346,7 +365,6 @@ characters = {
 			logistics_skill = 1
 		}
 	}
-
 	##新木美夏
 	ALF_Araki_Mika = {
 		name = ALF_Araki_Mika_name
@@ -360,10 +378,11 @@ characters = {
 			}
 		}
 		corps_commander = {
-		    visible = {
-			##
+			visible = {
+				##
 			}
-			traits = { }
+			traits = {
+			}
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1

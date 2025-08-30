@@ -102,6 +102,19 @@ BARE_RULE_story_settings_ALF_SELECTED_effect = {
 		}
 	}
 	###加载编制模版###
+    COS = {
+		load_oob = "COS_oob_2019"
+	}
+	HTG = {
+		load_oob = "HTG_oob_2019"
+	}
+	AVG = {
+		load_oob = "AVG_oob_2019"
+	}
+	A47 = {
+		load_oob = "A47_2019_ALF_Story"
+	}
+
 	###触发事件###
 	A47 = {
 		country_event = {

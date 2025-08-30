@@ -279,10 +279,10 @@ guiTypes = {
 	### MAIN MENU PANEL (bottom)
 	containerWindowType = {
 		name ="mainmenu_panel_bottom"
-		position = { x=0 y =0}
-		size = { width = 1280 height = 720 }
-		Orientation = lower_left
-		Origo = lower_left
+		position = { x=35% y =40%}
+		size = { width = 1920 height = 1080 }
+		Orientation = CENTER
+		Origo = CENTER
 
 		positionType = {
 			name = "subscription_size"
@@ -296,7 +296,7 @@ guiTypes = {
 			
 		ButtonType = {
 			name = "single_player_button"
-			position = { x = 80 y = -70 }
+			position = { x = 580% y = 10% }
 			quadTextureSprite ="GFX_mm_start_game"			
 			clicksound = click_default			
 			oversound = ui_menu_over
@@ -304,7 +304,7 @@ guiTypes = {
 
 		ButtonType = {
 			name = "multi_player_button"
-			position = { x = 155 y = 168}
+			position = { x = 555 y = 240%}
 			quadTextureSprite ="GFX_mm_mutiplayer"			
 			clicksound = click_default
 			oversound = ui_menu_over
@@ -320,7 +320,7 @@ guiTypes = {
 		instantTextBoxType = {
 
 			name ="version_label"
-			position = { x = 800 y = 500 }
+			position = { x = 800 y = 572% }
 			textureFile = ""
 			font = "hoi_18b"
 			borderSize = {x = 0 y = 0}
@@ -338,7 +338,7 @@ guiTypes = {
 		
 		ButtonType = {
 			name = "settings_button"
-			position = { x = 90 y = 178 }
+			position = { x = 1030 y = 250% }
 			quadTextureSprite ="GFX_mm_settings"	
 			clicksound = click_default
 			oversound = ui_menu_over
@@ -346,7 +346,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "career_profile_button"
-			position = {  x = 75 y = 310 }
+			position = {  x = 435 y = 382% }
 			quadTextureSprite ="GFX_mm_personal_document"
 			clicksound = click_default
 			oversound = ui_menu_over
@@ -354,7 +354,7 @@ guiTypes = {
 		
 		iconType = {
 			name = "career_profile_button_star"
-			position = { x = -37 y = 255 }
+			position = { x = -37 y = 382% }
 			spriteType = "GFX_icon_best_in_career"
 			centerposition = yes
 			orientation = upper_right
@@ -373,7 +373,7 @@ guiTypes = {
 
 		ButtonType = {
 			name = "credits_button"
-			position = { x = 331 y = 315}
+			position = { x = 691 y = 387%}
 			quadTextureSprite ="GFX_mm_credits"	
 			clicksound = click_default
 			oversound = ui_menu_over
@@ -381,7 +381,7 @@ guiTypes = {
 		
 		ButtonType = {
 			name = "nudge_button"
-			position = { x = 90 y = 245 }
+			position = { x = 1030 y = 317% }
 			quadTextureSprite ="GFX_mm_nudge"
 			clicksound = click_default
 			oversound = ui_menu_over
@@ -389,7 +389,7 @@ guiTypes = {
 
 		ButtonType = {
 			name = "exit_button"
-			position = { x = 583 y = 320 }
+			position = { x = 945 y = 392% }
 			quadTextureSprite ="GFX_mm_exit"		
 			clicksound = click_default
 			oversound = ui_menu_over

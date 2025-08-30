@@ -1,5 +1,4 @@
 add_namespace = ALF
-
 #无心漫谈
 country_event = {
 	id = ALF.99
@@ -7,20 +6,25 @@ country_event = {
 	title = ALF.99.t
 	desc = ALF.99.desc
 	is_triggered_only = yes
-	
 	option = {
 		name = ALF.99.a
 		custom_effect_tooltip = ALF_arrives_in_slience_tt
 		hidden_effect = {
-			199 = { 
+			199 = {
 				add_core_of = ALF
 				transfer_state_to = ALF
+			}
+			ALF = {
+				change_tag_from = A47
 			}
 			ALF = {
 				load_oob = ALF_oob_2019
 			}
 			ALF = {
-			   change_tag_from = A47
+				country_event = {
+					id = ALF.1
+					days = 3
+				}
 			}
 			goto_state = 199
 		}
@@ -35,11 +39,51 @@ country_event = {
 	title = ALF.1.t
 	desc = ALF.1.desc
 	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			##默认战略储备变化：0.5
+			set_variable = {
+				ALF.ALF_Livability_dynamic_modifier_var = 0.5
+			}
 
+			country_event = {
+				id = ALF.4
+				days = 30
+			}
+
+			country_event = {
+				id = ALF.5
+				days = 70
+			}
+
+			country_event = {
+				id = ALF.6
+				days = 100
+			}
+
+			country_event = {
+				id = ALF.7
+				days = 140
+			}
+
+			country_event = {
+				id = ALF.8
+				days = 170
+			}
+
+			country_event = {
+				id = ALF.9
+				days = 200
+			}
+		}
+	}
 	option = {
 		name = ALF.1.a
-		add_political_power = 5
+		#add_political_power = 5
 		custom_effect_tooltip = rat_is_food_tt
+		complete_national_focus = ALF_a_great_march
+		ALF_initialize_livability_system_effect = yes
+		activate_mission = ALF_Livability_count_down_mission
 	}
 }
 
@@ -50,7 +94,6 @@ country_event = {
 	title = ALF.2.t
 	desc = ALF.2.desc
 	is_triggered_only = yes
-
 	option = {
 		name = ALF.2.a
 	}
@@ -63,12 +106,12 @@ country_event = {
 	title = ALF.3.t
 	desc = ALF.3.desc
 	is_triggered_only = yes
-
 	option = {
 		name = ALF.3.a
 	}
 }
 
+###人潮事件大致在120天内触发完毕###
 #第一波人潮
 country_event = {
 	id = ALF.4
@@ -76,9 +119,10 @@ country_event = {
 	title = ALF.4.t
 	desc = ALF.4.desc
 	is_triggered_only = yes
-
 	option = {
 		name = ALF.4.a
+		add_political_power = 5
+		add_war_support = 0.05
 	}
 }
 
@@ -89,13 +133,19 @@ country_event = {
 	title = ALF.5.t
 	desc = ALF.5.desc
 	is_triggered_only = yes
-
 	option = {
 		name = ALF.5.a
+		ALF_medium_decrease_livability_modifier_effect = yes
+		199 = {
+			add_manpower = 2000
+		} 
 	}
-
 	option = {
 		name = ALF.5.b
+		ALF_small_decrease_livability_modifier_effect = yes
+		199 = {
+			add_manpower = 1000
+		}
 	}
 }
 
@@ -106,15 +156,19 @@ country_event = {
 	title = ALF.6.t
 	desc = ALF.6.desc
 	is_triggered_only = yes
-
 	option = {
 		name = ALF.6.a
-		#custom_effect_tooltip = ALF_accept_without_price_tt
+		add_stability = 0.1
+		199 = {
+			add_manpower = 1000
+		}
 	}
-
 	option = {
 		name = ALF.6.b
-		#custom_effect_tooltip = ALF_accept_but_price_tt
+		ALF_medium_improve_livability_modifier_effect = yes
+		199 = {
+			add_manpower = 1000
+		}
 	}
 }
 
@@ -125,23 +179,36 @@ country_event = {
 	title = ALF.7.t
 	desc = ALF.7.desc
 	is_triggered_only = yes
-
 	option = {
 		name = ALF.7.a
 		hidden_effect = {
 			load_oob = "ALF_oob_commandos"
 		}
+		add_political_power = -50
+		ALF_use_livability_5_pts = yes
+		ALF_large_improve_livability_modifier_effect = yes
+		199 = {
+			add_manpower = 5000
+		}
 	}
-
 	option = {
 		name = ALF.7.b
 		hidden_effect = {
 			load_oob = "ALF_oob_commandos"
 		}
+		add_political_power = -25
+		ALF_use_livability_3_pts = yes
+		ALF_medium_improve_livability_modifier_effect = yes
+		199 = {
+			add_manpower = 2000
+		}
 	}
-
 	option = {
 		name = ALF.7.c
+		add_political_power = 50
+		199 = {
+			add_manpower = 50
+		}
 		hidden_effect = {
 			load_oob = "ALF_oob_commandos"
 		}
@@ -155,15 +222,16 @@ country_event = {
 	title = ALF.8.t
 	desc = ALF.8.desc
 	is_triggered_only = yes
-
 	option = {
 		name = ALF.8.a
+		199 = {
+			add_manpower = 2000
+		}
+		ALF_small_decrease_livability_modifier_effect = yes
 	}
-
 	option = {
 		name = ALF.8.b
 	}
-
 }
 
 #最后的人潮
@@ -173,13 +241,15 @@ country_event = {
 	title = ALF.9.t
 	desc = ALF.9.desc
 	is_triggered_only = yes
-
 	option = {
 		name = ALF.9.a
 		custom_effect_tooltip = alf_now_we_stands_tt
+		ALF_improve_livability_2_pts = yes
+		add_stability = 0.1
+		add_war_support = 0.1
 	}
-
 }
+
 ##站稳脚跟##
 country_event = {
 	id = ALF.10
@@ -187,12 +257,21 @@ country_event = {
 	title = ALF.10.t
 	desc = ALF.10.desc
 	is_triggered_only = yes
-
 	option = {
 		name = ALF.10.a
+		add_country_leader_trait = {
+			ideology = ELM_ALF_Leader_type
+			trait = ALF_rise_again_trait
+		}
 		ALF_improve_livability_modifier_effect = yes
-	}
 
+		hidden_effect = {
+			country_event = {
+				id = ALF.11
+				days = 7
+			}
+		}
+	}
 }
 
 #袭击
@@ -202,13 +281,14 @@ country_event = {
 	title = ALF.11.t
 	desc = ALF.11.desc
 	is_triggered_only = yes
-
 	option = {
 		name = ALF.11.a
 		custom_effect_tooltip = ALF_this_is_not_good_tt
+		##解锁新的国策
+		set_country_flag = ALF_phrase_1_step_2_flag
+		mark_focus_tree_layout_dirty = yes
 		complete_national_focus = ALF_threat_is_coming
 	}
-
 }
 
 #行动：庇护之羽
@@ -218,11 +298,9 @@ country_event = {
 	title = ALF.12.t
 	desc = ALF.12.desc
 	is_triggered_only = yes
-
 	option = {
 		name = ALF.12.a
 	}
-
 }
 
 #谎言与真实
@@ -232,12 +310,14 @@ country_event = {
 	title = ALF.13.t
 	desc = ALF.13.desc
 	is_triggered_only = yes
-
 	option = {
 		name = ALF.13.a
+		##这个标签应该在对旧学生会的行动结束后删除
+		set_country_flag = ALF_we_were_attacked_flag
+		unlock_decision_category_tooltip = ALF_war_plan_protect_wing_category
+		activate_mission = ALF_war_plan_protect_wing_trigger_mission
 		activate_mission = ALF_war_plan_protect_wing_timer_mission
 	}
-
 }
 
 country_event = {
@@ -246,12 +326,10 @@ country_event = {
 	title = ALF.14.t
 	desc = ALF.14.desc
 	is_triggered_only = yes
-
 	option = {
 		name = ALF.14.a
 		custom_effect_tooltip = ALF_then_give_them_war_tt
 	}
-
 }
 
 country_event = {
@@ -260,10 +338,37 @@ country_event = {
 	title = ALF.15.t
 	desc = ALF.15.desc
 	is_triggered_only = yes
-
 	option = {
 		name = ALF.15.a
+		custom_effect_tooltip = ALF_we_were_attacked_flag_cleared_tt
+		add_war_support = 0.05
+		add_political_power = 5
+		clr_country_flag = ALF_we_were_attacked_flag
+	}
+}
+
+##升起旗帜
+country_event = {
+	id = ALF.16
+	#picture = GFX_common_event_gui_test
+	title = ALF.16.t
+	desc = ALF.16.desc
+	is_triggered_only = yes
+	option = {
+		name = ALF.16.a
 		custom_effect_tooltip = ALF_raise_flag_tt
 	}
+}
 
+##自警团的兵
+country_event = {
+	id = ALF.17
+	#picture = GFX_common_event_gui_test
+	title = ALF.17.t
+	desc = ALF.17.desc
+	is_triggered_only = yes
+	option = {
+		name = ALF.17.a
+		add_war_support = 0.05
+	}
 }

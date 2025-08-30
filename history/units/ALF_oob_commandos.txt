@@ -6,16 +6,28 @@ division_template = {
 		infantry_sf = {x = 0 y = 1}
 		infantry_sf = {x = 1 y = 0}
 		infantry_sf = {x = 1 y = 1}
+		infantry_sf = {x = 2 y = 0}
+		infantry_sf = {x = 2 y = 1}
 	}
 	support = {
 		recon = {x = 0 y = 0}
 		engineer = {x = 0 y = 1}
+		fire_support_team_su_la = { x = 1 y = 2 }
 	}
 }
 
 units = {
 	division = {
 		name = "先遣突击队 极光"
+		location = 7432
+		division_template = "Commando Pioneers" #这个师用的编制的名字
+		start_experience_factor = 0.9 #初始经验0-1 ,0.2为银牌
+		start_equipment_factor = 0.8 #初始装备 0-1
+		start_manpower_factor = 0.8 #初始人力 0-1
+	}
+
+	division = {
+		name = "先遣突击队 洋流"
 		location = 7432
 		division_template = "Commando Pioneers" #这个师用的编制的名字
 		start_experience_factor = 0.9 #初始经验0-1 ,0.2为银牌

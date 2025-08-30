@@ -13,14 +13,20 @@
  ALF_operation_protect_wing: "「庇护之羽」行动"
  ALF_operation_protect_wing_desc: "流亡者遭遇了一场无耻且残暴的袭击。它要么是夫人策划的，要么就是与夫人有关。考验流亡者新家园的时刻到了，在这片名为黑市的无法地带中，流亡者只有一条路可走：要么胜利，要么毁灭。"
  ALF_establish_law_enforement_team: "武装警备团"
+ ALF_establish_law_enforement_team_focus_tt: "组建6个由§Y民兵§!组成的作战部队。"
+
  ALF_Enable_abandoned_inventory: "重启废弃库存"
+ ALF_Reorganize_the_postal_system: "恢复邮政系统"
+ ALF_Conduct_community_surveys: "进行社区侦察"
+ ALF_Conduct_community_surveys_desc: "现在的一大问题是，流亡者缺乏对这片地区的了解。现如今，袭击者藏在暗处，而流亡者却被迫处于明处。显然，流亡者必须了解这片区域的地形、居民、帮派，以及其他一切，才能在这片区域立足。\n\n这就意味着，组建一支精干的侦察队伍是当务之急——幸运的是，流亡者们了解阿里乌斯学园的情报部门是如何运作的，尽管条件简陋，但她们可以复制出一个精巧但五脏俱全的微缩情报部，并以此为起点执行侦察任务。"
+ ALF_Intelligence_Agency: "特别勤务处"
  ALF_target_HTG: "整合：金钗盗贼帮"
  ALF_target_HTG_desc: "§Y金钗盗贼帮§!是一支盘踞在流亡者边境的犯罪团伙。情报显示，她们使用严酷的制度管理着整个组织，以进行有组织的盗窃、抢劫和走私行动。流亡者如今已终结了这个罪恶集团，并且计划进行一次彻底的「社区清洁」。"
- ALF_Reorganize_the_postal_system: "恢复邮政系统"
- ALF_Conduct_community_surveys: "进行社区走访"
  ALF_target_COS: "整合：圣徒升天会"
  ALF_target_COS_desc: "§Y圣徒升天会§!是由圣徒会建立的古老修女社团，但现在，它的组织已经腐败堕落。不过，该区域的居民仍然相信升天会可以庇护他们，我们可以利用这一点整合该区域。"
- ALF_target_AVG: "「噤声」行动"
+ ALF_gain_core_of_the_state_tt: "将§Y占领地区§!整合至流亡者的控制之中。"
+ ALF_target_AVG: "「利非订权杖」行动"
+ ALF_operation_protect_wing_has_completed_flag: "「庇护之羽」行动：§G已完成§!"
  ALF_Raise_the_flag: "升起旗帜"
 
 ####################
@@ -31,27 +37,93 @@
  ALF_mrd_title: "本轮改革进度："
  ALF_mrd_progress_tt: "当进度到达100%时，流亡者将会获得§G1§!§Y军事改革点数§!。"
 
- ALF_Livability_decision_category: "战略储备"
- ALF_Livability_decision_category_desc: "§Y战略储备§!表示了流亡者为接下来的生存、发展，以及作战所§C储备的资源§!。随着流亡者控制区的增加，维持区域公共设施运转所需的战略储备也会增加；除此之外，面对不同局势所做出的抉择也会影响战略储备的数量。\n\n面对黑市中的汹涌浪潮，流亡者可以消耗战略储备来§G建立优势§!，但若战略储备不足，流亡者的行动也会§R受到限制§!。\n\n目前的战略储备：[?ALF.Livability_var|+=0..1]\n每月战略储备获取：[?modifier@ALF_Livability_int|+=0..1]\n来自规模的消耗：[?ALF.Livability_standard_var||+=0..1]\n来自事件的消耗：[?ALF.Livability_from_event_var|+=0..1]"
-
  ALF_war_plan_protect_wing_category: "作战计划：羽翼"
  ALF_war_plan_protect_wing_category_desc: "流亡者面临一场充满了不确定的边境战争。\n\n策划了对流亡者袭击的团体可能与“夫人”有关，但到目前为止，没有任何证据支持这一点。不论如何，制造了这一切的人对流亡者抱有敌意。流亡者必须尽快做好准备，进行先发制人的打击，以防陷入被动。\n\n§Y任务：§!\n确保边境安全。\n\n§Y控制下述所有区域：§!\n[657.operation_protect_wing_sl]\n[200.operation_protect_wing_sl]\n[201.operation_protect_wing_sl]\n[198.operation_protect_wing_sl]\n\n"
+
+ ALF_we_were_attacked_flag: "§R迫在眉睫的袭击§!"
 
  operation_protect_wing_sl_control_by_us: "  --[THIS.GetName]:    §G已处于我方控制下§!"
  operation_protect_wing_sl_control_by_enemy: "  --[THIS.GetName]:    §R尚未被控制§!"
 
+ ALF_war_plan_protect_wing_trigger_mission: "占领区域"
+ ALF_war_plan_protect_wing_trigger_mission_desc: "流亡者必须占领目标区域，以结束这场危机。"
  ALF_war_plan_protect_wing_timer_mission: "迫在眉睫的§R袭击§!"
  ALF_war_plan_protect_wing_timer_mission_desc: "我们仍不能确定敌人的目的是什么，但敌人一定会发起下一次袭击。\n时间紧迫……"
- ALF_war_with_HTG_decision: "瓦解§Y金钗盗贼帮§!"
+ ALF_war_with_HTG_decision: "瓦解：§Y金钗盗贼帮§!"
  ALF_war_with_HTG_decision_desc: "金钗盗贼帮的存在一直是一个威胁。流亡者曾经与这些不法分子相安无事，但现在，局势已经出现了变化。"
- ALF_war_with_COS_decision: "瓦解§Y圣徒升天会§!"
+ ALF_war_with_COS_decision: "瓦解：§Y圣徒升天会§!"
  ALF_war_with_COS_decision_desc: "圣徒升天会是由圣徒会建立的宗教组织。这意味着它有被夫人渗透的风险，该威胁必须被平息。"
+ ALF_war_with_AVG_decision: "征服：§Y旧学生会前哨§!"
+ ALF_war_with_AVG_decision_desc: "黑市休闲娱乐中心——或者说，赌场，由一群可悲又不自知的叛徒控制着。既然她们已经对流亡者发动了袭击，那她们的命运也就此注定。"
+ ALF_protect_wing_enhance_supply_decision: "加强补给行动"
+ ALF_protect_wing_enhance_supply_decision_desc: "通过一系列宣传和号召，我们应当能找到愿意用双手帮我们输送补给的人手。"
+ ALF_protect_wing_supply_truck_decision: "翻新库存卡车"
+ ALF_protect_wing_supply_truck_decision_desc: "为了维持补给线的畅通，流亡者需要更多的运输车辆。\n幸运的是，流亡者在废弃的养护站中发现了一些旧卡车。虽然它们已经破旧不堪，但只要经过适当的维修，这些卡车就能重新上路。"
+ ALF_protect_wing_strength_frontline_decision: "对[FROM.GetName]发动大规模攻势"
+ ALF_protect_wing_strength_frontline_decision_desc: "敌人无法抵挡我们，我们应当利用这个机会，一举击垮这群乌合之众。"
 
 ####################
-##效果！！！
+##战略储备！！！
 ####################
- ALF_improve_livability_modifier_effect_tt: "£increase_texticon §Y月度生活条件§!获得§G小幅度§!提升。"
+ ALF_Livability_decision_category: "战略储备"
+ ALF_Livability_decision_category_desc: "£market_subsidy_small_texticon §Y战略储备§!表示了流亡者为接下来的生存、发展，以及作战所§C储备的资源§!。随着流亡者控制区的增加，维持区域公共设施运转所需的战略储备也会增加；除此之外，面对不同局势所做出的抉择也会影响战略储备的数量。\n\n面对黑市中的汹涌浪潮，流亡者可以消耗战略储备来§G建立优势§!，但若战略储备不足，流亡者的行动也会§R受到限制§!。\n\n目前的战略储备：[?ALF.Livability_var|+=0..1]\n每月战略储备获取：[?modifier@ALF_Livability_int|+=0..1]\n来自规模的消耗：[?ALF.Livability_standard_var||+=0..1]"
+ 
+ restore_state_mail_system_targeted_decision: "恢复[FROM.GetName]的邮政系统"
+ ALF_Reorganize_the_postal_system_tt: "允许恢复每个受到控制的黑市区域的邮政系统。\n这将§G改善§!我们的§Y战略资源获取能力§!。"
 
+ ALF_Livability_for_infantry_equipment: "重启步兵装备库存"
+ ALF_Livability_for_artillery_equipment: "重启火力武器库存"
+ ALF_Livability_for_support_equipment: "重启支援装备库存"
+
+ ALF_Livability_count_down_mission: "月度统计"
+ ALF_calculate_livability_state_tt: "统计£increase_texticon §Y战略资源§!……"
+##效果
+ ALF_small_improve_livability_modifier_effect_tt: "£increase_texticon §Y战略资源获取§!获得§G小幅度§!提升。"
+ ALF_medium_improve_livability_modifier_effect_tt: "£increase_texticon £increase_texticon §Y战略资源获取§!获得§G中幅度§!提升。"
+ ALF_large_improve_livability_modifier_effect_tt: "£increase_texticon £increase_texticon £increase_texticon §Y战略资源获取§!获得§G大幅度§!提升。"
+ ALF_small_decrease_livability_modifier_effect_tt: "£decrease_texticon §Y战略资源获取§!遭到§R小幅度§!下降。"
+ ALF_medium_decrease_livability_modifier_effect_tt: "£decrease_texticon £decrease_texticon §Y战略资源获取§!遭到§R中幅度§!下降。"
+ ALF_large_decrease_livability_modifier_effect_tt: "£decrease_texticon £decrease_texticon £decrease_texticon §Y战略资源获取§!遭到§R大幅度§!下降。"
+
+ ALF_improve_livability_1_pts_tt: "£market_subsidy_small_texticon 战略储备：§G+1§!。\n"
+ ALF_improve_livability_2_pts_tt: "£market_subsidy_small_texticon 战略储备：§G+2§!。\n"
+ ALF_improve_livability_3_pts_tt: "£market_subsidy_small_texticon 战略储备：§G+3§!。\n"
+ ALF_improve_livability_5_pts_tt: "£market_subsidy_small_texticon 战略储备：§G+5§!。\n"
+ ALF_improve_livability_10_pts_tt: "£market_subsidy_small_texticon 战略储备：§G+10§!。\n"
+
+ ALF_use_livability_1_pts_tt: "£market_subsidy_small_texticon 战略储备：§R-1§!。\n"
+ ALF_use_livability_2_pts_tt: "£market_subsidy_small_texticon 战略储备：§R-2§!。\n"
+ ALF_use_livability_3_pts_tt: "£market_subsidy_small_texticon 战略储备：§R-3§!。\n"
+ ALF_use_livability_5_pts_tt: "£market_subsidy_small_texticon 战略储备：§R-5§!。\n"
+ ALF_use_livability_10_pts_tt: "£market_subsidy_small_texticon 战略储备：§R-10§!。\n"
+
+ has_livability_1pts_tt: "£market_subsidy_small_texticon 需要战略储备：§Y1§!。\n"
+ has_livability_2pts_tt: "£market_subsidy_small_texticon 需要战略储备：§Y2§!。\n"
+ has_livability_3pts_tt: "£market_subsidy_small_texticon 需要战略储备：§Y3§!。\n"
+ has_livability_5pts_tt: "£market_subsidy_small_texticon 需要战略储备：§Y5§!。\n"
+ has_livability_10pts_tt: "£market_subsidy_small_texticon 需要战略储备：§Y10§!。\n"
+
+ decision_cost_has_livability_1pts: "£market_subsidy_small_texticon §Y1§!"
+ decision_cost_has_livability_1pts_blocked: "£market_subsidy_small_texticon §R1§!"
+ decision_cost_has_livability_1pts_tooltip: "该决议需要战略储备：§Y1§!"
+
+##动态精神
+ ALF_Livability_dynamic_modifier: "战略储备"
+ ALF_Livability_dynamic_modifier_desc: "战略储备代表着流亡者为了接下来的一切所做的准备。过多的储备它毫无意义，但将其消耗殆尽也亦非良策。"
+ ALF_Livability_int: "战略储备获取"
+
+####################
+##领袖效果！！！
+####################
+ ALF_rise_again_trait: "败而不馁"
+ ALF_silent_hardworker: "沉默的做题家"
+ ALF_strategist: "战术大师"
+
+####################
+##战争目标！！！
+####################
+ ALF_pacify_target_wargoal: "恢复秩序"
+ ALF_pacify_target_wargoal_name: "$ORDER$$FIRST$平定$SECOND$之战"
 
 ####################
 ##事件！！！
@@ -86,7 +158,7 @@
  ALF.5.t: "第二波人潮"
  ALF.5.desc: "当另一批流亡者抵达时，她们遇上了早已准备好的安置队伍。在流亡者的安排下，她们会被转移到新开辟的一片公园区域暂住。\n\n但即便如此，前来投奔的学生数量还是超出了流亡者的预期。尽管这些人中有不少“技师”或“研究者”这样的专业人材，但多数人都是在颠沛流离中瘦弱不堪的流民。流亡者当然明白，这些目前难当大用的流民，在细心的照料后，可以成为她们事业的助力。但在当下，这些人是毫无疑问的累赘。\n\n“我们不能继续这样下去。”很快，就有这样的声音扩散开来，尽管遭到反驳，但却也收获不少支持者。\n\n不论如何，这些争执都指明了一件事：流亡者们正在面对一个两难的选择——要么咬紧牙关，但赌上整个事业的未来；要么特事特办，放弃一部分人，来换取另一部分人更好的生存条件。"
  ALF.5.a: "履行我们的誓言，给她们一样的资源。"
- ALF.5.b: "能者优先，优先供给这批新成员。"
+ ALF.5.b: "能者优先，优先供给这一类成员。"
 
  ALF.6.t: "第三波人潮"
  ALF.6.desc: "向往新家的，并非只有受冻挨饿的“难民”。\n\n跨过围挡、拒马，以及紧张的流亡者巡逻队，“领袖”和副手见到了又一批和她们相似却不同的人。\n\n这些人也是阿里乌斯的学生，许多流亡者甚至还对她们留有些许印象。她们居住在地下墓穴的出口附近，在流亡者通过时，这些学生拒绝加入她们，也不愿意提供帮助。但现在，沿着流亡者们留下的痕迹，她们也踏上了背井离乡的道路，最终到达了流亡者们的“新家”。\n\n“我知道我们做过什么……也知道我们曾经犯下了不能挽回的错误，”她们的其中一个说道，“……但“夫人”正在加强对边缘区域的封锁，我们的家被毁掉了……”\n\n她没有说下去，但却意思明了。流亡者们之间因此传出一阵切切私语：她们是承诺过，要平等地对待所有人；但是，她们为了“新家”的土地所付出的高昂价格，可也是这群短视的逃难者们无法想象的。\n\n“我们要快点决定。”桥野悦依对“领袖”说道。但说完这话，她自己也沉默了。有些事也许总会被遗忘，但肯定不是现在。"
@@ -138,4 +210,13 @@
  ALF.15.t: "旗帜"
  ALF.15.desc: "负责善后的流亡者学生正小心翼翼地跨过走廊里的各种残骸。\n\n这里曾经是一条摆满了各种精致艺术品的走廊，但在室内激战过后，这里只剩下一片毫无价值的废料。唯一幸存的是一座半人高的“美神”雕塑，它的手臂被打断，身上也留下了孔径不一的弹孔。\n\n这或许是某种报应：旧学生会抛弃了她们的誓言与荣耀，将这座曾经的学生会建筑变成了流淌着罪恶与金钱的巢穴，并凭此掌握了数额庞大的财富；而多年之后，另一批阿里乌斯的学生来到这里，轻而易举地就将她们过去的这一切事业化作齑粉。\n\n“人生无常啊……”流亡者的队长之一，小谷图奈轻声感叹道。坏人的事业都未必能千秋万代，又何况是义人们的奋斗呢。\n\n“队长！队长！你看这个！”就在图奈感叹的时候，她的部下却突然从走廊尽头的总裁办公室里跑了出来。她手里还扛着一面旗帜，一面旧的、阿里乌斯学院内战前使用的旗帜。逃走的旧学生会干部什么都带走了，唯独这东西留在原地没拿。\n\n“旧校旗！”图奈身边的流亡者纷纷惊呼起来。她们自己的那面堪称文物的旗帜早就在东奔西逃时弄丢了，现在却在这边看到了一面更精致的原装正品。\n\n“我们应该把它在我们的营地升起来。”明白这件事事关重大的小谷图奈立刻命令道，“领袖就在楼下，先把这个好消息告诉她。”\n\n“好喔！”\n\n流亡者们欢呼起来，簇拥着那面旗帜跑下楼去。小谷图奈看着她们的背影，不由得又感叹出声："
  ALF.15.a: "“哎哎，人生无常啊。”"
+ ALF_we_were_attacked_flag_cleared_tt: "§Y移除局势§!：§R迫在眉睫的袭击§!"
+
+ ALF.16.t: "新的开始"
+ ALF.16.desc: "在激昂的号令声中，流亡者的护旗队在营地所有人的注视下走过广场，一路来到了那根新立起的旗杆下。\n\n自流亡者丢掉那面老校旗之后，这个传统就已经许久没有执行过了。可今天，在奇迹的指引下，流亡者再一次拥有了一面象征着她们归宿的旗帜。\n\n“升旗！”\n\n小谷图奈大声命令道。紧接着，一阵不太整齐的阿里乌斯校曲响了起来——这些是流亡者接收的新成员们组成的临时乐队，她们的演奏工具由五花八门的乐器拼凑，却也算得上充满气势。\n\n终于，旗帜飘扬在了旗杆顶端，在风中猎猎作响。流亡者们欢呼起来，虽说前路依然难以预料，但现在也算得上一种苦尽甘来。\n\n见到这一幕，桥野悦依不由得转过头，看向坐在最后面的“领袖”：她依然戴着那副面具，看不出表情究竟是喜是悲。"
+ ALF.16.a: "她的目光，如今落在在更远的地方。"
  ALF_raise_flag_tt: "§G那后面依然是漫漫长路。§!"
+
+ ALF.17.t: "反抗之火"
+ ALF.17.desc: "流亡者的征兵队遇到了点怪事。\n\n在“领袖”的指示下，流亡者准备成立一个负责社区安全的警备部队。但还没等征兵办的棚子支起来，街道的对面就已经挤满了围观的人。负责这事的士官察觉到不对，赶忙换了征兵的地方，但没想到的是，在新的街道，却也依然是这样的情景。\n\n“我们这是来征兵的。”\n\n在这样的注目下，士官终于忍不住走上前，对着离她最近的围观者说到。这个围观者看起来只有士官一半高，还是该上低等学校的年纪，“你知道什么是征兵吗？”\n\n“我知道啊，你们要打仗。”不料，小小的女孩却伶牙俐齿地回答道，“这里已经很久没人去揍坏人了。修女姐姐说干这事的都是天字第一号的傻瓜，我还没见过傻瓜，所以来看看。”\n\n这样的发言把周围看热闹的人都逗笑了，但出乎流亡者士官意料的是，大家却并没有因此散去，反倒是在一阵哄笑后，在棚子前排起了长队："
+ ALF.17.a: "征兵是吧？算我一个。"

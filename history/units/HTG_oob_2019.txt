@@ -1,0 +1,78 @@
+division_template = {
+	name = "Militias"		
+
+	regiments = {
+		infantry_militia = {x = 0 y = 0}
+		infantry_militia = {x = 0 y = 1}
+		infantry_militia = {x = 1 y = 0}
+		infantry_militia = {x = 1 y = 1}
+	}
+}
+
+units = {
+	division = {
+		name = "武装走私团伙"
+		location = 2587
+		division_template = "Militias" #这个师用的编制的名字
+		start_experience_factor = 0.05 #初始经验0-1 ,0.2为银牌
+		start_equipment_factor = 1 #初始装备 0-1
+	}
+
+	division = {
+		name = "武装走私团伙"
+		location = 7299
+		division_template = "Militias" #这个师用的编制的名字
+		start_experience_factor = 0.05 #初始经验0-1 ,0.2为银牌
+		start_equipment_factor = 1 #初始装备 0-1
+	}
+
+	division = {
+		name = "武装走私团伙"
+		location = 7299
+		division_template = "Militias" #这个师用的编制的名字
+		start_experience_factor = 0.05 #初始经验0-1 ,0.2为银牌
+		start_equipment_factor = 1 #初始装备 0-1
+	}
+
+	division = {
+		name = "武装走私团伙"
+		location = 8627
+		division_template = "Militias" #这个师用的编制的名字
+		start_experience_factor = 0.05 #初始经验0-1 ,0.2为银牌
+		start_equipment_factor = 1 #初始装备 0-1
+	}
+
+	division = {
+		name = "飞车党"
+		location = 11062
+		division_template = "Militias" #这个师用的编制的名字
+		start_experience_factor = 0.05 #初始经验0-1 ,0.2为银牌
+		start_equipment_factor = 1 #初始装备 0-1
+	}
+
+	division = {
+		name = "盗贼团"
+		location = 11062
+		division_template = "Militias" #这个师用的编制的名字
+		start_experience_factor = 0.05 #初始经验0-1 ,0.2为银牌
+		start_equipment_factor = 1 #初始装备 0-1
+	}
+
+	division = {
+		name = "盗贼团"
+		location = 6766
+		division_template = "Militias" #这个师用的编制的名字
+		start_experience_factor = 0.05 #初始经验0-1 ,0.2为银牌
+		start_equipment_factor = 1 #初始装备 0-1
+	}
+
+	division = {
+		name = "盗贼团"
+		location = 6766
+		division_template = "Militias" #这个师用的编制的名字
+		start_experience_factor = 0.05 #初始经验0-1 ,0.2为银牌
+		start_equipment_factor = 1 #初始装备 0-1
+	}
+}
+
+###
