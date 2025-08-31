@@ -767,6 +767,7 @@ leader_traits = {
         stability_factor = -0.2
         political_power_factor = 0.2
         army_attack_factor = 0.2
+        ai_focus_aggressive_factor = 1
     }
 
     #弹孔中的花朵

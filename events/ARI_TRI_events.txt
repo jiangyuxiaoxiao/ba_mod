@@ -302,6 +302,14 @@ country_event = { #旅者”行动总结-部分成功
                 }
                 complete_national_focus = ARI_traveller_operation_lost
             }
+             if = {
+                limit = {
+                    not = {
+                        has_completed_focus = ARI_open_the_curtain
+                    }
+                }
+                complete_national_focus = ARI_open_the_curtain
+            }
             set_global_flag  =ARI_traveller_operation_Has_Completed
             mark_focus_tree_layout_dirty = yes
             set_variable = {
@@ -968,7 +976,6 @@ country_event = { #“旅者”行动总结-基本失败
             set_variable = {
                 ARI_lesson_traveller_operation_army_org_factor = -0.2
             }
-
             set_variable = {
                 ARI_lesson_traveller_operation_goods_factor = 0.25
             }
@@ -985,8 +992,6 @@ country_event = { #“旅者”行动总结-基本失败
     is_triggered_only = yes
     option = {
         name = ARI_coup.10.a
-        mark_focus_tree_layout_dirty = yes
-
         if = {
             limit = {
                 not = {
@@ -995,7 +1000,6 @@ country_event = { #“旅者”行动总结-基本失败
             }
             complete_national_focus = ARI_traveller_operation
         }
-
          if = {
             limit = {
                 not = {
@@ -1004,22 +1008,16 @@ country_event = { #“旅者”行动总结-基本失败
             }
             complete_national_focus = ARI_traveller_operation_lost
         }
-
-        
+        if = {
+            limit = {
+                not = {
+                    has_completed_focus = ARI_open_the_curtain
+                }
+            }
+            complete_national_focus = ARI_open_the_curtain
+        }
+        mark_focus_tree_layout_dirty = yes
         effect_tooltip = {
-            set_variable = {
-                ARI_lesson_traveller_operation_war_support_factor = -0.2
-            }
-            set_variable = {
-                ARI_lesson_traveller_operation_stability = -0.2
-            }
-
-            set_variable = {
-                ARI_lesson_traveller_operation_goods_factor = 0.25
-            }
-            set_variable = {
-                ARI_lesson_traveller_operation_industrial_capacity_factory = -0.25
-            }
             add_dynamic_modifier = {
                 modifier = ARI_catastrophic_traveller_operation
             }
