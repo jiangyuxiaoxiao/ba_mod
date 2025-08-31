@@ -343,7 +343,6 @@ ALF_war_plan_protect_wing_category = {
 	##对金钗盗贼团宣战
 	ALF_war_with_HTG_decision = {
 		visible = {
-			tag = ALF
 			HTG = {
 				exists = yes
 			}
@@ -371,7 +370,6 @@ ALF_war_plan_protect_wing_category = {
 	##对圣徒升天会宣战
 	ALF_war_with_COS_decision = {
 		visible = {
-			tag = ALF
 			COS = {
 				exists = yes
 			}
@@ -399,7 +397,6 @@ ALF_war_plan_protect_wing_category = {
 	##对旧学生会前哨开战
 	ALF_war_with_AVG_decision = {
 		visible = {
-			tag = ALF
 			has_completed_focus = ALF_target_AVG
 			AVG = {
 				exists = yes
