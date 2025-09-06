@@ -52,7 +52,7 @@ division_template = {
 		fire_support_team_la = {x = 2 y = 0}
 	}
 	support = {
-		engineer = { x = 0 y = 1 }
+		engineer = { x = 0 y = 0 }
 	}
 }
 
@@ -69,7 +69,7 @@ division_template = {
 		apc_artillery_unit = {x = 2 y = 0}
 	}
 	support = {
-		engineer = { x = 0 y = 1 }
+		engineer = { x = 0 y = 0 }
 	}
 }
 
@@ -84,7 +84,7 @@ division_template = {
 		infantry = {x = 1 y = 1}
 	}
 	support = {
-		military_police = { x = 0 y = 1 }
+		military_police = { x = 0 y = 0 }
 	}
 }
 
@@ -99,7 +99,7 @@ division_template = {
 		infantry_sf = {x = 1 y = 1}
 	}
 	support = {
-		recon = { x = 0 y = 1 }
+		recon = { x = 0 y = 0 }
 	}
 }
 
