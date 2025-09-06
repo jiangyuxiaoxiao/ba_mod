@@ -63,6 +63,8 @@ set_technology = {
 	troop_training_T3 = 1
 	infantry_weapons_upgrade_suppressive_weapon_T1 = 1
 	infantry_weapons_upgrade_suppressive_weapon_T2 = 1
+	##骑兵
+	bare_cavalry_tech = 1
 }
 
 set_variable = {
@@ -103,7 +105,7 @@ add_ideas = {
 	ALF_far_from_home
 	ALF_defeated_in_civil_war
 	ALF_partisan_army
-	ALF_technology_left_behind:
+	ALF_technology_left_behind
 }
 
 set_politics = {

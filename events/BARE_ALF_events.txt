@@ -408,3 +408,38 @@ country_event = {
 		unlock_decision_tooltip = ALF_Livability_for_synthetic_refinery
 	}
 }
+
+country_event = {
+	id = ALF.19
+	#picture = GFX_common_event_gui_test
+	title = ALF.19.t
+	desc = ALF.19.desc
+	is_triggered_only = yes
+
+	##水电站
+	option = {
+		name = ALF.19.a
+		add_ideas = ALF_CEN_electric_contract
+		ALF = {
+			country_event = {
+				id = ALF.20
+				days = 3
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ALF.20
+	#picture = GFX_common_event_gui_test
+	title = ALF.20.t
+	desc = ALF.20.desc
+	is_triggered_only = yes
+
+	##水电站
+	option = {
+		name = ALF.20.a
+		add_ideas = ALF_CEN_electric_contract_1
+		unlock_decision_tooltip = restore_state_electric_system_targeted_decision
+	}
+}

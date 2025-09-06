@@ -37,8 +37,9 @@ ALF_calculate_livability_effect = {
 			limit = {
 				is_owned_and_controlled_by = ALF
 			}
+			##敏感数值，需要在不断验证##
 			add_to_temp_variable = {
-				ALF.Livability_state_var = -0.5
+				ALF.Livability_state_var = -0.6
 			}
 		}
 	}
@@ -287,3 +288,48 @@ ALF_gain_1_mrd_pts = {
 		}
 	}
 }
+
+##改善背井离乡效果
+improve_ALF_far_from_home_idea_effect = {
+	if = {
+		limit = {
+			has_idea = ALF_far_from_home
+		}
+		swap_ideas = {
+			remove_idea = ALF_far_from_home
+			add_idea = ALF_far_from_home_1
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = ALF_far_from_home_1
+		}
+		swap_ideas = {
+			remove_idea = ALF_far_from_home_1
+			add_idea = ALF_far_from_home_2
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = ALF_far_from_home_2
+		}
+		swap_ideas = {
+			remove_idea = ALF_far_from_home_2
+			add_idea = ALF_far_from_home_3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = ALF_far_from_home_3
+		}
+		swap_ideas = {
+			remove_idea = ALF_far_from_home_3
+			add_idea = ALF_far_from_home_4
+		}
+	}
+	else = {
+		add_political_power = 50
+	}
+}
+
+####

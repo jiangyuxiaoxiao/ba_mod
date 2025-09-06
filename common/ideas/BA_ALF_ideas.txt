@@ -2,143 +2,190 @@ ideas = {
 	country = {
 		##背井离乡
 		ALF_far_from_home = {
-			picture = unkown
+			#picture = unknown
 			modifier = {
 				political_power_factor = -0.1
 				industrial_capacity_factory = -0.2
-				production_speed_buildings_factor = -0.5 
+				production_speed_buildings_factor = -0.5
+			}
+		}
+		##背井离乡-改善
+		ALF_far_from_home_1 = {
+			#picture = unknown
+			modifier = {
+				political_power_factor = -0.05
+				industrial_capacity_factory = -0.1
+				production_speed_buildings_factor = -0.3
 			}
 		}
 
-		##背井离乡-改善
-		ALF_far_from_home_1 = {
-			picture = unkown
+		ALF_far_from_home_2 = {
+			#picture = unknown
 			modifier = {
-				industrial_capacity_factory = -0.1
+				industrial_capacity_factory = -0.05
 				production_speed_buildings_factor = -0.1
+			}
+		}
+
+		ALF_far_from_home_3 = {
+			#picture = unknown
+			modifier = {
+				production_speed_buildings_factor = -0.05
+			}
+		}
+
+		##崭新家园##
+		ALF_far_from_home_4 = {
+			#picture = unknown
+			modifier = {
+				political_power_factor = 0.05
+				industrial_capacity_factory = 0.05
 			}
 		}
 
 		##游击军队
 		ALF_partisan_army = {
-			picture = unkown
+			#picture = unknown
 			modifier = {
 				max_planning_factor = -0.5
 				planning_speed = -0.2
 				no_supply_grace = 48
 			}
 		}
-
+		
 		##游击军队改善
 		ALF_solving_partisan_army_1 = {
-			picture = unkown
+			#picture = unknown
 			modifier = {
 				max_planning_factor = -0.2
 				planning_speed = -0.1
 				no_supply_grace = 48
 			}
 		}
-
 		##思维落后
 		ALF_far_from_advance_warfare = {
-			picture = unkown
+			#picture = unknown
 			modifier = {
-
 			}
 		}
-
-		##缺乏研究设施
-		ALF_technology_left_behind = {
-			picture = unkown
-			modifier = {
-				research_speed_factor = -0.5
-			}
-		}
-
-		##缺乏研究设施-改善
-		ALF_technology_left_behind_1 = {
-			picture = unkown
-			modifier = {
-				research_speed_factor = -0.2
-			}
-		}
-
 		##夫人的影子
 		ALF_shadow_follows = {
-			picture = unkown
+			#picture = unknown
 			modifier = {
-
 			}
 		}
-
 		##失败之战
 		ALF_defeated_in_civil_war = {
-			picture = unkown
+			#picture = unknown
 			modifier = {
 				stability_factor = -0.35
 				war_support_factor = -0.35
 				army_morale_factor = -0.3
 			}
 		}
-
 		##失败之战-改善
 		ALF_defeated_in_civil_war_1 = {
-			picture = unkown
+			#picture = unknown
 			modifier = {
 				stability_factor = -0.1
 				war_support_factor = -0.1
 				army_morale_factor = -0.1
 			}
 		}
-
 		##我们能做到
 		ALF_we_can_do_this = {
-			picture = unkown
+			#picture = unknown
 			modifier = {
 				stability_factor = 0.1
 				war_support_factor = 0.1
 				industrial_capacity_factory = 0.1
 			}
 		}
-
 		##人口普查
 		ALF_population_investigate = {
-			picture = unkown
+			#picture = unknown
 			modifier = {
 				can_use_combat_readiness_percentage = 0.1
 				combat_readiness_recovery_percentage = 0.1
 			}
 		}
-
 		##流亡者参谋本部
 		ALF_officer_group = {
-			picture = unkown
+			#picture = unknown
 			modifier = {
 				command_abilities_cost_factor = -0.2
 				command_power_gain_mult = 0.2
 				skill_bonus_factor = 0.1
 			}
 		}
-
 		##特别突击训练
 		ALF_combat_trainning_0 = {
-			picture = unkown
+			#picture = unknown
 			modifier = {
 				dont_lose_dig_in_on_attack = 1
 				river_crossing_factor = -0.1
-                army_core_defence_factor = 0.1
+				army_core_defence_factor = 0.1
 			}
 		}
-
 		##强化边境
 		ALF_combat_trainning_1 = {
-			picture = unkown
+			#picture = unknown
 			modifier = {
 				dont_lose_dig_in_on_attack = 1
 				river_crossing_factor = -0.1
-                army_core_defence_factor = 0.1
+				army_core_defence_factor = 0.1
 			}
 		}
-
+		##电力合同收入
+		ALF_CEN_electric_contract = {
+			#picture = unknown
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		##供电##
+		ALF_CEN_electric_contract_1 = {
+			#picture = unknown
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+			research_bonus = {
+				power_development = 0.1
+			}
+		}
+	}
+	####
+	industrial_concern = {
+		ALF_technology_left_behind = {
+			#picture = unknown
+			allowed = {
+				tag = ALF
+			}
+			available = {
+				always = no
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			modifier = {
+				research_speed_factor = -0.5
+			}
+		}
+		##弥补技术断层
+		ALF_technology_left_behind_1 = {
+			#picture = unknown
+			allowed = {
+				tag = ALF
+			}
+			available = {
+				always = no
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			modifier = {
+				research_speed_factor = -0.2
+			}
+		}
 	}
 }

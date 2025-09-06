@@ -15,6 +15,23 @@ division_template = {
 	}
 }
 
+division_template = {
+	name = "Assault Cavalry"		
+
+	regiments = {
+		cavalry = {x = 0 y = 0}
+		cavalry = {x = 0 y = 1}
+		cavalry = {x = 1 y = 0}
+		cavalry = {x = 1 y = 1}
+	}
+
+	support = {
+		recon = { x = 0 y = 0}
+		signal_company = { x = 0 y = 1}
+		fire_support_team_su_la = { x = 1 y = 2 }
+	}
+}
+
 units = {
 	division = {
 		name = "寻路者 01"
@@ -48,6 +65,24 @@ units = {
 		location = 4182
 		division_template = "Pathfinders SF" #这个师用的编制的名字
 		start_experience_factor = 0.7 #初始经验0-1 ,0.2为银牌
+		start_equipment_factor = 1 #初始装备 0-1
+		start_manpower_factor = 1 #初始人力 0-1
+	}
+
+	division = {
+		name = "突击骑兵 红方片"
+		location = 5373
+		division_template = "Assault Cavalry" #这个师用的编制的名字
+		start_experience_factor = 0.9 #初始经验0-1 ,0.2为银牌
+		start_equipment_factor = 1 #初始装备 0-1
+		start_manpower_factor = 1 #初始人力 0-1
+	}
+
+	division = {
+		name = "突击骑兵 红桃心"
+		location = 7432
+		division_template = "Assault Cavalry" #这个师用的编制的名字
+		start_experience_factor = 0.9 #初始经验0-1 ,0.2为银牌
 		start_equipment_factor = 1 #初始装备 0-1
 		start_manpower_factor = 1 #初始人力 0-1
 	}

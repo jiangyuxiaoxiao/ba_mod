@@ -185,9 +185,12 @@ characters = {
 				##
 			}
 			traits = {
+				cavalry_officer
+				cavalry_leader
 			}
-			skill = 1
-			attack_skill = 1
+
+			skill = 2
+			attack_skill = 7
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 1
@@ -260,12 +263,24 @@ characters = {
 				##
 			}
 			traits = {
+				organizer
 			}
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ALF_Norimatsu_Miru_political_advisor
+			cost = 75
+			available = {
+				has_completed_focus = ALF_confirm_economic_plan
+			}
+			traits = {
+				ALF_intelligence_analyst
+			}			
 		}
 	}
 	##东江静
@@ -285,12 +300,26 @@ characters = {
 				##
 			}
 			traits = {
+				career_officer
+				engineer_officer
+				skilled_staffer
 			}
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+			skill = 2
+			attack_skill = 5 #4
+			defense_skill = 1 #0
+			planning_skill = 3 #1
+			logistics_skill = 2 #1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ALF_Toueshi_Dzuru_political_advisor
+			cost = 100
+			available = {
+				has_completed_focus = ALF_confirm_economic_plan
+			}
+			traits = {
+				ALF_field_Surveyor
+			}			
 		}
 	}
 	##蒲原美代子

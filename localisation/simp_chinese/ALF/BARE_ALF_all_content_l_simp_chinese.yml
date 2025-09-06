@@ -1,5 +1,11 @@
 ﻿l_simp_chinese:
 ####################
+##变身名字
+####################
+ ALF_PMC_Company: "哨兵防务"
+ ALF_PMC_Company_DEF: "哨兵防务"
+ ALF_PMC_Company_ADJ: "哨兵防务"
+####################
 ##国策！！！
 ####################
  ALF_Common_Focus: "流亡者国策树：站稳脚跟"
@@ -47,12 +53,15 @@
  ALF_infrastructure_plan: "复兴基础设施"
  ALF_resource_produce: "自给自足"
  ALF_focus_trade: "重视外部贸易"
+ ALF_focus_trade_desc: "对外交流，从外界获得必要的战略资源和各类技术对流亡者而言至关重要。同时，允许人员流通也能为流亡者的发展带来助力。不过，流亡者必须要注意潜在的金融稳定和防卫安全问题，因此，组建一个海关部门至关重要。"
  ALF_expand_goods_production: "扩大消费品生产"
  ALF_rebuild_the_market_center: "改造旧学生会建筑"
  ALF_build_more_house: "满足住房需求"
  ALF_recovery_movement: "鼓励回收运动"
  ALF_rebuild_city_operation: "城市改造计划"
  ALF_solve_electric_problem: "解决用电问题"
+ ALF_solve_electric_problem_desc: "没有电力就不可能达成现代生活，这是毫无疑问的事实。但是，流亡者没有能力完全实现电力自给自足，所以，我们必须寻求一些额外的帮助。"
+ ALF_solve_electric_problem_tt: "§G预期不会受到拒绝§!\n一旦获得§C供电许可§!，以下计划将§G可用§!："
  ALF_rebuild_the_hydropower_station: "完成废弃水电站工程"
  ALF_be_ready_for_action: "蓄势待发"
  ALF_residential_census: "进行居民人口普查"
@@ -153,8 +162,9 @@
  ALF_Livability_decision_category: "战略储备"
  ALF_Livability_decision_category_desc: "£market_subsidy_small_texticon §Y战略储备§!表示了流亡者为接下来的生存、发展，以及作战所§C储备的资源§!。随着流亡者控制区的增加，维持区域公共设施运转所需的战略储备也会增加；除此之外，面对不同局势所做出的抉择也会影响战略储备的数量。\n\n面对黑市中的汹涌浪潮，流亡者可以消耗战略储备来§G建立优势§!，但若战略储备不足，流亡者的行动也会§R受到限制§!。\n\n目前的战略储备：[?ALF.Livability_var|+=0..1]\n每月战略储备获取：[?modifier@ALF_Livability_int|+=0..1]\n来自规模的消耗：[?ALF.Livability_standard_var||+=0..1]"
  
- restore_state_mail_system_targeted_decision: "恢复[FROM.GetName]的邮政系统"
+ restore_state_mail_system_targeted_decision: "（地图决议）恢复§Y[FROM.GetName]§!的邮政系统"
  ALF_Reorganize_the_postal_system_tt: "允许恢复每个受到控制的黑市区域的邮政系统。\n这将§G改善§!我们的§Y战略资源获取能力§!。"
+ restore_state_electric_system_targeted_decision: "（地图决议）将§Y[FROM.GetName]§!区域接入电网"
 
  ALF_Livability_for_infantry_equipment: "重启步兵装备库存"
  ALF_Livability_for_artillery_equipment: "重启火力武器库存"
@@ -162,7 +172,7 @@
 
  ALF_Livability_for_synthetic_refinery: "于§Y[FROM.GetName]§!区域建设§C炼油厂§!"
  ALF_Livability_for_arms_factory: "建设§C武器工厂§!"
- ALF_Livability_for_infrastructure: "改善§Y[FROM.GetName]§!区域的§C基础设施§!"
+ ALF_Livability_for_infrastructure: "（地图决议）改善§Y[FROM.GetName]§!区域的§C基础设施§!"
 
  ALF_Livability_count_down_mission: "月度统计"
  ALF_calculate_livability_state_tt: "统计£increase_texticon §Y战略资源§!……"
@@ -196,6 +206,10 @@
  decision_cost_has_livability_1pts_blocked: "£market_subsidy_small_texticon §R1§!"
  decision_cost_has_livability_1pts_tooltip: "该决议需要战略储备：§Y1§!"
 
+ decision_cost_has_livability_2pts: "£market_subsidy_small_texticon §Y2§!"
+ decision_cost_has_livability_2pts_blocked: "£market_subsidy_small_texticon §R2§!"
+ decision_cost_has_livability_2pts_tooltip: "该决议需要战略储备：§Y2§!"
+
  decision_cost_has_livability_3pts: "£market_subsidy_small_texticon §Y3§!"
  decision_cost_has_livability_3pts_blocked: "£market_subsidy_small_texticon §R3§!"
  decision_cost_has_livability_3pts_tooltip: "该决议需要战略储备：§Y3§!"
@@ -205,6 +219,8 @@
  decision_cost_has_livability_5pts_tooltip: "该决议需要战略储备：§Y5§!"
 
 #精神
+ ALF_unlock_political_advisor_tt: "\n解锁§Y政治顾问§!："
+
  ALF_Livability_dynamic_modifier: "战略储备"
  ALF_Livability_dynamic_modifier_desc: "战略储备代表着流亡者为了接下来的一切所做的准备。过多的储备它毫无意义，但将其消耗殆尽也亦非良策。"
  ALF_Livability_int: "战略储备获取"
@@ -226,9 +242,18 @@
 
  ALF_technology_left_behind: "技术断层"
  ALF_technology_left_behind_desc: "长久的与世隔绝与残酷的内战已经占据了流亡者的全部精力。除非情况稳定下来，否则流亡者难以改善这个问题。"
+ ALF_technology_left_behind_1: "弥补技术断层"
+ ALF_technology_left_behind_desc: "流亡者正在致力于改善其技术研究能力，但这依然需要相当漫长的时间才能完成。"
 
  ecolaws_ALF_command_economic: "指令经济"
  ecolaws_ALF_command_economic_desc: "生产与建设计划直接由学园管理层规划，并由行政机构负责监督执行的经济模式。优势和缺点都极为明显，可以被视为一种常态化的紧急措施。"
+ 
+ ALF_Special_trade: "重视贸易"
+
+ ALF_CEN_electric_contract: "电力合同收入"
+ ALF_CEN_electric_contract_1: "获得供电"
+
+ ALF_population_investigate: "人口普查"
 ####################
 ##领袖效果！！！
 ####################
@@ -237,6 +262,8 @@
  ALF_justice_prevails_tt: "§R  - 烈火辨玉§!"
  ALF_silent_hardworker: "沉默的做题家"
  ALF_strategist: "战术大师"
+ ALF_field_Surveyor: "实地测绘员"
+ ALF_intelligence_analyst: "海关主任"
 
 ####################
 ##战争目标！！！
@@ -248,6 +275,7 @@
 ##省份！！！
 ####################
  VICTORY_POINTS_11015_ALF: "武器制造所"
+ VICTORY_POINTS_7299_ALF: "水电站"
 ####################
 ##事件！！！
 ####################
@@ -345,7 +373,16 @@
  ALF.17.a: "征兵是吧？算我一个。"
 
  ALF.18.t: "黑色黄金"
- ALF.18.desc: "在当地一位前石油工人提供的信息的指引下，东江静拜访了这座废弃的油田。\n\n谁也没想到，当年湿地的开发商在这里豪掷千金，竟然是为了这么一处地下宝藏。在升腾的湿气里，那些早已停工的钻井机正静默地矗立在湿地的深处。由于缺乏维护，它们的机械结构都早已锈蚀，想要将它们重新开动，无疑还得花上不少的功夫。\n\n当然，东江静对此却并不担忧。她有信心把这里变得焕然一新，作为流亡者工程部队的缔造者，小谷图奈的徒弟，这点机械问题还难不倒她。她真正关心的，其实是运载这些原油的管道——湿地这里显然不具备建设提炼厂的物质条件，想让这些黑色的血液在流亡者的工业心脏中流淌，就必须要使用管道将这些原油送往远方。\n\n幸运的是，东江静很快就在油田附近的废弃板房中找到了一份遗留的地图。上面清晰地记载着原油管道的走向，以及周围所有的检修入口。东江静只看了一样，就确定了提炼工厂的最佳位置。"
+ ALF.18.desc: "在当地一位前石油工人提供的信息的指引下，小谷图奈的徒弟，东江静拜访了这座废弃的油田。\n\n谁也没想到，当年湿地的开发商在这里豪掷千金，竟然是为了这么一处地下宝藏。在升腾的湿气里，那些早已停工的钻井机正静默地矗立在湿地的深处。由于缺乏维护，它们的机械结构都早已锈蚀，想要将它们重新开动，无疑还得花上不少的功夫。\n\n当然，东江静对此却并不担忧。她有信心把这里变得焕然一新，作为流亡者工程部队的缔造者，小谷图奈的徒弟，这点机械问题还难不倒她。她真正关心的，其实是运载这些原油的管道——湿地这里显然不具备建设提炼厂的物质条件，想让这些黑色的血液在流亡者的工业心脏中流淌，就必须要使用管道将这些原油送往远方。\n\n幸运的是，东江静很快就在油田附近的废弃板房中找到了一份遗留的地图。上面清晰地记载着原油管道的走向，以及周围所有的检修入口。东江静只看了一样，就确定了提炼工厂的最佳位置。"
  ALF.18.a: "按原本的方案进行，在水电站附近选址。"
  ALF.18.b: "按第二方案，在武器制造所附近选址。"
  ALF.18.c: "等等，也许在仓储物流中心位置更好。"
+
+ ALF.19.t: "用电谈判"
+ ALF.19.desc: "致学生会总务处：\n\n我部门最近接到来自「哨兵防务」的请求，称希望就不管地带（前D.U.黑曜石区）的用电问题进行谈判。对方希望接入联邦学生会的电力网络，并承诺协助学生会进行设施维护。\n\n经我部调查，「哨兵防务」为一个正在该区域活跃的安全承包公司，有诸多线索指出，该实体正在稳定不管地带的社会局势，并致力于改善这一区域的基础设施。\n\n我部认为，这是一极好的机会，既能恢复该区域的电力网络，使全基沃托斯电力系统完成整合，又是缓解目前经济压力的重要机会。\n\n我部门正在等待进一步指示。\n\n——公共事业服务部"
+ ALF.19.a: "我看不出有什么拒绝的理由。"
+
+ ALF.20.t: "获得批准"
+ ALF.20.desc: "尊敬的客户：\n\n您所提出的请求，经我部门审慎评估后，已获得批准。我部工程师不日将抵达您所在区域的供电枢纽，并恢复其运转。\n\n请您注意，我部完全是处于服务公益事业的需要，选择向你方提供电力。因此，请务必遵守我部提供的安全和商业规章。所有内容均可在附件中查看。\n\n祝您拥有美好的一天。\n\n——公共事业服务部"
+ ALF.20.a: "倒是冠冕堂皇……"
+ 

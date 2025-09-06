@@ -129,13 +129,52 @@ ALF_Livability_decision_category = {
 			}
 		}
 		fire_only_once = yes
-		on_map_mode = map_and_decisions_view
+		on_map_mode = map_only
 		#icon = my_icon
 		cost = 10
 		days_remove = 28
 		remove_effect = {
 			FROM = {
 				set_state_flag = mail_system_restored_flag
+			}
+			FROM.owner = {
+				ALF_small_improve_livability_modifier_effect = yes
+			}
+		}
+	}
+
+	##区域供电
+	restore_state_electric_system_targeted_decision = {
+		state_target = yes
+		available = {
+			has_idea = ALF_CEN_electric_contract_1
+		}
+		target_root_trigger = {
+			has_idea = ALF_CEN_electric_contract_1
+		}
+		##只有黑市省份在位于这一决议的范围##
+		target_array = global.black_market_state
+		target_trigger = {
+			FROM = {
+				NOT = {
+					has_state_flag = state_electric_system_restored_flag
+				}
+				is_owned_and_controlled_by = ALF
+			}
+		}
+		fire_only_once = yes
+		on_map_mode = map_only
+		#icon = my_icon
+		cost = 10
+		custom_cost_trigger = {
+			has_livability_2pts = yes
+		}
+		custom_cost_text = decision_cost_has_livability_2pts
+		days_remove = 28
+		remove_effect = {
+			ALF_use_livability_2_pts = yes
+			FROM = {
+				set_state_flag = state_electric_system_restored_flag
 			}
 			FROM.owner = {
 				ALF_small_improve_livability_modifier_effect = yes
@@ -320,7 +359,7 @@ ALF_Livability_decision_category = {
 				can_construct_building = infrastructure
 			}
 		}
-		on_map_mode = map_and_decisions_view
+		on_map_mode = map_only
 		custom_cost_trigger = {
 			has_livability_3pts = yes
 		}
