@@ -1,4 +1,17 @@
 ALF_military_reform_decision_category = {
+	ALF_mrd_dig_in_trainning = {
+		visible = {
+			is_debug = yes
+		}
+		cost = 0
+		custom_cost_trigger = {
+			has_mrd_pts = yes
+		}
+		custom_cost_text = decision_cost_has_mrd_pts
+		complete_effect = {
+		}
+	}
+	######测试用
 	ALF_military_reform_decision_test_add_progress = {
 		visible = {
 			is_debug = yes
@@ -21,6 +34,77 @@ ALF_military_reform_decision_category = {
 			add_to_variable = {
 				ALF_mrd_progressbar_var = 90
 			}
+		}
+	}
+	ALF_initialize_military_reform_system_test_decision = {
+		visible = {
+			is_debug = yes
+		}
+		cost = 0
+		#days_remove = 
+		complete_effect = {
+			ALF_initialize_military_reform_system_effect = yes
+			set_variable = {
+				ALF_military_reform_dynamic_modifier_var = 10
+			}
+			force_update_dynamic_modifier = yes
+		}
+	}
+	ALF_calc_military_reform_system_test_decision = {
+		visible = {
+			is_debug = yes
+		}
+		cost = 0
+		#days_remove = 
+		complete_effect = {
+			ALF_calc_military_reform_system_effect = yes
+		}
+	}
+	ALF_mrd_complete_test_decision = {
+		visible = {
+			is_debug = yes
+		}
+		cost = 0
+		#days_remove = 
+		complete_effect = {
+			set_variable = {
+				mrd_trainning_progress = 3
+			}
+			set_variable = {
+				mrd_officer_progress = 3
+			}
+			set_variable = {
+				mrd_modernize_progress = 3
+			}
+			set_variable = {
+				mrd_armor_progress = 3
+			}
+			set_variable = {
+				mrd_artillery_progress = 3
+			}
+			set_variable = {
+				mrd_air_force_progress = 3
+			}
+			set_variable = {
+				mrd_sf_progress = 3
+			}
+			ALF_calc_military_reform_system_effect = yes
+		}
+	}
+	ALF_AMF_test_decision = {
+		visible = {
+			is_debug = yes
+		}
+		cost = 0
+		#days_remove = 
+		complete_effect = {
+			add_dynamic_modifier = {
+				modifier = ALF_armed_force_dynamic_modifier
+			}
+			set_variable = {
+				ALF_AMF_army_armor_attack_factor_var = 0.05
+			}
+			force_update_dynamic_modifier = yes
 		}
 	}
 }
@@ -88,6 +172,7 @@ ALF_Livability_decision_category = {
 		custom_cost_text = decision_cost_has_livability_1pts
 		cost = 10
 		days_remove = 7
+		days_re_enable = 7
 		remove_effect = {
 			ALF_use_livability_1_pts = yes
 			add_equipment_to_stockpile = {
@@ -110,6 +195,7 @@ ALF_Livability_decision_category = {
 		custom_cost_text = decision_cost_has_livability_1pts
 		cost = 10
 		days_remove = 7
+		days_re_enable = 7
 		remove_effect = {
 			ALF_use_livability_1_pts = yes
 			add_equipment_to_stockpile = {
@@ -132,6 +218,7 @@ ALF_Livability_decision_category = {
 		custom_cost_text = decision_cost_has_livability_1pts
 		cost = 10
 		days_remove = 7
+		days_re_enable = 7
 		remove_effect = {
 			ALF_use_livability_1_pts = yes
 			add_equipment_to_stockpile = {
@@ -141,6 +228,118 @@ ALF_Livability_decision_category = {
 			}
 		}
 	}
+	##建设炼油厂
+	ALF_Livability_for_synthetic_refinery = {
+		available = {
+			FROM = {
+				is_owned_and_controlled_by = ALF
+			}
+		}
+		state_target = yes
+		target_root_trigger = {
+			has_completed_focus = ALF_oil_is_industry_blood
+		}
+		##只有黑市省份在位于这一决议的范围##
+		target_array = global.black_market_state
+		target_trigger = {
+			FROM = {
+				has_state_flag = ALF_synthetic_refinery_position_flag
+			}
+		}
+		fire_only_once = yes
+		on_map_mode = map_and_decisions_view
+		custom_cost_trigger = {
+			has_livability_5pts = yes
+		}
+		custom_cost_text = decision_cost_has_livability_5pts
+		cost = 10
+		days_remove = 7
+		remove_effect = {
+			ALF_use_livability_5_pts = yes
+			FROM = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	##建设武器工厂
+	ALF_Livability_for_arms_factory = {
+		available = {
+			any_owned_state = {
+				is_owned_and_controlled_by = ALF
+			}
+			has_completed_focus = ALF_repair_the_weapon_factory
+		}
+		visible = {
+			has_completed_focus = ALF_repair_the_weapon_factory
+		}
+		custom_cost_trigger = {
+			has_livability_5pts = yes
+		}
+		custom_cost_text = decision_cost_has_livability_5pts
+		cost = 10
+		days_remove = 30
+		days_re_enable = 60
+		remove_effect = {
+			ALF_use_livability_5_pts = yes
+			random_owned_state = {
+				limit = {
+					is_owned_and_controlled_by = ALF
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	##改善基础设施
+	ALF_Livability_for_infrastructure = {
+		available = {
+			FROM = {
+				has_completed_focus = ALF_infrastructure_plan
+				is_owned_and_controlled_by = ROOT
+				can_construct_building = infrastructure
+			}
+		}
+		state_target = yes
+		target_root_trigger = {
+			has_completed_focus = ALF_infrastructure_plan
+		}
+		##只有黑市省份在位于这一决议的范围##
+		target_array = global.black_market_state
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = ALF
+				can_construct_building = infrastructure
+			}
+		}
+		on_map_mode = map_and_decisions_view
+		custom_cost_trigger = {
+			has_livability_3pts = yes
+		}
+		custom_cost_text = decision_cost_has_livability_3pts
+		cost = 10
+		days_remove = 30
+		days_re_enable = 30
+		remove_effect = {
+			ALF_use_livability_3_pts = yes
+			FROM = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
 	ALF_Livability_decision_test = {
 		visible = {
 			is_debug = yes
@@ -337,7 +536,6 @@ ALF_war_plan_protect_wing_category = {
 		}
 		days_remove = 30
 		remove_effect = {
-
 		}
 	}
 	##对金钗盗贼团宣战

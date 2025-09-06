@@ -18,13 +18,14 @@ ALF_Livability_decision_category = {
 		tag = ALF
 	}
 	visible = {
-		has_dynamic_modifier = {
-			modifier = ALF_Livability_dynamic_modifier
-			scope = ALF
+		ALF = {
+			has_dynamic_modifier = {
+				modifier = ALF_Livability_dynamic_modifier
+			}
 		}
 	}
 	#scripted_gui = ALF_military_reform_decision_ui_progressbar_sg
-	visible_when_empty = yes
+	visible_when_empty = no
 	priority = 9999
 }
 

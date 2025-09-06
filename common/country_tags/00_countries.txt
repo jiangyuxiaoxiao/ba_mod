@@ -1,6 +1,11 @@
 TST = "countries/TST.txt"
 ###
+###############
+###格黑娜文化###
+###############
 GEH = "countries/Gehenna.txt"
+GIT = "countries/GehennaInteractTroops.txt"
+###########格黑娜文化结束############
 ABY = "countries/Abydos.txt"
 ARI = "countries/Arius.txt"
 ALR = "countries/AriusResistance.txt"

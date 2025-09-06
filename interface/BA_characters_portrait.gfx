@@ -15,10 +15,17 @@ spriteTypes = {
         texturefile = "gfx/leaders/GEH/BARE_Portrait_GEH_makoto_cool.dds"
     }
 
-    ##ALF##
-    spriteType = {
+    ########################
+    ##ALF LEBERATION FRONT##
+	########################
+	spriteType = {
         name = GFX_BARE_Portrait_ALF_the_leader_mask
         texturefile = "gfx/leaders/ALF/BARE_Portrait_ALF_the_leader_mask.dds"
+    }
+
+	spriteType = {
+        name = GFX_BARE_Portrait_ALF_the_leader_mask_small
+        texturefile = "gfx/leaders/ALF/BARE_Portrait_ALF_the_leader_mask_small.dds"
     }
 
     spriteType = {
@@ -26,9 +33,10 @@ spriteTypes = {
         texturefile = "gfx/leaders/ALF/BARE_Portrait_ALF_the_leader_no_mask.dds"
     }
 
-    ########################
-    ##ALF LEBERATION FRONT##
-	########################
+	 spriteType = {
+        name = GFX_BARE_Portrait_ALF_the_leader_no_mask_small
+        texturefile = "gfx/leaders/ALF/BARE_Portrait_ALF_the_leader_no_mask_small.dds"
+    }
     
 	##PORTRAIT
     spriteType = {

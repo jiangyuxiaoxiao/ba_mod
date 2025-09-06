@@ -4,7 +4,7 @@ characters = {
 		portraits = {
 			civilian = {
 				large = GFX_BARE_Portrait_ALF_the_leader_mask
-				#small = GFX_portrait_ARI_atsuko_small
+				small = GFX_BARE_Portrait_ALF_the_leader_mask_small
 			}
 			army = {
 				large = GFX_Portrait_ari_1
@@ -48,12 +48,15 @@ characters = {
 				##
 			}
 			traits = {
+				brilliant_strategist
+				logistics_wizard
+				thorough_planner
 			}
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+			skill = 6
+			attack_skill = 10 #9
+			defense_skill = 3 #2
+			planning_skill = 5 #4
+			logistics_skill = 6 #5
 		}
 		advisor = {
 			slot = army_chief
@@ -332,12 +335,18 @@ characters = {
 				##
 			}
 			traits = {
+				brilliant_strategist
+				infantry_officer
+				infantry_leader
+				commando
+				trait_mountaineer
+				urban_assault_specialist
 			}
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+			skill = 5
+			attack_skill = 9 #8
+			defense_skill = 5 #4
+			planning_skill = 2 #1
+			logistics_skill = 3 #2
 		}
 	}
 	##小谷图奈
@@ -357,12 +366,16 @@ characters = {
 				##
 			}
 			traits = {
+				career_officer
+				engineer_officer
+				trait_engineer
+				organizer
 			}
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+			skill = 3
+			attack_skill = 4 #3
+			defense_skill = 2 #1
+			planning_skill = 4 #3
+			logistics_skill = 3 #2
 		}
 	}
 	##新木美夏

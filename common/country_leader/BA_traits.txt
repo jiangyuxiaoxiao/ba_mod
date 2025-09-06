@@ -1666,6 +1666,14 @@ leader_traits = {
         army_org_factor = 0.1
     }
 
+    #领袖-公理得胜
+    ALF_justice_prevails = {
+        random = no
+        army_attack_factor = 0.1
+        army_org_factor = 0.1
+        custom_modifier_tooltip = ALF_justice_prevails_tt
+    }
+
     #领袖-实干家
     ALF_silent_hardworker = {
         random = no

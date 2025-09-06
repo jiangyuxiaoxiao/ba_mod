@@ -78,7 +78,7 @@ ALF_medium_improve_livability_modifier_effect = {
 ALF_large_improve_livability_modifier_effect = {
 	custom_effect_tooltip = ALF_large_improve_livability_modifier_effect_tt
 	add_to_variable = {
-		ALF.ALF_Livability_dynamic_modifier_var = 1.0
+		ALF.ALF_Livability_dynamic_modifier_var = 1
 	}
 	force_update_dynamic_modifier = yes
 }
@@ -107,7 +107,6 @@ ALF_large_decrease_livability_modifier_effect = {
 	}
 	force_update_dynamic_modifier = yes
 }
-
 
 ##战略储备效果
 ALF_improve_livability_1_pts = {
@@ -178,5 +177,113 @@ ALF_use_livability_10_pts = {
 	custom_effect_tooltip = ALF_use_livability_10_pts_tt
 	add_to_variable = {
 		ALF.Livability_var = -10
+	}
+}
+
+#############
+##计算军改进度
+#############
+ALF_initialize_military_reform_system_effect = {
+	ALF = {
+		##为TAG增加变量
+		add_dynamic_modifier = {
+			modifier = ALF_military_reform_dynamic_modifier
+		}
+		set_variable = {
+			ALF_mrd_progressbar_var = 0
+		}
+		set_variable = {
+			ALF_mrd_pts = 0
+		}
+		##设置改革进度
+		set_variable = {
+			mrd_total_progress = 0
+		}
+		set_variable = {
+			mrd_trainning_progress = 0
+		}
+		set_variable = {
+			mrd_officer_progress = 1
+		}
+		set_variable = {
+			mrd_modernize_progress = 0
+		}
+		set_variable = {
+			mrd_armor_progress = 0
+		}
+		set_variable = {
+			mrd_artillery_progress = 0
+		}
+		set_variable = {
+			mrd_air_force_progress = 0
+		}
+		set_variable = {
+			mrd_sf_progress = 2
+		}
+		force_update_dynamic_modifier = yes
+	}
+}
+
+ALF_calc_military_reform_system_effect = {
+	ALF = {
+		##增加改革点数
+		add_to_variable = {
+			ALF.ALF_mrd_progressbar_var = modifier@ALF_military_reform_int
+		}
+		##计算是否抵达100%
+		clamp_variable = {
+			var = ALF_mrd_progressbar_var
+			min = 0
+			max = 100
+		}
+		if = {
+			limit = {
+				check_variable = {
+					ALF_mrd_progressbar_var = 100
+				}
+			}
+			ALF_gain_1_mrd_pts = yes
+			set_variable = {
+				ALF_mrd_progressbar_var = 0
+			}
+		}
+	}
+	ALF_calc_mrd_progress_situation_effect = yes
+}
+
+ALF_calc_mrd_progress_situation_effect = {
+	ALF = {
+		set_variable = {
+			mrd_total_progress = 0
+		}
+		add_to_variable = {
+			mrd_total_progress = mrd_trainning_progress
+		}
+		add_to_variable = {
+			mrd_total_progress = mrd_officer_progress
+		}
+		add_to_variable = {
+			mrd_total_progress = mrd_modernize_progress
+		}
+		add_to_variable = {
+			mrd_total_progress = mrd_armor_progress
+		}
+		add_to_variable = {
+			mrd_total_progress = mrd_artillery_progress
+		}
+		add_to_variable = {
+			mrd_total_progress = mrd_air_force_progress
+		}
+		add_to_variable = {
+			mrd_total_progress = mrd_sf_progress
+		}
+	}
+}
+
+ALF_gain_1_mrd_pts = {
+	ALF = {
+		add_to_variable = {
+			ALF_mrd_pts = 1
+		}
 	}
 }

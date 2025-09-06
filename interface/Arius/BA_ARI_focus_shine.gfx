@@ -1444,7 +1444,7 @@ spriteTypes = {
 
 	##
 	SpriteType = {
-		name = "GFX_ARI_open_the_curtain_shine"
+		name = "GFX_focus_ARI_open_the_curtain_shine"
 		texturefile = "gfx/interface/goals/Arius/focus_ARI_open_the_curtain.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
