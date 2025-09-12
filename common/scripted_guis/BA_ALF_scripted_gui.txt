@@ -9,4 +9,15 @@ scripted_gui = {
 			}
 		}
 	}
+
+	ALF_new_capital_decision_ui_progressbar_sg = {
+		context_type = decision_category
+		window_name = "ALF_new_capital_decision_ui_progressbar"
+
+		properties = {
+			ALF_new_capital_progressbar = {
+				frame = ALF_capital_progressbar_var
+			}
+		}
+	}
 }

@@ -12,6 +12,19 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
+	spriteType = {
+        name = "GFX_ALF_new_capital_decision_ui_picture"
+        texturefile = "gfx/interface/decisions/ALF/ALF_new_capital_decision_ui_picture.dds"
+		#legacy_lazy_load = no
+	}
+
+	#事件#
+	spriteType = {
+        name = "GFX_FSC_Leader_portrait_picture"
+        texturefile = "gfx/event_pictures/ALF/FSC_Leader_portrait_picture.dds"
+		#legacy_lazy_load = no
+	}
+
 	###############军改GUI
 	progressbartype = {
 		name = "GFX_bare_red_progressbar_399"

@@ -8,7 +8,7 @@ ALF_military_reform_decision_category = {
 	}
 	scripted_gui = ALF_military_reform_decision_ui_progressbar_sg
 	visible_when_empty = yes
-	priority = 9000
+	priority = 8800
 }
 
 ##宜居度##
@@ -26,7 +26,22 @@ ALF_Livability_decision_category = {
 	}
 	#scripted_gui = ALF_military_reform_decision_ui_progressbar_sg
 	visible_when_empty = no
-	priority = 9999
+	priority = 8999
+}
+
+##翻修学生会进度##
+ALF_new_capital_decision_category = {
+	icon = generic_research
+	allowed = {
+		original_tag = ALF
+	}
+	visible = {
+		original_tag = ALF
+		has_completed_focus = ALF_rebuild_the_market_center
+	}
+	scripted_gui = ALF_new_capital_decision_ui_progressbar_sg
+	visible_when_empty = yes
+	priority = 8800
 }
 
 ##庇护之羽行动
@@ -40,5 +55,7 @@ ALF_war_plan_protect_wing_category = {
 	}
 	#scripted_gui = ALF_military_reform_decision_ui_progressbar_sg
 	visible_when_empty = yes
-	priority = 9800
+	priority = 9999
 }
+
+

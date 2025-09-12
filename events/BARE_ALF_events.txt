@@ -375,7 +375,6 @@ country_event = {
 	title = ALF.18.t
 	desc = ALF.18.desc
 	is_triggered_only = yes
-
 	##水电站
 	option = {
 		name = ALF.18.a
@@ -384,7 +383,6 @@ country_event = {
 		}
 		unlock_decision_tooltip = ALF_Livability_for_synthetic_refinery
 	}
-	
 	##武器厂位置
 	option = {
 		name = ALF.18.b
@@ -393,7 +391,6 @@ country_event = {
 		}
 		unlock_decision_tooltip = ALF_Livability_for_synthetic_refinery
 	}
-
 	##黑市第三仓库
 	option = {
 		name = ALF.18.c
@@ -415,7 +412,6 @@ country_event = {
 	title = ALF.19.t
 	desc = ALF.19.desc
 	is_triggered_only = yes
-
 	##水电站
 	option = {
 		name = ALF.19.a
@@ -435,11 +431,56 @@ country_event = {
 	title = ALF.20.t
 	desc = ALF.20.desc
 	is_triggered_only = yes
-
 	##水电站
 	option = {
 		name = ALF.20.a
 		add_ideas = ALF_CEN_electric_contract_1
 		unlock_decision_tooltip = restore_state_electric_system_targeted_decision
+	}
+}
+
+country_event = {
+	id = ALF.21
+	#picture = GFX_common_event_gui_test
+	title = ALF.21.t
+	desc = ALF.21.desc
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			197 = {
+				set_state_name = "ALF_STATE_197_NAME"
+			}
+		}
+	}
+	option = {
+		name = ALF.21.a
+		set_province_name = {
+			id = 3978
+			name = VICTORY_POINTS_3978_final_ALF
+		}
+		set_capital = {
+			state = 197
+		}
+		197 = {
+			add_extra_state_shared_building_slots = 10
+		}
+	}
+}
+
+country_event = {
+	id = ALF.22
+	#picture = GFX_common_event_gui_test
+	title = ALF.22.t
+	desc = ALF.22.desc
+	picture = GFX_FSC_Leader_portrait_picture
+	is_triggered_only = yes
+	immediate = {
+
+	}
+	option = {
+		name = ALF.22.a
+		ALF = {
+			add_to_faction = FSC
+		}
 	}
 }

@@ -2,20 +2,9 @@ state={
 	id=117
 	name="STATE_117"
 	provinces={
-		 172 667 1316 1492 2382 2503 4742 6259 6357 6504 7090 7221 7983 8058 8175 8328 8789 8912 12155 12160 12184
+		649 5173 9761 9835 
 	}
-	history = {
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-		}
-		owner = A05
-		add_core_of=A05
-		add_core_of=TRI
-		victory_points = {7221 5}
-    }
-	manpower= 11200
-	state_category = rural
+	manpower=0
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

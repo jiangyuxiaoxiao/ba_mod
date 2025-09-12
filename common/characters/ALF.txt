@@ -85,12 +85,25 @@ characters = {
 				##
 			}
 			traits = {
+				politically_connected
 			}
-			skill = 1
+			skill = 2
 			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+			defense_skill = 3 #2
+			planning_skill = 2 #1
+			logistics_skill = 4 #3
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ALF_Yoshizawa_Yayoi_political_advisor
+			cost = 50
+			#ledger = army
+			available = {
+				has_completed_focus = ALF_create_shared_cognition
+			}
+			traits = {
+				ALF_propaganda_expert
+			}			
 		}
 	}
 	##三枝悠波

@@ -513,8 +513,8 @@ ideas = {
 			}
 			modifier = {
 				min_export = 0.1
-				production_speed_buildings_factor = 0.05
-				research_speed_factor = 0.05
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = 0.1
 				production_lack_of_resource_penalty_factor = -0.2
 			}
 			on_add = {

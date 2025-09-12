@@ -2,19 +2,9 @@ state={
 	id=119
 	name="STATE_119"
 	provinces={
-		 5239 153 742 1309 1829 2156 2183 2689 3492 3582 4909 6864 7033 8643 8710 12208 12218 
+		1209 3290 9564 9667 9703 9735 
 	}
-	history = {
-		buildings = {
-			infrastructure = 2
-		}
-		owner = A05
-		add_core_of=A05
-		add_core_of=TRI
-		victory_points = {2183 5}
-    }
-	manpower= 6400
-	state_category = rural
+	manpower=0
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }
