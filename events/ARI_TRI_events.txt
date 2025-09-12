@@ -302,6 +302,14 @@ country_event = { #旅者”行动总结-部分成功
                 }
                 complete_national_focus = ARI_traveller_operation_lost
             }
+             if = {
+                limit = {
+                    not = {
+                        has_completed_focus = ARI_open_the_curtain
+                    }
+                }
+                complete_national_focus = ARI_open_the_curtain
+            }
             set_global_flag  =ARI_traveller_operation_Has_Completed
             mark_focus_tree_layout_dirty = yes
             set_variable = {
@@ -999,6 +1007,14 @@ country_event = { #“旅者”行动总结-基本失败
                 }
             }
             complete_national_focus = ARI_traveller_operation_lost
+        }
+        if = {
+            limit = {
+                not = {
+                    has_completed_focus = ARI_open_the_curtain
+                }
+            }
+            complete_national_focus = ARI_open_the_curtain
         }
         mark_focus_tree_layout_dirty = yes
         effect_tooltip = {

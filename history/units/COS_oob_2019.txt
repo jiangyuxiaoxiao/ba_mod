@@ -1,0 +1,70 @@
+division_template = {
+	name = "Militias"		
+
+	regiments = {
+		infantry_militia = {x = 0 y = 0}
+		infantry_militia = {x = 0 y = 1}
+		infantry_militia = {x = 1 y = 0}
+		infantry_militia = {x = 1 y = 1}
+	}
+}
+
+units = {
+	division = {
+		name = "武装修女"
+		location = 1218
+		division_template = "Militias" #这个师用的编制的名字
+		start_experience_factor = 0.1 #初始经验0-1 ,0.2为银牌
+		start_equipment_factor = 1 #初始装备 0-1
+	}
+
+	division = {
+		name = "武装修女"
+		location = 1218
+		division_template = "Militias" #这个师用的编制的名字
+		start_experience_factor = 0.1 #初始经验0-1 ,0.2为银牌
+		start_equipment_factor = 1 #初始装备 0-1
+	}
+
+	division = {
+		name = "武装修女"
+		location = 4411
+		division_template = "Militias" #这个师用的编制的名字
+		start_experience_factor = 0.1 #初始经验0-1 ,0.2为银牌
+		start_equipment_factor = 1 #初始装备 0-1
+	}
+
+	division = {
+		name = "枪械技师"
+		location = 11015
+		division_template = "Militias" #这个师用的编制的名字
+		start_experience_factor = 0.05 #初始经验0-1 ,0.2为银牌
+		start_equipment_factor = 1 #初始装备 0-1
+	}
+
+	division = {
+		name = "枪械技师"
+		location = 11015
+		division_template = "Militias" #这个师用的编制的名字
+		start_experience_factor = 0.05 #初始经验0-1 ,0.2为银牌
+		start_equipment_factor = 1 #初始装备 0-1
+	}
+
+	division = {
+		name = "武装混混"
+		location = 11005
+		division_template = "Militias" #这个师用的编制的名字
+		start_experience_factor = 0.05 #初始经验0-1 ,0.2为银牌
+		start_equipment_factor = 1 #初始装备 0-1
+	}
+
+	division = {
+		name = "武装混混"
+		location = 2538
+		division_template = "Militias" #这个师用的编制的名字
+		start_experience_factor = 0.05 #初始经验0-1 ,0.2为银牌
+		start_equipment_factor = 1 #初始装备 0-1
+	}
+}
+
+###

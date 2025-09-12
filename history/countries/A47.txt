@@ -1,17 +1,15 @@
 capital = 223
-oob = "A47_2019"
+
+##由于规则，刷兵被移动到on action处理
 set_air_oob = "A47_2019_air_legacy"
-set_stability = 0.50
-set_war_support = 0.50
+set_stability = 0.5
+set_war_support = 0.5
 set_research_slots = 3
 set_fuel_ratio = 0.5
 set_convoys = 20
 starting_train_buffer = 0.5
-
-
 # Starting tech
 set_technology = {
-
 	#突破
 	T1_infantry_weapon = 1
 	T2_infantry_weapon = 1
@@ -26,11 +24,9 @@ set_technology = {
 	T2_electronic = 1
 	T1_production = 1
 	T2_production = 1
-
 	#BD
 	bd_level_T1 = 1
 	#bd_level_T2 = 1
-
 	#工程学（电子学electronics）
 	Personal_Computer_T1 = 1
 	Personal_Computer_T2 = 1
@@ -40,7 +36,6 @@ set_technology = {
 	Communications_radar_T2 = 1
 	Communication_Network_T1 = 1
 	Communication_Network_T2 = 1
-
 	#工业资源
 	industrial_complex_T1 = 1
 	industrial_complex_T2 = 1
@@ -51,13 +46,11 @@ set_technology = {
 	Rare_metal_smelting_T1 = 1
 	Oil_Processing_T1 = 1
 	#Opaz_smelting_T1 = 1
-
 	#工业
 	Industrial_construction_T1 = 1
 	Heavy_industry_T1 = 1
 	Infrastructure_construction_T1 = 1
 	Train_T1 = 1
-
 	#空军（无人机）
 	recon_drone = 1
 	light_fighting_drone = 1
@@ -65,32 +58,27 @@ set_technology = {
 	fighting_drone = 1
 	attack_drone = 1
 	transport_drone = 1
-
 	#装甲车辆（坦克）
 	light_tank_MK1 = 1
-
 	#机动载具
 	civilian_car_equipment_T1 = 1
 	Civilian_helicopter_T1 = 1
 	Infantry_fighting_vehicle_T1 = 1
-
 	#支援装备
 	fire_support_weapons_T1 = 1
 	support_equipment_T1 = 1
 	air_defense_weapons_T1 = 1
-
 	#步兵装备
 	infantry_weapons_T1 = 1
-
 	infantry_weapons_upgrade_uniform_T1 = 1
 	infantry_weapons_upgrade_uniform_T2 = 1
-	
 	infantry_weapons_upgrade_armor_T2 = 1
 	infantry_weapons_upgrade_carrying_gear_T2 = 1
 	troop_training_T1 = 1
 	infantry_weapons_upgrade_communication_T1 = 1
 	infantry_weapons_upgrade_sighting_T1 = 1
 }
+
 add_ideas = {
 	BARE_Combat_Readiness_Start_Idea
 	BARE_Global_Extrajudicial_Trusteeship_Area
@@ -98,9 +86,8 @@ add_ideas = {
 
 set_politics = {
 	ruling_party = no_ideology
-
 }
+
 set_popularities = {
 	no_ideology = 100
 }
-

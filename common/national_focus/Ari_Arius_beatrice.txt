@@ -1590,9 +1590,9 @@ focus_tree = {
 		prerequisite = {
 			focus = ARI_traveller_operation
 		}
-		allow_branch = {
-		 	has_completed_focus = ARI_traveller_operation
-		}
+		# allow_branch = {
+		#  	has_completed_focus = ARI_traveller_operation
+		# }
 		available = {
 			always = no			#自动跳过
 		}
@@ -1768,29 +1768,29 @@ focus_tree = {
 					has_completed_focus = ARI_march_towards_the_goal
 					
 				}
-			    set_variable = {
-					ARI_lesson_traveller_operation_goods_factor = 0.25
-				}
-				set_variable = {
-					ARI_lesson_traveller_operation_industrial_capacity_factory = -0.25
-				}
+			    # set_variable = {
+				# 	ARI_lesson_traveller_operation_goods_factor = 0.25
+				# }
+				# set_variable = {
+				# 	ARI_lesson_traveller_operation_industrial_capacity_factory = -0.25
+				# }
 				set_country_flag = ARI_have_skiped_solve_supply_shorting
 				complete_national_focus = ARI_solve_supply_shorting
 			}
 		}
 		completion_reward = {
-			if = {
-				limit = {
-					has_completed_focus = ARI_march_towards_the_goal
+			# if = {
+			# 	limit = {
+			# 		has_completed_focus = ARI_march_towards_the_goal
 					
-				}
-			    set_variable = {
-					ARI_lesson_traveller_operation_goods_factor = 0.25
-				}
-				set_variable = {
-					ARI_lesson_traveller_operation_industrial_capacity_factory = -0.25
-				}
-			}
+			# 	}
+			#     set_variable = {
+			# 		ARI_lesson_traveller_operation_goods_factor = 0.25
+			# 	}
+			# 	set_variable = {
+			# 		ARI_lesson_traveller_operation_industrial_capacity_factory = -0.25
+			# 	}
+			# }
 			#减少“旅者”行动的灾难的效果
 			#解锁决议：重整物资供应
 			#花费物资或民工或军工(捐赠)减少“旅者”行动的教训的debuff如果已完成国策
@@ -1869,6 +1869,7 @@ focus_tree = {
 			focus = ARI_solve_supply_shorting
 		}
 		available = {
+			#暂时取消免得卡国策
 			custom_override_tooltip = {
 				tooltip = ARI_has_solved_traveller_problems
 				##debuff消完了
@@ -1927,9 +1928,9 @@ focus_tree = {
 		prerequisite = {
 			focus = ARI_fake_flag_operation
 		}
-		allow_branch = {
-			has_completed_focus = ARI_traveller_operation
-		}
+		# allow_branch = {
+		# 	has_completed_focus = ARI_traveller_operation
+		# }
 		available = {
 			always = no			#自动跳过
 		}
@@ -1971,9 +1972,9 @@ focus_tree = {
 		prerequisite = {
 			focus = ARI_open_the_curtain
 		}
-		available = {
-			always = no			#自动跳过
-		}
+		# available = {
+		# 	always = no			#自动跳过
+		# }
 		cost = 3
 		x = -2
 		y = 2
@@ -1997,9 +1998,9 @@ focus_tree = {
 		prerequisite = {
 			focus = ARI_revise_our_operation_plan
 		}
-		available = {
-			always = no			#自动跳过
-		}
+		# available = {
+		# 	always = no			#自动跳过
+		# }
 		cost = 3
 		x = 0
 		y = 2
@@ -2026,9 +2027,9 @@ focus_tree = {
 		prerequisite = {
 			focus = ARI_secret_cooperation_with_Pandemonium
 		}
-		available = {
-			always = no			#自动跳过
-		}
+		# available = {
+		# 	always = no			#自动跳过
+		# }
 		cost = 3
 		x = 2
 		y = 2
@@ -2053,9 +2054,9 @@ focus_tree = {
 		prerequisite = {
 			focus = ARI_further_strengthen_cooperation
 		}
-		available = {
-			always = no			#自动跳过
-		}
+		# available = {
+		# 	always = no			#自动跳过
+		# }
 		cost = 3
 		x = 0
 		y = 2
@@ -2080,9 +2081,10 @@ focus_tree = {
 		prerequisite = {
 			focus = ARI_relax_operation_restrictions
 		}
-		prerequisite = {
-			focus = ARI_conclude_our_experience
-		}
+		#暂时取消前置
+		# prerequisite = {
+		# 	focus = ARI_conclude_our_experience
+		# }
 		prerequisite = {
 			focus = ARI_join_gehenna_club_fake
 		}

@@ -110,10 +110,31 @@ Hipper_test_decisions_categories = {
 		}
 	}
 
+	hide_and_show_superevent_test_decision = {
+		visible = {
+			is_debug = yes
+		}
+		available = {
+			is_ai = no
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					has_global_flag = show_se_test_decision_flag
+				}
+				clr_global_flag = show_se_test_decision_flag
+			}
+			else = {
+				set_global_flag = show_se_test_decision_flag
+			}
+		}
+	}
+
 	####发射超事件的测试器####
 	Fire_super_event_hipp = {
 		visible = {
 			is_debug = yes
+			has_global_flag = show_se_test_decision_flag
 		}
 		available = {
 			is_ai = no
@@ -126,6 +147,7 @@ Hipper_test_decisions_categories = {
 	Fire_super_type1_event1_hipp = {
 		visible = {
 			is_debug = yes
+			has_global_flag = show_se_test_decision_flag
 		}
 		available = {
 			is_ai = no
@@ -138,6 +160,7 @@ Hipper_test_decisions_categories = {
 	Fire_super_type2_event1_hipp = {
 		visible = {
 			is_debug = yes
+			has_global_flag = show_se_test_decision_flag
 		}
 		available = {
 			is_ai = no
@@ -150,6 +173,7 @@ Hipper_test_decisions_categories = {
 	Fire_super_type2_event2_hipp = {
 		visible = {
 			is_debug = yes
+			has_global_flag = show_se_test_decision_flag
 		}
 		available = {
 			is_ai = no
@@ -162,6 +186,7 @@ Hipper_test_decisions_categories = {
 	Fire_super_type2_event3_hipp = {
 		visible = {
 			is_debug = yes
+			has_global_flag = show_se_test_decision_flag
 		}
 		available = {
 			is_ai = no
@@ -174,6 +199,7 @@ Hipper_test_decisions_categories = {
 	Fire_super_type2_event4_hipp = {
 		visible = {
 			is_debug = yes
+			has_global_flag = show_se_test_decision_flag
 		}
 		available = {
 			is_ai = no
@@ -186,6 +212,7 @@ Hipper_test_decisions_categories = {
 	Fire_super_type2_event5_hipp = {
 		visible = {
 			is_debug = yes
+			has_global_flag = show_se_test_decision_flag
 		}
 		available = {
 			is_ai = no
@@ -198,6 +225,7 @@ Hipper_test_decisions_categories = {
 	Fire_super_type2_event6_hipp = {
 		visible = {
 			is_debug = yes
+			has_global_flag = show_se_test_decision_flag
 		}
 		available = {
 			is_ai = no
@@ -210,6 +238,7 @@ Hipper_test_decisions_categories = {
 	Fire_super_type2_event7_hipp = {
 		visible = {
 			is_debug = yes
+			has_global_flag = show_se_test_decision_flag
 		}
 		available = {
 			is_ai = no
@@ -222,6 +251,7 @@ Hipper_test_decisions_categories = {
 	Fire_super_type2_event8_hipp = {
 		visible = {
 			is_debug = yes
+			has_global_flag = show_se_test_decision_flag
 		}
 		available = {
 			is_ai = no
@@ -234,6 +264,7 @@ Hipper_test_decisions_categories = {
 	Fire_super_type2_event9_hipp = {
 		visible = {
 			is_debug = yes
+			has_global_flag = show_se_test_decision_flag
 		}
 		available = {
 			is_ai = no
@@ -246,6 +277,7 @@ Hipper_test_decisions_categories = {
 	Fire_super_type2_event10_hipp = {
 		visible = {
 			is_debug = yes
+			has_global_flag = show_se_test_decision_flag
 		}
 		available = {
 			is_ai = no
@@ -260,6 +292,7 @@ Hipper_test_decisions_categories = {
 	BAREXP_show_superevent1_gui = {
 		visible = {
 			is_debug = yes
+			has_global_flag = show_se_test_decision_flag
 		}
 		available = {
 			is_ai = no
@@ -272,6 +305,7 @@ Hipper_test_decisions_categories = {
 	BAREXP_show_superevent2_gui = {
 		visible = {
 			is_debug = yes
+			has_global_flag = show_se_test_decision_flag
 		}
 		available = {
 			is_ai = no
@@ -284,6 +318,7 @@ Hipper_test_decisions_categories = {
 	BAREXP_show_superevent3_gui = {
 		visible = {
 			is_debug = yes
+			has_global_flag = show_se_test_decision_flag
 		}
 		available = {
 			is_ai = no
@@ -296,6 +331,7 @@ Hipper_test_decisions_categories = {
 	BAREXP_show_superevent4_gui = {
 		visible = {
 			is_debug = yes
+			has_global_flag = show_se_test_decision_flag
 		}
 		available = {
 			is_ai = no
@@ -308,6 +344,7 @@ Hipper_test_decisions_categories = {
 	BAREXP_show_superevent5_gui = {
 		visible = {
 			is_debug = yes
+			has_global_flag = show_se_test_decision_flag
 		}
 		available = {
 			is_ai = no
@@ -320,6 +357,7 @@ Hipper_test_decisions_categories = {
 	BAREXP_show_superevent6_gui = {
 		visible = {
 			is_debug = yes
+			has_global_flag = show_se_test_decision_flag
 		}
 		available = {
 			is_ai = no
@@ -332,6 +370,7 @@ Hipper_test_decisions_categories = {
 	BAREXP_show_superevent7_gui = {
 		visible = {
 			is_debug = yes
+			has_global_flag = show_se_test_decision_flag
 		}
 		available = {
 			is_ai = no
@@ -368,6 +407,21 @@ Hipper_test_decisions_categories = {
 			BARE_RULE_story_settings_ALF_SELECTED_effect = yes
 		}
 	}
+
+	
+	show_ALF_phrase_1_all_focus_tree_decision = {
+		visible = {
+			is_debug = yes
+		}
+		available = {
+			is_ai = no
+		}
+		complete_effect = {
+			set_country_flag = ALF_phrase_1_step_2_flag
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+
 } 
 
 CEN_Operation_Uranus_categories = {

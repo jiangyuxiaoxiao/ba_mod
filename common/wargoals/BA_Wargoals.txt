@@ -1,0 +1,26 @@
+wargoal_types = {
+		# PREV = original target country
+		# ROOT = goal owner country
+
+	##战争目标，平定威胁
+	ALF_pacify_target_wargoal = {
+		allowed = {
+			always = no
+		}
+		war_name = ALF_pacify_target_wargoal_name
+		generate_base_cost = 50
+		generate_per_state_cost = 10
+
+		take_states_limit = 999
+		take_states_cost = -20
+		expire = 999
+
+		threat = 70
+
+		puppet = {
+			always = no
+		}
+
+		puppet_cost = 10
+	}
+}

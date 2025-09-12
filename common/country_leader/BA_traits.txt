@@ -767,6 +767,7 @@ leader_traits = {
         stability_factor = -0.2
         political_power_factor = 0.2
         army_attack_factor = 0.2
+        ai_focus_aggressive_factor = 1
     }
 
     #弹孔中的花朵
@@ -1655,6 +1656,31 @@ leader_traits = {
         army_infantry_attack_factor = 0.15
         army_infantry_defence_factor = 0.2
     }
+##############
+###流亡者
+##############
+    #领袖-败而不馁
+    ALF_rise_again_trait = {
+        random = no
+        army_defence_factor = 0.1
+        army_org_factor = 0.1
+    }
+
+    #领袖-实干家
+    ALF_silent_hardworker = {
+        random = no
+        political_power_factor = 0.1
+        stability_factor = 0.1
+        ALF_Livability_int = 1
+    }
+    
+    #军师
+    ALF_strategist = {
+        random = no
+        experience_gain_army = 0.3
+        army_attack_factor = 0.15
+    }
+
 #企业特质
     industrial_concern = {
         random = no
