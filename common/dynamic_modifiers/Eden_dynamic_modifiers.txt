@@ -26,4 +26,8 @@ Eden_cathedral_war_support_dynamic_modifier = {
 	
 	#pocket_penalty = ECW_pocket_penalty
 	#max_planning_factor = ECW_max_planning_fator
+
+	remove_trigger = {
+		has_global_flag = Arius_defeated
+	}
 }

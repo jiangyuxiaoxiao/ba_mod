@@ -2005,7 +2005,8 @@ Eden_cathedral_war_progress_collector = {
 				limit = {
 					tag = ARI
 				}
-				activate_mission = GST_ZZ_ARI_XCJC_WQSL
+				#如果出现反复争夺的情况，白和会无法正常触发，只能自动触发
+				# activate_mission = GST_ZZ_ARI_XCJC_WQSL
 				ECW_loss_priority_target_effect = yes
 			}
 			else_if = {

@@ -396,118 +396,155 @@ Cathedral_war_ARI_cathedral_fall = {
 }
 
 Cathedral_war_ARI_defeated = {
-	set_global_flag = Arius_defeated
-	white_peace = {
-		tag = GEH
-		tooltip = WAR_GST_JS_LOC
-	}
-	white_peace = {
-		tag = TRI
-		tooltip = WAR_GST_JS_LOC
-	}
+	
 	if = {
 		limit = {
-			TRI = {
-				has_war_with = GEH
+			not = {
+				has_global_flag = Arius_defeated
 			}
 		}
-		TRI = {
+		set_global_flag = Arius_defeated
+
+		ARI = {
 			white_peace = {
 				tag = GEH
 				tooltip = WAR_GST_JS_LOC
 			}
-		}
-	}
-	140 = {
-		transfer_state_to = TRI		#转移控制者和拥有者给予指定TAG
-	}
-	529 = {
-		transfer_state_to = TRI		#转移控制者和拥有者给予指定TAG
-	}
-	683 = {
-		transfer_state_to = TRI		#转移控制者和拥有者给予指定TAG
-	}
-	684 = {
-		transfer_state_to = TRI		#转移控制者和拥有者给予指定TAG
-	}
-	###移出所有因古圣堂之战而出现的动态修正并自动营救所有学生###
-	# for_each_scope_loop = { #没有动态修正了
-	# 	array = global.GST_JS_ZBH
-	# 	remove_dynamic_modifier = {
-	# 		modifier = TRI_ARI_GEH_JingPiLiJie
-	# 	}
-	# 	remove_dynamic_modifier = {
-	# 		modifier = TRI_BeiAliWuSiTuXi
-	# 	}
-	# }
-	# for_each_loop = {
-	# 	array = global.ARI_ShouHaiZheMingDan_SAN
-	# 	value = v
-	# 	var:v = {
-	# 		clr_character_flag = ARI_BeiBangJia
-	# 	}
-	# }
-	# for_each_loop = {
-	# 	array = global.ARI_ShouHaiZheMingDan_ER
-	# 	value = v
-	# 	var:v = {
-	# 		clr_character_flag = ARI_BeiBangJia
-	# 	}
-	# }
-	every_country = {
-		every_character = {
-			limit = {
-				has_character_flag = ARI_BeiBangJia
+			white_peace = {
+				tag = TRI
+				tooltip = WAR_GST_JS_LOC
 			}
-			set_character_flag = ARI_BeiBangJia
+
+			140 = {
+				transfer_state_to = TRI		#转移控制者和拥有者给予指定TAG
+			}
+			529 = {
+				transfer_state_to = TRI		#转移控制者和拥有者给予指定TAG
+			}
+			683 = {
+				transfer_state_to = TRI		#转移控制者和拥有者给予指定TAG
+			}
+			684 = {
+				transfer_state_to = TRI		#转移控制者和拥有者给予指定TAG
+			}
 		}
+
+
+		
+		if = {
+			limit = {
+				TRI = {
+					has_war_with = GEH
+				}
+			}
+			TRI = {
+				white_peace = {
+					tag = GEH
+					tooltip = WAR_GST_JS_LOC
+				}
+			}
+		}
+
+		TRI = {
+			dismantle_faction = yes
+		}
+		GEH = {
+			dismantle_faction = yes
+
+		}
+		
+		###移出所有因古圣堂之战而出现的动态修正并自动营救所有学生###
+		# for_each_scope_loop = { #没有动态修正了
+		# 	array = global.GST_JS_ZBH
+		# 	remove_dynamic_modifier = {
+		# 		modifier = TRI_ARI_GEH_JingPiLiJie
+		# 	}
+		# 	remove_dynamic_modifier = {
+		# 		modifier = TRI_BeiAliWuSiTuXi
+		# 	}
+		# }
+		# for_each_loop = {
+		# 	array = global.ARI_ShouHaiZheMingDan_SAN
+		# 	value = v
+		# 	var:v = {
+		# 		clr_character_flag = ARI_BeiBangJia
+		# 	}
+		# }
+		# for_each_loop = {
+		# 	array = global.ARI_ShouHaiZheMingDan_ER
+		# 	value = v
+		# 	var:v = {
+		# 		clr_character_flag = ARI_BeiBangJia
+		# 	}
+		# }
+		every_country = {
+			every_character = {
+				limit = {
+					has_character_flag = ARI_BeiBangJia
+				}
+				set_character_flag = ARI_BeiBangJia
+			}
+		}
+		ARI = {
+			country_event = ARI_ZJ.1
+			add_ideas = {
+				ARI_JSL
+			}
+			###结束###
+			load_focus_tree = ARI_NULL
+			country_lock_all_division_template = yes
+		}
+		
+		news_event = Eden_pact.1002
 	}
-	###结束###
-	load_focus_tree = ARI_NULL
-	country_lock_all_division_template = yes
-	ARI = {
-		country_event = ARI_ZJ.1
-	}
-	add_ideas = {
-		ARI_JSL
-	}
-	news_event = Eden_pact.1002
+	
 }
 
 Eden_treaty_formally_signed = {
 	custom_effect_tooltip = Eden_treaty_has_been_signed
-	set_global_flag = Eden_treaty_has_been_signed
-	for_each_scope_loop = {
-		array = global.Eden_treaty_negotiation_phase_leader
-		add_political_power = 100
-		add_to_variable = {
-			Eden_treaty_modifier_political_power_factor = 0.05
+	if = {
+		limit = {
+			not = {
+				has_global_flag = Eden_treaty_has_been_signed
+			}
 		}
-		add_to_variable = {
-			Eden_treaty_modifier_stability_factor = 0.05
+
+		set_global_flag = Eden_treaty_has_been_signed
+		for_each_scope_loop = {
+			array = global.Eden_treaty_negotiation_phase_leader
+			add_political_power = 100
+			add_to_variable = {
+				Eden_treaty_modifier_political_power_factor = 0.05
+			}
+			add_to_variable = {
+				Eden_treaty_modifier_stability_factor = 0.05
+			}
+			add_to_variable = {
+				Eden_treaty_modifier_war_support_factor = 0.05
+			}
+			add_to_variable = {
+				Eden_treaty_modifier_industrial_capacity_factory = 0.05
+			}
+			add_to_variable = {
+				Eden_treaty_modifier_research_speed_factor = 0.025
+			}
 		}
-		add_to_variable = {
-			Eden_treaty_modifier_war_support_factor = 0.05
+		TRI = {
+			add_political_power = 100
+			add_dynamic_modifier = {
+				modifier = Eden_treaty_modifier
+			}
 		}
-		add_to_variable = {
-			Eden_treaty_modifier_industrial_capacity_factory = 0.05
+		GEH = {
+			add_political_power = 100
+			add_dynamic_modifier = {
+				modifier = Eden_treaty_modifier
+			}
 		}
-		add_to_variable = {
-			Eden_treaty_modifier_research_speed_factor = 0.025
-		}
+
 	}
-	TRI = {
-		add_political_power = 100
-		add_dynamic_modifier = {
-			modifier = Eden_treaty_modifier
-		}
-	}
-	GEH = {
-		add_political_power = 100
-		add_dynamic_modifier = {
-			modifier = Eden_treaty_modifier
-		}
-	}
+
+	
 }
 
 ###古圣堂之战###
