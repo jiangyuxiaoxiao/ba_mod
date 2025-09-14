@@ -25,6 +25,8 @@ country_event = {
 					id = ALF.1
 					days = 3
 				}
+				##特种部队等级：不落下风
+				force_update_dynamic_modifier = yes
 			}
 			goto_state = 199
 		}
@@ -45,32 +47,26 @@ country_event = {
 			set_variable = {
 				ALF.ALF_Livability_dynamic_modifier_var = 0.5
 			}
-
 			country_event = {
 				id = ALF.4
 				days = 30
 			}
-
 			country_event = {
 				id = ALF.5
 				days = 70
 			}
-
 			country_event = {
 				id = ALF.6
 				days = 100
 			}
-
 			country_event = {
 				id = ALF.7
 				days = 140
 			}
-
 			country_event = {
 				id = ALF.8
 				days = 170
 			}
-
 			country_event = {
 				id = ALF.9
 				days = 200
@@ -138,7 +134,7 @@ country_event = {
 		ALF_medium_decrease_livability_modifier_effect = yes
 		199 = {
 			add_manpower = 2000
-		} 
+		}
 	}
 	option = {
 		name = ALF.5.b
@@ -165,7 +161,7 @@ country_event = {
 	}
 	option = {
 		name = ALF.6.b
-		ALF_medium_improve_livability_modifier_effect = yes
+		ALF_small_improve_livability_modifier_effect = yes
 		199 = {
 			add_manpower = 1000
 		}
@@ -186,7 +182,7 @@ country_event = {
 		}
 		add_political_power = -50
 		ALF_use_livability_5_pts = yes
-		ALF_large_improve_livability_modifier_effect = yes
+		ALF_medium_improve_livability_modifier_effect = yes
 		199 = {
 			add_manpower = 5000
 		}
@@ -198,7 +194,7 @@ country_event = {
 		}
 		add_political_power = -25
 		ALF_use_livability_3_pts = yes
-		ALF_medium_improve_livability_modifier_effect = yes
+		ALF_small_improve_livability_modifier_effect = yes
 		199 = {
 			add_manpower = 2000
 		}
@@ -263,8 +259,7 @@ country_event = {
 			ideology = ELM_ALF_Leader_type
 			trait = ALF_rise_again_trait
 		}
-		ALF_improve_livability_modifier_effect = yes
-
+		#ALF_improve_livability_modifier_effect = yes
 		hidden_effect = {
 			country_event = {
 				id = ALF.11
@@ -370,5 +365,122 @@ country_event = {
 	option = {
 		name = ALF.17.a
 		add_war_support = 0.05
+	}
+}
+
+##工业命脉
+country_event = {
+	id = ALF.18
+	#picture = GFX_common_event_gui_test
+	title = ALF.18.t
+	desc = ALF.18.desc
+	is_triggered_only = yes
+	##水电站
+	option = {
+		name = ALF.18.a
+		200 = {
+			set_state_flag = ALF_synthetic_refinery_position_flag
+		}
+		unlock_decision_tooltip = ALF_Livability_for_synthetic_refinery
+	}
+	##武器厂位置
+	option = {
+		name = ALF.18.b
+		198 = {
+			set_state_flag = ALF_synthetic_refinery_position_flag
+		}
+		unlock_decision_tooltip = ALF_Livability_for_synthetic_refinery
+	}
+	##黑市第三仓库
+	option = {
+		name = ALF.18.c
+		trigger = {
+			217 = {
+				is_owned_and_controlled_by = ALF
+			}
+		}
+		217 = {
+			set_state_flag = ALF_synthetic_refinery_position_flag
+		}
+		unlock_decision_tooltip = ALF_Livability_for_synthetic_refinery
+	}
+}
+
+country_event = {
+	id = ALF.19
+	#picture = GFX_common_event_gui_test
+	title = ALF.19.t
+	desc = ALF.19.desc
+	is_triggered_only = yes
+	##水电站
+	option = {
+		name = ALF.19.a
+		add_ideas = ALF_CEN_electric_contract
+		ALF = {
+			country_event = {
+				id = ALF.20
+				days = 3
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ALF.20
+	#picture = GFX_common_event_gui_test
+	title = ALF.20.t
+	desc = ALF.20.desc
+	is_triggered_only = yes
+	##水电站
+	option = {
+		name = ALF.20.a
+		add_ideas = ALF_CEN_electric_contract_1
+		unlock_decision_tooltip = restore_state_electric_system_targeted_decision
+	}
+}
+
+country_event = {
+	id = ALF.21
+	#picture = GFX_common_event_gui_test
+	title = ALF.21.t
+	desc = ALF.21.desc
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			197 = {
+				set_state_name = "ALF_STATE_197_NAME"
+			}
+		}
+	}
+	option = {
+		name = ALF.21.a
+		set_province_name = {
+			id = 3978
+			name = VICTORY_POINTS_3978_final_ALF
+		}
+		set_capital = {
+			state = 197
+		}
+		197 = {
+			add_extra_state_shared_building_slots = 10
+		}
+	}
+}
+
+country_event = {
+	id = ALF.22
+	#picture = GFX_common_event_gui_test
+	title = ALF.22.t
+	desc = ALF.22.desc
+	picture = GFX_FSC_Leader_portrait_picture
+	is_triggered_only = yes
+	immediate = {
+
+	}
+	option = {
+		name = ALF.22.a
+		ALF = {
+			add_to_faction = FSC
+		}
 	}
 }

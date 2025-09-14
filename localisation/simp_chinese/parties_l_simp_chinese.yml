@@ -5,6 +5,7 @@
  get_current_sub_ideology_default: "墙头草"
 
  #no_ideology_type_desc: "总之可别当成画大饼了。"
+ Egalitarianism_ideology_drift: "§Y平等哲学§!每周认同率"
 
 #################
 #政治冷感
@@ -98,7 +99,7 @@
  ARI_Mysticism_ideology_party: "阿里乌斯代理学生会"
  ARI_Mysticism_ideology_party_long: "阿里乌斯代理学生会"
 
- ALF_Egalitarianism_ideology_party: "解放阵线"
+ ALF_Egalitarianism_ideology_party: "阿里乌斯解放阵线"
  ALF_Egalitarianism_ideology_party_long: "阿里乌斯解放阵线"
 
  GEH_Liberalism_ideology_party: "万魔殿（中央）"

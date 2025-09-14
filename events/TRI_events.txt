@@ -7,1198 +7,1133 @@ add_namespace = TRI_autofocus
 #200开始时调查事件
 #1000开始是超事件
 country_event = {
-    id = TRI_autofocus.1
-    hidden = yes
-    is_triggered_only = yes
-    trigger = {
-        NOT = { check_variable = { TRI_hoshubu_focus_line^0 = 0 } }
-    }
-    immediate = {
-        hidden_effect = {
-            meta_effect = {
-                text = {
-                    deactivate_shine_on_focus = [FOCUS]
-                    complete_national_focus = {
-                        focus = [FOCUS]
-                        use_side_message = yes
-                        originator_name = "[ORIGINATOR]"
-                    }
-                    if = {
-                        limit = { 
-                            NOT = { check_variable = { TRI_hoshubu_focus_line^1 = 0 } }
-                        }
-                        activate_shine_on_focus = [NEW_FOCUS]
-                        country_event = {
-                            id = TRI_autofocus.1
-                            days = var:TRI_auto_focus_days
-                        }
-                        #
-                    }
-                    remove_from_array = {
-                        array = TRI_hoshubu_focus_line
-                        index = 0
-                    }
-                }
-                FOCUS = "[?TRI_hoshubu_focus_line^0.GetTokenKey]"
-                ORIGINATOR = "[?TRI_auto_focus_originator.GetTokenKey]"
-                NEW_FOCUS = "[?TRI_hoshubu_focus_line^1.GetTokenKey]"
-            }
-        }
-        
-    }
+	id = TRI_autofocus.1
+	hidden = yes
+	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			check_variable = {
+				TRI_hoshubu_focus_line^0 = 0
+			}
+		}
+	}
+	immediate = {
+		hidden_effect = {
+			meta_effect = {
+				text = {
+					deactivate_shine_on_focus = [FOCUS]
+					complete_national_focus = {
+						focus = [FOCUS]
+						use_side_message = yes
+						originator_name = "[ORIGINATOR]"
+					}
+					if = {
+						limit = {
+							NOT = {
+								check_variable = {
+									TRI_hoshubu_focus_line^1 = 0
+								}
+							}
+						}
+						activate_shine_on_focus = [NEW_FOCUS]
+						country_event = {
+							id = TRI_autofocus.1
+							days = var:TRI_auto_focus_days
+						}
+						#
+					}
+					remove_from_array = {
+						array = TRI_hoshubu_focus_line
+						index = 0
+					}
+				}
+				FOCUS = "[?TRI_hoshubu_focus_line^0.GetTokenKey]"
+				ORIGINATOR = "[?TRI_auto_focus_originator.GetTokenKey]"
+				NEW_FOCUS = "[?TRI_hoshubu_focus_line^1.GetTokenKey]"
+			}
+		}
+	}
 }
+
 #欢迎来到圣三一！
 country_event = {
-    id = TRI_events.1
-    title = TRI_events.1.t
-    desc = TRI_events.1.d
-    picture = GFX_TRI_event_6
-
+	id = TRI_events.1
+	title = TRI_events.1.t
+	desc = TRI_events.1.d
+	picture = GFX_TRI_event_6
 	is_triggered_only = yes
-
 	fire_only_once = yes
-
-    option = {
+	option = {
 		name = TRI_events.1.a
-        add_political_power = 300
+		add_political_power = 300
 		ai_chance = {
 			base = 100
 		}
-    }
+	}
 }
 
 #在意，载疑，再议
 country_event = {
-    id = TRI_events.2
-    title = TRI_events.2.t
-    desc = TRI_events.2.d
-    picture = GFX_TRI_event_3
-
+	id = TRI_events.2
+	title = TRI_events.2.t
+	desc = TRI_events.2.d
+	picture = GFX_TRI_event_3
 	is_triggered_only = yes
-
 	fire_only_once = yes
-
-    option = {
+	option = {
 		name = TRI_events.2.a
-        hidden_effect = {
-            news_event = Eden_pact.1000
-        }
+		hidden_effect = {
+			news_event = Eden_pact.1000
+		}
 		ai_chance = {
 			base = 100
 		}
-    }
+	}
 }
 
 #各怀鬼胎
 country_event = {
-    id = TRI_events.3
-    title = TRI_events.3.t
-    desc = TRI_events.3.d
-    picture = GFX_TRI_event_3
-
+	id = TRI_events.3
+	title = TRI_events.3.t
+	desc = TRI_events.3.d
+	picture = GFX_TRI_event_3
 	is_triggered_only = yes
-
 	fire_only_once = yes
-
-    option = {
+	option = {
 		name = TRI_events.3.a
-		set_temp_variable = { position_change = -0.2 }
+		set_temp_variable = {
+			position_change = -0.2
+		}
 		TRI_change_player_focus_position = yes
-
 		ai_chance = {
 			base = 100
 		}
-    }
-
-    option = {
+	}
+	option = {
 		name = TRI_events.3.b
-
 		ai_chance = {
 			base = 4
 		}
-    }
-
-    option = {
+	}
+	option = {
 		name = TRI_events.3.c
-		set_temp_variable = { position_change = 0.1 }
+		set_temp_variable = {
+			position_change = 0.1
+		}
 		TRI_change_player_focus_position = yes
-
 		ai_chance = {
 			base = 5
 		}
-    }
+	}
 }
 
 #意料之外的使者
 country_event = {
-    id = TRI_events.4
-    title = TRI_events.4.t
-    desc = TRI_events.4.d
-    picture = GFX_TRI_event_3
-
+	id = TRI_events.4
+	title = TRI_events.4.t
+	desc = TRI_events.4.d
+	picture = GFX_TRI_event_3
 	is_triggered_only = yes
-
 	fire_only_once = yes
-
-    option = {
+	option = {
 		name = TRI_events.4.a
-
 		ai_chance = {
 			base = 100
 		}
-    }
+	}
 }
 
 #简要的会面
 country_event = {
-    id = TRI_events.5
-    title = TRI_events.5.t
-    desc = TRI_events.5.d
-    picture = GFX_TRI_event_3
-
+	id = TRI_events.5
+	title = TRI_events.5.t
+	desc = TRI_events.5.d
+	picture = GFX_TRI_event_3
 	is_triggered_only = yes
-
 	fire_only_once = yes
-    option = {
+	option = {
 		name = TRI_events.5.a
-        #刷新国策树
-        hidden_effect = {
-            load_focus_tree = TRI_focus_stage_2
-            set_variable = { TRI_parliament_negative_event_chance = 3 }
-            country_event = {
-                id = TRI_political_focus.0
-                months = 1
-            }
-            
-        }
-        #将【圣三一的权力平衡】焦点设置为：《伊甸条约》的签订
-        set_country_flag = TRI_parliament_available
+		#刷新国策树
+		hidden_effect = {
+			load_focus_tree = TRI_focus_stage_2
+			set_variable = {
+				TRI_parliament_negative_event_chance = 3
+			}
+			country_event = {
+				id = TRI_political_focus.0
+				months = 1
+			}
+		}
+		#将【圣三一的权力平衡】焦点设置为：《伊甸条约》的签订
+		set_country_flag = TRI_parliament_available
 		TRI_set_focus_signing_Eden = yes
 		ai_chance = {
 			base = 100
 		}
-    }
+	}
 }
 
 #既有近虑
 country_event = {
-    id = TRI_events.6
-    title = TRI_events.6.t
-    desc = TRI_events.6.d
-    picture = GFX_TRI_event_3
-
+	id = TRI_events.6
+	title = TRI_events.6.t
+	desc = TRI_events.6.d
+	picture = GFX_TRI_event_3
 	is_triggered_only = yes
-
 	fire_only_once = yes
-
-    option = {
+	option = {
 		name = TRI_events.6.a
-        set_temp_variable = { target_faction = token:BOP_hardliner }
-        set_temp_variable = { loyalty_change = 0.03 }
-        TRI_parliament_loyalty_change_faction = yes
-
+		set_temp_variable = {
+			target_faction = token:BOP_hardliner
+		}
+		set_temp_variable = {
+			loyalty_change = 0.03
+		}
+		TRI_parliament_loyalty_change_faction = yes
 		ai_chance = {
 			base = 100
 		}
-    }
-
-    option = {
+	}
+	option = {
 		name = TRI_events.6.b
-        set_temp_variable = { target_faction = token:BOP_conservative }
-        set_temp_variable = { loyalty_change = 0.03 }
-        TRI_parliament_loyalty_change_faction = yes
-
+		set_temp_variable = {
+			target_faction = token:BOP_conservative
+		}
+		set_temp_variable = {
+			loyalty_change = 0.03
+		}
+		TRI_parliament_loyalty_change_faction = yes
 		ai_chance = {
 			base = 100
 		}
-    }
-
-    option = {
+	}
+	option = {
 		name = TRI_events.6.c
-        set_temp_variable = { target_faction = token:BOP_moderate }
-        set_temp_variable = { loyalty_change = 0.03 }
-        TRI_parliament_loyalty_change_faction = yes
-
+		set_temp_variable = {
+			target_faction = token:BOP_moderate
+		}
+		set_temp_variable = {
+			loyalty_change = 0.03
+		}
+		TRI_parliament_loyalty_change_faction = yes
 		ai_chance = {
 			base = 100
 		}
-    }
+	}
 }
 
 #乐园之辩
 country_event = {
-    id = TRI_events.7
-    title = TRI_events.7.t
-    desc = TRI_events.7.d
-    picture = GFX_TRI_event_3
-
+	id = TRI_events.7
+	title = TRI_events.7.t
+	desc = TRI_events.7.d
+	picture = GFX_TRI_event_3
 	is_triggered_only = yes
-
 	fire_only_once = yes
-
-    option = {
+	option = {
 		name = TRI_events.7.a
-
 		ai_chance = {
 			base = 100
 		}
-    }
-
-    option = {
+	}
+	option = {
 		name = TRI_events.7.b
-
 		ai_chance = {
 			base = 100
 		}
-    }
+	}
 }
 
 #乌云笼于庙堂之上
 country_event = {
-    id = TRI_events.8
-    title = TRI_events.8.t
-    desc = TRI_events.8.d
-    picture = GFX_TRI_event_3
-
+	id = TRI_events.8
+	title = TRI_events.8.t
+	desc = TRI_events.8.d
+	picture = GFX_TRI_event_3
 	is_triggered_only = yes
-
 	fire_only_once = yes
-
-    option = {
+	option = {
 		name = TRI_events.8.a
-
-        trigger = { has_country_flag = ba_enabled_nonhistoric_choice }
-        
-        #启用偏执度系统
-        BA_TRI_initialize_paranoia_system = yes
-        #通过触发事件使桐藤渚获得特质
-        #桐藤渚获得特质——追根溯源:每周偏执度+2%,稳定度+5%,改善关系-40%
-
+		trigger = {
+			has_country_flag = ba_enabled_nonhistoric_choice
+		}
+		#启用偏执度系统
+		BA_TRI_initialize_paranoia_system = yes
+		#通过触发事件使桐藤渚获得特质
+		#桐藤渚获得特质——追根溯源:每周偏执度+2%,稳定度+5%,改善关系-40%
 		ai_chance = {
 			base = 100
 		}
-    }
-
-    option = {
+	}
+	option = {
 		name = TRI_events.8.b
-        
-        #启用偏执度系统
-        BA_TRI_initialize_paranoia_system = yes
-        #通过触发事件使桐藤渚获得特质
-        #桐藤渚获得特质——追根溯源:每周偏执度+2%,稳定度+5%,改善关系-40%
-
+		#启用偏执度系统
+		BA_TRI_initialize_paranoia_system = yes
+		#通过触发事件使桐藤渚获得特质
+		#桐藤渚获得特质——追根溯源:每周偏执度+2%,稳定度+5%,改善关系-40%
 		ai_chance = {
 			base = 100
 		}
-    }
+	}
 }
 
 #离心之盟
 country_event = {
-    id = TRI_events.9
-    title = TRI_events.9.t
-    desc = TRI_events.9.d
-    picture = GFX_TRI_event_3
-
+	id = TRI_events.9
+	title = TRI_events.9.t
+	desc = TRI_events.9.d
+	picture = GFX_TRI_event_3
 	is_triggered_only = yes
-
 	fire_only_once = yes
-
-    #暂且不实装
-    option = {
+	#暂且不实装
+	option = {
 		name = TRI_events.9.a
-        trigger = {
+		trigger = {
 			always = no
 		}
-
 		ai_chance = {
 			base = 100
 		}
-    }
-
-    #暂且不实装
-    option = {
+	}
+	#暂且不实装
+	option = {
 		name = TRI_events.9.b
-        trigger = {
+		trigger = {
 			always = no
 		}
-
 		ai_chance = {
 			base = 100
 		}
-    }
-
-
-    option = {
+	}
+	option = {
 		name = TRI_events.9.c
-
 		ai_chance = {
 			base = 100
 		}
-    }
+	}
 }
 
 #危险机密被泄露？
 country_event = {
-    id = TRI_events.10
-    title = TRI_events.10.t
-    desc = TRI_events.10.d
-    picture = GFX_TRI_event_3
-
+	id = TRI_events.10
+	title = TRI_events.10.t
+	desc = TRI_events.10.d
+	picture = GFX_TRI_event_3
 	is_triggered_only = yes
-
 	fire_only_once = yes
-
-    option = {
+	option = {
 		name = TRI_events.10.a
-
 		ai_chance = {
 			base = 100
 		}
-    }
+	}
 }
 
 #外来者
 country_event = {
-    id = TRI_events.11
-    title = TRI_events.11.t
-    desc = TRI_events.11.d
-    picture = GFX_TRI_event_3
-
+	id = TRI_events.11
+	title = TRI_events.11.t
+	desc = TRI_events.11.d
+	picture = GFX_TRI_event_3
 	is_triggered_only = yes
-
 	fire_only_once = yes
-
-    option = {
+	option = {
 		name = TRI_events.11.a
-        add_ideas = TRI_SCH_teacher_modifier
-        #桐藤渚偏执度-5%
-        set_temp_variable = { TRI_paranoia_change = -5 }
-        TRI_change_paranoia = yes
+		add_ideas = TRI_SCH_teacher_modifier
+		#桐藤渚偏执度-5%
+		set_temp_variable = {
+			TRI_paranoia_change = -5
+		}
+		TRI_change_paranoia = yes
 		country_event = TRI_events.12
 		ai_chance = {
 			base = 100
 		}
-    }
+	}
 }
 
 #与老师的会面
 country_event = {
-    id = TRI_events.12
-    title = TRI_events.12.t
-    desc = TRI_events.12.d
-    picture = GFX_TRI_event_3
-
+	id = TRI_events.12
+	title = TRI_events.12.t
+	desc = TRI_events.12.d
+	picture = GFX_TRI_event_3
 	is_triggered_only = yes
-
 	fire_only_once = yes
-
-    option = {
+	option = {
 		name = TRI_events.12.a
-        complete_national_focus = TRI_guide_of_hoshubu
+		complete_national_focus = TRI_guide_of_hoshubu
 		ai_chance = {
 			base = 100
 		}
-    }
+	}
 }
 
 #第二次伊甸条约地点选址
 country_event = {
-    id = TRI_events.13
-    title = TRI_events.13.t
-    desc = TRI_events.13.d
-    picture = GFX_TRI_event_3
-
+	id = TRI_events.13
+	title = TRI_events.13.t
+	desc = TRI_events.13.d
+	picture = GFX_TRI_event_3
 	is_triggered_only = yes
-
 	fire_only_once = yes
-
-    option = {
+	option = {
 		name = TRI_events.13.a
-
-        #非历史线出现
-        trigger = { has_country_flag = ba_enabled_nonhistoric_choice }
-
+		#非历史线出现
+		trigger = {
+			has_country_flag = ba_enabled_nonhistoric_choice
+		}
 		ai_chance = {
 			base = 100
 		}
-    }
-
-    option = {
+	}
+	option = {
 		name = TRI_events.13.b
-
 		ai_chance = {
 			base = 100
 		}
-    }
+	}
 }
-
 
 #名为信任的纽带
 country_event = {
-    id = TRI_events.25
-    title = TRI_events.25.t
-    desc = TRI_events.25.d
-    picture = GFX_TRI_event_3
-
+	id = TRI_events.25
+	title = TRI_events.25.t
+	desc = TRI_events.25.d
+	picture = GFX_TRI_event_3
 	is_triggered_only = yes
-
 	fire_only_once = yes
-
-    option = {
+	option = {
 		name = TRI_events.25.a
-        BA_TRI_remove_paranoia_system = yes
-
-        hidden_effect = {
-            country_event = {
-                id = TRI_events.51
-                days = 7
-            }
-        }
-
+		BA_TRI_remove_paranoia_system = yes
+		hidden_effect = {
+			country_event = {
+				id = TRI_events.51
+				days = 7
+			}
+		}
 		ai_chance = {
 			base = 100
 		}
-    }
+	}
 }
 
 #剑拔弩张的会面
 country_event = {
-    id = TRI_events.26
-    title = TRI_events.26.t
-    desc = TRI_events.26.d
-    picture = GFX_TRI_event_16
-
+	id = TRI_events.26
+	title = TRI_events.26.t
+	desc = TRI_events.26.d
+	picture = GFX_TRI_event_16
 	is_triggered_only = yes
-
 	fire_only_once = yes
-    option = {
+	option = {
 		name = TRI_events.26.a
 		ai_chance = {
 			base = 100
 		}
-    }
+	}
 }
 
 #灼天的硝火
 country_event = {
-    id = TRI_events.27
-    title = TRI_events.27.t
-    desc = TRI_events.27.d
-    picture = GFX_TRI_event_15
-
+	id = TRI_events.27
+	title = TRI_events.27.t
+	desc = TRI_events.27.d
+	picture = GFX_TRI_event_15
 	is_triggered_only = yes
-
 	fire_only_once = yes
-
-    option = {
+	option = {
 		name = TRI_events.27.a
-
-        hidden_effect = {
-            country_event = {
-                id = TRI_events.28
-                days = 3
-            }
-        }
-
+		hidden_effect = {
+			country_event = {
+				id = TRI_events.28
+				days = 3
+			}
+		}
 		ai_chance = {
 			base = 100
 		}
-    }
+	}
 }
 
 #弥散而出的混乱
 country_event = {
-    id = TRI_events.28
-    title = TRI_events.28.t
-    desc = TRI_events.28.d
-    picture = GFX_TRI_event_15
-
+	id = TRI_events.28
+	title = TRI_events.28.t
+	desc = TRI_events.28.d
+	picture = GFX_TRI_event_15
 	is_triggered_only = yes
-
 	fire_only_once = yes
-    option = {
+	option = {
 		name = TRI_events.28.a
-        hidden_effect = {
-            country_event = {
-                id = TRI_events.29
-                days = 3
-            }
-        }
-        #圣三一的团结——团结度－10
-        TRI_unity_decrease_10 = yes
-        
+		hidden_effect = {
+			country_event = {
+				id = TRI_events.29
+				days = 3
+			}
+		}
+		#圣三一的团结——团结度－10
+		TRI_unity_decrease_10 = yes
 		ai_chance = {
 			base = 100
 		}
-    }
+	}
 }
 
 #摇摇欲坠
 country_event = {
-    id = TRI_events.29
-    title = TRI_events.29.t
-    desc = TRI_events.29.d
-    picture = GFX_TRI_event_15
-
+	id = TRI_events.29
+	title = TRI_events.29.t
+	desc = TRI_events.29.d
+	picture = GFX_TRI_event_15
 	is_triggered_only = yes
-
 	fire_only_once = yes
-
-    option = {
+	option = {
 		name = TRI_events.29.a
-
-        #正义实现委员会的支持度降低至30%，激进度提升至60%
-        hidden_effect = {
-            if = {
-                limit = {
-                    check_variable = { loyalty@TRI_parliament_association_3 > 0.3 }
-                }
-                set_variable = { loyalty@TRI_parliament_association_3 = 0.3 }
-            }
-            if = {
-                limit = { check_variable = { radicalism@TRI_parliament_association_3 < 0.6 } }
-                set_variable = { radicalism@TRI_parliament_association_3 = 0.6 }
-            }
-            TRI_parliament_party_seats = yes
-            set_country_flag = TRI_BOP_set_current_policy_available
-            TRI_parliament_party_seats = yes
-            country_event = {
-                id = TRI_events.30
-                days = 1
-            }
-        }
-        custom_effect_tooltip = TRI_events_29_tt
+		#正义实现委员会的支持度降低至30%，激进度提升至60%
+		hidden_effect = {
+			if = {
+				limit = {
+					check_variable = {
+						loyalty@TRI_parliament_association_3 > 0.3
+					}
+				}
+				set_variable = {
+					loyalty@TRI_parliament_association_3 = 0.3
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						radicalism@TRI_parliament_association_3 < 0.6
+					}
+				}
+				set_variable = {
+					radicalism@TRI_parliament_association_3 = 0.6
+				}
+			}
+			TRI_parliament_party_seats = yes
+			set_country_flag = TRI_BOP_set_current_policy_available
+			TRI_parliament_party_seats = yes
+			country_event = {
+				id = TRI_events.30
+				days = 1
+			}
+		}
+		custom_effect_tooltip = TRI_events_29_tt
 		ai_chance = {
 			base = 100
 		}
-    }
+	}
 }
 
 #凶镬延漫
 country_event = {
-    id = TRI_events.30
-    title = TRI_events.30.t
-    desc = TRI_events.30.d
-    picture = GFX_TRI_event_15
-
+	id = TRI_events.30
+	title = TRI_events.30.t
+	desc = TRI_events.30.d
+	picture = GFX_TRI_event_15
 	is_triggered_only = yes
-
 	fire_only_once = yes
-
-    option = {
+	option = {
 		name = TRI_events.30.a
-
 		ai_chance = {
 			base = 100
 		}
-    }
+	}
 }
 
 #临时代管协议
 country_event = {
-    id = TRI_events.31
-    title = TRI_events.31.t
-    desc = TRI_events.31.d
-    picture = GFX_TRI_event_8
-
+	id = TRI_events.31
+	title = TRI_events.31.t
+	desc = TRI_events.31.d
+	picture = GFX_TRI_event_8
 	is_triggered_only = yes
-
 	fire_only_once = yes
-
-    option = {
+	option = {
 		name = TRI_events.31.a
-
-        #于【圣三一情报局】添加《古圣堂袭击》调查决议
-        set_country_flag = TRI_church_investigation
-        unlock_decision_category_tooltip = TRI_church_investigation
-        #替换【与重要社团的交联】决议为：①加快修女会世俗化进程②收拢正义实现委员会残部③镇压暴乱的正义实现委员会部员④为救护骑士团增派救援物资⑤要求救护骑士团优先关注前线⑥向自警团等社团下放权力⑦征召其它社团成员
-        set_country_flag = TRI_hanako_decisions
-        unlock_decision_category_tooltip = TRI_hanako_decisions
-
-        add_timed_idea = {
-            idea = TRI_prepare_for_war
-            days = 140
-        }
-        #完成国策：风暴中的炬手
-        complete_national_focus = TRI_torchbearer_in_the_storm
-        hidden_effect = {
-            country_event = { id = TRI_events.32 days = 14 } #两周，14days
-        }
+		#于【圣三一情报局】添加《古圣堂袭击》调查决议
+		set_country_flag = TRI_church_investigation
+		unlock_decision_category_tooltip = TRI_church_investigation
+		#替换【与重要社团的交联】决议为：①加快修女会世俗化进程②收拢正义实现委员会残部③镇压暴乱的正义实现委员会部员④为救护骑士团增派救援物资⑤要求救护骑士团优先关注前线⑥向自警团等社团下放权力⑦征召其它社团成员
+		set_country_flag = TRI_hanako_decisions
+		unlock_decision_category_tooltip = TRI_hanako_decisions
+		add_timed_idea = {
+			idea = TRI_prepare_for_war
+			days = 140
+		}
+		#完成国策：风暴中的炬手
+		complete_national_focus = TRI_torchbearer_in_the_storm
+		hidden_effect = {
+			country_event = {
+				id = TRI_events.32
+				days = 14
+			}
+			#两周，14days
+		}
 		ai_chance = {
 			base = 100
 		}
-    }
-
-    option = {
+	}
+	option = {
 		name = TRI_events.31.b
-
-        #于【圣三一情报局】添加《古圣堂袭击》调查决议
-        set_country_flag = TRI_church_investigation
-        unlock_decision_category_tooltip = TRI_church_investigation
-        #替换【与重要社团的交联】决议为：①加快修女会世俗化进程②收拢正义实现委员会残部③镇压暴乱的正义实现委员会部员④为救护骑士团增派救援物资⑤要求救护骑士团优先关注前线⑥向自警团等社团下放权力⑦征召其它社团成员
-        set_country_flag = TRI_hanako_decisions
-        unlock_decision_category_tooltip = TRI_hanako_decisions
-
-        add_timed_idea = {
-            idea = TRI_focus_on_stability
-            days = 140
-        }
-        #完成国策：动荡下的砥石
-        complete_national_focus = TRI_mainstay_in_the_collapse
-        hidden_effect = {
-            country_event = { id = TRI_events.32 days = 14 } #两周，14days
-        }
+		#于【圣三一情报局】添加《古圣堂袭击》调查决议
+		set_country_flag = TRI_church_investigation
+		unlock_decision_category_tooltip = TRI_church_investigation
+		#替换【与重要社团的交联】决议为：①加快修女会世俗化进程②收拢正义实现委员会残部③镇压暴乱的正义实现委员会部员④为救护骑士团增派救援物资⑤要求救护骑士团优先关注前线⑥向自警团等社团下放权力⑦征召其它社团成员
+		set_country_flag = TRI_hanako_decisions
+		unlock_decision_category_tooltip = TRI_hanako_decisions
+		add_timed_idea = {
+			idea = TRI_focus_on_stability
+			days = 140
+		}
+		#完成国策：动荡下的砥石
+		complete_national_focus = TRI_mainstay_in_the_collapse
+		hidden_effect = {
+			country_event = {
+				id = TRI_events.32
+				days = 14
+			}
+			#两周，14days
+		}
 		ai_chance = {
 			base = 100
 		}
-    }
-
+	}
 }
 
 #意外访客
 country_event = {
-    id = TRI_events.32
-    title = TRI_events.32.t
-    desc = TRI_events.32.d
-    picture = GFX_TRI_event_8
-
+	id = TRI_events.32
+	title = TRI_events.32.t
+	desc = TRI_events.32.d
+	picture = GFX_TRI_event_8
 	is_triggered_only = yes
-
 	fire_only_once = yes
-
-    option = {
+	option = {
 		name = TRI_events.32.a
-
 		ai_chance = {
 			base = 100
 		}
-    }
+	}
 }
 
 #逆乱
 country_event = {
-    id = TRI_events.33
-    title = TRI_events.33.t
-    desc = TRI_events.33.d
-    picture = GFX_TRI_event_8
-
+	id = TRI_events.33
+	title = TRI_events.33.t
+	desc = TRI_events.33.d
+	picture = GFX_TRI_event_8
 	is_triggered_only = yes
-
 	fire_only_once = yes
-
-    option = {
+	option = {
 		name = TRI_events.33.a
-
 		ai_chance = {
 			base = 100
 		}
-    }
+	}
 }
 
 #无解的谜题
 country_event = {
-    id = TRI_events.34
-    title = TRI_events.34.t
-    desc = TRI_events.34.d
-    picture = GFX_TRI_event_8
-
+	id = TRI_events.34
+	title = TRI_events.34.t
+	desc = TRI_events.34.d
+	picture = GFX_TRI_event_8
 	is_triggered_only = yes
-
 	fire_only_once = yes
-
-    option = {
+	option = {
 		name = TRI_events.34.a
-
 		ai_chance = {
 			base = 100
 		}
-    }
+	}
 }
 
 #转机
 country_event = {
-    id = TRI_events.35
-    title = TRI_events.35.t
-    desc = TRI_events.35.d
-    picture = GFX_TRI_event_8
-
+	id = TRI_events.35
+	title = TRI_events.35.t
+	desc = TRI_events.35.d
+	picture = GFX_TRI_event_8
 	is_triggered_only = yes
-
 	fire_only_once = yes
-
-    option = {
+	option = {
 		name = TRI_events.35.a
-
-        add_political_power = 200
-
-        #团结度+10
-        TRI_unity_increase_10 = yes
-        #为民族精神【逐渐稳定的《伊甸条约》】添加效果：（每日获取的政治点数＋0.1，工厂产出＋15％，所有顾问、法案花费－50％）
-        custom_effect_tooltip = eden_treaty_step_5_add_modifier_1
-        add_to_variable = { eden_broken_daily_power_gain = 0.1 }
-        add_to_variable = { eden_broken_factory_output = 0.15 }
-        add_to_variable = { eden_broken_advisor_cost = -0.5 }
-        add_to_variable = { eden_broken_army_chief_cost = -0.5 }
-        add_to_variable = { eden_broken_air_chief_cost = -0.5 }
-        add_to_variable = { eden_broken_economy_cost = -0.5 }
-        add_to_variable = { eden_broken_mobilization_laws_cost = -0.5 }
-        add_to_variable = { eden_broken_trade_laws_cost = -0.5 }
-
+		add_political_power = 200
+		#团结度+10
+		TRI_unity_increase_10 = yes
+		#为民族精神【逐渐稳定的《伊甸条约》】添加效果：（每日获取的政治点数＋0.1，工厂产出＋15％，所有顾问、法案花费－50％）
+		custom_effect_tooltip = eden_treaty_step_5_add_modifier_1
+		add_to_variable = {
+			eden_broken_daily_power_gain = 0.1
+		}
+		add_to_variable = {
+			eden_broken_factory_output = 0.15
+		}
+		add_to_variable = {
+			eden_broken_advisor_cost = -0.5
+		}
+		add_to_variable = {
+			eden_broken_army_chief_cost = -0.5
+		}
+		add_to_variable = {
+			eden_broken_air_chief_cost = -0.5
+		}
+		add_to_variable = {
+			eden_broken_economy_cost = -0.5
+		}
+		add_to_variable = {
+			eden_broken_mobilization_laws_cost = -0.5
+		}
+		add_to_variable = {
+			eden_broken_trade_laws_cost = -0.5
+		}
 		ai_chance = {
 			base = 100
 		}
-    }
+	}
 }
 
 #“邪恶的暗部领袖”
 country_event = {
-    id = TRI_events.36
-    title = TRI_events.36.t
-    desc = TRI_events.36.d
-    picture = GFX_TRI_event_17
-
+	id = TRI_events.36
+	title = TRI_events.36.t
+	desc = TRI_events.36.d
+	picture = GFX_TRI_event_17
 	is_triggered_only = yes
-
 	fire_only_once = yes
-
-    option = {
+	option = {
 		name = TRI_events.36.a
-        country_event = {
-            id = TRI_events.38
-            days = 7
-        }
+		country_event = {
+			id = TRI_events.38
+			days = 7
+		}
 		ai_chance = {
 			base = 100
 		}
-    }
+	}
 }
 
 #战壕速递
 country_event = {
-    id = TRI_events.37
-    title = TRI_events.37.t
-    desc = TRI_events.37.d
-    picture = GFX_TRI_event_8
-
+	id = TRI_events.37
+	title = TRI_events.37.t
+	desc = TRI_events.37.d
+	picture = GFX_TRI_event_8
 	is_triggered_only = yes
-
 	fire_only_once = yes
-
-    option = {
+	option = {
 		name = TRI_events.37.a
-
-        country_event = TRI_events.39
-
+		country_event = TRI_events.39
 		ai_chance = {
 			base = 100
 		}
-    }
+	}
 }
 
 #正义，青春与友谊
 country_event = {
-    id = TRI_events.38
-    title = TRI_events.38.t
-    desc = TRI_events.38.d
-    picture = GFX_TRI_event_14
-
+	id = TRI_events.38
+	title = TRI_events.38.t
+	desc = TRI_events.38.d
+	picture = GFX_TRI_event_14
 	is_triggered_only = yes
-
 	fire_only_once = yes
-
-    option = {
+	option = {
 		name = TRI_events.38.a
-
 		ai_chance = {
 			base = 100
 		}
-    }
+	}
 }
 
 #新以代之
 country_event = {
-    id = TRI_events.39
-    title = TRI_events.39.t
-    desc = TRI_events.39.d
-    picture = GFX_TRI_event_14
-
+	id = TRI_events.39
+	title = TRI_events.39.t
+	desc = TRI_events.39.d
+	picture = GFX_TRI_event_14
 	is_triggered_only = yes
-
 	fire_only_once = yes
-
-    option = {
+	option = {
 		name = TRI_events.39.a
-
 		ai_chance = {
 			base = 100
 		}
-    }
+	}
 }
 
 #乐园之议
 country_event = {
-    id = TRI_events.40
-    title = TRI_events.40.t
-    desc = TRI_events.40.d
-    picture = GFX_TRI_event_14
-
+	id = TRI_events.40
+	title = TRI_events.40.t
+	desc = TRI_events.40.d
+	picture = GFX_TRI_event_14
 	is_triggered_only = yes
-
 	fire_only_once = yes
-
-    option = {
+	option = {
 		name = TRI_events.40.a
-
 		ai_chance = {
 			base = 100
 		}
-    }
+	}
 }
 
 #最后的挣扎
 country_event = {
-    id = TRI_events.41
-    title = TRI_events.41.t
-    desc = TRI_events.41.d
-    picture = GFX_TRI_event_14
-
+	id = TRI_events.41
+	title = TRI_events.41.t
+	desc = TRI_events.41.d
+	picture = GFX_TRI_event_14
 	is_triggered_only = yes
-
 	fire_only_once = yes
-
-    option = {
+	option = {
 		name = TRI_events.41.a
-
-         hidden_effect = {
-            country_event = { id = TRI_events.42 days = 21 } #3周，21天
-        }
-
+		hidden_effect = {
+			country_event = {
+				id = TRI_events.42
+				days = 21
+			}
+			#3周，21天
+		}
 		ai_chance = {
 			base = 100
 		}
-    }
+	}
 }
 
 #余波
 country_event = {
-    id = TRI_events.42
-    title = TRI_events.42.t
-    desc = TRI_events.42.d
-    picture = GFX_TRI_event_8
-
+	id = TRI_events.42
+	title = TRI_events.42.t
+	desc = TRI_events.42.d
+	picture = GFX_TRI_event_8
 	is_triggered_only = yes
-
 	fire_only_once = yes
-
-    option = {
+	option = {
 		name = TRI_events.42.a
-
 		ai_chance = {
 			base = 100
 		}
-    }
+	}
 }
 
 #有条件的军事准备
 country_event = {
-    id = TRI_events.100
-    title = TRI_events.100.t
-    desc = TRI_events.100.d
-    picture = GFX_TRI_event_3
-
+	id = TRI_events.100
+	title = TRI_events.100.t
+	desc = TRI_events.100.d
+	picture = GFX_TRI_event_3
 	is_triggered_only = yes
-
-    option = {
+	option = {
 		name = TRI_events.100.a
-        add_political_power = -25
-        random_controlled_state = {
-            limit = {
-                TRI_is_tea_party_state = yes
-                free_building_slots = {
-                    building = arms_factory
-                    size > 0
-                    include_locked = yes
-                }
-            }
-            add_extra_state_shared_building_slots = 1
-            add_building_construction = {
-                type = arms_factory
-                level = 1
-                instant_build = yes
-            }	
-        }
-        random_controlled_state = {
-            limit = {
-                TRI_is_tea_party_state = no
-                free_building_slots = {
-                    building = industrial_complex
-                    size > 0
-                    include_locked = yes
-                }
-            }
-            add_extra_state_shared_building_slots = 1
-            add_building_construction = {
-                type = industrial_complex
-                level = 1
-                instant_build = yes
-            }	
-        }
-        random_controlled_state = {
-            limit = {
-                NOT = {
-                    TRI_is_tea_party_state = no
-                }
-                free_building_slots = {
-                    building = industrial_complex
-                    size > 0
-                    include_locked = yes
-                }
-            }
-            add_extra_state_shared_building_slots = 1
-            add_building_construction = {
-                type = industrial_complex
-                level = 1
-                instant_build = yes
-            }	
-        }
-        set_temp_variable = { target_parliament = token:BA_TRI_house_seat }
-        set_temp_variable = { loyalty_change = 0.03 }
-        TRI_parliament_loyalty_change_parliament = yes
+		add_political_power = -25
+		random_controlled_state = {
+			limit = {
+				TRI_is_tea_party_state = yes
+				free_building_slots = {
+					building = arms_factory
+					size > 0
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_controlled_state = {
+			limit = {
+				TRI_is_tea_party_state = no
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_controlled_state = {
+			limit = {
+				NOT = {
+					TRI_is_tea_party_state = no
+				}
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		set_temp_variable = {
+			target_parliament = token:BA_TRI_house_seat
+		}
+		set_temp_variable = {
+			loyalty_change = 0.03
+		}
+		TRI_parliament_loyalty_change_parliament = yes
 		ai_chance = {
 			base = 1
 		}
-    }
-    option = {
+	}
+	option = {
 		name = TRI_events.100.b
-        add_political_power = -75
-        random_controlled_state = {
-            limit = {
-                TRI_is_tea_party_state = yes
-            }
-            add_extra_state_shared_building_slots = 1
-            random_list = {
-                1 = {
-                    modifier = {
-                        factor = 0
-                        free_building_slots = {
-                            building = synthetic_refinery
-                            size = 0
-                            include_locked = yes
-                        }
-                    }
-                    add_building_construction = {
-                        type = synthetic_refinery
-                        level = 1
-                        instant_build = yes
-                    }	
-                }
-                1 = {
-                    modifier = {
-                        factor = 0
-                        free_building_slots = {
-                            building = metal_processing_plant
-                            size = 0
-                            include_locked = yes
-                        }
-                    }
-                    add_building_construction = {
-                        type = metal_processing_plant
-                        level = 1
-                        instant_build = yes
-                    }	
-                }
-                1 = {
-                    modifier = {
-                        factor = 0
-                        free_building_slots = {
-                            building = rare_metal_processing_plant
-                            size = 0
-                            include_locked = yes
-                        }
-                    }
-                    add_building_construction = {
-                        type = rare_metal_processing_plant
-                        level = 1
-                        instant_build = yes
-                    }	
-                }
-                1 = {
-                    modifier = {
-                        factor = 0
-                        free_building_slots = {
-                            building = electronic_component_factory
-                            size = 0
-                            include_locked = yes
-                        }
-                    }
-                    add_building_construction = {
-                        type = electronic_component_factory
-                        level = 1
-                        instant_build = yes
-                    }	
-                }
-                1 = {
-                    modifier = {
-                        factor = 0
-                        free_building_slots = {
-                            building = opatz_synthesis_center
-                            size = 0
-                            include_locked = yes
-                        }
-                    }
-                    add_building_construction = {
-                        type = opatz_synthesis_center
-                        level = 1
-                        instant_build = yes
-                    }	
-                }
-            }
-        }
-        add_offsite_building = {
-            type = arms_factory
-            level = 2
-        }
-        set_temp_variable = { target_parliament = token:BA_TRI_senate_seat }
-        set_temp_variable = { loyalty_change = 0.01 }
-        TRI_parliament_loyalty_change_parliament = yes
-        set_temp_variable = { target_parliament = token:BA_TRI_house_seat }
-        set_temp_variable = { loyalty_change = -0.02 }
-        TRI_parliament_loyalty_change_parliament = yes
+		add_political_power = -75
+		random_controlled_state = {
+			limit = {
+				TRI_is_tea_party_state = yes
+			}
+			add_extra_state_shared_building_slots = 1
+			random_list = {
+				1 = {
+					modifier = {
+						factor = 0
+						free_building_slots = {
+							building = synthetic_refinery
+							size = 0
+							include_locked = yes
+						}
+					}
+					add_building_construction = {
+						type = synthetic_refinery
+						level = 1
+						instant_build = yes
+					}
+				}
+				1 = {
+					modifier = {
+						factor = 0
+						free_building_slots = {
+							building = metal_processing_plant
+							size = 0
+							include_locked = yes
+						}
+					}
+					add_building_construction = {
+						type = metal_processing_plant
+						level = 1
+						instant_build = yes
+					}
+				}
+				1 = {
+					modifier = {
+						factor = 0
+						free_building_slots = {
+							building = rare_metal_processing_plant
+							size = 0
+							include_locked = yes
+						}
+					}
+					add_building_construction = {
+						type = rare_metal_processing_plant
+						level = 1
+						instant_build = yes
+					}
+				}
+				1 = {
+					modifier = {
+						factor = 0
+						free_building_slots = {
+							building = electronic_component_factory
+							size = 0
+							include_locked = yes
+						}
+					}
+					add_building_construction = {
+						type = electronic_component_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+				1 = {
+					modifier = {
+						factor = 0
+						free_building_slots = {
+							building = opatz_synthesis_center
+							size = 0
+							include_locked = yes
+						}
+					}
+					add_building_construction = {
+						type = opatz_synthesis_center
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+		add_offsite_building = {
+			type = arms_factory
+			level = 2
+		}
+		set_temp_variable = {
+			target_parliament = token:BA_TRI_senate_seat
+		}
+		set_temp_variable = {
+			loyalty_change = 0.01
+		}
+		TRI_parliament_loyalty_change_parliament = yes
+		set_temp_variable = {
+			target_parliament = token:BA_TRI_house_seat
+		}
+		set_temp_variable = {
+			loyalty_change = -0.02
+		}
+		TRI_parliament_loyalty_change_parliament = yes
 		ai_chance = {
 			base = 1
 		}
-    }
+	}
 }
 
 ###2025.2.20 乃爱###
 #圣三一与格黑娜宣布第二次《伊甸条约》会谈筹备开始
 country_event = {
-    id = TRI_events.50
-    title = TRI_events.50.t
-    desc = TRI_events.50.d
-    picture = GFX_TRI_event_2
-
+	id = TRI_events.50
+	title = TRI_events.50.t
+	desc = TRI_events.50.d
+	picture = GFX_TRI_event_2
 	is_triggered_only = yes
-
 	fire_only_once = yes
-
-    option = {
+	option = {
 		name = TRI_events.50.a
-        hidden_effect = {
-            set_global_flag = BA_2st_eden_pact_TRI_leader
-            Eden_treaty_start = yes
-        }
+		hidden_effect = {
+			set_global_flag = BA_2st_eden_pact_TRI_leader
+			Eden_treaty_start = yes
+		}
 		ai_chance = {
 			base = 100
 		}
-    }
+	}
 }
 
 #桐藤渚的地位遭受质疑
 country_event = {
-    id = TRI_events.51
-    title = TRI_events.51.t
-    desc = TRI_events.51.d
-    picture = GFX_TRI_event_3
-
+	id = TRI_events.51
+	title = TRI_events.51.t
+	desc = TRI_events.51.d
+	picture = GFX_TRI_event_3
 	is_triggered_only = yes
-
 	fire_only_once = yes
-    option = {
+	option = {
 		name = TRI_events.51.a
-        TRI_set_focus_trust_on_current_leader = yes
-        set_variable = { TRI_shaked_nagisa_belief_stability_weekly = -0.005 }
-        set_variable = { TRI_shaked_nagisa_belief_political_advisor_cost_factor = 0.75 }
-        set_variable = { TRI_shaked_nagisa_belief_political_power_cost = 0.5 }
-        set_variable = { TRI_shaked_nagisa_belief_unity_weekly_modifier = -2 }
-        set_variable = { TRI_shaked_nagisa_belief_Eden_treaty_progress_modifier = -2 }
-        add_dynamic_modifier = { modifier = TRI_shaked_nagisa_belief_1 }
-        if = {
-            limit = { has_country_flag = TRI_investigation_perfect_ending }
-            complete_national_focus = TRI_repair_trust
-            complete_national_focus = TRI_threading_a_needle
-            complete_national_focus = TRI_bouncing_back
-            complete_national_focus = TRI_return_a_favor
-            complete_national_focus = TRI_making_the_best_use
-            clr_country_flag = TRI_senate_promise_task_1
-            clr_country_flag = TRI_senate_promise_task_2
-            clr_country_flag = TRI_senate_promise_task_3
-            clr_country_flag = TRI_house_promise_task_1
-            clr_country_flag = TRI_house_promise_task_2
-            clr_country_flag = TRI_house_promise_task_3
-
-        }
-        
-        TRI_unity_decrease_10 = yes
-
+		TRI_set_focus_trust_on_current_leader = yes
+		set_variable = {
+			TRI_shaked_nagisa_belief_stability_weekly = -0.005
+		}
+		set_variable = {
+			TRI_shaked_nagisa_belief_political_advisor_cost_factor = 0.75
+		}
+		set_variable = {
+			TRI_shaked_nagisa_belief_political_power_cost = 0.5
+		}
+		set_variable = {
+			TRI_shaked_nagisa_belief_unity_weekly_modifier = -2
+		}
+		set_variable = {
+			TRI_shaked_nagisa_belief_Eden_treaty_progress_modifier = -2
+		}
+		add_dynamic_modifier = {
+			modifier = TRI_shaked_nagisa_belief_1
+		}
+		if = {
+			limit = {
+				has_country_flag = TRI_investigation_perfect_ending
+			}
+			complete_national_focus = TRI_repair_trust
+			complete_national_focus = TRI_threading_a_needle
+			complete_national_focus = TRI_bouncing_back
+			complete_national_focus = TRI_return_a_favor
+			complete_national_focus = TRI_making_the_best_use
+			clr_country_flag = TRI_senate_promise_task_1
+			clr_country_flag = TRI_senate_promise_task_2
+			clr_country_flag = TRI_senate_promise_task_3
+			clr_country_flag = TRI_house_promise_task_1
+			clr_country_flag = TRI_house_promise_task_2
+			clr_country_flag = TRI_house_promise_task_3
+		}
+		TRI_unity_decrease_10 = yes
 		ai_chance = {
 			base = 100
 		}
-    }
+	}
 }
 
 #狂澜即挽
 country_event = {
-    id = TRI_events.52
-    title = TRI_events.52.t
-    desc = TRI_events.52.d
-    picture = GFX_TRI_event_3
-
+	id = TRI_events.52
+	title = TRI_events.52.t
+	desc = TRI_events.52.d
+	picture = GFX_TRI_event_3
 	is_triggered_only = yes
-
 	fire_only_once = yes
-
-    option = {
+	option = {
 		name = TRI_events.52.a
-        remove_dynamic_modifier = {
-            modifier = TRI_shaked_nagisa_belief_1
-        }
-        add_to_variable = { TRI_shaked_nagisa_belief_stability_weekly = 0.005 }
-        add_to_variable = { TRI_shaked_nagisa_belief_political_power_cost = -0.35 }
-        add_to_variable = { TRI_shaked_nagisa_belief_unity_weekly_modifier = 1 }
-        add_to_variable = { TRI_shaked_nagisa_belief_Eden_treaty_progress_modifier = 1 }
-        add_dynamic_modifier = {
-            modifier = TRI_shaked_nagisa_belief_2
-        }
-
+		remove_dynamic_modifier = {
+			modifier = TRI_shaked_nagisa_belief_1
+		}
+		add_to_variable = {
+			TRI_shaked_nagisa_belief_stability_weekly = 0.005
+		}
+		add_to_variable = {
+			TRI_shaked_nagisa_belief_political_power_cost = -0.35
+		}
+		add_to_variable = {
+			TRI_shaked_nagisa_belief_unity_weekly_modifier = 1
+		}
+		add_to_variable = {
+			TRI_shaked_nagisa_belief_Eden_treaty_progress_modifier = 1
+		}
+		add_dynamic_modifier = {
+			modifier = TRI_shaked_nagisa_belief_2
+		}
 		ai_chance = {
 			base = 100
 		}
-    }
+	}
 }
 
 #消灭阿里乌斯奖励事件TODO:文本
 country_event = {
-    id = TRI_events.60
-    title = TRI_events.60.t
-    desc = TRI_events.60.desc
-    picture = GFX_TRI_event_3
-
+	id = TRI_events.60
+	title = TRI_events.60.t
+	desc = TRI_events.60.desc
+	picture = GFX_TRI_event_3
 	is_triggered_only = yes
-
 	fire_only_once = yes
-
-    option = {
+	option = {
 		name = TRI_events.60.a
-        swap_ruler_traits = {
-            remove = TRI_nagisa_Mild_leader_alt
-            add = TRI_nagisa_Mild_leader_alt_2
-        }
-        TRI_set_focus_successful_Eden = yes
-    }
+		swap_ruler_traits = {
+			remove = TRI_nagisa_Mild_leader_alt
+			add = TRI_nagisa_Mild_leader_alt_2
+		}
+		TRI_set_focus_successful_Eden = yes
+	}
 }
+
 # #善意的假面
 # country_event = {
 #     id = TRI_events.43
 #     title = TRI_events.43.t
 #     desc = TRI_events.43.d
 #     picture = GFX_TRI_event_3
-
 # 	is_triggered_only = yes
-
 # 	fire_only_once = yes
-
 #     option = {
 # 		name = TRI_events.43.a
 # 		ai_chance = {
@@ -1206,51 +1141,499 @@ country_event = {
 # 		}
 #     }
 # }
-
 #群龙无首
 country_event = {
-    id = TRI_events.44
-    title = TRI_events.44.t
-    desc = TRI_events.44.d
-    picture = GFX_TRI_event_3
-
+	id = TRI_events.44
+	title = TRI_events.44.t
+	desc = TRI_events.44.d
+	picture = GFX_TRI_event_3
 	is_triggered_only = yes
 	fire_only_once = yes
-    immediate = {
-        hidden_effect = {
-            promote_character = TRI_missing_nagisa
-        }
-    }
-
-    option = {
+	immediate = {
+		hidden_effect = {
+			promote_character = TRI_missing_nagisa
+		}
+	}
+	option = {
 		name = TRI_events.44.a
-        TRI_unity_decrease_10 = yes
+		TRI_unity_decrease_10 = yes
 		ai_chance = {
 			base = 100
 		}
-    }
+	}
 }
 
 #阿里乌斯之殇
 country_event = {
-    id = TRI_events.45
-    title = TRI_events.45.t
-    desc = TRI_events.45.d
-    picture = GFX_TRI_event_3
-
+	id = TRI_events.45
+	title = TRI_events.45.t
+	desc = TRI_events.45.d
+	picture = GFX_TRI_event_3
 	is_triggered_only = yes
 	fire_only_once = yes
-    immediate = {
-    }
-
-    option = {
+	immediate = {
+	}
+	option = {
 		name = TRI_events.45.a
-        create_wargoal = {
-            target = ARI
-            type = puppet_wargoal_focus
-        }
+		create_wargoal = {
+			target = ARI
+			type = puppet_wargoal_focus
+		}
 		ai_chance = {
 			base = 100
 		}
-    }
+	}
+}
+
+#################
+##圣三一宪政危机##
+#################
+add_namespace = TRI_crisis
+country_event = {
+	id = TRI_crisis.99
+	title = TRI_crisis.99.t
+	desc = TRI_crisis.99.d
+	#picture = GFX_TRI_event_3
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = TRI_crisis.99.a
+		hidden_effect = {
+			country_event = {
+				id = TRI_crisis.1
+			}
+			country_event = {
+				id = TRI_crisis.2
+			}
+			country_event = {
+				id = TRI_crisis.3
+			}
+			country_event = {
+				id = TRI_crisis.4
+			}
+			country_event = {
+				id = TRI_crisis.5
+			}
+			country_event = {
+				id = TRI_crisis.6
+			}
+			country_event = {
+				id = TRI_crisis.7
+			}
+			country_event = {
+				id = TRI_crisis.8
+			}
+			country_event = {
+				id = TRI_crisis.9
+			}
+			country_event = {
+				id = TRI_crisis.10
+			}
+		}
+	}
+}
+
+##以下按时间顺序排序
+##救护骑士团脱离
+country_event = {
+	id = TRI_crisis.1
+	title = TRI_crisis.1.t
+	desc = TRI_crisis.1.d
+	#picture = GFX_TRI_event_3
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			127 = {
+				transfer_state_to = RKS
+				add_core_of = RKS
+			}
+			128 = {
+				transfer_state_to = RKS
+				add_core_of = RKS
+			}
+			685 = {
+				transfer_state_to = RKS
+				add_core_of = RKS
+			}
+			129 = {
+				transfer_state_to = RKS
+				add_core_of = RKS
+			}
+		}
+	}
+	option = {
+		name = TRI_crisis.1.a
+	}
+	##扮演该势力##
+	option = {
+		name = TRI_crisis.1.b
+	}
+}
+
+##修女会脱离
+country_event = {
+	id = TRI_crisis.2
+	title = TRI_crisis.2.t
+	desc = TRI_crisis.2.d
+	#picture = GFX_TRI_event_3
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			693 = {
+				transfer_state_to = TSA
+				add_core_of = TSA
+			}
+			116 = {
+				transfer_state_to = TSA
+				add_core_of = TSA
+			}
+			367 = {
+				transfer_state_to = TSA
+				add_core_of = TSA
+			}
+			791 = {
+				transfer_state_to = TSA
+				add_core_of = TSA
+			}
+			687 = {
+				transfer_state_to = TSA
+				add_core_of = TSA
+			}
+			125 = {
+				transfer_state_to = TSA
+				add_core_of = TSA
+			}
+		}
+	}
+	option = {
+		name = TRI_crisis.2.a
+	}
+	##扮演该势力##
+	option = {
+		name = TRI_crisis.2.b
+	}
+}
+
+##图书委员会脱离
+country_event = {
+	id = TRI_crisis.3
+	title = TRI_crisis.3.t
+	desc = TRI_crisis.3.d
+	#picture = GFX_TRI_event_3
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			113 = {
+				transfer_state_to = LCE
+				add_core_of = LCE
+			}
+			690 = {
+				transfer_state_to = LCE
+				add_core_of = LCE
+			}
+			365 = {
+				transfer_state_to = LCE
+				add_core_of = LCE
+			}
+			692 = {
+				transfer_state_to = LCE
+				add_core_of = LCE
+			}
+			122 = {
+				transfer_state_to = LCE
+				add_core_of = LCE
+			}
+			123 = {
+				transfer_state_to = LCE
+				add_core_of = LCE
+			}
+			689 = {
+				transfer_state_to = LCE
+				add_core_of = LCE
+			}
+		}
+	}
+	option = {
+		name = TRI_crisis.3.a
+	}
+	##扮演该势力##
+	option = {
+		name = TRI_crisis.3.b
+	}
+}
+
+##补课部脱离
+country_event = {
+	id = TRI_crisis.4
+	title = TRI_crisis.4.t
+	desc = TRI_crisis.4.d
+	#picture = GFX_TRI_event_3
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			121 = {
+				transfer_state_to = UPA
+				add_core_of = UPA
+			}
+			366 = {
+				transfer_state_to = UPA
+				add_core_of = UPA
+			}
+			124 = {
+				transfer_state_to = UPA
+				add_core_of = UPA
+			}
+			688 = {
+				transfer_state_to = UPA
+				add_core_of = UPA
+			}
+			368 = {
+				transfer_state_to = UPA
+				add_core_of = UPA
+			}
+		}
+	}
+	option = {
+		name = TRI_crisis.4.a
+	}
+	##扮演该势力##
+	option = {
+		name = TRI_crisis.4.b
+	}
+}
+
+##自警团
+country_event = {
+	id = TRI_crisis.5
+	title = TRI_crisis.5.t
+	desc = TRI_crisis.5.d
+	#picture = GFX_TRI_event_3
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			687 = {
+				transfer_state_to = TVC
+				add_core_of = TVC
+			}
+			125 = {
+				transfer_state_to = TVC
+				add_core_of = TVC
+			}
+		}
+	}
+	option = {
+		name = TRI_crisis.5.a
+	}
+	##扮演该势力##
+	option = {
+		name = TRI_crisis.5.b
+	}
+}
+
+##正义实现委员会
+country_event = {
+	id = TRI_crisis.6
+	title = TRI_crisis.6.t
+	desc = TRI_crisis.6.d
+	#picture = GFX_TRI_event_3
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			JTF = {
+				annex_country = {
+					target = A04
+					transfer_troops = yes
+				}
+			}
+			JTF = {
+				every_owned_state = {
+					limit = {
+						is_core_of = A04
+					}
+					add_core_of = JTF
+				}
+			}
+		}
+	}
+	option = {
+		name = TRI_crisis.6.a
+	}
+	##扮演该势力##
+	option = {
+		name = TRI_crisis.6.b
+	}
+}
+
+##甜品部
+country_event = {
+	id = TRI_crisis.7
+	title = TRI_crisis.7.t
+	desc = TRI_crisis.7.d
+	#picture = GFX_TRI_event_3
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			120 = {
+				transfer_state_to = SWC
+				add_core_of = SWC
+			}
+			348 = {
+				transfer_state_to = SWC
+				add_core_of = SWC
+			}
+			349 = {
+				transfer_state_to = SWC
+				add_core_of = SWC
+			}
+			135 = {
+				transfer_state_to = SWC
+				add_core_of = SWC
+			}
+			373 = {
+				transfer_state_to = SWC
+				add_core_of = SWC
+			}
+		}
+	}
+	option = {
+		name = TRI_crisis.7.a
+	}
+	##扮演该势力##
+	option = {
+		name = TRI_crisis.7.b
+	}
+}
+
+##安茹骑士团
+country_event = {
+	id = TRI_crisis.8
+	title = TRI_crisis.8.t
+	desc = TRI_crisis.8.d
+	#picture = GFX_TRI_event_3
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			684 = {
+				transfer_state_to = AJD
+				add_core_of = AJD
+			}
+			683 = {
+				transfer_state_to = AJD
+				add_core_of = AJD
+			}
+			529 = {
+				transfer_state_to = AJD
+				add_core_of = AJD
+			}
+			140 = {
+				transfer_state_to = AJD
+				add_core_of = AJD
+			}
+		}
+	}
+	option = {
+		name = TRI_crisis.8.a
+	}
+	##扮演该势力##
+	option = {
+		name = TRI_crisis.8.b
+	}
+}
+
+##格黑娜干涉军
+country_event = {
+	id = TRI_crisis.9
+	title = TRI_crisis.9.t
+	desc = TRI_crisis.9.d
+	#picture = GFX_TRI_event_3
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			529 = {
+				transfer_state_to = GIT
+				add_core_of = GIT
+			}
+			504 = {
+				transfer_state_to = GIT
+				add_core_of = GIT
+			}
+			134 = {
+				transfer_state_to = GIT
+				add_core_of = GIT
+			}
+			133 = {
+				transfer_state_to = GIT
+				add_core_of = GIT
+			}
+			130 = {
+				transfer_state_to = GIT
+				add_core_of = GIT
+			}
+			131 = {
+				transfer_state_to = GIT
+				add_core_of = GIT
+			}
+			649 = {
+				transfer_state_to = GIT
+				add_core_of = GIT
+			}
+		}
+	}
+	##扮演该势力
+	option = {
+		name = TRI_crisis.9.a
+	}
+}
+
+##紧急茶话会
+country_event = {
+	id = TRI_crisis.10
+	title = TRI_crisis.10.t
+	desc = TRI_crisis.10.d
+	#picture = GFX_TRI_event_3
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			118 = {
+				transfer_state_to = TEP
+				add_core_of = TEP
+			}
+            TEP = {
+				change_tag_from = ROOT
+			}
+		}
+	}
+	##扮演该势力
+	option = {
+		name = TRI_crisis.10.a
+		hidden_effect = {
+			112 = {
+				transfer_state_to = TEP
+				add_core_of = TEP
+			}
+			115 = {
+				transfer_state_to = TEP
+				add_core_of = TEP
+			}
+			691 = {
+				transfer_state_to = TEP
+				add_core_of = TEP
+			}
+			114 = {
+				transfer_state_to = TEP
+				add_core_of = TEP
+			}
+		}
+	}
 }

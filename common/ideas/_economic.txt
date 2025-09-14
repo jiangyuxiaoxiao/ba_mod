@@ -173,6 +173,36 @@ ideas = {
 				research_speed_factor = 0.05
 				industrial_capacity_factory = 0.1
 			}
+			
+			
+		}
+		##指令经济
+		ecolaws_ALF_command_economic = {
+			icon = GFX_idea_ecolaws_war_economy
+			cost = 50
+			removal_cost = -1
+			cancel_if_invalid = no
+			visible = {
+				has_completed_focus = ALF_confirm_economic_plan
+			}
+			available = {
+				has_completed_focus = ALF_confirm_economic_plan
+			}
+			allowed = {
+				original_tag = ALF
+			}
+			allowed_to_remove  = {
+				always = no
+			}
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_speed_industrial_complex_factor = 0.2
+				production_speed_arms_factory_factor = 0.2
+				production_speed_infrastructure_factor = 0.2
+				research_speed_factor = 0.05
+				production_factory_max_efficiency_factor = 0.2
+				production_factory_efficiency_gain_factor = -0.1 
+			}
 		}
 		#一切为了科研
 		ecolaws_mil_all_for_research = {
@@ -448,6 +478,49 @@ ideas = {
 			on_add = {
 			}
 			allowed_to_remove = {
+			}
+			ai_will_do = {
+				factor = 1
+
+				##处于战争且没有盟友的情况下不会使用自由贸易
+				modifier = {
+					factor = 0
+					has_war = yes
+					is_in_faction = no
+				}
+
+				##倾向于此的理念组
+				modifier = {
+					factor = 200
+					is_tralaws_free_trade_ideology_group_trigger = yes
+				}
+			}
+		}
+
+		####流亡者贸易####
+		ALF_Special_trade = {
+			cost = 150
+			removal_cost = -1
+			cancel_if_invalid = no
+			available = {
+				has_completed_focus = ALF_focus_trade
+			}
+			allowed = {
+				original_tag = ALF
+			}
+			visible = {
+				has_completed_focus = ALF_focus_trade
+			}
+			modifier = {
+				min_export = 0.1
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = 0.1
+				production_lack_of_resource_penalty_factor = -0.2
+			}
+			on_add = {
+			}
+			allowed_to_remove = {
+				always = no
 			}
 			ai_will_do = {
 				factor = 1

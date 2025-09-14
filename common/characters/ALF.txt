@@ -4,7 +4,7 @@ characters = {
 		portraits = {
 			civilian = {
 				large = GFX_BARE_Portrait_ALF_the_leader_mask
-				#small = GFX_portrait_ARI_atsuko_small
+				small = GFX_BARE_Portrait_ALF_the_leader_mask_small
 			}
 			army = {
 				large = GFX_Portrait_ari_1
@@ -48,12 +48,15 @@ characters = {
 				##
 			}
 			traits = {
+				brilliant_strategist
+				logistics_wizard
+				thorough_planner
 			}
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+			skill = 6
+			attack_skill = 10 #9
+			defense_skill = 3 #2
+			planning_skill = 5 #4
+			logistics_skill = 6 #5
 		}
 		advisor = {
 			slot = army_chief
@@ -82,12 +85,25 @@ characters = {
 				##
 			}
 			traits = {
+				politically_connected
 			}
-			skill = 1
+			skill = 2
 			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+			defense_skill = 3 #2
+			planning_skill = 2 #1
+			logistics_skill = 4 #3
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ALF_Yoshizawa_Yayoi_political_advisor
+			cost = 50
+			#ledger = army
+			available = {
+				has_completed_focus = ALF_create_shared_cognition
+			}
+			traits = {
+				ALF_propaganda_expert
+			}			
 		}
 	}
 	##三枝悠波
@@ -182,9 +198,12 @@ characters = {
 				##
 			}
 			traits = {
+				cavalry_officer
+				cavalry_leader
 			}
-			skill = 1
-			attack_skill = 1
+
+			skill = 2
+			attack_skill = 7
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 1
@@ -257,12 +276,24 @@ characters = {
 				##
 			}
 			traits = {
+				organizer
 			}
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ALF_Norimatsu_Miru_political_advisor
+			cost = 75
+			available = {
+				has_completed_focus = ALF_confirm_economic_plan
+			}
+			traits = {
+				ALF_intelligence_analyst
+			}			
 		}
 	}
 	##东江静
@@ -282,12 +313,26 @@ characters = {
 				##
 			}
 			traits = {
+				career_officer
+				engineer_officer
+				skilled_staffer
 			}
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+			skill = 2
+			attack_skill = 5 #4
+			defense_skill = 1 #0
+			planning_skill = 3 #1
+			logistics_skill = 2 #1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ALF_Toueshi_Dzuru_political_advisor
+			cost = 100
+			available = {
+				has_completed_focus = ALF_confirm_economic_plan
+			}
+			traits = {
+				ALF_field_Surveyor
+			}			
 		}
 	}
 	##蒲原美代子
@@ -332,12 +377,18 @@ characters = {
 				##
 			}
 			traits = {
+				brilliant_strategist
+				infantry_officer
+				infantry_leader
+				commando
+				trait_mountaineer
+				urban_assault_specialist
 			}
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+			skill = 5
+			attack_skill = 9 #8
+			defense_skill = 5 #4
+			planning_skill = 2 #1
+			logistics_skill = 3 #2
 		}
 	}
 	##小谷图奈
@@ -357,12 +408,16 @@ characters = {
 				##
 			}
 			traits = {
+				career_officer
+				engineer_officer
+				trait_engineer
+				organizer
 			}
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+			skill = 3
+			attack_skill = 4 #3
+			defense_skill = 2 #1
+			planning_skill = 4 #3
+			logistics_skill = 3 #2
 		}
 	}
 	##新木美夏

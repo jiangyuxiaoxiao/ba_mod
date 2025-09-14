@@ -1,5 +1,8 @@
 ﻿l_simp_chinese:
  ##我强调一遍：写带意识形态的全拼！这东西影响本地化接口！！！
+###############
+###格黑娜文化###
+###############
  GEH: "格黑娜"
  GEH_no_ideology: "格黑娜"
  GEH_no_ideology_DEF: "格黑娜"
@@ -8,6 +11,14 @@
  GEH_Liberalism_ideology_DEF: "格黑娜"
  GEH_Liberalism_ideology_ADJ: "格黑娜"
 
+ GIT: "格黑娜干涉部队"
+ GIT_no_ideology: "格黑娜干涉部队"
+ GIT_no_ideology_DEF: "格黑娜干涉部队"
+ GIT_no_ideology_ADJ: "格黑娜干涉部队"
+ GIT_Liberalism_ideology: "格黑娜干涉部队"
+ GIT_Liberalism_ideology_DEF: "格黑娜干涉部队"
+ GIT_Liberalism_ideology_ADJ: "格黑娜干涉部队"
+###########格黑娜文化结束############
  ABY: "阿拜多斯"
  ABY_no_ideology: "阿拜多斯"
  ABY_no_ideology_DEF: "阿拜多斯"
@@ -44,6 +55,9 @@
  SHA_no_ideology: "山海经"
  SHA_no_ideology_DEF: "山海经"
  SHA_no_ideology_ADJ: "山海经"
+###############
+###圣三一文化###
+###############
  TRI_no_ideology: "圣三一"
  TRI_no_ideology_DEF: "圣三一"
  TRI_no_ideology_ADJ: "圣三一"
@@ -54,6 +68,43 @@
  TRI_Progressivism_ideology_DEF: "圣三一"
  TRI_Progressivism_ideology_ADJ: "圣三一"
  TRI: "圣三一"
+ TEP_no_ideology: "临时茶话会"
+ TEP_no_ideology_DEF: "临时茶话会"
+ TEP_no_ideology_ADJ: "临时茶话会"
+ TEP: "临时茶话会"
+ TSA_no_ideology: "三一修女会"
+ TSA_no_ideology_DEF: "三一修女会"
+ TSA_no_ideology_ADJ: "三一修女会"
+ TSA: "三一修女会"
+ JTF_no_ideology: "正义实现委员会"
+ JTF_no_ideology_DEF: "正义实现委员会"
+ JTF_no_ideology_ADJ: "正义实现委员会"
+ JTF: "正义实现委员会"
+ RKS_no_ideology: "救护骑士团"
+ RKS_no_ideology_DEF: "救护骑士团"
+ RKS_no_ideology_ADJ: "救护骑士团"
+ RKS: "救护骑士团"
+ LCE_no_ideology: "图书防卫阵线"
+ LCE_no_ideology_DEF: "图书防卫阵线"
+ LCE_no_ideology_ADJ: "图书防卫阵线"
+ LCE: "图书防卫阵线"
+ SWC_no_ideology: "放学后甜品部"
+ SWC_no_ideology_DEF: "放学后甜品部"
+ SWC_no_ideology_ADJ: "放学后甜品部"
+ SWC: "放学后甜品部"
+ TVC_no_ideology: "社区自警团"
+ TVC_no_ideology_DEF: "社区自警团"
+ TVC_no_ideology_ADJ: "社区自警团"
+ TVC: "社区自警团"
+ UPA_no_ideology: "圣三一光复运动"
+ UPA_no_ideology_DEF: "圣三一光复运动"
+ UPA_no_ideology_ADJ: "圣三一光复运动"
+ UPA: "圣三一光复运动"
+ AJD_no_ideology: "安茹骑士团"
+ AJD_no_ideology_DEF: "安茹骑士团"
+ AJD_no_ideology_ADJ: "安茹骑士团"
+ AJD: "安茹骑士团"
+###########圣三一文化结束############
  HYA: "百鬼夜行"
  HYA_no_ideology: "百鬼夜行"
  HYA_no_ideology_DEF: "百鬼夜行"

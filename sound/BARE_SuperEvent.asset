@@ -46,6 +46,14 @@ soundeffect = {
 	}
 }
 
+soundeffect = {
+	name = BARE_SuperEvent_Sound_GEH_TRI_Total_War
+	volume = 0.8
+	sounds = {
+		sound = BARE_SuperEvent_Sound_GEH_TRI_Total_War
+	}
+}
+
 sound = {
 	name = "BARE_SuperEvent_Sound_EDEN_TREATY_STRIKE"
 	file = "BARE_SuperEvent_Sound/BARE_SuperEvent_Sound_EDEN_TREATY_STRIKE.wav"
@@ -76,6 +84,11 @@ sound = {
 	file = "BARE_SuperEvent_Sound/BARE_SuperEvent_Sound_Eden_Treaty_wins_piano_motion.wav"
 }
 
+sound = {
+	name = "BARE_SuperEvent_Sound_GEH_TRI_Total_War"
+	file = "BARE_SuperEvent_Sound/BARE_SuperEvent_Sound_GEH_TRI_Total_War.wav"
+}
+
 category = {
 	name = "BARE_SuperEvent_Sound"
 	soundeffects = {
@@ -85,5 +98,6 @@ category = {
 		BARE_SuperEvent_Sound_MIKA_COUP_ARI
 		BARE_SuperEvent_Sound_LSGSJ_GSC_IN
 		BARE_SuperEvent_Sound_Eden_Treaty_wins_piano_motion
+		BARE_SuperEvent_Sound_GEH_TRI_Total_War
 	}
 }
