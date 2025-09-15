@@ -261,4 +261,22 @@ objectTypes = {
 		animation = { id = "idle" type = "AC_130U_idle_animation" }
 		animation = { id = "casbombing" type = "AC_130U_bombing_animation" }
 	}
+
+	pdxmesh = {
+		name = "mirage3_mesh"
+		file = "gfx\models\units\planes\Mirage3\mirage3.mesh"
+
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+		animation = { id = "aileron_roll" type = "aileron_roll_animation" }
+		animation = { id = "jet_acceleration" type = "jet_acceleration_animation" }
+	}
+
+	pdxmesh = {
+		name = "f4_phantom_f3_mesh"
+		file = "gfx/models/units/planes/f4_phantom_f3/f4_phantom_f3.mesh"
+
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+		animation = { id = "aileron_roll" type = "aileron_roll_animation" }
+		animation = { id = "jet_acceleration" type = "jet_acceleration_animation" }
+	}
 }

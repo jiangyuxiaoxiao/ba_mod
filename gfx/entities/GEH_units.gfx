@@ -66,4 +66,18 @@ objectTypes = {
 		animation = { id = "bicycle_retreat"	type = "infantry_bicycle_retreat_animation" }
 		animation = { id = "bicycle_retreat_2"	type = "infantry_bicycle_retreat_2_animation" }
 	}
+
+	##########################
+    # GEH Medium Armor
+    ##########################
+
+	# Leopard2A4
+	pdxmesh = {
+	    name = "Leopard2A4_mesh"
+	    file = "gfx/models/units/vehicles/leopard_2a4/Leopard2A4.mesh"
+	
+	    animation = { id = "idle"			type = "leopard_2a4_idle_animation" }
+	    animation = { id = "move"			type = "leopard_2a4_moving_animation" }
+	    animation = { id = "attack"			type = "leopard_2a4_attack_animation" }
+    }
 }
