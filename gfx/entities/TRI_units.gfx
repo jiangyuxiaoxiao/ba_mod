@@ -279,4 +279,13 @@ objectTypes = {
 		animation = { id = "aileron_roll" type = "aileron_roll_animation" }
 		animation = { id = "jet_acceleration" type = "jet_acceleration_animation" }
 	}
+
+	pdxmesh = {
+		name = "harrier_gr3_mesh"
+		file = "gfx/models/units/planes/harrier_gr3/harrier_gr3.mesh"
+
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+		animation = { id = "aileron_roll" type = "aileron_roll_animation" }
+		animation = { id = "jet_acceleration" type = "jet_acceleration_animation" }
+	}
 }
