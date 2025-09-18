@@ -962,10 +962,10 @@ country_event = { #“旅者”行动总结-基本失败
 
             set_global_flag = ARI_TRI_Coup_Fail
             set_variable = {
-                ARI_lesson_traveller_operation_war_support_factor = -0.4
+                ARI_lesson_traveller_operation_war_support_factor = -0.2
             }
             set_variable = {
-                ARI_lesson_traveller_operation_stability = -0.4
+                ARI_lesson_traveller_operation_stability = -0.2
             }
             set_variable = {
                 ARI_lesson_traveller_operation_army_attack_factor = -0.5

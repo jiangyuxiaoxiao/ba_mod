@@ -31,6 +31,10 @@ ideas = {
 				stability_factor = -0.15
 				war_support_factor = -0.3
 			}
+
+			cancel = {
+				has_global_flag = ARI_remove_old_modifier_flag
+			}
 		}
 		#夫人的历史课
 		ARI_history_education = {
@@ -39,12 +43,18 @@ ideas = {
 				org_loss_at_low_org_factor = -0.05
 				army_morale_factor = 0.1
 			}
+			cancel = {
+				has_global_flag = ARI_remove_old_modifier_flag
+			}
 		}
 
 		#神秘追寻者
 		ARI_mystery_reseacher = {
 			research_bonus = {
 				mystical = 0.1
+			}
+			cancel = {
+				has_global_flag = ARI_remove_old_modifier_flag
 			}
 		}
 
@@ -53,11 +63,16 @@ ideas = {
 			research_bonus = {
 				mystical = 0.2
 			}
+			cancel = {
+				has_global_flag = ARI_remove_old_modifier_flag
+			}
 		}
 
 		#圣三一渗透度
 		ARI_intelligence_in_TRI_0 = {
-			
+			cancel = {
+				has_global_flag = ARI_remove_old_modifier_flag
+			}
 		}
 		ARI_intelligence_in_TRI_1 = {
 			modifier = {
@@ -68,6 +83,10 @@ ideas = {
 			targeted_modifier = {
 				tag = TRI
 				attack_bonus_against = 0.05
+			}
+
+			cancel = {
+				has_global_flag = ARI_remove_old_modifier_flag
 			}
 		}
 		ARI_intelligence_in_TRI_2 = {
@@ -80,6 +99,10 @@ ideas = {
 				tag = TRI
 				attack_bonus_against = 0.1
 			}
+
+			cancel = {
+				has_global_flag = ARI_remove_old_modifier_flag
+			}
 		}
 		ARI_intelligence_in_TRI_3 = {
 			modifier = {
@@ -90,6 +113,10 @@ ideas = {
 			targeted_modifier = {
 				tag = TRI
 				attack_bonus_against = 0.15
+			}
+
+			cancel = {
+				has_global_flag = ARI_remove_old_modifier_flag
 			}
 		}
 		ARI_intelligence_in_TRI_4 = {
@@ -102,6 +129,10 @@ ideas = {
 				tag = TRI
 				attack_bonus_against = 0.2
 			}
+
+			cancel = {
+				has_global_flag = ARI_remove_old_modifier_flag
+			}
 		}
 		ARI_experience_in_Trinity_modifier = {
 			modifier = {
@@ -111,10 +142,16 @@ ideas = {
 				tag = TRI
 				defense_bonus_against = 0.05
 			}
+
+			cancel = {
+				has_global_flag = ARI_remove_old_modifier_flag
+			}
 		}
 		#格黑娜渗透度
 		ARI_intelligence_in_GEH_0 = {
-			
+			cancel = {
+				has_global_flag = ARI_remove_old_modifier_flag
+			}
 		}
 		ARI_intelligence_in_GEH_1 = {
 			modifier = {
@@ -125,6 +162,10 @@ ideas = {
 			targeted_modifier = {
 				tag = GEH
 				attack_bonus_against = 0.05
+			}
+
+			cancel = {
+				has_global_flag = ARI_remove_old_modifier_flag
 			}
 		}
 		ARI_intelligence_in_GEH_2 = {
@@ -137,6 +178,10 @@ ideas = {
 				tag = GEH
 				attack_bonus_against = 0.1
 			}
+
+			cancel = {
+				has_global_flag = ARI_remove_old_modifier_flag
+			}
 		}
 		ARI_intelligence_in_GEH_3 = {
 			modifier = {
@@ -147,6 +192,10 @@ ideas = {
 			targeted_modifier = {
 				tag = GEH
 				attack_bonus_against = 0.15
+			}
+
+			cancel = {
+				has_global_flag = ARI_remove_old_modifier_flag
 			}
 		}
 		ARI_intelligence_in_GEH_4 = {
@@ -159,6 +208,10 @@ ideas = {
 				tag = GEH
 				attack_bonus_against = 0.2
 			}
+
+			cancel = {
+				has_global_flag = ARI_remove_old_modifier_flag
+			}
 		}
 		#黑市佣兵团
 		ARI_mercenaries_in_black_market = {
@@ -169,12 +222,18 @@ ideas = {
 			rule = {
 				can_send_volunteers = yes
 			}
+			cancel = {
+				has_global_flag = ARI_remove_old_modifier_flag
+			}
 		}
 		#合作愉快
 		ARI_Pleasant_cooperation = {
 			#picture = unkown
 			modifier = {
 				industrial_capacity_factory = 0.25
+			}
+			cancel = {
+				has_global_flag = ARI_remove_old_modifier_flag
 			}
 		}
 		#改进奖惩方法
@@ -183,12 +242,18 @@ ideas = {
 			modifier = {
 				political_power_factor = -0.15
 			}
+			cancel = {
+				has_global_flag = ARI_remove_old_modifier_flag
+			}
 		}
 		#强化复仇教育
 		ARI_revanchism_education = {
 			#picture = unkown
 			modifier = {
 				research_speed_factor = -0.1
+			}
+			cancel = {
+				has_global_flag = ARI_remove_old_modifier_flag
 			}
 		}
 		#阿里乌斯制式突击步枪
@@ -201,6 +266,9 @@ ideas = {
 					instant = yes
 				}
 			}
+			cancel = {
+				has_global_flag = ARI_remove_old_modifier_flag
+			}
 		}
 		#轻装支援火力
 		ARI_light_support_equipment_idea = {
@@ -210,6 +278,9 @@ ideas = {
 					build_cost_ic = -0.05
 					instant = yes
 				}
+			}
+			cancel = {
+				has_global_flag = ARI_remove_old_modifier_flag
 			}
 		}
 		#驰车式主战坦克
@@ -226,6 +297,9 @@ ideas = {
 					instant = yes
 				}
 			}
+			cancel = {
+				has_global_flag = ARI_remove_old_modifier_flag
+			}
 		}
 		ARI_merkava_main_battle_tank_1 = {
 			picture = unkown
@@ -240,6 +314,9 @@ ideas = {
 					build_cost_ic = -0.1
 					instant = yes
 				}
+			}
+			cancel = {
+				has_global_flag = ARI_remove_old_modifier_flag
 			}
 		}
 		ARI_merkava_main_battle_tank_2 = {
@@ -258,10 +335,16 @@ ideas = {
 					instant = yes
 				}
 			}
+			cancel = {
+				has_global_flag = ARI_remove_old_modifier_flag
+			}
 		}
 		ARI_air_force_0 = {
 			modifier = {
 				experience_gain_air_factor = 0.15
+			}
+			cancel = {
+				has_global_flag = ARI_remove_old_modifier_flag
 			}
 		}
 		ARI_air_force_1 = {
@@ -273,6 +356,9 @@ ideas = {
 					build_cost_ic = -0.1
 					instant = yes
 				}
+			}
+			cancel = {
+				has_global_flag = ARI_remove_old_modifier_flag
 			}
 		}
 		#阿里乌斯掌握程度
@@ -292,6 +378,9 @@ ideas = {
 					}
 				}
 			}
+			cancel = {
+				has_global_flag = ARI_remove_old_modifier_flag
+			}
 			on_remove = {
 				every_owned_state = {
 					remove_dynamic_modifier = {
@@ -302,12 +391,19 @@ ideas = {
 		}
 		ARI_control_rank_2 = {
 			picture = unkown
+			cancel = {
+				has_global_flag = ARI_remove_old_modifier_flag
+			}
+			
 			
 		}
 		ARI_control_rank_3 = {
 			picture = unkown
 			modifier = {
 				stability_factor = 0.2
+			}
+			cancel = {
+				has_global_flag = ARI_remove_old_modifier_flag
 			}
 		}
 		
@@ -364,6 +460,9 @@ ideas = {
 				political_power_factor = 0.05
 				army_org_factor = 0.05
 			}
+			cancel = {
+				has_global_flag = ARI_remove_old_modifier_flag
+			}
 		}
 
 		#行动的混乱
@@ -373,12 +472,18 @@ ideas = {
 				army_org_factor = -0.15 #陆军组织度(百分比)
 				army_org_regain = -0.15 #陆军组织度恢复
 			}
+			cancel = {
+				has_global_flag = Arius_defeated
+			}
 		}
 
 		ARI_eden_action_chaos_2 = {
 			modifier = {
 				army_org_factor = -0.05
 				army_org_regain = -0.05
+			}
+			cancel = {
+				has_global_flag = Arius_defeated
 			}
 		}
 
@@ -388,12 +493,18 @@ ideas = {
 				modifier_army_sub_unit_category_special_infantry_attack_factor = -0.2 #神秘步兵攻击修正
 				modifier_army_sub_unit_category_special_infantry_defence_factor = -0.2 #神秘步兵防御修正
 			}
+			cancel = {
+				has_global_flag = Arius_defeated
+			}
 		}
 
 		ARI_eden_mystery_infantry_debuff_3 = {
 			modifier = {
 				modifier_army_sub_unit_category_special_infantry_attack_factor = -0.15
 				modifier_army_sub_unit_category_special_infantry_defence_factor = -0.15
+			}
+			cancel = {
+				has_global_flag = Arius_defeated
 			}
 		}
 
@@ -402,12 +513,18 @@ ideas = {
 				modifier_army_sub_unit_category_special_infantry_attack_factor = -0.1
 				modifier_army_sub_unit_category_special_infantry_defence_factor = -0.1
 			}
+			cancel = {
+				has_global_flag = Arius_defeated
+			}
 		}
 
 		ARI_eden_mystery_infantry_debuff_1 = {
 			modifier = {
 				modifier_army_sub_unit_category_special_infantry_attack_factor = -0.05
 				modifier_army_sub_unit_category_special_infantry_defence_factor = -0.05
+			}
+			cancel = {
+				has_global_flag = Arius_defeated
 			}
 		}
 
@@ -422,6 +539,9 @@ ideas = {
 				land_reinforce_rate = -0.03
 				army_morale_factor = -0.3
 			}
+			cancel = {
+				has_global_flag = Arius_defeated
+			}
 		}
 
 		ARI_Eden_treaty_War_Forced_Defense = {
@@ -431,6 +551,9 @@ ideas = {
 				army_defence_factor = 0.2
 				coordination_bonus = 0.2
 				experience_loss_factor = 0.15
+			}
+			cancel = {
+				has_global_flag = Arius_defeated
 			}
 		}
 	}
@@ -449,6 +572,9 @@ ideas = {
 					instant = yes
 				}
 			}
+			cancel = {
+				has_global_flag = ARI_remove_old_modifier_flag
+			}
 
 		}
 
@@ -459,6 +585,9 @@ ideas = {
 					build_cost_ic = -0.04
 					instant = yes
 				}
+			}
+			cancel = {
+				has_global_flag = ARI_remove_old_modifier_flag
 			}
 
 		}
@@ -471,6 +600,9 @@ ideas = {
 					instant = yes
 				}
 			}
+			cancel = {
+				has_global_flag = ARI_remove_old_modifier_flag
+			}
 
 		}
 
@@ -482,6 +614,9 @@ ideas = {
 					instant = yes
 				}
 			}
+			cancel = {
+				has_global_flag = ARI_remove_old_modifier_flag
+			}
 
 		}
 
@@ -492,6 +627,9 @@ ideas = {
 					build_cost_ic = -0.1
 					instant = yes
 				}
+			}
+			cancel = {
+				has_global_flag = ARI_remove_old_modifier_flag
 			}
 		}
 	
