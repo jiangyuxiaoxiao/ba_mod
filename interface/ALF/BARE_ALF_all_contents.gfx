@@ -18,6 +18,18 @@ spriteTypes = {
 		#legacy_lazy_load = no
 	}
 
+	spriteType = {
+        name = "GFX_ALF_infiltrate_kaiser_pic"
+        texturefile = "gfx/interface/ideas/ALF/ideas_picture/ALF_infiltrate_kaiser_pic.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+        name = "GFX_ALF_way_for_glory_pic"
+        texturefile = "gfx/interface/ideas/ALF/ideas_picture/ALF_way_for_glory_pic.dds"
+		legacy_lazy_load = no
+	}
+
 	#事件#
 	spriteType = {
         name = "GFX_FSC_Leader_portrait_picture"

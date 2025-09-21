@@ -412,6 +412,19 @@ Hipper_test_decisions_categories = {
 			mark_focus_tree_layout_dirty = yes
 		}
 	}
+
+	show_ALF_phrase_2_all_focus_tree_decision = {
+		visible = {
+			is_debug = yes
+		}
+		available = {
+			is_ai = no
+		}
+		complete_effect = {
+			set_country_flag = ALF_phrase_2_flag
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
 	###
 	Alf_for_glory_decision = {
 		visible = {

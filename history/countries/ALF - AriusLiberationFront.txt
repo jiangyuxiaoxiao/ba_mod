@@ -128,6 +128,8 @@ add_ideas = {
 	##
 	ALF_partisan_army
 	ALF_technology_left_behind
+	##
+	ALF_shadow_follows
 }
 
 set_politics = {
@@ -158,4 +160,8 @@ recruit_character = ALF_Kabahara_Miyoko
 recruit_character = ALF_Nadao_Terumi
 recruit_character = ALF_Kometani_Touna
 recruit_character = ALF_Araki_Mika
+recruit_character = ALF_gehenna_perfect_team_staff
+recruit_character = ALF_gehenna_Pandemonium_staff
+recruit_character = ALF_redwinter_guards_staff
+recruit_character = ALF_redwinter_workers_staff
 ###

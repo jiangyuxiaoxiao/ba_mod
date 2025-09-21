@@ -1,17 +1,202 @@
 ALF_military_reform_decision_category = {
-	ALF_mrd_dig_in_trainning = {
-		visible = {
-			is_debug = yes
+	ALF_mrd_count_down_mission = {
+		priority = 99
+		is_good = no
+		days_mission_timeout = 30
+		activation = {
+			always = no
 		}
-		cost = 0
+		available = {
+			always = no
+		}
+		complete_effect = {
+		}
+		timeout_effect = {
+			activate_mission = ALF_mrd_count_down_mission
+			ALF_calc_military_reform_system_effect = yes
+			force_update_dynamic_modifier = yes
+		}
+	}
+	ALF_mrd_trainning_improve_decision = {
+		visible = {
+			has_completed_focus = ALF_professional_trainning
+			check_variable = { mrd_trainning_progress < 3 }
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ALF_mrd_trainning_improve_decision_trigger_tt
+				check_variable = { mrd_trainning_progress < 3 }
+			}
+		}
+		days_remove = 60
+		days_re_enable = 180
+		cost = 50
 		custom_cost_trigger = {
 			has_mrd_pts = yes
 		}
 		custom_cost_text = decision_cost_has_mrd_pts
-		complete_effect = {
+		remove_effect = {
+			ALF_use_1_mrd_pts = yes
+			custom_effect_tooltip = ALF_mrd_trainning_improve_tt
+			add_to_variable = {
+				mrd_trainning_progress = 1
+			}
+			add_to_variable = {
+				ALF_AMF_army_org_factor_var = 0.05
+			}
+			add_to_variable = {
+				ALF_AMF_org_loss_when_moving_var = -0.05
+			}
+			force_update_dynamic_modifier = yes
+		}
+	}
+	ALF_mrd_armor_improve_decision = {
+		visible = {
+			has_completed_focus = ALF_armor_spearhead
+			check_variable = { mrd_armor_progress < 3 }
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ALF_mrd_armor_improve_decision_trigger_tt
+				check_variable = { mrd_armor_progress < 3 }
+			}
+		}
+		days_remove = 60
+		days_re_enable = 180
+		cost = 50
+		custom_cost_trigger = {
+			has_mrd_pts = yes
+		}
+		custom_cost_text = decision_cost_has_mrd_pts
+		remove_effect = {
+			ALF_use_1_mrd_pts = yes
+			custom_effect_tooltip = ALF_mrd_armor_improve_tt
+			add_to_variable = {
+				mrd_armor_progress = 1
+			}
+			add_to_variable = {
+				ALF_AMF_army_armor_attack_factor_var = 0.05
+			}
+			add_to_variable = {
+				ALF_AMF_army_armor_defence_factor_var = 0.05
+			}
+			force_update_dynamic_modifier = yes
+		}
+	}
+	ALF_mrd_modernize_improve_decision = {
+		visible = {
+			has_completed_focus = ALF_moden_combat
+			check_variable = { mrd_modernize_progress < 3 }
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ALF_mrd_modernize_improve_decision_trigger_tt
+				check_variable = { mrd_modernize_progress < 3 }
+			}
+		}
+		days_remove = 60
+		days_re_enable = 180
+		cost = 50
+		custom_cost_trigger = {
+			has_mrd_pts = yes
+		}
+		custom_cost_text = decision_cost_has_mrd_pts
+		remove_effect = {
+			ALF_use_1_mrd_pts = yes
+			custom_effect_tooltip = ALF_mrd_modernize_improve_tt
+			add_to_variable = {
+				mrd_modernize_progress = 1
+			}
+			add_to_variable = {
+				ALF_AMF_army_speed_factor_var = 0.05
+			}
+			add_to_variable = {
+				ALF_AMF_experience_gain_army_unit_factor_var = 0.05
+			}
+			add_to_variable = {
+				ALF_AMF_experience_loss_factor_var = -0.05
+			}
+			force_update_dynamic_modifier = yes
+		}
+	}
+	ALF_mrd_officer_improve_decision = {
+		visible = {
+			has_completed_focus = ALF_establish_officer_school
+			check_variable = { mrd_officer_progress < 3 }
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ALF_mrd_officer_improve_decision_trigger_tt
+				check_variable = { mrd_officer_progress < 3 }
+			}
+		}
+		days_remove = 60
+		days_re_enable = 180
+		cost = 50
+		custom_cost_trigger = {
+			has_mrd_pts = yes
+		}
+		custom_cost_text = decision_cost_has_mrd_pts
+		remove_effect = {
+			ALF_use_1_mrd_pts = yes
+			custom_effect_tooltip = ALF_mrd_officer_improve_tt
+			add_to_variable = {
+				mrd_officer_progress = 1
+			}
+			add_to_variable = {
+				ALF_AMF_max_planning_factor_var = 0.1
+			}
+			add_to_variable = {
+				ALF_AMF_planning_speed_var = 0.1
+			}
+			force_update_dynamic_modifier = yes
+		}
+	}
+	ALF_mrd_artillery_improve_decision = {
+		visible = {
+			has_completed_focus = ALF_integrated_firepower_system
+			check_variable = { mrd_artillery_progress < 3 }
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ALF_mrd_artillery_improve_decision_trigger_tt
+				check_variable = { mrd_artillery_progress < 3 }
+			}
+		}
+		days_remove = 60
+		days_re_enable = 180
+		cost = 50
+		custom_cost_trigger = {
+			has_mrd_pts = yes
+		}
+		custom_cost_text = decision_cost_has_mrd_pts
+		remove_effect = {
+			ALF_use_1_mrd_pts = yes
+			custom_effect_tooltip = ALF_mrd_artillery_improve_tt
+			add_to_variable = {
+				mrd_artillery_progress = 1
+			}
+			add_to_variable = {
+				ALF_AMF_army_artillery_attack_factor_var = 0.05
+			}
+			add_to_variable = {
+				ALF_AMF_coordination_bonus_var = 0.05
+			}
+			force_update_dynamic_modifier = yes
 		}
 	}
 	######测试用
+	ALF_military_reform_decision_gain_1_mrd_pts = {
+		visible = {
+			is_debug = yes
+		}
+		cost = 0
+		#days_remove = 
+		complete_effect = {
+			ALF_gain_1_mrd_pts = yes
+		}
+	}
+
 	ALF_military_reform_decision_test_add_progress = {
 		visible = {
 			is_debug = yes
@@ -20,7 +205,7 @@ ALF_military_reform_decision_category = {
 		#days_remove = 
 		complete_effect = {
 			set_variable = {
-				ALF_mrd_progressbar_var = 10
+				ALF_mrd_progressbar_show_var = 10
 			}
 		}
 	}
@@ -112,14 +297,31 @@ ALF_military_reform_decision_category = {
 ##宜居度系统##
 ##扩展为资源系统，用来抽象地表达流亡者拥有的战略资源
 ALF_Livability_decision_category = {
+	ALF_Livability_count_down_mission = {
+		priority = 99
+		is_good = no
+		days_mission_timeout = 30
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+		}
+		timeout_effect = {
+			activate_mission = ALF_Livability_count_down_mission
+			ALF_calculate_livability_effect = yes
+		}
+	}
 	##增加获取能力
 	improve_livability_decision = {
 		available = {
 			has_war = no
 		}
 		cost = 50
-		days_remove = 30
-		days_re_enable = 60
+		days_remove = 60
+		days_re_enable = 180
 		modifier = {
 			political_power_factor = -0.05
 		}
@@ -149,7 +351,6 @@ ALF_Livability_decision_category = {
 			ALF_use_livability_1_pts = yes
 		}
 		remove_effect = {
-
 		}
 	}
 	##战争宣传
@@ -174,7 +375,28 @@ ALF_Livability_decision_category = {
 			ALF_use_livability_1_pts = yes
 		}
 		remove_effect = {
-
+		}
+	}
+	##战争动员
+	ALF_Livability_for_manpower = {
+		visible = {
+			has_completed_focus = ALF_ready_for_battle
+		}
+		available = {
+			has_completed_focus = ALF_ready_for_battle
+			has_war = yes
+		}
+		custom_cost_trigger = {
+			has_livability_1pts = yes
+		}
+		custom_cost_text = decision_cost_has_livability_1pts
+		cost = 10
+		days_remove = 7
+		days_re_enable = 90
+		complete_effect = {
+			add_manpower = 1000
+		}
+		remove_effect = {
 		}
 	}
 	##恢复区域邮政系统
@@ -243,23 +465,6 @@ ALF_Livability_decision_category = {
 			FROM.owner = {
 				ALF_small_improve_livability_modifier_effect = yes
 			}
-		}
-	}
-	ALF_Livability_count_down_mission = {
-		priority = 99
-		is_good = no
-		days_mission_timeout = 30
-		activation = {
-			always = no
-		}
-		available = {
-			always = no
-		}
-		complete_effect = {
-		}
-		timeout_effect = {
-			activate_mission = ALF_Livability_count_down_mission
-			ALF_calculate_livability_effect = yes
 		}
 	}
 	##建设炼油厂
@@ -877,6 +1082,319 @@ ALF_new_capital_decision_category = {
 		complete_effect = {
 			set_variable = {
 				ALF_capital_progressbar_var = 100
+			}
+		}
+	}
+}
+
+ALF_anti_kaiser_operation_category = {
+	ALF_EPW_Stage_1_trigger_mission = {
+		priority = 99
+		is_good = no
+		days_mission_timeout = 72
+		activation = {
+			always = no
+		}
+		available = {
+			A47 = {
+				exists = no
+			}
+			KHG = {
+				exists = no
+			}
+			DCA = {
+				exists = no
+			}
+		}
+		complete_effect = {
+			set_country_flag = ALF_EPW_Stage_1_trigger_mission_has_completed_flag
+		}
+		timeout_effect = {
+			activate_mission = ALF_EPW_Stage_1_trigger_mission
+		}
+	}
+
+	##先攻倒计时
+	ALF_EPW_counter_mission = {
+		priority = 80
+		is_good = no
+		days_mission_timeout = 180
+		activation = {
+			always = no
+		}
+		available = {
+			has_war_with = A47
+		}
+		complete_effect = {
+		}
+		timeout_effect = {
+			A47 = {
+				declare_war_on = {
+					target = ALF
+					type = annex_everything
+				}
+			}
+			KHG = {
+				declare_war_on = {
+					target = ALF
+					type = annex_everything
+				}
+			}
+			DCA = {
+				declare_war_on = {
+					target = ALF
+					type = annex_everything
+				}
+			}
+		}
+	}
+	##对收债人协会宣战
+	ALF_war_with_DCA_decision = {
+		visible = {
+			DCA = {
+				exists = yes
+			}
+		}
+		available = {
+			has_completed_focus = ALF_target_DCA
+			NOT = {
+				has_war_with = DCA
+			}
+		}
+		cost = 10
+		days_remove = 7
+		war_with_on_remove = DCA
+		fire_only_once = yes
+		remove_effect = {
+			declare_war_on = {
+				target = DCA
+				type = ALF_pacify_target_wargoal
+			}
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	##对咔哒头盔团宣战
+	ALF_war_with_KHG_decision = {
+		visible = {
+			KHG = {
+				exists = yes
+			}
+		}
+		available = {
+			has_completed_focus = ALF_target_KHG
+			NOT = {
+				has_war_with = KHG
+			}
+		}
+		cost = 10
+		days_remove = 7
+		war_with_on_remove = KHG
+		fire_only_once = yes
+		remove_effect = {
+			declare_war_on = {
+				target = KHG
+				type = ALF_pacify_target_wargoal
+			}
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	##对黑市宣战
+	##对咔哒头盔团宣战
+	ALF_war_with_blackmarket_decision = {
+		visible = {
+			A47 = {
+				exists = yes
+			}
+		}
+		available = {
+			has_completed_focus = ALF_target_blackmarket
+			NOT = {
+				has_war_with = A47
+			}
+		}
+		cost = 10
+		days_remove = 7
+		war_with_on_remove = A47
+		war_with_on_remove = BMG
+		war_with_on_remove = BMT
+		war_with_on_remove = BMR
+		fire_only_once = yes
+		remove_effect = {
+			declare_war_on = {
+				target = A47
+				type = ALF_pacify_target_wargoal
+			}
+			declare_war_on = {
+				target = BMG
+				type = ALF_pacify_target_wargoal
+			}
+			declare_war_on = {
+				target = BMT
+				type = ALF_pacify_target_wargoal
+			}
+			declare_war_on = {
+				target = BMR
+				type = ALF_pacify_target_wargoal
+			}
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	##渗透目标
+	ALF_EPW_infiltrate_target_decision = {
+		priority = 79
+		days_remove = 30
+		target_root_trigger = {
+			has_completed_focus = ALF_infiltrate_kaiser
+		}
+		targets = {
+			CAH
+			CAB
+			CAP
+			CAO
+		}
+		targets_dynamic = yes
+		target_trigger = {
+			FROM = {
+				NOT = {
+					has_country_flag = ALF_EPW_infiltrate_target_flag
+				}
+			}
+		}
+		available = {
+			has_completed_focus = ALF_infiltrate_kaiser
+		}
+		fire_only_once = yes
+		cost = 100
+		remove_effect = {
+			FROM = {
+				set_country_flag = ALF_EPW_infiltrate_target_flag
+			}
+		}
+	}
+	##破坏后勤
+	ALF_EPW_crack_target_supply_CAH_decision = {
+		priority = 79
+		days_remove = 45
+		visible = {
+			CAH = {
+				has_country_flag = ALF_EPW_infiltrate_target_flag
+			}
+		}
+		available = {
+			CAH = {
+				has_country_flag = ALF_EPW_infiltrate_target_flag
+				has_war_with = ROOT
+			}
+		}
+		fire_only_once = yes
+		targeted_modifier = {
+			tag = CAH
+			supply_combat_penalties_on_core_factor = 0.3
+			army_speed_factor = -0.5
+			attrition = 0.2
+		}
+		cost = 20
+		remove_effect = {
+		}
+	}
+	ALF_EPW_crack_target_supply_CAB_decision = {
+		priority = 79
+		days_remove = 45
+		visible = {
+			CAB = {
+				has_country_flag = ALF_EPW_infiltrate_target_flag
+			}
+		}
+		available = {
+			CAB = {
+				has_country_flag = ALF_EPW_infiltrate_target_flag
+				has_war_with = ROOT
+			}
+		}
+		fire_only_once = yes
+		targeted_modifier = {
+			tag = CAB
+			supply_combat_penalties_on_core_factor = 0.3
+			army_speed_factor = -0.5
+			attrition = 0.2
+		}
+		cost = 20
+		remove_effect = {
+		}
+	}
+	ALF_EPW_crack_target_supply_CAP_decision = {
+		priority = 79
+		days_remove = 45
+		visible = {
+			CAP = {
+				has_country_flag = ALF_EPW_infiltrate_target_flag
+			}
+		}
+		available = {
+			CAP = {
+				has_country_flag = ALF_EPW_infiltrate_target_flag
+				has_war_with = ROOT
+			}
+		}
+		fire_only_once = yes
+		targeted_modifier = {
+			tag = CAP
+			supply_combat_penalties_on_core_factor = 0.3
+			army_speed_factor = -0.5
+			attrition = 0.2
+		}
+		cost = 20
+		remove_effect = {
+		}
+	}
+	ALF_EPW_crack_target_supply_CAO_decision = {
+		priority = 79
+		days_remove = 45
+		visible = {
+			CAO = {
+				has_country_flag = ALF_EPW_infiltrate_target_flag
+			}
+		}
+		available = {
+			CAO = {
+				has_country_flag = ALF_EPW_infiltrate_target_flag
+				has_war_with = ROOT
+			}
+		}
+		fire_only_once = yes
+		targeted_modifier = {
+			tag = CAO
+			supply_combat_penalties_on_core_factor = 0.3
+			army_speed_factor = -0.5
+			attrition = 0.2
+		}
+		cost = 20
+		remove_effect = {
+		}
+	}
+	ALF_anti_kaiser_operation_decision_test = {
+		priority = 79
+		available = {
+			is_ai = no
+		}
+		visible = {
+			is_debug = yes
+		}
+		complete_effect = {
+			ALF = {
+				ALF_EPW_calculate_power_score = yes
+			}
+			CAE = {
+				ALF_EPW_calculate_power_score = yes
+			}
+			A47 = {
+				ALF_EPW_calculate_power_score = yes
 			}
 		}
 	}

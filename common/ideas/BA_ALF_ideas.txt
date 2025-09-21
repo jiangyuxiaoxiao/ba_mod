@@ -9,7 +9,6 @@ ideas = {
 				no_supply_grace = 48
 			}
 		}
-		
 		##游击军队改善
 		ALF_solving_partisan_army_1 = {
 			#picture = unknown
@@ -29,6 +28,8 @@ ideas = {
 		ALF_shadow_follows = {
 			#picture = unknown
 			modifier = {
+				political_power_factor = -0.05
+				stability_factor = -0.05
 			}
 		}
 		##我们能做到
@@ -58,21 +59,12 @@ ideas = {
 			}
 		}
 		##特别突击训练
-		ALF_combat_trainning_0 = {
+		ALF_combat_trainning = {
 			#picture = unknown
 			modifier = {
 				dont_lose_dig_in_on_attack = 1
 				river_crossing_factor = -0.1
-				army_core_defence_factor = 0.1
-			}
-		}
-		##强化边境
-		ALF_combat_trainning_1 = {
-			#picture = unknown
-			modifier = {
-				dont_lose_dig_in_on_attack = 1
-				river_crossing_factor = -0.1
-				army_core_defence_factor = 0.1
+				initiative_factor = 0.1
 			}
 		}
 		##电力合同收入
@@ -92,6 +84,47 @@ ideas = {
 				power_development = 0.1
 			}
 		}
+		##遮天蔽日
+		ALF_cover_the_sky = {
+			#picture = unknown
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+			equipment_bonus = {
+				small_uav_cas_airframe = {
+					instant = yes
+					build_cost_ic = -0.1
+				}
+				small_uav_recon_airframe = {
+					instant = yes
+					build_cost_ic = -0.1
+				}
+				medium_uav_cas_airframe = {
+					instant = yes
+					build_cost_ic = -0.1
+				}
+				heavy_uav_cas_airframe = {
+					instant = yes
+					build_cost_ic = -0.1
+				}
+			}
+		}
+		##工业动员
+		ALF_industrial_mobilization = {
+			#picture = unknown
+			modifier = {
+				industrial_capacity_factory = 0.2
+				production_factory_efficiency_gain_factor = 0.2
+			}
+		}
+
+		##预备役动员
+		ALF_manpower_mobilization = {
+			#picture = unknown
+			modifier = {
+				weekly_manpower = 500
+			}
+		}
 	}
 	####
 	industrial_concern = {
@@ -101,7 +134,14 @@ ideas = {
 				tag = ALF
 			}
 			available = {
-				tag = ALF
+				NOT = {
+					has_country_flag = ALF_technology_left_behind_removed_flag
+				}
+			}
+			visible = {
+				NOT = {
+					has_country_flag = ALF_technology_left_behind_removed_flag
+				}
 			}
 			allowed_to_remove = {
 				always = no
@@ -117,7 +157,15 @@ ideas = {
 				tag = ALF
 			}
 			available = {
-				tag = ALF
+				NOT = {
+					has_country_flag = ALF_technology_left_behind_1_removed_flag
+				}
+			}
+			visible = {
+				has_country_flag = ALF_technology_left_behind_removed_flag
+				NOT = {
+					has_country_flag = ALF_technology_left_behind_1_removed_flag
+				}
 			}
 			allowed_to_remove = {
 				always = no

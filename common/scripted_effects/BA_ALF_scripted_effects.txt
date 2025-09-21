@@ -186,10 +186,6 @@ ALF_use_livability_10_pts = {
 #############
 ALF_initialize_military_reform_system_effect = {
 	ALF = {
-		##为TAG增加变量
-		add_dynamic_modifier = {
-			modifier = ALF_military_reform_dynamic_modifier
-		}
 		set_variable = {
 			ALF_mrd_progressbar_var = 0
 		}
@@ -226,6 +222,7 @@ ALF_initialize_military_reform_system_effect = {
 }
 
 ALF_calc_military_reform_system_effect = {
+	custom_effect_tooltip = ALF_calc_military_reform_system_effect_tt
 	ALF = {
 		##增加改革点数
 		add_to_variable = {
@@ -235,18 +232,25 @@ ALF_calc_military_reform_system_effect = {
 		clamp_variable = {
 			var = ALF_mrd_progressbar_var
 			min = 0
-			max = 100
+			max = 1
 		}
 		if = {
 			limit = {
 				check_variable = {
-					ALF_mrd_progressbar_var = 100
+					ALF_mrd_progressbar_var = 1
 				}
 			}
 			ALF_gain_1_mrd_pts = yes
 			set_variable = {
 				ALF_mrd_progressbar_var = 0
 			}
+		}
+		##把显示变成整数帧##
+		set_variable = {
+			ALF_mrd_progressbar_show_var = ALF_mrd_progressbar_var
+		}
+		multiply_variable = {
+			ALF_mrd_progressbar_show_var = 100
 		}
 	}
 	ALF_calc_mrd_progress_situation_effect = yes
@@ -281,10 +285,27 @@ ALF_calc_mrd_progress_situation_effect = {
 	}
 }
 
+ALF_improve_military_reform_int_10 = {
+	custom_effect_tooltip = ALF_improve_military_reform_int_10_tt
+	add_to_variable = {
+		ALF_military_reform_dynamic_modifier_var = 0.1
+	}
+	force_update_dynamic_modifier = yes
+}
+
 ALF_gain_1_mrd_pts = {
 	ALF = {
 		add_to_variable = {
 			ALF_mrd_pts = 1
+		}
+	}
+}
+
+ALF_use_1_mrd_pts = {
+	custom_effect_tooltip = ALF_use_1_mrd_pts_tt
+	ALF = {
+		add_to_variable = {
+			ALF_mrd_pts = -1
 		}
 	}
 }
@@ -300,5 +321,80 @@ ALF_capital_progressbargain_5_effect = {
 			min = 0
 			max = 100
 		}
+	}
+}
+
+##统计力量
+ALF_EPW_calculate_power_score = {
+	hidden_effect = {
+		set_variable = {
+			EPW_power_score_from_army = deployed_army_manpower_k
+		}
+		set_variable = {
+			EPW_power_score_from_air = deployed_airforce_manpower_k
+		}
+		every_subject_country = {
+			add_to_variable = {
+				PREV.EPW_power_score_from_army = deployed_army_manpower_k
+			}
+			add_to_variable = {
+				PREV.EPW_power_score_from_air = deployed_airforce_manpower_k
+			}
+		}
+		multiply_variable = {
+			EPW_power_score_from_army = 3
+		}
+		multiply_variable = {
+			EPW_power_score_from_air = 2
+		}
+		set_variable = {
+			EPW_power_score_from_factories = num_of_military_factories
+		}
+		multiply_variable = {
+			EPW_power_score_from_factories = 2
+		}
+		add_to_variable = {
+			EPW_power_score_from_factories = num_of_civilian_factories
+		}
+		set_variable = {
+			EPW_power_score_from_technologies = num_researched_technologies
+		}
+		multiply_variable = {
+			num_researched_technologies = 2
+		}
+		set_variable = {
+			EPW_power_score = EPW_power_score_from_army
+		}
+		add_to_variable = {
+			EPW_power_score = EPW_power_score_from_air
+		}
+		add_to_variable = {
+			EPW_power_score = EPW_power_score_from_factories
+		}
+		add_to_variable = {
+			EPW_power_score = EPW_power_score_from_technologies
+		}
+	}
+}
+
+ALF_reduce_technology_left_behind_effect = {
+	if = {
+		limit = {
+			has_idea = ALF_technology_left_behind
+		}
+		swap_ideas = {
+			remove_idea = ALF_technology_left_behind
+			add_idea = ALF_technology_left_behind_1
+		}
+		set_country_flag = ALF_technology_left_behind_removed_flag
+	}
+	else_if = {
+		limit = {
+			has_idea = ALF_technology_left_behind_1
+		}
+		remove_ideas = ALF_technology_left_behind_1
+		set_country_flag = ALF_technology_left_behind_1_removed_flag
+	}
+	else = {
 	}
 }

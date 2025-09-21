@@ -352,6 +352,13 @@ country_event = {
 	option = {
 		name = ALF.16.a
 		custom_effect_tooltip = ALF_raise_flag_tt
+		set_country_flag = ALF_phrase_2_flag
+		mark_focus_tree_layout_dirty = yes
+		complete_national_focus = ALF_a_long_way_to_go
+		country_event = {
+			id = ALF.30
+			days = 730
+		}
 	}
 }
 
@@ -482,5 +489,192 @@ country_event = {
 		ALF = {
 			add_to_faction = FSC
 		}
+	}
+}
+
+country_event = {
+	id = ALF.23
+	#picture = GFX_common_event_gui_test
+	title = ALF.23.t
+	desc = ALF.23.desc
+	is_triggered_only = yes
+	immediate = {
+
+	}
+	option = {
+		name = ALF.23.a
+		country_event = {
+			id = ALF.24
+		}
+	}
+	option = {
+		name = ALF.23.b
+		country_event = {
+			id = ALF.25
+		}
+	}
+}
+
+country_event = {
+	id = ALF.24
+	#picture = GFX_common_event_gui_test
+	title = ALF.24.t
+	desc = ALF.24.desc
+	is_triggered_only = yes
+	immediate = {
+
+	}
+	option = {
+		name = ALF.24.a
+		set_country_flag = ALF_redwinter_guards_staff_event_flag
+		ALF_improve_livability_10_pts = yes
+	}
+}
+
+country_event = {
+	id = ALF.25
+	#picture = GFX_common_event_gui_test
+	title = ALF.25.t
+	desc = ALF.25.desc
+	is_triggered_only = yes
+	immediate = {
+
+	}
+	option = {
+		name = ALF.25.a
+		set_country_flag = ALF_redwinter_workers_staff_event_flag
+		ALF_improve_livability_10_pts = yes
+	}
+}
+
+country_event = {
+	id = ALF.26
+	#picture = GFX_common_event_gui_test
+	title = ALF.26.t
+	desc = ALF.26.desc
+	is_triggered_only = yes
+	immediate = {
+
+	}
+	option = {
+		name = ALF.26.a
+		country_event = {
+			id = ALF.27
+		}
+	}
+	option = {
+		name = ALF.26.b
+		country_event = {
+			id = ALF.28
+		}
+	}
+}
+
+country_event = {
+	id = ALF.27
+	#picture = GFX_common_event_gui_test
+	title = ALF.27.t
+	desc = ALF.27.desc
+	is_triggered_only = yes
+	immediate = {
+
+	}
+	option = {
+		name = ALF.27.a
+		set_country_flag = ALF_gehenna_Pandemonium_staff_event_flag
+		ALF_improve_livability_10_pts = yes
+	}
+}
+
+country_event = {
+	id = ALF.28
+	#picture = GFX_common_event_gui_test
+	title = ALF.28.t
+	desc = ALF.28.desc
+	is_triggered_only = yes
+	immediate = {
+
+	}
+	option = {
+		name = ALF.28.a
+		set_country_flag = ALF_gehenna_perfect_team_staff_event_flag
+		ALF_improve_livability_10_pts = yes
+	}
+}
+
+country_event = {
+	id = ALF.29
+	#picture = GFX_common_event_gui_test
+	title = ALF.29.t
+	desc = ALF.29.desc
+	is_triggered_only = yes
+	immediate = {
+
+	}
+	option = {
+		name = ALF.29.a
+		custom_effect_tooltip = ALF_support_sf_independent_tt
+		add_to_variable = {
+			mrd_sf_progress = 1
+		}
+		add_to_variable = {
+			ALF_AMF_special_forces_cap_var = 0.1
+		}
+		add_to_variable = {
+			ALF_AMF_special_forces_attack_factor_var = 0.05
+		}
+	}
+
+	option = {
+		name = ALF.29.b
+		custom_effect_tooltip = ALF_support_sf_integrate_tt
+		add_to_variable = {
+			mrd_sf_progress = 1
+		}
+		add_to_variable = {
+			ALF_AMF_land_night_attack_var = 0.05
+		}
+		add_to_variable = {
+			ALF_AMF_special_forces_attack_factor_var = 0.05
+		}
+	}
+}
+
+country_event = {
+	id = ALF.30
+	#picture = GFX_common_event_gui_test
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+
+	}
+	option = {
+		name = ALF.30.a
+		if = {
+			limit = {
+				NOT = {
+					has_completed_focus = ALF_infiltrate_kaiser
+				}
+			}
+			complete_national_focus = ALF_infiltrate_kaiser
+			country_event = {
+				id = ALF.31
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ALF.31
+	#picture = GFX_common_event_gui_test
+	title = ALF.31.t
+	desc = ALF.31.desc
+	is_triggered_only = yes
+	immediate = {
+
+	}
+	option = {
+		name = ALF.31.a
+
 	}
 }

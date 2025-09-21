@@ -383,7 +383,12 @@ focus_tree = {
 		y = 1
 		available = {
 		}
+		allow_branch = {
+			##拥有标签：第二阶段
+			has_country_flag = ALF_phrase_2_flag
+		}
 		completion_reward = {
+			custom_effect_tooltip = ALF_a_long_way_to_go_tt
 		}
 	}
 	######政治线左侧
@@ -416,7 +421,6 @@ focus_tree = {
 		x = 0
 		y = 1
 		available = {
-
 		}
 		completion_reward = {
 			custom_effect_tooltip = ALF_stable_the_thoughts_tt
@@ -494,10 +498,7 @@ focus_tree = {
 		completion_reward = {
 			ALF_use_livability_10_pts = yes
 			add_research_slot = 1
-			swap_ideas = {
-				remove_idea = ALF_technology_left_behind
-				add_idea = ALF_technology_left_behind_1
-			}
+			ALF_reduce_technology_left_behind_effect = yes
 		}
 	}
 	focus = {
@@ -851,7 +852,7 @@ focus_tree = {
 			197 = {
 				is_owned_and_controlled_by = ALF
 			}
-			has_country_flag = has_win_war_with_kaiser_flag
+			#has_country_flag = has_win_war_with_kaiser_flag
 		}
 		cancel_if_invalid = no
 		completion_reward = {
@@ -1058,6 +1059,7 @@ focus_tree = {
 				id = 7299
 				name = VICTORY_POINTS_7299_ALF
 			}
+			ALF_medium_improve_livability_modifier_effect = yes
 		}
 	}
 	focus = {
@@ -1100,22 +1102,6 @@ focus_tree = {
 			add_ideas = ALF_population_investigate
 		}
 	}
-	focus = {
-		##命运在召唤
-		id = ALF_fate_calls
-		icon = GFX_goal_unknown
-		relative_position_id = ALF_residential_census
-		prerequisite = {
-			focus = ALF_residential_census
-		}
-		cost = 4
-		x = 0
-		y = 1
-		available = {
-		}
-		completion_reward = {
-		}
-	}
 	########流亡者外交线#######
 	focus = {
 		##改头换面
@@ -1125,6 +1111,11 @@ focus_tree = {
 		x = 27
 		y = 1
 		available = {
+
+		}
+		allow_branch = {
+			##拥有标签：第二阶段
+			has_country_flag = ALF_phrase_2_flag
 		}
 		completion_reward = {
 			set_cosmetic_tag = ALF_PMC_Company
@@ -1148,6 +1139,10 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			army_experience = 50
+			country_event = {
+				id = ALF.23
+			}
 		}
 	}
 	focus = {
@@ -1167,6 +1162,10 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			army_experience = 50
+			country_event = {
+				id = ALF.26
+			}
 		}
 	}
 	focus = {
@@ -1184,6 +1183,7 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			ALF_reduce_technology_left_behind_effect = yes
 		}
 	}
 	focus = {
@@ -1200,6 +1200,51 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			custom_effect_tooltip = ALF_reform_staff_department_tt_tt
+			##红冬学生会
+			if = {
+				limit = {
+					has_country_flag = ALF_redwinter_guards_staff_event_flag
+				}
+				custom_effect_tooltip = ALF_reform_staff_department_tt
+				show_unit_leaders_tooltip = ALF_redwinter_guards_staff
+				show_ideas_tooltip = ALF_redwinter_guards_staff_theorist
+				##
+				set_country_flag = ALF_redwinter_guards_staff_flag
+			}
+			##红冬劳务局
+			if = {
+				limit = {
+					has_country_flag = ALF_redwinter_workers_staff_event_flag
+				}
+				custom_effect_tooltip = ALF_reform_staff_department_tt
+				show_unit_leaders_tooltip = ALF_redwinter_workers_staff
+				show_ideas_tooltip = ALF_redwinter_workers_staff_theorist
+				##
+				set_country_flag = ALF_redwinter_workers_staff_flag
+			}
+			##万魔殿
+			if = {
+				limit = {
+					has_country_flag = ALF_gehenna_Pandemonium_staff_event_flag
+				}
+				custom_effect_tooltip = ALF_reform_staff_department_tt
+				show_unit_leaders_tooltip = ALF_gehenna_Pandemonium_staff
+				show_ideas_tooltip = ALF_gehenna_Pandemonium_staff_theorist
+				##
+				set_country_flag = ALF_gehenna_Pandemonium_staff_flag
+			}
+			##风纪委员会
+			if = {
+				limit = {
+					has_country_flag = ALF_gehenna_perfect_team_staff_event_flag
+				}
+				custom_effect_tooltip = ALF_reform_staff_department_tt
+				show_unit_leaders_tooltip = ALF_gehenna_perfect_team_staff
+				show_ideas_tooltip = ALF_gehenna_perfect_team_staff_theorist
+				##
+				set_country_flag = ALF_gehenna_perfect_team_staff_flag
+			}
 		}
 	}
 	focus = {
@@ -1214,6 +1259,10 @@ focus_tree = {
 		x = 0
 		y = 2
 		available = {
+			custom_trigger_tooltip = {
+				tooltip = ALF_abydos_problem_tt
+				always = no
+			}
 		}
 		completion_reward = {
 		}
@@ -1283,6 +1332,29 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			custom_effect_tooltip = ALF_destroy_wsg_tt
+			if = {
+				limit = {
+					NOT = {
+						has_tech = recon_drone
+					}
+				}
+				set_technology = {
+					recon_drone = 1
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = small_uav_recon_airframe
+				amount = 50
+				producer = ALF
+			}
+			200 = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -1299,6 +1371,10 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			add_collaboration = {
+				target = WSG
+				value = 0.3
+			}
 		}
 	}
 	focus = {
@@ -1315,6 +1391,7 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			add_ideas = ALF_combat_trainning
 		}
 	}
 	focus = {
@@ -1334,7 +1411,10 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
-			
+			custom_effect_tooltip = ALF_support_the_pilots_tt
+			country_event = {
+				id = ALF.22
+			}
 		}
 	}
 	focus = {
@@ -1351,6 +1431,15 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			add_war_support = 0.1
+			unlock_decision_tooltip = ALF_Livability_for_manpower
+			custom_effect_tooltip = ALF_ready_for_battle_tt
+			add_to_variable = {
+				ALF_AMF_max_dig_in_factor_var = 0.1
+			}
+			add_to_variable = {
+				ALF_AMF_dig_in_speed_factor_var = 0.1
+			}
 		}
 	}
 	focus = {
@@ -1370,10 +1459,16 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			add_political_power = 50
+			add_command_power = 100
+			create_wargoal = {
+				target = WSG
+				type = ALF_pacify_target_wargoal
+			}
 		}
 	}
 	focus = {
-		##渗透敌人
+		##反凯撒秘密行动
 		id = ALF_infiltrate_kaiser
 		icon = GFX_goal_unknown
 		relative_position_id = ALF_change_outfit
@@ -1384,8 +1479,28 @@ focus_tree = {
 		x = 5
 		y = 1
 		available = {
+			WSG = {
+				exists = no
+			}
+		}
+		bypass = {
+			OR = {
+				has_war_with = CAP
+				has_global_flag = the_enterprise_war_begins
+			}
 		}
 		completion_reward = {
+			if = {
+				limit = {
+					NOT ={
+						has_global_flag = the_enterprise_war_begins
+					}
+				}
+				set_global_flag = the_enterprise_war_begins
+			}
+			add_political_power = 25
+			unlock_decision_category_tooltip = ALF_anti_kaiser_operation_category
+			activate_mission = ALF_EPW_counter_mission
 		}
 	}
 	########流亡者军事线#######
@@ -1397,8 +1512,17 @@ focus_tree = {
 		x = 44
 		y = 1
 		available = {
+
+		}
+		allow_branch = {
+			##拥有标签：第二阶段
+			has_country_flag = ALF_phrase_2_flag
 		}
 		completion_reward = {
+			unlock_decision_category_tooltip = ALF_military_reform_decision_category
+			activate_mission = ALF_mrd_count_down_mission
+			ALF_initialize_military_reform_system_effect = yes
+			ALF_improve_military_reform_int_10 = yes
 		}
 	}
 	focus = {
@@ -1413,8 +1537,23 @@ focus_tree = {
 		x = -1
 		y = 1
 		available = {
+			has_completed_focus = ALF_support_the_pilots
 		}
 		completion_reward = {
+			add_research_slot = 1
+			if = {
+				limit = {
+					197 = {
+						is_owned_and_controlled_by = ROOT
+					}
+				}
+				add_building_construction = {
+					type = air_facility
+					level = 1
+					instant_build = yes
+					province = 3971
+				}
+			}
 		}
 	}
 	###军事线左左
@@ -1432,6 +1571,17 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			air_experience = 100
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = uav
+			}
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 1
+				category = air_doctrine
+			}
 		}
 	}
 	focus = {
@@ -1451,6 +1601,22 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = fight_uav
+			}
+			custom_effect_tooltip = ALF_an_independent_air_foce_tt
+			add_to_variable = {
+				mrd_air_force_progress = 1
+			}
+			add_to_variable = {
+				ALF_AMF_air_superiority_efficiency_var = 0.1
+			}
+			add_to_variable = {
+				ALF_AMF_air_interception_detect_factor_var = 0.1
+			}
+			force_update_dynamic_modifier = yes
 		}
 	}
 	focus = {
@@ -1470,6 +1636,22 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = cas_uav
+			}
+			custom_effect_tooltip = ALF_mission_air_foce_tt
+			add_to_variable = {
+				mrd_air_force_progress = 1
+			}
+			add_to_variable = {
+				ALF_AMF_air_cas_efficiency_var = 0.1
+			}
+			add_to_variable = {
+				ALF_AMF_air_mission_efficiency_var = 0.1
+			}
+			force_update_dynamic_modifier = yes
 		}
 	}
 	focus = {
@@ -1486,6 +1668,19 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = uav_upgrade
+			}
+			custom_effect_tooltip = ALF_air_superiority_tt
+			add_to_variable = {
+				mrd_air_force_progress = 1
+			}
+			add_to_variable = {
+				ALF_AMF_air_superiority_bonus_in_combat_var = 0.1
+			}
+			force_update_dynamic_modifier = yes
 		}
 	}
 	focus = {
@@ -1503,6 +1698,13 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+			custom_effect_tooltip = ALF_unlock_air_chief_tt
+			show_ideas_tooltip = ALF_Shibasaki_Ichika_air_chief
 		}
 	}
 	focus = {
@@ -1519,6 +1721,19 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = uav_upgrade
+			}
+			custom_effect_tooltip = ALF_mission_effecience_tt
+			add_to_variable = {
+				mrd_air_force_progress = 1
+			}
+			add_to_variable = {
+				ALF_AMF_air_range_factor_var = 0.1
+			}
+			force_update_dynamic_modifier = yes
 		}
 	}
 	focus = {
@@ -1535,6 +1750,32 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			custom_effect_tooltip = ALF_above_sky_tt
+			random_owned_state = {
+				limit = {
+					is_owned_and_controlled_by = ALF
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			random_owned_state = {
+				limit = {
+					is_owned_and_controlled_by = ALF
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			add_ideas = ALF_cover_the_sky
 		}
 	}
 	#####军事左中
@@ -1552,6 +1793,21 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_tech = Civilian_helicopter_T1
+					}
+				}
+				set_technology = {
+					Civilian_helicopter_T1 = 1
+				}
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = helicopter
+			}
 		}
 	}
 	focus = {
@@ -1568,6 +1824,10 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			custom_effect_tooltip = ALF_air_assault_tactics_tt
+			hidden_effect = {
+				load_oob = "ALF_helichopters"
+			}
 		}
 	}
 	focus = {
@@ -1584,6 +1844,16 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = helicopter
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = helicopter_upgrade
+			}
 		}
 	}
 	focus = {
@@ -1600,6 +1870,11 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = cas_uav
+			}
 		}
 	}
 	focus = {
@@ -1617,6 +1892,9 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			air_experience = 25
+			army_experience = 25
+			unlock_decision_tooltip = ALF_mrd_artillery_improve_decision
 		}
 	}
 	##军事右
@@ -1634,6 +1912,12 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			remove_ideas = ALF_partisan_army
+			add_timed_idea = {
+				idea = ALF_solving_partisan_army_1
+				days = 365
+			}
+			ALF_improve_military_reform_int_10 = yes
 		}
 	}
 	##职业化训练
@@ -1650,6 +1934,8 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			army_experience = 100
+			unlock_decision_tooltip = ALF_mrd_trainning_improve_decision
 		}
 	}
 	##磨砺利刃
@@ -1666,6 +1952,12 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			set_technology = {
+				Arius_1 = 1
+			}
+			country_event = {
+				id = ALF.29
+			}
 		}
 	}
 	##士官学院
@@ -1682,6 +1974,18 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			custom_effect_tooltip = ALF_establish_officer_school_tt
+			add_to_variable = {
+				mrd_officer_progress = 1
+			}
+			add_to_variable = {
+				ALF_terrain_trait_xp_gain_factor_var = 0.05
+			}
+			add_to_variable = {
+				ALF_experience_gain_factor_var = 0.05
+			}
+			force_update_dynamic_modifier = yes
+			unlock_decision_tooltip = ALF_mrd_officer_improve_decision
 		}
 	}
 	##装甲矛头
@@ -1698,6 +2002,18 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			custom_effect_tooltip = ALF_mrd_armor_improve_tt
+			add_to_variable = {
+				mrd_armor_progress = 1
+			}
+			add_to_variable = {
+				ALF_AMF_army_armor_attack_factor_var = 0.05
+			}
+			add_to_variable = {
+				ALF_AMF_army_armor_defence_factor_var = 0.05
+			}
+			force_update_dynamic_modifier = yes
+			unlock_decision_tooltip = ALF_mrd_armor_improve_decision
 		}
 	}
 	##现代化作战
@@ -1715,6 +2031,22 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = infantry_weapons
+			}
+			custom_effect_tooltip = ALF_moden_combat_tt
+			add_to_variable = {
+				ALF_land_reinforce_rate_var = 0.02
+			}
+			add_to_variable = {
+				ALF_no_supply_grace_var = 48
+			}
+			force_update_dynamic_modifier = yes
+			unlock_decision_tooltip = ALF_mrd_modernize_improve_decision
+			custom_effect_tooltip = ALF_unlock_theorist_tt
+			show_ideas_tooltip = ALF_Morishita_Kaho_theorist
 		}
 	}
 	##狂野而迅捷
@@ -1737,6 +2069,12 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			army_experience = 25
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = cat_mobile_warfare
+			}
 		}
 	}
 	##压倒性火力
@@ -1757,6 +2095,14 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			army_experience = 25
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = cat_superior_firepower
+			}
+			custom_effect_tooltip = ALF_unlock_high_command_tt
+			show_ideas_tooltip = ALF_ALF_Saegusa_Yuwa_high_command
 		}
 	}
 	##精准且优雅
@@ -1779,6 +2125,12 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			army_experience = 25
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = cat_grand_battle_plan
+			}
 		}
 	}
 	##战役路线
@@ -1799,6 +2151,14 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			army_experience = 25
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = cat_mass_assault
+			}
+			custom_effect_tooltip = ALF_unlock_high_command_tt
+			show_ideas_tooltip = ALF_Washino_Yuei_high_command
 		}
 	}
 	##
@@ -1820,8 +2180,215 @@ focus_tree = {
 		x = 2
 		y = 1
 		available = {
+			custom_trigger_tooltip = {
+				tooltip = ALF_estabilish_Arius_armed_force_trigger_tt
+				check_variable = {
+					mrd_total_progress > 20
+				}
+			}
 		}
 		completion_reward = {
+			custom_effect_tooltip = ALF_estabilish_Arius_armed_force_tt
+			add_to_variable = {
+				ALF_AMF_breakthrough_factor_var = 0.1
+			}
+			add_to_variable = {
+				ALF_AMF_army_attack_factor_var = 0.1
+			}
+			add_to_variable = {
+				ALF_AMF_army_defence_factor_var = 0.1
+			}
+		}
+	}
+	######公司战争#######
+	focus = {
+		##命运在召唤
+		id = ALF_fate_calls
+		icon = GFX_goal_unknown
+		relative_position_id = ALF_together_for_victory
+		cost = 4
+		x = 0
+		y = 2
+		available = {
+			has_global_flag = the_enterprise_war_begins
+		}
+		completion_reward = {
+			custom_effect_tooltip = ALF_fate_calls_tt
+		}
+	}
+	focus = {
+		id = ALF_target_DCA
+		icon = GFX_goal_unknown
+		relative_position_id = ALF_fate_calls
+		prerequisite = {
+			focus = ALF_fate_calls
+		}
+		cost = 2
+		x = -3
+		y = 1
+		available = {
+			
+		}
+		bypass = {
+			OR = {
+				has_war_with = KHG
+				KHG = {
+					exists = no
+				}
+			}
+		}
+		completion_reward = {
+			unlock_decision_tooltip = ALF_war_with_DCA_decision
+		}
+	}
+	focus = {
+		id = ALF_integrate_DCA
+		icon = GFX_goal_unknown
+		relative_position_id = ALF_target_DCA
+		prerequisite = {
+			focus = ALF_target_DCA
+		}
+		cost = 4
+		x = 0
+		y = 2
+		available = {
+			DCA = {
+				exists = no
+			}
+		}
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					is_core_of = DCA
+				}
+				add_core_of = ALF
+				remove_core_of = DCA
+			}
+		}
+	}
+	focus = {
+		id = ALF_target_KHG
+		icon = GFX_goal_unknown
+		relative_position_id = ALF_fate_calls
+		prerequisite = {
+			focus = ALF_fate_calls
+		}
+		cost = 2
+		x = 3
+		y = 1
+		available = {
+		}
+		bypass = {
+			OR = {
+				has_war_with = KHG
+				KHG = {
+					exists = no
+				}
+			}
+		}
+		completion_reward = {
+			unlock_decision_tooltip = ALF_war_with_KHG_decision
+		}
+	}
+	focus = {
+		id = ALF_integrate_KHG
+		icon = GFX_goal_unknown
+		relative_position_id = ALF_target_KHG
+		prerequisite = {
+			focus = ALF_target_KHG
+		}
+		cost = 4
+		x = 0
+		y = 2
+		available = {
+			KHG = {
+				exists = no
+			}
+		}
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					is_core_of = KHG
+				}
+				add_core_of = ALF
+				remove_core_of = KHG
+			}
+		}
+	}
+	focus = {
+		id = ALF_optimize_factory_output
+		icon = GFX_goal_unknown
+		relative_position_id = ALF_fate_calls
+		prerequisite = {
+			focus = ALF_fate_calls
+		}
+		cost = 1
+		x = -1
+		y = 1
+		available = {
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = ALF_industrial_mobilization
+				days = 185
+			}
+		}
+	}
+	focus = {
+		id = ALF_extra_armed_force
+		icon = GFX_goal_unknown
+		relative_position_id = ALF_fate_calls
+		prerequisite = {
+			focus = ALF_fate_calls
+		}
+		cost = 1
+		x = 1
+		y = 1
+		available = {
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = ALF_manpower_mobilization
+				days = 185
+			}
+		}
+	}
+	focus = {
+		id = ALF_warno
+		icon = GFX_goal_unknown
+		relative_position_id = ALF_optimize_factory_output
+		prerequisite = {
+			focus = ALF_optimize_factory_output
+		}
+		prerequisite = {
+			focus = ALF_extra_armed_force
+		}
+		cost = 2
+		x = 1
+		y = 1
+		available = {
+		}
+		completion_reward = {
+			add_war_support = 0.1
+			add_political_power = 50
+			add_command_power = 100
+			ALF_improve_livability_5_pts = yes
+		}
+	}
+	focus = {
+		id = ALF_target_blackmarket
+		icon = GFX_goal_unknown
+		relative_position_id = ALF_warno
+		prerequisite = {
+			focus = ALF_warno
+		}
+		cost = 4
+		x = 0
+		y = 1
+		available = {
+		}
+		completion_reward = {
+			unlock_decision_tooltip = ALF_war_with_blackmarket_decision
 		}
 	}
 	###奔赴荣耀
@@ -1834,6 +2401,16 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
+			custom_effect_tooltip = ALF_way_for_glory_tt
+			#set_cosmetic_tag = ALF_ARIUS_SCHOOL
+			hidden_effect = {
+				ROOT = {
+					create_wargoal = {
+						target = TRI
+						type = ALF_revenge_target_wargoal
+					}
+				}
+			}
 		}
 	}
 }

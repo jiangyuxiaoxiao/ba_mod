@@ -23,4 +23,26 @@ wargoal_types = {
 
 		puppet_cost = 10
 	}
+
+	##复仇##
+	ALF_revenge_target_wargoal = {
+		allowed = {
+			always = no
+		}
+		war_name = ALF_revenge_target_wargoal_name
+		generate_base_cost = 50
+		generate_per_state_cost = 10
+
+		take_states_limit = 999
+		take_states_cost = -20
+		expire = 999
+
+		threat = 70
+
+		puppet = {
+			always = no
+		}
+
+		puppet_cost = 10
+	}
 }
