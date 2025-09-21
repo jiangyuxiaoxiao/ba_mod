@@ -81,21 +81,23 @@ country_event = {
 
 		custom_effect_tooltip = ARI_ZJ_4_tooltip
 
-		remove_dynamic_modifier = { #阿里乌斯包税制
-			modifier = ARI_tax_farming
-		}
-		remove_dynamic_modifier = { #阿里乌斯武装学生部队
-			modifier = ARI_armed_students_modifier
-		}
-		remove_dynamic_modifier = { #阿里乌斯特战部队
-			modifier = ARI_special_force
-		}
-		remove_dynamic_modifier = { #阿里乌斯对外情报和行动组
-			modifier = ARI_Intelligence_department
-		}
-		remove_dynamic_modifier = { #复仇之焰
-			modifier = ARI_flame_of_revenge
-		}
+		set_global_flag = ARI_remove_old_modifier_flag
+
+		# remove_dynamic_modifier = { #阿里乌斯包税制
+		# 	modifier = ARI_tax_farming
+		# }
+		# remove_dynamic_modifier = { #阿里乌斯武装学生部队
+		# 	modifier = ARI_armed_students_modifier
+		# }
+		# remove_dynamic_modifier = { #阿里乌斯特战部队
+		# 	modifier = ARI_special_force
+		# }
+		# remove_dynamic_modifier = { #阿里乌斯对外情报和行动组
+		# 	modifier = ARI_Intelligence_department
+		# }
+		# remove_dynamic_modifier = { #复仇之焰
+		# 	modifier = ARI_flame_of_revenge
+		# }
 		hidden_effect = {
 			ARI = {
 				country_event = {

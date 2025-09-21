@@ -1,0 +1,6 @@
+#选择焦点立场后，确定对立派系
+initialize_TRI_crisis_effect = {
+	TRI = {
+
+	}
+}

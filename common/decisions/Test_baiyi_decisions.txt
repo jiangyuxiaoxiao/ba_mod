@@ -20,7 +20,7 @@ Test_baiyi_decisions_categories = {
 		complete_effect = {
 			136 = {
 				damage_building = {
-					type = batech_facility
+					type = nuclear_facility
 					damage = 1
 				}    
 			}

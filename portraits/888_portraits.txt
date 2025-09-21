@@ -8,6 +8,33 @@ ALF = {
 			"GFX_BAREXP_Portrait_ALF_Generic_land_5"
 		}
 	}
+
+	scientist = { #科学家
+		male = {
+			"GFX_Portrait_ari_1"
+			"GFX_Portrait_geh_1"
+			"GFX_Portrait_geh_2"
+			"GFX_Portrait_geh_3"
+			"GFX_Portrait_geh_4"
+			"GFX_Portrait_geh_5"
+			"GFX_Portrait_rwt_1"
+			"GFX_Portrait_rwt_2"
+			"GFX_Portrait_mil_1"
+			"GFX_Portrait_mil_2"
+		}
+		female = {
+			"GFX_Portrait_ari_1"
+			"GFX_Portrait_geh_1"
+			"GFX_Portrait_geh_2"
+			"GFX_Portrait_geh_3"
+			"GFX_Portrait_geh_4"
+			"GFX_Portrait_geh_5"
+			"GFX_Portrait_rwt_1"
+			"GFX_Portrait_rwt_2"
+			"GFX_Portrait_mil_1"
+			"GFX_Portrait_mil_2"
+		}
+	}
 }
 
 ##西街暴力团

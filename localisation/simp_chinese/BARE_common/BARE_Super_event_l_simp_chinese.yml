@@ -113,45 +113,40 @@ BARE_sudden_death_end_tooltip: "不论如何，祝贺您的凯旋\n——这正�
 
 
 ###########################
-###########################
 ### CLASSIC SUPER EVENT ###
 ###########################
-###########################
- BAREXP_SE_Title.1: "基沃托斯之日"
- BAREXP_SE_Quote.1: "今日之伟业，必成就明日之基石\n\n——伊吕波"
- BAREXP_SE_Remark.1: "为世界奠基"
+BAREXP_SE_Title.2: "古圣堂之战"
+BAREXP_SE_Quote.2: "羊羔们宣言说：“看呐，仇恨将被钉在棺木中！”\n于是，恶魔也诅咒道：“有一颗被遗忘的钉子将要锈蚀。”\n\n——圣三一古代寓言"
+BAREXP_SE_Remark.2: "让葬礼开始吧"
 
- BAREXP_SE_Title.2: "古圣堂之战"
- BAREXP_SE_Quote.2: "羊羔们宣言说：“看呐，仇恨将被钉在棺木中！”\n于是，恶魔也诅咒道：“有一颗被遗忘的钉子将要锈蚀。”\n\n——圣三一古代寓言"
- BAREXP_SE_Remark.2: "让葬礼开始吧"
+BAREXP_SE_Title.3: "伊甸条约凯旋"
+BAREXP_SE_Quote.3: "温柔，但要紧握手中之枪。\n\n——桐藤渚"
+BAREXP_SE_Remark.3: "天使执剑"
 
- BAREXP_SE_Title.3: "伊甸条约凯旋"
- BAREXP_SE_Quote.3: "温柔，但要紧握手中之枪。\n\n——桐藤渚"
- BAREXP_SE_Remark.3: "天使执剑"
+BAREXP_SE_Title.4: "伊甸条约凯旋"
+BAREXP_SE_Quote.4: "胜利，即是把纪念碑的基座，浇筑进下个世代的骨髓。\n\n——羽沼真琴"
+BAREXP_SE_Remark.4: "勒石归来"
 
- BAREXP_SE_Title.4: "伊甸条约凯旋"
- BAREXP_SE_Quote.4: "胜利，即是把纪念碑的基座，浇筑进下个世代的骨髓。\n\n——羽沼真琴"
- BAREXP_SE_Remark.4: "勒石归来"
+BAREXP_SE_Title.5: "伊甸条约凯旋"
+BAREXP_SE_Quote.5: "真正的力量来自内心的坚守和信念，\n它拥有如此多的可能，以至于世人称之为“奇迹”。\n\n——歌住樱子"
+BAREXP_SE_Remark.5: "理想者之胜……？"
 
- BAREXP_SE_Title.5: "伊甸条约凯旋"
- BAREXP_SE_Quote.5: "真正的力量来自内心的坚守和信念，\n它拥有如此多的可能，以至于世人称之为“奇迹”。\n\n——歌住樱子"
- BAREXP_SE_Remark.5: "理想者之胜……？"
-
- BAREXP_SE_Title.6: "圣三一紧急状态"
- BAREXP_SE_Quote.6: "我的建议是，忘掉这回事的人应当重新记起这一点：\n圣三一本身，即一台专制的暴力机器。\n\n——仲正一花"
- BAREXP_SE_Remark.6: "力量即秩序……"
+BAREXP_SE_Title.6: "圣三一紧急状态"
+BAREXP_SE_Quote.6: "我的建议是，忘掉这回事的人应当重新记起这一点：\n圣三一本身，即一台专制的暴力机器。\n\n——仲正一花"
+BAREXP_SE_Remark.6: "力量即秩序……"
 
 #流亡者对圣三一
- BAREXP_SE_Title.7: "阿里乌斯-圣三一战争"
- BAREXP_SE_Quote.7: "不要问是否应点燃火炬，要问黑暗是否仍旧留存；\n对理想主义者的讥讽，当回以解放的子弹。\n\n——「领袖」"
- BAREXP_SE_Remark.7: "前进，阿里乌斯！"
+BAREXP_SE_Title.7: "阿里乌斯-圣三一战争"
+BAREXP_SE_Quote.7: "不要问是否应点燃火炬，要问黑暗是否仍旧留存；\n对理想主义者的讥讽，当回以解放的子弹。\n\n——「领袖」"
+BAREXP_SE_Remark.7: "前进，阿里乌斯！"
 
+BAREXP_SE_Title.8: "格黑娜进军"
+BAREXP_SE_Quote.8: "任何人，就算是最软弱的懦夫，都可以发动战争。\n不过，只有胜利者有资格结束一切。\n\n——雷帝"
+BAREXP_SE_Remark.8: "靴子落地……"
 
- BAREXP_SE_Title.99: "格黑娜-圣三一之战"
- BAREXP_SE_Quote.99: "在发起战争之前，人们总是被灌输可以得到什么，以及得到这一切将会是如何轻松。对于听信这种诈骗的受害者来说，人行道上的惨状大概也只能算一场序幕。\n\n——守月铃美"
- BAREXP_SE_Remark.99: "那就让它开始吧。"
-
-
+BAREXP_SE_Title.99: "格黑娜-圣三一之战"
+BAREXP_SE_Quote.99: "在发起战争之前，人们总是被灌输可以得到什么，以及得到这一切将会是如何轻松。对于听信这种诈骗的受害者来说，人行道上的惨状大概也只能算一场序幕。\n\n——守月铃美"
+BAREXP_SE_Remark.99: "那就让它开始吧。"
 
 
 

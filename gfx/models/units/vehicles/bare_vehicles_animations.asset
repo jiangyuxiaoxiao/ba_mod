@@ -28,3 +28,19 @@ animation = {
     name = "bradley_moving_animation"
     file = "bradley_ifv/bradley_moving.anim"
 }
+
+##Leopard_2a4
+animation = {
+    name = "leopard_2a4_idle_animation"
+    file = "leopard_2a4/leopard_2a4_idle.anim"
+}
+
+animation = {
+    name = "leopard_2a4_moving_animation"
+    file = "leopard_2a4/leopard_2a4_moving.anim"
+}
+
+animation = {
+    name = "leopard_2a4_attack_animation"
+    file = "leopard_2a4/leopard_2a4_attack.anim"
+}

@@ -1,5 +1,12 @@
 ﻿l_simp_chinese:
 ####################
+##变身名字
+####################
+ ALF_PMC_Company: "哨兵防务"
+ ALF_PMC_Company_DEF: "哨兵防务"
+ ALF_PMC_Company_ADJ: "哨兵防务"
+ ALF_Faction: "联合解放阵线"
+####################
 ##国策！！！
 ####################
  ALF_Common_Focus: "流亡者国策树：站稳脚跟"
@@ -8,7 +15,7 @@
  ALF_recovery_old_stuff: "收敛旧物"
  ALF_settled_in_new_home: "新家"
  ALF_begin_new_journey: "播下种子"
- ALF_stand_our_ground: "站稳脚跟"
+ ALF_stand_our_ground: "立足之地"
  ALF_threat_is_coming: "挥之不去……"
  ALF_operation_protect_wing: "「庇护之羽」行动"
  ALF_operation_protect_wing_desc: "流亡者遭遇了一场无耻且残暴的袭击。它要么是夫人策划的，要么就是与夫人有关。考验流亡者新家园的时刻到了，在这片名为黑市的无法地带中，流亡者只有一条路可走：要么胜利，要么毁灭。"
@@ -29,13 +36,121 @@
  ALF_operation_protect_wing_has_completed_flag: "「庇护之羽」行动：§G已完成§!"
  ALF_Raise_the_flag: "升起旗帜"
 
+ ALF_a_long_way_to_go: "长路漫漫"
+ ALF_lesson_from_civil_war: "内战的教训"
+ ALF_stable_the_thoughts: "稳定人心"
+ ALF_stable_the_thoughts_desc: "流亡者已经从最危险的时刻挺了过来，但未来的挑战依然还在前方等待。我们必须塑造一个团结的政治环境，以应对接下来会发生的各种意外之事。"
+ ALF_stable_the_thoughts_tt: "§Y苦涩的失败§!追加效果：\n政治点数：§G+5%§!"
+ ALF_against_capitulationism: "反对投降主义"
+ ALF_against_capitulationism_desc: "流亡者的一个重大敌人，就是无处不在的投降主义。持有这种观点的人通常都抱持着“流亡者不应该继续战斗”，或者“夫人”不可战胜的思维，认定流亡者无法保卫自己创造的新生活。\n\n这种想法也使得许多流亡者的成员担忧将失去的一切，无法全心全意地投入劳动之中。因此，必须坚定地批判这一观点。"
+ ALF_against_capitulationism_tt: "§Y苦涩的失败§!追加效果：\n稳定度：§G+10%§!"
+ ALF_diversionary_reformism: "压制改良主义"
+ ALF_diversionary_reformism_desc: "改良主义是一种不同于投降主义，但于流亡者的事业有害的思维。其支持者认为，夫人统治着的土地已经没有任何拯救的价值，因此，流亡者不应当以返回家乡为主要目标，而是应该着力于在新的土地上建设新的家园。\n\n抱持着这种观点的成员认为战争已经结束，并因此受畏战情绪的影响。因此，这一观点必须得到重视和疏导。"
+ ALF_diversionary_reformism_tt: "§Y苦涩的失败§!追加效果：\n战争支持度：§G+10%§!"
+ ALF_rebuild_arius_school: "阿里乌斯临时学堂"
+ ALF_rebuild_arius_school_desc: "显然，我们不能因为“正处在复杂状况中”，就彻底忽视教育工作的重要性。流亡者要想赢得战场上的胜利，就必须投入资源重新展开教学事务，恢复科研工作的秩序。这一决定不仅在当下极为重要，也同样具备不可忽视的长远利益。"
+ ALF_public_debate: "公开辩论"
+ ALF_public_debate_desc: "不论如何，观点顽固的成员总是存在的。但现在，随着大多数人开始理解“投降主义”为什么是错误的，彻底击垮这些观点的机会也正逐渐降临。我们必须要让这样的观点深入人心：即在战术上重视对手的同时，还要学会在战略上藐视对手。"
+ ALF_public_debate_tt: "§Y苦涩的失败§!追加效果：\n陆军连组织度恢复速率：§G+10%§!\n建造速度：§G+30%§!"
+ ALF_create_shared_cognition: "塑造共同认知"
+ ALF_create_shared_cognition_desc: "返回故乡的必要性已经无需再谈，抛弃了家园这一共同认知的流亡者，也绝无可能在外面世界的竞争中取得优势。我们是阿里乌斯的学生，这既是不可改变的事实，也是我们团结共赴难关的必然基础。"
+ ALF_create_shared_cognition_tt: "§Y苦涩的失败§!追加效果：\n战争支持度：§G+10%§!\n陆军连组织度恢复速率：§G+10%§!"
+ ALF_we_can_achieve_the_goal: "我们能做到！"
+ ALF_we_can_achieve_the_goal_tt: "§Y苦涩的失败§!追加效果：\n稳定度：§G+10%§!\n建造速度：§G+30%§!\n工厂产出：§G+10%§!"
+ ALF_confirm_economic_plan: "敲定经济计划"
+ ALF_oil_is_industry_blood: "输送工业之血"
+ ALF_oil_is_industry_blood_desc: "流亡者的工业机器，需要珍贵的燃料才能开动起来，幸运的是，这种珍贵的宝物近在眼前。根据附近曾经从事石油工作的居民提供的消息，就在青蓝丘这片湿地之中，就有一座废弃的油田存在。"
+ ALF_oil_is_industry_blood_tt: "§G启动石油管道维护工程§!"
+ ALF_repair_the_weapon_factory: "复原武器制造所"
+ ALF_master_machine_tool_technology: "掌握机床技术"
+ ALF_infrastructure_plan: "复兴基础设施"
+ ALF_resource_produce: "自给自足"
+ ALF_focus_trade: "重视外部贸易"
+ ALF_focus_trade_desc: "对外交流，从外界获得必要的战略资源和各类技术对流亡者而言至关重要。同时，允许人员流通也能为流亡者的发展带来助力。不过，流亡者必须要注意潜在的金融稳定和防卫安全问题，因此，组建一个海关部门至关重要。"
+ ALF_expand_goods_production: "扩大消费品生产"
+ ALF_expand_goods_production_desc: "维持流亡者控制区域的稳定，即意味着要满足其治理下的居民的需求。利用新开辟的贸易路线，流亡者可以尝试扩大消费品的生产规模，以确保居民的日常需求能够得到基本满足。"
+ ALF_expand_goods_production_tt: "§Y阿里乌斯解放阵线§!追加效果：\n稳定度：§G+10%§!"
+ ALF_rebuild_the_market_center: "改造旧学生会建筑"
+ ALF_rebuild_the_market_center_tt: "显然，黑市休闲中心——或者说，赌场——作为前学生会叛徒的象征，不能被继续保留下去。流亡者将实施一项改造工程，将这些学生会建筑恢复为其本来的样子。改造完毕后的学生会建筑，将作为流亡者行政中心重新投入使用。"
+ has_win_war_with_kaiser_flag: "在§Y公司战争§!中取得§G胜利§!"
+ ALF_build_more_house: "满足住房需求"
+ ALF_recovery_movement: "鼓励回收运动"
+ ALF_recovery_movement_desc: "流亡者可以调用的资源依然是有限的，为了能把资源使用在更加具备战略价值的领域，我们应该鼓励居民们回收使用各种生活设备，来减少各种资源的无谓损耗。"
+ ALF_recovery_movement_tt: "§Y阿里乌斯解放阵线§!追加效果：\n缺乏战略资源惩罚：§G-10%§!"
+ ALF_rebuild_city_operation: "城市改造计划"
+ ALF_rebuild_city_operation_tt: "§Y阿里乌斯解放阵线§!追加效果：\n市场建设加成系数：§G+10%§!" 
+ ALF_solve_electric_problem: "解决用电问题"
+ ALF_solve_electric_problem_desc: "没有电力就不可能达成现代生活，这是毫无疑问的事实。但是，流亡者没有能力完全实现电力自给自足，所以，我们必须寻求一些额外的帮助。"
+ ALF_solve_electric_problem_tt: "§G预期不会受到拒绝§!\n一旦获得§C供电许可§!，以下计划将§G可用§!："
+ ALF_rebuild_the_hydropower_station: "完成废弃水电站工程"
+ ALF_be_ready_for_action: "蓄势待发"
+ ALF_be_ready_for_action_tt: "§Y阿里乌斯解放阵线§!追加效果：\n战争支持度：§G+10%§!" 
+ ALF_residential_census: "进行居民人口普查"
+ ALF_fate_calls: "§Y命运在召唤……§!"
+ ALF_fate_calls_desc: "流亡者已经平息了内部的争论，并且在新的土地上建立了新的阿里乌斯学园。现在，流亡者终于有机会考虑她们一直挂念着的事业，以及她们的终极目标。而在那之前，所有归乡之路上的障碍都必须被摆平……"
+ 
+ ALF_change_outfit: "改头换面"
+ ALF_contact_redwinter: "接触红冬联邦学园"
+ ALF_contact_gehenna: "接触格黑娜学园"
+ ALF_technology_exchange: "秘密技术交流"
+ ALF_reform_staff_department: "改革作战参谋部"
+ ALF_abydos_problem: "接触阿拜多斯高等中学"
+ ALF_abydos_trade: "互通有无"
+ ALF_support_abydos: "提供军事支持"
+ ALF_together_for_victory: "共同防卫协定"
+ ALF_destroy_wsg: "西街问题"
+ ALF_infiltrate_enemy: "渗透暴力团控制区"
+ ALF_assault_trainning: "强化突击训练"
+ ALF_support_the_pilots: "邀请自由飞行员加入"
+ ALF_ready_for_battle: "枕戈待旦"
+ ALF_end_wsg: "行动：空想构造"
+ ALF_infiltrate_kaiser: "反凯撒秘密行动"
+
+ ALF_new_beginning: "新的开始"
+ ALF_new_beginning_desc: "对流亡者而言，重新为自己找到一席之地的任务已经完成。但对于阿里乌斯而言，则使命远未抵达终点。正如领袖所指出的那样，如“夫人”这样的独裁份子绝不会永远保持安分。而在那一天来临之前，流亡者必须建立一支能打能胜的军队。\n\n§Y记住§!：§R毋胜则亡§!"
+ ALF_united_research_facility: "成立联合技术研究所"
+ ALF_establish_air_force: "空军方案"
+ ALF_an_independent_air_foce: "建设独立空军"
+ ALF_mission_air_foce: "建设任务式空军"
+ ALF_air_superiority: "确保空中霸权"
+ ALF_JTAC_support: "JTAC训练"
+ ALF_mission_effecience: "确保任务效率"
+ ALF_above_sky: "遮天蔽日"
+ ALF_helicopter: "重视直升机技术"
+ ALF_air_assault_tactics: "组建空中突击部队"
+ ALF_attack_helicopter: "开发攻击直升机"
+ ALF_air_gunship: "开发空中炮艇"
+ ALF_integrated_firepower_system: "建设联合火力系统"
+ ALF_lessons_from_previous_battle: "过往战斗的教训"
+ ALF_professional_trainning: "职业化训练"
+ ALF_sharp_the_blade: "磨砺突击利刃"
+ ALF_establish_officer_school: "强化士官培训"
+ ALF_armor_spearhead: "装甲矛头"
+ ALF_moden_combat: "现代化作战"
+ ALF_focus_speed: "狂野而迅捷"
+ ALF_overwhelming_firepower: "压倒性火力"
+ ALF_elegant_combat: "精准且优雅"
+ ALF_strategic_roadmap: "战役路线"
+ ALF_estabilish_Arius_armed_force: "重建阿里乌斯学园武装力量"
+ ALF_way_for_glory: "§Y奔赴荣耀§!"
 ####################
 ##决议！！！
 ####################
  ALF_military_reform_decision_category: "流亡者军事改革"
- ALF_military_reform_decision_category_desc: "流亡者的战斗力量主要由游击队、抵抗组织、前阿里乌斯正规部队，或单纯的武装民兵组成。公正地说，这些成员绝非乌合之众，她们都接受过军事训练，或拥有作战经验。\n\n但问题也在于此：这些五花八门的背景意味着流亡者的作战部队既没有统一的指导思想，也没有相同的指挥规则。让这些成员组成一个各自为战的游击队自然没有问题，但要是想组建一支真正的，能击败“夫人”和其他对手的军队，就必须根除这种混乱的游击习气。\n\n毫无疑问，这将是一个相当耗费时间的系统工程，但流亡者的剩余时间却屈指可数。时间不等人，流亡者必须尽快完成军事改革，锻造出一支百战百胜的军队。\n\n\n§Y流亡者整体军事状况：§!§R不堪一击§!\n\n§Y军事教学项目：§!\n    --标准化训练：§R尚未设立§!\n    --军官战术教程：§R尚未设立§!\n\n§Y军事改革项目：§!\n    --保障部队：§R尚未设立§!\n    --装甲部队：§R尚未设立§!\n    --炮兵部队：§R尚未设立§!\n    --空军部队：§R尚未设立§!\n    --特种部队：§R聊胜于无§!\n"
+ ALF_military_reform_decision_category_desc: "流亡者的战斗力量主要由游击队、抵抗组织、前阿里乌斯正规部队，或单纯的武装民兵组成。公正地说，这些成员绝非乌合之众，她们都接受过军事训练，或拥有作战经验。\n\n但问题也在于此：这些五花八门的背景意味着流亡者的作战部队既没有统一的指导思想，也没有相同的指挥规则。让这些成员组成一个各自为战的游击队自然没有问题，但要是想组建一支真正的，能击败“夫人”和其他对手的军队，就必须根除这种混乱的游击习气。\n\n毫无疑问，这将是一个相当耗费时间的系统工程，但流亡者的剩余时间却屈指可数。时间不等人，流亡者必须尽快完成军事改革，锻造出一支百战百胜的军队。\n\n注意：流亡者的时间和资源有限，每个领域均最多改革至§G现代化（4）§!阶段。\n\n\n§Y流亡者整体军事状况：§![ALF.ALF_mrd_total_progress_sl]\n\n§Y军事理念：§!\n    --武装部队训练：[ALF.ALF_mrd_trainning_progress_sl]\n    --士官培训制度：[ALF.ALF_mrd_officer_progress_sl]\n    --现代化程度：[ALF.ALF_mrd_modernize_progress_sl]\n\n§Y军事发展：§!\n    --装甲部队能力：[ALF.ALF_mrd_armor_progress_sl]\n    --炮兵部队能力：[ALF.ALF_mrd_artillery_progress_sl]\n    --空军部队能力：[ALF.ALF_mrd_air_force_progress_sl]\n    --特种部队能力：[ALF.ALF_mrd_sf_progress_sl]\n\n§Y现有的军事改革点数：§![?ALF.ALF_mrd_pts]\n§Y每月获得的改革进度：§![?ALF.modifier@ALF_military_reform_int]%"
+
  ALF_mrd_title: "本轮改革进度："
  ALF_mrd_progress_tt: "当进度到达100%时，流亡者将会获得§G1§!§Y军事改革点数§!。"
+
+ mrd_progress_0: "§R完全落后§!"
+ mrd_progress_1: "§Y聊胜于无§!"
+ mrd_progress_2: "§C不落下风§!"
+ mrd_progress_3: "§G现代化§!"
+
+ has_mrd_pts_tt: "£divisions 需要改革点数：§Y1§!。\n"
+ decision_cost_has_mrd_pts: "£divisions §Y1§!"
+ decision_cost_has_mrd_pts_blocked: "£divisions §R1§!"
+ decision_cost_has_mrd_pts_tooltip: "该决议需要改革点数：§Y1§!"
 
  ALF_war_plan_protect_wing_category: "作战计划：羽翼"
  ALF_war_plan_protect_wing_category_desc: "流亡者面临一场充满了不确定的边境战争。\n\n策划了对流亡者袭击的团体可能与“夫人”有关，但到目前为止，没有任何证据支持这一点。不论如何，制造了这一切的人对流亡者抱有敌意。流亡者必须尽快做好准备，进行先发制人的打击，以防陷入被动。\n\n§Y任务：§!\n确保边境安全。\n\n§Y控制下述所有区域：§!\n[657.operation_protect_wing_sl]\n[200.operation_protect_wing_sl]\n[201.operation_protect_wing_sl]\n[198.operation_protect_wing_sl]\n\n"
@@ -61,19 +176,43 @@
  ALF_protect_wing_supply_truck_decision_desc: "为了维持补给线的畅通，流亡者需要更多的运输车辆。\n幸运的是，流亡者在废弃的养护站中发现了一些旧卡车。虽然它们已经破旧不堪，但只要经过适当的维修，这些卡车就能重新上路。"
  ALF_protect_wing_strength_frontline_decision: "对[FROM.GetName]发动大规模攻势"
  ALF_protect_wing_strength_frontline_decision_desc: "敌人无法抵挡我们，我们应当利用这个机会，一举击垮这群乌合之众。"
+####################
+##新首都！！！
+####################
+ ALF_new_capital_decision_category: "重建学生会建筑"
+ ALF_new_capital_decision_category_desc: "现在，时机似乎已经成熟，对于学生会的重建工作终于能给提上日程。\n\n当然，该项目绝非无的放矢：一方面，日渐发展壮大的流亡者需要一个新的行政中心，来处理各方面的事务；另一方面，没有什么比一座属于前学生会的古老建筑更能彰显流亡者的胜利。\n\n不过，对这一建筑的重新建设将是一项涉及诸多领域的重大工程。如何顺利完成它，对流亡者而言将是一场极为重要的考验。"
+ ALF_capital_title: "行政中心建设进度："
+ ALF_capital_progress_tt: "当进度到达§G100%§!时，§Y新行政中心§!的建设将§G竣工§!"
+ ALF_new_capital_decision_ui_picture_tt: "通向§C未来§!的车票……"
 
+ ALF_new_capital_decision_construction_mission: "建设进展……"
+ ALF_new_capital_decision_construction_mission_trigger_tt: "建设进度抵达§Y100%§!"
+ ALF_capital_progressbargain_5_effect_tt: "§Y建设进度§!：§G+5%§!"
+ ALF_new_capital_extra_funds_decision: "追加建设资源"
+ ALF_new_capital_manpower_decision: "鼓励人员流动"
+ ALF_new_capital_propaganda_decision: "进行建设宣传"
+ ALF_new_capital_construction_breakthrough_decision: "推动工程突破"
 ####################
 ##战略储备！！！
 ####################
  ALF_Livability_decision_category: "战略储备"
  ALF_Livability_decision_category_desc: "£market_subsidy_small_texticon §Y战略储备§!表示了流亡者为接下来的生存、发展，以及作战所§C储备的资源§!。随着流亡者控制区的增加，维持区域公共设施运转所需的战略储备也会增加；除此之外，面对不同局势所做出的抉择也会影响战略储备的数量。\n\n面对黑市中的汹涌浪潮，流亡者可以消耗战略储备来§G建立优势§!，但若战略储备不足，流亡者的行动也会§R受到限制§!。\n\n目前的战略储备：[?ALF.Livability_var|+=0..1]\n每月战略储备获取：[?modifier@ALF_Livability_int|+=0..1]\n来自规模的消耗：[?ALF.Livability_standard_var||+=0..1]"
  
- restore_state_mail_system_targeted_decision: "恢复[FROM.GetName]的邮政系统"
+ improve_livability_decision: "£increase_texticon 增强£market_subsidy_small_texticon §Y战略储备§!获取能力"
+ ALF_Livability_for_stability: "改善工作环境"
+ ALF_Livability_for_war_support: "战争宣传"
+ restore_state_mail_system_targeted_decision: "（地图决议）恢复§Y[FROM.GetName]§!的邮政系统"
  ALF_Reorganize_the_postal_system_tt: "允许恢复每个受到控制的黑市区域的邮政系统。\n这将§G改善§!我们的§Y战略资源获取能力§!。"
-
+ restore_state_electric_system_targeted_decision: "（地图决议）将§Y[FROM.GetName]§!区域接入电网"
+ 
  ALF_Livability_for_infantry_equipment: "重启步兵装备库存"
  ALF_Livability_for_artillery_equipment: "重启火力武器库存"
  ALF_Livability_for_support_equipment: "重启支援装备库存"
+
+ ALF_Livability_for_synthetic_refinery: "于§Y[FROM.GetName]§!区域建设§C炼油厂§!"
+ ALF_Livability_for_arms_factory: "建设§C武器工厂§!"
+ ALF_Livability_for_infrastructure: "（地图决议）改善§Y[FROM.GetName]§!区域的§C基础设施§!"
+ ALF_Livability_for_city_loadout: "（地图决议）改善§Y[FROM.GetName]§!区域的街道布局"
 
  ALF_Livability_count_down_mission: "月度统计"
  ALF_calculate_livability_state_tt: "统计£increase_texticon §Y战略资源§!……"
@@ -107,17 +246,64 @@
  decision_cost_has_livability_1pts_blocked: "£market_subsidy_small_texticon §R1§!"
  decision_cost_has_livability_1pts_tooltip: "该决议需要战略储备：§Y1§!"
 
-##动态精神
+ decision_cost_has_livability_2pts: "£market_subsidy_small_texticon §Y2§!"
+ decision_cost_has_livability_2pts_blocked: "£market_subsidy_small_texticon §R2§!"
+ decision_cost_has_livability_2pts_tooltip: "该决议需要战略储备：§Y2§!"
+
+ decision_cost_has_livability_3pts: "£market_subsidy_small_texticon §Y3§!"
+ decision_cost_has_livability_3pts_blocked: "£market_subsidy_small_texticon §R3§!"
+ decision_cost_has_livability_3pts_tooltip: "该决议需要战略储备：§Y3§!"
+
+ decision_cost_has_livability_5pts: "£market_subsidy_small_texticon §Y5§!"
+ decision_cost_has_livability_5pts_blocked: "£market_subsidy_small_texticon §R5§!"
+ decision_cost_has_livability_5pts_tooltip: "该决议需要战略储备：§Y5§!"
+
+#精神
+ ALF_unlock_political_advisor_tt: "\n解锁§Y政治顾问§!："
+
  ALF_Livability_dynamic_modifier: "战略储备"
  ALF_Livability_dynamic_modifier_desc: "战略储备代表着流亡者为了接下来的一切所做的准备。过多的储备它毫无意义，但将其消耗殆尽也亦非良策。"
  ALF_Livability_int: "战略储备获取"
 
+ ALF_party_modifier: "阿里乌斯解放阵线"
+ ALF_party_modifier_desc: "阿里乌斯解放阵线是一支在“领袖”的号召下组建的抵抗集团。但与其它在同期活跃的抵抗组织不同，流亡者以杰出的组织纪律，和坚定的共同理想著称。这意味着她们拥有不可动摇的最终目标，因此，尽管流亡者规模较小，但其成员却难以被分化或击垮。\n\n不过，即便目标相同，但流亡者内部却拥有多个采取了不同方法论的派系。这些派系对于如何「复兴阿里乌斯」拥有并不相同的方法和理论。目前，“领袖”为首的返乡派牢牢把握着权力。这一情况不太会改变，除非发生意料之外的事件。\n------------\n\n\n\n\n£ALF_party_modifier_desc_picture \n\n\n\n\n§Y打到完全胜利！§!"
+
+ ALF_armed_force_dynamic_modifier: "阿里乌斯武装力量"
+ ALF_armed_force_dynamic_modifier_desc: "流亡者和她的游击部队起源自阿里乌斯内战末期的反抗行动——在领袖的带领下，流亡者对“夫人”和她的军队发起了大范围的游击与破坏行动，并吸引到了许多内战时期的老兵。\n\n但不幸的是，这一系列反抗最终仍未能形成气候，走向了失败。随着学生会法统的继承者，秤亚津子为“夫人”所控制，包括流亡者在内的抵抗运动均受到了严重的打击。\n\n“领袖”敏锐地判断出了这一局面，并选择带领流亡者突入地下墓穴，逃往夫人所不能染指的阳光世界。许多抵抗者视之为逃亡主义，但这一行动无疑是明智的，到目前为止，仅有流亡者保存了完整的组织。\n\n尽管如此，这支继承了内战前阿里乌斯学园武装力量架构的微型军队，依然是一支遭遇了失败的军队。不过，她们的精神尚未倒下：许多人对她们的事业抱持着怀疑的态度，但流亡者终将证明，她们有实现理想的决心与意志。\n------------\n\n\n\n\n£ALF_armed_force_dynamic_modifier_desc_picture \n\n\n\n\n§R我们将从失败中再次升扬，直至正义之誓言得到践行……§!"
+
+ ALF_partisan_army: "游击风气"
+ ALF_partisan_army_desc: "流亡者的军队是游击作战的专家，她们擅长利用一切可利用的资源来击倒敌人。在另一方面来说，这也意味着她们缺乏正面作战的经验，尽管并非对此一窍不通，但改善这一情况仍要付出巨大努力。"
+
+ ALF_defeated_in_civil_war: "苦涩的失败"
+ ALF_defeated_in_civil_war_desc: "“夫人”胜利了，逃亡到此地的，只是一群屡战屡败的输家。在这片远离故乡热土的地方，许多人都觉得，这趟惊心动魄的旅行应当就此结束——毫无疑问，从失败中重新崛起需要勇气，而这样的勇气总是绝无仅有。"
+
+ ALF_technology_left_behind: "技术断层"
+ ALF_technology_left_behind_desc: "长久的与世隔绝与残酷的内战已经占据了流亡者的全部精力。除非情况稳定下来，否则流亡者难以改善这个问题。"
+ ALF_technology_left_behind_1: "弥补技术断层"
+ ALF_technology_left_behind_desc: "流亡者正在致力于改善其技术研究能力，但这依然需要相当漫长的时间才能完成。"
+
+ ecolaws_ALF_command_economic: "指令经济"
+ ecolaws_ALF_command_economic_desc: "生产与建设计划直接由学园管理层规划，并由行政机构负责监督执行的经济模式。优势和缺点都极为明显，可以被视为一种常态化的紧急措施。"
+ 
+ ALF_Special_trade: "重视贸易"
+
+ ALF_CEN_electric_contract: "电力合同收入"
+ ALF_CEN_electric_contract_1: "获得供电"
+
+ ALF_population_investigate: "人口普查"
+
+ ALF_city_loadout_optimized_dynamic_modifier: "城市布局优化"
 ####################
 ##领袖效果！！！
 ####################
  ALF_rise_again_trait: "败而不馁"
+ ALF_justice_prevails: "真容"
+ ALF_justice_prevails_tt: "§R  - 烈火辨玉§!"
  ALF_silent_hardworker: "沉默的做题家"
  ALF_strategist: "战术大师"
+ ALF_field_Surveyor: "实地测绘员"
+ ALF_intelligence_analyst: "海关主任"
+ ALF_propaganda_expert: "宣传干事"
 
 ####################
 ##战争目标！！！
@@ -125,6 +311,14 @@
  ALF_pacify_target_wargoal: "恢复秩序"
  ALF_pacify_target_wargoal_name: "$ORDER$$FIRST$平定$SECOND$之战"
 
+####################
+##省份！！！
+####################
+ VICTORY_POINTS_11015_ALF: "武器制造所"
+ VICTORY_POINTS_7299_ALF: "水电站"
+ VICTORY_POINTS_3978_ALF: "在建工程"
+ VICTORY_POINTS_3978_final_ALF: "行政中心"
+ ALF_STATE_197_NAME: "学园行政中心"
 ####################
 ##事件！！！
 ####################
@@ -255,3 +449,25 @@
  ALF.17.t: "反抗之火"
  ALF.17.desc: "流亡者的征兵队遇到了点怪事。\n\n在“领袖”的指示下，流亡者准备成立一个负责社区安全的警备部队。但还没等征兵办的棚子支起来，街道的对面就已经挤满了围观的人。负责这事的士官察觉到不对，赶忙换了征兵的地方，但没想到的是，在新的街道，却也依然是这样的情景。\n\n“我们这是来征兵的。”\n\n在这样的注目下，士官终于忍不住走上前，对着离她最近的围观者说到。这个围观者看起来只有士官一半高，还是该上低等学校的年纪，“你知道什么是征兵吗？”\n\n“我知道啊，你们要打仗。”不料，小小的女孩却伶牙俐齿地回答道，“这里已经很久没人去揍坏人了。修女姐姐说干这事的都是天字第一号的傻瓜，我还没见过傻瓜，所以来看看。”\n\n这样的发言把周围看热闹的人都逗笑了，但出乎流亡者士官意料的是，大家却并没有因此散去，反倒是在一阵哄笑后，在棚子前排起了长队："
  ALF.17.a: "征兵是吧？算我一个。"
+
+ ALF.18.t: "黑色黄金"
+ ALF.18.desc: "在当地一位前石油工人提供的信息的指引下，小谷图奈的徒弟，东江静拜访了这座废弃的油田。\n\n谁也没想到，当年湿地的开发商在这里豪掷千金，竟然是为了这么一处地下宝藏。在升腾的湿气里，那些早已停工的钻井机正静默地矗立在湿地的深处。由于缺乏维护，它们的机械结构都早已锈蚀，想要将它们重新开动，无疑还得花上不少的功夫。\n\n当然，东江静对此却并不担忧。她有信心把这里变得焕然一新，作为流亡者工程部队的缔造者，小谷图奈的徒弟，这点机械问题还难不倒她。她真正关心的，其实是运载这些原油的管道——湿地这里显然不具备建设提炼厂的物质条件，想让这些黑色的血液在流亡者的工业心脏中流淌，就必须要使用管道将这些原油送往远方。\n\n幸运的是，东江静很快就在油田附近的废弃板房中找到了一份遗留的地图。上面清晰地记载着原油管道的走向，以及周围所有的检修入口。东江静只看了一样，就确定了提炼工厂的最佳位置。"
+ ALF.18.a: "按原本的方案进行，在水电站附近选址。"
+ ALF.18.b: "按第二方案，在武器制造所附近选址。"
+ ALF.18.c: "等等，也许在仓储物流中心位置更好。"
+
+ ALF.19.t: "用电谈判"
+ ALF.19.desc: "致学生会总务处：\n\n我部门最近接到来自「哨兵防务」的请求，称希望就不管地带（前D.U.黑曜石区）的用电问题进行谈判。对方希望接入联邦学生会的电力网络，并承诺协助学生会进行设施维护。\n\n经我部调查，「哨兵防务」为一个正在该区域活跃的安全承包公司，有诸多线索指出，该实体正在稳定不管地带的社会局势，并致力于改善这一区域的基础设施。\n\n我部认为，这是一极好的机会，既能恢复该区域的电力网络，使全基沃托斯电力系统完成整合，又是缓解目前经济压力的重要机会。\n\n我部门正在等待进一步指示。\n\n——公共事业服务部"
+ ALF.19.a: "我看不出有什么拒绝的理由。"
+
+ ALF.20.t: "获得批准"
+ ALF.20.desc: "尊敬的客户：\n\n您所提出的请求，经我部门审慎评估后，已获得批准。我部工程师不日将抵达您所在区域的供电枢纽，并恢复其运转。\n\n请您注意，我部完全是处于服务公益事业的需要，选择向你方提供电力。因此，请务必遵守我部提供的安全和商业规章。所有内容均可在附件中查看。\n\n祝您拥有美好的一天。\n\n——公共事业服务部"
+ ALF.20.a: "说的倒是冠冕堂皇……"
+ 
+ ALF.21.t: "行政中心竣工典礼"
+ ALF.21.desc: "宽阔的街道两旁如今人头攒动。\n\n对许多黑市的居民而言，这里曾经是黑市最恶名昭彰的赌场的所在地。许多的恶行围绕着它蔓延生长，以至于它的存在本身就象征着罪恶。\n\n不过如今，这一切都改变了。随着流亡者击败了盘踞在这里的黑道势力，这栋曾经由阿里乌斯学生会拥有的建筑也回到了真正的阿里乌斯学生手中。流亡者花费了许多精力重新建设这栋建筑，直到它再一次能承载阿里乌斯的文化，以及它坚韧不拔的精神。\n\n在居民的欢呼声中，流亡者的阅兵队列踏着正步穿过新行政中心前的街道。这传递出了一个清晰的信号：流亡者有能力建设新生活，当然也有决心和意志保护它……"
+ ALF.21.a: "开始新征程。"
+
+ ALF.22.t: "拜访自由飞行员"
+ ALF.22.desc: "在夜幕的掩护下，涂成黑色的双翼机轻轻落在了自由飞行员们控制的机场跑道上。负责接送流亡者代表的飞行员技术相当高超，在飞机落地时，桥野悦依几乎没有感受到任何的颠簸。\n\n“怎么样，波-2的性能不错吧？”在将飞机滑入机库后，飞行员扭过头，冲着这位来自南部区域的新朋友咧嘴一笑，“虽然它并不先进，但每个红冬飞行员都会驾驶它。”\n\n“你是红冬人？”这下，桥野悦依是真的有点吃惊了，那个自由飞行员的领袖，空见女士，明明看起来是一个典型的格黑娜人才对。\n\n“这不奇怪。”飞行员解释道，”你可能不知道，我们的老大，其实是格黑娜转学到红冬的学生。所以，我们的确来自许多学校——红冬、格黑娜，还有圣三一……哦！对不起。”\n\n意识到自己说了不妥的事，飞行员连忙闭上了嘴。她肯定已经知道，流亡者们是来自阿里乌斯的学生。不论如何，提及圣三一是一件相当不礼貌的事。不过，桥野悦依倒是对此没什么特别的感受。她知道流亡者中的确对圣三一的态度相当复杂，但她本人其实不怎么在乎这件事。\n\n“我早就说你不要乱讲话，不要交浅言深。在红冬还没吃够亏么？”\n\n就在这时候，另一道清脆的声音响了起来。桥野悦依扭过头，正看到穿着黑色飞行员夹克，戴着大檐帽的少女从路灯下现身。\n\n显然，这个人就是自由飞行员的领袖，空见凪翼了。于是，悦依主动走上前，朝对方伸出手：“我代表流亡者……阿里乌斯而来，很高兴见到您。”\n\n“我也很高兴见到你们。”凪翼笑了笑，做了一个请的姿势："
+ ALF.22.a: "“为了我们的共同解放事业。”"

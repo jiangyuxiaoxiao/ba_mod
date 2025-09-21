@@ -233,6 +233,10 @@ objectTypes = {
             shader = "PdxMeshAdvanced"
         }
 	}
+
+
+
+
 	
 	pdxmesh = {
 		name = "building_air_facility"
@@ -403,6 +407,7 @@ objectTypes = {
             shader = "PdxMeshAdvancedSnow"
         }
 	}
+
 
 
 	pdxmesh = {

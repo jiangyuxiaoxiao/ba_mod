@@ -701,7 +701,8 @@ guiTypes = {
 				background = {
 					name = "Background"
 					quadTextureSprite ="GFX_tiled_generic_overlay_bg1_small"
-					position = { x = -1 y = 0 }					
+					#position = { x = -1 y = 0 }	
+					position = { x = 9999 y = 9999 }
 				}
 
 				gridBoxType = {

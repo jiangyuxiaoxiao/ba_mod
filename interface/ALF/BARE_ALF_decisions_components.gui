@@ -31,4 +31,42 @@ guiTypes = {
 			alwaystransparent = yes
 		}
 	}
+
+	containerWindowType = {
+		name = "ALF_new_capital_decision_ui_progressbar"
+		position = { x = 0  y = 0 }
+		size = {
+			width = 100%
+			height = 250
+		}
+
+		instantTextBoxType = {
+			name = "ALF_new_capital_progressbar_title"
+			position = {x = 30 y = 20}
+			font = "hoi_24header"
+			text = "ALF_capital_title"
+		}
+
+		iconType = {
+			name = "ALF_new_capital_progressbar"
+			spriteType = "GFX_bare_red_progressbar_399" 
+			position = { x = 50 y = 55}
+			pdx_tooltip = "ALF_capital_progress_tt"
+		}
+
+		iconType = {
+			name = "ALF_new_capital_decision_ui_picture"
+			spriteType = "GFX_ALF_new_capital_decision_ui_picture" 
+			position = { x = 95 y = 100}
+			pdx_tooltip = "ALF_new_capital_decision_ui_picture_tt"
+		}
+
+		instantTextBoxType = {
+			name = "ALF_new_capital_progressbar_value"
+			position = {x = 230 y = 60}
+			font = "hoi_24header"
+			text = "[?ALF_capital_progressbar_var]%"
+			alwaystransparent = yes
+		}
+	}
 }
