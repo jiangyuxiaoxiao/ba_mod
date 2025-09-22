@@ -22,7 +22,7 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = ALF_The_Leader_political_advisor
-			cost = 50
+			cost = 100
 			available = {
 				has_completed_focus = ALF_stand_our_ground
 			}
@@ -61,7 +61,7 @@ characters = {
 		advisor = {
 			slot = army_chief
 			idea_token = ALF_Washino_Yuei_army_chief
-			cost = 50
+			cost = 100
 			#ledger = army
 			traits = {
 				ALF_strategist
@@ -70,7 +70,7 @@ characters = {
 		advisor = {
 			slot = high_command
 			idea_token = ALF_Washino_Yuei_high_command
-			cost = 50
+			cost = 100
 			#ledger = army
 			available = {
 				has_completed_focus = ALF_strategic_roadmap
@@ -108,7 +108,7 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = ALF_Yoshizawa_Yayoi_political_advisor
-			cost = 50
+			cost = 100
 			#ledger = army
 			available = {
 				has_completed_focus = ALF_create_shared_cognition
@@ -147,7 +147,7 @@ characters = {
 		advisor = {
 			slot = high_command
 			idea_token = ALF_ALF_Saegusa_Yuwa_high_command
-			cost = 50
+			cost = 100
 			#ledger = army
 			available = {
 				has_completed_focus = ALF_overwhelming_firepower
@@ -177,8 +177,8 @@ characters = {
 				commando
 				trickster
 			}
-			skill = 1
-			attack_skill = 1
+			skill = 2
+			attack_skill = 4
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 1
@@ -186,7 +186,7 @@ characters = {
 		advisor = {
 			slot = air_chief
 			idea_token = ALF_Shibasaki_Ichika_air_chief
-			cost = 50
+			cost = 100
 			#ledger = army
 			available = {
 				has_completed_focus = ALF_JTAC_support
@@ -265,12 +265,14 @@ characters = {
 				##
 			}
 			traits = {
+				inflexible_strategist
+				skilled_staffer
 			}
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+			skill = 3
+			attack_skill = 2
+			defense_skill = 5
+			planning_skill = 3
+			logistics_skill = 2
 		}
 	}
 	##森下佳穗
@@ -304,7 +306,7 @@ characters = {
 			slot = theorist
 			idea_token = ALF_Morishita_Kaho_theorist
 			ledger = army
-			cost = 75
+			cost = 150
 			available = {
 				has_completed_focus = ALF_moden_combat
 			}
@@ -341,7 +343,7 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = ALF_Norimatsu_Miru_political_advisor
-			cost = 75
+			cost = 150
 			available = {
 				has_completed_focus = ALF_confirm_economic_plan
 			}
@@ -380,7 +382,7 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = ALF_Toueshi_Dzuru_political_advisor
-			cost = 100
+			cost = 150
 			available = {
 				has_completed_focus = ALF_confirm_economic_plan
 			}
@@ -406,12 +408,30 @@ characters = {
 				##
 			}
 			traits = {
+				war_hero
+				trait_reckless
+				infantry_officer
+				commando
+				swamp_fox
 			}
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+			skill = 4
+			attack_skill = 7
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+
+		advisor = {
+			slot = high_command
+			idea_token = ALF_Kabahara_Miyoko_high_command
+			cost = 100
+			#ledger = army
+			available = {
+				
+			}
+			traits = {
+				ALF_infantry_assault_trait
+			}
 		}
 	}
 	##滩尾辉美
@@ -439,10 +459,10 @@ characters = {
 				urban_assault_specialist
 			}
 			skill = 5
-			attack_skill = 9			#8
-			defense_skill = 5			#4
-			planning_skill = 2			#1
-			logistics_skill = 3			#2
+			attack_skill = 9			
+			defense_skill = 2			
+			planning_skill = 4			
+			logistics_skill = 3			
 		}
 	}
 	##小谷图奈
@@ -472,6 +492,18 @@ characters = {
 			defense_skill = 2			#1
 			planning_skill = 4			#3
 			logistics_skill = 3			#2
+		}
+		advisor = {
+			slot = high_command
+			idea_token = ALF_Kometani_Touna_high_command
+			cost = 100
+			#ledger = army
+			available = {
+				
+			}
+			traits = {
+				ALF_logistics_designer_trait
+			}
 		}
 	}
 	##新木美夏
@@ -531,7 +563,7 @@ characters = {
 			slot = theorist
 			idea_token = ALF_gehenna_perfect_team_staff_theorist
 			ledger = army
-			cost = 75
+			cost = 150
 			visible = {
 				has_country_flag = ALF_gehenna_perfect_team_staff_flag
 			}
@@ -572,7 +604,7 @@ characters = {
 			slot = theorist
 			idea_token = ALF_gehenna_Pandemonium_staff_theorist
 			ledger = army
-			cost = 75
+			cost = 150
 			visible = {
 				has_country_flag = ALF_gehenna_Pandemonium_staff_flag
 			}
@@ -613,7 +645,7 @@ characters = {
 			slot = theorist
 			idea_token = ALF_redwinter_guards_staff_theorist
 			ledger = army
-			cost = 75
+			cost = 150
 			visible = {
 				has_country_flag = ALF_redwinter_guards_staff_flag
 			}
@@ -653,7 +685,7 @@ characters = {
 			slot = theorist
 			idea_token = ALF_redwinter_workers_staff_theorist
 			ledger = army
-			cost = 75
+			cost = 150
 			visible = {
 				has_country_flag = ALF_redwinter_workers_staff_flag
 			}

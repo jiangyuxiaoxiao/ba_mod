@@ -178,7 +178,6 @@ ideas = {
 		}
 		##指令经济
 		ecolaws_ALF_command_economic = {
-			icon = GFX_idea_ecolaws_war_economy
 			cost = 50
 			removal_cost = -1
 			cancel_if_invalid = no

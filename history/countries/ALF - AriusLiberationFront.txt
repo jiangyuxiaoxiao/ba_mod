@@ -9,6 +9,8 @@ starting_train_buffer = 0.5
 set_technology = {
 	# test_unit_tech = 1
 	# test_temp_tech = 1
+	##骑兵
+	bare_cavalry_tech = 1
 	#突破
 	T1_opaz = 1
 	T2_opaz = 1
@@ -63,8 +65,7 @@ set_technology = {
 	troop_training_T3 = 1
 	infantry_weapons_upgrade_suppressive_weapon_T1 = 1
 	infantry_weapons_upgrade_suppressive_weapon_T2 = 1
-	##骑兵
-	bare_cavalry_tech = 1
+	
 }
 
 set_variable = {
@@ -102,10 +103,10 @@ set_variable = {
 	ALF_defeated_political_power_factor = -0.1
 }
 set_variable = {
-	ALF_defeated_industrial_capacity_factory = -0.2
+	ALF_defeated_industrial_capacity_factory = -0.1
 }
 set_variable = {
-	ALF_production_speed_buildings_factor = -0.5
+	ALF_production_speed_buildings_factor = -0.4
 }
 
 add_dynamic_modifier = {

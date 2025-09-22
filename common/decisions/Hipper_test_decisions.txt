@@ -55,6 +55,26 @@ Hipper_test_decisions_categories = {
 			}
 		}
 	}
+	###
+	Alf_for_glory_decision = {
+		visible = {
+			is_debug = yes
+		}
+		available = {
+			is_ai = no
+			tag = ALF
+		}
+		complete_effect = {
+			set_portraits = {
+				character = ALF_The_Leader
+				civilian = {
+					large = "GFX_BARE_Portrait_ALF_the_leader_no_mask"
+					small = "GFX_BARE_Portrait_ALF_the_leader_no_mask_small"
+				}
+			}
+			add_country_leader_trait = ALF_justice_prevails
+		}
+	}
 	###FIRE ECW WAR###
 	###启动古圣堂之战##
 	Fire_ECW_WAR_HIPPER = {
@@ -422,27 +442,8 @@ Hipper_test_decisions_categories = {
 		}
 		complete_effect = {
 			set_country_flag = ALF_phrase_2_flag
+			set_global_flag = the_enterprise_war_begins
 			mark_focus_tree_layout_dirty = yes
-		}
-	}
-	###
-	Alf_for_glory_decision = {
-		visible = {
-			is_debug = yes
-		}
-		available = {
-			is_ai = no
-			tag = ALF
-		}
-		complete_effect = {
-			set_portraits = {
-				character = ALF_The_Leader
-				civilian = {
-					large = "GFX_BARE_Portrait_ALF_the_leader_no_mask"
-					small = "GFX_BARE_Portrait_ALF_the_leader_no_mask_small"
-				}
-			}
-			add_country_leader_trait = ALF_justice_prevails
 		}
 	}
 }

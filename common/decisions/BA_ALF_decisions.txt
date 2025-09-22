@@ -20,12 +20,16 @@ ALF_military_reform_decision_category = {
 	ALF_mrd_trainning_improve_decision = {
 		visible = {
 			has_completed_focus = ALF_professional_trainning
-			check_variable = { mrd_trainning_progress < 3 }
+			check_variable = {
+				mrd_trainning_progress < 3
+			}
 		}
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = ALF_mrd_trainning_improve_decision_trigger_tt
-				check_variable = { mrd_trainning_progress < 3 }
+				check_variable = {
+					mrd_trainning_progress < 3
+				}
 			}
 		}
 		days_remove = 60
@@ -53,12 +57,16 @@ ALF_military_reform_decision_category = {
 	ALF_mrd_armor_improve_decision = {
 		visible = {
 			has_completed_focus = ALF_armor_spearhead
-			check_variable = { mrd_armor_progress < 3 }
+			check_variable = {
+				mrd_armor_progress < 3
+			}
 		}
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = ALF_mrd_armor_improve_decision_trigger_tt
-				check_variable = { mrd_armor_progress < 3 }
+				check_variable = {
+					mrd_armor_progress < 3
+				}
 			}
 		}
 		days_remove = 60
@@ -86,12 +94,16 @@ ALF_military_reform_decision_category = {
 	ALF_mrd_modernize_improve_decision = {
 		visible = {
 			has_completed_focus = ALF_moden_combat
-			check_variable = { mrd_modernize_progress < 3 }
+			check_variable = {
+				mrd_modernize_progress < 3
+			}
 		}
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = ALF_mrd_modernize_improve_decision_trigger_tt
-				check_variable = { mrd_modernize_progress < 3 }
+				check_variable = {
+					mrd_modernize_progress < 3
+				}
 			}
 		}
 		days_remove = 60
@@ -122,12 +134,16 @@ ALF_military_reform_decision_category = {
 	ALF_mrd_officer_improve_decision = {
 		visible = {
 			has_completed_focus = ALF_establish_officer_school
-			check_variable = { mrd_officer_progress < 3 }
+			check_variable = {
+				mrd_officer_progress < 3
+			}
 		}
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = ALF_mrd_officer_improve_decision_trigger_tt
-				check_variable = { mrd_officer_progress < 3 }
+				check_variable = {
+					mrd_officer_progress < 3
+				}
 			}
 		}
 		days_remove = 60
@@ -155,12 +171,16 @@ ALF_military_reform_decision_category = {
 	ALF_mrd_artillery_improve_decision = {
 		visible = {
 			has_completed_focus = ALF_integrated_firepower_system
-			check_variable = { mrd_artillery_progress < 3 }
+			check_variable = {
+				mrd_artillery_progress < 3
+			}
 		}
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = ALF_mrd_artillery_improve_decision_trigger_tt
-				check_variable = { mrd_artillery_progress < 3 }
+				check_variable = {
+					mrd_artillery_progress < 3
+				}
 			}
 		}
 		days_remove = 60
@@ -185,6 +205,25 @@ ALF_military_reform_decision_category = {
 			force_update_dynamic_modifier = yes
 		}
 	}
+	##强化军事改革速度
+	ALF_Livability_for_mrd_speed_decision = {
+		visible = {
+			has_completed_focus = ALF_moden_combat
+		}
+		available = {
+		}
+		custom_cost_trigger = {
+			has_livability_5pts = yes
+		}
+		custom_cost_text = decision_cost_has_livability_5pts
+		cost = 50
+		days_remove = 60
+		fire_only_once = yes
+		remove_effect = {
+			ALF_use_livability_5_pts = yes
+			ALF_improve_military_reform_int_10 = yes
+		}
+	}
 	######测试用
 	ALF_military_reform_decision_gain_1_mrd_pts = {
 		visible = {
@@ -196,7 +235,6 @@ ALF_military_reform_decision_category = {
 			ALF_gain_1_mrd_pts = yes
 		}
 	}
-
 	ALF_military_reform_decision_test_add_progress = {
 		visible = {
 			is_debug = yes
@@ -390,7 +428,7 @@ ALF_Livability_decision_category = {
 			has_livability_1pts = yes
 		}
 		custom_cost_text = decision_cost_has_livability_1pts
-		cost = 10
+		cost = 25
 		days_remove = 7
 		days_re_enable = 90
 		complete_effect = {
@@ -418,7 +456,7 @@ ALF_Livability_decision_category = {
 		fire_only_once = yes
 		on_map_mode = map_only
 		#icon = my_icon
-		cost = 10
+		cost = 25
 		days_remove = 28
 		remove_effect = {
 			FROM = {
@@ -451,14 +489,9 @@ ALF_Livability_decision_category = {
 		fire_only_once = yes
 		on_map_mode = map_only
 		#icon = my_icon
-		cost = 10
-		custom_cost_trigger = {
-			has_livability_2pts = yes
-		}
-		custom_cost_text = decision_cost_has_livability_2pts
+		cost = 50
 		days_remove = 28
 		remove_effect = {
-			ALF_use_livability_2_pts = yes
 			FROM = {
 				set_state_flag = state_electric_system_restored_flag
 			}
@@ -491,7 +524,7 @@ ALF_Livability_decision_category = {
 			has_livability_5pts = yes
 		}
 		custom_cost_text = decision_cost_has_livability_5pts
-		cost = 10
+		cost = 50
 		days_remove = 7
 		remove_effect = {
 			ALF_use_livability_5_pts = yes
@@ -520,7 +553,7 @@ ALF_Livability_decision_category = {
 			has_livability_5pts = yes
 		}
 		custom_cost_text = decision_cost_has_livability_5pts
-		cost = 10
+		cost = 50
 		days_remove = 30
 		days_re_enable = 60
 		remove_effect = {
@@ -528,10 +561,53 @@ ALF_Livability_decision_category = {
 			random_owned_state = {
 				limit = {
 					is_owned_and_controlled_by = ALF
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
 				}
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	##建设民工
+	ALF_Livability_for_industrial_complex = {
+		available = {
+			any_owned_state = {
+				is_owned_and_controlled_by = ALF
+			}
+			has_completed_focus = ALF_expand_goods_production
+		}
+		visible = {
+			has_completed_focus = ALF_expand_goods_production
+		}
+		custom_cost_trigger = {
+			has_livability_5pts = yes
+		}
+		custom_cost_text = decision_cost_has_livability_5pts
+		cost = 50
+		days_remove = 30
+		days_re_enable = 60
+		remove_effect = {
+			ALF_use_livability_5_pts = yes
+			random_owned_state = {
+				limit = {
+					is_owned_and_controlled_by = ALF
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
 					level = 1
 					instant_build = yes
 				}
@@ -1105,15 +1181,30 @@ ALF_anti_kaiser_operation_category = {
 			DCA = {
 				exists = no
 			}
+			WSG = {
+				exists = no
+			}
 		}
 		complete_effect = {
 			set_country_flag = ALF_EPW_Stage_1_trigger_mission_has_completed_flag
+			activate_mission = ALF_EPW_Stage_2_counter_mission
+			activate_mission = ALF_EPW_Stage_2_trigger_mission
 		}
 		timeout_effect = {
-			activate_mission = ALF_EPW_Stage_1_trigger_mission
+			activate_mission =ALF_EPW_Stage_1_trigger_mission
+			hidden_effect = {
+				ALF = {
+					ALF_EPW_calculate_power_score = yes
+				}
+				CAE = {
+					ALF_EPW_calculate_power_score = yes
+				}
+				A47 = {
+					ALF_EPW_calculate_power_score = yes
+				}
+			}
 		}
 	}
-
 	##先攻倒计时
 	ALF_EPW_counter_mission = {
 		priority = 80
@@ -1146,6 +1237,70 @@ ALF_anti_kaiser_operation_category = {
 					type = annex_everything
 				}
 			}
+			if = {
+				limit = {
+					WSG = {
+						exists = yes
+					}
+				}
+				WSG = {
+					declare_war_on = {
+						target = ALF
+						type = annex_everything
+					}
+				}
+			}
+		}
+	}
+	##凯撒干涉……
+	ALF_EPW_Stage_2_trigger_mission = {
+		priority = 99
+		is_good = no
+		days_mission_timeout = 30
+		activation = {
+			always = no
+		}
+		available = {
+			has_global_flag = EPW_ENDS_global_flag
+		}
+		complete_effect = {
+		}
+		timeout_effect = {
+			activate_mission = ALF_EPW_Stage_2_trigger_mission
+			hidden_effect = {
+				ALF = {
+					ALF_EPW_calculate_power_score = yes
+				}
+				CAE = {
+					ALF_EPW_calculate_power_score = yes
+				}
+				A47 = {
+					ALF_EPW_calculate_power_score = yes
+				}
+			}
+		}
+	}
+	ALF_EPW_Stage_2_counter_mission = {
+		priority = 99
+		is_good = no
+		days_mission_timeout = 35
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+			set_country_flag = ALF_EPW_Stage_1_trigger_mission_has_completed_flag
+		}
+		timeout_effect = {
+			CAP = {
+				declare_war_on = {
+					target = ALF
+					type = annex_everything
+				}
+			}
+			activate_mission = ALF_EPW_Stage_2_trigger_mission
 		}
 	}
 	##对收债人协会宣战
@@ -1170,6 +1325,30 @@ ALF_anti_kaiser_operation_category = {
 				target = DCA
 				type = ALF_pacify_target_wargoal
 			}
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	##米迦勒行动
+	ALF_operation_michael_decision = {
+		visible = {
+			has_completed_focus = ALF_operation_michael
+			has_war_with = CAH
+		}
+		available = {
+			has_completed_focus = ALF_operation_michael
+			has_war = yes
+		}
+		cost = 10
+		days_remove = 7
+		fire_only_once = yes
+		remove_effect = {
+		}
+		modifier = {
+			army_attack_factor = 0.3
+			army_defence_factor = 0.3
+			breakthrough_factor = 0.3
 		}
 		ai_will_do = {
 			factor = 1000
@@ -1379,7 +1558,7 @@ ALF_anti_kaiser_operation_category = {
 		}
 	}
 	ALF_anti_kaiser_operation_decision_test = {
-		priority = 79
+		priority = 1
 		available = {
 			is_ai = no
 		}

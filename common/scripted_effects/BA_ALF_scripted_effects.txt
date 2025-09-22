@@ -39,7 +39,7 @@ ALF_calculate_livability_effect = {
 			}
 			##敏感数值，需要在不断验证##
 			add_to_temp_variable = {
-				ALF.Livability_state_var = -0.6
+				ALF.Livability_state_var = -0.45
 			}
 		}
 	}

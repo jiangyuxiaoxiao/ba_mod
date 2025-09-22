@@ -32,15 +32,6 @@ ideas = {
 				stability_factor = -0.05
 			}
 		}
-		##我们能做到
-		ALF_we_can_do_this = {
-			#picture = unknown
-			modifier = {
-				stability_factor = 0.1
-				war_support_factor = 0.1
-				industrial_capacity_factory = 0.1
-			}
-		}
 		##人口普查
 		ALF_population_investigate = {
 			#picture = unknown
@@ -117,12 +108,34 @@ ideas = {
 				production_factory_efficiency_gain_factor = 0.2
 			}
 		}
-
 		##预备役动员
 		ALF_manpower_mobilization = {
 			#picture = unknown
 			modifier = {
 				weekly_manpower = 500
+			}
+		}
+		##我们能做到
+		ALF_we_can_do_this_idea = {
+			#picture = unknown
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.1
+			}
+		}
+		##众志成城
+		ALF_united_as_on_idea = {
+			#picture = unknown
+			modifier = {
+				industrial_capacity_factory = 0.2
+			}
+		}
+		##猛击软肋
+		ALF_hit_on_weakness = {
+			#picture = unknown
+			targeted_modifier = {
+				tag = ALF
+				defense_bonus_against = -0.1
 			}
 		}
 	}

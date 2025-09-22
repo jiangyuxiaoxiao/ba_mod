@@ -1335,6 +1335,20 @@ leader_traits = {
 		air_close_air_support_org_damage_factor = 0.1
 		ground_attack_factor = 0.1
 	}
+	##步兵突击专家
+	ALF_infantry_assault_trait = {
+		random = no
+		army_infantry_attack_factor = 0.15
+	}
+	##后勤规划师
+	ALF_logistics_designer_trait = {
+		random = no
+		cas_damage_reduction = 0.3
+		no_supply_grace = 24
+		supply_node_range = 0.1
+	}
+
+
 	##红冬学生会参谋
 	ALF_RWT_theorist_idea_a_trait = {
 		random = no

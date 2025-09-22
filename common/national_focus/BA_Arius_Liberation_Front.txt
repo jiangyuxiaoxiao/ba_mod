@@ -37,7 +37,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ALF_a_great_march
 		}
-		cost = 3
+		cost = 5
 		x = -2
 		y = 1
 		completion_reward = {
@@ -55,7 +55,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ALF_memory_of_old_home
 		}
-		cost = 3
+		cost = 5
 		x = 0
 		y = 1
 		completion_reward = {
@@ -75,7 +75,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ALF_a_great_march
 		}
-		cost = 3
+		cost = 5
 		x = 2
 		y = 1
 		completion_reward = {
@@ -93,7 +93,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ALF_settled_in_new_home
 		}
-		cost = 3
+		cost = 5
 		x = 0
 		y = 1
 		completion_reward = {
@@ -119,7 +119,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ALF_begin_new_journey
 		}
-		cost = 4
+		cost = 5
 		x = 2
 		y = 1
 		completion_reward = {
@@ -348,7 +348,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ALF_target_AVG
 		}
-		cost = 4
+		cost = 5
 		x = 0
 		y = 1
 		available = {
@@ -378,7 +378,7 @@ focus_tree = {
 		#长路漫漫
 		id = ALF_a_long_way_to_go
 		icon = GFX_goal_unknown
-		cost = 4
+		cost = 5
 		x = 15
 		y = 1
 		available = {
@@ -400,7 +400,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ALF_a_long_way_to_go
 		}
-		cost = 4
+		cost = 5
 		x = -4
 		y = 1
 		available = {
@@ -417,7 +417,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ALF_lesson_from_civil_war
 		}
-		cost = 4
+		cost = 5
 		x = 0
 		y = 1
 		available = {
@@ -440,7 +440,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ALF_stable_the_thoughts
 		}
-		cost = 4
+		cost = 5
 		x = -1
 		y = 1
 		available = {
@@ -461,7 +461,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ALF_stable_the_thoughts
 		}
-		cost = 4
+		cost = 5
 		x = 1
 		y = 1
 		available = {
@@ -492,7 +492,7 @@ focus_tree = {
 			}
 		}
 		cancel_if_invalid = no
-		cost = 4
+		cost = 5
 		x = 0
 		y = 2
 		completion_reward = {
@@ -509,7 +509,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ALF_against_capitulationism
 		}
-		cost = 4
+		cost = 5
 		x = -1
 		y = 1
 		available = {
@@ -521,7 +521,7 @@ focus_tree = {
 				ALF_defeated_army_morale_factor = 0.1
 			}
 			add_to_variable = {
-				ALF_production_speed_buildings_factor = 0.1
+				ALF_production_speed_buildings_factor = 0.2
 			}
 			force_update_dynamic_modifier = yes
 		}
@@ -534,7 +534,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ALF_diversionary_reformism
 		}
-		cost = 4
+		cost = 5
 		x = 1
 		y = 1
 		available = {
@@ -563,7 +563,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ALF_create_shared_cognition
 		}
-		cost = 4
+		cost = 5
 		x = 0
 		y = 2
 		available = {
@@ -571,13 +571,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = ALF_we_can_achieve_the_goal_tt
 			add_to_variable = {
-				ALF_production_speed_buildings_factor = 0.3
-			}
-			add_to_variable = {
-				ALF_defeated_industrial_capacity_factory = 0.1
-			}
-			add_to_variable = {
-				ALF_defeated_stability_factor_var = 0.1
+				ALF_party_stability_factor_var = 0.1
 			}
 			force_update_dynamic_modifier = yes
 		}
@@ -591,7 +585,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ALF_a_long_way_to_go
 		}
-		cost = 4
+		cost = 5
 		x = 0
 		y = 1
 		available = {
@@ -616,7 +610,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ALF_confirm_economic_plan
 		}
-		cost = 4
+		cost = 5
 		x = 0
 		y = 1
 		available = {
@@ -643,7 +637,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ALF_oil_is_industry_blood
 		}
-		cost = 4
+		cost = 5
 		x = 0
 		y = 1
 		available = {
@@ -683,7 +677,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ALF_oil_is_industry_blood
 		}
-		cost = 4
+		cost = 5
 		x = -1
 		y = 1
 		available = {
@@ -716,7 +710,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ALF_oil_is_industry_blood
 		}
-		cost = 4
+		cost = 5
 		x = 1
 		y = 1
 		available = {
@@ -743,7 +737,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ALF_infrastructure_plan
 		}
-		cost = 4
+		cost = 5
 		x = 0
 		y = 2
 		available = {
@@ -798,7 +792,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ALF_a_long_way_to_go
 		}
-		cost = 4
+		cost = 5
 		x = 4
 		y = 1
 		available = {
@@ -818,7 +812,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ALF_focus_trade
 		}
-		cost = 4
+		cost = 5
 		x = 0
 		y = 1
 		available = {
@@ -829,6 +823,7 @@ focus_tree = {
 				ALF_party_stability_factor_var = 0.1
 			}
 			force_update_dynamic_modifier = yes
+			unlock_decision_tooltip = ALF_Livability_for_industrial_complex
 		}
 	}
 	focus = {
@@ -839,7 +834,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ALF_expand_goods_production
 		}
-		cost = 4
+		cost = 5
 		x = 0
 		y = 1
 		available = {
@@ -880,7 +875,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ALF_expand_goods_production
 		}
-		cost = 4
+		cost = 5
 		x = -1
 		y = 1
 		available = {
@@ -937,7 +932,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ALF_expand_goods_production
 		}
-		cost = 4
+		cost = 5
 		x = 1
 		y = 1
 		available = {
@@ -961,7 +956,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ALF_recovery_movement
 		}
-		cost = 4
+		cost = 5
 		x = 0
 		y = 2
 		available = {
@@ -987,7 +982,7 @@ focus_tree = {
 		available = {
 			has_completed_focus = ALF_change_outfit
 		}
-		cost = 4
+		cost = 5
 		x = -2
 		y = 1
 		available = {
@@ -1020,7 +1015,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ALF_solve_electric_problem
 		}
-		cost = 4
+		cost = 5
 		x = 0
 		y = 2
 		available = {
@@ -1071,7 +1066,7 @@ focus_tree = {
 			focus = ALF_resource_produce
 			focus = ALF_rebuild_city_operation
 		}
-		cost = 4
+		cost = 5
 		x = 0
 		y = 1
 		available = {
@@ -1093,7 +1088,7 @@ focus_tree = {
 			focus = ALF_we_can_achieve_the_goal
 			focus = ALF_be_ready_for_action
 		}
-		cost = 4
+		cost = 5
 		x = -3
 		y = 1
 		available = {
@@ -1111,7 +1106,6 @@ focus_tree = {
 		x = 27
 		y = 1
 		available = {
-
 		}
 		allow_branch = {
 			##拥有标签：第二阶段
@@ -1483,24 +1477,22 @@ focus_tree = {
 				exists = no
 			}
 		}
-		bypass = {
-			OR = {
-				has_war_with = CAP
-				has_global_flag = the_enterprise_war_begins
-			}
-		}
 		completion_reward = {
-			if = {
-				limit = {
-					NOT ={
-						has_global_flag = the_enterprise_war_begins
-					}
-				}
-				set_global_flag = the_enterprise_war_begins
-			}
 			add_political_power = 25
-			unlock_decision_category_tooltip = ALF_anti_kaiser_operation_category
-			activate_mission = ALF_EPW_counter_mission
+			country_event = {
+				id = ALF.32
+			}
+			hidden_effect = {
+				ALF = {
+					ALF_EPW_calculate_power_score = yes
+				}
+				CAE = {
+					ALF_EPW_calculate_power_score = yes
+				}
+				A47 = {
+					ALF_EPW_calculate_power_score = yes
+				}
+			}
 		}
 	}
 	########流亡者军事线#######
@@ -1512,7 +1504,6 @@ focus_tree = {
 		x = 44
 		y = 1
 		available = {
-
 		}
 		allow_branch = {
 			##拥有标签：第二阶段
@@ -1547,11 +1538,13 @@ focus_tree = {
 						is_owned_and_controlled_by = ROOT
 					}
 				}
-				add_building_construction = {
-					type = air_facility
-					level = 1
-					instant_build = yes
-					province = 3971
+				197 = {
+					add_building_construction = {
+						type = air_facility
+						level = 1
+						instant_build = yes
+						province = 3971
+					}
 				}
 			}
 		}
@@ -1762,7 +1755,6 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-
 			random_owned_state = {
 				limit = {
 					is_owned_and_controlled_by = ALF
@@ -1774,7 +1766,6 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-
 			add_ideas = ALF_cover_the_sky
 		}
 	}
@@ -2045,6 +2036,7 @@ focus_tree = {
 			}
 			force_update_dynamic_modifier = yes
 			unlock_decision_tooltip = ALF_mrd_modernize_improve_decision
+			unlock_decision_tooltip = ALF_Livability_for_mrd_speed_decision
 			custom_effect_tooltip = ALF_unlock_theorist_tt
 			show_ideas_tooltip = ALF_Morishita_Kaho_theorist
 		}
@@ -2205,10 +2197,12 @@ focus_tree = {
 		##命运在召唤
 		id = ALF_fate_calls
 		icon = GFX_goal_unknown
-		relative_position_id = ALF_together_for_victory
 		cost = 4
-		x = 0
-		y = 2
+		x = 27
+		y = 7
+		allow_branch = {
+			has_global_flag = the_enterprise_war_begins
+		}
 		available = {
 			has_global_flag = the_enterprise_war_begins
 		}
@@ -2227,7 +2221,6 @@ focus_tree = {
 		x = -3
 		y = 1
 		available = {
-			
 		}
 		bypass = {
 			OR = {
@@ -2382,13 +2375,384 @@ focus_tree = {
 		prerequisite = {
 			focus = ALF_warno
 		}
-		cost = 4
+		cost = 2
 		x = 0
 		y = 1
 		available = {
 		}
 		completion_reward = {
 			unlock_decision_tooltip = ALF_war_with_blackmarket_decision
+		}
+	}
+	#####公司战争-凯撒####
+	focus = {
+		id = ALF_difficult_situation
+		icon = GFX_focus_ARI_open_the_curtain
+		relative_position_id = ALF_target_blackmarket
+		cost = 0.5
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ALF_target_blackmarket
+		}
+		available = {
+		}
+		completion_reward = {
+			add_political_power = 25
+			add_command_power = 50
+		}
+	}
+	##扩大空军
+	focus = {
+		id = ALF_enlarge_air_force
+		icon = GFX_focus_ARI_open_the_curtain
+		relative_position_id = ALF_difficult_situation
+		cost = 4
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = ALF_difficult_situation
+		}
+		available = {
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_tech = heavy_fighting_drone
+					}
+				}
+				set_technology = {
+					heavy_fighting_drone = 1
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_tech = heavy_fighting_drone
+					}
+				}
+				set_technology = {
+					heavy_fighting_drone = 1
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = heavy_uav_equipment_1
+				amount = 100
+				producer = ALF
+			}
+			add_equipment_to_stockpile = {
+				type = heavy_uav_cas_equipment_1
+				amount = 100
+				producer = ALF
+			}
+		}
+	}
+	##对空高度警戒
+	focus = {
+		id = ALF_air_alert
+		icon = GFX_focus_ARI_open_the_curtain
+		relative_position_id = ALF_enlarge_air_force
+		cost = 4
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = ALF_enlarge_air_force
+		}
+		available = {
+		}
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					is_owned_and_controlled_by = ALF
+					free_building_slots = {
+						building = radar_station
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = radar_station
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_owned_and_controlled_by = ALF
+					free_building_slots = {
+						building = radar_station
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = radar_station
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_owned_and_controlled_by = ALF
+					free_building_slots = {
+						building = radar_station
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = radar_station
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	##整合黑市领土
+	focus = {
+		id = ALF_integrate_black_market_cores
+		icon = GFX_focus_ARI_open_the_curtain
+		relative_position_id = ALF_difficult_situation
+		cost = 4
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ALF_difficult_situation
+		}
+		available = {
+		}
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					is_core_of = A47
+					NOT = {
+						is_core_of = ALF
+					}
+				}
+				add_core_of = ALF
+			}
+			every_owned_state = {
+				limit = {
+					is_core_of = BMT
+				}
+				add_core_of = ALF
+				remove_core_of = BMT
+			}
+			every_owned_state = {
+				limit = {
+					is_core_of = BMR
+				}
+				add_core_of = ALF
+				remove_core_of = BMR
+			}
+			every_owned_state = {
+				limit = {
+					is_core_of = BMG
+				}
+				add_core_of = ALF
+				remove_core_of = BMG
+			}
+		}
+	}
+	##恢复生产
+	focus = {
+		id = ALF_restore_new_area_production
+		icon = GFX_focus_ARI_open_the_curtain
+		relative_position_id = ALF_integrate_black_market_cores
+		cost = 4
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = ALF_integrate_black_market_cores
+		}
+		available = {
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					223 = {
+						is_owned_and_controlled_by = ALF
+					}
+				}
+				223 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					221 = {
+						is_owned_and_controlled_by = ALF
+					}
+				}
+				221 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					195 = {
+						is_owned_and_controlled_by = ALF
+					}
+				}
+				195 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					222 = {
+						is_owned_and_controlled_by = ALF
+					}
+				}
+				222 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	##动员政治
+	focus = {
+		id = ALF_politic_mobilization
+		icon = GFX_focus_ARI_open_the_curtain
+		relative_position_id = ALF_integrate_black_market_cores
+		cost = 4
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = ALF_integrate_black_market_cores
+		}
+		available = {
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = ALF_we_can_do_this_idea
+				days = 270
+			}
+		}
+	}
+	##众志成城
+	focus = {
+		id = ALF_united_as_one
+		icon = GFX_focus_ARI_open_the_curtain
+		relative_position_id = ALF_politic_mobilization
+		cost = 4
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = ALF_politic_mobilization
+		}
+		prerequisite = {
+			focus = ALF_restore_new_area_production
+		}
+		available = {
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = ALF_united_as_on_idea
+				days = 270
+			}
+		}
+	}
+	##对敌战术分析
+	focus = {
+		id = ALF_enemy_tactic_analysis
+		icon = GFX_focus_ARI_open_the_curtain
+		relative_position_id = ALF_difficult_situation
+		cost = 4
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = ALF_difficult_situation
+		}
+		available = {
+		}
+		completion_reward = {
+			army_experience = 75
+			air_experience = 75
+		}
+	}
+	##猛击软肋
+	focus = {
+		id = ALF_strike_at_weakness
+		icon = GFX_focus_ARI_open_the_curtain
+		relative_position_id = ALF_enemy_tactic_analysis
+		cost = 4
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = ALF_enemy_tactic_analysis
+		}
+		available = {
+		}
+		completion_reward = {
+			CAP = {
+				add_timed_idea = {
+					idea = ALF_hit_on_weakness
+					days = 180
+				}
+			}
+			CAH = {
+				add_timed_idea = {
+					idea = ALF_hit_on_weakness
+					days = 180
+				}
+			}
+			CAB = {
+				add_timed_idea = {
+					idea = ALF_hit_on_weakness
+					days = 180
+				}
+			}
+			CAO = {
+				add_timed_idea = {
+					idea = ALF_hit_on_weakness
+					days = 180
+				}
+			}
+		}
+	}
+	##米迦勒行动
+	focus = {
+		id = ALF_operation_michael
+		icon = GFX_focus_ARI_open_the_curtain
+		relative_position_id = ALF_united_as_one
+		cost = 4
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = ALF_united_as_one
+		}
+		prerequisite = {
+			focus = ALF_air_alert
+		}
+		prerequisite = {
+			focus = ALF_strike_at_weakness
+		}
+		available = {
+		}
+		completion_reward = {
+			unlock_decision_tooltip = ALF_operation_michael_decision
 		}
 	}
 	###奔赴荣耀
@@ -2399,6 +2763,7 @@ focus_tree = {
 		x = 40
 		y = 10
 		available = {
+			always = no
 		}
 		completion_reward = {
 			custom_effect_tooltip = ALF_way_for_glory_tt

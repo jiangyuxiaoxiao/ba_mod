@@ -23,10 +23,20 @@ country_event = {
 			ALF = {
 				country_event = {
 					id = ALF.1
-					days = 3
+					days = 1
 				}
 				##特种部队等级：不落下风
 				force_update_dynamic_modifier = yes
+				if = {
+					limit = {
+						NOT = {
+							has_tech = bare_cavalry_tech
+						}
+					}
+					set_technology = {
+						bare_cavalry_tech = 1
+					}
+				}
 			}
 			goto_state = 199
 		}
@@ -355,9 +365,12 @@ country_event = {
 		set_country_flag = ALF_phrase_2_flag
 		mark_focus_tree_layout_dirty = yes
 		complete_national_focus = ALF_a_long_way_to_go
-		country_event = {
-			id = ALF.30
-			days = 730
+		##对凯撒之战的倒计时
+		hidden_effect = {
+			country_event = {
+				id = ALF.30
+				days = 850
+			}
 		}
 	}
 }
@@ -482,7 +495,6 @@ country_event = {
 	picture = GFX_FSC_Leader_portrait_picture
 	is_triggered_only = yes
 	immediate = {
-
 	}
 	option = {
 		name = ALF.22.a
@@ -499,7 +511,6 @@ country_event = {
 	desc = ALF.23.desc
 	is_triggered_only = yes
 	immediate = {
-
 	}
 	option = {
 		name = ALF.23.a
@@ -522,7 +533,6 @@ country_event = {
 	desc = ALF.24.desc
 	is_triggered_only = yes
 	immediate = {
-
 	}
 	option = {
 		name = ALF.24.a
@@ -538,7 +548,6 @@ country_event = {
 	desc = ALF.25.desc
 	is_triggered_only = yes
 	immediate = {
-
 	}
 	option = {
 		name = ALF.25.a
@@ -554,7 +563,6 @@ country_event = {
 	desc = ALF.26.desc
 	is_triggered_only = yes
 	immediate = {
-
 	}
 	option = {
 		name = ALF.26.a
@@ -577,7 +585,6 @@ country_event = {
 	desc = ALF.27.desc
 	is_triggered_only = yes
 	immediate = {
-
 	}
 	option = {
 		name = ALF.27.a
@@ -593,7 +600,6 @@ country_event = {
 	desc = ALF.28.desc
 	is_triggered_only = yes
 	immediate = {
-
 	}
 	option = {
 		name = ALF.28.a
@@ -609,7 +615,6 @@ country_event = {
 	desc = ALF.29.desc
 	is_triggered_only = yes
 	immediate = {
-
 	}
 	option = {
 		name = ALF.29.a
@@ -624,7 +629,6 @@ country_event = {
 			ALF_AMF_special_forces_attack_factor_var = 0.05
 		}
 	}
-
 	option = {
 		name = ALF.29.b
 		custom_effect_tooltip = ALF_support_sf_integrate_tt
@@ -646,7 +650,6 @@ country_event = {
 	hidden = yes
 	is_triggered_only = yes
 	immediate = {
-
 	}
 	option = {
 		name = ALF.30.a
@@ -671,10 +674,34 @@ country_event = {
 	desc = ALF.31.desc
 	is_triggered_only = yes
 	immediate = {
-
 	}
 	option = {
 		name = ALF.31.a
+	}
+}
 
+country_event = {
+	id = ALF.32
+	#picture = GFX_common_event_gui_test
+	title = ALF.32.t
+	desc = ALF.32.desc
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = ALF.32.a
+		if = {
+			limit = {
+				NOT = {
+					has_global_flag = the_enterprise_war_begins
+				}
+			}
+			set_global_flag = the_enterprise_war_begins
+		}
+		unlock_decision_category_tooltip = ALF_anti_kaiser_operation_category
+		activate_mission = ALF_EPW_Stage_1_trigger_mission
+		activate_mission = ALF_EPW_counter_mission
+		mark_focus_tree_layout_dirty = yes
+		complete_national_focus = ALF_fate_calls
 	}
 }
