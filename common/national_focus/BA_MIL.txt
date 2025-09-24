@@ -1092,7 +1092,7 @@ focus_tree = {
 		search_filters = { FOCUS_MIL }
 		cost = 10
 		x = 0
-		y = 5
+		y = 4
 		prerequisite = {
 			focus = MIL_noas_Strive
 		}
@@ -1106,10 +1106,22 @@ focus_tree = {
 		relative_position_id = MIL_Prepare_grand_festival
 		search_filters = { FOCUS_MIL }
 		cost = 10
+		x = 0
+		y = 5
+		prerequisite = {
+			focus = MIL_The_eve_of_the_grand_festival
+		}
+	}	
+	focus = { #晄轮大祭成功
+		id = MIL_The_success_of_the_grand_festival
+		icon = GFX_goal_MIL_The_success_of_the_grand_festival
+		relative_position_id = MIL_Prepare_grand_festival
+		search_filters = { FOCUS_MIL }
+		cost = 10
 		x = -2
 		y = 6
 		prerequisite = {
-			focus = MIL_The_eve_of_the_grand_festival
+			focus = MIL_The_beginning_of_the_carnival
 		}
 	}	
 	focus = { #千年隐藏的梦想（隐藏国策）
@@ -1121,7 +1133,7 @@ focus_tree = {
 		x = 2
 		y = 6
 		prerequisite = {
-			focus = MIL_The_eve_of_the_grand_festival	
+			focus = MIL_The_beginning_of_the_carnival
 		}
 	}	
 
