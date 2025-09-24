@@ -833,4 +833,21 @@ spriteTypes = {
 		name = "GFX_idea_ba_arius_electrical_team_44"
 		texturefile = "gfx/interface/ideas/industrial/ba_arius_electrical_team_44.dds"
 	}
+	 ###MIL###
+    spriteType = {
+        name = "GFX_idea_MIL_place_of_pursuing_truth"
+        texturefile = "gfx/interface/ideas/MIL/MIL_place_of_pursuing_truth.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_MIL_security_department_of_long_peace"
+        texturefile = "gfx/interface/ideas/MIL/MIL_security_department_of_long_peace.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_MIL_overly_advanced_aircraft"
+        texturefile = "gfx/interface/ideas/MIL/MIL_overly_advanced_aircraft.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_MIL_shadow_of_financial_crisis"
+        texturefile = "gfx/interface/ideas/MIL/MIL_shadow_of_financial_crisis.dds"
+    }
 }
