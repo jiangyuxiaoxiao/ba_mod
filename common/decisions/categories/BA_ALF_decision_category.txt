@@ -39,9 +39,12 @@ ALF_new_capital_decision_category = {
 	visible = {
 		original_tag = ALF
 		has_completed_focus = ALF_rebuild_the_market_center
+		NOT = {
+			has_country_flag = ALF_new_capital_complete_flag
+		}
 	}
 	scripted_gui = ALF_new_capital_decision_ui_progressbar_sg
-	visible_when_empty = yes
+	#visible_when_empty = yes
 	priority = 8800
 }
 
@@ -67,6 +70,9 @@ ALF_anti_kaiser_operation_category = {
 	}
 	visible = {
 		has_completed_focus = ALF_infiltrate_kaiser
+		NOT = {
+			has_global_flag = EPW_ENDS_global_flag
+		}
 	}
 	#scripted_gui = ALF_military_reform_decision_ui_progressbar_sg
 	visible_when_empty = yes

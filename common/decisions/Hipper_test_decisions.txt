@@ -296,6 +296,18 @@ Hipper_test_decisions_categories = {
 			BARE_SuperEvent_2_effect_10 = yes
 		}
 	}
+	Fire_super_type2_event11_hipp = {
+		visible = {
+			is_debug = yes
+			has_global_flag = show_se_test_decision_flag
+		}
+		available = {
+			is_ai = no
+		}
+		complete_effect = {
+			BARE_SuperEvent_2_effect_11 = yes
+		}
+	}
 	#################
 	#################
 	BAREXP_show_superevent1_gui = {
@@ -423,6 +435,7 @@ Hipper_test_decisions_categories = {
 	show_ALF_phrase_1_all_focus_tree_decision = {
 		visible = {
 			is_debug = yes
+			tag = ALF
 		}
 		available = {
 			is_ai = no
@@ -436,6 +449,7 @@ Hipper_test_decisions_categories = {
 	show_ALF_phrase_2_all_focus_tree_decision = {
 		visible = {
 			is_debug = yes
+			tag = ALF
 		}
 		available = {
 			is_ai = no
@@ -443,6 +457,7 @@ Hipper_test_decisions_categories = {
 		complete_effect = {
 			set_country_flag = ALF_phrase_2_flag
 			set_global_flag = the_enterprise_war_begins
+			set_country_flag = ALF_EPW_STAGE2_flag
 			mark_focus_tree_layout_dirty = yes
 		}
 	}

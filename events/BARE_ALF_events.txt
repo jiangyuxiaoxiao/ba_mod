@@ -484,6 +484,8 @@ country_event = {
 		197 = {
 			add_extra_state_shared_building_slots = 10
 		}
+		##关闭翻修决议
+		set_country_flag = ALF_new_capital_complete_flag
 	}
 }
 
@@ -703,5 +705,21 @@ country_event = {
 		activate_mission = ALF_EPW_counter_mission
 		mark_focus_tree_layout_dirty = yes
 		complete_national_focus = ALF_fate_calls
+	}
+}
+
+country_event = {
+	id = ALF.33
+	#picture = GFX_common_event_gui_test
+	title = ALF.33.t
+	desc = ALF.33.desc
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = ALF.33.a
+		custom_effect_tooltip = ALF_EPW_Broke_Out_tt
+		set_country_flag = ALF_EPW_STAGE2_flag
+		mark_focus_tree_layout_dirty = yes
 	}
 }

@@ -7,7 +7,7 @@
  ALF_PMC_Company_ADJ: "哨兵防务"
  ALF_Faction: "联合解放阵线"
  ALF_ARIUS_SCHOOL: "阿里乌斯分校"
- CAH_ALF_subject: "高新工业园"  
+ CAH_ALF_subject: "高新开发区"  
 
 ####################
 ##国策！！！
@@ -190,6 +190,7 @@
  ALF_enemy_tactic_analysis: "对敌战术分析"
  ALF_strike_at_weakness: "猛击软肋"
  ALF_operation_michael: "§Y米迦勒行动§!"
+ EPW_ENDS_global_flag: "§Y公司战争§!§R已结束§!"
 
 
  ALF_way_for_glory: "§Y奔赴荣耀§!"
@@ -293,7 +294,7 @@
 
  ALF_EPW_Stage_2_counter_mission: "§R凯撒干涉……§!"
  ALF_EPW_Stage_2_trigger_mission: "§Y公司战争§!"
- ALF_operation_michael_decision: "§发动Y米迦勒行动§!"
+ ALF_operation_michael_decision: "§Y发动米迦勒行动§!"
  
 ####################
 ##新首都！！！
@@ -321,6 +322,7 @@
  ALF_Livability_for_stability: "改善工作环境"
  ALF_Livability_for_war_support: "战争宣传"
  ALF_Livability_for_manpower: "展开新一轮动员"
+ integrate_WSG_targeted_decision: "整合：§Y西街暴力团§!"
  restore_state_mail_system_targeted_decision: "（地图决议）恢复§Y[FROM.GetName]§!的邮政系统"
  ALF_Reorganize_the_postal_system_tt: "允许恢复每个受到控制的黑市区域的邮政系统。\n这将§G改善§!我们的§Y战略资源获取能力§!。"
  restore_state_electric_system_targeted_decision: "（地图决议）将§Y[FROM.GetName]§!区域接入电网"
@@ -663,3 +665,7 @@
  ALF.32.desc: "致“领袖”：\n\n经调查，现在情况已经明了。显然，存在一个受凯撒集团控制的庞大的利益团体，它们控制了黑市的走私、赌博以及各种非法生意，而如“西街暴力团”或“咔哒头盔团”这样的组织，只是受其控制的势力之一。\n\n尽管该团体针对我们的理由尚不明确，但可以确定的是，这一团体视我们为潜在威胁，并已经开始为可能的冲突进行准备。\n\n就目前的情况看，军事冲突已不可避免。因此，必须进行一次先发制人的攻击，在该团体的成员达成一致意见前就将其彻底铲除。否则，我们可能陷入多面围攻的不利境地。\n\n报告结束。\n特别勤务处"
  ALF.32.a: "该来的总是会来……"
  
+ ALF.33.t: "边境异动"
+ ALF.33.desc: "几周以来，流亡者位于边界的哨所一直处于最高警戒状态。\n\n流亡者对黑市内各个势力的全面清扫行动如今已进入收尾阶段，随着战局逐渐明朗，位于黑市边缘的凯撒集团，也变得蠢蠢欲动起来。\n\n显然，凯撒集团不会坐视自己的势力被扫地出门。特别勤务处的情报员已经确认，凯撒集团已经开始在边界集结力量。作为应对，最高等级的战备命令也被下达到了各个边境的守备队伍。\n\n毫无疑问，凯撒集团不会放弃他们在黑市的利益和野心。现在，流亡者们警惕的可能性已经化作现实。\n\n在坦克和装甲车的掩护下，凯撒集团的步兵纵队以战斗队形越过了边界。哨兵第一时间就扑向了墙上的电话，毫不犹豫地拨通了那个唯一的号码：\n\n“红色代码！重复一遍，红色代码！”"
+ ALF.33.a: "那一天来临了。"
+ ALF_EPW_Broke_Out_tt: "§R木已成舟……§!\n解锁§Y公司战争§!国策树"

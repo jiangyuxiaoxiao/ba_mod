@@ -825,3 +825,21 @@ news_event = {
 		}
 	}
 }
+
+
+
+
+add_namespace = ALF_news_event
+news_event = {
+	id = ALF_news_event.1
+	#picture = GFX_BA_news_18
+	title = ALF_news_event.1.t
+	desc = ALF_news_event.1.desc
+	is_triggered_only = yes
+	major = yes
+	
+	#有趣
+	option = {
+		name = ALF_news_event.1.a
+	}
+}

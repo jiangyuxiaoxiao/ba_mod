@@ -437,6 +437,30 @@ ALF_Livability_decision_category = {
 		remove_effect = {
 		}
 	}
+	##
+	integrate_WSG_targeted_decision = {
+		visible = {
+			has_completed_focus = ALF_end_wsg
+		}
+		available = {
+			has_completed_focus = ALF_end_wsg
+			WSG ={
+				exists = no
+			}
+		}
+		days_remove = 28
+		cost = 50
+		fire_only_once = yes
+		remove_effect = {
+			every_owned_state = {
+				limit = {
+					is_core_of = WSG
+				}
+				add_core_of = ALF
+				remove_core_of = WSG
+			}
+		}
+	}
 	##恢复区域邮政系统
 	restore_state_mail_system_targeted_decision = {
 		state_target = yes
@@ -1188,10 +1212,9 @@ ALF_anti_kaiser_operation_category = {
 		complete_effect = {
 			set_country_flag = ALF_EPW_Stage_1_trigger_mission_has_completed_flag
 			activate_mission = ALF_EPW_Stage_2_counter_mission
-			activate_mission = ALF_EPW_Stage_2_trigger_mission
 		}
 		timeout_effect = {
-			activate_mission =ALF_EPW_Stage_1_trigger_mission
+			activate_mission = ALF_EPW_Stage_1_trigger_mission
 			hidden_effect = {
 				ALF = {
 					ALF_EPW_calculate_power_score = yes
@@ -1261,9 +1284,15 @@ ALF_anti_kaiser_operation_category = {
 			always = no
 		}
 		available = {
-			has_global_flag = EPW_ENDS_global_flag
+			NOT = {
+				has_war_with = CAP
+			}
 		}
 		complete_effect = {
+			set_global_flag = EPW_ENDS_global_flag
+			news_event = {
+				id = ALF_news_event.1
+			}
 		}
 		timeout_effect = {
 			activate_mission = ALF_EPW_Stage_2_trigger_mission
@@ -1294,13 +1323,16 @@ ALF_anti_kaiser_operation_category = {
 			set_country_flag = ALF_EPW_Stage_1_trigger_mission_has_completed_flag
 		}
 		timeout_effect = {
+			activate_mission = ALF_EPW_Stage_2_trigger_mission
 			CAP = {
 				declare_war_on = {
 					target = ALF
 					type = annex_everything
 				}
 			}
-			activate_mission = ALF_EPW_Stage_2_trigger_mission
+			country_event = {
+				id = ALF.33
+			}
 		}
 	}
 	##对收债人协会宣战

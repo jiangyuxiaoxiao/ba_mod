@@ -345,7 +345,7 @@ characters = {
 			idea_token = ALF_Norimatsu_Miru_political_advisor
 			cost = 150
 			available = {
-				has_completed_focus = ALF_confirm_economic_plan
+				has_completed_focus = ALF_focus_trade
 			}
 			traits = {
 				ALF_intelligence_analyst

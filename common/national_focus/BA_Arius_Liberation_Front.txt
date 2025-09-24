@@ -1349,6 +1349,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			unlock_decision_tooltip = integrate_WSG_targeted_decision
 		}
 	}
 	focus = {
@@ -1744,6 +1745,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			custom_effect_tooltip = ALF_above_sky_tt
+			add_to_variable = {
+				mrd_air_force_progress = 1
+			}
 			random_owned_state = {
 				limit = {
 					is_owned_and_controlled_by = ALF
@@ -2320,6 +2324,11 @@ focus_tree = {
 		y = 1
 		available = {
 		}
+		bypass = {
+			A47 = {
+				exists = no
+			}
+		}
 		completion_reward = {
 			add_timed_idea = {
 				idea = ALF_industrial_mobilization
@@ -2338,6 +2347,11 @@ focus_tree = {
 		x = 1
 		y = 1
 		available = {
+		}
+		bypass = {
+			A47 = {
+				exists = no
+			}
 		}
 		completion_reward = {
 			add_timed_idea = {
@@ -2361,6 +2375,11 @@ focus_tree = {
 		y = 1
 		available = {
 		}
+		bypass = {
+			A47 = {
+				exists = no
+			}
+		}
 		completion_reward = {
 			add_war_support = 0.1
 			add_political_power = 50
@@ -2380,6 +2399,14 @@ focus_tree = {
 		y = 1
 		available = {
 		}
+		bypass = {
+			OR = {
+				has_war_with = A47
+				A47 = {
+					exists = no
+				}
+			}
+		}
 		completion_reward = {
 			unlock_decision_tooltip = ALF_war_with_blackmarket_decision
 		}
@@ -2389,13 +2416,22 @@ focus_tree = {
 		id = ALF_difficult_situation
 		icon = GFX_focus_ARI_open_the_curtain
 		relative_position_id = ALF_target_blackmarket
-		cost = 0.5
+		cost = 1
 		x = 0
 		y = 1
 		prerequisite = {
 			focus = ALF_target_blackmarket
 		}
 		available = {
+			NOT = {
+				has_global_flag = EPW_ENDS_global_flag
+			}
+		}
+		bypass = {
+			has_global_flag = EPW_ENDS_global_flag
+		}
+		allow_branch = {
+			has_country_flag = ALF_EPW_STAGE2_flag
 		}
 		completion_reward = {
 			add_political_power = 25
@@ -2407,13 +2443,19 @@ focus_tree = {
 		id = ALF_enlarge_air_force
 		icon = GFX_focus_ARI_open_the_curtain
 		relative_position_id = ALF_difficult_situation
-		cost = 4
+		cost = 3
 		x = -2
 		y = 1
 		prerequisite = {
 			focus = ALF_difficult_situation
 		}
 		available = {
+			NOT = {
+				has_global_flag = EPW_ENDS_global_flag
+			}
+		}
+		bypass = {
+			has_global_flag = EPW_ENDS_global_flag
 		}
 		completion_reward = {
 			if = {
@@ -2453,13 +2495,19 @@ focus_tree = {
 		id = ALF_air_alert
 		icon = GFX_focus_ARI_open_the_curtain
 		relative_position_id = ALF_enlarge_air_force
-		cost = 4
+		cost = 2
 		x = 0
 		y = 2
 		prerequisite = {
 			focus = ALF_enlarge_air_force
 		}
 		available = {
+			NOT = {
+				has_global_flag = EPW_ENDS_global_flag
+			}
+		}
+		bypass = {
+			has_global_flag = EPW_ENDS_global_flag
 		}
 		completion_reward = {
 			random_owned_state = {
@@ -2514,13 +2562,19 @@ focus_tree = {
 		id = ALF_integrate_black_market_cores
 		icon = GFX_focus_ARI_open_the_curtain
 		relative_position_id = ALF_difficult_situation
-		cost = 4
+		cost = 3
 		x = 0
 		y = 1
 		prerequisite = {
 			focus = ALF_difficult_situation
 		}
 		available = {
+			NOT = {
+				has_global_flag = EPW_ENDS_global_flag
+			}
+		}
+		bypass = {
+			has_global_flag = EPW_ENDS_global_flag
 		}
 		completion_reward = {
 			every_owned_state = {
@@ -2560,13 +2614,19 @@ focus_tree = {
 		id = ALF_restore_new_area_production
 		icon = GFX_focus_ARI_open_the_curtain
 		relative_position_id = ALF_integrate_black_market_cores
-		cost = 4
+		cost = 2
 		x = -1
 		y = 1
 		prerequisite = {
 			focus = ALF_integrate_black_market_cores
 		}
 		available = {
+			NOT = {
+				has_global_flag = EPW_ENDS_global_flag
+			}
+		}
+		bypass = {
+			has_global_flag = EPW_ENDS_global_flag
 		}
 		completion_reward = {
 			if = {
@@ -2636,13 +2696,19 @@ focus_tree = {
 		id = ALF_politic_mobilization
 		icon = GFX_focus_ARI_open_the_curtain
 		relative_position_id = ALF_integrate_black_market_cores
-		cost = 4
+		cost = 2
 		x = 1
 		y = 1
 		prerequisite = {
 			focus = ALF_integrate_black_market_cores
 		}
 		available = {
+			NOT = {
+				has_global_flag = EPW_ENDS_global_flag
+			}
+		}
+		bypass = {
+			has_global_flag = EPW_ENDS_global_flag
 		}
 		completion_reward = {
 			add_timed_idea = {
@@ -2656,7 +2722,7 @@ focus_tree = {
 		id = ALF_united_as_one
 		icon = GFX_focus_ARI_open_the_curtain
 		relative_position_id = ALF_politic_mobilization
-		cost = 4
+		cost = 2
 		x = -1
 		y = 1
 		prerequisite = {
@@ -2666,6 +2732,12 @@ focus_tree = {
 			focus = ALF_restore_new_area_production
 		}
 		available = {
+			NOT = {
+				has_global_flag = EPW_ENDS_global_flag
+			}
+		}
+		bypass = {
+			has_global_flag = EPW_ENDS_global_flag
 		}
 		completion_reward = {
 			add_timed_idea = {
@@ -2679,13 +2751,19 @@ focus_tree = {
 		id = ALF_enemy_tactic_analysis
 		icon = GFX_focus_ARI_open_the_curtain
 		relative_position_id = ALF_difficult_situation
-		cost = 4
+		cost = 3
 		x = 2
 		y = 1
 		prerequisite = {
 			focus = ALF_difficult_situation
 		}
 		available = {
+			NOT = {
+				has_global_flag = EPW_ENDS_global_flag
+			}
+		}
+		bypass = {
+			has_global_flag = EPW_ENDS_global_flag
 		}
 		completion_reward = {
 			army_experience = 75
@@ -2697,13 +2775,19 @@ focus_tree = {
 		id = ALF_strike_at_weakness
 		icon = GFX_focus_ARI_open_the_curtain
 		relative_position_id = ALF_enemy_tactic_analysis
-		cost = 4
+		cost = 2
 		x = 0
 		y = 2
 		prerequisite = {
 			focus = ALF_enemy_tactic_analysis
 		}
 		available = {
+			NOT = {
+				has_global_flag = EPW_ENDS_global_flag
+			}
+		}
+		bypass = {
+			has_global_flag = EPW_ENDS_global_flag
 		}
 		completion_reward = {
 			CAP = {
@@ -2737,7 +2821,7 @@ focus_tree = {
 		id = ALF_operation_michael
 		icon = GFX_focus_ARI_open_the_curtain
 		relative_position_id = ALF_united_as_one
-		cost = 4
+		cost = 2
 		x = 0
 		y = 1
 		prerequisite = {
@@ -2750,6 +2834,12 @@ focus_tree = {
 			focus = ALF_strike_at_weakness
 		}
 		available = {
+			NOT = {
+				has_global_flag = EPW_ENDS_global_flag
+			}
+		}
+		bypass = {
+			has_global_flag = EPW_ENDS_global_flag
 		}
 		completion_reward = {
 			unlock_decision_tooltip = ALF_operation_michael_decision

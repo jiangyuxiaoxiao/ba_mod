@@ -136,6 +136,14 @@ BARE_SuperEvent_2_effect_10 = {
 	}
 }
 
+BARE_SuperEvent_2_effect_11 = {
+	every_country = {
+		limit = { is_ai = no }
+		set_temp_variable = { BARE_SuperEvent_2_temp_var = token:BARE_SuperEvent_2_enterprise_war }
+		BARE_SuperEvent_2_fire_super_event = yes
+	}
+}
+
 ###########################
 ###########################
 ### CLASSIC SUPER EVENT ###
