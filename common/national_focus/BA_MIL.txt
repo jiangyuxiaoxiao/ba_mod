@@ -1519,8 +1519,8 @@ focus_tree = {
 		y = 0
 	}
 	focus = { #整合C&C
-		id = MIL_Integrate_C&C
-		icon = GFX_goal_MIL_Integrate_C&C
+		id = MIL_Integrate_C_and_C
+		icon = MIL_Integrate_C_and_C
 		relative_position_id = MIL_Security_Committee_Defense_Reform_Plan
 		search_filters = { FOCUS_MIL }
 		cost = 10
@@ -1539,7 +1539,7 @@ focus_tree = {
 		x = -5
 		y = 2
 		prerequisite = {
-			focus = MIL_Integrate_C&C	
+			focus = MIL_Integrate_C_and_C	
 		}
 	}	
 	focus = { #Yuuka的约法三章
@@ -1551,7 +1551,7 @@ focus_tree = {
 		x = -3
 		y = 2
 		prerequisite = {
-			focus = MIL_Integrate_C&C	
+			focus = MIL_Integrate_C_and_C	
 		}
 	}	
 	focus = { #特战生训练计划
