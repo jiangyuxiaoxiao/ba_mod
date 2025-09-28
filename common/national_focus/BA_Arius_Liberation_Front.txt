@@ -1349,7 +1349,6 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			unlock_decision_tooltip = integrate_WSG_targeted_decision
 		}
 	}
 	focus = {
@@ -1460,6 +1459,7 @@ focus_tree = {
 				target = WSG
 				type = ALF_pacify_target_wargoal
 			}
+			unlock_decision_tooltip = integrate_WSG_targeted_decision
 		}
 	}
 	focus = {
@@ -2866,6 +2866,25 @@ focus_tree = {
 					}
 				}
 			}
+		}
+	}
+
+	##冲滩国策##
+	focus = {
+		##梦想升腾
+		id = ALF_dream_approaching
+		icon = GFX_goal_unknown
+		cost = 4
+		x = 27
+		y = 7
+		allow_branch = {
+			
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
 		}
 	}
 }

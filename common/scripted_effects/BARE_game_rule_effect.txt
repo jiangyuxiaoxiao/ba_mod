@@ -101,39 +101,56 @@ BARE_RULE_story_settings_ALF_SELECTED_effect = {
 			autonomy_state = autonomy_BlackMarket_subject
 		}
 	}
-	###加载编制模版###
+	###加载编制模版和人力###
+	every_state = {
+		BARE_Combat_Readiness_count_State = yes
+	}
+	every_country = {
+		BARE_Combat_Readiness_count_Country = yes
+	}
 	COS = {
+		BARE_RULE_story_settings_ALF_SELECTED_manpower_initialize_effect = yes
 		load_oob = "COS_oob_2019"
 	}
 	HTG = {
+		BARE_RULE_story_settings_ALF_SELECTED_manpower_initialize_effect = yes
 		load_oob = "HTG_oob_2019"
 	}
 	AVG = {
+		BARE_RULE_story_settings_ALF_SELECTED_manpower_initialize_effect = yes
 		load_oob = "AVG_oob_2019"
 	}
 	A47 = {
+		BARE_RULE_story_settings_ALF_SELECTED_manpower_initialize_effect = yes
 		load_oob = "A47_2019_ALF_Story"
 	}
 	FSC = {
+		BARE_RULE_story_settings_ALF_SELECTED_manpower_initialize_effect = yes
 		load_oob = "FSC_oob_2019"
 		load_oob = "FSC_2019_air_legacy"
 	}
 	WSG = {
+		BARE_RULE_story_settings_ALF_SELECTED_manpower_initialize_effect = yes
 		load_oob = "WSG_oob_2019"
 	}
 	BMG = {
+		BARE_RULE_story_settings_ALF_SELECTED_manpower_initialize_effect = yes
 		load_oob = "BMG_oob_2019"
 	}
 	BMR = {
+		BARE_RULE_story_settings_ALF_SELECTED_manpower_initialize_effect = yes
 		load_oob = "BMR_oob_2019"
 	}
 	BMT = {
+		BARE_RULE_story_settings_ALF_SELECTED_manpower_initialize_effect = yes
 		load_oob = "BMT_oob_2019"
 	}
 	KHG = {
+		BARE_RULE_story_settings_ALF_SELECTED_manpower_initialize_effect = yes
 		load_oob = "KHG_oob_2019"
 	}
 	DCA = {
+		BARE_RULE_story_settings_ALF_SELECTED_manpower_initialize_effect = yes
 		load_oob = "DCA_oob_2019"
 	}
 	###触发事件###
@@ -145,3 +162,14 @@ BARE_RULE_story_settings_ALF_SELECTED_effect = {
 }
 
 ####
+BARE_RULE_story_settings_ALF_SELECTED_manpower_initialize_effect = {
+	THIS = {
+		set_temp_variable = {
+			BARE_Combat_Readinness_Remain_temp = BARE_Combat_Readinness_Remain
+		}
+		multiply_temp_variable = {
+			BARE_Combat_Readinness_Remain_temp = 1000
+		}
+		add_manpower = BARE_Combat_Readinness_Remain_temp
+	}
+}
