@@ -19,6 +19,19 @@ ALF_party_modifier = {
 	war_support_factor = ALF_war_support_factor_var
 	production_lack_of_resource_penalty_factor = ALF_production_lack_of_resource_penalty_factor_var
 	cic_construction_boost_factor = ALF_cic_construction_boost_factor_var
+
+	##
+	non_core_manpower = ALF_party_non_core_manpower_var
+	resistance_target = ALF_party_resistance_target_var
+	monthly_population = ALF_monthly_population_var
+
+	##意识形态变化##
+	drift_defence_factor = 0.5
+	Egalitarianism_ideology_drift = ALF_party_Egalitarianism_ideology_drift_var
+	Progressivism_ideology_drift = ALF_party_Progressivism_ideology_drift_var
+	Authoritarian_ideology_drift = ALF_party_Authoritarian_ideology_drift_var
+	Liberalism_ideology_drift = ALF_party_Liberalism_ideology_drift_var
+	Mysticism_ideology_drift = ALF_party_Mysticism_ideology_drift_var
 }
 
 ##流亡者武装力量

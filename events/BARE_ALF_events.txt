@@ -723,3 +723,18 @@ country_event = {
 		mark_focus_tree_layout_dirty = yes
 	}
 }
+
+##阿里乌斯解放战争
+country_event = {
+	id = ALF.34
+	#picture = GFX_common_event_gui_test
+	title = ALF.34.t
+	desc = ALF.34.desc
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = ALF.34.a
+		activate_mission = ALF_GBO_trigger_mission
+	}
+}

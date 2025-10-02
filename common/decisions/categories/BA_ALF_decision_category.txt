@@ -79,3 +79,18 @@ ALF_anti_kaiser_operation_category = {
 	priority = 9999
 }
 
+##加百列行动
+ALF_Gabriel_operation_category = {
+	icon = generic_research
+	allowed = {
+		tag = ALF
+	}
+	visible = {
+		has_completed_focus = ALF_toward_the_last_object
+		has_country_flag = ALF_Gabriel_operation_success
+	}
+	#scripted_gui = ALF_military_reform_decision_ui_progressbar_sg
+	visible_when_empty = yes
+	priority = 9999
+}
+

@@ -5,6 +5,10 @@
  ALF_PMC_Company: "哨兵防务"
  ALF_PMC_Company_DEF: "哨兵防务"
  ALF_PMC_Company_ADJ: "哨兵防务"
+
+ ALF_Liberation_Front_cosmetic_tag: "阿里乌斯解放阵线"
+ ALF_Liberation_Front_cosmetic_tag_DEF: "阿里乌斯解放阵线"
+ ALF_Liberation_Front_cosmetic_tag_ADJ: "阿里乌斯解放阵线"
  ALF_Faction: "联合解放阵线"
  ALF_ARIUS_SCHOOL: "阿里乌斯分校"
  CAH_ALF_subject: "高新开发区"  
@@ -191,6 +195,37 @@
  ALF_strike_at_weakness: "猛击软肋"
  ALF_operation_michael: "§Y米迦勒行动§!"
  EPW_ENDS_global_flag: "§Y公司战争§!§R已结束§!"
+ 
+ ALF_dream_approaching: "梦想升扬"
+ ALF_stand_up_from_defeat: "昨日之师"
+ ALF_not_again: "决不再来"
+ ALF_not_again_desc: "流亡者发誓，决不让内战中的失败再度降临。这意味着两件事：\n\n第一、我们要同夫人和她的爪牙做坚决的斗争，要对这些人进行彻底的改造，决不能有心慈手软\n\n第二、我们也要同这种所谓的“神秘主义”思想做斗争。阿里乌斯由具体的人构成，而这些人组成的群体才是阿里乌斯的创造者。\n\n毫无疑问，我们不能容许夫人的暴行再演，更不能走夫人的老路。只有这样，阿里乌斯才能就旧日的桎梏中解放，并重新崛起。"
+ ALF_not_again_tt: "§Y阿里乌斯解放阵线§!追加效果：\n不再受到§Y神秘哲学§!的认同率影响。" 
+ ALF_call_of_duty: "今日之事"
+ ALF_focus_future: "致夏莱"
+ ALF_maintain_work_method: "维持工作民主"
+ ALF_maintain_work_method_desc: "随着工作的推进，以及胜利的不断到来，我们队伍中的一言堂现象有愈演愈烈的趋势，并且已经开始影响各个方面。\n\n我们必须承认，流亡者能从恶劣的境况中存活下来，并取得如今的辉煌成就，与高度的纪律性和卓绝的执行力不无关系——但这不是说，我们中只有某几个人的声音才有意义。\n\n随着胜利的到来，我们有机会重新整肃这方面的风气。一方面，必须制止某些干部过于越界的言行；另一方面，我们也必须和逐渐兴起的盲从风气做斗争。只有这样，我们才能在激烈的竞争中不断锐意进取。" 
+ ALF_maintain_work_method_tt: "§Y阿里乌斯解放阵线§!追加效果：\n不再受到§Y专制哲学§!的认同率影响。" 
+ ALF_history_on_us: "历史眼中的我们"
+ ALF_judge_the_evil: "暴君必尝恶果"
+ ALF_salary_balance: "薪酬公平"
+ ALF_salary_balance_tt: "§Y阿里乌斯解放阵线§!追加效果：\n非核心战备值：§G+10%§!\n抵抗目标：§G-10%§!" 
+ ALF_stablize_current: "稳定化货币"
+ ALF_stablize_current_tt: "§Y阿里乌斯解放阵线§!追加效果：\n市场建设加成系数：§G+10%§!" 
+ ALF_Social_Security_System: "落实社会保障"
+ ALF_Social_Security_System_tt: "§Y阿里乌斯解放阵线§!追加效果：\n每月发展度增长：§G+10%§!\n大幅降低§Y进步哲学§!的影响力。\n不再受到§Y开明哲学§!的认同率影响。"
+ ALF_us_on_history: "我们眼中的历史"
+ ALF_our_stage_on_world: "阿里乌斯应有之地"
+ ALF_our_stage_on_world_desc: "阿里乌斯所应得的一切，不仅仅包括稳定的生活环境、美好的校园，以及充足的生活。这个名字本身，还应当在基沃托斯拥有一席之地。\n\n然而，随着圣三一对过去历史的掩饰和遮盖，整个基沃托斯都已经忘却了阿里乌斯的存在。这一事实应当得到纠正，而幸运的是，机会近在眼前。\n\n现在，圣三一与格黑娜正在签订名为「伊甸条约」的永久和平协议。显然，这一以古老契约为基础的条约，应当同样有阿里乌斯的名字签署其上。\n\n阿里乌斯应当抓住这一关键节点，找到向世人宣誓我们的存在的机会。"
+ ALF_our_stage_on_world_tt: "§G揭示§!关于§C伊甸条约§!的情报。"
+ ALF_mapping_the_tunnel: "测绘地下墓穴"
+ ALF_toward_the_last_object: "§Y加百列行动§!"
+ ALF_toward_the_last_object_desc: "那一刻终于到了。在如此久的等待、煎熬，与磨难之后，流亡者，将来的阿里乌斯解放者们，终于完成了一切准备。\n\n如今，力量的对比已经完全逆转。流亡者已整装待发，而“夫人”只能瑟缩在她那地下墓穴之后的堡垒中。这一次，悬而未决的“内战”将真正地画上句号，而邪恶的力量，终将被解放者们从这片饱受磨难的土地上彻底驱散。\n\n“领袖”已下达指令，而这场战争也只有唯一的目标：\n§Y完成流亡者的未竟之事！§!"
+ ALF_toward_the_last_object_tt: " \n\n\n\n\n\n£ALF_toward_the_last_object_pic \n\n\n\n\n§R汝以此兴，必以此亡！§!"
+ ALF_customized_the_supplyline: "针对性后勤设计"
+ ALF_storm_the_frontline: "强袭作战"
+ ALF_contact_the_resistants: "联络游击队"
+ ALF_Sound_the_bugle: "吹响号角"
 
 
  ALF_way_for_glory: "§Y奔赴荣耀§!"
@@ -293,8 +328,13 @@
  ALF_EPW_crack_target_supply_CAO_decision: "破坏§Y[CAO.GetNameWithFlag]§!的后勤枢纽"
 
  ALF_EPW_Stage_2_counter_mission: "§R凯撒干涉……§!"
+ ALF_EPW_Stage_2_timer_mission: "§R攻势结束……§!"
  ALF_EPW_Stage_2_trigger_mission: "§Y公司战争§!"
  ALF_operation_michael_decision: "§Y发动米迦勒行动§!"
+
+ ALF_Gabriel_operation_category: "加百列行动"
+ ALF_Gabriel_operation_category_desc: "对§Y阿里乌斯§!的§C解放战争§!已经开始。流亡者必须§G全力以赴§!，完成历史赋予的§Y最终使命§!。\n\n然而，§Y“夫人”§!——§C贝阿多莉切§!，这个§R臭名昭著的野心家与欺诈者§!，绝不可能§R坐以待毙§!。毫无疑问，她将§R发动最残酷的反击§!以保全自己。\n\n§Y无可避免§!，在战场上流淌的，依然可能是§Y阿里乌斯同胞的血液§!。而这§R一切代价§!，都要让§R“夫人”为此彻底偿还§!。\n\n§Y任务：§!\n解放阿里乌斯\n\n§Y首要目标：§!\n[138.operation_protect_wing_sl]\n[136.operation_protect_wing_sl]\n\n§Y次要目标：§!\n[530.operation_protect_wing_sl]\n[137.operation_protect_wing_sl]\n[139.operation_protect_wing_sl]\n[532.operation_protect_wing_sl]\n[531.operation_protect_wing_sl]\n\n§Y解放万岁！§!\n"
+ ALF_GBO_trigger_mission: "§Y解放家园……§!"
  
 ####################
 ##新首都！！！
@@ -381,6 +421,10 @@
  decision_cost_has_livability_5pts_blocked: "£market_subsidy_small_texticon §R5§!"
  decision_cost_has_livability_5pts_tooltip: "该决议需要战略储备：§Y5§!"
 
+######其它决议
+ ALF_Eden_treaty_timer_mission: "收集关于§Y伊甸条约§!的情报……"
+
+
 #精神
  ALF_unlock_political_advisor_tt: "\n解锁§Y政治顾问§!："
  ALF_unlock_theorist_tt: "\n解锁§Y理论家§!："
@@ -436,6 +480,12 @@
 
  ALF_hit_on_weakness: "战术反制"
 
+ ALF_day_of_judgement: "审判之日"
+ ALF_day_of_judgement_desc: "“夫人”的§R末日§!到了。"
+
+ ALF_customized_the_supplyline: "针对性后勤设计"
+
+
 ####################
 ##领袖效果！！！
 ####################
@@ -455,6 +505,7 @@
  ALF_JTAC_support_trait: "空中管制官"
  ALF_infantry_assault_trait: "步兵突击专家"
  ALF_logistics_designer_trait: "后勤规划师"
+ ALF_industrial_captain: "工业队长"
 
 ####################
 ##战争目标！！！
@@ -464,6 +515,9 @@
 
  ALF_pacify_target_wargoal: "恢复秩序"
  ALF_pacify_target_wargoal_name: "$ORDER$$FIRST$平定$SECOND$之战"
+
+ ALF_2nd_civilwar_goal: "第二次阿里乌斯内战"
+ ALF_2nd_civilwar_goal_name: "阿里乌斯解放战争"
 
 ####################
 ##省份！！！
@@ -669,3 +723,7 @@
  ALF.33.desc: "几周以来，流亡者位于边界的哨所一直处于最高警戒状态。\n\n流亡者对黑市内各个势力的全面清扫行动如今已进入收尾阶段，随着战局逐渐明朗，位于黑市边缘的凯撒集团，也变得蠢蠢欲动起来。\n\n显然，凯撒集团不会坐视自己的势力被扫地出门。特别勤务处的情报员已经确认，凯撒集团已经开始在边界集结力量。作为应对，最高等级的战备命令也被下达到了各个边境的守备队伍。\n\n毫无疑问，凯撒集团不会放弃他们在黑市的利益和野心。现在，流亡者们警惕的可能性已经化作现实。\n\n在坦克和装甲车的掩护下，凯撒集团的步兵纵队以战斗队形越过了边界。哨兵第一时间就扑向了墙上的电话，毫不犹豫地拨通了那个唯一的号码：\n\n“红色代码！重复一遍，红色代码！”"
  ALF.33.a: "那一天来临了。"
  ALF_EPW_Broke_Out_tt: "§R木已成舟……§!\n解锁§Y公司战争§!国策树"
+
+ ALF.34.t: "阿里乌斯解放战争"
+ ALF.34.desc: "随着“夫人”确认到了我们的存在，这场战争已经不可避免。但同样的，这也是我们渴求已久的战争。几年以来，我们一直在回顾我们在内战中的失败，而现在，我们终于有机会一雪前耻。\n\n“夫人”寄希望于使用武力彻底消灭我们——但这并非什么值得忧虑的事，这表明这位暴君除了动用暴力，已再无别的手段。“贝阿多莉切”，这个毫无底线的野心家，如今已经被逼入角落，歇斯底里。\n\n因此，流亡者有且只有一个任务，那就是彻底终结“夫人”和她的反动政权，将解放的曙光带给这片已经沉沦已久的土地。"
+ ALF.34.a: "完成未竟之事！"

@@ -247,6 +247,17 @@ characters = {
 			planning_skill = 1
 			logistics_skill = 1
 		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ALF_Shigeki_Niki_political_advisor
+			cost = 150
+			available = {
+				has_completed_focus = ALF_call_of_duty
+			}
+			traits = {
+				ALF_industrial_captain
+			}
+		}
 	}
 	##边美安柚
 	ALF_Henmi_Ayu = {

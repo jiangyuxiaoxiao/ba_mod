@@ -138,6 +138,24 @@ ideas = {
 				defense_bonus_against = -0.1
 			}
 		}
+		##审判日
+		ALF_day_of_judgement = {
+			#picture = unknown
+			targeted_modifier = {
+				tag = ARI
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+		##针对性后勤设计
+		ALF_customized_the_supplyline = {
+			#picture = unknown
+			modifier = {
+				no_supply_grace = 24
+				out_of_supply_factor = 0.2
+				supply_node_range = 0.05
+			}
+		}
 	}
 	####
 	industrial_concern = {

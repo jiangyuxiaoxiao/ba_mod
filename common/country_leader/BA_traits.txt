@@ -1303,6 +1303,12 @@ leader_traits = {
 		drift_defence_factor = 0.1
 		Egalitarianism_ideology_drift = 0.04
 	}
+	##工业队长
+	ALF_industrial_captain = {
+		random = no
+		production_speed_buildings_factor = 0.1
+		truck_attrition_factor = -0.2
+	}
 	##合成化理论家
 	ALF_armor_theorist = {
 		random = no
