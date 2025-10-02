@@ -2,42 +2,17 @@ on_actions = {
 	##阿里乌斯解放战争
 	on_declare_war = {
 		effect = {
+			##夫人的宣战效果放在任务里##
 			if = {
 				limit = {
-					OR = {
-						tag = ALF
+					tag = ALF
+					FROM = {
 						tag = ARI
 					}
-					FROM = {
-						OR = {
-							tag = ALF
-							tag = ARI
-						}
-					}
-					OR = {
-						ALF = {
-							OR = {
-								has_war_with_wargoal_against = {
-									target = ARI
-									type = ALF_2nd_civilwar_goal
-								}
-								has_wargoal_against = {
-									target = ARI
-									type = ALF_2nd_civilwar_goal
-								}
-							}
-						}
-						ARI = {
-							OR = {
-								has_war_with_wargoal_against = {
-									target = ALF
-									type = ALF_2nd_civilwar_goal
-								}
-								has_wargoal_against = {
-									target = ALF
-									type = ALF_2nd_civilwar_goal
-								}
-							}
+					ALF = {
+						has_wargoal_against = {
+							target = ARI
+							type = ALF_2nd_civilwar_goal
 						}
 					}
 				}

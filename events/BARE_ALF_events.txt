@@ -736,5 +736,60 @@ country_event = {
 	option = {
 		name = ALF.34.a
 		activate_mission = ALF_GBO_trigger_mission
+		set_country_flag = ALF_GBO_begins_flag
+	}
+}
+
+##伊甸条约打断
+country_event = {
+	id = ALF.35
+	#picture = GFX_common_event_gui_test
+	title = ALF.35.t
+	desc = ALF.35.desc
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = ALF.35.a
+		
+	}
+}
+
+##公司战争胜利
+country_event = {
+	id = ALF.36
+	#picture = GFX_common_event_gui_test
+	title = ALF.36.t
+	desc = ALF.36.desc
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = ALF.36.a
+		activate_mission = ALF_GBO_counter_mission
+	}
+}
+
+#新家-其二
+country_event = {
+	id = ALF.37
+	#picture = GFX_common_event_gui_test
+	title = ALF.37.t
+	desc = ALF.37.desc
+	is_triggered_only = yes
+	option = {
+		name = ALF.37.a
+	}
+}
+
+#故园-其二
+country_event = {
+	id = ALF.38
+	#picture = GFX_common_event_gui_test
+	title = ALF.38.t
+	desc = ALF.38.desc
+	is_triggered_only = yes
+	option = {
+		name = ALF.38.a
 	}
 }

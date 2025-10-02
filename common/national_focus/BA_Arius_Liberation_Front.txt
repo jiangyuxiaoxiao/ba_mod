@@ -3000,7 +3000,9 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			country_event = {
+				id = ALF.38
+			}
 		}
 	}
 
@@ -3119,7 +3121,9 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			country_event = {
+				id = ALF.37
+			}
 		}
 	}
 
@@ -3186,9 +3190,18 @@ focus_tree = {
 		x = 0
 		y = 1
 		available = {
-			
+			NOT = {
+				has_country_flag = ALF_GBO_begins_flag
+			}
+		}
+		bypass = {
+			has_country_flag = ALF_GBO_begins_flag
+		}
+		cancel_trigger = {
+			has_country_flag = ALF_GBO_begins_flag
 		}
 		cancelable = no
+		cancel_if_invalid = yes
 		will_lead_to_war_with = ARI
 		completion_reward = {
 			create_wargoal = {

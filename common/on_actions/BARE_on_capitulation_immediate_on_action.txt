@@ -271,6 +271,22 @@ on_actions = {
                     }
                 }
             }
+            else_if = {
+                limit = {
+                    FROM = {
+                        tag = ALF
+                    }
+                    ROOT = {
+                        tag = ARI
+                    }
+                }
+                FROM = {
+                    annex_country = {
+                        target = ROOT
+                        transfer_troops = no
+                    }
+                }
+            }
             ############################其他情况投降#####################################
             else_if = {
                 #正常投降
