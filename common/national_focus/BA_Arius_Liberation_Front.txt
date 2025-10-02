@@ -2203,7 +2203,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 4
 		x = 27
-		y = 7
+		y = 10
 		allow_branch = {
 			has_global_flag = the_enterprise_war_begins
 		}
@@ -2853,7 +2853,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 4
 		x = 36
-		y = 7
+		y = 10
 		allow_branch = {
 			has_global_flag = EPW_ENDS_global_flag
 		}
@@ -3166,7 +3166,8 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-			
+			custom_effect_tooltip = ALF_mapping_the_tunnel_tt
+			mark_focus_tree_layout_dirty = yes
 		}
 	}
 
@@ -3178,12 +3179,17 @@ focus_tree = {
 		prerequisite = {
 			focus = ALF_mapping_the_tunnel
 		}
+		allow_branch = {
+			has_completed_focus = ALF_mapping_the_tunnel
+		}
 		cost = 1
 		x = 0
 		y = 1
 		available = {
 			
 		}
+		cancelable = no
+		will_lead_to_war_with = ARI
 		completion_reward = {
 			create_wargoal = {
 				target = ARI
@@ -3196,7 +3202,7 @@ focus_tree = {
 	focus = {
 		##针对性后勤设计
 		id = ALF_customized_the_supplyline
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_reinforcing_the_supply_network
 		relative_position_id = ALF_toward_the_last_object
 		prerequisite = {
 			focus = ALF_toward_the_last_object
@@ -3217,13 +3223,14 @@ focus_tree = {
 				idea = ALF_customized_the_supplyline
 				days = 90
 			}
+			unlock_decision_tooltip = ALF_GBO_neutralise_ARI_gov_decision
 		}
 	}
 
 	focus = {
 		##强袭作战
 		id = ALF_storm_the_frontline
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_combined_arms
 		relative_position_id = ALF_toward_the_last_object
 		prerequisite = {
 			focus = ALF_toward_the_last_object
@@ -3237,17 +3244,20 @@ focus_tree = {
 			}
 		}
 		available = {
-			
+			has_war_with = ARI
 		}
 		completion_reward = {
-
+			add_timed_idea = {
+				idea = ALF_speed_and_breakthrough
+				days = 90
+			}
 		}
 	}
 
 	focus = {
 		##联络游击队
 		id = ALF_contact_the_resistants
-		icon = GFX_goal_unknown
+		icon = GFX_focus_ARG_no_gods_no_masters
 		relative_position_id = ALF_toward_the_last_object
 		prerequisite = {
 			focus = ALF_toward_the_last_object
@@ -3261,17 +3271,21 @@ focus_tree = {
 			}
 		}
 		available = {
-			
+			has_war_with = ARI
 		}
 		completion_reward = {
-
+			custom_effect_tooltip = ALF_contact_the_resistants_tt
+			hidden_effect = {
+			load_oob = "ALF_oob_partisans"
+			}
+			unlock_decision_tooltip = ALF_GBO_cooperate_government_decision
 		}
 	}
 
 	focus = {
 		##吹响号角
 		id = ALF_Sound_the_bugle
-		icon = GFX_goal_unknown
+		icon = GFX_focus_ARG_defense_and_democracy
 		relative_position_id = ALF_contact_the_resistants
 		prerequisite = {
 			focus = ALF_contact_the_resistants
@@ -3285,10 +3299,11 @@ focus_tree = {
 			}
 		}
 		available = {
-			
+			has_war_with = ARI
 		}
 		completion_reward = {
-			
+			add_command_power = 50
+			unlock_decision_tooltip = ALF_GBO_assault_decision
 		}
 	}
 

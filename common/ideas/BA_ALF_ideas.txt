@@ -156,6 +156,14 @@ ideas = {
 				supply_node_range = 0.05
 			}
 		}
+		##强袭作战
+		ALF_speed_and_breakthrough = {
+			#picture = unknown
+			modifier = {
+				army_attack_speed_factor = 0.1
+				army_speed_factor = 0.05
+			}
+		}
 	}
 	####
 	industrial_concern = {

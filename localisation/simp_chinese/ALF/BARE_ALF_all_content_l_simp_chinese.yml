@@ -219,14 +219,15 @@
  ALF_our_stage_on_world_desc: "阿里乌斯所应得的一切，不仅仅包括稳定的生活环境、美好的校园，以及充足的生活。这个名字本身，还应当在基沃托斯拥有一席之地。\n\n然而，随着圣三一对过去历史的掩饰和遮盖，整个基沃托斯都已经忘却了阿里乌斯的存在。这一事实应当得到纠正，而幸运的是，机会近在眼前。\n\n现在，圣三一与格黑娜正在签订名为「伊甸条约」的永久和平协议。显然，这一以古老契约为基础的条约，应当同样有阿里乌斯的名字签署其上。\n\n阿里乌斯应当抓住这一关键节点，找到向世人宣誓我们的存在的机会。"
  ALF_our_stage_on_world_tt: "§G揭示§!关于§C伊甸条约§!的情报。"
  ALF_mapping_the_tunnel: "测绘地下墓穴"
+ ALF_mapping_the_tunnel_tt: "拉开§Y阿里乌斯解放战争§!的序幕\n§G解锁§!§C新的国策§!：§Y加百列行动§!"
  ALF_toward_the_last_object: "§Y加百列行动§!"
  ALF_toward_the_last_object_desc: "那一刻终于到了。在如此久的等待、煎熬，与磨难之后，流亡者，将来的阿里乌斯解放者们，终于完成了一切准备。\n\n如今，力量的对比已经完全逆转。流亡者已整装待发，而“夫人”只能瑟缩在她那地下墓穴之后的堡垒中。这一次，悬而未决的“内战”将真正地画上句号，而邪恶的力量，终将被解放者们从这片饱受磨难的土地上彻底驱散。\n\n“领袖”已下达指令，而这场战争也只有唯一的目标：\n§Y完成流亡者的未竟之事！§!"
  ALF_toward_the_last_object_tt: " \n\n\n\n\n\n£ALF_toward_the_last_object_pic \n\n\n\n\n§R汝以此兴，必以此亡！§!"
  ALF_customized_the_supplyline: "针对性后勤设计"
  ALF_storm_the_frontline: "强袭作战"
  ALF_contact_the_resistants: "联络游击队"
+ ALF_contact_the_resistants_tt: "在§Y地下墓穴§!及附近获得§G4§!个§Y游击队单位§!"
  ALF_Sound_the_bugle: "吹响号角"
-
 
  ALF_way_for_glory: "§Y奔赴荣耀§!"
  ALF_way_for_glory_desc: "流亡者们并不知道自己是否期待过这一天。“夫人”和她的爪牙已经倒下，而阿里乌斯的旗帜冉冉升起。这似乎应该是她们这场伟大征途的终结：多年以后，勇者击败了魔王，回到了她心心念念的故乡。\n\n但是，流亡者如今已知晓，这一切并不是这样的。流亡者只是夺回了她们本来的枷锁，而新的正义，尚未得到声张。圣三一学园，如今以其温和与文明的表象而为人所知，而她们所犯下的罪，却至今无人知晓。\n\n「伊甸条约」的存在对阿里乌斯而言是一种伤疤：这些始作俑者如今呼唤和平，却从未反省她们过去造就的一切沟壑。\n\n现在，命运的权杖正为新的阿里乌斯分校紧握：阿里乌斯分校已经整装待发，而她们目标也只有一个，那就是——§G完全胜利！§!"
@@ -333,8 +334,11 @@
  ALF_operation_michael_decision: "§Y发动米迦勒行动§!"
 
  ALF_Gabriel_operation_category: "加百列行动"
- ALF_Gabriel_operation_category_desc: "对§Y阿里乌斯§!的§C解放战争§!已经开始。流亡者必须§G全力以赴§!，完成历史赋予的§Y最终使命§!。\n\n然而，§Y“夫人”§!——§C贝阿多莉切§!，这个§R臭名昭著的野心家与欺诈者§!，绝不可能§R坐以待毙§!。毫无疑问，她将§R发动最残酷的反击§!以保全自己。\n\n§Y无可避免§!，在战场上流淌的，依然可能是§Y阿里乌斯同胞的血液§!。而这§R一切代价§!，都要让§R“夫人”为此彻底偿还§!。\n\n§Y任务：§!\n解放阿里乌斯\n\n§Y首要目标：§!\n[138.operation_protect_wing_sl]\n[136.operation_protect_wing_sl]\n\n§Y次要目标：§!\n[530.operation_protect_wing_sl]\n[137.operation_protect_wing_sl]\n[139.operation_protect_wing_sl]\n[532.operation_protect_wing_sl]\n[531.operation_protect_wing_sl]\n\n§Y解放万岁！§!\n"
+ ALF_Gabriel_operation_category_desc: "对§Y阿里乌斯§!的§C解放战争§!已经开始。流亡者必须§G全力以赴§!，完成历史赋予的§Y最终使命§!。\n\n然而，§Y“夫人”§!——§C贝阿多莉切§!，这个§R臭名昭著的野心家与欺诈者§!，绝不可能§R坐以待毙§!。毫无疑问，她将§R发动最残酷的反击§!以保全自己。\n\n§Y无可避免§!，在战场上流淌的，依然可能是§C阿里乌斯同胞的血液§!。而这§R一切代价§!，都要让§R“夫人”为此彻底偿还§!。\n\n§Y任务：§!\n解放阿里乌斯\n\n§Y首要目标：§!\n[138.operation_protect_wing_sl]\n[136.operation_protect_wing_sl]\n\n§Y次要目标：§!\n[530.operation_protect_wing_sl]\n[137.operation_protect_wing_sl]\n[139.operation_protect_wing_sl]\n[532.operation_protect_wing_sl]\n[531.operation_protect_wing_sl]\n\n§Y解放万岁！§!\n"
  ALF_GBO_trigger_mission: "§Y解放家园……§!"
+ ALF_GBO_assault_decision: "发起总攻"
+ ALF_GBO_cooperate_government_decision: "解放宣传"
+ ALF_GBO_neutralise_ARI_gov_decision: "瓦解抵抗"
  
 ####################
 ##新首都！！！
@@ -484,6 +488,7 @@
  ALF_day_of_judgement_desc: "“夫人”的§R末日§!到了。"
 
  ALF_customized_the_supplyline: "针对性后勤设计"
+ ALF_speed_and_breakthrough: "强袭作战"
 
 
 ####################
