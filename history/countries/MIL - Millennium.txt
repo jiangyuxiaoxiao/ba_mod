@@ -181,3 +181,9 @@ set_popularities = {
 set_variable = {
 	MIL_temp_eleckami = 0
 }
+set_power_balance = {
+    id = MIL_bp_financial_crisis_balance
+    left_side = MIL_bop_stable
+    right_side = MIL_bop_crisis
+    set_default = yes
+}
