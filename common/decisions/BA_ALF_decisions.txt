@@ -1720,6 +1720,10 @@ ALF_Gabriel_operation_category = {
 			}
 		}
 		complete_effect = {
+			country_event = {
+				id = ALF.45
+				days = 2
+			}
 		}
 		timeout_effect = {
 			activate_mission = ALF_GBO_trigger_mission

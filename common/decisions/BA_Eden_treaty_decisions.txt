@@ -1755,7 +1755,6 @@ Eden_treaty_negotiation_decisions = {
 
 Eden_treaty_to_be_signed_decisions = {
 	###阿里乌斯夫人触发器###
-	##这对吗？这触发器就不可能触发##
 	Eden_treaty_to_be_signed = {
 		days_mission_timeout = 70
 		available = {

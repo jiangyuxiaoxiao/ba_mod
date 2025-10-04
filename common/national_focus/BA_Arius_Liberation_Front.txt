@@ -2846,7 +2846,6 @@ focus_tree = {
 			unlock_decision_tooltip = ALF_operation_michael_decision
 		}
 	}
-
 	##冲滩国策##
 	focus = {
 		##梦想升腾
@@ -2865,7 +2864,6 @@ focus_tree = {
 			add_stability = 0.1
 		}
 	}
-
 	focus = {
 		##昨日之师
 		id = ALF_stand_up_from_defeat
@@ -2878,13 +2876,13 @@ focus_tree = {
 		x = -3
 		y = 1
 		available = {
-			
 		}
 		completion_reward = {
-			remove_dynamic_modifier = { modifier = ALF_defeated_in_civil_war }
+			remove_dynamic_modifier = {
+				modifier = ALF_defeated_in_civil_war
+			}
 		}
 	}
-
 	focus = {
 		##决不辜负
 		id = ALF_not_again
@@ -2900,7 +2898,6 @@ focus_tree = {
 		x = 0
 		y = 4
 		available = {
-			
 		}
 		completion_reward = {
 			add_war_support = 0.1
@@ -2911,7 +2908,6 @@ focus_tree = {
 			force_update_dynamic_modifier = yes
 		}
 	}
-
 	focus = {
 		##今日之事
 		id = ALF_call_of_duty
@@ -2924,7 +2920,6 @@ focus_tree = {
 		x = 3
 		y = 1
 		available = {
-			
 		}
 		completion_reward = {
 			random_owned_state = {
@@ -2939,7 +2934,6 @@ focus_tree = {
 			show_ideas_tooltip = ALF_Shigeki_Niki_political_advisor
 		}
 	}
-
 	focus = {
 		##寄往未来的书信
 		id = ALF_focus_future
@@ -2955,15 +2949,13 @@ focus_tree = {
 		x = 0
 		y = 4
 		available = {
-			
 		}
 		completion_reward = {
 			country_event = {
 				id = ALF.40
-			}	
+			}
 		}
 	}
-
 	focus = {
 		##维持工作民主
 		id = ALF_maintain_work_method
@@ -2976,7 +2968,6 @@ focus_tree = {
 		x = 0
 		y = 2
 		available = {
-			
 		}
 		completion_reward = {
 			add_political_power = 50
@@ -2987,7 +2978,6 @@ focus_tree = {
 			force_update_dynamic_modifier = yes
 		}
 	}
-
 	focus = {
 		##历史如何看待我们
 		id = ALF_history_on_us
@@ -3000,7 +2990,6 @@ focus_tree = {
 		x = -2
 		y = 1
 		available = {
-			
 		}
 		completion_reward = {
 			country_event = {
@@ -3008,7 +2997,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		##暴君必得恶果
 		id = ALF_judge_the_evil
@@ -3021,7 +3009,6 @@ focus_tree = {
 		x = 0
 		y = 1
 		available = {
-			
 		}
 		completion_reward = {
 			add_timed_idea = {
@@ -3030,7 +3017,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		##薪酬公平
 		id = ALF_salary_balance
@@ -3043,7 +3029,6 @@ focus_tree = {
 		x = 0
 		y = 1
 		available = {
-			
 		}
 		completion_reward = {
 			custom_effect_tooltip = ALF_salary_balance_tt
@@ -3056,7 +3041,6 @@ focus_tree = {
 			force_update_dynamic_modifier = yes
 		}
 	}
-
 	focus = {
 		##稳定货币
 		id = ALF_stablize_current
@@ -3069,7 +3053,6 @@ focus_tree = {
 		x = 0
 		y = 1
 		available = {
-			
 		}
 		completion_reward = {
 			custom_effect_tooltip = ALF_stablize_current_tt
@@ -3079,7 +3062,6 @@ focus_tree = {
 			force_update_dynamic_modifier = yes
 		}
 	}
-
 	focus = {
 		##社会保障系统
 		id = ALF_Social_Security_System
@@ -3092,7 +3074,6 @@ focus_tree = {
 		x = 0
 		y = 1
 		available = {
-			
 		}
 		completion_reward = {
 			custom_effect_tooltip = ALF_Social_Security_System_tt
@@ -3108,7 +3089,6 @@ focus_tree = {
 			force_update_dynamic_modifier = yes
 		}
 	}
-
 	focus = {
 		##我们如何看待历史
 		id = ALF_us_on_history
@@ -3121,7 +3101,6 @@ focus_tree = {
 		x = 2
 		y = 1
 		available = {
-			
 		}
 		completion_reward = {
 			country_event = {
@@ -3129,7 +3108,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		##我们应有的一席之地
 		id = ALF_our_stage_on_world
@@ -3142,7 +3120,6 @@ focus_tree = {
 		x = 0
 		y = 1
 		available = {
-			
 		}
 		completion_reward = {
 			custom_effect_tooltip = ALF_our_stage_on_world_tt
@@ -3151,7 +3128,6 @@ focus_tree = {
 			set_cosmetic_tag = ALF_Liberation_Front_cosmetic_tag
 		}
 	}
-
 	focus = {
 		##测绘地下墓穴
 		id = ALF_mapping_the_tunnel
@@ -3170,9 +3146,8 @@ focus_tree = {
 		x = 0
 		y = 1
 		available = {
-			
 		}
-		select_effect = { 
+		select_effect = {
 			country_event = {
 				id = ALF.39
 				days = 2
@@ -3182,10 +3157,8 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = ALF_mapping_the_tunnel_tt
 			mark_focus_tree_layout_dirty = yes
-			
 		}
 	}
-
 	focus = {
 		##向最后的目标前进
 		id = ALF_toward_the_last_object
@@ -3222,7 +3195,6 @@ focus_tree = {
 			custom_effect_tooltip = ALF_toward_the_last_object_tt
 		}
 	}
-
 	focus = {
 		##针对性后勤设计
 		id = ALF_customized_the_supplyline
@@ -3250,7 +3222,6 @@ focus_tree = {
 			unlock_decision_tooltip = ALF_GBO_neutralise_ARI_gov_decision
 		}
 	}
-
 	focus = {
 		##强袭作战
 		id = ALF_storm_the_frontline
@@ -3277,7 +3248,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		##联络游击队
 		id = ALF_contact_the_resistants
@@ -3300,12 +3270,19 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = ALF_contact_the_resistants_tt
 			hidden_effect = {
-			load_oob = "ALF_oob_partisans"
+				load_oob = "ALF_oob_partisans"
+			}
+			country_event = {
+				id = ALF.43
+			}
+			ARI = {
+				country_event = {
+					id = ALF.43
+				}
 			}
 			unlock_decision_tooltip = ALF_GBO_cooperate_government_decision
 		}
 	}
-
 	focus = {
 		##吹响号角
 		id = ALF_Sound_the_bugle
@@ -3330,7 +3307,6 @@ focus_tree = {
 			unlock_decision_tooltip = ALF_GBO_assault_decision
 		}
 	}
-
 	###奔赴荣耀
 	focus = {
 		id = ALF_way_for_glory
@@ -3354,5 +3330,4 @@ focus_tree = {
 			}
 		}
 	}
-
 }

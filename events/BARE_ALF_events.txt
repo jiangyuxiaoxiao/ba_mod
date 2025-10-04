@@ -775,6 +775,10 @@ country_event = {
 			id = ALF.44
 			days = 14
 		}
+		hidden_effect = {
+			id = ALF.42
+			days = 28
+		}
 	}
 }
 
@@ -848,7 +852,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = ALF.42.a
-		custom_effect_tooltip = mika_s_bet_tt
+		custom_effect_tooltip = mika_s_bet_echo_tt
 	}
 }
 
@@ -872,6 +876,7 @@ country_event = {
 				states = {
 					530
 				}
+				set_country_flag = ALF_ARI_ARR_aliases_country_flag
 				ALF = {
 					set_autonomy = {
 						target = PREV
@@ -960,6 +965,39 @@ country_event = {
 				is_core_of = FSC
 			}
 			remove_core_of = FSC
+			add_core_of = ALF
+		}
+	}
+}
+
+##冲滩胜利
+country_event = {
+	id = ALF.45
+	#picture = GFX_common_event_gui_test
+	title = ALF.45.t
+	desc = ALF.45.desc
+	is_triggered_only = yes
+	option = {
+		name = ALF.45.a
+		custom_effect_tooltip = ALF_dead_of_the_evil_tt
+		##改名##
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = ALF_SchoolName_Cosmetic
+		##移除deff##
+		remove_ideas = ALF_shadow_follows
+		##核心化土地##
+		every_owned_state = {
+			limit = {
+				is_core_of = ARI
+			}
+			remove_core_of = ARI
+			add_core_of = ALF
+		}
+		every_owned_state = {
+			limit = {
+				is_core_of = ARR
+			}
+			remove_core_of = ARR
 			add_core_of = ALF
 		}
 	}
