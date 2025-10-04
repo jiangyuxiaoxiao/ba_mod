@@ -285,6 +285,18 @@ on_actions = {
                         target = ROOT
                         transfer_troops = no
                     }
+                    random_country = {
+                        limit = {
+                            original_tag = ARI
+                            is_subject_of = ALF
+                        }
+                        ALF = {
+                            annex_country = {
+                                target = PREV
+                                transfer_troops = no
+                            }
+                        }
+                    }
                 }
             }
             ############################其他情况投降#####################################

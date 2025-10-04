@@ -371,6 +371,10 @@ country_event = {
 				id = ALF.30
 				days = 850
 			}
+			country_event = {
+				id = ALF.41
+				days = 365
+			}
 		}
 	}
 }
@@ -737,6 +741,7 @@ country_event = {
 		name = ALF.34.a
 		activate_mission = ALF_GBO_trigger_mission
 		set_country_flag = ALF_GBO_begins_flag
+		set_global_flag = ARIUS_IN_BLACKMARKET_ROAD_OPEN_GLOBAL_FLAG
 	}
 }
 
@@ -751,7 +756,6 @@ country_event = {
 	}
 	option = {
 		name = ALF.35.a
-		
 	}
 }
 
@@ -767,6 +771,10 @@ country_event = {
 	option = {
 		name = ALF.36.a
 		activate_mission = ALF_GBO_counter_mission
+		country_event = {
+			id = ALF.44
+			days = 14
+		}
 	}
 }
 
@@ -791,5 +799,168 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = ALF.38.a
+	}
+}
+
+##测绘
+country_event = {
+	id = ALF.39
+	#picture = GFX_common_event_gui_test
+	title = ALF.39.t
+	desc = ALF.39.desc
+	is_triggered_only = yes
+	option = {
+		name = ALF.39.a
+		add_war_support = 0.1
+	}
+}
+
+##致夏莱
+country_event = {
+	id = ALF.40
+	#picture = GFX_common_event_gui_test
+	title = ALF.40.t
+	desc = ALF.40.desc
+	is_triggered_only = yes
+	option = {
+		name = ALF.40.a
+	}
+}
+
+##不速之客（未花）
+country_event = {
+	id = ALF.41
+	#picture = GFX_common_event_gui_test
+	title = ALF.41.t
+	desc = ALF.41.desc
+	is_triggered_only = yes
+	option = {
+		name = ALF.41.a
+		custom_effect_tooltip = mika_s_bet_tt
+	}
+}
+
+country_event = {
+	id = ALF.42
+	#picture = GFX_common_event_gui_test
+	title = ALF.42.t
+	desc = ALF.42.desc
+	is_triggered_only = yes
+	option = {
+		name = ALF.42.a
+		custom_effect_tooltip = mika_s_bet_tt
+	}
+}
+
+##
+country_event = {
+	id = ALF.43
+	#picture = GFX_common_event_gui_test
+	title = ALF.43.t
+	desc = ALF.43.desc
+	is_triggered_only = yes
+	option = {
+		name = ALF.43.a
+		trigger = {
+			tag = ALF
+		}
+		ARI = {
+			start_civil_war = {
+				ideology = Egalitarianism_ideology
+				size = 0.3
+				capital = 530
+				states = {
+					530
+				}
+				ALF = {
+					set_autonomy = {
+						target = PREV
+						autonomous_state = autonomy_bare_trusteeship_area
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = ALF.43.b
+		trigger = {
+			tag = ARI
+		}
+		add_timed_idea = {
+			idea = ALF_ARI_striked
+			days = 30
+		}
+	}
+}
+
+###
+country_event = {
+	id = ALF.44
+	picture = GFX_FSC_Leader_portrait_picture
+	title = ALF.44.t
+	desc = ALF.44.desc
+	is_triggered_only = yes
+	option = {
+		name = ALF.44.a
+		###
+		add_equipment_to_stockpile = {
+			type = small_uav_recon_equipment_2
+			amount = 100
+			producer = FSC
+		}
+		add_equipment_to_stockpile = {
+			type = heavy_uav_equipment_2
+			amount = 200
+			producer = FSC
+		}
+		###
+		custom_effect_tooltip = ALF_oob_heavyarmor_tt
+		if = {
+			limit = {
+				NOT = {
+					has_tech = medium_tank_artillery_MK1
+				}
+				set_technology = {
+					medium_tank_artillery_MK1 = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_tech = medium_tank_MK2
+				}
+				set_technology = {
+					medium_tank_MK2 = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_tech = medium_tank_artillery_MK2
+				}
+				set_technology = {
+					medium_tank_artillery_MK2 = 1
+				}
+			}
+		}
+		hidden_effect = {
+			load_oob = "ALF_oob_heavyarmor"
+		}
+
+		ALF = {
+			annex_country = {
+				target = FSC
+				transfer_troops = no
+			}
+		}
+		every_state = {
+			limit = {
+				is_core_of = FSC
+			}
+			remove_core_of = FSC
+			add_core_of = ALF
+		}
 	}
 }

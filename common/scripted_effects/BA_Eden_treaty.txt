@@ -136,174 +136,166 @@ Eden_treaty_change_weights = {
 }
 
 Eden_treaty_next_phase = {
-	if = {
-		limit = {
-			always = no
+	hidden_effect = {
+		set_variable = {
+			TRI_weights@var:global.Eden_treaty_phase = TRI.Eden_treaty_weights
 		}
-		##触发ALF的接口
-	}
-	else = {
-		hidden_effect = {
-			set_variable = {
-				TRI_weights@var:global.Eden_treaty_phase = TRI.Eden_treaty_weights
-			}
-			set_variable = {
-				GEH_weights@var:global.Eden_treaty_phase = GEH.Eden_treaty_weights
-			}
-			set_temp_variable = {
-				TRI_point = TRI.Eden_treaty_weights
-			}
-			set_temp_variable = {
-				GEH_point = GEH.Eden_treaty_weights
-			}
-			#开局阶段结束
-			if = {
-				limit = {
-					check_variable = {
-						global.Eden_treaty_phase = token:Eden_treaty_phase_opening
-					}
+		set_variable = {
+			GEH_weights@var:global.Eden_treaty_phase = GEH.Eden_treaty_weights
+		}
+		set_temp_variable = {
+			TRI_point = TRI.Eden_treaty_weights
+		}
+		set_temp_variable = {
+			GEH_point = GEH.Eden_treaty_weights
+		}
+		#开局阶段结束
+		if = {
+			limit = {
+				check_variable = {
+					global.Eden_treaty_phase = token:Eden_treaty_phase_opening
 				}
-				set_variable = {
+			}
+			set_variable = {
+				global.Eden_treaty_phase = token:Eden_treaty_phase_negotiating
+			}
+			set_variable = {
+				global.Eden_treaty_progress = 0
+			}
+		}
+		#谈判阶段结束
+		else_if = {
+			limit = {
+				check_variable = {
 					global.Eden_treaty_phase = token:Eden_treaty_phase_negotiating
 				}
-				set_variable = {
-					global.Eden_treaty_progress = 0
-				}
 			}
-			#谈判阶段结束
-			else_if = {
-				limit = {
-					check_variable = {
-						global.Eden_treaty_phase = token:Eden_treaty_phase_negotiating
-					}
-				}
-				set_variable = {
-					global.Eden_treaty_phase = token:Eden_treaty_phase_agreement
-				}
-				set_variable = {
-					global.Eden_treaty_progress = 0
-				}
-				if = {
-					limit = {
-						check_variable = {
-							global.Eden_treaty_negotiation_phase_leader^0 = TRI
-						}
-					}
-					set_temp_variable = {
-						extra_point = GEH_weights@var:global.Eden_treaty_phase_opening
-					}
-					multiply_temp_variable = {
-						extra_point = 0.15
-					}
-					add_to_temp_variable = {
-						GEH_point = extra_point
-					}
-				}
-				else_if = {
-					limit = {
-						check_variable = {
-							global.Eden_treaty_negotiation_phase_leader^0 = GEH
-						}
-					}
-					set_temp_variable = {
-						extra_point = TRI_weights@var:global.Eden_treaty_phase_opening
-					}
-					multiply_temp_variable = {
-						extra_point = 0.15
-					}
-					add_to_temp_variable = {
-						TRI_point = extra_point
-					}
-				}
+			set_variable = {
+				global.Eden_treaty_phase = token:Eden_treaty_phase_agreement
 			}
-			#协议阶段结束
-			else = {
-				clr_global_flag = Eden_treaty_negotiation_ongoing
-				set_global_flag = Eden_treaty_negotiation_completed
-				set_global_flag = BA_2st_eden_pact_end
-				activate_mission = Eden_treaty_to_be_signed
-				140 = {
-					set_demilitarized_zone = yes
-				}
-				529 = {
-					set_demilitarized_zone = yes
-				}
-				if = {
-					limit = {
-						check_variable = {
-							global.Eden_treaty_negotiation_phase_leader^1 = TRI
-						}
-					}
-					set_temp_variable = {
-						extra_point = GEH_weights@var:global.Eden_treaty_phase_negotiating
-					}
-					multiply_temp_variable = {
-						extra_point = 0.15
-					}
-					add_to_temp_variable = {
-						GEH_point = extra_point
-					}
-				}
-				else_if = {
-					limit = {
-						check_variable = {
-							global.Eden_treaty_negotiation_phase_leader^1 = GEH
-						}
-					}
-					set_temp_variable = {
-						extra_point = TRI_weights@var:global.Eden_treaty_phase_negotiating
-					}
-					multiply_temp_variable = {
-						extra_point = 0.15
-					}
-					add_to_temp_variable = {
-						TRI_point = extra_point
-					}
-				}
-				clear_variable = global.Eden_treaty_phase
-				clear_variable = global.Eden_treaty_progress
-				TRI = {
-					country_event = Eden_pact.100
-					clear_variable = Eden_treaty_weights
-				}
-				GEH = {
-					country_event = Eden_pact.100
-					clear_variable = Eden_treaty_weights
-				}
-				ARI = {
-					country_event = Eden_pact.102
-				}
+			set_variable = {
+				global.Eden_treaty_progress = 0
 			}
 			if = {
 				limit = {
 					check_variable = {
-						TRI_point > GEH_point
+						global.Eden_treaty_negotiation_phase_leader^0 = TRI
 					}
 				}
-				add_to_array = {
-					global.Eden_treaty_negotiation_phase_leader = TRI
+				set_temp_variable = {
+					extra_point = GEH_weights@var:global.Eden_treaty_phase_opening
 				}
-				add_to_variable = {
-					global.Eden_treaty_TRI_score = 1
+				multiply_temp_variable = {
+					extra_point = 0.15
+				}
+				add_to_temp_variable = {
+					GEH_point = extra_point
 				}
 			}
 			else_if = {
 				limit = {
 					check_variable = {
-						TRI_point < GEH_point
+						global.Eden_treaty_negotiation_phase_leader^0 = GEH
 					}
 				}
-				add_to_array = {
-					global.Eden_treaty_negotiation_phase_leader = GEH
+				set_temp_variable = {
+					extra_point = TRI_weights@var:global.Eden_treaty_phase_opening
 				}
-				add_to_variable = {
-					global.Eden_treaty_GEH_score = 1
+				multiply_temp_variable = {
+					extra_point = 0.15
+				}
+				add_to_temp_variable = {
+					TRI_point = extra_point
 				}
 			}
-			else = {
-				add_to_array = {
-					global.Eden_treaty_negotiation_phase_leader = 0
+		}
+		#协议阶段结束
+		else = {
+			clr_global_flag = Eden_treaty_negotiation_ongoing
+			set_global_flag = Eden_treaty_negotiation_completed
+			set_global_flag = BA_2st_eden_pact_end
+			activate_mission = Eden_treaty_to_be_signed
+			140 = {
+				set_demilitarized_zone = yes
+			}
+			529 = {
+				set_demilitarized_zone = yes
+			}
+			if = {
+				limit = {
+					check_variable = {
+						global.Eden_treaty_negotiation_phase_leader^1 = TRI
+					}
 				}
+				set_temp_variable = {
+					extra_point = GEH_weights@var:global.Eden_treaty_phase_negotiating
+				}
+				multiply_temp_variable = {
+					extra_point = 0.15
+				}
+				add_to_temp_variable = {
+					GEH_point = extra_point
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.Eden_treaty_negotiation_phase_leader^1 = GEH
+					}
+				}
+				set_temp_variable = {
+					extra_point = TRI_weights@var:global.Eden_treaty_phase_negotiating
+				}
+				multiply_temp_variable = {
+					extra_point = 0.15
+				}
+				add_to_temp_variable = {
+					TRI_point = extra_point
+				}
+			}
+			clear_variable = global.Eden_treaty_phase
+			clear_variable = global.Eden_treaty_progress
+			TRI = {
+				country_event = Eden_pact.100
+				clear_variable = Eden_treaty_weights
+			}
+			GEH = {
+				country_event = Eden_pact.100
+				clear_variable = Eden_treaty_weights
+			}
+			ARI = {
+				country_event = Eden_pact.102
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					TRI_point > GEH_point
+				}
+			}
+			add_to_array = {
+				global.Eden_treaty_negotiation_phase_leader = TRI
+			}
+			add_to_variable = {
+				global.Eden_treaty_TRI_score = 1
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					TRI_point < GEH_point
+				}
+			}
+			add_to_array = {
+				global.Eden_treaty_negotiation_phase_leader = GEH
+			}
+			add_to_variable = {
+				global.Eden_treaty_GEH_score = 1
+			}
+		}
+		else = {
+			add_to_array = {
+				global.Eden_treaty_negotiation_phase_leader = 0
 			}
 		}
 	}

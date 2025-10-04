@@ -2510,6 +2510,7 @@ focus_tree = {
 			has_global_flag = EPW_ENDS_global_flag
 		}
 		completion_reward = {
+			##得给雷达科技##
 			random_owned_state = {
 				limit = {
 					is_owned_and_controlled_by = ALF
@@ -2636,10 +2637,10 @@ focus_tree = {
 					}
 				}
 				223 = {
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
-						type = arms_factory
-						level = 1
+						type = heavy_arms_factory
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -2653,7 +2654,7 @@ focus_tree = {
 				221 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
-						type = arms_factory
+						type = heavy_arms_factory
 						level = 1
 						instant_build = yes
 					}
@@ -2666,10 +2667,10 @@ focus_tree = {
 					}
 				}
 				195 = {
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = arms_factory
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -2873,7 +2874,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ALF_dream_approaching
 		}
-		cost = 2
+		cost = 1
 		x = -3
 		y = 1
 		available = {
@@ -2895,7 +2896,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ALF_judge_the_evil
 		}
-		cost = 2
+		cost = 1
 		x = 0
 		y = 4
 		available = {
@@ -2919,7 +2920,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ALF_dream_approaching
 		}
-		cost = 2
+		cost = 1
 		x = 3
 		y = 1
 		available = {
@@ -2950,14 +2951,16 @@ focus_tree = {
 		prerequisite = {
 			focus = ALF_our_stage_on_world
 		}
-		cost = 2
+		cost = 1
 		x = 0
 		y = 4
 		available = {
 			
 		}
 		completion_reward = {
-			
+			country_event = {
+				id = ALF.40
+			}	
 		}
 	}
 
@@ -2993,7 +2996,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ALF_maintain_work_method
 		}
-		cost = 2
+		cost = 1
 		x = -2
 		y = 1
 		available = {
@@ -3014,7 +3017,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ALF_history_on_us
 		}
-		cost = 2
+		cost = 1
 		x = 0
 		y = 1
 		available = {
@@ -3114,7 +3117,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ALF_maintain_work_method
 		}
-		cost = 2
+		cost = 1
 		x = 2
 		y = 1
 		available = {
@@ -3135,7 +3138,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ALF_us_on_history
 		}
-		cost = 2
+		cost = 1
 		x = 0
 		y = 1
 		available = {
@@ -3169,9 +3172,17 @@ focus_tree = {
 		available = {
 			
 		}
+		select_effect = { 
+			country_event = {
+				id = ALF.39
+				days = 2
+			}
+		}
+		cancelable = no
 		completion_reward = {
 			custom_effect_tooltip = ALF_mapping_the_tunnel_tt
 			mark_focus_tree_layout_dirty = yes
+			
 		}
 	}
 

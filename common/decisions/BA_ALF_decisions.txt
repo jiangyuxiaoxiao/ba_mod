@@ -39,8 +39,10 @@ ALF_military_reform_decision_category = {
 			has_mrd_pts = yes
 		}
 		custom_cost_text = decision_cost_has_mrd_pts
-		remove_effect = {
+		complete_effect = {
 			ALF_use_1_mrd_pts = yes
+		}
+		remove_effect = {	
 			custom_effect_tooltip = ALF_mrd_trainning_improve_tt
 			add_to_variable = {
 				mrd_trainning_progress = 1
@@ -76,8 +78,10 @@ ALF_military_reform_decision_category = {
 			has_mrd_pts = yes
 		}
 		custom_cost_text = decision_cost_has_mrd_pts
-		remove_effect = {
+		complete_effect = {
 			ALF_use_1_mrd_pts = yes
+		}
+		remove_effect = {
 			custom_effect_tooltip = ALF_mrd_armor_improve_tt
 			add_to_variable = {
 				mrd_armor_progress = 1
@@ -113,8 +117,10 @@ ALF_military_reform_decision_category = {
 			has_mrd_pts = yes
 		}
 		custom_cost_text = decision_cost_has_mrd_pts
-		remove_effect = {
+		complete_effect = {
 			ALF_use_1_mrd_pts = yes
+		}
+		remove_effect = {
 			custom_effect_tooltip = ALF_mrd_modernize_improve_tt
 			add_to_variable = {
 				mrd_modernize_progress = 1
@@ -153,8 +159,10 @@ ALF_military_reform_decision_category = {
 			has_mrd_pts = yes
 		}
 		custom_cost_text = decision_cost_has_mrd_pts
-		remove_effect = {
+		complete_effect = {
 			ALF_use_1_mrd_pts = yes
+		}
+		remove_effect = {
 			custom_effect_tooltip = ALF_mrd_officer_improve_tt
 			add_to_variable = {
 				mrd_officer_progress = 1
@@ -190,8 +198,10 @@ ALF_military_reform_decision_category = {
 			has_mrd_pts = yes
 		}
 		custom_cost_text = decision_cost_has_mrd_pts
-		remove_effect = {
+		complete_effect = {
 			ALF_use_1_mrd_pts = yes
+		}
+		remove_effect = {
 			custom_effect_tooltip = ALF_mrd_artillery_improve_tt
 			add_to_variable = {
 				mrd_artillery_progress = 1
@@ -219,8 +229,10 @@ ALF_military_reform_decision_category = {
 		cost = 50
 		days_remove = 60
 		fire_only_once = yes
-		remove_effect = {
+		complete_effect = {
 			ALF_use_livability_5_pts = yes
+		}
+		remove_effect = {
 			ALF_improve_military_reform_int_10 = yes
 		}
 	}
@@ -591,10 +603,10 @@ ALF_Livability_decision_category = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -629,10 +641,10 @@ ALF_Livability_decision_category = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -1307,6 +1319,9 @@ ALF_anti_kaiser_operation_category = {
 					id = ALF.36
 				}
 			}
+			news_event = {
+				id = ALF_news_event.2
+			}
 		}
 	}
 	ALF_EPW_Stage_2_trigger_mission = {
@@ -1378,6 +1393,9 @@ ALF_anti_kaiser_operation_category = {
 			}
 			country_event = {
 				id = ALF.33
+			}
+			news_event = {
+				id = ALF_news_event.3
 			}
 		}
 	}
@@ -1661,7 +1679,7 @@ ALF_Gabriel_operation_category = {
 	ALF_GBO_counter_mission = {
 		priority = 99
 		is_good = no
-		days_mission_timeout = 180
+		days_mission_timeout = 200
 		activation = {
 			always = no
 		}

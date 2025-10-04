@@ -41,9 +41,11 @@ set_technology = {
 	Heavy_industry_T1 = 1
 	Infrastructure_construction_T1 = 1
 	Train_T1 = 1
+	Communications_radar_T1 = 1
 	#坦克
 	medium_tank_MK1 = 1
 	civilian_car_equipment_T1 = 1
+	Armored_Vehicles_T1 = 1
 	Infantry_fighting_vehicle_T1 = 1
 	Infantry_fighting_vehicle_ART_T1 = 1
 	Infantry_fighting_vehicle_AT_T1 = 1

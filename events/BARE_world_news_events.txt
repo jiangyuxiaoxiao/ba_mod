@@ -830,6 +830,7 @@ news_event = {
 
 
 add_namespace = ALF_news_event
+##公司战争结束-流亡者大胜
 news_event = {
 	id = ALF_news_event.1
 	#picture = GFX_BA_news_18
@@ -838,8 +839,36 @@ news_event = {
 	is_triggered_only = yes
 	major = yes
 	
-	#有趣
 	option = {
 		name = ALF_news_event.1.a
 	}
 }
+
+##公司战争结束-流亡者小胜
+news_event = {
+	id = ALF_news_event.2
+	#picture = GFX_BA_news_18
+	title = ALF_news_event.2.t
+	desc = ALF_news_event.2.desc
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = ALF_news_event.2.a
+	}
+}
+
+##公司战争开始
+news_event = {
+	id = ALF_news_event.3
+	#picture = GFX_BA_news_18
+	title = ALF_news_event.3.t
+	desc = ALF_news_event.3.desc
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = ALF_news_event.3.a
+	}
+}
+
