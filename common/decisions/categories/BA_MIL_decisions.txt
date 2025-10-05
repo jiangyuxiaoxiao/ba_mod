@@ -1,0 +1,10 @@
+#权力平衡决议组
+MIL_bop_decision_category = {
+	icon = generic_research
+
+
+	visible = {
+		original_tag = MIL
+	}
+	priority = 1098
+}
