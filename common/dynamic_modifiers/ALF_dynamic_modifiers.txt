@@ -32,6 +32,10 @@ ALF_party_modifier = {
 	Authoritarian_ideology_drift = ALF_party_Authoritarian_ideology_drift_var
 	Liberalism_ideology_drift = ALF_party_Liberalism_ideology_drift_var
 	Mysticism_ideology_drift = ALF_party_Mysticism_ideology_drift_var
+
+	##战后效果##
+	party_popularity_stability_factor = ALF_party_popularity_stability_factor_var
+	max_command_power = ALF_max_command_power_var
 }
 
 ##流亡者武装力量
@@ -109,4 +113,16 @@ ALF_city_loadout_optimized_dynamic_modifier = {
 	}
 	local_factories = 0.1
 	local_supplies = 0.1
+}
+
+##破碎之地
+ALF_ruins_of_civil_war_dynamic_modifier = {
+	icon = "GFX_idea_unknown"
+	enable = {
+		always = yes
+	}
+	local_factories = -0.5
+	local_resources = -0.5
+	local_manpower = -0.7
+	local_supplies = -0.2
 }

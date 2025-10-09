@@ -87,10 +87,28 @@ ALF_Gabriel_operation_category = {
 	}
 	visible = {
 		has_completed_focus = ALF_toward_the_last_object
-		has_country_flag = ALF_Gabriel_operation_success
+		NOT = {
+			has_country_flag = ALF_Gabriel_operation_success
+		}
 	}
 	#scripted_gui = ALF_military_reform_decision_ui_progressbar_sg
 	visible_when_empty = yes
 	priority = 9999
 }
 
+##乌列尔行动
+ALF_Uriel_operation_category = {
+	icon = generic_research
+	allowed = {
+		tag = ALF
+	}
+	visible = {
+		has_completed_focus = ALF_storm_eye
+		NOT = {
+			has_country_flag = ALF_Uriel_operation_success
+		}
+	}
+	#scripted_gui = ALF_military_reform_decision_ui_progressbar_sg
+	visible_when_empty = yes
+	priority = 9999
+}

@@ -14,6 +14,15 @@ ALF_initialize_livability_system_effect = {
 				value = THIS.id
 			}
 		}
+		every_state = {
+			limit = {
+				is_core_of = ARI
+			}
+			add_to_array = {
+				array = global.ALF_Arius_state
+				value = THIS.id
+			}
+		}
 	}
 	##初始化战略储备所需数值##
 	ALF = {
@@ -396,5 +405,244 @@ ALF_reduce_technology_left_behind_effect = {
 		set_country_flag = ALF_technology_left_behind_1_removed_flag
 	}
 	else = {
+	}
+}
+
+###伊甸失败导致圣三一政变####
+ALF_failure_impact_of_eden_treaty_TRI_stage_0 = {
+	##设置非军事区
+	115 = {
+		set_demilitarized_zone = yes
+	}
+	368 = {
+		set_demilitarized_zone = yes
+	}
+	125 = {
+		set_demilitarized_zone = yes
+	}
+	687 = {
+		set_demilitarized_zone = yes
+	}
+	128 = {
+		set_demilitarized_zone = yes
+	}
+	129 = {
+		set_demilitarized_zone = yes
+	}
+	685 = {
+		set_demilitarized_zone = yes
+	}
+	123 = {
+		set_demilitarized_zone = yes
+	}
+	689 = {
+		set_demilitarized_zone = yes
+	}
+	##触发下一阶段
+	country_event = {
+		id = ALF.47
+		days = 15
+	}
+}
+
+ALF_failure_impact_of_eden_treaty_TRI_stage_1 = {
+	##炸强硬派
+	create_dynamic_country = {
+		original_tag = TRI
+		set_country_flag = bad_TRI_flag
+		set_cosmetic_tag = TRT_BAD_COSMETIC
+		set_politics = {
+			ruling_party = Authoritarian_ideology
+			elections_allowed = no
+		}
+		set_political_party = {
+			ideology = Authoritarian_ideology
+			popularity = 100
+		}
+		##分配地块##
+		transfer_state = 118
+		##触发下一阶段
+		country_event = {
+			id = ALF.48
+			days = 5
+		}
+	}
+	TRA = {
+		annex_country = {
+			target = TRI
+			transfer_troops = yes
+		}
+		set_autonomy = {
+			target = A01
+			autonomous_state = autonomy_bare_trusteeship_area
+			end_wars = yes
+			end_civil_wars = yes
+		}
+		set_autonomy = {
+			target = A02
+			autonomous_state = autonomy_bare_trusteeship_area
+			end_wars = yes
+			end_civil_wars = yes
+		}
+		set_autonomy = {
+			target = A04
+			autonomous_state = autonomy_bare_trusteeship_area
+			end_wars = yes
+			end_civil_wars = yes
+		}
+		set_autonomy = {
+			target = A05
+			autonomous_state = autonomy_bare_trusteeship_area
+			end_wars = yes
+			end_civil_wars = yes
+		}
+		news_event = {
+			id = ALF_news_event.5
+		}
+	}
+}
+
+ALF_failure_impact_of_eden_treaty_TRI_stage_2 = {
+	##爆混乱区
+	115 = {
+		transfer_state_to = TRR
+	}
+	368 = {
+		transfer_state_to = TRR
+	}
+	125 = {
+		transfer_state_to = TRR
+	}
+	687 = {
+		transfer_state_to = TRR
+	}
+	128 = {
+		transfer_state_to = TRR
+	}
+	129 = {
+		transfer_state_to = TRR
+	}
+	685 = {
+		transfer_state_to = TRR
+	}
+	123 = {
+		transfer_state_to = TRR
+	}
+	689 = {
+		transfer_state_to = TRR
+	}
+	##犁庭扫穴##
+	TRA = {
+		declare_war_on = {
+			target = TRR
+			type = annex_everything
+		}
+	}
+	TRA = {
+		##触发下一阶段
+		country_event = {
+			id = ALF.49
+			days = 7
+		}
+	}
+}
+
+ALF_failure_impact_of_eden_treaty_TRI_stage_3 = {
+	##生成一个抵抗区
+	##TRT
+	create_dynamic_country = {
+		original_tag = TRI
+		copy_tag = TRI
+		set_country_flag = resistant_TRI_flag
+		set_politics = {
+			ruling_party = Progressivism_ideology
+			elections_allowed = no
+		}
+		set_political_party = {
+			ideology = Progressivism_ideology
+			popularity = 100
+		}
+		set_cosmetic_tag = TRT_GOV_COSMETIC
+		transfer_state = 140
+		transfer_state = 683
+		transfer_state = 529
+	}
+}
+
+###伊甸失败导致格赫娜政变####
+ALF_failure_impact_of_eden_treaty_GEH_stage_0 = {
+	create_dynamic_country = {
+		original_tag = GEH
+		set_country_flag = loyality_GEH_flag
+		set_cosmetic_tag = GEH_LOY_COSMETIC
+		set_politics = {
+			ruling_party = Liberalism_ideology
+			elections_allowed = no
+		}
+		set_political_party = {
+			ideology = Liberalism_ideology
+			popularity = 100
+		}
+		transfer_state = 305
+	}
+	create_dynamic_country = {
+		original_tag = GEH
+		set_country_flag = resistants_GEH_flag
+		set_cosmetic_tag = GEH_GOV_COSMETIC
+		transfer_state = 141
+		transfer_state = 650
+	}
+	GEL = {
+		annex_country = {
+			target = GEH
+			transfer_troops = yes
+		}
+	}
+	GEL = {
+		start_civil_war = {
+			ideology = Authoritarian_ideology
+			size = 0.8
+			capital = 305
+			set_country_flag = bad_GEH_flag
+			set_cosmetic_tag = GEH_BAD_COSMETIC
+		}
+	}
+	news_event = {
+		id = ALF_news_event.6
+	}
+}
+
+ALF_failure_impact_of_eden_treaty_GEH_stage_1 = {
+	GEA = {
+		set_autonomy = {
+			target = A06
+			autonomous_state = autonomy_bare_trusteeship_area
+			end_wars = yes
+			end_civil_wars = yes
+		}
+		set_autonomy = {
+			target = A08
+			autonomous_state = autonomy_bare_trusteeship_area
+			end_wars = yes
+			end_civil_wars = yes
+		}
+		set_autonomy = {
+			target = A09
+			autonomous_state = autonomy_bare_trusteeship_area
+			end_wars = yes
+			end_civil_wars = yes
+		}
+		set_autonomy = {
+			target = A11
+			autonomous_state = autonomy_bare_trusteeship_area
+			end_wars = yes
+			end_civil_wars = yes
+		}
+	}
+	ALF = {
+		country_event = {
+			id = ALF.53
+			days = 10
+		}
 	}
 }

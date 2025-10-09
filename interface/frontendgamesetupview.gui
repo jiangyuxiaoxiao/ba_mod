@@ -706,7 +706,14 @@ guiTypes = {
 				pdx_tooltip = "ARI_revenge_path_tt"
 				#alwaystransparent = yes
 			}
-		
+			
+			iconType = {
+				name = "GFX_ARI_liberation_path"
+				quadTextureSprite = "GFX_ARI_liberation_path"
+				position = { x = 0  y = 50 }
+				pdx_tooltip = "ARI_liberation_path_tt"
+				#alwaystransparent = yes
+			}
 		}
 
 		#####

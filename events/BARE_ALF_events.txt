@@ -756,6 +756,25 @@ country_event = {
 	}
 	option = {
 		name = ALF.35.a
+		news_event = {
+			id = ALF_news_event.4
+			days = 15
+		}
+		##触发圣三一和格黑娜政变
+		hidden_effect = {
+			TRI = {
+				country_event = {
+					id = ALF.46
+					days = 45
+				}
+			}
+			GEH = {
+				country_event = {
+					id = ALF.50
+					days = 70
+				}
+			}
+		}
 	}
 }
 
@@ -776,8 +795,10 @@ country_event = {
 			days = 14
 		}
 		hidden_effect = {
-			id = ALF.42
-			days = 28
+			country_event = {
+				id = ALF.42
+				days = 28
+			}
 		}
 	}
 }
@@ -925,9 +946,9 @@ country_event = {
 				NOT = {
 					has_tech = medium_tank_artillery_MK1
 				}
-				set_technology = {
-					medium_tank_artillery_MK1 = 1
-				}
+			}
+			set_technology = {
+				medium_tank_artillery_MK1 = 1
 			}
 		}
 		if = {
@@ -935,9 +956,9 @@ country_event = {
 				NOT = {
 					has_tech = medium_tank_MK2
 				}
-				set_technology = {
-					medium_tank_MK2 = 1
-				}
+			}
+			set_technology = {
+				medium_tank_MK2 = 1
 			}
 		}
 		if = {
@@ -945,15 +966,14 @@ country_event = {
 				NOT = {
 					has_tech = medium_tank_artillery_MK2
 				}
-				set_technology = {
-					medium_tank_artillery_MK2 = 1
-				}
+			}
+			set_technology = {
+				medium_tank_artillery_MK2 = 1
 			}
 		}
 		hidden_effect = {
 			load_oob = "ALF_oob_heavyarmor"
 		}
-
 		ALF = {
 			annex_country = {
 				target = FSC
@@ -980,25 +1000,182 @@ country_event = {
 	option = {
 		name = ALF.45.a
 		custom_effect_tooltip = ALF_dead_of_the_evil_tt
+		set_country_flag = ALF_Gabriel_operation_success
 		##改名##
 		drop_cosmetic_tag = yes
 		set_cosmetic_tag = ALF_SchoolName_Cosmetic
 		##移除deff##
 		remove_ideas = ALF_shadow_follows
-		##核心化土地##
-		every_owned_state = {
-			limit = {
-				is_core_of = ARI
-			}
-			remove_core_of = ARI
-			add_core_of = ALF
+		##增加debuff并完成国策
+		complete_national_focus = ALF_a_long_way_back_home
+	}
+}
+
+##圣三一政变事件链
+##抗议蔓延
+country_event = {
+	id = ALF.46
+	#picture = GFX_common_event_gui_test
+	title = ALF.46.t
+	desc = ALF.46.desc
+	hidden = yes
+	is_triggered_only = yes
+	option = {
+		name = ALF.46.a
+		ALF_failure_impact_of_eden_treaty_TRI_stage_0 = yes
+	}
+}
+
+##团结会夺权
+country_event = {
+	id = ALF.47
+	#picture = GFX_common_event_gui_test
+	title = ALF.47.t
+	desc = ALF.47.desc
+	hidden = yes
+	is_triggered_only = yes
+	option = {
+		name = ALF.47.a
+		ALF_failure_impact_of_eden_treaty_TRI_stage_1 = yes
+	}
+}
+
+##镇压抗议
+country_event = {
+	id = ALF.48
+	#picture = GFX_common_event_gui_test
+	title = ALF.48.t
+	desc = ALF.48.desc
+	hidden = yes
+	is_triggered_only = yes
+	option = {
+		name = ALF.48.a
+		ALF_failure_impact_of_eden_treaty_TRI_stage_2 = yes
+	}
+}
+
+##临时委员会成立
+country_event = {
+	id = ALF.49
+	#picture = GFX_common_event_gui_test
+	title = ALF.49.t
+	desc = ALF.49.desc
+	hidden = yes
+	is_triggered_only = yes
+	option = {
+		name = ALF.49.a
+		ALF_failure_impact_of_eden_treaty_TRI_stage_3 = yes
+	}
+}
+
+##格黑娜政变事件链
+country_event = {
+	id = ALF.50
+	#picture = GFX_common_event_gui_test
+	title = ALF.50.t
+	desc = ALF.50.desc
+	hidden = yes
+	is_triggered_only = yes
+	option = {
+		name = ALF.50.a
+		ALF_failure_impact_of_eden_treaty_GEH_stage_0 = yes
+	}
+}
+
+country_event = {
+	id = ALF.51
+	#picture = GFX_common_event_gui_test
+	title = ALF.51.t
+	desc = ALF.51.desc
+	hidden = yes
+	is_triggered_only = yes
+	option = {
+		name = ALF.51.a
+		ALF_failure_impact_of_eden_treaty_GEH_stage_1 = yes
+	}
+}
+
+##伊甸条约提醒
+country_event = {
+	id = ALF.52
+	#picture = GFX_common_event_gui_test
+	title = ALF.52.t
+	desc = ALF.52.desc
+	is_triggered_only = yes
+	option = {
+		name = ALF.52.a
+		country_event = {
+			id = ALF.35
+			days = 30
 		}
-		every_owned_state = {
-			limit = {
-				is_core_of = ARR
+	}
+}
+
+##收官
+country_event = {
+	id = ALF.53
+	#picture = GFX_common_event_gui_test
+	title = ALF.53.t
+	desc = ALF.53.desc
+	is_triggered_only = yes
+	option = {
+		name = ALF.53.a
+	}
+}
+
+##
+country_event = {
+	id = ALF.54
+	#picture = GFX_common_event_gui_test
+	title = ALF.54.t
+	desc = ALF.54.desc
+	is_triggered_only = yes
+	option = {
+		name = ALF.54.a
+		add_stability = -0.01
+	}
+}
+
+country_event = {
+	id = ALF.55
+	#picture = GFX_common_event_gui_test
+	title = ALF.55.t
+	desc = ALF.55.desc
+	is_triggered_only = yes
+	option = {
+		name = ALF.55.a
+		add_political_power = -1
+	}
+}
+
+country_event = {
+	id = ALF.56
+	#picture = GFX_common_event_gui_test
+	title = ALF.56.t
+	desc = ALF.56.desc
+	is_triggered_only = yes
+	option = {
+		name = ALF.56.a
+		add_war_support = -0.01
+	}
+}
+
+country_event = {
+	id = ALF.57
+	#picture = GFX_common_event_gui_test
+	title = ALF.57.t
+	desc = ALF.57.desc
+	is_triggered_only = yes
+	option = {
+		name = ALF.57.a
+		custom_effect_tooltip = ALF_justice_war_tt
+		set_portraits = {
+			character = ALF_The_Leader
+			civilian = {
+				large = "GFX_BARE_Portrait_ALF_the_leader_no_mask"
+				small = "GFX_BARE_Portrait_ALF_the_leader_no_mask_small"
 			}
-			remove_core_of = ARR
-			add_core_of = ALF
 		}
+		add_country_leader_trait = ALF_justice_prevails
 	}
 }

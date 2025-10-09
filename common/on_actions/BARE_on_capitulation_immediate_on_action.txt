@@ -299,6 +299,54 @@ on_actions = {
                     }
                 }
             }
+            ############################丢人现眼（流亡者线）#####################################
+            else_if = {
+                limit = {
+                    FROM = {
+                        tag = TRA
+                    }
+                    ROOT = {
+                       tag = TRR
+                    }
+                }
+                FROM = {
+                    annex_country = {
+                        target = ROOT
+                        transfer_troops = no
+                    }
+                }
+                every_state = {
+                    limit = {
+                        is_core_of = TRR
+                    }
+                    remove_core_of = TRR
+                }
+            }
+            else_if = {
+                limit = {
+                    FROM = {
+                        tag = GEA
+                    }
+                    ROOT = {
+                       tag = GEL
+                    }
+                }
+                FROM = {
+                    annex_country = {
+                        target = ROOT
+                        transfer_troops = no
+                    }
+                    country_event = {
+                        id = ALF.51
+                    }
+                }
+                every_state = {
+                    limit = {
+                        is_core_of = GEL
+                    }
+                    remove_core_of = GEL
+                }
+            }
             ############################其他情况投降#####################################
             else_if = {
                 #正常投降

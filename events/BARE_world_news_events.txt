@@ -869,6 +869,48 @@ news_event = {
 
 	option = {
 		name = ALF_news_event.3.a
+		BARE_SuperEvent_2_effect_11 = yes
 	}
 }
 
+##伊甸条约中断
+news_event = {
+	id = ALF_news_event.4
+	#picture = GFX_BA_news_18
+	title = ALF_news_event.4.t
+	desc = ALF_news_event.4.desc
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = ALF_news_event.4.a
+	}
+}
+
+##圣三一政变
+news_event = {
+	id = ALF_news_event.5
+	#picture = GFX_BA_news_18
+	title = ALF_news_event.5.t
+	desc = ALF_news_event.5.desc
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = ALF_news_event.5.a
+	}
+}
+
+##格黑娜政变
+news_event = {
+	id = ALF_news_event.6
+	#picture = GFX_BA_news_18
+	title = ALF_news_event.6.t
+	desc = ALF_news_event.6.desc
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = ALF_news_event.6.a
+	}
+}

@@ -164,7 +164,6 @@ ideas = {
 				army_speed_factor = 0.05
 			}
 		}
-
 		##突然袭击
 		ALF_ARI_striked = {
 			#picture = unknown
@@ -173,6 +172,71 @@ ideas = {
 				breakthrough_factor = -0.5
 				land_reinforce_rate = -0.1
 			}
+		}
+		##从内战中恢复##
+		ALF_recover_from_civil_war = {
+			#picture = unknown
+			modifier = {
+				consumer_goods_expected_value = 0.3
+				resistance_target = -0.5
+				resistance_growth = -0.5
+				stability_factor = -0.2
+			}
+		}
+		##和平病
+		ALF_peace_sickness = {
+			#picture = unknown
+			modifier = {
+				war_support_factor = -0.2
+			}
+		}
+		##旗帜飘扬##
+		ALF_flag_waves = {
+			#picture = unknown
+			modifier = {
+				political_power_factor = 0.1
+				war_stability_factor = 0.1
+				army_morale_factor = 0.1
+			}
+		}
+		##秤亚津子##
+		ALF_atsuko_idea = {
+			picture = GFX_idea_ALF_atsuko_idea
+			traits = {
+				princess_of_arius
+			}
+		}
+		##打破陈规
+		ALF_root_out_old_story = {
+			#picture = unknown
+			modifier = {
+				political_power_factor = 0.2
+				line_change_production_efficiency_factor = 0.2
+				encryption = 1
+			}
+		}
+		##修订宪章
+		ALF_new_constitution = {
+			#picture = unknown
+			modifier = {
+				political_power_factor = -0.4
+				stability_factor = -0.2
+				war_support_factor = -0.2
+			}
+		}
+		##修订宪章
+		ALF_new_constitution_1 = {
+			#picture = unknown
+			modifier = {
+				political_power_factor = -0.2
+				stability_factor = -0.1
+				war_support_factor = -0.1
+			}
+		}
+		ALF_clear_rubbles = {
+			#picture = unknown
+			production_speed_buildings_factor = 0.1
+			repair_speed_factor = 0.3
 		}
 	}
 	####

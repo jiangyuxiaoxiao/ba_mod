@@ -476,6 +476,39 @@ Hipper_test_decisions_categories = {
 			activate_mission = ALF_EPW_Stage_2_timer_mission
 		}
 	}
+
+	initialize_TRI_eden_failure = {
+		visible = {
+			is_debug = yes
+		}
+		available = {
+			is_ai = no
+		}
+		complete_effect = {
+			ALF_failure_impact_of_eden_treaty_TRI_stage_1 = yes
+			ALF_failure_impact_of_eden_treaty_TRI_stage_2 = yes
+			ALF_failure_impact_of_eden_treaty_TRI_stage_3 = yes
+		}
+	}
+
+	initialize_2nd_liberation_war = {
+		visible = {
+			is_debug = yes
+		}
+		available = {
+			is_ai = no
+		}
+		complete_effect = {
+			TRA = {
+				create_faction = TRA_GEA_Axis
+				add_to_faction = GEA
+			}
+			ALF = {
+				add_to_faction = TRT
+				add_to_faction = GER
+			}
+		}
+	}
 }
 
 CEN_Operation_Uranus_categories = {

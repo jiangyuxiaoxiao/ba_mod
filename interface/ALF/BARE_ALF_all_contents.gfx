@@ -1,5 +1,10 @@
 spriteTypes = {
-	###国家精神配图
+	###国家精神&配图
+	spriteType = {
+        name = "GFX_idea_ALF_atsuko_idea"
+        texturefile = "gfx/interface/ideas/ALF/atsuko_small.dds"
+	}
+
 	spriteType = {
         name = "GFX_ALF_armed_force_dynamic_modifier_desc_picture"
         texturefile = "gfx/interface/ideas/ALF/ideas_picture/ALF_armed_force_dynamic_modifier_desc_picture.dds"
@@ -34,6 +39,12 @@ spriteTypes = {
         name = "GFX_ALF_toward_the_last_object_pic"
         texturefile = "gfx/interface/ideas/ALF/ideas_picture/ALF_toward_the_last_object_pic.dds"
 		legacy_lazy_load = no
+	}
+
+	##顾问
+	spriteType = {
+        name = "GFX_portrait_ALF_hiyuri_small"
+        texturefile = "gfx/leaders/ARI/hiyori_small.dds"
 	}
 
 	#事件#

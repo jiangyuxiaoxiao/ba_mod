@@ -211,60 +211,116 @@ Eden_treaty_next_phase = {
 		}
 		#协议阶段结束
 		else = {
-			clr_global_flag = Eden_treaty_negotiation_ongoing
-			set_global_flag = Eden_treaty_negotiation_completed
-			set_global_flag = BA_2st_eden_pact_end
-			activate_mission = Eden_treaty_to_be_signed
-			140 = {
-				set_demilitarized_zone = yes
-			}
-			529 = {
-				set_demilitarized_zone = yes
-			}
 			if = {
 				limit = {
-					check_variable = {
-						global.Eden_treaty_negotiation_phase_leader^1 = TRI
+					has_game_rule = {
+						rule = BARE_RULE_story_settings_ALF
+						option = BARE_RULE_story_settings_ALF_SELECTED
 					}
 				}
-				set_temp_variable = {
-					extra_point = GEH_weights@var:global.Eden_treaty_phase_negotiating
-				}
-				multiply_temp_variable = {
-					extra_point = 0.15
-				}
-				add_to_temp_variable = {
-					GEH_point = extra_point
-				}
-			}
-			else_if = {
-				limit = {
-					check_variable = {
-						global.Eden_treaty_negotiation_phase_leader^1 = GEH
+				##先结束这个决议链
+				clr_global_flag = Eden_treaty_negotiation_ongoing
+				set_global_flag = Eden_treaty_negotiation_completed
+				set_global_flag = BA_2st_eden_pact_end
+				if = {
+					limit = {
+						check_variable = {
+							global.Eden_treaty_negotiation_phase_leader^1 = TRI
+						}
+					}
+					set_temp_variable = {
+						extra_point = GEH_weights@var:global.Eden_treaty_phase_negotiating
+					}
+					multiply_temp_variable = {
+						extra_point = 0.15
+					}
+					add_to_temp_variable = {
+						GEH_point = extra_point
 					}
 				}
-				set_temp_variable = {
-					extra_point = TRI_weights@var:global.Eden_treaty_phase_negotiating
+				else_if = {
+					limit = {
+						check_variable = {
+							global.Eden_treaty_negotiation_phase_leader^1 = GEH
+						}
+					}
+					set_temp_variable = {
+						extra_point = TRI_weights@var:global.Eden_treaty_phase_negotiating
+					}
+					multiply_temp_variable = {
+						extra_point = 0.15
+					}
+					add_to_temp_variable = {
+						TRI_point = extra_point
+					}
 				}
-				multiply_temp_variable = {
-					extra_point = 0.15
+				clear_variable = global.Eden_treaty_phase
+				clear_variable = global.Eden_treaty_progress
+				##发射流亡者规则的效果##
+				ALF = {
+					country_event = {
+						id = ALF.52
+					}
 				}
-				add_to_temp_variable = {
-					TRI_point = extra_point
+				set_global_flag = BA_2st_eden_pact_disrupted
+			}
+			##无规则正常运行
+			else = {
+				clr_global_flag = Eden_treaty_negotiation_ongoing
+				set_global_flag = Eden_treaty_negotiation_completed
+				set_global_flag = BA_2st_eden_pact_end
+				activate_mission = Eden_treaty_to_be_signed
+				140 = {
+					set_demilitarized_zone = yes
 				}
-			}
-			clear_variable = global.Eden_treaty_phase
-			clear_variable = global.Eden_treaty_progress
-			TRI = {
-				country_event = Eden_pact.100
-				clear_variable = Eden_treaty_weights
-			}
-			GEH = {
-				country_event = Eden_pact.100
-				clear_variable = Eden_treaty_weights
-			}
-			ARI = {
-				country_event = Eden_pact.102
+				529 = {
+					set_demilitarized_zone = yes
+				}
+				if = {
+					limit = {
+						check_variable = {
+							global.Eden_treaty_negotiation_phase_leader^1 = TRI
+						}
+					}
+					set_temp_variable = {
+						extra_point = GEH_weights@var:global.Eden_treaty_phase_negotiating
+					}
+					multiply_temp_variable = {
+						extra_point = 0.15
+					}
+					add_to_temp_variable = {
+						GEH_point = extra_point
+					}
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							global.Eden_treaty_negotiation_phase_leader^1 = GEH
+						}
+					}
+					set_temp_variable = {
+						extra_point = TRI_weights@var:global.Eden_treaty_phase_negotiating
+					}
+					multiply_temp_variable = {
+						extra_point = 0.15
+					}
+					add_to_temp_variable = {
+						TRI_point = extra_point
+					}
+				}
+				clear_variable = global.Eden_treaty_phase
+				clear_variable = global.Eden_treaty_progress
+				TRI = {
+					country_event = Eden_pact.100
+					clear_variable = Eden_treaty_weights
+				}
+				GEH = {
+					country_event = Eden_pact.100
+					clear_variable = Eden_treaty_weights
+				}
+				ARI = {
+					country_event = Eden_pact.102
+				}
 			}
 		}
 		if = {
