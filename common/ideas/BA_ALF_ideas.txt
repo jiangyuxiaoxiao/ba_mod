@@ -235,8 +235,49 @@ ideas = {
 		}
 		ALF_clear_rubbles = {
 			#picture = unknown
-			production_speed_buildings_factor = 0.1
-			repair_speed_factor = 0.3
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				industry_repair_factor = 0.3
+			}
+		}
+		##崭新的外交姿态
+		ALF_new_diplomacy_posture = {
+			#picture = unknown
+			modifier = {
+				Progressivism_ideology_acceptance = 20
+				Liberalism_ideology_acceptance = 20
+				trade_opinion_factor = 0.1
+			}
+		}
+		##背水一战
+		ALF_the_battle_with_no_step_back = {
+			#picture = unknown
+			modifier = {
+				army_defence_factor = 0.05
+				land_reinforce_rate = 0.02
+				
+			}
+		}
+		##
+		ALF_the_final_war = {
+			#picture = unknown
+			modifier = {
+				training_time_factor = -0.1
+			}
+		}
+
+		##
+		ALF_stand_up_the_committee = {
+			modifier = {
+				weekly_manpower = 400
+			}
+		}
+		##
+		ALF_they_shall_no_pass = {
+			modifier = {
+				surrender_limit = 0.1
+				war_support_factor = 0.1
+			}
 		}
 	}
 	####

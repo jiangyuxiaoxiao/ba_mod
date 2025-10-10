@@ -406,6 +406,19 @@ Hipper_test_decisions_categories = {
 			BSE_Fire_Super_Event_index_8 = yes
 		}
 	}
+
+	BAREXP_show_superevent9_gui = {
+		visible = {
+			is_debug = yes
+			has_global_flag = show_se_test_decision_flag
+		}
+		available = {
+			is_ai = no
+		}
+		complete_effect = {
+			BSE_Fire_Super_Event_index_9 = yes
+		}
+	}
 	###查看结算警告###
 	check_war_end_flavor_hipp = {
 		visible = {

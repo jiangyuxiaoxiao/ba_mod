@@ -264,6 +264,16 @@ BSE_Fire_Super_Event_index_8 = {
 	}
 }
 
+BSE_Fire_Super_Event_index_9 = {
+	set_variable = {
+		barexp_super_event_index = 9
+	}
+	hidden_effect = {
+		scoped_sound_effect = BARE_SuperEvent_Sound_Eden_Treaty_wins_piano_motion
+		scoped_play_song = "BARE_SuperEvent_Sound_Block_2m"
+	}
+}
+
 BSE_Close_Super_Event_Effect = {
 	set_variable = {
 		barexp_super_event_index = 0

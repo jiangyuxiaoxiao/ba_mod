@@ -22,6 +22,25 @@ on_actions = {
 					}
 				}
 			}
+			else_if = {
+				limit = {
+					tag = ALF
+					FROM = {
+						tag = TRA
+					}
+					ALF = {
+						has_wargoal_against = {
+							target = TRA
+							type = ALF_revenge_target_wargoal
+						}
+					}
+				}
+				ALF = {
+					country_event = {
+						id = ALF.62
+					}
+				}
+			}
 		}
 	}
 }

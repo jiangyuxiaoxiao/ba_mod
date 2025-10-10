@@ -467,7 +467,34 @@ ALF_failure_impact_of_eden_treaty_TRI_stage_1 = {
 			days = 5
 		}
 	}
+	create_dynamic_country = {
+		original_tag = TRI
+		copy_tag = TRI
+		set_country_flag = resistant_TRI_flag
+		set_politics = {
+			ruling_party = Progressivism_ideology
+			elections_allowed = no
+		}
+		set_political_party = {
+			ideology = Progressivism_ideology
+			popularity = 100
+		}
+		set_cosmetic_tag = TRT_GOV_COSMETIC
+		transfer_state = 140
+		transfer_state = 683
+		transfer_state = 529
+	}
+	TRI = {
+		transfer_units_fraction = {
+			target = TRT
+			size = 0.1
+		}
+	}
+	TRT = {
+		BARE_RULE_story_settings_ALF_SELECTED_manpower_initialize_effect = yes
+	}
 	TRA = {
+		add_command_power = 100
 		annex_country = {
 			target = TRI
 			transfer_troops = yes
@@ -499,6 +526,7 @@ ALF_failure_impact_of_eden_treaty_TRI_stage_1 = {
 		news_event = {
 			id = ALF_news_event.5
 		}
+		BARE_RULE_story_settings_ALF_SELECTED_manpower_initialize_effect = yes
 	}
 }
 
@@ -531,6 +559,9 @@ ALF_failure_impact_of_eden_treaty_TRI_stage_2 = {
 	689 = {
 		transfer_state_to = TRR
 	}
+	TRR = {
+		BARE_RULE_story_settings_ALF_SELECTED_manpower_initialize_effect = yes
+	}
 	##犁庭扫穴##
 	TRA = {
 		declare_war_on = {
@@ -550,22 +581,8 @@ ALF_failure_impact_of_eden_treaty_TRI_stage_2 = {
 ALF_failure_impact_of_eden_treaty_TRI_stage_3 = {
 	##生成一个抵抗区
 	##TRT
-	create_dynamic_country = {
-		original_tag = TRI
-		copy_tag = TRI
-		set_country_flag = resistant_TRI_flag
-		set_politics = {
-			ruling_party = Progressivism_ideology
-			elections_allowed = no
-		}
-		set_political_party = {
-			ideology = Progressivism_ideology
-			popularity = 100
-		}
-		set_cosmetic_tag = TRT_GOV_COSMETIC
-		transfer_state = 140
-		transfer_state = 683
-		transfer_state = 529
+	TRT = {
+		add_command_power = 100
 	}
 }
 
@@ -592,11 +609,15 @@ ALF_failure_impact_of_eden_treaty_GEH_stage_0 = {
 		transfer_state = 141
 		transfer_state = 650
 	}
+	GER = {
+		BARE_RULE_story_settings_ALF_SELECTED_manpower_initialize_effect = yes
+	}
 	GEL = {
 		annex_country = {
 			target = GEH
 			transfer_troops = yes
 		}
+		BARE_RULE_story_settings_ALF_SELECTED_manpower_initialize_effect = yes
 	}
 	GEL = {
 		start_civil_war = {
@@ -606,6 +627,10 @@ ALF_failure_impact_of_eden_treaty_GEH_stage_0 = {
 			set_country_flag = bad_GEH_flag
 			set_cosmetic_tag = GEH_BAD_COSMETIC
 		}
+	}
+	GEA = {
+		add_command_power = 100
+		BARE_RULE_story_settings_ALF_SELECTED_manpower_initialize_effect = yes
 	}
 	news_event = {
 		id = ALF_news_event.6

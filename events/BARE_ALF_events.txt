@@ -1169,6 +1169,7 @@ country_event = {
 	option = {
 		name = ALF.57.a
 		custom_effect_tooltip = ALF_justice_war_tt
+		complete_national_focus = ALF_3rd_eden_pact_treaty
 		set_portraits = {
 			character = ALF_The_Leader
 			civilian = {
@@ -1177,5 +1178,83 @@ country_event = {
 			}
 		}
 		add_country_leader_trait = ALF_justice_prevails
+	}
+}
+
+country_event = {
+	id = ALF.58
+	#picture = GFX_common_event_gui_test
+	title = ALF.58.t
+	desc = ALF.58.desc
+	is_triggered_only = yes
+	option = {
+		name = ALF.58.a
+	}
+}
+
+country_event = {
+	id = ALF.59
+	#picture = GFX_common_event_gui_test
+	title = ALF.59.t
+	desc = ALF.59.desc
+	is_triggered_only = yes
+	option = {
+		name = ALF.59.a
+		custom_effect_tooltip = a_spirit_for_winning_tt
+	}
+}
+
+country_event = {
+	id = ALF.60
+	#picture = GFX_common_event_gui_test
+	title = ALF.60.t
+	desc = ALF.60.desc
+	is_triggered_only = yes
+	option = {
+		name = ALF.60.a
+	}
+}
+
+country_event = {
+	id = ALF.61
+	#picture = GFX_common_event_gui_test
+	title = ALF.61.t
+	desc = ALF.61.desc
+	is_triggered_only = yes
+	option = {
+		name = ALF.61.a
+	}
+}
+
+##钢铁协约计时器
+country_event = {
+	id = ALF.62
+	hidden = yes
+	title = ALF.62.t
+	desc = ALF.62.desc
+	is_triggered_only = yes
+	option = {
+		name = ALF.62.a
+		news_event = {
+			id = ALF_news_event.8
+		}
+		TRA = {
+			create_faction = TRA_GEA_Axis
+			add_to_faction = GEA
+		}
+	}
+}
+
+##光复战争
+country_event = {
+	id = ALF.63
+	#picture = GFX_common_event_gui_test
+	title = ALF.63.t
+	desc = ALF.63.desc
+	is_triggered_only = yes
+	option = {
+		name = ALF.63.a
+		set_country_flag = ALF_UOP_begains_flag
+		activate_mission = ALF_UOP_trigger_mission
 	}
 }

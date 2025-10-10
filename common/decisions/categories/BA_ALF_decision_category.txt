@@ -103,7 +103,7 @@ ALF_Uriel_operation_category = {
 		tag = ALF
 	}
 	visible = {
-		has_completed_focus = ALF_storm_eye
+		has_completed_focus = ALF_duty_calls_always
 		NOT = {
 			has_country_flag = ALF_Uriel_operation_success
 		}

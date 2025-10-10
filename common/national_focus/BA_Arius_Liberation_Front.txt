@@ -2202,7 +2202,7 @@ focus_tree = {
 		id = ALF_fate_calls
 		icon = GFX_goal_unknown
 		cost = 4
-		x = 27
+		x = 28
 		y = 11
 		allow_branch = {
 			has_global_flag = the_enterprise_war_begins
@@ -2837,7 +2837,7 @@ focus_tree = {
 		id = ALF_dream_approaching
 		icon = GFX_goal_unknown
 		cost = 4
-		x = 36
+		x = 38
 		y = 11
 		allow_branch = {
 			has_global_flag = EPW_ENDS_global_flag
@@ -3296,7 +3296,7 @@ focus_tree = {
 		##长路归乡
 		id = ALF_a_long_way_back_home
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 521.5
 		x = 10
 		y = 11
 		bypass = {
@@ -3326,7 +3326,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ALF_a_long_way_back_home
 		}
-		cost = 1
+		cost = 3
 		x = -4
 		y = 1
 		bypass = {
@@ -3347,13 +3347,12 @@ focus_tree = {
 		prerequisite = {
 			focus = ALF_judge_the_yesterdays_evil
 		}
-		cost = 1
+		cost = 3
 		x = 0
 		y = 1
 		bypass = {
 		}
 		available = {
-
 		}
 		completion_reward = {
 			add_political_power = 50
@@ -3371,7 +3370,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = ALF_the_new_dawn
 		}
-		cost = 1
+		cost = 3
 		x = -1
 		y = 1
 		bypass = {
@@ -3399,7 +3398,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = ALF_the_old_ways
 		}
-		cost = 1
+		cost = 3
 		x = 1
 		y = 1
 		bypass = {
@@ -3425,7 +3424,7 @@ focus_tree = {
 			focus = ALF_the_old_ways
 			focus = ALF_the_new_dawn
 		}
-		cost = 1
+		cost = 3
 		x = 0
 		y = 2
 		bypass = {
@@ -3450,7 +3449,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ALF_judge_the_yesterdays_evil
 		}
-		cost = 1
+		cost = 3
 		x = -3
 		y = 1
 		bypass = {
@@ -3503,7 +3502,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ALF_re_educate_movement
 		}
-		cost = 1
+		cost = 3
 		x = 0
 		y = 2
 		bypass = {
@@ -3538,7 +3537,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ALF_a_long_way_back_home
 		}
-		cost = 1
+		cost = 3
 		x = 0
 		y = 1
 		bypass = {
@@ -3563,7 +3562,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ALF_clear_todays_rubbles
 		}
-		cost = 1
+		cost = 3
 		x = 0
 		y = 1
 		bypass = {
@@ -3583,7 +3582,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ALF_Implement_relief_plan
 		}
-		cost = 1
+		cost = 3
 		x = -1
 		y = 1
 		bypass = {
@@ -3608,7 +3607,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ALF_Implement_relief_plan
 		}
-		cost = 1
+		cost = 3
 		x = 1
 		y = 1
 		bypass = {
@@ -3636,7 +3635,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ALF_rebuild_the_old_school
 		}
-		cost = 1
+		cost = 3
 		x = 0
 		y = 2
 		bypass = {
@@ -3663,7 +3662,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ALF_Reshape_cognition
 		}
-		cost = 1
+		cost = 3
 		x = -4
 		y = 1
 		bypass = {
@@ -3684,7 +3683,7 @@ focus_tree = {
 		prerequisite = {
 			focus = ALF_a_long_way_back_home
 		}
-		cost = 1
+		cost = 3
 		x = 3
 		y = 1
 		bypass = {
@@ -3695,17 +3694,18 @@ focus_tree = {
 			country_event = {
 				id = ALF.56
 			}
+			add_ideas = ALF_new_diplomacy_posture
 		}
 	}
 	focus = {
-		##赋予我们的使命
-		id = ALF_duty_calls_always
+		##派出特使
+		id = ALF_send_the_envoys
 		icon = GFX_goal_unknown
 		relative_position_id = ALF_construct_tomorrows_stair
 		prerequisite = {
 			focus = ALF_construct_tomorrows_stair
 		}
-		cost = 1
+		cost = 3
 		x = 0
 		y = 1
 		bypass = {
@@ -3713,9 +3713,19 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
-			remove_ideas = ALF_peace_sickness
 			country_event = {
-				id = ALF.57
+				id = ALF.58
+			}
+			every_possible_country = {
+				limit = {
+					has_character = TRI_azusa
+				}
+				random_character = {
+					limit = {
+						is_character = TRI_azusa
+					}
+					set_nationality = ALF
+				}
 			}
 		}
 	}
@@ -3723,11 +3733,11 @@ focus_tree = {
 		##边界救难
 		id = ALF_open_the_border
 		icon = GFX_goal_unknown
-		relative_position_id = ALF_duty_calls_always
+		relative_position_id = ALF_send_the_envoys
 		prerequisite = {
-			focus = ALF_duty_calls_always
+			focus = ALF_send_the_envoys
 		}
-		cost = 1
+		cost = 3
 		x = 0
 		y = 1
 		bypass = {
@@ -3745,14 +3755,14 @@ focus_tree = {
 		}
 	}
 	focus = {
-		##风暴眼
-		id = ALF_storm_eye
+		##赋予我们的使命
+		id = ALF_duty_calls_always
 		icon = GFX_goal_unknown
 		relative_position_id = ALF_open_the_border
 		prerequisite = {
 			focus = ALF_open_the_border
 		}
-		cost = 1
+		cost = 3
 		x = 0
 		y = 1
 		bypass = {
@@ -3760,36 +3770,11 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
-			unlock_decision_category_tooltip = ALF_Uriel_operation_category
-		}
-	}
-	focus = {
-		##派出特使
-		id = ALF_send_the_envoys
-		icon = GFX_goal_unknown
-		relative_position_id = ALF_duty_calls_always
-		prerequisite = {
-			focus = ALF_duty_calls_always
-		}
-		cost = 1
-		x = 0
-		y = 1
-		bypass = {
-		}
-		available = {
-		}
-		completion_reward = {
-			every_possible_country = {
-				limit = {
-					has_character = TRI_azusa
-				}
-				random_character = {
-					limit = {
-						is_character = TRI_azusa
-					}
-					set_nationality = ALF
-				}
+			remove_ideas = ALF_peace_sickness
+			country_event = {
+				id = ALF.57
 			}
+			unlock_decision_category_tooltip = ALF_Uriel_operation_category
 		}
 	}
 	###最终决战
@@ -3798,16 +3783,14 @@ focus_tree = {
 		id = ALF_3rd_eden_pact_treaty
 		icon = GFX_focus_ARI_open_the_curtain
 		cost = 0.5
-		x = 20
+		x = 19
 		y = 11
 		available = {
 			always = no
 		}
 		completion_reward = {
-
 		}
 	}
-
 	focus = {
 		##一群失败者……
 		id = ALF_those_failured
@@ -3819,38 +3802,34 @@ focus_tree = {
 		prerequisite = {
 			focus = ALF_3rd_eden_pact_treaty
 		}
-		available = {
-			always = no
-		}
 		completion_reward = {
-
+			country_event = {
+				id = ALF.59
+			}
 		}
 	}
-
 	focus = {
 		##一群背弃者……
 		id = ALF_those_betrayed
 		icon = GFX_focus_ARI_open_the_curtain
-		cost = 0.5
+		cost = 3
 		x = 1
 		y = 1
 		relative_position_id = ALF_3rd_eden_pact_treaty
 		prerequisite = {
 			focus = ALF_3rd_eden_pact_treaty
 		}
-		available = {
-			always = no
-		}
 		completion_reward = {
-
+			country_event = {
+				id = ALF.60
+			}
 		}
 	}
-
 	focus = {
 		##以及一个最绝望的同盟……
 		id = ALF_a_Desperate_Alliance
 		icon = GFX_focus_ARI_open_the_curtain
-		cost = 0.5
+		cost = 3
 		x = 0
 		y = 2
 		relative_position_id = ALF_3rd_eden_pact_treaty
@@ -3860,76 +3839,89 @@ focus_tree = {
 		prerequisite = {
 			focus = ALF_those_betrayed
 		}
-		available = {
-			always = no
-		}
 		completion_reward = {
-
+			country_event = {
+				id = ALF.61
+			}
 		}
 	}
-
 	focus = {
 		##风纪委员
 		id = ALF_appeal_to_the_Discipline_Committee_Member
 		icon = GFX_focus_ARI_open_the_curtain
-		cost = 0.5
+		cost = 3
 		x = -2
 		y = 1
 		relative_position_id = ALF_a_Desperate_Alliance
 		prerequisite = {
 			focus = ALF_a_Desperate_Alliance
 		}
-		available = {
-			always = no
-		}
 		completion_reward = {
-
+			custom_effect_tooltip = ALF_and_ALLIES_BUFF_TT
+			add_ideas = ALF_stand_up_the_committee
+			hidden_effect = {
+				GER = {
+					add_ideas = ALF_stand_up_the_committee
+				}
+				TRT = {
+					add_ideas = ALF_stand_up_the_committee
+				}
+			}
 		}
 	}
-
 	focus = {
 		##布道者
 		id = ALF_appeal_to_the_sisters
 		icon = GFX_focus_ARI_open_the_curtain
-		cost = 0.5
+		cost = 3
 		x = 0
 		y = 1
 		relative_position_id = ALF_a_Desperate_Alliance
 		prerequisite = {
 			focus = ALF_a_Desperate_Alliance
 		}
-		available = {
-			always = no
-		}
 		completion_reward = {
-
+			custom_effect_tooltip = ALF_and_ALLIES_BUFF_TT
+			add_ideas = ALF_they_shall_no_pass
+			hidden_effect = {
+				GER = {
+					add_ideas = ALF_they_shall_no_pass
+				}
+				TRT = {
+					add_ideas = ALF_they_shall_no_pass
+				}
+			}
 		}
 	}
-
 	focus = {
 		##学生
 		id = ALF_appeal_to_the_students
 		icon = GFX_focus_ARI_open_the_curtain
-		cost = 0.5
+		cost = 3
 		x = 2
 		y = 1
 		relative_position_id = ALF_a_Desperate_Alliance
 		prerequisite = {
 			focus = ALF_a_Desperate_Alliance
 		}
-		available = {
-			always = no
-		}
 		completion_reward = {
-
+			custom_effect_tooltip = ALF_and_ALLIES_BUFF_TT
+			add_ideas = ALF_the_final_war
+			hidden_effect = {
+				GER = {
+					add_ideas = ALF_the_final_war
+				}
+				TRT = {
+					add_ideas = ALF_the_final_war
+				}
+			}
 		}
 	}
-
 	focus = {
 		##条约同盟
 		id = ALF_eden_alliance
 		icon = GFX_focus_ARI_open_the_curtain
-		cost = 0.5
+		cost = 3
 		x = 0
 		y = 1
 		relative_position_id = ALF_appeal_to_the_sisters
@@ -3946,42 +3938,56 @@ focus_tree = {
 			always = no
 		}
 		completion_reward = {
-
+			set_faction_name = ALF_EDEN_FACTION
+			ALF = {
+				add_to_faction = TRT
+				add_to_faction = GER
+			}
+			news_event = {
+				id = ALF_news_event.7
+			}
+			hidden_effect = {
+				country_event = {
+					id = ALF.62
+					days = 7
+				}
+			}
 		}
 	}
-
 	focus = {
-		##条约同盟
+		##准备第二次解放战争
 		id = ALF_prepared_for_2nd_liberation_war
 		icon = GFX_focus_ARI_open_the_curtain
-		cost = 0.5
+		cost = 3
 		x = 0
 		y = 1
 		relative_position_id = ALF_eden_alliance
 		prerequisite = {
 			focus = ALF_eden_alliance
 		}
-		available = {
-			always = no
-		}
 		completion_reward = {
-
+			custom_effect_tooltip = ALF_and_ALLIES_BUFF_TT
+			add_ideas = ALF_the_battle_with_no_step_back
+			hidden_effect = {
+				GER = {
+					add_ideas = ALF_the_battle_with_no_step_back
+				}
+				TRT = {
+					add_ideas = ALF_the_battle_with_no_step_back
+				}
+			}
 		}
 	}
-
 	focus = {
 		##奔赴荣耀
 		id = ALF_way_for_glory
 		icon = GFX_focus_ARI_open_the_curtain
-		cost = 0.5
+		cost = 3
 		x = 0
 		y = 1
 		relative_position_id = ALF_prepared_for_2nd_liberation_war
 		prerequisite = {
 			focus = ALF_prepared_for_2nd_liberation_war
-		}
-		available = {
-			always = no
 		}
 		completion_reward = {
 			custom_effect_tooltip = ALF_way_for_glory_tt

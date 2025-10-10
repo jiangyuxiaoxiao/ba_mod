@@ -1851,13 +1851,63 @@ ALF_Gabriel_operation_category = {
 		remove_effect = {
 		}
 	}
+}
 
-	ALF_Uriel_operation_category = {
-		ALF_EPW_infiltrate_target_decision = {
+ALF_Uriel_operation_category = {
+	ALF_UOP_counter_mission = {
+		priority = 99
+		is_good = no
+		days_mission_timeout = 60
+		activation = {
+			always = no
+		}
+		available = {
+			TRA = {
+				has_war_with = ALF
+			}
+		}
+		complete_effect = {
+		}
+		war_with_on_remove = TRA
+		war_with_on_remove = GEA
+		timeout_effect = {
+			TRA = {
+				declare_war_on = {
+					target = ALF
+					type = annex_everything
+				}
+			}
+			country_event = {
+				id = ALF.62
+			}
+		}
+	}
+	ALF_UOP_trigger_mission = {
+		priority = 99
+		is_good = no
+		days_mission_timeout = 30
+		activation = {
+			always = no
+		}
+		available = {
+			TRA = {
+				exists = no
+			}
+			GEA = {
+				exists = no
+			}
+		}
+		complete_effect = {
+		}
+		timeout_effect = {
+			activate_mission = ALF_UOP_trigger_mission
+		}
+	}
+	ALF_UOP_infiltrate_target_decision = {
 		priority = 79
 		days_remove = 30
 		target_root_trigger = {
-			has_completed_focus = ALF_storm_eye
+			has_completed_focus = ALF_duty_calls_always
 		}
 		targets = {
 			GEA
@@ -1882,5 +1932,54 @@ ALF_Gabriel_operation_category = {
 			}
 		}
 	}
+	ALF_UOP_crack_target_supply_TRA_decision = {
+		priority = 79
+		days_remove = 45
+		visible = {
+			TRA = {
+				has_country_flag = ALF_UOP_infiltrate_target_flag
+			}
+		}
+		available = {
+			TRA = {
+				has_country_flag = ALF_UOP_infiltrate_target_flag
+				has_war_with = ROOT
+			}
+		}
+		fire_only_once = yes
+		targeted_modifier = {
+			tag = TRA
+			supply_combat_penalties_on_core_factor = 0.3
+			army_speed_factor = -0.5
+			attrition = 0.2
+		}
+		cost = 20
+		remove_effect = {
+		}
+	}
+	ALF_UOP_crack_target_supply_GEA_decision = {
+		priority = 79
+		days_remove = 45
+		visible = {
+			GEA = {
+				has_country_flag = ALF_UOP_infiltrate_target_flag
+			}
+		}
+		available = {
+			GEA = {
+				has_country_flag = ALF_UOP_infiltrate_target_flag
+				has_war_with = ROOT
+			}
+		}
+		fire_only_once = yes
+		targeted_modifier = {
+			tag = GEA
+			supply_combat_penalties_on_core_factor = 0.3
+			army_speed_factor = -0.5
+			attrition = 0.2
+		}
+		cost = 20
+		remove_effect = {
+		}
 	}
 }

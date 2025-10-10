@@ -175,4 +175,9 @@ spriteTypes = {
         
         allwaystransparent = yes
     }
+
+    spriteType = {
+        name = "GFX_BAREXP_SE_img_9"
+        texturefile = "gfx/interface/SuperEvent/Classic_SuperEvent/BAREXP_SE_img_9.dds"
+    }
 }
