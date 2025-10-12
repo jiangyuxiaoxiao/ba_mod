@@ -1878,7 +1878,7 @@ ALF_Uriel_operation_category = {
 				}
 			}
 			country_event = {
-				id = ALF.62
+				id = ALF.63
 			}
 		}
 	}
@@ -1927,6 +1927,7 @@ ALF_Uriel_operation_category = {
 			}
 		}
 		complete_effect = {
+			set_country_flag = ALF_Uriel_operation_success
 			hidden_effect = {
 				ALF_end_2nd_liberation_war_effect = yes
 				if = {
@@ -1949,7 +1950,6 @@ ALF_Uriel_operation_category = {
 			news_event = {
 				id = ALF_news_event.9
 			}
-			
 		}
 		timeout_effect = {
 			activate_mission = ALF_UOP_trigger_mission
@@ -1962,10 +1962,10 @@ ALF_Uriel_operation_category = {
 			has_completed_focus = ALF_duty_calls_always
 		}
 		targets = {
-			GEA
-			TRA
+			tag = TRA
+			tag = GEA
 		}
-		targets_dynamic = yes
+		#targets_dynamic = yes
 		target_trigger = {
 			FROM = {
 				NOT = {

@@ -3304,6 +3304,9 @@ focus_tree = {
 		available = {
 			always = no
 		}
+		allow_branch = {
+			has_country_flag = ALF_Gabriel_operation_success
+		}
 		completion_reward = {
 			add_ideas = ALF_recover_from_civil_war
 			add_ideas = ALF_peace_sickness
@@ -3792,6 +3795,9 @@ focus_tree = {
 		y = 11
 		available = {
 			always = no
+		}
+		allow_branch = {
+			has_country_flag = ALF_ready_for_2nd_liberation_war_flag
 		}
 		completion_reward = {
 		}

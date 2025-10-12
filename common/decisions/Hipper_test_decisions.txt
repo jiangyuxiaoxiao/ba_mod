@@ -470,6 +470,8 @@ Hipper_test_decisions_categories = {
 			set_global_flag = the_enterprise_war_begins
 			set_country_flag = ALF_EPW_STAGE2_flag
 			set_global_flag = EPW_ENDS_global_flag
+			set_country_flag = ALF_ready_for_2nd_liberation_war_flag
+			set_country_flag = ALF_Gabriel_operation_success
 			mark_focus_tree_layout_dirty = yes
 		}
 	}

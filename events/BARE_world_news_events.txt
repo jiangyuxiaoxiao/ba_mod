@@ -957,3 +957,18 @@ news_event = {
 		BSE_Fire_Super_Event_index_9 = yes
 	}
 }
+
+##光复战争
+news_event = {
+	id = ALF_news_event.10
+	#picture = GFX_BA_news_18
+	title = ALF_news_event.10.t
+	desc = ALF_news_event.10.desc
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = ALF_news_event.10.a
+		BSE_Fire_Super_Event_index_7 = yes
+	}
+}

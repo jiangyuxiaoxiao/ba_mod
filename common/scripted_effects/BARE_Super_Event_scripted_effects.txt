@@ -251,7 +251,10 @@ BSE_Fire_Super_Event_index_7 = {
 	set_variable = {
 		barexp_super_event_index = 7
 	}
-	#scoped_play_song = "BSP_The_Battle_on_Ice_Short"
+	hidden_effect = {
+		scoped_sound_effect = BARE_SuperEvent_Sound_2ND_LIBERATION_WAR
+		scoped_play_song = "BARE_SuperEvent_Sound_Block_2m"
+	}
 }
 
 BSE_Fire_Super_Event_index_8 = {

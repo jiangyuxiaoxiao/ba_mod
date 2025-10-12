@@ -1008,6 +1008,7 @@ country_event = {
 		remove_ideas = ALF_shadow_follows
 		##增加debuff并完成国策
 		complete_national_focus = ALF_a_long_way_back_home
+		mark_focus_tree_layout_dirty = yes
 	}
 }
 
@@ -1182,6 +1183,8 @@ country_event = {
 			}
 		}
 		add_country_leader_trait = ALF_justice_prevails
+		set_country_flag = ALF_ready_for_2nd_liberation_war_flag
+		mark_focus_tree_layout_dirty = yes
 	}
 }
 
@@ -1261,6 +1264,11 @@ country_event = {
 	title = ALF.63.t
 	desc = ALF.63.desc
 	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			news_event = ALF_news_event.10
+		}
+	}
 	option = {
 		name = ALF.63.a
 		set_country_flag = ALF_UOP_begains_flag
