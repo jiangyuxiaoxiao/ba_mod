@@ -488,12 +488,18 @@ ALF_failure_impact_of_eden_treaty_TRI_stage_1 = {
 		transfer_units_fraction = {
 			target = TRT
 			size = 0.1
+			keep_unit_leaders_trigger = {
+				always = yes
+			}
 		}
+		##分配角色##
 	}
 	TRT = {
+		TRT_redirect_character = yes
 		BARE_RULE_story_settings_ALF_SELECTED_manpower_initialize_effect = yes
 	}
 	TRA = {
+		add_ideas = ALF_TRA_BUFF
 		add_command_power = 100
 		annex_country = {
 			target = TRI
@@ -527,6 +533,7 @@ ALF_failure_impact_of_eden_treaty_TRI_stage_1 = {
 			id = ALF_news_event.5
 		}
 		BARE_RULE_story_settings_ALF_SELECTED_manpower_initialize_effect = yes
+		TRA_redirect_character = yes
 	}
 }
 
@@ -611,6 +618,7 @@ ALF_failure_impact_of_eden_treaty_GEH_stage_0 = {
 	}
 	GER = {
 		BARE_RULE_story_settings_ALF_SELECTED_manpower_initialize_effect = yes
+		GER_redirect_character = yes
 	}
 	GEL = {
 		annex_country = {
@@ -630,7 +638,9 @@ ALF_failure_impact_of_eden_treaty_GEH_stage_0 = {
 	}
 	GEA = {
 		add_command_power = 100
+		GEA_redirect_character = yes
 		BARE_RULE_story_settings_ALF_SELECTED_manpower_initialize_effect = yes
+		add_ideas = ALF_GEA_BUFF
 	}
 	news_event = {
 		id = ALF_news_event.6
@@ -668,6 +678,438 @@ ALF_failure_impact_of_eden_treaty_GEH_stage_1 = {
 		country_event = {
 			id = ALF.53
 			days = 10
+		}
+	}
+}
+
+TRT_redirect_character = {
+	every_character = {
+		limit = {
+			has_character_flag = TRI_character_arrested
+		}
+		clr_character_flag = yes
+	}
+	every_possible_country = {
+		limit = {
+			has_character = TRI_hifumi
+		}
+		random_character = {
+			limit = {
+				is_character = TRI_hifumi
+			}
+			set_nationality = TRT
+		}
+	}
+	every_possible_country = {
+		limit = {
+			has_character = TRI_azusa
+		}
+		random_character = {
+			limit = {
+				is_character = TRI_azusa
+			}
+			set_nationality = TRT
+		}
+	}
+	every_possible_country = {
+		limit = {
+			has_character = TRI_hanako
+		}
+		random_character = {
+			limit = {
+				is_character = TRI_hanako
+			}
+			set_nationality = TRT
+		}
+	}
+	promote_character = TRI_hanako
+	every_possible_country = {
+		limit = {
+			has_character = TRI_koharu
+		}
+		random_character = {
+			limit = {
+				is_character = TRI_koharu
+			}
+			set_nationality = TRT
+		}
+	}
+	every_possible_country = {
+		limit = {
+			has_character = TRI_mine
+		}
+		random_character = {
+			limit = {
+				is_character = TRI_mine
+			}
+			set_nationality = TRT
+		}
+	}
+	every_possible_country = {
+		limit = {
+			has_character = TRI_hanae
+		}
+		random_character = {
+			limit = {
+				is_character = TRI_hanae
+			}
+			set_nationality = TRT
+		}
+	}
+	every_possible_country = {
+		limit = {
+			has_character = TRI_serina
+		}
+		random_character = {
+			limit = {
+				is_character = TRI_serina
+			}
+			set_nationality = TRT
+		}
+	}
+	every_possible_country = {
+		limit = {
+			has_character = TRI_mari
+		}
+		random_character = {
+			limit = {
+				is_character = TRI_mari
+			}
+			set_nationality = TRT
+		}
+	}
+	every_possible_country = {
+		limit = {
+			has_character = TRI_sakurako
+		}
+		random_character = {
+			limit = {
+				is_character = TRI_sakurako
+			}
+			set_nationality = TRT
+		}
+	}
+	every_possible_country = {
+		limit = {
+			has_character = TRI_hinata
+		}
+		random_character = {
+			limit = {
+				is_character = TRI_hinata
+			}
+			set_nationality = TRT
+		}
+	}
+}
+
+TRA_redirect_character = {
+	every_character = {
+		limit = {
+			has_character_flag = TRI_character_arrested
+		}
+		clr_character_flag = yes
+	}
+	every_possible_country = {
+		limit = {
+			has_character = TRI_tsurugi
+		}
+		random_character = {
+			limit = {
+				is_character = TRI_tsurugi
+			}
+			set_nationality = TRA
+		}
+	}
+	every_possible_country = {
+		limit = {
+			has_character = TRI_hasumi
+		}
+		random_character = {
+			limit = {
+				is_character = TRI_hasumi
+			}
+			set_nationality = TRA
+		}
+	}
+	every_possible_country = {
+		limit = {
+			has_character = TRI_mashiro
+		}
+		random_character = {
+			limit = {
+				is_character = TRI_mashiro
+			}
+			set_nationality = TRA
+		}
+	}
+	every_possible_country = {
+		limit = {
+			has_character = TRI_ichika
+		}
+		random_character = {
+			limit = {
+				is_character = TRI_ichika
+			}
+			set_nationality = TRA
+		}
+	}
+}
+
+GER_redirect_character = {
+	every_possible_country = {
+		limit = {
+			has_character = GEH_makoto
+		}
+		random_character = {
+			limit = {
+				is_character = GEH_makoto
+			}
+			set_nationality = GER
+		}
+	}
+	promote_character = GEH_makoto
+	every_possible_country = {
+		limit = {
+			has_character = GEH_hina
+		}
+		random_character = {
+			limit = {
+				is_character = GEH_hina
+			}
+			set_nationality = GER
+		}
+	}
+	every_possible_country = {
+		limit = {
+			has_character = GEH_ako
+		}
+		random_character = {
+			limit = {
+				is_character = GEH_ako
+			}
+			set_nationality = GER
+		}
+	}
+	every_possible_country = {
+		limit = {
+			has_character = GEH_iori
+		}
+		random_character = {
+			limit = {
+				is_character = GEH_iori
+			}
+			set_nationality = GER
+		}
+	}
+	every_possible_country = {
+		limit = {
+			has_character = GEH_chinatsu
+		}
+		random_character = {
+			limit = {
+				is_character = GEH_chinatsu
+			}
+			set_nationality = GER
+		}
+	}
+	every_possible_country = {
+		limit = {
+			has_character = GEH_iroha
+		}
+		random_character = {
+			limit = {
+				is_character = GEH_iroha
+			}
+			set_nationality = GER
+		}
+	}
+}
+
+GEA_redirect_character = {
+	every_possible_country = {
+		limit = {
+			has_character = GEH_satsuki
+		}
+		random_character = {
+			limit = {
+				is_character = GEH_satsuki
+			}
+			set_nationality = GEA
+		}
+	}
+	every_possible_country = {
+		limit = {
+			has_character = GEH_aru
+		}
+		random_character = {
+			limit = {
+				is_character = GEH_aru
+			}
+			set_nationality = GEA
+		}
+	}
+	every_possible_country = {
+		limit = {
+			has_character = GEH_mutsuki
+		}
+		random_character = {
+			limit = {
+				is_character = GEH_mutsuki
+			}
+			set_nationality = GEA
+		}
+	}
+	every_possible_country = {
+		limit = {
+			has_character = GEH_kayoko
+		}
+		random_character = {
+			limit = {
+				is_character = GEH_kayoko
+			}
+			set_nationality = GEA
+		}
+	}
+	every_possible_country = {
+		limit = {
+			has_character = GEH_haruka
+		}
+		random_character = {
+			limit = {
+				is_character = GEH_haruka
+			}
+			set_nationality = GEA
+		}
+	}
+	every_possible_country = {
+		limit = {
+			has_character = GEH_izumi
+		}
+		random_character = {
+			limit = {
+				is_character = GEH_izumi
+			}
+			set_nationality = GEA
+		}
+	}
+	every_possible_country = {
+		limit = {
+			has_character = GEH_junko
+		}
+		random_character = {
+			limit = {
+				is_character = GEH_junko
+			}
+			set_nationality = GEA
+		}
+	}
+	every_possible_country = {
+		limit = {
+			has_character = GEH_akari
+		}
+		random_character = {
+			limit = {
+				is_character = GEH_akari
+			}
+			set_nationality = GEA
+		}
+	}
+	every_possible_country = {
+		limit = {
+			has_character = GEH_haruna
+		}
+		random_character = {
+			limit = {
+				is_character = GEH_haruna
+			}
+			set_nationality = GEA
+		}
+	}
+}
+
+ALF_end_2nd_liberation_war_effect = {
+	GER = {
+		annex_country = {
+			target = GEA
+			transfer_troops = no
+		}
+		set_autonomy = {
+			target = A06
+			autonomous_state = autonomy_bare_trusteeship_area
+			end_wars = yes
+			end_civil_wars = yes
+		}
+		set_autonomy = {
+			target = A08
+			autonomous_state = autonomy_bare_trusteeship_area
+			end_wars = yes
+			end_civil_wars = yes
+		}
+		set_autonomy = {
+			target = A09
+			autonomous_state = autonomy_bare_trusteeship_area
+			end_wars = yes
+			end_civil_wars = yes
+		}
+		set_autonomy = {
+			target = A11
+			autonomous_state = autonomy_bare_trusteeship_area
+			end_wars = yes
+			end_civil_wars = yes
+		}
+	}
+	TRT = {
+		annex_country = {
+			target = TRA
+			transfer_troops = no
+		}
+		annex_country = {
+			target = TRI
+			transfer_troops = yes
+		}
+		set_autonomy = {
+			target = A01
+			autonomous_state = autonomy_bare_trusteeship_area
+			end_wars = yes
+			end_civil_wars = yes
+		}
+		set_autonomy = {
+			target = A02
+			autonomous_state = autonomy_bare_trusteeship_area
+			end_wars = yes
+			end_civil_wars = yes
+		}
+		set_autonomy = {
+			target = A04
+			autonomous_state = autonomy_bare_trusteeship_area
+			end_wars = yes
+			end_civil_wars = yes
+		}
+		set_autonomy = {
+			target = A05
+			autonomous_state = autonomy_bare_trusteeship_area
+			end_wars = yes
+			end_civil_wars = yes
+		}
+	}
+	###最后把所有人踹出战争##
+	every_possible_country = {
+		limit = {
+			OR = {
+				tag = GEA
+				tag = TRA
+				is_subject_of = GEA
+				is_subject_of = TRA
+			}
+		}
+		every_possible_country = {
+			limit = {
+				OR = {
+					tag = ALF
+					is_ally_with = ALF
+				}
+			}
+			white_peace = PREV
 		}
 	}
 }

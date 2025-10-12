@@ -406,7 +406,6 @@ Hipper_test_decisions_categories = {
 			BSE_Fire_Super_Event_index_8 = yes
 		}
 	}
-
 	BAREXP_show_superevent9_gui = {
 		visible = {
 			is_debug = yes
@@ -458,7 +457,6 @@ Hipper_test_decisions_categories = {
 			mark_focus_tree_layout_dirty = yes
 		}
 	}
-
 	show_ALF_phrase_2_all_focus_tree_decision = {
 		visible = {
 			is_debug = yes
@@ -475,7 +473,6 @@ Hipper_test_decisions_categories = {
 			mark_focus_tree_layout_dirty = yes
 		}
 	}
-
 	active_kaiser_mission_decision = {
 		visible = {
 			is_debug = yes
@@ -489,7 +486,6 @@ Hipper_test_decisions_categories = {
 			activate_mission = ALF_EPW_Stage_2_timer_mission
 		}
 	}
-
 	initialize_TRI_eden_failure = {
 		visible = {
 			is_debug = yes
@@ -503,7 +499,6 @@ Hipper_test_decisions_categories = {
 			ALF_failure_impact_of_eden_treaty_TRI_stage_3 = yes
 		}
 	}
-
 	initialize_2nd_liberation_war = {
 		visible = {
 			is_debug = yes
@@ -519,6 +514,114 @@ Hipper_test_decisions_categories = {
 			ALF = {
 				add_to_faction = TRT
 				add_to_faction = GER
+			}
+		}
+	}
+	peace_test_2nd_liberation_war_decision = {
+		visible = {
+			is_debug = yes
+		}
+		available = {
+			is_ai = no
+		}
+		complete_effect = {
+			every_possible_country = {
+				limit = {
+					OR = {
+						tag = GEA
+						is_subject_of = GEA
+					}
+				}
+				every_possible_country = {
+					limit = {
+						OR = {
+							tag = ALF
+							is_ally_with = ALF
+						}
+					}
+					white_peace = PREV
+				}
+			}
+			GER = {
+				annex_country = {
+					target = GEA
+					transfer_troops = no
+				}
+				set_autonomy = {
+					target = A06
+					autonomous_state = autonomy_bare_trusteeship_area
+					end_wars = yes
+					end_civil_wars = yes
+				}
+				set_autonomy = {
+					target = A08
+					autonomous_state = autonomy_bare_trusteeship_area
+					end_wars = yes
+					end_civil_wars = yes
+				}
+				set_autonomy = {
+					target = A09
+					autonomous_state = autonomy_bare_trusteeship_area
+					end_wars = yes
+					end_civil_wars = yes
+				}
+				set_autonomy = {
+					target = A11
+					autonomous_state = autonomy_bare_trusteeship_area
+					end_wars = yes
+					end_civil_wars = yes
+				}
+			}
+			every_possible_country = {
+				limit = {
+					OR = {
+						tag = TRA
+						is_subject_of = TRA
+					}
+				}
+				every_possible_country = {
+					limit = {
+						OR = {
+							tag = ALF
+							is_ally_with = ALF
+						}
+					}
+					white_peace = PREV
+				}
+			}
+			TRT = {
+				annex_country = {
+					target = TRA
+					transfer_troops = no
+				}
+				annex_country = {
+					target = TRI
+					transfer_troops = yes
+				}
+				set_autonomy = {
+					target = A01
+					autonomous_state = autonomy_bare_trusteeship_area
+					end_wars = yes
+					end_civil_wars = yes
+				}
+				set_autonomy = {
+					target = A02
+					autonomous_state = autonomy_bare_trusteeship_area
+					end_wars = yes
+					end_civil_wars = yes
+				}
+				set_autonomy = {
+					target = A04
+					autonomous_state = autonomy_bare_trusteeship_area
+					end_wars = yes
+					end_civil_wars = yes
+				}
+				set_autonomy = {
+					target = A05
+					autonomous_state = autonomy_bare_trusteeship_area
+					end_wars = yes
+					end_civil_wars = yes
+				}
 			}
 		}
 	}

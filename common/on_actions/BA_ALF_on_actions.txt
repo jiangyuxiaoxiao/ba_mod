@@ -1,7 +1,7 @@
 on_actions = {
-	##阿里乌斯解放战争
 	on_declare_war = {
 		effect = {
+			##阿里乌斯解放战争
 			##夫人的宣战效果放在任务里##
 			if = {
 				limit = {
@@ -37,7 +37,7 @@ on_actions = {
 				}
 				ALF = {
 					country_event = {
-						id = ALF.62
+						id = ALF.63
 					}
 				}
 			}

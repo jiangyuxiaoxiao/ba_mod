@@ -1120,10 +1120,11 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = ALF.53.a
+		set_global_flag = TRI_coup_complete_flag
 	}
 }
 
-##
+##跨过瓦砾
 country_event = {
 	id = ALF.54
 	#picture = GFX_common_event_gui_test
@@ -1136,6 +1137,7 @@ country_event = {
 	}
 }
 
+##审视罪恶
 country_event = {
 	id = ALF.55
 	#picture = GFX_common_event_gui_test
@@ -1148,6 +1150,7 @@ country_event = {
 	}
 }
 
+##面对命运
 country_event = {
 	id = ALF.56
 	#picture = GFX_common_event_gui_test
@@ -1160,6 +1163,7 @@ country_event = {
 	}
 }
 
+##真容
 country_event = {
 	id = ALF.57
 	#picture = GFX_common_event_gui_test
@@ -1181,6 +1185,7 @@ country_event = {
 	}
 }
 
+##首次接触
 country_event = {
 	id = ALF.58
 	#picture = GFX_common_event_gui_test
@@ -1192,6 +1197,7 @@ country_event = {
 	}
 }
 
+##现在：圣三一
 country_event = {
 	id = ALF.59
 	#picture = GFX_common_event_gui_test
@@ -1204,6 +1210,7 @@ country_event = {
 	}
 }
 
+##现状：格黑娜
 country_event = {
 	id = ALF.60
 	#picture = GFX_common_event_gui_test
@@ -1215,6 +1222,7 @@ country_event = {
 	}
 }
 
+##现状：绝境同盟
 country_event = {
 	id = ALF.61
 	#picture = GFX_common_event_gui_test
@@ -1242,6 +1250,7 @@ country_event = {
 			create_faction = TRA_GEA_Axis
 			add_to_faction = GEA
 		}
+		activate_mission = ALF_UOP_counter_mission
 	}
 }
 
@@ -1256,5 +1265,22 @@ country_event = {
 		name = ALF.63.a
 		set_country_flag = ALF_UOP_begains_flag
 		activate_mission = ALF_UOP_trigger_mission
+	}
+}
+
+##修宪
+country_event = {
+	id = ALF.64
+	#picture = GFX_common_event_gui_test
+	title = ALF.64.t
+	desc = ALF.64.desc
+	is_triggered_only = yes
+	option = {
+		name = ALF.64.a
+		set_country_flag = ALF_support_the_old_ways_flag
+	}
+	option = {
+		name = ALF.64.b
+		set_country_flag = ALF_support_the_new_dawn_flag
 	}
 }

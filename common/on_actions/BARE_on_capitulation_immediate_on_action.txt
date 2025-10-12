@@ -359,37 +359,21 @@ on_actions = {
                     ROOT = {
                         tag = GEA
                     }
-                }
-                GER = {
-                    annex_country = {
-                        target = GEA
-                        transfer_troops = no
-                    }
-                    set_autonomy = {
-                        target = A06
-                        autonomous_state = autonomy_bare_trusteeship_area
-                        end_wars = yes
-                        end_civil_wars = yes
-                    }
-                    set_autonomy = {
-                        target = A08
-                        autonomous_state = autonomy_bare_trusteeship_area
-                        end_wars = yes
-                        end_civil_wars = yes
-                    }
-                    set_autonomy = {
-                        target = A09
-                        autonomous_state = autonomy_bare_trusteeship_area
-                        end_wars = yes
-                        end_civil_wars = yes
-                    }
-                    set_autonomy = {
-                        target = A11
-                        autonomous_state = autonomy_bare_trusteeship_area
-                        end_wars = yes
-                        end_civil_wars = yes
+                    TRA = {
+                        has_capitulated = yes
                     }
                 }
+                every_possible_country = {
+                    limit = {
+                        OR = {
+                            tag = ALF
+                            is_ally_with = ALF
+                        }
+                    }
+                    white_peace = GEA
+                    white_peace = TRA
+                }
+                ALF_end_2nd_liberation_war_effect = yes
             }
             else_if = {
                 limit = {
@@ -402,41 +386,21 @@ on_actions = {
                     ROOT = {
                         tag = TRA
                     }
-                }
-                TRT = {
-                    annex_country = {
-                        target = TRA
-                        transfer_troops = no
-                    }
-                    annex_country = {
-                        target = TRI
-                        transfer_troops = yes
-                    }
-                    set_autonomy = {
-                        target = A01
-                        autonomous_state = autonomy_bare_trusteeship_area
-                        end_wars = yes
-                        end_civil_wars = yes
-                    }
-                    set_autonomy = {
-                        target = A02
-                        autonomous_state = autonomy_bare_trusteeship_area
-                        end_wars = yes
-                        end_civil_wars = yes
-                    }
-                    set_autonomy = {
-                        target = A04
-                        autonomous_state = autonomy_bare_trusteeship_area
-                        end_wars = yes
-                        end_civil_wars = yes
-                    }
-                    set_autonomy = {
-                        target = A05
-                        autonomous_state = autonomy_bare_trusteeship_area
-                        end_wars = yes
-                        end_civil_wars = yes
+                    GEA = {
+                        has_capitulated = yes
                     }
                 }
+                every_possible_country = {
+                    limit = {
+                        OR = {
+                            tag = ALF
+                            is_ally_with = ALF
+                        }
+                    }
+                    white_peace = GEA
+                    white_peace = TRA
+                }
+                ALF_end_2nd_liberation_war_effect = yes
             }
             ############################其他情况投降#####################################
             else_if = {

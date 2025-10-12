@@ -1890,14 +1890,66 @@ ALF_Uriel_operation_category = {
 			always = no
 		}
 		available = {
-			TRA = {
-				exists = no
-			}
 			GEA = {
-				exists = no
+				if = {
+					limit = {
+						surrender_progress < 0.95
+					}
+					305 = {
+						NOT = {
+							is_controlled_by = GEA
+						}
+					}
+				}
+				surrender_progress > 0.9
+			}
+			TRA = {
+				if = {
+					limit = {
+						surrender_progress < 0.95
+					}
+					118 = {
+						NOT = {
+							is_controlled_by = TRA
+						}
+					}
+				}
+				surrender_progress > 0.9
+			}
+			any_country = {
+				limit = {
+					OR = {
+						tag = GEA
+						tag = TRA
+					}
+				}
+				has_capitulated = yes
 			}
 		}
 		complete_effect = {
+			hidden_effect = {
+				ALF_end_2nd_liberation_war_effect = yes
+				if = {
+					limit = {
+						TRA = {
+							has_capitulated = no
+						}
+					}
+					ALF_TRA_LIBERATION_WAR_PEACE_EVENT_POPUP_EFFECT = yes
+				}
+				if = {
+					limit = {
+						GEA = {
+							has_capitulated = no
+						}
+					}
+					ALF_GEA_LIBERATION_WAR_PEACE_EVENT_POPUP_EFFECT = yes
+				}
+			}
+			news_event = {
+				id = ALF_news_event.9
+			}
+			
 		}
 		timeout_effect = {
 			activate_mission = ALF_UOP_trigger_mission
@@ -1922,7 +1974,7 @@ ALF_Uriel_operation_category = {
 			}
 		}
 		available = {
-			has_completed_focus = ALF_storm_eye
+			has_completed_focus = ALF_duty_calls_always
 		}
 		fire_only_once = yes
 		cost = 100

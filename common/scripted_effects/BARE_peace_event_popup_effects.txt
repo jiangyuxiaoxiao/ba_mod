@@ -137,6 +137,73 @@ BARE_PEACE_EVENT_POPUP_DEFAULT_FOR_CAPITULATION = {
 	    add_to_variable = { global.peace_popup_dirty = 1 }
 }
 
+##########################################
+ALF_TRA_LIBERATION_WAR_PEACE_EVENT_POPUP_EFFECT = {            
+        set_global_flag = show_peace_popup_alert
+		ALF = {
+			save_global_event_target_as = winning_country
+		}
+		TRA = {
+			save_global_event_target_as = losing_country
+		}
+
+		if = {
+			limit = {
+				event_target:losing_country = {
+					any_allied_country = {
+						has_war_together_with = event_target:losing_country
+					}
+				}
+			}
+			set_global_flag = losing_country_multiple
+		}
+
+		if = {
+			limit = {
+				event_target:winning_country = {
+					any_allied_country = {
+						has_war_together_with = event_target:winning_country
+					}
+				}
+			}
+			set_global_flag = winning_country_multiple
+		}
+	    add_to_variable = { global.peace_popup_dirty = 1 }
+}
+
+ALF_GEA_LIBERATION_WAR_PEACE_EVENT_POPUP_EFFECT = {            
+        set_global_flag = show_peace_popup_alert
+		ALF = {
+			save_global_event_target_as = winning_country
+		}
+		GEA = {
+			save_global_event_target_as = losing_country
+		}
+
+		if = {
+			limit = {
+				event_target:losing_country = {
+					any_allied_country = {
+						has_war_together_with = event_target:losing_country
+					}
+				}
+			}
+			set_global_flag = losing_country_multiple
+		}
+
+		if = {
+			limit = {
+				event_target:winning_country = {
+					any_allied_country = {
+						has_war_together_with = event_target:winning_country
+					}
+				}
+			}
+			set_global_flag = winning_country_multiple
+		}
+	    add_to_variable = { global.peace_popup_dirty = 1 }
+}
+
 clr_global_for_peace_popup = {
     clr_global_flag = show_peace_popup_alert
 	clr_global_flag = losing_country_multiple

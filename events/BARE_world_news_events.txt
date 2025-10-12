@@ -942,3 +942,18 @@ news_event = {
 		name = ALF_news_event.8.a
 	}
 }
+
+##伊甸条约凯旋
+news_event = {
+	id = ALF_news_event.9
+	#picture = GFX_BA_news_18
+	title = ALF_news_event.9.t
+	desc = ALF_news_event.9.desc
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = ALF_news_event.9.a
+		BSE_Fire_Super_Event_index_9 = yes
+	}
+}

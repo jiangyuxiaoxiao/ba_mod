@@ -3357,6 +3357,9 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 50
 			add_ideas = ALF_new_constitution
+			country_event = {
+				id = ALF.64
+			}
 		}
 	}
 	focus = {
@@ -3689,6 +3692,7 @@ focus_tree = {
 		bypass = {
 		}
 		available = {
+			has_global_flag = TRI_coup_complete_flag
 		}
 		completion_reward = {
 			country_event = {
@@ -3775,6 +3779,7 @@ focus_tree = {
 				id = ALF.57
 			}
 			unlock_decision_category_tooltip = ALF_Uriel_operation_category
+			#unlock_decision_tooltip = ALF_UOP_infiltrate_target_decision
 		}
 	}
 	###最终决战
