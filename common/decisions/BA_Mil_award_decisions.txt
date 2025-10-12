@@ -1,0 +1,280 @@
+MIL_award_debug_decisions = {
+    MIL_award_debug_decision = {
+        visible = {
+            is_debug= yes
+        }
+        complete_effect = {
+            add_political_power = 100
+            #虚数计划上限概率
+            set_variable = {
+                MIL_award_imaginary_number_network_max = 100
+            }
+            #虚数计划概率数
+            set_variable = {
+                MIL_award_imaginary_number_network_prob = 100
+            }
+            #虚数计划下限概率
+            set_variable = {
+                MIL_award_imaginary_number_network_min = 0
+            }
+            #工程师上限概率
+            set_variable = {
+                MIL_award_engineer_department_max = 100
+            }
+            #工程师概率数
+            set_variable = {
+                MIL_award_engineer_department_prob = 100
+            }
+            #工程师下限概率
+            set_variable = {
+                MIL_award_engineer_department_min = 0
+            }
+            #游戏开发部上限概率
+            set_variable = {
+                MIL_award_game_development_max = 100
+            }
+            #工程师概率数
+            set_variable = {
+                MIL_award_game_development_prob = 100
+            }
+            #游戏开发部下限概率
+            set_variable = {
+                MIL_award_game_development_min = 0
+            }
+        }
+    }
+}
+MIL_award_imaginary_number_network_decisions = {
+    MIL_award_imaginary_number_network_more_money = {
+        days_remove = 45
+        days_re_enable = 45
+        modifier = {
+            consumer_goods_factor = 0.1
+        }
+        remove_effect = {
+            add_days_mission_timeout = {
+                mission = MIL_award_imaginary_number_network_new_invention
+                days = -45
+            }
+        }
+    }
+    MIL_award_imaginary_number_network_more_people = {
+        days_remove = 45
+        days_re_enable = 45
+        modifier = {
+            research_speed_factor = -0.05
+        }
+        remove_effect = {
+            add_days_mission_timeout = {
+                mission = MIL_award_imaginary_number_network_new_invention
+                days = -45
+            }
+        }
+    }
+    MIL_award_imaginary_number_network_fix = {
+        
+    }
+    MIL_award_imaginary_number_network_update = {
+        cost = 25
+        days_remove = 45
+        days_re_enable = 45
+        complete_effect = {
+            add_days_mission_timeout = {
+                mission = MIL_award_imaginary_number_network_new_invention
+                days = 15
+            }
+        }
+        remove_effect = {
+            add_to_variable = {
+                MIL_award_imaginary_number_network_min = 5
+            }
+            add_to_variable = {
+                MIL_award_imaginary_number_network_max = 5
+            }
+        }
+    }
+    MIL_award_imaginary_number_network_new_invention = {
+        allowed = { tag = MIL }
+        available = {
+            always = no
+        }
+        timeout_effect = {
+            randomize_variable = {
+                var = MIL_award_imaginary_number_network_prob
+                distribution = uniform
+                min = MIL_award_imaginary_number_network_min
+                max = MIL_award_imaginary_number_network_max
+            }
+            if = {
+                limit = { check_variable = { MIL_award_imaginary_number_network_prob > 85 } }
+            }
+            else_if = {
+                limit = { check_variable = { MIL_award_imaginary_number_network_prob > 40 } }
+            }
+            else_if = {
+                limit = { check_variable = { MIL_award_imaginary_number_network_prob > 10 } }
+            }
+            else = {
+
+            }
+        }
+        days_mission_timeout = 180
+        is_good = yes
+    }
+}
+MIL_award_engineer_department_decisions = {
+    MIL_award_engineer_department_more_money = {
+        days_remove = 45
+        days_re_enable = 45
+        modifier = {
+            consumer_goods_factor = 0.1
+        }
+        remove_effect = {
+            add_days_mission_timeout = {
+                mission = MIL_award_engineer_department_new_invention
+                days = -45
+            }
+        }
+    }
+    MIL_award_engineer_department_more_people = {
+        days_remove = 45
+        days_re_enable = 45
+        modifier = {
+            research_speed_factor = -0.05
+        }
+        remove_effect = {
+            add_days_mission_timeout = {
+                mission = MIL_award_engineer_department_new_invention
+                days = -45
+            }
+        }
+    }
+    MIL_award_engineer_department_fix = {
+        
+    }
+    MIL_award_engineer_department_update = {
+        cost = 25
+        days_remove = 45
+        days_re_enable = 45
+        complete_effect = {
+            add_days_mission_timeout = {
+                mission = MIL_award_engineer_department_new_invention
+                days = 15
+            }
+        }
+        remove_effect = {
+            add_to_variable = {
+                MIL_award_engineer_department_min = 5
+            }
+            add_to_variable = {
+                MIL_award_engineer_department_max = 5
+            }
+        }
+    }
+    MIL_award_engineer_department_new_invention = {
+        allowed = { tag = MIL }
+        available = {
+            always = no
+        }
+        timeout_effect = {
+            if = {
+                limit = { check_variable = { MIL_award_engineer_department_prob > 85 } }
+            }
+            else_if = {
+                limit = { check_variable = { MIL_award_engineer_department_prob > 40 } }
+            }
+            else_if = {
+                limit = { check_variable = { MIL_award_engineer_department_prob > 10 } }
+            }
+            else = {
+
+            }
+            randomize_variable = {
+                var = MIL_award_engineer_department_prob
+                distribution = uniform
+                min = MIL_award_engineer_department_min
+                max = MIL_award_engineer_department_max
+            }            
+        }
+        days_mission_timeout = 180
+        is_good = yes
+    }
+}
+MIL_award_game_development_decisions = {
+    MIL_award_game_development_more_money = {
+        days_remove = 45
+        days_re_enable = 45
+        modifier = {
+            consumer_goods_factor = 0.1
+        }
+        remove_effect = {
+            add_days_mission_timeout = {
+                mission = MIL_award_game_department_new_invention
+                days = -45
+            }
+        }
+    }
+    MIL_award_game_development_more_people = {
+        days_remove = 45
+        days_re_enable = 45
+        modifier = {
+            research_speed_factor = -0.05
+        }
+        remove_effect = {
+            add_days_mission_timeout = {
+                mission = MIL_award_game_department_new_invention
+                days = -45
+            }
+        }
+    }
+    MIL_award_game_development_fix = {
+        
+    }
+    MIL_award_game_development_update = {
+        cost = 25
+        days_remove = 45
+        days_re_enable = 45
+        complete_effect = {
+            add_days_mission_timeout = {
+                mission = MIL_award_game_department_new_invention
+                days = 15
+            }
+        }
+        remove_effect = {
+            add_to_variable = {
+                MIL_award_game_development_min = 5
+            }
+            add_to_variable = {
+                MIL_award_game_development_max = 5
+            }
+        }
+    }
+    MIL_award_game_department_new_invention = {
+        allowed = { tag = MIL }
+        available = {
+            always = no
+        }
+        timeout_effect = {
+            randomize_variable = {
+                var = MIL_award_game_development_prob
+                distribution = uniform
+                min = MIL_award_game_development_min
+                max = MIL_award_game_development_max
+            }
+            if = {
+                limit = { check_variable = { MIL_award_game_development_prob > 85 } }
+            }
+            else_if = {
+                limit = { check_variable = { MIL_award_game_development_prob > 40 } }
+            }
+            else_if = {
+                limit = { check_variable = { MIL_award_game_development_prob > 10 } }
+            }
+            else = {
+                
+            }            
+        }
+        days_mission_timeout = 180
+        is_good = yes
+    }
+}
