@@ -1,11 +1,10 @@
 BARE_is_surrender_trigger = {
-	OR = {
-		AND = {
-			ROOT = { is_in_faction = no }
-			ROOT = { is_puppet = no }
+	ROOT = {
+		if = {
+			limit = { is_in_faction = no }
+			is_puppet = no
 		}
-		
-		ROOT = {
+		else = {
 			all_allied_country = {
 				if = {
 					limit = {

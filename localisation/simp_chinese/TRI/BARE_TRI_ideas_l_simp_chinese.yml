@@ -1,0 +1,78 @@
+﻿l_simp_chinese:
+#民族精神静态部分
+
+#圣三一政治线
+ eden_treaty_step_0_modifier: "争辩无休的《伊甸条约》方针"
+ eden_treaty_step_1_modifier: "大略初定的《伊甸条约》方针"
+ eden_treaty_step_2_modifier: "方略周详的《伊甸条约》方针"
+ eden_treaty_step_3_modifier: "已完成的《伊甸条约》"
+ eden_treaty_step_4_modifier: "濒临破灭的《伊甸条约》"
+ eden_treaty_step_5_modifier: "逐渐稳定的《伊甸条约》"
+ authorize_eagle_modifier: "以战止戈"
+ authorize_dove_modifier: "铸剑为犁"
+
+ TRI_special_services_investigations: "圣三一情报局"
+
+ TRI_SCH_teacher_modifier: "夏莱的老师"
+ TRI_prepare_for_meeting: "筹备会谈"
+ TRI_prepare_for_meeting_2_1: "$TRI_prepare_for_meeting$"
+ TRI_prepare_for_meeting_2_2: "$TRI_prepare_for_meeting$"
+ TRI_prepare_for_meeting_3: "$TRI_prepare_for_meeting$"
+ TRI_prepare_for_meeting_4: "$TRI_prepare_for_meeting$"
+
+ TRI_2st_eden_pact_modifier: "为会谈做出的整备"
+
+ TRI_dissonance_modifier: "不谐之音"
+ TRI_dissonance_modifier_alt: "不谐之音被订正？"
+ TRI_rebuilding_subsidy_modifier: "灾后重建津贴"
+
+ TRI_devastated_by_arius: "毁灭性打击"
+ GST_TRI_emergency_rescue_idea: "紧急救援"
+ GST_TRI_emergency_rescue_idea_tt: "对所有圣三一地区执行地区决议后移除"
+ TRI_chaotic_frontline: "混乱的前线"
+ TRI_chaotic_frontline_2: "携手并肩的前线"
+ TRI_sweep_threat: "扫除威胁！"
+ TRI_friendship_glory_future: "友谊，光荣与未来！"
+ TRI_victory_trust_unity: "胜利，信任与团结！"
+ TRI_reforming_administration_system: "进行中的行政重整"
+
+#圣三一军事线
+ TRI_tea_party_artillery_1: "茶话会直属炮兵等级—1"
+ TRI_tea_party_artillery_2: "茶话会直属炮兵等级—2"
+ TRI_tea_party_artillery_3: "茶话会直属炮兵等级—3"
+ TRI_tea_party_artillery_4: "茶话会直属炮兵等级—4"
+ TRI_tea_party_artillery_5: "茶话会直属炮兵等级—5"
+ TRI_prepare_for_war: "维持军备"
+ TRI_prepare_for_war_desc: "在当下的非常时期，我们必须要把所有精力全部放在军事议题上，至于经济问题...等我们从风暴中渡过，自有时间慢慢讨论。"
+ TRI_focus_on_stability: "重视稳定"
+ TRI_focus_on_stability_desc: "在当下的非常时期，维护学校内部的稳定乃头等大事。我们的议会必须要肩负起维护稳定的责任，以确保我们的学校度过难关。"
+ TRI_aeronautics_training: "圣三一航空训练计划"
+ TRI_aeronautics_training_1_1: "$TRI_aeronautics_training$"
+ TRI_aeronautics_training_1_2: "$TRI_aeronautics_training$"
+ TRI_aeronautics_training_2: "$TRI_aeronautics_training$"
+ TRI_integrated_air_ground_system: "圣三一空地一体化系统"
+ TRI_professional_UAV_production: "专业化无人机生产集团"
+ TRI_trinity_artillery: "圣三一火炮"
+ TRI_advanced_armour_idea: "先进性装甲"
+#圣三一经济线
+ material_allocation_modifier: "物资调配"
+ material_allocation_modifier_desc: "长久以来，我们对于学院内学生的各种配给在现如今的视角看来显得过于宽容。是时候对这些物资进行相对严格的管控了。"
+ trinity_industry_modifier: "圣三一工业"
+ trinity_industry_modifier_desc: "我们的热武器产出过程在相当长的一段时间内都没有得到有效的规制，这导致了相当数量的同学受伤以及物资的损耗。到了将流程规范落实下去，确保一切有序推进的时候了。"
+ trinity_industry_modifier_alt: "$trinity_industry_modifier$"
+ 
+ TRI_shaked_nagisa_belief_1: "受到动摇的信任"
+ TRI_shaked_nagisa_belief_1_desc: "由于最近未花的叛乱事件，茶会其领导桐藤渚在圣三一学院内遭受了广泛的质疑。如果我们不能及时采取行动，那整个圣三一将再次陷入猜疑和内斗的无限循环之中。"
+ TRI_bouncing_back_idea: "向上议院妥协中"
+ TRI_bouncing_back_remove_idea_trigger: "在各完成一次上议院所有派系的任务后移除"
+ TRI_making_the_best_use_idea: "向下议院妥协中"
+ TRI_making_the_best_use_remove_idea_trigger: "在各完成一次下议院所有派系的任务后移除"
+ TRI_shadow_scheme_in_progress: "正在铺展的“影子”计划"
+ TRI_shadow_scheme_in_progress_remove_idea_trigger: "向至少§Y4§!个大区给予重建津贴后移除"
+ TRI_shaked_nagisa_belief_2: "守任堪信"
+ TRI_shaked_nagisa_belief_2_desc: "通过及时的补救，茶会已经向圣三一的学生们证明了自己的能力，打消了校内大部分的质疑。"
+
+#民族精神动态部分（一般指装备效果）
+
+ TRI_carryon_package_equipment_modifier: "§Y$infantry_equipment$§!可靠性：§G+10.00%§!\n"
+ TRI_trinity_military: "圣三一军备"

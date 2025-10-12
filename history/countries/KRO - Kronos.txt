@@ -101,6 +101,8 @@ set_technology = {
 		#infantry_weapons_upgrade_suppressive_weapon_T2 = 1
 		#infantry_weapons_upgrade_sighting_T1 = 1
 }
+
+recruit_character = KRO_Reporting_Department
 add_ideas = {
 	BARE_Combat_Readiness_Start_Idea
 	BARE_Global_Trusteeship_Area

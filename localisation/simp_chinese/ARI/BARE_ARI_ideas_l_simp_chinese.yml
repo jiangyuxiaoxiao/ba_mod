@@ -1,0 +1,159 @@
+﻿l_simp_chinese:
+ ARI_JSL: "结束了"
+ ARI_JSL: "一切终归虚无"
+ JSL_NOT_ARMY: "无法训练,编辑,解散部队"
+ ARI_nihilism: "虚无主义"
+ ARI_nihilism_desc: "夫人教导学生们，世界上的万物都是虚无，没有真正的意义或价值。她强调无论是物质财富、人际关系还是个人成就都是微不足道而转瞬即逝。这种观念旨在剥夺学生们对正常生活和人际关系的渴望，让他们认为追求这些东西是徒劳无益的。"
+
+
+ ARI_beatrice_desc: "“夫人”是在数密术中她的代称，也是大部分阿里乌斯学生对她的称呼，其名为贝阿朵莉切，数密术成员，阿里乌斯的拥有者。\n\n在十年前的阿里乌斯的内战中，她依靠强硬且卑劣，或者说，“大人”的手段，成功掌控了阿里乌斯，而在此之后，她利用暴力，狡诈，谎言，还有矛盾为阿里乌斯构建了一个茧房，将阿里乌斯成为了只听命于她的趁手工具。\n\n而夫人掌控阿里乌斯的目的，并不是和这群可怜的学生玩统治游戏，她真正的目的，就藏于特鲁大教堂的深处，而她将会不惜一切代价实现它。\n\n§R哪怕，代价是基沃托斯§!"
+
+ 
+ ARI_nihilism_showcase: "虚无主义"
+ ARI_nihilism_showcase_desc: "夫人教导学生们，世界上的万物都是虚无，没有真正的意义或价值。她强调无论是物质财富、人际关系还是个人成就都是微不足道而转瞬即逝。这种观念旨在剥夺学生们对正常生活和人际关系的渴望，让他们认为追求这些东西是徒劳无益的。"
+ ARI_nihilism_cant_market_tooltip: "无法进入国际市场（§Y傀儡势力§!与§Y宗主势力!之间总是互有市场准入）"
+
+ non_puppet_opnion: "与所有非傀儡势力评价"
+
+ ARI_tax_farming: "阿里乌斯包税制"
+ ARI_tax_farming_desc: "出于各种原因，夫人并不热衷于管理阿里乌斯自治区的经济，因此她将各个工厂以及农地的生产指标转包给了下属的忠诚于她的阿里乌斯学生，俗称“监工”。这些学生被提拔的原因大多是出卖朋友或者以某些手段超额完成夫人任务。她们在被夫人委派的领地上有较大的自主权来选择满足夫人生产指标要求的办法，同时也负责承包当地学生训练和战斗任务。"
+ ARI_tax_farming_tt: "强化§Y$ARI_tax_farming$§!效果"
+ industrial_capacity_heavy_arms_factory: "$heavy_arms_factory$产出"
+
+ ARI_unclear_target: "缺乏目标"
+ ARI_unclear_target_desc: "长期的蛰伏让阿里乌斯的学生开始思考这种生活的意义，并给夫人的统治带来了麻烦，在我们宣传这种思考是没有意义的同时，我们得尽快让阿里乌斯动起来，去追求她们的目标—复仇。"
+
+ ARI_chasing_power_0: "力量渴望者"
+ ARI_chasing_power_1: "$ARI_chasing_power_0$"
+
+ ARI_broken_provisioning_system: "受损的物资供应体系"
+ ARI_broken_provisioning_system_desc: "在此之前，夫人其实有意限制了生活物资的产量，通过控制来源，达到一个不充足，但能勉强活下去的数量级，来在维持稳定的情况下最大化效率，并通过控制物资来源来控制学生。但神圣之塔的崩溃所带来的外界物资供应的中断，打破了这一平衡，不仅生产和日常行动受到了影响，还引发了一系列起义。尽管在夫人的镇压，这些起义被压下去了，而来自圣三一的物资也解了燃眉之急。但重建物资供应体系已是当务之急。"
+
+ ARI_flame_of_revenge: "复仇之焰"
+ ARI_flame_of_revenge_desc: "尽管如同地狱，但满腔的仇恨还是支撑着阿里乌斯学生在这种环境生活和奋斗下去，只要她们能看到复仇的可能，她们能把这种生活的苦难发泄到她们的“敌人”，而不是夫人身上。\n当前§Y$ARI_flame_of_revenge$进度§!：[?ARI_revenge_progress|Y%%0]，每月衰减[?ARI_flame_of_revenge_monthly_decay|%1-]"
+ ARI_change_revenge_progress_tt: "§Y$ARI_flame_of_revenge$进度§!：[?revenge_progress_change|+=%%0]"
+
+ ARI_Intelligence_department: "阿里乌斯对外情报和行动组"
+ ARI_Intelligence_department_desc: "阿里乌斯负责对外行动的行动小组，相对于普通的特战小组和学生来说，她们更加熟悉外界的生活，能够以更好的姿态与外界进行交流，但战斗力则不如专业战斗的特战小组。"
+ ARI_materials_monthly_modifier: "每月物资增长"
+
+ ARI_armed_students_modifier: "阿里乌斯武装学生部队"
+ ARI_armed_students_modifier_desc: "阿里乌斯的常规步兵归属于夫人或是在夫人体系下充当“监工”学生们，通常承担地方防卫，清缴游击队，或者在必要时间留在战壕里为特战小队争取行动时间的任务。他们的主要来源是当年被袭击的阿里乌斯自治区里的小孩子们，在接受夫人的洗脑后放弃了当年的圣三一阿里乌斯分院的信仰，只能改宗夫人的虚无主义。\n这些阿里乌斯步兵完全没有受过除战斗外的任何课程教学，所以她们的行动极其依靠受过指挥课程并且忠诚的学生来领导，通常装备是冲锋枪及单兵榴弹发射器，而指挥官可以使用配备附加型榴弹发射器的突击步枪，这些突击步枪外形上与圣三一古书馆文献上记载的曾经圣徒会所使用的略微类似，配合严酷的战斗训练，这使得她们在有组织的情况下战斗能力异常强悍，但如果指挥官失去战斗力或被策反，其战斗力就会大大下降，甚至在极度的慌乱中出现成建制投降或者大规模溃退的情况。"
+
+ ARI_armed_students_modifier_showcase: "阿里乌斯武装学生部队"
+ ARI_armed_students_modifier_showcase_desc: "阿里乌斯的常规步兵归属于夫人或是在夫人体系下充当“监工”学生们，通常承担地方防卫，清缴游击队，或者在必要时间留在战壕里为特战小队争取行动时间的任务。他们的主要来源是当年被袭击的阿里乌斯自治区里的小孩子们，在接受夫人的洗脑后放弃了当年的圣三一阿里乌斯分院的信仰，只能改宗夫人的虚无主义。\n这些阿里乌斯步兵完全没有受过除战斗外的任何课程教学，所以她们的行动极其依靠受过指挥课程并且忠诚的学生来领导，通常装备是冲锋枪及单兵榴弹发射器，而指挥官可以使用配备附加型榴弹发射器的突击步枪，这些突击步枪外形上与圣三一古书馆文献上记载的曾经圣徒会所使用的略微类似，配合严酷的战斗训练，这使得她们在有组织的情况下战斗能力异常强悍，但如果指挥官失去战斗力或被策反，其战斗力就会大大下降，甚至在极度的慌乱中出现成建制投降或者大规模溃退的情况。"
+
+ ARI_commander_lessons_1: "新指挥官课程"
+ ARI_commander_lessons_2: "优待忠诚指挥官"
+
+ ARI_special_force: "阿里乌斯特战部队"
+ ARI_special_force_desc: "阿里乌斯特战部队由直属夫人的精锐小队构成，这些学生在战斗训练的基础上还会接受夫人的直接教导，内容包括但不限于战场指挥学，以及加强的虚无主义灌输，还有夫人自己研究的一套包含了后现代哲学，建筑学和心理学构成的独有战术理论。抛开特战小队如何理解夫人独创的战术理论不谈，这一部分学生在战场上确实更加危险，因为他们通常可以独立行动并且造成极大破坏，必要时也可以接管失去指挥的常规阿里乌斯步兵。"
+
+ ARI_intelligence_in_TRI_0: "圣三一渗透进度—§R极低§!"
+ ARI_intelligence_in_TRI_1: "圣三一渗透进度—§t低§!"
+ ARI_intelligence_in_TRI_2: "圣三一渗透进度—§Y中§!"
+ ARI_intelligence_in_TRI_3: "圣三一渗透进度—§7高§!"
+ ARI_intelligence_in_TRI_4: "圣三一渗透进度—§G极高§!"
+ ARI_intelligence_in_GEH_0: "格黑娜渗透进度—§R极低§!"
+ ARI_intelligence_in_GEH_1: "格黑娜渗透进度—§t低§!"
+ ARI_intelligence_in_GEH_2: "格黑娜渗透进度—§Y中§!"
+ ARI_intelligence_in_GEH_3: "格黑娜渗透进度—§7高§!"
+ ARI_intelligence_in_GEH_4: "格黑娜渗透进度—§G极高§!"
+
+ ARI_mercenaries_in_black_market: "黑市佣兵团"
+
+ ARI_Pleasant_cooperation: "合作愉快"
+ ARI_improving_reward_and_punishment: "改进奖惩方法"
+ ARI_revanchism_education: "强化复仇教育"
+
+ ARI_assault_rifle_idea: "阿里乌斯制式突击步枪"
+ ARI_light_support_equipment_idea: "轻装支援火力"
+
+ ARI_merkava_main_battle_tank: "驰车式主战坦克"
+ ARI_merkava_main_battle_tank_desc: "阿里乌斯学园的主战坦克驰车式与基沃托斯其他地域所采纳的型号存在显著的差异。在多数学园倾向于运用前沿的自动化与人工智能技术以减少坦克操作人员，甚至追求无人化操作时，阿里乌斯的坦克仍然保留了十分传统的4人车组。对于这一与主流趋势背道而驰的选择，夫人选择这一设计当然有其独特考量。\n没有各种高顶尖自动化设备，让阿里乌斯的坦克可以腾出更多冗余来提升基本性能，同时也大大加强了可靠性和易维护性，而4人车组在一定程度上也方便夫人更方便掌控装甲部队，让阿里乌斯很难出现其他学园的一个人开着坦克胡闹的情况。\n至于多人车组带来的人员受伤几率大大增加和同样人手只能操作更少的坦克等缺点，夫人并不关心这些，阿里乌斯本身没有足够的产能去大规模量产坦克。\n当然，夫人也从来不关心她手下的学生的健康情况。"
+ ARI_merkava_main_battle_tank_1: "$ARI_merkava_main_battle_tank$"
+ ARI_merkava_main_battle_tank_1_desc: "$ARI_merkava_main_battle_tank_desc$"
+ ARI_merkava_main_battle_tank_2: "$ARI_merkava_main_battle_tank$"
+ ARI_merkava_main_battle_tank_2_desc: "$ARI_merkava_main_battle_tank_desc$"
+
+ ARI_mystery_reseacher: "神秘追寻者"
+ ARI_mystery_reseacher_desc: "我们投入了大量的精力到那些古籍和过去神秘造物之上，这大大推进了我们在神秘科学领域的研究。"
+ ARI_mystery_reseacher_2: "$ARI_mystery_reseacher$"
+ ARI_mystery_reseacher_2_desc: "$ARI_mystery_reseacher_desc$"
+
+ ARI_experience_in_Trinity_modifier: "圣三一行动的经验"
+ ARI_experience_in_Trinity_modifier_desc: "在圣三一的行动为我们积累了很多经验，而它们在之后我们和圣三一周旋时能派上不小用场。"
+
+ ARI_air_force_0: "阿里乌斯航空兵部队"
+ ARI_air_force_1: "$ARI_air_force_0$"
+
+ ARI_control_rank_1: "阿里乌斯掌握程度-§R低§!"
+ ARI_control_rank_2: "阿里乌斯掌握程度-§Y中§!"
+ ARI_control_rank_3: "阿里乌斯掌握程度-§G高§!"
+ ARI_control_rank_1_desc: "夫人通过突袭自治区以及挟持旧阿里乌斯的学生会长实现了对自治区的掌控。但其的控制并非看上去那么稳固，实际上一直有抵抗其占领的学生存在。"
+ ARI_control_rank_2_desc: "$ARI_control_rank_1_desc$"
+ ARI_control_rank_3_desc: "$ARI_control_rank_1_desc$"
+ ARI_low_control_rank_state: "游击队影响"
+ ARI_Gematria_member: "数秘术成员"
+ ARI_Gematria_member_desc: "数秘术(Gematria)即使在谜团众多的基沃托斯中也是相当具有神秘色彩的存在。他们崇尚深不可测的知识与智慧，并通过各种禁忌手段探寻这个学院都市的奥秘。数秘术的成员有黑服、巨匠、夫人、戈尔孔达等，每人均掌握独特的密仪和技术。"
+
+ ARI_Gematria_member_tt: "可以使用数秘术决议"
+
+ ARI_forbidden_weapons: "禁忌武器储备"
+ ARI_forbidden_weapons_desc: "尽管基沃托斯各学院共同签署了禁止大规模杀伤性武器的公约，然而这对潜藏在地下的阿里乌斯自治区并不适用，夫人的武器工厂正在制造这些禁忌武器。燃烧时难以扑灭的剧烈火焰和产生的有毒烟雾的白磷弹，利用空气炸药的温度和压力效应提高爆轰威力、产生杀伤效果的温压弹，大量使用能使人昏迷的芬太奴气体，这些都是夫人为其未来的对手准备的小惊喜。"
+ 
+ ARI_forbidden_weapons_showcase: "禁忌武器储备"
+ ARI_forbidden_weapons_showcase_desc: "尽管基沃托斯各学院共同签署了禁止大规模杀伤性武器的公约，然而这对潜藏在地下的阿里乌斯自治区并不适用，夫人的武器工厂正在制造这些禁忌武器。燃烧时难以扑灭的剧烈火焰和产生的有毒烟雾的白磷弹，利用空气炸药的温度和压力效应提高爆轰威力、产生杀伤效果的温压弹，大量使用能使人昏迷的芬太奴气体，这些都是夫人为其未来的对手准备的小惊喜。"
+
+
+
+
+
+ 
+
+
+
+
+###动态修正语句###
+ ARI_power_chaser: "力量渴望者"
+ ARI_power_chaser: "力量，智慧，权力，这一切美妙的东西都存放在那至高的§R乐园§!中，等着我们伸手去拿取。而在通往§R乐园§!的道路上，我们必须积累足够多的知识，才能为我们铸就打开大门的钥匙...\n\n§R我们终将到达§!"
+ ARI_power_chaser_effect_change_1: "获得名为§Y$ARI_power_chaser$§!的民族精神，其初始效果为：\n研究速度：§G+3%§!\n部队攻击：§G+3%§!。且该民族精神会随着我们对§R乐园§!的不断追求而不断增强。"
+ ARI_power_chaser_effect_change_2: "$ARI_power_chaser$\n追加效果：\n部队攻击：§G+3%§!"
+ ARI_power_chaser_effect_change_3: "$ARI_power_chaser$\n追加效果：\n神秘步兵防御：§G+7%§!"
+ ARI_power_chaser_effect_change_4: "$ARI_power_chaser$\n追加效果：\n研究速度：§G+5%§!"
+ ARI_power_chaser_effect_change_5: "$ARI_power_chaser$\n追加效果：\n研究速度：§G+5%§!"
+ ARI_power_chaser_effect_change_6: "$ARI_power_chaser$\n追加效果：\n工厂产出：§G+10%§!"
+ ARI_power_chaser_effect_change_7: "$ARI_power_chaser$\n追加效果：\n神秘步兵防御：§G+5%§!\n神秘步兵组织度：§G+5%§!"
+ ARI_power_chaser_effect_change_8: "$ARI_power_chaser$\n追加效果：\n神秘步兵攻击：§G+5%§!\n神秘步兵防御：§G+5%§!\ns神秘步兵组织度：§G+10%§!"
+ ARI_power_chaser_effect_change_9: "$ARI_power_chaser$\n追加效果：\n战争支持度：§G+10%§!\n消费品需求：§Y+10%§!"
+ ARI_power_chaser_effect_change_10: "$ARI_power_chaser$\n追加效果：\n战争支持度：§G+5%§!\n稳定度：§Y+5%§!"
+ ARI_power_chaser_effect_change_11: "$ARI_power_chaser$\n追加效果：\n神秘步兵攻击：§G+2%§!\n神秘步兵防御：§G+1%§!\n此外神秘步兵武器的造价额外下降§G2%§!"
+
+
+ ARI_a_lesson_from_traveller_operation: "“旅者”行动的教训"
+ ARI_a_lesson_from_traveller_operation_desc: "显而易见，我们在这场失败中付出了足够的代价。现在，我们已经做好了准备，确保同样的事件不会再次发生——摊牌的时间近了。"
+
+ ARI_catastrophic_traveller_operation: "“旅者”行动的灾难"
+ ARI_catastrophic_traveller_operation_desc: "阿里乌斯鲁莽的行动最后变成了一场彻头彻尾的灾难，并导致了从工厂到军队的全面骚动。如果不迅速给这场灾难善后，那它所激起的涟漪很可能会掀翻整个阿里乌斯。"
+
+ ARI_lesson_traveller_operation: "“旅者”行动的教训"
+ ARI_lesson_traveller_operation_desc: "我们的行动并非算得上成功，我们需要从这场行动中学习的东西还有很多。"
+
+ ARI_cut_traveller_operation_debuff_1: "$ARI_catastrophic_traveller_operation$追加效果：\n部队组织度：§G+20%§!"
+ ARI_cut_traveller_operation_debuff_2: "$ARI_catastrophic_traveller_operation$追加效果：\n部队攻击：§G+10%§!\n部队防御：§G+10%§!"
+ ARI_cut_traveller_operation_debuff_3: "$ARI_catastrophic_traveller_operation$追加效果：\n工厂产出：§G+25%§!\n消费品需求：§Y-25%§!"
+ ARI_cut_traveller_operation_debuff_4: "$ARI_catastrophic_traveller_operation$追加效果：\n战争支持度：§G+20%§!\n稳定度：§G+20%§!"
+ ARI_eden_action_chaos: "行动的混乱"
+ ARI_eden_action_chaos_desc: "由于这是我们第一次——很可能也是最后一次——执行如此大规模的军事行动，我们那些擅长指挥小股部队进行特种作战指挥官难以指挥手下成百上千的军队，这使得我们的军队体系内部出现了严重的混乱现象。"
+ ARI_eden_action_chaos_2: "行动的混乱"
+ ARI_eden_action_chaos_desc_2: "由于这是我们第一次——很可能也是最后一次——执行如此大规模的军事行动，我们那些擅长指挥小股部队进行特种作战指挥官难以指挥手下成百上千的军队，这使得我们的军队体系内部出现了严重的混乱现象。"
+ ARI_eden_mystery_infantry_debuff_4: "被削弱的投影"
+ ARI_eden_mystery_infantry_debuff_4_desc: "不知道是圣三一方面，还是那个来自夏莱的老师对我们的契约做了什么手脚，本已稳定的契约再次变得不稳定起来，而这则严重影响了我们投影士兵的战斗力。我们需要迅速想出解决办法，否则我们的前线很可能迅速陷入崩溃中。"
+ ARI_eden_mystery_infantry_debuff_3: "被削弱的投影"
+ ARI_eden_mystery_infantry_debuff_3_desc: "不知道是圣三一方面，还是那个来自夏莱的老师对我们的契约做了什么手脚，本已稳定的契约再次变得不稳定起来，而这则严重影响了我们投影士兵的战斗力。我们需要迅速想出解决办法，否则我们的前线很可能迅速陷入崩溃中。"
+ ARI_eden_mystery_infantry_debuff_2: "被削弱的投影"
+ ARI_eden_mystery_infantry_debuff_2_desc: "不知道是圣三一方面，还是那个来自夏莱的老师对我们的契约做了什么手脚，本已稳定的契约再次变得不稳定起来，而这则严重影响了我们投影士兵的战斗力。我们需要迅速想出解决办法，否则我们的前线很可能迅速陷入崩溃中。"
+ ARI_eden_mystery_infantry_debuff_1: "被削弱的投影"
+ ARI_eden_mystery_infantry_debuff_1_desc: "不知道是圣三一方面，还是那个来自夏莱的老师对我们的契约做了什么手脚，本已稳定的契约再次变得不稳定起来，而这则严重影响了我们投影士兵的战斗力。我们需要迅速想出解决办法，否则我们的前线很可能迅速陷入崩溃中。"
+ ARI_Eden_treaty_War_Forced_Attack: "强行发动进攻"
+ ARI_Eden_treaty_War_Forced_Defense: "死战不退"

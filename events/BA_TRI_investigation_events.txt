@@ -928,7 +928,7 @@ country_event = { #审讯记录1
     }
     option = {
 		name = TRI_events.400.b
-
+		custom_effect_tooltip = TRI_events.400.b.tt
 		ai_chance = {
 			base = 100
 		}

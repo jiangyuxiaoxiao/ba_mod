@@ -159,7 +159,7 @@ country_event = { #自动触发负面事件
 		}
 		country_event = {
 			id = TRI_political_focus.0
-			days = 14
+			months = 1
 		}
 	}
 }
@@ -178,7 +178,7 @@ country_event = { #学生抗议
 		name = TRI_political_focus.1.b
 		custom_effect_tooltip = TRI_negative_event_rejection_count_tt
 		add_to_variable = { TRI_negative_event_rejection_count = 1 }
-		add_political_power = -25
+		add_political_power = -10
 		hidden_effect = {
 			random_list = {
 				1 = {
@@ -204,7 +204,7 @@ country_event = { #社团资源不足
 
 	option = {
 		name = TRI_political_focus.2.a
-		add_political_power = -75
+		add_political_power = -50
 		add_timed_idea = {
 			idea = TRI_provide_resource_for_associations
 			days = 75
@@ -215,7 +215,7 @@ country_event = { #社团资源不足
 		name = TRI_political_focus.2.b
 		custom_effect_tooltip = TRI_negative_event_rejection_count_tt
 		add_to_variable = { TRI_negative_event_rejection_count = 1 }
-		add_political_power = -25
+		add_political_power = -10
 		set_temp_variable = { target_parliament = token:BA_TRI_house_seat }
 		set_temp_variable = { loyalty_change = -0.02 }
 		TRI_parliament_loyalty_change_parliament = yes
@@ -232,8 +232,8 @@ country_event = { #学生沉迷宗教活动
 
 	option = {
 		name = TRI_political_focus.3.a
-		add_political_power = -75
-		set_temp_variable = { association = token:TRI_paranoia_association_4 }
+		add_political_power = -50
+		set_temp_variable = { association = token:TRI_parliament_association_4 }
 		set_temp_variable = { loyalty_change = -0.02 }
 		TRI_parliament_loyalty_change = yes
 		set_variable = { TRI_negative_event_rejection_count = 0 }
@@ -242,7 +242,7 @@ country_event = { #学生沉迷宗教活动
 		name = TRI_political_focus.3.b
 		custom_effect_tooltip = TRI_negative_event_rejection_count_tt
 		add_to_variable = { TRI_negative_event_rejection_count = 1 }
-		add_political_power = -25
+		add_political_power = -10
 		hidden_effect = {
 			random_list = {
 				1 = {
@@ -257,7 +257,7 @@ country_event = { #学生沉迷宗教活动
 		TRI_parliament_loyalty_change_parliament = yes
 		set_temp_variable = { radicalism_change = 0.02 }
 		TRI_parliament_radicalism_change_parliament = yes
-		set_temp_variable = { association = token:TRI_paranoia_association_4 }
+		set_temp_variable = { association = token:TRI_parliament_association_4 }
 		set_temp_variable = { loyalty_change = 0.04 }
 		TRI_parliament_loyalty_change = yes
 	}

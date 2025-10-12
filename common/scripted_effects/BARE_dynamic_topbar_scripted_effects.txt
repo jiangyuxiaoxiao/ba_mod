@@ -156,6 +156,10 @@ TRI_dynamic_topbar_category_expand_other = {
                 limit = { has_country_flag = TRI_paranoia_system_active }
                 add_to_array = { [V]_increasing_top_array = token:TRI_kirifuji_nagisa_paranoia_level }
             }
+            if = {
+                limit = { has_country_flag = TRI_unity_system_visible }
+                add_to_array = { [V]_increasing_top_array = token:TRI_unity_data }
+            }
         }
         V = "[?topbar_menu_v.GetTokenKey]"
     }

@@ -25,7 +25,6 @@ BARE_SuperEvent_1_effect_1 = {
 		limit = { is_ai = no }
 		set_temp_variable = { BARE_SuperEvent_1_temp_var = token:BARE_SuperEvent_1_SECOND_EDEN_TREATY }
 		set_variable = { BARE_SuperEvent_1_var = BARE_SuperEvent_1_temp_var }
-		
 
 		hidden_effect = {
 			scoped_sound_effect = BARE_SuperEvent_Sound_SECOND_EDEN_TREATY
@@ -101,7 +100,6 @@ BARE_SuperEvent_2_effect_7 = {
 		
 }
 
-
 BARE_SuperEvent_2_effect_8 = {
 	every_country = {
 		limit = { is_ai = no }
@@ -130,6 +128,14 @@ BARE_SuperEvent_2_effect_9 = {
 	}
 }
 
+BARE_SuperEvent_2_effect_10 = {
+	every_country = {
+		limit = { is_ai = no }
+		set_temp_variable = { BARE_SuperEvent_2_temp_var = token:BARE_SuperEvent_2_TRINITY_CRISIS }
+		BARE_SuperEvent_2_fire_super_event = yes
+	}
+}
+
 ###########################
 ###########################
 ### CLASSIC SUPER EVENT ###
@@ -150,20 +156,31 @@ BSE_Fire_Super_Event_index_2 = {
 	#scoped_play_song = "BSP_The_Battle_on_Ice_Short"
 }
 
+##伊甸条约凯旋：圣三一
 BSE_Fire_Super_Event_index_3 = {
 	set_variable = {
 		barexp_super_event_index = 3
 	}
-	#scoped_play_song = "BSP_The_Battle_on_Ice_Short"
+	hidden_effect = {
+		scoped_sound_effect = BARE_SuperEvent_Sound_Eden_Treaty_wins_piano_motion
+		scoped_play_song = "BARE_SuperEvent_Sound_Block_2m"
+	}
 }
 
+##伊甸条约凯旋：格黑娜
+#注：目前用不太上，我本来想用伊甸条约的胜负来确定哪个出现的，但是考虑到冲刺阿里乌斯这块放格黑娜不合适，作罢
 BSE_Fire_Super_Event_index_4 = {
 	set_variable = {
 		barexp_super_event_index = 4
 	}
-	#scoped_play_song = "BSP_The_Battle_on_Ice_Short"
+	hidden_effect = {
+		scoped_sound_effect = BARE_SuperEvent_Sound_Eden_Treaty_wins_piano_motion
+		scoped_play_song = "BARE_SuperEvent_Sound_Block_2m"
+	}
 }
 
+##伊甸条约凯旋：完美结局
+##和晴天宣言冲突了，封存
 BSE_Fire_Super_Event_index_5 = {
 	set_variable = {
 		barexp_super_event_index = 5
@@ -183,6 +200,16 @@ BSE_Fire_Super_Event_index_7 = {
 		barexp_super_event_index = 7
 	}
 	#scoped_play_song = "BSP_The_Battle_on_Ice_Short"
+}
+
+BSE_Fire_Super_Event_index_8 = {
+	set_variable = {
+		barexp_super_event_index = 8
+	}
+	hidden_effect = {
+		scoped_sound_effect = BARE_SuperEvent_Sound_GEH_TRI_Total_War
+		scoped_play_song = "BARE_SuperEvent_Sound_Block_2m"
+	}
 }
 
 BSE_Close_Super_Event_Effect = {

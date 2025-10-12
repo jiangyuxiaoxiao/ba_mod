@@ -1,19 +1,24 @@
 on_actions = {
 	on_startup = {
 		effect = {
-			CEN = {
-				news_event = {
-					id = Great_Game.1000
-					months = 18
-				}
-			}
+			# CEN = {
+			# 	news_event = {
+			# 		id = Great_Game.1000
+			# 		months = 18
+			# 	}
+			# }
 		}
 	}
 	on_monthly = {
 		effect = {
 			if = {
-				limit = { has_global_flag = BA_Great_Game_available }
-				Great_Game_generate_global_chart = yes
+				limit = {
+					has_country_flag = Great_Game_invade_cd
+					NOT = {
+						has_active_mission = Great_Game_invade_cd
+					}
+				}
+				clr_country_flag = Great_Game_invade_cd
 			}
 		}
 	}
@@ -31,6 +36,13 @@ on_actions = {
 								original_tag = PREV
 								is_ally_with = PREV
 								has_war_with = PREV
+								Great_Game_is_involved = yes
+								AND = {
+									is_subject = yes
+									OVERLORD = {
+										Great_Game_is_involved = yes
+									}
+								}
 							}
 						}
 						diplomatic_relation = {
@@ -40,6 +52,10 @@ on_actions = {
 						}
 					}
 				}
+			}
+			if = {
+				limit = { has_global_flag = BA_Great_Game_available }
+				Great_Game_generate_global_chart = yes
 			}
 		}
 	}

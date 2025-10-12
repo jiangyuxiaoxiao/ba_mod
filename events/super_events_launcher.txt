@@ -1,0 +1,25 @@
+add_namespace = SEFL
+
+##超事件发射器
+
+##伊甸条约凯旋：圣三一
+country_event = {
+	id = SEFL.1
+	hidden = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		BSE_Fire_Super_Event_index_3 = yes
+	}
+}
+
+##伊甸条约凯旋：格黑娜
+country_event = {
+	id = SEFL.2
+	hidden = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		BSE_Fire_Super_Event_index_4 = yes
+	}
+}

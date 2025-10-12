@@ -250,6 +250,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/ARI/idea_ARI_JSL.dds"
 	}
 	SpriteType = {
+		name = "GFX_idea_ARI_temp"
+		texturefile = "gfx/interface/ideas/ARI/idea_ARI_temp.dds"
+	}
+	SpriteType = {
 		name = "GFX_idea_ARI_light_support_equipment_idea"
 		texturefile = "gfx/interface/ideas/ARI/idea_ARI_light_support_equipment_idea.dds"
 	}
@@ -408,6 +412,12 @@ spriteTypes = {
 		name = "GFX_idea_TRI_gehenna_dip_support"
 		texturefile = "gfx/interface/ideas/GEH/TRI_gehenna_dip_support.dds"
 	}
+
+	#临时民族精神占位符
+	spriteType = {
+		name = "GFX_idea_GEH_temp_idea"
+		texturefile = "gfx/interface/ideas/GEH/GEH_temp_idea.dds"
+	}
 	
 	### MIL
 	spriteType = {
@@ -430,6 +440,10 @@ spriteTypes = {
 	#6.18新增
 	#以战止戈
 	#为会谈做出的整备
+	SpriteType = {
+		name = "GFX_idea_TRI_2st_eden_pact_modifier"
+		texturefile = "gfx/interface/ideas/TRI/TRI_2st_eden_pact_modifier.dds"
+	}
 
 	#不谐之音被订正？
 	SpriteType = {
@@ -439,32 +453,79 @@ spriteTypes = {
 
 	#铸剑为犁
 	#夏莱的老师
+	
+	SpriteType = {
+		name = "GFX_TRI_SCH_teacher_modifier"
+		texturefile = "gfx/interface/ideas/TRI/TRI_SCH_teacher_modifier.dds"
+	}
+
 
 	#筹备会谈
 	SpriteType = {
 		name = "GFX_TRI_prepare_for_meeting"
 		texturefile = "gfx/interface/ideas/TRI/TRI_prepare_for_meeting.dds"
 	}
+	SpriteType = {
+		name = "GFX_TRI_tea_party_artillery"
+		texturefile = "gfx/interface/ideas/TRI/TRI_tea_party_artillery.dds"
+	}
+	SpriteType = {
+		name = "GFX_TRI_aeronautics_training"
+		texturefile = "gfx/interface/ideas/TRI/TRI_aeronautics_training.dds"
+	}
 
+	
 	#茶话会直属炮兵
+	SpriteType = {
+		name = "GFX_idea_TRI_tea_party_artillery"
+		texturefile = "gfx/interface/ideas/TRI/TRI_tea_party_artillery.dds"
+	}
 	#圣三一航空训练计划
+	SpriteType = {
+		name = "GFX_idea_TRI_aeronautics_training"
+		texturefile = "gfx/interface/ideas/TRI/TRI_aeronautics_training.dds"
+	}
 	#圣三一空地一体化系统
 	#专业化无人机生产集团
 	#圣三一火炮
+	SpriteType = {
+		name = "GFX_idea_TRI_trinity_artillery"
+		texturefile = "gfx/interface/ideas/TRI/TRI_trinity_artillery.dds"
+	}
 	#先进性装甲
+	SpriteType = {
+		name = "GFX_idea_TRI_advanced_armour_idea"
+		texturefile = "gfx/interface/ideas/TRI/TRI_advanced_armour_idea.dds"
+	}
 	#紧急救援
 	#向上议院妥协中
 	#向下议院妥协中
 	#正在铺展的“影子”计划
+	SpriteType = {
+		name = "GFX_idea_TRI_shadow_scheme_in_progress"
+		texturefile = "gfx/interface/ideas/TRI/TRI_shadow_scheme_in_progress.dds"
+	}
 	#扫除威胁！
+	SpriteType = {
+		name = "GFX_idea_TRI_sweep_threat"
+		texturefile = "gfx/interface/ideas/TRI/TRI_sweep_threat.dds"
+	}
 	#维持军备
+	SpriteType = {
+		name = "GFX_idea_TRI_prepare_for_war"
+		texturefile = "gfx/interface/ideas/TRI/TRI_prepare_for_war.dds"
+	}
 	#重视稳定
+	SpriteType = {
+		name = "GFX_idea_TRI_focus_on_stability"
+		texturefile = "gfx/interface/ideas/TRI/TRI_focus_on_stability.dds"
+	}
 	#友谊，光荣与未来！
 	#胜利，信任与团结！
 
 	#进行中的行政重整
 	SpriteType = {
-		name = "GFX_TRI_reforming_administration_system"
+		name = "GFX_idea_TRI_reforming_administration_system"
 		texturefile = "gfx/interface/ideas/TRI/TRI_reforming_administration_system.dds"
 	}
 
@@ -474,17 +535,9 @@ spriteTypes = {
 
 	#伊甸条约阶段0 1 2 3 5图标
 	SpriteType = {
-		name = "GFX_eden_treaty_step_normal_modifier"
-		texturefile = "gfx/interface/ideas/TRI/eden_treaty_step_normal_modifier.dds"
-	}
-
-		#伊甸条约阶段0 1 2 3 5图标
-	SpriteType = {
 		name = "GFX_idea_eden_treaty_step_normal_modifier"
 		texturefile = "gfx/interface/ideas/TRI/eden_treaty_step_normal_modifier.dds"
 	}
-
-
 	#伊甸条约阶段4图标
 	SpriteType = {
 		name = "GFX_eden_treaty_step_bad_modifier"
@@ -493,11 +546,19 @@ spriteTypes = {
 
 	#毁灭性打击
 	#混乱的前线
+	SpriteType = {
+		name = "TRI_chaotic_frontline"
+		texturefile = "gfx/interface/ideas/TRI/TRI_chaotic_frontline.dds"
+	}
 	#携手并肩的前线
+	SpriteType = {
+		name = "TRI_chaotic_frontline_2"
+		texturefile = "gfx/interface/ideas/TRI/TRI_chaotic_frontline_2.dds"
+	}
 
 	#圣三一情报局
 	SpriteType = {
-		name = "GFX_TRI_special_services_investigations"
+		name = "GFX_idea_TRI_special_services_investigations"
 		texturefile = "gfx/interface/ideas/TRI/TRI_special_services_investigations.dds"
 	}
 
@@ -520,9 +581,15 @@ spriteTypes = {
 	}
 
 	#团结度修正
+	SpriteType = {
+		name = "GFX_TRI_unity_modifier"
+		texturefile = "gfx/interface/ideas/TRI/TRI_unity_modifier.dds"
+	}
+
+	
 	#焦点修正
 	#地区稳定度
-	#TRI_rebuilding_subsidy_modifier
+	#灾后重建津贴
 	#物资减少
 	#额外物资调配
 
@@ -549,27 +616,32 @@ spriteTypes = {
 	#################
 	######渚大林######
 	#################
+	#遭到审查的文职部员
+	SpriteType = {
+		name = "GFX_idea_TRI_inspected_administration"
+		texturefile = "gfx/interface/ideas/TRI/TRI_inspected_administration.dds"
+	}
 	#受到严格审查的陆军
 	SpriteType = {
-		name = "GFX_TRI_inspected_army"
+		name = "GFX_idea_TRI_inspected_army"
 		texturefile = "gfx/interface/ideas/TRI/TRI_inspected_army.dds"
 	}
 
 	#减少军事演习
 	SpriteType = {
-		name = "GFX_TRI_training_activities_curtailed"
+		name = "GFX_idea_TRI_training_activities_curtailed"
 		texturefile = "gfx/interface/ideas/TRI/TRI_training_activities_curtailed.dds"
 	}
 
 	#受到严格审查的空军
 	SpriteType = {
-		name = "GFX_TRI_inspected_airforce"
+		name = "GFX_idea_TRI_inspected_airforce"
 		texturefile = "gfx/interface/ideas/TRI/TRI_inspected_airforce.dds"
 	}
 
 	#暂停的地面训练
 	SpriteType = {
-		name = "GFX_TRI_ground_based_training"
+		name = "GFX_idea_TRI_ground_based_training"
 		texturefile = "gfx/interface/ideas/TRI/TRI_ground_based_training.dds"
 	}
 
@@ -627,14 +699,30 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/CEN/BARE_Global_Unacknowledged_College_Autonomous_Region.dds"
 	}
 
-		spriteType = {
+	spriteType = {
 		name = "GFX_idea_BARE_Global_Trusteeship_Area"
 		texturefile = "gfx/interface/ideas/CEN/BARE_Global_Trusteeship_Area.dds"
 	}
 
 	spriteType = {
+		name = "GFX_idea_BARE_Global_Suburban"
+		texturefile = "gfx/interface/ideas/CEN/BARE_Global_Suburban.dds"
+	}
+
+		spriteType = {
+		name = "GFX_idea_BARE_Global_Blockade_Zone"
+		texturefile = "gfx/interface/ideas/CEN/BARE_Global_Blockade_Zone.dds"
+	}
+
+	spriteType = {
 		name = "GFX_idea_BARE_Global_Extrajudicial_Trusteeship_Area"
 		texturefile = "gfx/interface/ideas/CEN/BARE_Global_Extrajudicial_Trusteeship_Area.dds"
+	}
+
+		#临时民族精神占位符
+	spriteType = {
+		name = "GFX_idea_TRI_temp_idea"
+		texturefile = "gfx/interface/ideas/TRI/TRI_temp_idea.dds"
 	}
 
 	###MIO###
@@ -737,4 +825,21 @@ spriteTypes = {
 		name = "GFX_idea_ba_arius_electrical_team_44"
 		texturefile = "gfx/interface/ideas/industrial/ba_arius_electrical_team_44.dds"
 	}
+	 ###MIL###
+    spriteType = {
+        name = "GFX_idea_MIL_place_of_pursuing_truth"
+        texturefile = "gfx/interface/ideas/MIL/MIL_place_of_pursuing_truth.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_MIL_security_department_of_long_peace"
+        texturefile = "gfx/interface/ideas/MIL/MIL_security_department_of_long_peace.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_MIL_overly_advanced_aircraft"
+        texturefile = "gfx/interface/ideas/MIL/MIL_overly_advanced_aircraft.dds"
+    }
+    spriteType = {
+        name = "GFX_idea_MIL_shadow_of_financial_crisis"
+        texturefile = "gfx/interface/ideas/MIL/MIL_shadow_of_financial_crisis.dds"
+    }
 }

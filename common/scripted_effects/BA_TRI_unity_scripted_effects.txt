@@ -20,7 +20,7 @@ TRI_generate_unity_rank = {
 		set_variable = { TRI_unity_rank = 1 }
 		set_variable = { TRI_unity_power_gain = -0.6 }
 		set_variable = { TRI_unity_command_power_gain_mult = -0.6 }
-		set_variable = { TRI_unity_max_command_power_mult = -0.7 }
+		set_variable = { TRI_unity_max_command_power_mult = -0.5 }
 		set_variable = { TRI_unity_stability = -0.15 }
 		set_variable = { TRI_unity_army_core_factor = -0.15 }
 		set_variable = { TRI_unity_army_org_factor = -0.1 }

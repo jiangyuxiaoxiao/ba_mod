@@ -7,7 +7,7 @@ Hipper_test_decisions_categories = {
 		available = {
 			is_ai = no
 			TRI = {
-			    has_country_leader = {
+				has_country_leader = {
 					character = TRI_nagisa
 					ruling_only = yes
 				}
@@ -16,16 +16,17 @@ Hipper_test_decisions_categories = {
 		complete_effect = {
 			set_portraits = {
 				character = TRI_nagisa
-				civilian = { large ="GFX_BARE_Portrait_TRI_nagisa_cool" }
+				civilian = {
+					large = "GFX_BARE_Portrait_TRI_nagisa_cool"
+				}
 			}
 			add_trait = {
 				character = TRI_nagisa
 				ideology = PGM_TRI_Nagisa_type
 				trait = TRI_nagisa_a_cool_victory
-		    } 
+			}
 		}
 	}
-
 	Change_portrait_for_cool_makoto = {
 		visible = {
 			original_tag = GEH
@@ -34,7 +35,7 @@ Hipper_test_decisions_categories = {
 		available = {
 			is_ai = no
 			GEH = {
-			    has_country_leader = {
+				has_country_leader = {
 					character = GEH_makoto
 					ruling_only = yes
 				}
@@ -43,13 +44,15 @@ Hipper_test_decisions_categories = {
 		complete_effect = {
 			set_portraits = {
 				character = GEH_makoto
-				civilian = { large ="GFX_BARE_Portrait_GEH_makoto_cool" }
+				civilian = {
+					large = "GFX_BARE_Portrait_GEH_makoto_cool"
+				}
 			}
 			add_trait = {
 				character = GEH_makoto
 				ideology = no_ideology_type
 				trait = GEH_makoto_a_cool_victory
-		    } 
+			}
 		}
 	}
 	###FIRE ECW WAR###
@@ -63,14 +66,15 @@ Hipper_test_decisions_categories = {
 		}
 		complete_effect = {
 			ARI = {
-				set_variable = { ARI_ZhunBeiDu = 50 }
+				set_variable = {
+					ARI_ZhunBeiDu = 50
+				}
 				country_event = {
 					id = Eden_pact.200
 				}
 			}
 		}
 	}
-
 	Eden_cathedral_war_support_dynamic_modifier_test = {
 		priority = 1000
 		visible = {
@@ -96,7 +100,6 @@ Hipper_test_decisions_categories = {
 			force_update_dynamic_modifier = yes
 		}
 	}
-
 	ECW_initialize_ECW_states_effect_test = {
 		priority = 1000
 		visible = {
@@ -109,11 +112,30 @@ Hipper_test_decisions_categories = {
 			initialize_ECW_states_effect = yes
 		}
 	}
-
+	hide_and_show_superevent_test_decision = {
+		visible = {
+			is_debug = yes
+		}
+		available = {
+			is_ai = no
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					has_global_flag = show_se_test_decision_flag
+				}
+				clr_global_flag = show_se_test_decision_flag
+			}
+			else = {
+				set_global_flag = show_se_test_decision_flag
+			}
+		}
+	}
 	####发射超事件的测试器####
 	Fire_super_event_hipp = {
 		visible = {
 			is_debug = yes
+			has_global_flag = show_se_test_decision_flag
 		}
 		available = {
 			is_ai = no
@@ -122,10 +144,10 @@ Hipper_test_decisions_categories = {
 			BARE_SuperEvent_2_fire_super_event = yes
 		}
 	}
-
 	Fire_super_type1_event1_hipp = {
 		visible = {
 			is_debug = yes
+			has_global_flag = show_se_test_decision_flag
 		}
 		available = {
 			is_ai = no
@@ -134,10 +156,10 @@ Hipper_test_decisions_categories = {
 			BARE_SuperEvent_1_effect_1 = yes
 		}
 	}
-
 	Fire_super_type2_event1_hipp = {
 		visible = {
 			is_debug = yes
+			has_global_flag = show_se_test_decision_flag
 		}
 		available = {
 			is_ai = no
@@ -146,10 +168,10 @@ Hipper_test_decisions_categories = {
 			BARE_SuperEvent_2_effect_1 = yes
 		}
 	}
-
 	Fire_super_type2_event2_hipp = {
 		visible = {
 			is_debug = yes
+			has_global_flag = show_se_test_decision_flag
 		}
 		available = {
 			is_ai = no
@@ -158,10 +180,10 @@ Hipper_test_decisions_categories = {
 			BARE_SuperEvent_2_effect_2 = yes
 		}
 	}
-
 	Fire_super_type2_event3_hipp = {
 		visible = {
 			is_debug = yes
+			has_global_flag = show_se_test_decision_flag
 		}
 		available = {
 			is_ai = no
@@ -170,10 +192,10 @@ Hipper_test_decisions_categories = {
 			BARE_SuperEvent_2_effect_3 = yes
 		}
 	}
-
 	Fire_super_type2_event4_hipp = {
 		visible = {
 			is_debug = yes
+			has_global_flag = show_se_test_decision_flag
 		}
 		available = {
 			is_ai = no
@@ -182,10 +204,10 @@ Hipper_test_decisions_categories = {
 			BARE_SuperEvent_2_effect_4 = yes
 		}
 	}
-
 	Fire_super_type2_event5_hipp = {
 		visible = {
 			is_debug = yes
+			has_global_flag = show_se_test_decision_flag
 		}
 		available = {
 			is_ai = no
@@ -194,10 +216,10 @@ Hipper_test_decisions_categories = {
 			BARE_SuperEvent_2_effect_5 = yes
 		}
 	}
-
 	Fire_super_type2_event6_hipp = {
 		visible = {
 			is_debug = yes
+			has_global_flag = show_se_test_decision_flag
 		}
 		available = {
 			is_ai = no
@@ -206,10 +228,10 @@ Hipper_test_decisions_categories = {
 			BARE_SuperEvent_2_effect_6 = yes
 		}
 	}
-
 	Fire_super_type2_event7_hipp = {
 		visible = {
 			is_debug = yes
+			has_global_flag = show_se_test_decision_flag
 		}
 		available = {
 			is_ai = no
@@ -218,93 +240,140 @@ Hipper_test_decisions_categories = {
 			BARE_SuperEvent_2_effect_7 = yes
 		}
 	}
-
+	Fire_super_type2_event8_hipp = {
+		visible = {
+			is_debug = yes
+			has_global_flag = show_se_test_decision_flag
+		}
+		available = {
+			is_ai = no
+		}
+		complete_effect = {
+			BARE_SuperEvent_2_effect_8 = yes
+		}
+	}
+	Fire_super_type2_event9_hipp = {
+		visible = {
+			is_debug = yes
+			has_global_flag = show_se_test_decision_flag
+		}
+		available = {
+			is_ai = no
+		}
+		complete_effect = {
+			BARE_SuperEvent_2_effect_9 = yes
+		}
+	}
+	Fire_super_type2_event10_hipp = {
+		visible = {
+			is_debug = yes
+			has_global_flag = show_se_test_decision_flag
+		}
+		available = {
+			is_ai = no
+		}
+		complete_effect = {
+			BARE_SuperEvent_2_effect_10 = yes
+		}
+	}
 	#################
 	#################
 	BAREXP_show_superevent1_gui = {
 		visible = {
 			is_debug = yes
+			has_global_flag = show_se_test_decision_flag
 		}
 		available = {
 			is_ai = no
 		}
 		complete_effect = {
-		    BSE_Fire_Super_Event_index_1 = yes
+			BSE_Fire_Super_Event_index_1 = yes
 		}
 	}
-
 	BAREXP_show_superevent2_gui = {
 		visible = {
 			is_debug = yes
+			has_global_flag = show_se_test_decision_flag
 		}
 		available = {
 			is_ai = no
 		}
 		complete_effect = {
-		    BSE_Fire_Super_Event_index_2 = yes
+			BSE_Fire_Super_Event_index_2 = yes
 		}
 	}
-
 	BAREXP_show_superevent3_gui = {
 		visible = {
 			is_debug = yes
+			has_global_flag = show_se_test_decision_flag
 		}
 		available = {
 			is_ai = no
 		}
 		complete_effect = {
-		    BSE_Fire_Super_Event_index_3 = yes
+			BSE_Fire_Super_Event_index_3 = yes
 		}
 	}
-
 	BAREXP_show_superevent4_gui = {
 		visible = {
 			is_debug = yes
+			has_global_flag = show_se_test_decision_flag
 		}
 		available = {
 			is_ai = no
 		}
 		complete_effect = {
-		    BSE_Fire_Super_Event_index_4 = yes
+			BSE_Fire_Super_Event_index_4 = yes
 		}
 	}
-
 	BAREXP_show_superevent5_gui = {
 		visible = {
 			is_debug = yes
+			has_global_flag = show_se_test_decision_flag
 		}
 		available = {
 			is_ai = no
 		}
 		complete_effect = {
-		    BSE_Fire_Super_Event_index_5 = yes
+			BSE_Fire_Super_Event_index_5 = yes
 		}
 	}
-
 	BAREXP_show_superevent6_gui = {
 		visible = {
 			is_debug = yes
+			has_global_flag = show_se_test_decision_flag
 		}
 		available = {
 			is_ai = no
 		}
 		complete_effect = {
-		    BSE_Fire_Super_Event_index_6 = yes
+			BSE_Fire_Super_Event_index_6 = yes
 		}
 	}
-
 	BAREXP_show_superevent7_gui = {
 		visible = {
 			is_debug = yes
+			has_global_flag = show_se_test_decision_flag
 		}
 		available = {
 			is_ai = no
 		}
 		complete_effect = {
-		    BSE_Fire_Super_Event_index_7 = yes
+			BSE_Fire_Super_Event_index_7 = yes
 		}
 	}
-
+	BAREXP_show_superevent8_gui = {
+		visible = {
+			is_debug = yes
+			has_global_flag = show_se_test_decision_flag
+		}
+		available = {
+			is_ai = no
+		}
+		complete_effect = {
+			BSE_Fire_Super_Event_index_8 = yes
+		}
+	}
 	###查看结算警告###
 	check_war_end_flavor_hipp = {
 		visible = {
@@ -317,7 +386,6 @@ Hipper_test_decisions_categories = {
 			TEST_BARE_PEACE_EVENT_POPUP_ARI_WIN_TRI_FOR_CAPITULATION = yes
 		}
 	}
-
 	initializ_ALF_hipp = {
 		visible = {
 			is_debug = yes
@@ -332,19 +400,50 @@ Hipper_test_decisions_categories = {
 			BARE_RULE_story_settings_ALF_SELECTED_effect = yes
 		}
 	}
-} 
-
-CEN_Operation_Uranus_categories = {
-    Uranus_Test_open_gui = {
-	    visible = {
-		    original_tag = CEN
+	show_ALF_phrase_1_all_focus_tree_decision = {
+		visible = {
 			is_debug = yes
-	    }
+		}
 		available = {
 			is_ai = no
 		}
-	    complete_effect = {
-			
-	    }
-    }
+		complete_effect = {
+			set_country_flag = ALF_phrase_1_step_2_flag
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	###
+	Alf_for_glory_decision = {
+		visible = {
+			is_debug = yes
+		}
+		available = {
+			is_ai = no
+			tag = ALF
+		}
+		complete_effect = {
+			set_portraits = {
+				character = ALF_The_Leader
+				civilian = {
+					large = "GFX_BARE_Portrait_ALF_the_leader_no_mask"
+					small = "GFX_BARE_Portrait_ALF_the_leader_no_mask_small"
+				}
+			}
+			add_country_leader_trait = ALF_justice_prevails
+		}
+	}
+}
+
+CEN_Operation_Uranus_categories = {
+	Uranus_Test_open_gui = {
+		visible = {
+			original_tag = CEN
+			is_debug = yes
+		}
+		available = {
+			is_ai = no
+		}
+		complete_effect = {
+		}
+	}
 }

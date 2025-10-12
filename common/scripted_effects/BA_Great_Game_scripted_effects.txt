@@ -150,6 +150,32 @@ Great_Game_invite_to_ally = {
 			set_variable = { Great_Game_invade_target_overlord = var:leader:Great_Game_invade_target_overlord }
 			set_variable = { Great_Game_enemy = var:leader:Great_Game_enemy }
 			set_variable = { Great_Game_ally_leader = var:leader }
+			
+		}
+		var:enemy = {
+			diplomatic_relation = {
+				country = var:ally
+				relation = offer_military_access
+				active = no
+			}
+			diplomatic_relation = {
+				country = var:ally
+				relation = military_access
+				active = no
+			}
+			for_each_scope_loop = {
+				array = Great_Game_temp_allies
+				diplomatic_relation = {
+					country = var:ally
+					relation = offer_military_access
+					active = no
+				}
+				diplomatic_relation = {
+					country = var:ally
+					relation = military_access
+					active = no
+				}
+			}
 		}
 	}
 }
@@ -205,7 +231,10 @@ Great_Game_invade_succeeded = {
 				has_war_together_with = ROOT
 				Great_Game_is_involved = yes
 			}
-			Great_Game_ally_leave = yes
+			every_enemy_country = {
+				limit = { Great_Game_is_involved = yes }
+				white_peace = PREV
+			}
 		}
 		clear_array = Great_Game_temp_allies
 		var:Great_Game_invade_target_overlord = {
@@ -226,7 +255,10 @@ Great_Game_invade_succeeded = {
 					has_war_together_with = PREV
 					Great_Game_is_involved = yes
 				}
-				Great_Game_ally_leave = yes
+				every_enemy_country = {
+					limit = { Great_Game_is_involved = yes }
+					white_peace = PREV
+				}
 			}
 			clear_array = Great_Game_temp_allies
 			remove_from_array = {
@@ -235,13 +267,17 @@ Great_Game_invade_succeeded = {
 			}
 			
 			clr_country_flag = involved_in_Great_Game_as_defender
+			clr_country_flag = involved_in_Great_Game_as_ally_leader
 			clear_variable = Great_Game_invader
 			clear_variable = Great_Game_invade_target
 			clear_variable = Great_Game_invade_target_overlord
 			clear_variable = Great_Game_enemy
 		}
 		#白和
-		white_peace = var:Great_Game_invade_target_overlord
+		every_enemy_country = {
+			limit = { Great_Game_is_involved = yes }
+			white_peace = ROOT
+		}
 		#夺取托管地区
 		add_to_array = { BA_trusteeship_areas = var:Great_Game_invade_target }
 		if = {
@@ -286,6 +322,7 @@ Great_Game_invade_succeeded = {
 			}
 		}
 		clr_country_flag = involved_in_Great_Game_as_attacker
+		clr_country_flag = involved_in_Great_Game_as_ally_leader
 		clear_variable = Great_Game_invader
 		clear_variable = Great_Game_invade_target
 		clear_variable = Great_Game_invade_target_overlord
@@ -317,10 +354,14 @@ Great_Game_invade_failed = {
 					has_war_together_with = PREV
 					Great_Game_is_involved = yes
 				}
-				Great_Game_ally_leave = yes
+				every_enemy_country = {
+					limit = { Great_Game_is_involved = yes }
+					white_peace = PREV
+				}
 			}
 			clear_array = Great_Game_temp_allies
 			clr_country_flag = involved_in_Great_Game_as_defender
+			clr_country_flag = involved_in_Great_Game_as_ally_leader
 			clear_variable = Great_Game_invader
 			clear_variable = Great_Game_invade_target
 			clear_variable = Great_Game_invade_target_overlord
@@ -342,11 +383,18 @@ Great_Game_invade_failed = {
 				has_war_together_with = ROOT
 				Great_Game_is_involved = yes
 			}
-			Great_Game_ally_leave = yes
+			every_enemy_country = {
+				limit = { Great_Game_is_involved = yes }
+				white_peace = PREV
+			}
 		}
 		clear_array = Great_Game_temp_allies
-		white_peace = var:Great_Game_invade_target_overlord
+		every_enemy_country = {
+			limit = { Great_Game_is_involved = yes }
+			white_peace = ROOT
+		}
 		clr_country_flag = involved_in_Great_Game_as_attacker
+		clr_country_flag = involved_in_Great_Game_as_ally_leader
 		clear_variable = Great_Game_invader
 		clear_variable = Great_Game_invade_target
 		clear_variable = Great_Game_invade_target_overlord
@@ -360,12 +408,7 @@ Great_Game_invade_failed = {
 Great_Game_ally_leave = {
 	Great_Game_get_coins = yes
 	every_enemy_country = {
-		limit = {
-			OR = {
-				Great_Game_is_involved = yes
-			}
-			
-		}
+		limit = { Great_Game_is_involved = yes }
 		white_peace = PREV
 	}
 	clr_country_flag = involved_in_Great_Game_as_attacker
@@ -429,5 +472,35 @@ Great_Game_cost_coins = {
 		var = Great_Game_coins
 		min = 0
 		max = 9999
+	}
+}
+
+
+Great_Game_set_major_daily = {
+	if = {
+		limit = {
+			is_major = no
+			or = {
+				tag = TRI
+				tag = GEH
+				tag = MIL
+				tag = ARI
+				tag = CEN
+				tag = VAL
+				tag = SRT
+				tag = SCH
+				tag = MIL
+				tag = ABY
+				tag = CAE
+				tag = CAP
+				tag = CAB
+				tag = CAH
+				tag = CAO
+				tag = SHA
+				tag = HYA
+				
+			}
+		}
+		set_major = yes
 	}
 }

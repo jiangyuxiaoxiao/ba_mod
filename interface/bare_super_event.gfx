@@ -90,11 +90,15 @@ spriteTypes = {
         name = "GFX_BARE_SuperEvent_2_LSGSJ_GSC_IN"
         textureFile = "gfx/interface/SuperEvent/SuperEvent_2/SuperEventPictures/lsgsj_gsc_in.dds"
     }
-
     
     spriteType = {
         name = "GFX_BARE_SuperEvent_2_EDEN_TREATY_START"
         textureFile = "gfx/interface/SuperEvent/SuperEvent_2/SuperEventPictures/eden_treaty_start.dds"
+    }
+
+    spriteType = {
+        name = "GFX_BARE_SuperEvent_2_TRINITY_CRISIS"
+        textureFile = "gfx/interface/SuperEvent/SuperEvent_2/SuperEventPictures/trinity_crisis.dds"
     }
 
     #突然死亡结局
@@ -151,5 +155,19 @@ spriteTypes = {
     spriteType = {
         name = "GFX_BAREXP_SE_img_7"
         texturefile = "gfx/interface/SuperEvent/Classic_SuperEvent/BAREXP_SE_img_7.dds"
+    }
+
+    frameAnimatedSpriteType = {
+        name = "GFX_BAREXP_SE_img_8"
+        texturefile = "gfx/interface/SuperEvent/Classic_SuperEvent/BAREXP_SE_img_8.png"
+        noOfFrames = 16
+        #effectFile = "<path>"
+        
+        animation_rate_fps = 16
+        looping = yes
+        play_on_show = yes
+        pause_on_loop = 3
+        
+        allwaystransparent = yes
     }
 }

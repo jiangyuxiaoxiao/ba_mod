@@ -1044,13 +1044,13 @@ country_event = { #控制资源分配-下议院
 	}
 	option = {
 		name = TRI_BOP_decision.22.d
-		set_variable = { TRI_BOP_decision_20_association = token:TRI_parliament_association_5 }
+		set_variable = { TRI_BOP_decision_20_association = token:TRI_parliament_association_6 }
 		country_event = TRI_BOP_decision.23
 		ai_chance = {
 			base = 1
 			modifier = {
 				add = 5
-				check_variable = { loyalty@TRI_parliament_association_5 < 1 }
+				check_variable = { loyalty@TRI_parliament_association_6 < 1 }
 			}
 		}
 	}
@@ -1221,13 +1221,13 @@ country_event = { #安抚社团成员-下议院
 	}
 	option = {
 		name = TRI_BOP_decision.32.d
-		set_variable = { TRI_BOP_decision_30_association = token:TRI_parliament_association_5 }
+		set_variable = { TRI_BOP_decision_30_association = token:TRI_parliament_association_6 }
 		country_event = TRI_BOP_decision.33
 		ai_chance = {
 			base = 1
 			modifier = {
 				add = 5
-				check_variable = { loyalty@TRI_parliament_association_5 < 1 }
+				check_variable = { loyalty@TRI_parliament_association_6 < 1 }
 			}
 		}
 	}

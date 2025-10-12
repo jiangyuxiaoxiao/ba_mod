@@ -21,8 +21,8 @@ sp_ba_T1_drone_project = {
         #name = "my_project_name_loc_key"
         #desc = "my_project_desc_loc_key"
     #}
-    icon = GFX_sp_air_flamethrower_tank
-    blueprint_image = "GFX_my_project_blueprint"
+    icon = GFX_sp_ba_T1_drone_project
+    #blueprint_image = "GFX_my_project_blueprint"
     prototype_time = sp_time.prototype.medium
 
     resource_cost = {
@@ -30,7 +30,7 @@ sp_ba_T1_drone_project = {
             resources_cm = 10
         }
     }
-    complexity = sp_complexity.small
+    complexity = sp_complexity.medium
 
     ai_will_do = {
         base = 1.5
@@ -86,8 +86,8 @@ sp_ba_T2_drone_project = {
         #name = "my_project_name_loc_key"
         #desc = "my_project_desc_loc_key"
     #}
-    icon = GFX_sp_air_flamethrower_tank
-    blueprint_image = "GFX_my_project_blueprint"
+    icon = GFX_sp_ba_T2_drone_project
+    #blueprint_image = "GFX_my_project_blueprint"
     prototype_time = sp_time.prototype.medium
 
     resource_cost = {
@@ -95,7 +95,7 @@ sp_ba_T2_drone_project = {
             resources_cm = 15
         }
     }
-    complexity = sp_complexity.small
+    complexity = sp_complexity.medium
 
     ai_will_do = {
         base = 1.5
@@ -151,8 +151,8 @@ sp_ba_T3_drone_project = {
         #name = "my_project_name_loc_key"
         #desc = "my_project_desc_loc_key"
     #}
-    icon = GFX_sp_air_flamethrower_tank
-    blueprint_image = "GFX_my_project_blueprint"
+    icon = GFX_sp_ba_T3_drone_project
+    #blueprint_image = "GFX_my_project_blueprint"
     prototype_time = sp_time.prototype.medium
 
     resource_cost = {
@@ -160,7 +160,7 @@ sp_ba_T3_drone_project = {
             resources_cm = 20
         }
     }
-    complexity = sp_complexity.small
+    complexity = sp_complexity.medium
 
     ai_will_do = {
         base = 1.5
@@ -215,8 +215,8 @@ sp_ba_T4_drone_project = {
         #name = "my_project_name_loc_key"
         #desc = "my_project_desc_loc_key"
     #}
-    icon = GFX_sp_air_flamethrower_tank
-    blueprint_image = "GFX_my_project_blueprint"
+    icon = GFX_sp_ba_T4_drone_project
+    #blueprint_image = "GFX_my_project_blueprint"
     prototype_time = sp_time.prototype.long
 
     resource_cost = {
@@ -224,7 +224,7 @@ sp_ba_T4_drone_project = {
             resources_cm = 25
         }
     }
-    complexity = sp_complexity.small
+    complexity = sp_complexity.medium
 
     ai_will_do = {
         base = 1.5
@@ -278,8 +278,8 @@ sp_ba_T5_drone_project = {
         #name = "my_project_name_loc_key"
         #desc = "my_project_desc_loc_key"
     #}
-    icon = GFX_sp_air_flamethrower_tank
-    blueprint_image = "GFX_my_project_blueprint"
+    icon = GFX_sp_ba_T5_drone_project
+    #blueprint_image = "GFX_my_project_blueprint"
     prototype_time = sp_time.prototype.very_long
 
     resource_cost = {
@@ -287,7 +287,7 @@ sp_ba_T5_drone_project = {
             resources_cm = 30
         }
     }
-    complexity = sp_complexity.small
+    complexity = sp_complexity.medium
 
     ai_will_do = {
         base = 1.5
@@ -341,8 +341,8 @@ sp_ba_T1_infantry_weapon_project = {
         #name = "my_project_name_loc_key"
         #desc = "my_project_desc_loc_key"
     #}
-    icon = GFX_sp_air_flamethrower_tank
-    blueprint_image = "GFX_my_project_blueprint"
+    icon = GFX_sp_ba_T1_infantry_weapon_project
+    #blueprint_image = "GFX_my_project_blueprint"
     prototype_time = sp_time.prototype.medium
 
     resource_cost = {
@@ -350,7 +350,7 @@ sp_ba_T1_infantry_weapon_project = {
             resources_cm = 10
         }
     }
-    complexity = sp_complexity.small
+    complexity = sp_complexity.medium
 
     ai_will_do = {
         base = 1.5
@@ -406,8 +406,8 @@ sp_ba_T2_infantry_weapon_project = {
         #name = "my_project_name_loc_key"
         #desc = "my_project_desc_loc_key"
     #}
-    icon = GFX_sp_air_flamethrower_tank
-    blueprint_image = "GFX_my_project_blueprint"
+    icon = GFX_sp_ba_T2_infantry_weapon_project
+    #blueprint_image = "GFX_my_project_blueprint"
     prototype_time = sp_time.prototype.medium
 
     resource_cost = {
@@ -415,7 +415,7 @@ sp_ba_T2_infantry_weapon_project = {
             resources_cm = 15
         }
     }
-    complexity = sp_complexity.small
+    complexity = sp_complexity.medium
 
     ai_will_do = {
         base = 1.5
@@ -471,8 +471,8 @@ sp_ba_T3_infantry_weapon_project = {
         #name = "my_project_name_loc_key"
         #desc = "my_project_desc_loc_key"
     #}
-    icon = GFX_sp_air_flamethrower_tank
-    blueprint_image = "GFX_my_project_blueprint"
+    icon = GFX_sp_ba_T3_infantry_weapon_project
+    #blueprint_image = "GFX_my_project_blueprint"
     prototype_time = sp_time.prototype.medium
 
     resource_cost = {
@@ -480,7 +480,7 @@ sp_ba_T3_infantry_weapon_project = {
             resources_cm = 20
         }
     }
-    complexity = sp_complexity.small
+    complexity = sp_complexity.medium
 
     ai_will_do = {
         base = 1.5
@@ -535,8 +535,8 @@ sp_ba_T4_infantry_weapon_project = {
         #name = "my_project_name_loc_key"
         #desc = "my_project_desc_loc_key"
     #}
-    icon = GFX_sp_air_flamethrower_tank
-    blueprint_image = "GFX_my_project_blueprint"
+    icon = GFX_sp_ba_T4_infantry_weapon_project
+    #blueprint_image = "GFX_my_project_blueprint"
     prototype_time =sp_time.prototype.long
 
     resource_cost = {
@@ -544,7 +544,7 @@ sp_ba_T4_infantry_weapon_project = {
             resources_cm = 25
         }
     }
-    complexity = sp_complexity.small
+    complexity = sp_complexity.medium
 
     ai_will_do = {
         base = 1.5
@@ -598,8 +598,8 @@ sp_ba_T5_infantry_weapon_project = {
         #name = "my_project_name_loc_key"
         #desc = "my_project_desc_loc_key"
     #}
-    icon = GFX_sp_air_flamethrower_tank
-    blueprint_image = "GFX_my_project_blueprint"
+    icon = GFX_sp_ba_T5_infantry_weapon_project
+    #blueprint_image = "GFX_my_project_blueprint"
     prototype_time = sp_time.prototype.very_long
 
     resource_cost = {
@@ -607,7 +607,7 @@ sp_ba_T5_infantry_weapon_project = {
             resources_cm = 30
         }
     }
-    complexity = sp_complexity.small
+    complexity = sp_complexity.medium
 
     ai_will_do = {
         base = 1.5
@@ -638,7 +638,7 @@ sp_ba_T5_infantry_weapon_project = {
 
 
 
-sp_ba_T1_electronic_project_project = {
+sp_ba_T1_electronic_project = {
     specialization = specialization_air
     project_tags = {
         # sp_tag_tank
@@ -661,8 +661,8 @@ sp_ba_T1_electronic_project_project = {
         #name = "my_project_name_loc_key"
         #desc = "my_project_desc_loc_key"
     #}
-    icon = GFX_sp_air_flamethrower_tank
-    blueprint_image = "GFX_my_project_blueprint"
+    icon = GFX_sp_ba_T1_electronic_project
+    #blueprint_image = "GFX_my_project_blueprint"
     prototype_time = sp_time.prototype.medium
 
     resource_cost = {
@@ -670,7 +670,7 @@ sp_ba_T1_electronic_project_project = {
             resources_cm = 10
         }
     }
-    complexity = sp_complexity.small
+    complexity = sp_complexity.medium
 
     ai_will_do = {
         base = 1.5
@@ -699,7 +699,7 @@ sp_ba_T1_electronic_project_project = {
     }
 }
 
-sp_ba_T2_electronic_project_project = {
+sp_ba_T2_electronic_project = {
     specialization = specialization_air
     project_tags = {
         # sp_tag_tank
@@ -725,8 +725,8 @@ sp_ba_T2_electronic_project_project = {
         #name = "my_project_name_loc_key"
         #desc = "my_project_desc_loc_key"
     #}
-    icon = GFX_sp_air_flamethrower_tank
-    blueprint_image = "GFX_my_project_blueprint"
+    icon = GFX_sp_ba_T2_electronic_project
+    #blueprint_image = "GFX_my_project_blueprint"
     prototype_time = sp_time.prototype.medium
 
     resource_cost = {
@@ -734,7 +734,7 @@ sp_ba_T2_electronic_project_project = {
             resources_cm = 15
         }
     }
-    complexity = sp_complexity.small
+    complexity = sp_complexity.medium
 
     ai_will_do = {
         base = 1.5
@@ -764,7 +764,7 @@ sp_ba_T2_electronic_project_project = {
 }
 
 
-sp_ba_T3_electronic_project_project = {
+sp_ba_T3_electronic_project = {
     specialization = specialization_air
     project_tags = {
         # sp_tag_tank
@@ -790,8 +790,8 @@ sp_ba_T3_electronic_project_project = {
         #name = "my_project_name_loc_key"
         #desc = "my_project_desc_loc_key"
     #}
-    icon = GFX_sp_air_flamethrower_tank
-    blueprint_image = "GFX_my_project_blueprint"
+    icon = GFX_sp_ba_T3_electronic_project
+    #blueprint_image = "GFX_my_project_blueprint"
     prototype_time = sp_time.prototype.medium
 
     resource_cost = {
@@ -799,7 +799,7 @@ sp_ba_T3_electronic_project_project = {
             resources_cm = 20
         }
     }
-    complexity = sp_complexity.small
+    complexity = sp_complexity.medium
 
     ai_will_do = {
         base = 1.5
@@ -828,7 +828,7 @@ sp_ba_T3_electronic_project_project = {
     }
 }
 
-sp_ba_T4_electronic_project_project = {
+sp_ba_T4_electronic_project = {
     specialization = specialization_air
     project_tags = {
         # sp_tag_tank
@@ -854,8 +854,8 @@ sp_ba_T4_electronic_project_project = {
         #name = "my_project_name_loc_key"
         #desc = "my_project_desc_loc_key"
     #}
-    icon = GFX_sp_air_flamethrower_tank
-    blueprint_image = "GFX_my_project_blueprint"
+    icon = GFX_sp_ba_T4_electronic_project
+    #blueprint_image = "GFX_my_project_blueprint"
     prototype_time = sp_time.prototype.long
 
     resource_cost = {
@@ -863,7 +863,7 @@ sp_ba_T4_electronic_project_project = {
             resources_cm = 25
         }
     }
-    complexity = sp_complexity.small
+    complexity = sp_complexity.medium
 
     ai_will_do = {
         base = 1.5
@@ -891,7 +891,7 @@ sp_ba_T4_electronic_project_project = {
 
     }
 }
-sp_ba_T5_electronic_project_project = {
+sp_ba_T5_electronic_project = {
     specialization = specialization_air
     project_tags = {
         # sp_tag_tank
@@ -917,8 +917,8 @@ sp_ba_T5_electronic_project_project = {
         #name = "my_project_name_loc_key"
         #desc = "my_project_desc_loc_key"
     #}
-    icon = GFX_sp_air_flamethrower_tank
-    blueprint_image = "GFX_my_project_blueprint"
+    icon = GFX_sp_ba_T5_electronic_project
+    #blueprint_image = "GFX_my_project_blueprint"
     prototype_time = sp_time.prototype.very_long
 
     resource_cost = {
@@ -926,7 +926,7 @@ sp_ba_T5_electronic_project_project = {
             resources_cm = 30
         }
     }
-    complexity = sp_complexity.small
+    complexity = sp_complexity.medium
 
     ai_will_do = {
         base = 1.5

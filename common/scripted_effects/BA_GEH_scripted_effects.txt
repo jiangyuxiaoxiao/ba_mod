@@ -2,23 +2,24 @@
 GEH_degrade_debuff_of_troop = {
 	if = {
 		limit = { has_idea = GEH_army_in_chaos }
-		remove_ideas = GEH_army_in_chaos
+		swap_ideas = {
+			remove_idea = GEH_army_in_chaos 
+			add_idea = GEH_army_in_chaos_2
+		}
 	}
 
-	if = {
+	else_if = {
 		limit = { has_idea = GEH_army_in_chaos_2 }
 		swap_ideas = {
 			remove_idea = GEH_army_in_chaos_2 
-			add_idea = GEH_army_in_chaos
+			add_idea = GEH_army_in_chaos_3
 		}
 	}
 
-	if = {
+	else_if = {
 		limit = { has_idea = GEH_army_in_chaos_3 }
-		swap_ideas = {
-			remove_idea = GEH_army_in_chaos_3 
-			add_idea = GEH_army_in_chaos_2
-		}
+		remove_ideas = GEH_army_in_chaos_3
+		
 	}
 }
 
@@ -31,16 +32,16 @@ GEH_dualHeaded_Influence_Factor_Change = {
 	}
 
 	set_variable = {
-		GEH_dualHeaded_Influence_Factor_Hina_Text = GEH_dualHeaded_Influence_Factor
-	}
-	set_variable = {
-		GEH_dualHeaded_Influence_Factor_Makoto_Text = 1
-	}
-	subtract_from_variable = {
 		GEH_dualHeaded_Influence_Factor_Makoto_Text = GEH_dualHeaded_Influence_Factor
 	}
 	set_variable = {
-		GEH_dualHeaded_Influence_Factor_FRAME = GEH_dualHeaded_Influence_Factor
+		GEH_dualHeaded_Influence_Factor_Hina_Text = 1
+	}
+	subtract_from_variable = {
+		GEH_dualHeaded_Influence_Factor_Hina_Text = GEH_dualHeaded_Influence_Factor
+	}
+	set_variable = {
+		GEH_dualHeaded_Influence_Factor_FRAME = GEH_dualHeaded_Influence_Factor_Hina_Text
 	}
 	multiply_variable = {
 		GEH_dualHeaded_Influence_Factor_FRAME = 1000
@@ -201,7 +202,7 @@ GEH_hot_spring_calc = {
 	clamp_variable = {
 		var = GEH_hot_spring_destructive
 		min = 0
-		max = 100
+		max = 99
 	}
 	if = {
 		limit = {
@@ -262,7 +263,7 @@ GEH_food_service_and_gourmet_research_calc = {
 	clamp_variable = {
 		var = GEH_gourmet_research_destructive
 		min = 0
-		max = 100
+		max = 99
 	}
 	if = {
 		limit = {
@@ -343,6 +344,8 @@ GEH_weekly_variable_change = {
 	multiply_variable = { GEH_hot_spring_destructive_temp = 0.02 }
 	set_variable = { GEH_discipline_committee_repression_temp = GEH_discipline_committee_ability }
 	multiply_variable = { GEH_discipline_committee_repression_temp = 0.02 }
+	set_variable = { GEH_discipline_committee_power = GEH_discipline_committee_ability }
+	multiply_variable = { GEH_discipline_committee_power = -0.01 }
 	if = {
 		limit = {
 			has_global_flag = GEH_comb68_working
@@ -362,7 +365,7 @@ GEH_weekly_variable_change = {
 		clamp_variable = {
 		    var = GEH_com68_destructive
 		    min = 0
-		    max = 100
+		    max = 99
 	    }
 	}
 	    add_to_variable = {
@@ -373,11 +376,14 @@ GEH_weekly_variable_change = {
 		add_to_variable = {
 		    GEH_gourmet_research_destructive_temp = modifier@GEH_societies_gourmet_research_destructive_weekly
 	    }
+		add_to_variable = { GEH_gourmet_research_destructive_temp = GEH_discipline_committee_power }
 		add_to_variable = { GEH_gourmet_research_destructive = GEH_gourmet_research_destructive_temp }
+		
 		
 		add_to_variable = {
 		    GEH_hot_spring_destructive_temp = modifier@GEH_societies_hot_spring_destructive_weekly
 	    }
+		add_to_variable = { GEH_hot_spring_destructive_temp = GEH_discipline_committee_power }
 		add_to_variable = { GEH_hot_spring_destructive = GEH_hot_spring_destructive_temp }
 		
 		add_to_variable = {

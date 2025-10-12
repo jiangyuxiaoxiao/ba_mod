@@ -88,6 +88,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/special_project/specialization_nuclear.dds"
 	}
 	spriteType = {
+		name = "GFX_specialization_ba_tech"
+		texturefile = "gfx/interface/special_project/specialization_nuclear.dds"
+	}
+	spriteType = {
 		name = "GFX_specialization_land"
 		texturefile = "gfx/interface/special_project/specialization_land.dds"
 	}

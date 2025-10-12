@@ -23,7 +23,17 @@ ideas = {
                 
             }
         }
-    
+        #文本idea  圣三一情报局
+        TRI_special_services_investigations_text_idea = {
+            name = TRI_special_services_investigations
+            picture = "TRI_special_services_investigations"
+            allowed = {
+                
+            }
+            modifier = {
+                
+            }
+        }
         #以战止戈
         TRI_authorize_eagle = {
             name = authorize_eagle_modifier
@@ -41,7 +51,6 @@ ideas = {
         #为会谈做出的整备
         TRI_2st_eden_pact_modifier = {
             name = TRI_2st_eden_pact_modifier
-            picture = unknown
 
             allowed = {
                 original_tag = TRI
@@ -71,7 +80,7 @@ ideas = {
         #铸剑为犁
         TRI_authorize_dove = {
             name = authorize_dove_modifier
-            picture = unknown
+            picture = GFX_material_allocation_modifier
 
             allowed = {
                 original_tag = TRI
@@ -102,21 +111,39 @@ ideas = {
         TRI_prepare_for_meeting = {
             picture = "GFX_TRI_prepare_for_meeting"
             modifier = {
-                stability_factor = 0.05
+                stability_factor = -0.1
                 political_power_cost = 0.2
                 TRI_unity_weekly_modifier = -1
             }
+            cancel = {
+                has_global_flag = Eden_treaty_negotiation_completed
+            }
         }
-        TRI_prepare_for_meeting_2 = {
+        TRI_prepare_for_meeting_2_1 = {
             picture = "GFX_TRI_prepare_for_meeting"
             modifier = {
                 consumer_goods_factor = 0.15
                 production_speed_buildings_factor = 0.1
                 production_factory_efficiency_gain_factor = 0.05
-                stability_factor = 0.05
+                stability_factor = -0.1
                 political_power_cost = 0.4
                 TRI_unity_weekly_modifier = -2
                 Eden_treaty_progress_modifier = 3
+            }
+            cancel = {
+                has_global_flag = Eden_treaty_negotiation_completed
+            }
+        }
+        TRI_prepare_for_meeting_2_2 = {
+            picture = "GFX_TRI_prepare_for_meeting"
+            modifier = {
+                consumer_goods_factor = -0.05
+                stability_factor = -0.1
+                political_power_cost = 0.2
+                Eden_treaty_progress_modifier = 1
+            }
+            cancel = {
+                has_global_flag = Eden_treaty_negotiation_completed
             }
         }
         TRI_prepare_for_meeting_3 = {
@@ -125,10 +152,13 @@ ideas = {
                 consumer_goods_factor = 0.1
                 production_speed_buildings_factor = 0.1
                 production_factory_efficiency_gain_factor = 0.05
-                stability_factor = 0.05
+                stability_factor = -0.1
                 political_power_cost = 0.4
                 TRI_unity_weekly_modifier = -1
                 Eden_treaty_progress_modifier = 4
+            }
+            cancel = {
+                has_global_flag = Eden_treaty_negotiation_completed
             }
         }
         TRI_prepare_for_meeting_4 = {
@@ -137,15 +167,18 @@ ideas = {
                 consumer_goods_factor = 0.1
                 production_speed_buildings_factor = 0.1
                 production_factory_efficiency_gain_factor = 0.05
-                stability_factor = 0.2
+                stability_factor = 0.05
                 political_power_cost = 0.3
                 Eden_treaty_progress_modifier = 4
+            }
+            cancel = {
+                has_global_flag = Eden_treaty_negotiation_completed
             }
         }
 
         #茶话会直属炮兵
         TRI_tea_party_artillery_1 = {
-            picture = unknown
+            picture = TRI_tea_party_artillery
             modifier = {
                 army_infantry_defence_factor = 0.04
             }
@@ -162,7 +195,7 @@ ideas = {
             }
         }
         TRI_tea_party_artillery_2 = {
-            picture = unknown
+            picture = TRI_tea_party_artillery
             modifier = {
                 army_infantry_defence_factor = 0.08
             }
@@ -179,7 +212,7 @@ ideas = {
             }
         }
         TRI_tea_party_artillery_3 = {
-            picture = unknown
+            picture = TRI_tea_party_artillery
             modifier = {
                 army_infantry_defence_factor = 0.12
             }
@@ -196,7 +229,7 @@ ideas = {
             }
         }
         TRI_tea_party_artillery_4 = {
-            picture = unknown
+            picture = TRI_tea_party_artillery
             modifier = {
                 army_infantry_defence_factor = 0.16
             }
@@ -213,7 +246,7 @@ ideas = {
             }
         }
         TRI_tea_party_artillery_5 = {
-            picture = unknown
+            picture = TRI_tea_party_artillery
             modifier = {
                 army_infantry_defence_factor = 0.2
             }
@@ -225,7 +258,7 @@ ideas = {
         }
         #圣三一航空训练计划
         TRI_aeronautics_training = {
-            picture = unknown
+            picture = GFX_idea_TRI_aeronautics_training
             modifier = {
                 experience_gain_air = 0.05
                 experience_gain_air_factor = 0.1
@@ -234,7 +267,7 @@ ideas = {
             }
         }
         TRI_aeronautics_training_1_1 = {
-            picture = unknown
+            picture = GFX_idea_TRI_aeronautics_training
             modifier = {
                 experience_gain_air = 0.05
                 experience_gain_air_factor = 0.1
@@ -244,7 +277,7 @@ ideas = {
             }
         }
         TRI_aeronautics_training_1_2 = {
-            picture = unknown
+            picture = GFX_idea_TRI_aeronautics_training
             modifier = {
                 experience_gain_air = 0.05
                 experience_gain_air_factor = 0.1
@@ -262,7 +295,7 @@ ideas = {
             }
         }
         TRI_aeronautics_training_2 = {
-            picture = unknown
+            picture = GFX_idea_TRI_aeronautics_training
             modifier = {
                 experience_gain_air = 0.05
                 experience_gain_air_factor = 0.1
@@ -282,7 +315,6 @@ ideas = {
         }
         #圣三一火炮
         TRI_trinity_artillery = {
-            picture = unknown
             #牵引式火炮/火箭炮生产花费-15%，可靠性+10%。
             equipment_bonus = {
                 artillery = {
@@ -293,7 +325,6 @@ ideas = {
         }
         #先进性装甲
         TRI_advanced_armour_idea = {
-            picture = unknown
             #装甲可靠性+5%，装甲对人员杀伤+5%
             equipment_bonus = {
                 armor = {
@@ -394,7 +425,6 @@ ideas = {
         }
         #扫除威胁！
         TRI_sweep_threat = {
-            picture = unknown
             modifier = {
                 combat_readiness_recovery_percentage = 1
             }
@@ -421,7 +451,6 @@ ideas = {
 
         #维持军备
         TRI_prepare_for_war = {
-            name = TRI_prepare_for_war
             picture = unknown
 
             allowed = {
@@ -435,7 +464,6 @@ ideas = {
 
         #重视稳定
         TRI_focus_on_stability = {
-            name = TRI_focus_on_stability
             picture = unknown
 
             allowed = {
@@ -448,7 +476,7 @@ ideas = {
         }
         #友谊，光荣与未来！
         TRI_friendship_glory_future = {
-            picture = unknown
+            picture = GFX_idea_eden_treaty_step_normal_modifier
 
             allowed = {
                 original_tag = TRI
@@ -465,7 +493,7 @@ ideas = {
         }
         #胜利，信任与团结！
         TRI_victory_trust_unity = {
-            picture = unknown
+            picture = TRI_chaotic_frontline_2
 
             allowed = {
                 original_tag = TRI
@@ -485,7 +513,6 @@ ideas = {
         }
         #进行中的行政重整
         TRI_reforming_administration_system = {
-            picture = unknown
 
             allowed = {
                 original_tag = TRI

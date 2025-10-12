@@ -1,4 +1,3 @@
-
 soundeffect = {
 	name = BARE_SuperEvent_Sound_HELP_HOSHINO
 	volume = 0.6
@@ -6,7 +5,6 @@ soundeffect = {
 		sound = BARE_SuperEvent_Sound_HELP_HOSHINO
 	}
 }
-
 
 soundeffect = {
 	name = BARE_SuperEvent_Sound_EDEN_TREATY_STRIKE
@@ -24,7 +22,6 @@ soundeffect = {
 	}
 }
 
-
 soundeffect = {
 	name = BARE_SuperEvent_Sound_MIKA_COUP_ARI
 	volume = 0.8
@@ -41,39 +38,55 @@ soundeffect = {
 	}
 }
 
-sound =
-{
+soundeffect = {
+	name = BARE_SuperEvent_Sound_Eden_Treaty_wins_piano_motion
+	volume = 0.8
+	sounds = {
+		sound = BARE_SuperEvent_Sound_Eden_Treaty_wins_piano_motion
+	}
+}
+
+soundeffect = {
+	name = BARE_SuperEvent_Sound_GEH_TRI_Total_War
+	volume = 0.8
+	sounds = {
+		sound = BARE_SuperEvent_Sound_GEH_TRI_Total_War
+	}
+}
+
+sound = {
 	name = "BARE_SuperEvent_Sound_EDEN_TREATY_STRIKE"
 	file = "BARE_SuperEvent_Sound/BARE_SuperEvent_Sound_EDEN_TREATY_STRIKE.wav"
 }
 
-
-
-sound =
-{
+sound = {
 	name = "BARE_SuperEvent_Sound_HELP_HOSHINO"
 	file = "BARE_SuperEvent_Sound/BARE_SuperEvent_Sound_HELP_HOSHINO.wav"
 }
 
-
-sound =
-{
+sound = {
 	name = "BARE_SuperEvent_Sound_SECOND_EDEN_TREATY"
 	file = "BARE_SuperEvent_Sound/BARE_SuperEvent_Sound_SECOND_EDEN_TREATY.wav"
 }
 
-
-sound =
-{
+sound = {
 	name = "BARE_SuperEvent_Sound_MIKA_COUP_ARI"
 	file = "BARE_SuperEvent_Sound/BARE_SuperEvent_Sound_MIKA_COUP_ARI.wav"
 }
 
-
-sound =
-{
+sound = {
 	name = "BARE_SuperEvent_Sound_LSGSJ_GSC_IN"
 	file = "BARE_SuperEvent_Sound/BARE_SuperEvent_Sound_LSGSJ_GSC_IN.wav"
+}
+
+sound = {
+	name = "BARE_SuperEvent_Sound_Eden_Treaty_wins_piano_motion"
+	file = "BARE_SuperEvent_Sound/BARE_SuperEvent_Sound_Eden_Treaty_wins_piano_motion.wav"
+}
+
+sound = {
+	name = "BARE_SuperEvent_Sound_GEH_TRI_Total_War"
+	file = "BARE_SuperEvent_Sound/BARE_SuperEvent_Sound_GEH_TRI_Total_War.wav"
 }
 
 category = {
@@ -84,5 +97,7 @@ category = {
 		BARE_SuperEvent_Sound_SECOND_EDEN_TREATY
 		BARE_SuperEvent_Sound_MIKA_COUP_ARI
 		BARE_SuperEvent_Sound_LSGSJ_GSC_IN
+		BARE_SuperEvent_Sound_Eden_Treaty_wins_piano_motion
+		BARE_SuperEvent_Sound_GEH_TRI_Total_War
 	}
 }

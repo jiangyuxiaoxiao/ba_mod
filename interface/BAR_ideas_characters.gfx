@@ -6,6 +6,57 @@ spriteTypes = {
 		textureFile = "gfx/leaders/GEH/GEH_JingJiZhuangTaiWeiYuanHui.dds"
 	}
 
+	#HIL
+	spriteType = {
+		name = "GFX_portrait_KRO_Reporting_Department"
+		texturefile = "gfx/leaders/KRO/KRO_Reporting_Department.dds"
+	}
+	#KRO
+	spriteType = {
+		name = "GFX_portrait_HIL_CCC"
+		texturefile = "gfx/leaders/HIL/HIL_CCC.dds"
+	}
+	#杂鱼
+	spriteType = {
+		name = "GFX_portrait_Don_Alanchino"
+		texturefile = "gfx/random_leader/hd/hd_1.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_Miao_Tian_Wan"
+		texturefile = "gfx/random_leader/sm/sm_13.dds"
+	}
+	#自动生成
+	spriteType = {
+		name = "GFX_portrait_Global_Blockade_Zone_Leader"
+		texturefile = "gfx/random_leader/gsc/Global_Blockade_Zone_Leader.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_Global_Suburban_Leader"
+		texturefile = "gfx/random_leader/gsc/Global_Suburban_Leader.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_Global_Trusteeship_Area_Leader"
+		texturefile = "gfx/random_leader/gsc/Trusteeship_Area_Leader.dds"
+	}
+
+	#CAP
+	spriteType = {
+		name = "GFX_portrait_CAP_general"
+		texturefile = "gfx/random_leader/cah/cah_3.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_CAP_general_small"
+		texturefile = "gfx/random_leader/cah/cah_3_small.dds"
+	}
+	#CAE
+	spriteType = {
+		name = "GFX_portrait_CAE_president"
+		texturefile = "gfx/random_leader/cah/cah_5.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_CAE_president_small"
+		texturefile = "gfx/random_leader/cah/cah_5_small.dds"
+	}
 ### ABY 梦、黑白子无肖像
 	spriteType = {
 		name = "GFX_portrait_ABY_hoshino"
@@ -66,20 +117,20 @@ spriteTypes = {
 		texturefile = "gfx/leaders/ARI/hiyori.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_ARI_atsukoa_small"
-		texturefile = "gfx/leaders/ARI/atsukoa_small.dds"
+		name = "GFX_portrait_ARI_atsuko_small"
+		texturefile = "gfx/leaders/ARI/atsuko_small.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_ARI_saoria_small"
-		texturefile = "gfx/leaders/ARI/saoria_small.dds"
+		name = "GFX_portrait_ARI_saori_small"
+		texturefile = "gfx/leaders/ARI/saori_small.dds"
 	}
 	spriteType = {
-		name = "GFX_portrait_ARI_misakia_small"
-		texturefile = "gfx/leaders/ARI/misakia_small.dds"
+		name = "GFX_portrait_ARI_misaki_small"
+		texturefile = "gfx/leaders/ARI/misaki_small.dds"
 	}
 	spriteType = {
 		name = "GFX_portrait_ARI_hiyoria_small"
-		texturefile = "gfx/leaders/ARI/hiyoria_small.dds"
+		texturefile = "gfx/leaders/ARI/hiyori_small.dds"
 	}
 	spriteType = {
 		name = "GFX_portrait_ARI_NoGovMode"

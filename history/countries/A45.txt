@@ -92,6 +92,8 @@ set_technology = {
 	infantry_weapons_upgrade_communication_T1 = 1
 	infantry_weapons_upgrade_sighting_T1 = 1
 }
+
+recruit_character = A45_Don_Alanchino
 add_ideas = {
 	BARE_Combat_Readiness_Start_Idea
 	BARE_Global_Extrajudicial_Trusteeship_Area
@@ -99,9 +101,9 @@ add_ideas = {
 
 set_politics = {
 	ruling_party = no_ideology
-
 }
 set_popularities = {
 	no_ideology = 100
 }
+
 

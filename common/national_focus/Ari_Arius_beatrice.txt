@@ -252,12 +252,16 @@ focus_tree = {
 		available = {
 			custom_override_tooltip = {
 				tooltip = {
-					localization_key = ARI_has_mystic_progress
+					localization_key = ARI_has_mystic_progress_justyna_projection
 					PROGRESS = "80"
+					RANK = "2"
 				}
-				NOT = {
+				or = {
 					check_variable = {
-						ARI_mystic_progress < 80
+						ARI_mystic_progress > 79
+					}
+					check_variable = {
+						ARI_mystic_rank > 1
 					}
 				}
 			}
@@ -361,7 +365,7 @@ focus_tree = {
 					RANK = "2"
 				}
 				check_variable = {
-					ARI_mystic_rank = 2
+					ARI_mystic_rank > 1
 				}
 			}
 		}
@@ -399,6 +403,9 @@ focus_tree = {
 		prerequisite = {
 			focus = ARI_traveller_operation
 		}
+		allow_branch = {
+		 	has_completed_focus = ARI_traveller_operation
+		}
 		available = {
 			custom_override_tooltip = {
 				tooltip = {
@@ -406,7 +413,7 @@ focus_tree = {
 					RANK = "2"
 				}
 				check_variable = {
-					ARI_mystic_rank = 2
+					ARI_mystic_rank > 1
 				}
 			}
 			custom_trigger_tooltip = {
@@ -446,7 +453,7 @@ focus_tree = {
 					RANK = "2"
 				}
 				check_variable = {
-					ARI_mystic_rank = 2
+					ARI_mystic_rank > 1
 				}
 			}
 		}
@@ -493,7 +500,7 @@ focus_tree = {
 					RANK = "2"
 				}
 				check_variable = {
-					ARI_mystic_rank = 2
+					ARI_mystic_rank > 1
 				}
 			}
 		}
@@ -540,7 +547,7 @@ focus_tree = {
 					RANK = "2"
 				}
 				check_variable = {
-					ARI_mystic_rank = 2
+					ARI_mystic_rank > 1
 				}
 			}
 		}
@@ -580,7 +587,7 @@ focus_tree = {
 					RANK = "3"
 				}
 				check_variable = {
-					ARI_mystic_rank = 3
+					ARI_mystic_rank > 2
 				}
 			}
 		}
@@ -623,7 +630,7 @@ focus_tree = {
 					RANK = "3"
 				}
 				check_variable = {
-					ARI_mystic_rank = 3
+					ARI_mystic_rank > 2
 				}
 			}
 		}
@@ -669,7 +676,7 @@ focus_tree = {
 					RANK = "3"
 				}
 				check_variable = {
-					ARI_mystic_rank = 3
+					ARI_mystic_rank > 2
 				}
 			}
 		}
@@ -716,7 +723,7 @@ focus_tree = {
 					RANK = "4"
 				}
 				check_variable = {
-					ARI_mystic_rank = 4
+					ARI_mystic_rank > 3
 				}
 			}
 		}
@@ -814,7 +821,7 @@ focus_tree = {
 					RANK = "4"
 				}
 				check_variable = {
-					ARI_mystic_rank = 4
+					ARI_mystic_rank > 3
 				}
 			}
 			##和两大校交战
@@ -921,7 +928,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 5
+			factor = 10
 		}
 	}
 	#数秘术部分
@@ -1093,7 +1100,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 5
+			factor = 10
 		}
 	}
 	focus = {
@@ -1160,8 +1167,9 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
+			factor = 5
 			modifier = {
-				factor = 3
+				factor = 5
 				date > 2020.1.1
 			}
 		}
@@ -1198,9 +1206,10 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
+			factor = 5
 			modifier = {
 				factor = 3
-				date > 2021.1.1
+				date > 2020.1.1
 			}
 		}
 	}
@@ -1236,9 +1245,10 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
+			factor = 5
 			modifier = {
 				factor = 3
-				date > 2021.1.1
+				date > 2020.1.1
 			}
 		}
 	}
@@ -1285,7 +1295,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 5
 			modifier = {
-				factor = 3
+				factor = 5
 				date > 2020.1.1
 			}
 		}
@@ -1436,7 +1446,7 @@ focus_tree = {
 		ai_will_do = {
 			modifier = {
 				factor = 3
-				date > 2021.1.1
+				date > 2020.7.1
 			}
 		}
 	}
@@ -1471,7 +1481,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 3
+			factor = 5
 		}
 	}
 	focus = {
@@ -1488,9 +1498,13 @@ focus_tree = {
 		available = {
 			custom_override_tooltip = {
 				tooltip = ARI_traveller_operation_1_trigger_tt
-				check_variable = {
-					ARI_traveller_operation_prepare_progress = 100
+				or = {
+					check_variable = {
+						ARI_traveller_operation_prepare_progress = 100
+					}
+					is_ai = yes
 				}
+				
 			}
 			custom_override_tooltip = {
 				tooltip = ARI_traveller_operation_2_trigger_tt
@@ -1529,6 +1543,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
+			custom_effect_tooltip = ARI_traveller_operation_tt
 			if = {
 				limit = {
 					check_variable = {
@@ -1554,7 +1569,7 @@ focus_tree = {
 				}
 				ARITRI_coup_effect = yes
 				hidden_effect = {
-					country_event = bare_hidden_event.1
+					country_event = bare_long_text_hidden_event.1
 				}
 			}
 			
@@ -1563,22 +1578,21 @@ focus_tree = {
 			factor = 100
 			modifier = {
 				factor = 0
-				date < 2021.7.1
+				date < 2021.1.1
 			}
 		}
 	}
 	###3.17新增
-	focus = {
-		#行动的教训
+	focus = { #行动的教训
 		id = ARI_traveller_operation_lost
 		icon = GFX_focus_ARI_traveller_operation_lost
 		relative_position_id = ARI_traveller_operation
 		prerequisite = {
 			focus = ARI_traveller_operation
 		}
-		allow_branch = {
-			has_completed_focus = ARI_traveller_operation
-		}
+		# allow_branch = {
+		#  	has_completed_focus = ARI_traveller_operation
+		# }
 		available = {
 			always = no			#自动跳过
 		}
@@ -1595,8 +1609,7 @@ focus_tree = {
 			factor = 2
 		}
 	}
-	focus = {
-		#收回临机指挥权
+	focus = { #收回临机指挥权
 		id = ARI_get_back_command_power
 		icon = GFX_focus_ARI_get_back_command_power
 		relative_position_id = ARI_traveller_operation_lost
@@ -1635,11 +1648,10 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 2
+			factor = 1000
 		}
 	}
-	focus = {
-		#回收特战队
+	focus = { #回收特战队
 		id = ARI_get_back_special_force
 		icon = GFX_focus_ARI_get_back_special_force
 		relative_position_id = ARI_traveller_operation_lost
@@ -1669,18 +1681,17 @@ focus_tree = {
 			#解锁决议以减少“旅者”行动的灾难的效果
 			army_experience = 10
 			unlock_decision_tooltip = ARI_get_back_special_force_de
-			hidden_effect = {
-				set_variable = {
-					ARI_get_back_special_force_count = 0
-				}
-			}
+			# hidden_effect = {
+			# 	set_variable = {
+			# 		ARI_get_back_special_force_count = 0
+			# 	}
+			# }
 		}
 		ai_will_do = {
-			factor = 2
+			factor = 1000
 		}
 	}
-	focus = {
-		#重申复仇理想
+	focus = { #重申复仇理想
 		id = ARI_get_back_revenge_spirit
 		icon = GFX_focus_ARI_get_back_revenge_spirit
 		relative_position_id = ARI_traveller_operation_lost
@@ -1713,7 +1724,7 @@ focus_tree = {
 			# unlock_decision_tooltip = ARI_get_back_revenge_spirit_de
 		}
 		ai_will_do = {
-			factor = 2
+			factor = 1000
 		}
 	}
 	focus = {
@@ -1755,28 +1766,53 @@ focus_tree = {
 			if = {
 				limit = {
 					has_completed_focus = ARI_march_towards_the_goal
-					NOT = {
-						has_country_flag = ARI_have_skiped_solve_supply_shorting
-					}
+					
 				}
-				complete_national_focus = ARI_solve_supply_shorting
+			    # set_variable = {
+				# 	ARI_lesson_traveller_operation_goods_factor = 0.25
+				# }
+				# set_variable = {
+				# 	ARI_lesson_traveller_operation_industrial_capacity_factory = -0.25
+				# }
 				set_country_flag = ARI_have_skiped_solve_supply_shorting
+				complete_national_focus = ARI_solve_supply_shorting
 			}
 		}
 		completion_reward = {
+			# if = {
+			# 	limit = {
+			# 		has_completed_focus = ARI_march_towards_the_goal
+					
+			# 	}
+			#     set_variable = {
+			# 		ARI_lesson_traveller_operation_goods_factor = 0.25
+			# 	}
+			# 	set_variable = {
+			# 		ARI_lesson_traveller_operation_industrial_capacity_factory = -0.25
+			# 	}
+			# }
 			#减少“旅者”行动的灾难的效果
 			#解锁决议：重整物资供应
 			#花费物资或民工或军工(捐赠)减少“旅者”行动的教训的debuff如果已完成国策
 			#“向目标前进”立刻完成该国策并消完debuff
 			custom_effect_tooltip = ARI_immeditly_skip_debuff_supply_tooltip
-			unlock_decision_tooltip = ARI_fix_our_supply
+			if = {
+				limit = { has_country_flag = ARI_have_skiped_solve_supply_shorting }
+				custom_effect_tooltip = ARI_cut_traveller_operation_debuff_3
+				hidden_effect = {
+					add_to_variable = { ARI_lesson_traveller_operation_industrial_capacity_factory = 0.25 }
+					add_to_variable = { ARI_lesson_traveller_operation_goods_factor = -0.25 }
+				}
+			}
+			else = {
+				unlock_decision_tooltip = ARI_fix_our_supply
+			}
 		}
 		ai_will_do = {
-			factor = 2
+			factor =1000
 		}
 	}
-	focus = {
-		#处理“叛徒”
+	focus = { #处理“叛徒”
 		id = ARI_deal_with_traitor
 		icon = GFX_focus_ARI_deal_with_traitor
 		relative_position_id = ARI_get_back_special_force
@@ -1818,7 +1854,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 2
+			factor = 1000
 		}
 	}
 	focus = {
@@ -1833,6 +1869,7 @@ focus_tree = {
 			focus = ARI_solve_supply_shorting
 		}
 		available = {
+			#暂时取消免得卡国策
 			custom_override_tooltip = {
 				tooltip = ARI_has_solved_traveller_problems
 				##debuff消完了
@@ -1877,7 +1914,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 2
+			factor = 1000
 		}
 	}
 	focus = {
@@ -1891,9 +1928,9 @@ focus_tree = {
 		prerequisite = {
 			focus = ARI_fake_flag_operation
 		}
-		allow_branch = {
-			has_completed_focus = ARI_traveller_operation
-		}
+		# allow_branch = {
+		# 	has_completed_focus = ARI_traveller_operation
+		# }
 		available = {
 			always = no			#自动跳过
 		}
@@ -1924,7 +1961,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 2
+			factor = 1000
 		}
 	}
 	focus = {
@@ -1935,9 +1972,9 @@ focus_tree = {
 		prerequisite = {
 			focus = ARI_open_the_curtain
 		}
-		available = {
-			always = no			#自动跳过
-		}
+		# available = {
+		# 	always = no			#自动跳过
+		# }
 		cost = 3
 		x = -2
 		y = 2
@@ -1950,7 +1987,7 @@ focus_tree = {
 			unlock_decision_tooltip = ARI_send_sf_to_trinity
 		}
 		ai_will_do = {
-			factor = 2
+			factor = 1000
 		}
 	}
 	focus = {
@@ -1961,9 +1998,9 @@ focus_tree = {
 		prerequisite = {
 			focus = ARI_revise_our_operation_plan
 		}
-		available = {
-			always = no			#自动跳过
-		}
+		# available = {
+		# 	always = no			#自动跳过
+		# }
 		cost = 3
 		x = 0
 		y = 2
@@ -1976,7 +2013,7 @@ focus_tree = {
 			unlock_decision_tooltip = ARI_control_trinity_border
 		}
 		ai_will_do = {
-			factor = 2
+			factor = 1000
 		}
 	}
 	focus = {
@@ -1990,9 +2027,9 @@ focus_tree = {
 		prerequisite = {
 			focus = ARI_secret_cooperation_with_Pandemonium
 		}
-		available = {
-			always = no			#自动跳过
-		}
+		# available = {
+		# 	always = no			#自动跳过
+		# }
 		cost = 3
 		x = 2
 		y = 2
@@ -2006,7 +2043,7 @@ focus_tree = {
 			unlock_decision_tooltip = ARI_a_trip_to_gehenna
 		}
 		ai_will_do = {
-			factor = 2
+			factor = 1000
 		}
 	}
 	focus = {
@@ -2017,9 +2054,9 @@ focus_tree = {
 		prerequisite = {
 			focus = ARI_further_strengthen_cooperation
 		}
-		available = {
-			always = no			#自动跳过
-		}
+		# available = {
+		# 	always = no			#自动跳过
+		# }
 		cost = 3
 		x = 0
 		y = 2
@@ -2033,7 +2070,7 @@ focus_tree = {
 			unlock_decision_tooltip = ARI_join_food_seminar_club_activity
 		}
 		ai_will_do = {
-			factor = 2
+			factor = 1000
 		}
 	}
 	focus = {
@@ -2044,14 +2081,14 @@ focus_tree = {
 		prerequisite = {
 			focus = ARI_relax_operation_restrictions
 		}
-		prerequisite = {
-			focus = ARI_conclude_our_experience
-		}
+		#暂时取消前置
+		# prerequisite = {
+		# 	focus = ARI_conclude_our_experience
+		# }
 		prerequisite = {
 			focus = ARI_join_gehenna_club_fake
 		}
 		available = {
-			always = no			#自动跳过
 		}
 		cost = 3
 		x = 0
@@ -2061,11 +2098,12 @@ focus_tree = {
 			FOCUS_FILTER_ARMY
 		}
 		completion_reward = {
+			custom_effect_tooltip = ARI_prepare_operation_eden_tt
 			#解锁准备决议5
 			unlock_decision_category_tooltip = ARI_preparation_of_operation_eden_decisions
 		}
 		ai_will_do = {
-			factor = 2
+			factor = 1000
 		}
 	}
 	#TODO：需要在什么时候完成这个国策
@@ -2147,6 +2185,9 @@ focus_tree = {
 			focus = ARI_time_for_final_action
 		}
 		available = {
+			has_dynamic_modifier = {
+				modifier = Eden_treaty_War_blood_march
+			}
 		}
 		cost = 3
 		x = 2
@@ -2155,7 +2196,7 @@ focus_tree = {
 			FOCUS_FILTER_ARMY
 		}
 		completion_reward = {
-			#TODO:允许阿里乌斯通过解除未经计划的攻势
+			custom_effect_tooltip = ARI_coordinate_reinforcement_troops_tt
 		}
 	}
 	focus = {
@@ -3069,7 +3110,7 @@ focus_tree = {
 	focus = {
 		#扩建阿里乌斯通讯网络
 		id = ARI_communication_network
-		#icon = 
+		icon = GFX_focus_ARI_communication_network
 		relative_position_id = ARI_leaps_and_bounds
 		prerequisite = {
 			focus = ARI_leaps_and_bounds
@@ -3134,7 +3175,7 @@ focus_tree = {
 	focus = {
 		#义务施工队
 		id = ARI_compulsory_labor
-		#icon = 
+		icon = GFX_focus_ARI_compulsory_labor
 		relative_position_id = ARI_communication_network
 		prerequisite = {
 			focus = ARI_communication_network
@@ -3798,10 +3839,7 @@ focus_tree = {
 			#强化精神“阿里乌斯武装学生部队”
 			custom_effect_tooltip = ARI_spirit_of_revenge_tt
 			add_to_variable = {
-				ARI_armed_students_modifier_army_attack_factor = 0.05
-			}
-			add_to_variable = {
-				ARI_armed_students_modifier_army_defence_factor = 0.1
+				ARI_armed_students_modifier_army_defence_factor = 0.15
 			}
 		}
 	}
@@ -3866,10 +3904,7 @@ focus_tree = {
 				ARI_armed_students_modifier_org_loss_when_moving = -0.2
 			}
 			add_to_variable = {
-				ARI_armed_students_modifier_army_attack_factor = 0.05
-			}
-			add_to_variable = {
-				ARI_armed_students_modifier_breakthrough_factor = 0.1
+				ARI_armed_students_modifier_breakthrough_factor = 0.15
 			}
 		}
 	}
@@ -4213,12 +4248,16 @@ focus_tree = {
 				}
 			}
 			#TODO:2张50特战学说卡，暂时用陆军学说代替
-			add_tech_bonus = {
-				bonus = 0.5
+
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
 				uses = 2
-				category = land_doctrine
+				category = air_doctrine
 			}
 			#解锁T2小型无人机科技
+			set_technology = {
+				fighting_drone_MK1 = 1
+			}
 			set_technology = {
 				fighting_drone_MK2 = 1
 			}

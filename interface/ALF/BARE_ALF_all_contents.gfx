@@ -1,0 +1,42 @@
+spriteTypes = {
+	###国家精神配图
+	spriteType = {
+        name = "GFX_ALF_armed_force_dynamic_modifier_desc_picture"
+        texturefile = "gfx/interface/ideas/ALF/ideas_picture/ALF_armed_force_dynamic_modifier_desc_picture.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+        name = "GFX_ALF_party_modifier_desc_picture"
+        texturefile = "gfx/interface/ideas/ALF/ideas_picture/ALF_party_modifier_desc_picture.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+        name = "GFX_ALF_new_capital_decision_ui_picture"
+        texturefile = "gfx/interface/decisions/ALF/ALF_new_capital_decision_ui_picture.dds"
+		#legacy_lazy_load = no
+	}
+
+	#事件#
+	spriteType = {
+        name = "GFX_FSC_Leader_portrait_picture"
+        texturefile = "gfx/event_pictures/ALF/FSC_Leader_portrait_picture.dds"
+		#legacy_lazy_load = no
+	}
+
+	###############军改GUI
+	progressbartype = {
+		name = "GFX_bare_red_progressbar_399"
+		textureFile1 = "gfx/interface/decisions/sgui_component/bare_progress_bar_red.dds"
+		textureFile2 = "gfx/interface/decisions/sgui_component/bare_progress_bar_background.dds"
+		size = {
+			x = 399
+			y = 38
+		}
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = yes
+		
+		#steps = 100
+	}
+}

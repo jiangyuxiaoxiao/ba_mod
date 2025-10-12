@@ -14,4 +14,17 @@ Test_baiyi_decisions_categories = {
 			set_variable = { debug_switching_national_policy_background_var = 2 }
 		}
 	}
+
+	
+	Test_damage_building = {
+		complete_effect = {
+			136 = {
+				damage_building = {
+					type = nuclear_facility
+					damage = 1
+				}    
+			}
+			
+		}
+	}
 } 

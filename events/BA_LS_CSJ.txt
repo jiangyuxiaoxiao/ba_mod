@@ -188,7 +188,7 @@ country_event = { #古圣堂遭受聚变打击(无核弹)
 
 country_event = { #初次袭击简报
 	id = LS_GST.3
-	title = LG_GST.3.t
+	title = LS_GST.3.t
 	desc ={
 		text = LS_GST.3.d.1
 		trigger = {
@@ -200,8 +200,13 @@ country_event = { #初次袭击简报
 		trigger = {
 			has_global_flag = ARI_ZhunBeiDu_2_JieDuanBiaoZhi
 		}
+	}
+	desc ={
+		text = LS_GST.3.d.3
+		trigger = {
+			has_global_flag = ARI_ZhunBeiDu_3_JieDuanBiaoZhi
+		}
 	} 
-	desc = LS_GST.3.d.3
 	is_triggered_only = yes
 	picture = TRI_news_event_25
 
@@ -227,16 +232,28 @@ country_event = { #初次袭击简报
 			
 			140 = {
 				transfer_state_to = ARI #转移控制者和拥有者给予指定TAG
-				add_dynamic_modifier = {
-					modifier = TRI_BeiAliWuSiTuXi #被阿里乌斯突袭 -90%陆军进攻
-				}
+				# add_dynamic_modifier = {
+				# 	modifier = TRI_BeiAliWuSiTuXi #被阿里乌斯突袭 -90%陆军进攻
+				# }
 			}
 
 			529 = {
 				transfer_state_to = ARI #转移控制者和拥有者给予指定TAG
-				add_dynamic_modifier = {
-					modifier = TRI_BeiAliWuSiTuXi
-				}
+				# add_dynamic_modifier = {
+				# 	modifier = TRI_BeiAliWuSiTuXi
+				# }
+			}
+			683 = {
+				transfer_state_to = ARI #转移控制者和拥有者给予指定TAG
+				# add_dynamic_modifier = {
+				# 	modifier = TRI_BeiAliWuSiTuXi
+				# }
+			}
+			684 = {
+				transfer_state_to = ARI #转移控制者和拥有者给予指定TAG
+				# add_dynamic_modifier = {
+				# 	modifier = TRI_BeiAliWuSiTuXi
+				# }
 			}
 			##不需要这个了
 			#activate_decision = GST_ARI_defend_cathedral
@@ -341,10 +358,10 @@ country_event = { #初次袭击简报
 				}
 			}
 
-			news_event = {
-				id = LS_GST.4
-				days = 7
-			}
+			# news_event = {
+			# 	id = LS_GST.4
+			# 	days = 7
+			# }
 			country_event = {
 				id = LS_GST.5
 				days = 2
@@ -427,12 +444,31 @@ news_event = { #古圣堂之战
 country_event = { #行动报告
 	id = LS_GST.5
 	title = LS_GST.5.t
-	desc = LS_GST.5.d
-
 	is_triggered_only = yes
 	picture = TRI_news_event_20
 
 	timeout_days = 7
+
+	desc ={
+		text = LS_GST.5.d.1
+		trigger = {
+			has_global_flag = ARI_ZhunBeiDu_1_JieDuanBiaoZhi
+		}
+	} 
+	desc ={
+		text = LS_GST.5.d.2
+		trigger = {
+			has_global_flag = ARI_ZhunBeiDu_2_JieDuanBiaoZhi
+		}
+	}
+	desc ={
+		text = LS_GST.5.d.3
+		trigger = {
+			has_global_flag = ARI_ZhunBeiDu_3_JieDuanBiaoZhi
+		}
+	} 
+
+
 	immediate = {
 		hidden_effect = {
 			add_ideas = ARI_eden_action_chaos #行动的混乱
@@ -523,6 +559,7 @@ country_event = { #关于叛徒的报告
 country_event = { #僵局
 	id = LS_GST.8
 	title = LS_GST.8.t
+	timeout_days = 1
 	desc = {
 		text = LS_GST.8.d.a
 		trigger = {
@@ -538,34 +575,34 @@ country_event = { #僵局
 	immediate = {
 		hidden_effect = {
 			set_global_flag = Cathedral_war_backwater
-			for_each_scope_loop = {
-				array = global.GST_JS_ZBH #为每个州执行效果
-				add_dynamic_modifier = {
-					modifier = TRI_ARI_GEH_JingPiLiJie
-					scope = ARI
-				}
-				add_dynamic_modifier = {
-					modifier = TRI_ARI_GEH_JingPiLiJie
-					scope = TRI
-				}
-				add_dynamic_modifier = {
-					modifier = TRI_ARI_GEH_JingPiLiJie
-					scope = GEH
-				}
-				set_state_flag = {
-					flag = CW_fully_control_check
-					days = 90
-				}
-			}
+		}
+		set_variable = {
+			Eden_treaty_War_blood_march_experience_loss_factor = 0.3
+		}
+		set_variable = {
+			Eden_treaty_War_blood_march_attrition = 0.75
+		}
+		set_variable = {
+			Eden_treaty_War_blood_march_army_speed_factor = -0.3
+		}
+		set_variable = {
+			Eden_treaty_War_blood_march_army_strength_factor = -0.35
+		}
+		set_variable = {
+			Eden_treaty_War_blood_march_supply_consumption_factor = -0.5
 		}
 	}
 	option = {
 		name = LS_GST.8.a
+		add_dynamic_modifier = {
+			modifier = Eden_treaty_War_blood_march
+		}
 	}
 }
 country_event = { #僵局
 	id = LS_GST.9
 	title = LS_GST.9.t
+	timeout_days = 1
 	desc = {
 		text = LS_GST.9.d.a
 		trigger = {
@@ -574,6 +611,9 @@ country_event = { #僵局
 			}
 		}
 	}
+
+
+
 	desc = LS_GST.9.d.b
 	is_triggered_only = yes
 	picture = TRI_news_event_21
@@ -584,12 +624,64 @@ country_event = { #僵局
 			original_tag = TRI
 			has_war_with = GEH
 		}
+
+		if = {
+			limit = {
+				has_idea =  Eden_treaty_War_lost_content
+			}
+			remove_ideas = Eden_treaty_War_lost_content
+		}
+
+		set_variable = {
+			Eden_treaty_War_dead_battle_land_reinforce_rate = -0.15
+		}
+		set_variable = {
+			Eden_treaty_War_dead_battle_max_planning_factor = -0.5
+		}
+		set_variable = {
+			Eden_treaty_War_dead_battle_air_accidents_factor = 0.24
+		}
+		set_variable = {
+			Eden_treaty_War_dead_battle_army_core_attack_factor = 0.1
+		}
+		set_variable = {
+			Eden_treaty_War_dead_battle_army_core_defence_factor = 0.1
+		}
+		add_dynamic_modifier = {
+			modifier = Eden_treaty_War_dead_battle_TRI
+		}
+
 	}
 	option = {
 		name = LS_GST.9.b
 		trigger = {
 			original_tag = GEH
 			has_war_with = TRI
+		}
+
+		if = {
+			limit = {
+				has_idea =  Eden_treaty_War_lost_content
+			}
+			remove_ideas = Eden_treaty_War_lost_content
+		}
+		set_variable = {
+			Eden_treaty_War_dead_battle_land_reinforce_rate = -0.15
+		}
+		set_variable = {
+			Eden_treaty_War_dead_battle_max_planning_factor = -0.5
+		}
+		set_variable = {
+			Eden_treaty_War_dead_battle_air_accidents_factor = 0.24
+		}
+		set_variable = {
+			Eden_treaty_War_dead_battle_army_core_attack_factor = 0.1
+		}
+		set_variable = {
+			Eden_treaty_War_dead_battle_army_core_defence_factor = 0.1
+		}
+		add_dynamic_modifier = {
+			modifier = Eden_treaty_War_dead_battle_GEH
 		}
 	}
 	option = {
@@ -600,6 +692,31 @@ country_event = { #僵局
 				has_war_with = GEH
 			}
 		}
+
+		if = {
+			limit = {
+				has_idea =  Eden_treaty_War_lost_content
+			}
+			remove_ideas = Eden_treaty_War_lost_content
+		}
+		set_variable = {
+			Eden_treaty_War_dead_battle_land_reinforce_rate = -0.15
+		}
+		set_variable = {
+			Eden_treaty_War_dead_battle_max_planning_factor = -0.5
+		}
+		set_variable = {
+			Eden_treaty_War_dead_battle_air_accidents_factor = 0.24
+		}
+		set_variable = {
+			Eden_treaty_War_dead_battle_army_core_attack_factor = 0.1
+		}
+		set_variable = {
+			Eden_treaty_War_dead_battle_army_core_defence_factor = 0.1
+		}
+		add_dynamic_modifier = {
+			modifier = Eden_treaty_War_dead_battle_TRI
+		}
 	}
 	option = {
 		name = LS_GST.9.d
@@ -608,6 +725,31 @@ country_event = { #僵局
 			NOT = {
 				has_war_with = TRI
 			}
+		}
+
+		if = {
+			limit = {
+				has_idea =  Eden_treaty_War_lost_content
+			}
+			remove_ideas = Eden_treaty_War_lost_content
+		}
+		set_variable = {
+			Eden_treaty_War_dead_battle_land_reinforce_rate = -0.15
+		}
+		set_variable = {
+			Eden_treaty_War_dead_battle_max_planning_factor = -0.5
+		}
+		set_variable = {
+			Eden_treaty_War_dead_battle_air_accidents_factor = 0.24
+		}
+		set_variable = {
+			Eden_treaty_War_dead_battle_army_core_attack_factor = 0.1
+		}
+		set_variable = {
+			Eden_treaty_War_dead_battle_army_core_defence_factor = 0.1
+		}
+		add_dynamic_modifier = {
+			modifier = Eden_treaty_War_dead_battle_GEH
 		}
 	}
 }

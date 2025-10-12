@@ -15,7 +15,7 @@ spriteTypes = {
 		name = "GFX_GEH_daily_news_event_3"
 		texturefile = "gfx/event_pictures/Gehenna/GFX_daily_news_event_3.dds"			
 	}
-		SpriteType = {
+	SpriteType = {
 		name = "GFX_GEH_daily_news_event_4"
 		texturefile = "gfx/event_pictures/Gehenna/GFX_daily_news_event_4.dds"			
 	}		
@@ -28,6 +28,17 @@ spriteTypes = {
 		name = "GFX_GEH_event_2"
 		texturefile = "gfx/event_pictures/Gehenna/GFX_GEH_event_2.dds"			
 	}
+
+	SpriteType = {
+		name = "GFX_GEH_discipline_committee_events_11"
+		texturefile = "gfx/event_pictures/Gehenna/GFX_GEH_discipline_committee_events_11.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_GEH_discipline_committee_events_9"
+		texturefile = "gfx/event_pictures/Gehenna/GFX_GEH_discipline_committee_events_9.dds"			
+	}
+
 
 	#TRI & ARI 混用（ 
 	#本来就是一家嘛（

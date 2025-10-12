@@ -48,6 +48,7 @@ GEH_GST_LS_category = {
 
 	visible = {
 		original_tag = TRI
+		is_debug = yes
 	}
 	priority = 114512
 }
@@ -87,15 +88,15 @@ GST_LS_ZZ_category = {
 #古圣堂之战临时触发消除地区debuff决议类别 - fgvfgfs
 GST_LS_XC_DEBUFF_category = {
 	icon = generic_research
-
 	visible_when_empty = yes
 	visible = {
-		any_of_scopes = {
-			array = global.GST_JS_ZBH
-			has_dynamic_modifier = {
-				modifier = TRI_ARI_GEH_JingPiLiJie
-			}
+		OR = {
+			original_tag = ARI
+			original_tag = TRI
+			original_tag = GEH
+			has_war_with = ARI
 		}
+		has_global_flag = Cathedral_war_backwater
 	}
 	priority = 114515
 }

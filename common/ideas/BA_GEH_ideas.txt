@@ -1,11 +1,24 @@
 ideas = {
     country = {
+        #开局精神idea
+        GEH_army_Armed_Forces_text_idea = {
+            name = GEH_army_Armed_Forces
+            picture = GEH_army_Armed_Forces
+
+            allowed = {
+                original_tag = GEH
+            }
+
+            modifier = {
+                
+            }
+        }
                 ###政治线idea
 
         #激烈的内部斗争
         GEH_severe_inside_contradiction = {
             name = GEH_severe_inside_contradiction
-            picture = unknown
+            picture = GEH_severe_inside_contradiction
 
             allowed = {
                 original_tag = GEH
@@ -241,7 +254,7 @@ ideas = {
         GEH_ideas_pandemonium_petty_action = {
             name =  GEH_ideas_pandemonium_petty_action
 
-            picture = unknown
+            picture = GEH_temp_idea
 
             modifier = {
                 political_power_factor = 1
@@ -263,7 +276,7 @@ ideas = {
         GEH_ideas_Necessary_Patience = {
             name =  GEH_ideas_Necessary_Patience
 
-            picture = unknown
+            picture = GEH_temp_idea
 
             modifier = {
                 training_time_army_factor = 0.5
@@ -294,7 +307,7 @@ ideas = {
         # #措手不及
         # GEH_a_unpredictable_attack = {
         #     name = GEH_unity_gehennna
-        #     picture = unknown
+        #     picture = GEH_temp_idea
 
         #     allowed = {
         #         original_tag = GEH
@@ -460,8 +473,8 @@ ideas = {
             }
 
             modifier = {
-                army_core_attack_factor = 0.2
-                army_core_defence_factor = 0.2
+                army_core_attack_factor = 0.1
+                army_core_defence_factor = 0.1
                 minimum_training_level = -0.1
             }
         }
@@ -530,7 +543,7 @@ ideas = {
         #格黑娜屹立于此
         GEH_gehenna_stands_forever = {
             name = GEH_unity_gehennna
-            picture = unknown
+            picture = GEH_temp_idea
 
             allowed = {
                 original_tag = GEH
@@ -553,7 +566,7 @@ ideas = {
         #混乱的工厂（起始）
         GEH_factory_management_in_chaos = {
             name = GEH_factory_management_in_chaos
-            picture = unknown
+            picture = GEH_factory_management_in_chaos
 
             allowed = {
                 original_tag = GEH
@@ -587,7 +600,7 @@ ideas = {
         #加大产能动员
         GEH_war_industry_2_modifier = {
             name = GEH_war_industry_2_modifier
-            picture = unknown
+            picture = GEH_temp_idea
 
             allowed = {
                 original_tag = GEH
@@ -606,7 +619,7 @@ ideas = {
         #战后重建
         GEH_after_war_reconstrcution_modifier = {
             name = GEH_after_war_reconstrcution_modifier
-            picture = unknown
+            picture = GEH_temp_idea
 
             allowed = {
                 original_tag = GEH
@@ -620,7 +633,7 @@ ideas = {
         #质量优先
         GEH_quality_first_modifier = {
             name = GEH_quality_first_modifier
-            picture = unknown
+            picture = GEH_temp_idea
 
             allowed = {
                 original_tag = GEH
@@ -628,14 +641,14 @@ ideas = {
 
             modifier = {
                 production_factory_max_efficiency_factor = 0.15
-                production_factory_efficiency_gain_factor = 0.1
+                
             }
         }
 
         #大规模无人机运用
         GEH_mass_drone_use_modifier = {
             name = GEH_mass_drone_use_modifier
-            picture = unknown
+            picture = GEH_temp_idea
 
             allowed = {
                 original_tag = GEH
@@ -651,7 +664,7 @@ ideas = {
         #数量优先
         GEH_quantity_first_modifier = {
             name = GEH_quantity_first_modifier
-            picture = unknown
+            picture = GEH_temp_idea
 
             allowed = {
                 original_tag = GEH
@@ -659,14 +672,14 @@ ideas = {
 
             modifier = {
                 industrial_capacity_factory = 0.1
-                production_factory_efficiency_gain_factor = 0.05
+                production_factory_efficiency_gain_factor = 0.1
             }
         }
 
         #省材节时
         GEH_save_time_and_matirial_modifier = {
             name = GEH_save_time_and_matirial_modifier
-            picture = unknown
+            picture = GEH_temp_idea
 
             allowed = {
                 original_tag = GEH
@@ -681,7 +694,7 @@ ideas = {
         #实用的武器装备
         GEH_useful_weapon_modifier = {
             name = GEH_useful_weapon_modifier
-            picture = unknown
+            picture = GEH_temp_idea
 
             allowed = {
                 original_tag = GEH
@@ -689,15 +702,15 @@ ideas = {
 
             modifier = {
                 army_org_factor = 0.1
-                supply_consumption_factor = -0.2
-                out_of_supply_factor = -0.2
+                supply_consumption_factor = -0.1
+                out_of_supply_factor = -0.1
             }
         }
         
         #加固防御
         GEH_Strengthen_your_defenses = {
             name = GEH_Strengthen_your_defenses
-            picture = unknown
+            picture = GEH_temp_idea
 
             allowed = {
                 original_tag = GEH
@@ -711,7 +724,7 @@ ideas = {
         #培训医疗常识
         GEH_Medical_knowledge_training = {
             name = GEH_Medical_knowledge_training
-            picture = unknown
+            picture = GEH_temp_idea
 
             
             allowed = {
@@ -726,7 +739,7 @@ ideas = {
         #装甲先锋
         GEH_Speed_is_everything = {
             name = GEH_Speed_is_everything
-            picture = unknown
+            picture = GEH_temp_idea
 
             allowed = {
                 original_tag = GEH
@@ -744,7 +757,7 @@ ideas = {
         #巍峨如山
         GEH_Towering_mountain_ideas = {
             name = GEH_Towering_mountain_ideas
-            picture = unknown
+            picture = GEH_temp_idea
 
             allowed = {
                 original_tag = GEH
@@ -758,22 +771,26 @@ ideas = {
         #黑球快递
         GEH_Black_Ball_Express_ideas = {
             name = GEH_Black_Ball_Express_ideas
-            picture = unknown
+            picture = GEH_temp_idea
 
             allowed = {
                 original_tag = GEH
             }
 
             equipment_bonus = {
-			 train_equipment = {
-			   build_cost_ic = -0.10
-			   instant = yes
-			 }
-		        }
+                train_equipment = {
+                    build_cost_ic = -0.10
+                    instant = yes
+                }
+                motorized_equipment = {
+                    build_cost_ic = -0.1
+                    instant = yes
+                }
+		    }
 
             modifier = {
-                production_speed_supply_node_factor = 0.5
-                supply_consumption_factor = -0.2
+                production_speed_supply_node_factor = 0.1
+                supply_consumption_factor = -0.1
 
                
 
@@ -786,16 +803,18 @@ ideas = {
         #伪装大师
         GEH_Master_Disguise_ideas = {
             name = GEH_Master_Disguise_ideas
-            picture = unknown
+            picture = GEH_temp_idea
 
             allowed = {
                 original_tag = GEH
             }
 
             modifier = {
-               ground_attack_factor = 0.5
-               industry_free_repair_factor = 0.5
-               industry_air_damage_factor = -0.3
+               cas_damage_reduction = 0.1
+               max_dig_in_factor = 0.05
+               recon_factor = 0.1
+               industry_free_repair_factor = 0.3
+               industry_air_damage_factor = -0.15
 			
             }
         }
@@ -803,7 +822,7 @@ ideas = {
         #百战之师
         GEH_Hundred_Battles_ideas = {
             name =  GEH_Hundred_Battles_ideas
-            picture = unknown
+            picture = GEH_temp_idea
 
             allowed = {
                 original_tag = GEH
@@ -811,11 +830,11 @@ ideas = {
 
             modifier = {
                army_org_factor = 0.1
-               army_morale_factor = 0.1
+               army_morale_factor = 0.05
                land_reinforce_rate = 0.02
-               org_loss_when_moving = -0.1
+               org_loss_when_moving = -0.05
                experience_gain_army_factor = 0.15
-               army_attack_factor = 0.10
+               army_attack_factor = 0.05
             }
 
         }
@@ -823,7 +842,7 @@ ideas = {
         #部队整编
         GEH_Reorganization_of_the_troops = {
             name = GEH_Reorganization_of_the_troops
-            picture = unknown
+            picture = GEH_temp_idea
 
             allowed = {
                 original_tag = GEH
@@ -839,7 +858,7 @@ ideas = {
         #轮换制度
         GEH_Rotation_System = {
             name = GEH_Rotation_System
-            picture = unknown
+            picture = GEH_temp_idea
 
             allowed = {
                 original_tag = GEH
@@ -855,7 +874,7 @@ ideas = {
         #整合社团
         GEH_Integrate_the_community = {
            name = GEH_Integrate_the_community
-           picture = unknown
+           picture = GEH_temp_idea
 
 
            allowed = {
@@ -873,7 +892,7 @@ ideas = {
         #实验型压制装备
         GEH_text_Suppression_equipment_MK1 = {
            name = GEH_text_Suppression_equipment_MK1
-           picture = unknown
+           picture = GEH_temp_idea
 
 
            allowed = {
@@ -883,9 +902,9 @@ ideas = {
            
             equipment_bonus= {
 			    light_fire_support_equipment = {
-				reliability = -0.1
-                ap_attack = 0.1
-				instant = yes
+                    reliability = -0.1
+                    soft_attack = 0.1
+                    instant = yes
 			    }
 		    }
             
@@ -894,7 +913,7 @@ ideas = {
         #压制装备MK1
         GEH_text_Suppression_equipment_MK2 = {
            name = GEH_text_Suppression_equipment_MK2
-           picture = unknown
+           picture = GEH_temp_idea
 
 
            allowed = {
@@ -904,16 +923,15 @@ ideas = {
            
             equipment_bonus= {
 			    light_fire_support_equipment = {
-				reliability = -0.1
-                ap_attack = 0.1
-				instant = yes
+                    reliability = -0.1
+                    soft_attack = 0.1
+                    instant = yes
 			    }
 
                 heavy_fire_support_equipment = {
-                    reliability = -0.5
-                    maximum_speed = 0.1
-                    max_strength = -0.05
-                    entrenchment = -0.1
+                    reliability = -0.1
+                    ap_attack = 0.1
+                    hard_attack = 0.1
                     instant = yes
                 }
 		    }
@@ -923,7 +941,7 @@ ideas = {
         #格黑娜专属压制装备
         GEH_text_Suppression_equipment_MK3 = {
            name = GEH_text_Suppression_equipment_MK3
-           picture = unknown
+           picture = GEH_temp_idea
 
 
            allowed = {
@@ -932,34 +950,29 @@ ideas = {
 
            
             equipment_bonus= {
-			    light_fire_support_equipment = {
-				reliability = -0.15
-                ap_attack = 0.1
-                maximum_speed = 0.05
-                build_cost_ic = -0.10
-				instant = yes
+			     light_fire_support_equipment = {
+                    reliability = -0.1
+                    soft_attack = 0.1
+                    build_cost_ic = -0.05
+                    instant = yes
 			    }
 
                 heavy_fire_support_equipment = {
-                    reliability = -0.10
-                    maximum_speed = 0.15
-                    ap_attack = 0.05
-                    max_strength = -0.05
-                    entrenchment = -0.1
-                    build_cost_ic = -0.10
+                    reliability = -0.1
+                    ap_attack = 0.1
+                    hard_attack = 0.1
+                    build_cost_ic = -0.05
                     instant = yes
                 }
 
                 special_fire_support_equipment = {
                     reliability = -0.05
-                    maximum_speed = 0.05
                     build_cost_ic = -0.10
                     instant = yes
                 }
 
-                air_defense_weapons = {
+                infantry_anti_air_equipment = {
                     reliability = -0.05
-                    maximum_speed = 0.05
                     build_cost_ic = -0.10
                     instant = yes
                 }
@@ -971,7 +984,7 @@ ideas = {
         #改进型步枪配件
         GEH_Improved_rifle_accessories_MK1 = {
            name = GEH_Improved_rifle_accessories_MK1
-           picture = unknown
+           picture = GEH_temp_idea
 
 
            allowed = {
@@ -990,7 +1003,7 @@ ideas = {
         #普及改装化步枪
         GEH_Improved_rifle_accessories_MK2 = {
            name = GEH_Improved_rifle_accessories_MK2
-           picture = unknown
+           picture = GEH_temp_idea
 
 
            allowed = {
@@ -1010,7 +1023,7 @@ ideas = {
         #改进型夜视仪
         GEH_Improved_rifle_accessories_MK3 = {
            name = GEH_Improved_rifle_accessories_MK3
-           picture = unknown
+           picture = GEH_temp_idea
 
 
            allowed = {
@@ -1019,6 +1032,7 @@ ideas = {
 
            
            modifier = {
+            army_org_factor = -0.03
             land_night_attack = 0.12
            }
                 
@@ -1029,19 +1043,26 @@ ideas = {
         #第一代防空装备
         GEH_Air_defense_equipment_MK1 = {
             name = GEH_Air_defense_equipment_MK1
-            picture = unknown
+            picture = GEH_temp_idea
 
 
            allowed = {
             original_tag = GEH
            }
            equipment_bonus= {
-                air_defense_weapons = {
+                infantry_anti_air_equipment = {
                     reliability = -0.1
                     defense = 0.05
                     entrenchment = 0.05
                     instant = yes
                 }
+
+                heavy_tank_aa_chassis = {
+                    ap_attack = 0.1
+                    hard_attack = 0.1
+                    instant = yes
+                }
+
            }
 
         }
@@ -1049,19 +1070,24 @@ ideas = {
         #单兵化防空装备
         GEH_Air_defense_equipment_MK2 = {
             name = GEH_Air_defense_equipment_MK2
-            picture = unknown
+            picture = GEH_temp_idea
 
 
            allowed = {
             original_tag = GEH
            }
            equipment_bonus= {
-                air_defense_weapons = {
+                infantry_anti_air_equipment = {
                     reliability = -0.1
                     defense = 0.05
                     entrenchment = 0.05
                     air_attack = 0.10
-                    max_strength = 0.10
+                    instant = yes
+                }
+
+                heavy_tank_aa_chassis = {
+                    ap_attack = 0.1
+                    hard_attack = 0.1
                     instant = yes
                 }
            }
@@ -1072,22 +1098,81 @@ ideas = {
 
         GEH_Air_defense_equipment_MK3 = {
             name = GEH_Air_defense_equipment_MK3
-            picture = unknown
+            picture = GEH_temp_idea
 
 
            allowed = {
             original_tag = GEH
            }
             equipment_bonus= {
-                anti_air = {
-                    reliability = 0.2
+                infantry_anti_air_equipment = {
                     defense = 0.05
                     entrenchment = 0.05
-                    air_attack = 0.10
-                    max_strength = 0.10
+                    air_attack = 0.15
                     breakthrough = 0.1
                     instant = yes
                 }
+                apc_aa_equipment = {
+                    defense = 0.05
+                    entrenchment = 0.05
+                    air_attack = 0.15
+                    breakthrough = 0.1
+                    instant = yes
+                }
+                ifv_aa_equipment = {
+                    defense = 0.05
+                    entrenchment = 0.05
+                    air_attack = 0.15
+                    breakthrough = 0.1
+                    instant = yes
+                }
+
+                light_tank_aa_chassis = {
+                    defense = 0.05
+                    entrenchment = 0.05
+                    air_attack = 0.15
+                    breakthrough = 0.1
+                    instant = yes
+                }
+                medium_tank_aa_chassis = {
+                    defense = 0.05
+                    entrenchment = 0.05
+                    air_attack = 0.15
+                    breakthrough = 0.1
+                    instant = yes
+                }
+                heavy_tank_aa_chassis = {
+                    defense = 0.05
+                    ap_attack = 0.1
+                    hard_attack = 0.1
+                    entrenchment = 0.05
+                    air_attack = 0.15
+                    breakthrough = 0.1
+                    instant = yes
+                }
+
+                light_bm_aa_chassis = {
+                    defense = 0.05
+                    entrenchment = 0.05
+                    air_attack = 0.15
+                    breakthrough = 0.1
+                    instant = yes
+                }
+                medium_bm_aa_chassis = {
+                    defense = 0.05
+                    entrenchment = 0.05
+                    air_attack = 0.15
+                    breakthrough = 0.1
+                    instant = yes
+                }
+                heavy_bm_aa_chassis = {
+                    defense = 0.05
+                    entrenchment = 0.05
+                    air_attack = 0.15
+                    breakthrough = 0.1
+                    instant = yes
+                }
+                
            }
 
         }
@@ -1095,7 +1180,7 @@ ideas = {
         #格黑娜特殊主战坦克
         GEH_Special_Main_battle_Tank_MK1 = {
             name = GEH_Special_Main_battle_Tank_MK1
-            picture = unknown
+            picture = GEH_temp_idea
 
 
            allowed = {
@@ -1106,14 +1191,17 @@ ideas = {
               light_tank_chassis = {
                 reliability = -0.15
                 maximum_speed = 0.05
-                soft_attack = 0.1
+                soft_attack = 0.05
+                hard_attack = 0.05
                 instant = yes
               }
 
               heavy_tank_chassis = {
-               reliability = -0.20
-               defense = 0.2
-               instant = yes
+                reliability = -0.15
+                breakthrough = 0.05
+                soft_attack = 0.05
+                hard_attack = 0.05
+                instant = yes
               }
             }
 
@@ -1123,7 +1211,7 @@ ideas = {
         #特殊改造主战坦克
         GEH_Special_Main_battle_Tank_MK2 = {
             name = GEH_Special_Main_battle_Tank_MK2
-            picture = unknown
+            picture = GEH_temp_idea
 
 
            allowed = {
@@ -1132,17 +1220,21 @@ ideas = {
 
             equipment_bonus= {
               light_tank_chassis = {
-                reliability = -0.10
+                reliability = -0.1
                 maximum_speed = 0.1
-                soft_attack = 0.12
+                ap_attack = 0.1
+                soft_attack = 0.1
+                hard_attack = 0.1
                 instant = yes
               }
 
               heavy_tank_chassis = {
-               reliability = -0.15
-               defense = 0.2
-               hardness = 0.1
-               instant = yes
+                reliability = -0.1
+                breakthrough = 0.1
+                armor_value = 0.05
+                soft_attack = 0.1
+                hard_attack = 0.1
+                instant = yes
               }
             }
 
@@ -1151,7 +1243,7 @@ ideas = {
         #格黑娜の終末決戰兵器
         GEH_Special_Main_battle_Tank_MK3 = {
             name = GEH_Special_Main_battle_Tank_MK3
-            picture = unknown
+            picture = GEH_temp_idea
 
 
            allowed = {
@@ -1160,22 +1252,21 @@ ideas = {
 
             equipment_bonus= {
               light_tank_chassis = {
-                reliability = 0.1
-                maximum_speed = 0.2
-                soft_attack = 0.12
+                maximum_speed = 0.1
                 ap_attack = 0.15
-                air_attack = 0.2
-                recon = 0.15
+                soft_attack = 0.15
+                hard_attack = 0.15
+                build_cost_ic = -0.1
                 instant = yes
               }
 
               heavy_tank_chassis = {
-               reliability = -0.15
-               defense = 0.2
-               hardness = 0.1
-               max_strength = 0.1
-               armor_value = 0.3
-               breakthrough = 0.1
+               reliability = -0.05
+                breakthrough = 0.15
+                build_cost_ic = -0.1
+                armor_value = 0.15
+                soft_attack = 0.15
+                hard_attack = 0.15
                instant = yes
               }
             }
@@ -1187,17 +1278,25 @@ ideas = {
         #运输载具规范化
         GER_Standardization_of_transport_vehicles_MK1 = {
             name =  GER_Standardization_of_transport_vehicles_MK1
-            picture = unknown
+            picture = GEH_temp_idea
 
 
            allowed = {
             original_tag = GEH
            }
             equipment_bonus= {
-             train_equipment = {
-			   reliability = 0.1
-			   instant = yes
-			 }
+                apc_equipment = {
+                    reliability = 0.1
+                    instant = yes
+                }
+                ifv_equipment = {
+                    reliability = 0.1
+                    instant = yes
+                }
+                motorized_equipment = {
+                    reliability = 0.1
+                    instant = yes
+                }
             }
 
         }
@@ -1205,7 +1304,7 @@ ideas = {
         #加大投资
         GER_Increase_investment = {
             name = GER_Increase_investment
-            picture = unknown
+            picture = GEH_temp_idea
 
             allowed = {
             original_tag = GEH
@@ -1222,7 +1321,7 @@ ideas = {
         #简化流程
         GER_Standardization_of_transport_vehicles_MK2 = {
             name =  GER_Standardization_of_transport_vehicles_MK2
-            picture = unknown
+            picture = GEH_temp_idea
 
 
            allowed = {
@@ -1230,16 +1329,26 @@ ideas = {
            }
             equipment_bonus= {
              train_equipment = {
-			   reliability = 0.1
                build_cost_ic = -0.10
 			   instant = yes
 			 }
 
              motorized_equipment = {
-                reliability = 0.1
-               build_cost_ic = -0.10
-			   instant = yes
-             }
+                    reliability = 0.1
+                    build_cost_ic = -0.10
+                    instant = yes
+                }
+
+              apc_equipment = {
+                    reliability = 0.1
+                    build_cost_ic = -0.10
+                    instant = yes
+                }
+                ifv_equipment = {
+                    reliability = 0.1
+                    build_cost_ic = -0.10
+                    instant = yes
+                }
             }
 
         }
@@ -1247,12 +1356,12 @@ ideas = {
 
         GEH_dualHeaded_balance_hina_2 = {
             name = GEH_dualHeaded_balance_hina_2
-            picture = unknown
+            picture = GEH_temp_idea
 
             modifier = {
                 political_power_factor = -0.3
                 stability_weekly= -0.01
-                GEH_dualHeaded_Hina_Weekly_factor = 0.05
+                GEH_dualHeaded_Makoto_Weekly_factor = 0.005
                 GEH_societies_gourmet_research_destructive_weekly = -0.2
                 GEH_societies_com68_destructive_weekly = -0.2
                 GEH_societies_hot_spring_destructive_weekly = -0.2
@@ -1266,12 +1375,12 @@ ideas = {
         }
         GEH_dualHeaded_balance_hina_1 = {
             name = GEH_dualHeaded_balance_hina_1
-            picture = unknown
+            picture = GEH_temp_idea
 
             modifier = {
                 political_power_factor = -0.15
-                stability_weekly = -0.05
-                GEH_dualHeaded_Hina_Weekly_factor = 0.025
+                stability_weekly = -0.005
+                GEH_dualHeaded_Makoto_Weekly_factor = 0.003
                 GEH_societies_gourmet_research_destructive_weekly = -0.1
                 GEH_societies_com68_destructive_weekly = -0.1
                 GEH_societies_hot_spring_destructive_weekly = -0.1
@@ -1284,7 +1393,7 @@ ideas = {
         }
         GEH_dualHeaded_balance_normal = {
             name = GEH_dualHeaded_balance_normal
-            picture = unknown
+            picture = GEH_temp_idea
 
             modifier = {
                 stability_weekly = 0.001
@@ -1296,12 +1405,12 @@ ideas = {
         }
         GEH_dualHeaded_balance_makoto_1 = {
             name = GEH_dualHeaded_balance_makoto_1
-            picture = unknown
+            picture = GEH_temp_idea
 
             modifier = {
                 political_power_factor = 0.1
-                stability_weekly = -0.05
-                GEH_dualHeaded_Makoto_Weekly_factor = 0.025
+                stability_weekly = -0.005
+                GEH_dualHeaded_Hina_Weekly_factor = 0.003
                 GEH_societies_hot_spring_activity_weekly = 0.1
                 GEH_societies_gourmet_research_activity_weekly = 0.1
                 GEH_societies_com68_activity_weekly= 0.1
@@ -1315,12 +1424,12 @@ ideas = {
         }
         GEH_dualHeaded_balance_makoto_2 = {
             name = GEH_dualHeaded_balance_makoto_2
-            picture = unknown
+            picture = GEH_temp_idea
 
             modifier = {
                 political_power_factor = 0.15
                 stability_weekly = -0.01
-                GEH_dualHeaded_Makoto_Weekly_factor = 0.05
+                GEH_dualHeaded_Hina_Weekly_factor = 0.005
                 GEH_societies_hot_spring_activity_weekly = 0.2
                 GEH_societies_gourmet_research_activity_weekly = 0.2
                 GEH_societies_com68_activity_weekly= 0.2
@@ -1334,7 +1443,7 @@ ideas = {
 
         GEH_Guardian_of_Peace_Idea = {
             name = GEH_Guardian_of_Peace_Idea
-            picture = unknown
+            picture = GEH_temp_idea
 
             modifier = {
                 industry_free_repair_factor = 0.5
@@ -1347,7 +1456,7 @@ ideas = {
 
         GEH_Reaching_consensus_ideas = {
             name = GEH_Reaching_consensus_ideas
-            picture = unknown
+            picture = GEH_temp_idea
 
             modifier = {
               stability_factor = 0.05
@@ -1363,7 +1472,7 @@ ideas = {
 
         GEH_joint_operations_command_ideas_1 = {
             name =  GEH_joint_operations_command_ideas
-            picture = unknown
+            picture = GEH_temp_idea
 
             modifier = {
                land_reinforce_rate = 0.01
@@ -1385,7 +1494,7 @@ ideas = {
 
         GEH_joint_operations_command_ideas_1_3 = {
             name =  GEH_joint_operations_command_ideas
-            picture = unknown
+            picture = GEH_temp_idea
 
             modifier = {
                land_reinforce_rate = 0.01
@@ -1411,7 +1520,7 @@ ideas = {
         
         GEH_joint_operations_command_ideas_1_2 = {
             name =  GEH_joint_operations_command_ideas
-            picture = unknown
+            picture = GEH_temp_idea
 
             modifier = {
                land_reinforce_rate = 0.03
@@ -1436,7 +1545,7 @@ ideas = {
 
         GEH_joint_operations_command_ideas_1_2_3 = {
             name =  GEH_joint_operations_command_ideas
-            picture = unknown
+            picture = GEH_temp_idea
 
             modifier = {
                land_reinforce_rate = 0.03
@@ -1464,7 +1573,7 @@ ideas = {
 
         GEH_spare_no_effort_idea = {
             name =  GEH_spare_no_effort_idea
-            picture = unknown
+            picture = GEH_temp_idea
 
             
             modifier = {
@@ -1487,7 +1596,7 @@ ideas = {
 
         GEH_Great_Motherland_idea = {
             name =  GEH_Great_Motherland_idea
-            picture = unknown
+            picture = GEH_temp_idea
 
             
             modifier = {
@@ -1510,12 +1619,13 @@ ideas = {
         #风纪委员会的日常
         GEH_daytoday_work_of_discipline_committee = {
             name = GEH_daytoday_work_of_discipline_committee
-            picture = unknown
+            picture = GEH_temp_idea
 
             modifier = {
               army_morale_factor = 0.1
               army_strength_factor = 0.1
               army_org_factor = 0.1
+              GEH_societies_discipline_committee_repression_weekly = 1
             }
             allowed = {
                 original_tag = GEH
@@ -1524,13 +1634,14 @@ ideas = {
         #格黑那的美食时光
         GEH_food_time_of_gourmet_research = {
             name = GEH_food_time_of_gourmet_research
-            picture = unknown
+            picture = GEH_temp_idea
 
             modifier = {
               supply_node_range = 0.1
               no_supply_grace = 24
               consumer_goods_factor = -0.05
               political_power_factor = 0.1
+              GEH_societies_gourmet_research_destructive_weekly = -1
             }
             allowed = {
                 original_tag = GEH
@@ -1539,12 +1650,13 @@ ideas = {
         #格黑那的温泉时光
         GEH_hot_spring_time_of_hot_spring = {
             name = GEH_hot_spring_time_of_hot_spring
-            picture = unknown
+            picture = GEH_temp_idea
 
             modifier = {
               army_morale_factor = 0.1
               research_speed_factor = 0.1
               political_power_factor = -0.1
+              GEH_societies_hot_spring_destructive_weekly = -1
             }
             allowed = {
                 original_tag = GEH
@@ -1565,7 +1677,7 @@ ideas = {
         #生命之水
         GEH_90degrees_of_water = {
             name = GEH_90degrees_of_water
-            picture = unknown
+            picture = GEH_temp_idea
 
             modifier = {
               research_speed_factor = 0.1
@@ -1580,7 +1692,7 @@ ideas = {
                     ###日常事件idea
         GEH_daily_seize_funds = {
             name = GEH_daily_seize_funds
-            picture = unknown
+            picture = GEH_temp_idea
 
             modifier = {
                 consumer_goods_factor = 0.1
@@ -1591,7 +1703,7 @@ ideas = {
         }
         GEH_daily_bath_water = {
             name = GEH_daily_bath_water
-            picture = unknown
+            picture = GEH_temp_idea
 
             modifier = {
                 production_speed_industrial_complex_factor = 0.05
@@ -1602,7 +1714,7 @@ ideas = {
         }
         GEH_daily_chef = {
             name = GEH_daily_chef
-            picture = unknown
+            picture = GEH_temp_idea
 
             modifier = {
                 consumer_goods_factor = -0.05
@@ -1613,7 +1725,7 @@ ideas = {
         }
         GEH_daily_gold_metallurgy = {
             name = GEH_daily_gold_metallurgy
-            picture = unknown
+            picture = GEH_temp_idea
 
             modifier = {
                 political_power_cost = 0.1
@@ -1627,7 +1739,7 @@ ideas = {
         }
         GEH_daily_abydos_compensation_in = {
             name = GEH_daily_abydos_compensation_in
-            picture = unknown
+            picture = GEH_temp_idea
 
             modifier = {
                 consumer_goods_factor = 0.05
@@ -1638,7 +1750,7 @@ ideas = {
         }
         GEH_daily_abydos_compensation_out = {
             name = GEH_daily_abydos_compensation_out
-            picture = unknown
+            picture = GEH_temp_idea
 
             modifier = {
                 consumer_goods_factor = -0.05
@@ -1649,7 +1761,7 @@ ideas = {
         }
         GEH_daily_mass_production_tanks = {
             name = GEH_daily_mass_production_tanks
-            picture = unknown
+            picture = GEH_temp_idea
 
             equipment_bonus = {
             armor = {
@@ -1664,7 +1776,7 @@ ideas = {
         }
         GEH_daily_armored_technology_revolution = {
             name = GEH_daily_armored_technology_revolution
-            picture = unknown
+            picture = GEH_temp_idea
 
             equipment_bonus = {
             armor = {
@@ -1679,7 +1791,7 @@ ideas = {
         }
         GEH_daily_resource_purchase = {
             name = GEH_daily_resource_purchase
-            picture = unknown
+            picture = GEH_temp_idea
 
             modifier = {
                 consumer_goods_factor = 0.15
@@ -1687,7 +1799,7 @@ ideas = {
         }
         GEH_daily_miss_makoto = {
             name = GEH_daily_miss_makoto
-            picture = unknown
+            picture = GEH_temp_idea
 
             modifier = {
                 political_power_gain = -1
@@ -1696,7 +1808,7 @@ ideas = {
         }
         GEH_daily_lecture = {
             name = GEH_daily_lecture
-            picture = unknown
+            picture = GEH_temp_idea
 
             modifier = {
                 stability_weekly = -0.005

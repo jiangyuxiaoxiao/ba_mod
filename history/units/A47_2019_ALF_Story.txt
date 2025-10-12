@@ -1,0 +1,112 @@
+division_template = {
+	name = "黑市保安小队"		
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	support = {
+	}
+}
+
+
+units = {
+	division= {
+		name = "第1保安小队"
+		location = 7046
+		division_template = "黑市保安小队" #这个师用的编制的名字
+		start_experience_factor = 0.5 #初始经验0-1 ,0.2为银牌
+		start_equipment_factor = 1 #初始装备 0-1
+		start_manpower_factor = 1 #初始人力 0-1
+	}
+	division= {
+		name = "第2保安小队"
+		location = 7046
+		division_template = "黑市保安小队" #这个师用的编制的名字
+		start_experience_factor = 0.5 #初始经验0-1 ,0.2为银牌
+		start_equipment_factor = 1 #初始装备 0-1
+		start_manpower_factor = 1 #初始人力 0-1
+	}
+	division= {
+		name = "第3保安小队"
+		location = 7046
+		division_template = "黑市保安小队" #这个师用的编制的名字
+		start_experience_factor = 0.5 #初始经验0-1 ,0.2为银牌
+		start_equipment_factor = 1 #初始装备 0-1
+		start_manpower_factor = 1 #初始人力 0-1
+	}
+	division= {
+		name = "第4保安小队"
+		location = 7046
+		division_template = "黑市保安小队" #这个师用的编制的名字
+		start_experience_factor = 0.5 #初始经验0-1 ,0.2为银牌
+		start_equipment_factor = 1 #初始装备 0-1
+		start_manpower_factor = 1 #初始人力 0-1
+	}
+	division= {
+		name = "第5保安小队"
+		location = 7046
+		division_template = "黑市保安小队" #这个师用的编制的名字
+		start_experience_factor = 0.5 #初始经验0-1 ,0.2为银牌
+		start_equipment_factor = 1 #初始装备 0-1
+		start_manpower_factor = 1 #初始人力 0-1
+	}
+	division= {
+		name = "第6保安小队"
+		location = 7046
+		division_template = "黑市保安小队" #这个师用的编制的名字
+		start_experience_factor = 0.5 #初始经验0-1 ,0.2为银牌
+		start_equipment_factor = 1 #初始装备 0-1
+		start_manpower_factor = 1 #初始人力 0-1
+	}
+	division= {
+		name = "第7保安小队"
+		location = 7046
+		division_template = "黑市保安小队" #这个师用的编制的名字
+		start_experience_factor = 0.5 #初始经验0-1 ,0.2为银牌
+		start_equipment_factor = 1 #初始装备 0-1
+		start_manpower_factor = 1 #初始人力 0-1
+	}
+	division= {
+		name = "第8保安小队"
+		location = 7046
+		division_template = "黑市保安小队" #这个师用的编制的名字
+		start_experience_factor = 0.5 #初始经验0-1 ,0.2为银牌
+		start_equipment_factor = 1 #初始装备 0-1
+		start_manpower_factor = 1 #初始人力 0-1
+	}
+	division= {
+		name = "第9保安小队"
+		location = 7046
+		division_template = "黑市保安小队" #这个师用的编制的名字
+		start_experience_factor = 0.5 #初始经验0-1 ,0.2为银牌
+		start_equipment_factor = 1 #初始装备 0-1
+		start_manpower_factor = 1 #初始人力 0-1
+	}
+	division= {
+		name = "第10保安小队"
+		location = 7046
+		division_template = "黑市保安小队" #这个师用的编制的名字
+		start_experience_factor = 0.5 #初始经验0-1 ,0.2为银牌
+		start_equipment_factor = 1 #初始装备 0-1
+		start_manpower_factor = 1 #初始人力 0-1
+	}
+	division= {
+		name = "第11保安小队"
+		location = 7046
+		division_template = "黑市保安小队" #这个师用的编制的名字
+		start_experience_factor = 0.5 #初始经验0-1 ,0.2为银牌
+		start_equipment_factor = 1 #初始装备 0-1
+		start_manpower_factor = 1 #初始人力 0-1
+	}
+	division= {
+		name = "第12保安小队"
+		location = 7046
+		division_template = "黑市保安小队" #这个师用的编制的名字
+		start_experience_factor = 0.5 #初始经验0-1 ,0.2为银牌
+		start_equipment_factor = 1 #初始装备 0-1
+		start_manpower_factor = 1 #初始人力 0-1
+	}
+}

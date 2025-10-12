@@ -75,6 +75,10 @@ spriteTypes = {
         texturefile = "gfx/interface/BARE_gui/BARE_dynamic_topbar_container/TRI_kirifuji_nagisa_paranoia_level.dds"
     }
     spriteType = {
+        name = "GFX_TRI_unity_data"
+        texturefile = "gfx/interface/BARE_gui/BARE_dynamic_topbar_container/TRI_unity_data.dds"
+    }
+    spriteType = {
         name = "GFX_BARE_great_game_coin"
         texturefile = "gfx/interface/BARE_gui/BARE_dynamic_topbar_container/BARE_great_game_coin.dds"
     }

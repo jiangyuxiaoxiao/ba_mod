@@ -55,6 +55,10 @@ ideas = {
 		BARE_SuperEvent_2_EDEN_TREATY_START_A = {}
 		BARE_SuperEvent_2_EDEN_TREATY_START_D = {}
 		BARE_SuperEvent_2_EDEN_TREATY_START_M = {}
+		BARE_SuperEvent_2_TRINITY_CRISIS = {}
+		BARE_SuperEvent_2_TRINITY_CRISIS_A = {}
+		BARE_SuperEvent_2_TRINITY_CRISIS_D = {}
+		BARE_SuperEvent_2_TRINITY_CRISIS_M = {}
 	}
 }
 

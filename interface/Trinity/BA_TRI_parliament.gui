@@ -170,6 +170,7 @@ guiTypes = {
 				spriteType = "TRI_unity_progress_bar"
 				position = { x = 50 y = 10 }
 				pdx_tooltip = "TRI_unity_tt"
+				pdx_tooltip_delayed = "TRI_unity_tt_delayed"
 			}
 			gridBoxType = {
 				name = "TRI_unity_progress_bar_icons"

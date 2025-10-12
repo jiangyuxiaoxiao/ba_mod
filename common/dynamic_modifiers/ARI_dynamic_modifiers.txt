@@ -26,7 +26,9 @@ ARI_power_chaser = {
 	war_support_factor = ARI_power_chaser_war_support_factor
 	stability_factor =  ARI_power_chaser_stability
 	consumer_goods_factor = ARI_power_chaser_goods_factor
-
+	remove_trigger = {
+		has_global_flag = ARI_remove_old_modifier_flag
+	}
 	
 }
 
@@ -50,6 +52,10 @@ ARI_tax_farming = {
 	combat_readiness_recovery_percentage = ARI_tax_farming_combat_readiness_recovery_percentage
 	global_building_slots = ARI_tax_farming_global_building_slots
 	global_building_slots_factor = ARI_tax_farming_global_building_slots_factor
+
+	remove_trigger = {
+		has_global_flag = ARI_remove_old_modifier_flag
+	}
 }
 
 #受损的物资供应体系
@@ -59,6 +65,10 @@ ARI_broken_provisioning_system = {
 	industrial_capacity_factory = ARI_broken_provisioning_system_industrial_capacity_factory
 	consumer_goods_factor = ARI_broken_provisioning_system_consumer_goods_factor
 	combat_readiness_factor = ARI_broken_provisioning_system_combat_readiness_factor
+
+	remove_trigger = {
+		has_global_flag = ARI_remove_old_modifier_flag
+	}
 }
 #阿里乌斯武装学生部队
 ARI_armed_students_modifier = {
@@ -83,6 +93,10 @@ ARI_armed_students_modifier = {
 	org_loss_when_moving = ARI_armed_students_modifier_org_loss_when_moving
 	recon_factor = ARI_armed_students_modifier_recon_factor
 	supply_consumption_factor = ARI_armed_students_modifier_supply_consumption_factor
+
+	remove_trigger = {
+		has_global_flag = ARI_remove_old_modifier_flag
+	}
 }
 
 #阿里乌斯特战部队
@@ -103,6 +117,10 @@ ARI_special_force = {
 	air_cas_efficiency = ARI_special_force_bomber
 	air_superiority_efficiency = ARI_special_force_fighter
 	air_intercept_efficiency = ARI_special_force_fighter
+
+	remove_trigger = {
+		has_global_flag = ARI_remove_old_modifier_flag
+	}
 }
 #虚无主义
 ARI_nihilism = {
@@ -117,6 +135,8 @@ ARI_nihilism = {
 	supply_consumption_factor = ARI_nihilism_supply_consumption_factor
 	ARI_materials_monthly_modifier = ARI_nihilism_ARI_materials_monthly_modifier
 	non_puppet_opnion = -1000
+
+	custom_effect_tooltip = ARI_nihilism_cant_market_tooltip
 }
 #复仇之焰
 ARI_flame_of_revenge = {
@@ -126,6 +146,10 @@ ARI_flame_of_revenge = {
 	industrial_capacity_factory =  ARI_flame_of_revenge_industrial_capacity_factory
 	army_org_factor =  ARI_flame_of_revenge_army_org_factor
 	army_org_regain =  ARI_flame_of_revenge_army_org_regain
+
+	remove_trigger = {
+		has_global_flag = ARI_remove_old_modifier_flag
+	}
 }
 #禁忌武器储备
 ARI_forbidden_weapons = {
@@ -139,6 +163,10 @@ ARI_forbidden_weapons = {
 	stability_factor = ARI_forbidden_weapons_stability_factor
 	army_defence_factor = 0.05
 	supply_consumption_factor = 0.1
+
+	remove_trigger = {
+		has_global_flag = ARI_remove_old_modifier_flag
+	}
 }
 #阿里乌斯对外情报和行动组
 ARI_Intelligence_department = {
@@ -150,6 +178,10 @@ ARI_Intelligence_department = {
 	operative_slot = ARI_Intelligence_department_operative_slot
 	own_operative_detection_chance_factor = ARI_Intelligence_department_own_operative_detection_chance_factor
 	ARI_materials_monthly_modifier = ARI_Intelligence_department_ARI_materials_monthly_modifier
+
+	remove_trigger = {
+		has_global_flag = ARI_remove_old_modifier_flag
+	}
 }
 #游击队影响
 ARI_low_control_rank_state = {
@@ -160,6 +192,10 @@ ARI_low_control_rank_state = {
 	state_production_speed_infrastructure_factor = -0.1
 	state_production_speed_industrial_complex_factor = -0.1
 	state_production_speed_arms_factory_factor = -0.1
+
+	remove_trigger = {
+		has_global_flag = ARI_remove_old_modifier_flag
+	}
 }
 
 #改良的农业生产
@@ -175,6 +211,10 @@ ARI_catastrophic_traveller_operation = {
 	icon = "GFX_idea_ARI_catastrophic_traveller_operation"
 	enable = { always = yes }
 
+	remove_trigger = {
+		has_global_flag = ARI_remove_old_modifier_flag
+	}
+
 	army_attack_factor = ARI_lesson_traveller_operation_army_attack_factor
 	army_defence_factor = ARI_lesson_traveller_operation_army_defence_factor
 	army_org_factor = ARI_lesson_traveller_operation_army_org_factor
@@ -188,6 +228,10 @@ ARI_catastrophic_traveller_operation = {
 ARI_lesson_traveller_operation = {
 	icon = "GFX_idea_ARI_a_lesson_from_traveller_operation"
 	enable = { always = yes }
+
+	remove_trigger = {
+		has_global_flag = ARI_remove_old_modifier_flag
+	}
 
 	army_attack_factor = ARI_lesson_traveller_operation_army_attack_factor
 	army_defence_factor = ARI_lesson_traveller_operation_army_defence_factor
@@ -205,6 +249,10 @@ ARI_Gematria_member = {
 	icon = "GFX_idea_ARI_Gematria_member"
 	enable = { always = yes }
 
+	remove_trigger = {
+		has_global_flag = ARI_remove_old_modifier_flag
+	}
+
 	research_speed_factor = 0.05
 	
 	country_resource_resources_fe = BARE_ARI_Resource_Get_Array^0
@@ -217,4 +265,74 @@ ARI_Gematria_member = {
 
 
 	custom_modifier_tooltip = ARI_Gematria_member_tt
+}
+
+
+Eden_treaty_War_blood_march = {
+	icon = "GFX_idea_ARI_JSL"
+
+	
+
+	enable = { always = yes }
+	experience_loss_factor = Eden_treaty_War_blood_march_experience_loss_factor
+	attrition = Eden_treaty_War_blood_march_attrition
+	army_speed_factor = Eden_treaty_War_blood_march_army_speed_factor
+	army_strength_factor =Eden_treaty_War_blood_march_army_strength_factor
+	supply_consumption_factor = Eden_treaty_War_blood_march_supply_consumption_factor
+	army_org_factor = Eden_treaty_War_blood_march_army_org_factor
+	land_reinforce_rate = Eden_treaty_War_blood_march_land_reinforce_rate
+
+	army_attack_factor = Eden_treaty_War_blood_march_army_attack_factor
+	army_defence_factor = Eden_treaty_War_blood_march_army_defence_factor
+
+		
+	custom_effect_tooltip = Eden_treaty_War_blood_march_tt
+	remove_trigger = { 
+		or = {
+			has_completed_focus = ARI_the_final_step
+			has_global_flag = Arius_defeated
+		}
+	}
+
+}
+
+
+Eden_treaty_War_dead_battle_TRI = {
+	icon = "GFX_idea_TRI_temp_idea"
+
+	land_reinforce_rate = Eden_treaty_War_dead_battle_land_reinforce_rate
+	max_planning_factor = Eden_treaty_War_dead_battle_max_planning_factor
+	air_accidents_factor = Eden_treaty_War_dead_battle_air_accidents_factor
+
+	army_core_attack_factor = Eden_treaty_War_dead_battle_army_core_attack_factor
+	army_core_defence_factor = Eden_treaty_War_dead_battle_army_core_defence_factor
+
+	army_morale_factor = Eden_treaty_War_dead_battle_army_morale_factor
+
+
+	enable = { always = yes }
+	remove_trigger = { 
+		has_global_flag = Arius_defeated
+	}
+
+}
+
+Eden_treaty_War_dead_battle_GEH = {
+	icon = "GFX_idea_GEH_temp_idea"
+
+
+	land_reinforce_rate = Eden_treaty_War_dead_battle_land_reinforce_rate
+	max_planning_factor = Eden_treaty_War_dead_battle_max_planning_factor
+	air_accidents_factor = Eden_treaty_War_dead_battle_air_accidents_factor
+
+	army_core_attack_factor = Eden_treaty_War_dead_battle_army_core_attack_factor
+	army_core_defence_factor = Eden_treaty_War_dead_battle_army_core_defence_factor
+
+	army_morale_factor = Eden_treaty_War_dead_battle_army_morale_factor
+
+	enable = { always = yes }
+	remove_trigger = { 
+		has_global_flag = Arius_defeated
+	}
+
 }

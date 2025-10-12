@@ -1,0 +1,85 @@
+ideas = {
+    country = {
+        # 追求真理之处
+        MIL_place_of_pursuing_truth = {
+            name = MIL_place_of_pursuing_truth
+            picture = MIL_place_of_pursuing_truth
+
+            allowed = {
+                original_tag = MIL
+            }
+
+            modifier = {
+                research_speed_factor = 0.05
+            }
+            rule = {
+                can_send_volunteers = no
+                can_join_factions = no
+            }
+        }
+
+        # 承平日久的安保部
+        MIL_security_department_of_long_peace = {
+            name = MIL_security_department_of_long_peace
+            picture = MIL_security_department_of_long_peace
+
+            allowed = {
+                original_tag = MIL
+            }
+
+            modifier = {
+                army_attack_factor = -0.2
+                army_defence_factor = -0.2
+                army_org_factor = -0.1
+                planning_speed = -0.2
+                planning_factor = -0.2
+                land_doctrine_cost_factor = 0.35
+                air_doctrine_cost_factor = 0.35
+                army_chief_cost_factor = 0.33
+                air_chief_cost_factor = 0.33
+                high_command_cost_factor = 0.33
+            }
+        }
+
+        # 过于前卫的飞行器
+        MIL_overly_advanced_aircraft = {
+            name = MIL_overly_advanced_aircraft
+            picture = MIL_overly_advanced_aircraft
+
+            allowed = {
+                original_tag = MIL
+            }
+
+            modifier = {
+                air_mission_efficiency = -0.1
+                air_superiority_efficiency = -0.2
+                air_cas_efficiency = -0.2
+                air_accidents = 0.2
+            }
+			equipment_bonus = {
+				mio_cat_eq_all_aircraft = {
+					instant = yes
+					build_cost_ic = 0.10
+				}
+			}
+        }
+
+        # 财政危机的阴云
+        MIL_shadow_of_financial_crisis = {
+            name = MIL_shadow_of_financial_crisis
+            picture = MIL_shadow_of_financial_crisis
+
+            allowed = {
+                original_tag = MIL
+            }
+
+            modifier = {
+                consumer_goods_factor = 0.6
+                industrial_capacity_factory = -0.2
+                production_factory_max_efficiency_factor = -0.2
+                production_factory_efficiency_gain_factor = -0.2
+                production_speed_buildings_factor = -0.2
+            }
+        }
+    }
+}

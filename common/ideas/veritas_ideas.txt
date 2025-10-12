@@ -58,7 +58,7 @@ ideas = {
 
 
 		BARE_Global_Suburban	= { #郊区
-			picture = unknown
+			picture = BARE_Global_Suburban
 			allowed = {
 				always = no
 			}
@@ -68,7 +68,7 @@ ideas = {
 		}
 
 		BARE_Global_Blockade_Zone	= { #封锁地区
-			picture = unknown
+			picture = BARE_Global_Blockade_Zone
 			allowed = {
 				always = no
 			}

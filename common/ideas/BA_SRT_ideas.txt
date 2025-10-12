@@ -7,7 +7,7 @@ ideas = {
 				army_strength_factor = 0.25 #陆军生命值
 				army_attack_factor = 0.25 #陆军攻击
 				army_defence_factor = 0.25 #陆军防御
-				special_forces_cap = 0.2 #特种部队上限
+				special_forces_cap = 1 #特种部队上限
 				training_time_army_factor = 0.5 #陆军师训练时间
 			}
 		}

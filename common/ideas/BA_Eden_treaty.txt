@@ -22,6 +22,21 @@ ideas = {
 				}
 			}
 		}
+		Eden_treaty_War_lost_content = {
+			picture = unknown
+			modifier = {
+				land_reinforce_rate = -0.2
+				max_planning_factor = -10
+				air_accidents_factor = 0.25
+			}
+			cancel = {
+				has_global_flag = Arius_defeated
+			}
+
+		}
+
+
+
 	}
 	hidden_ideas = {
 		Eden_treaty_phase_opening = {}

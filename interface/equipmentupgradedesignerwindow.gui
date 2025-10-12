@@ -3017,7 +3017,7 @@ guiTypes = {
 			name = "label"
 			position = { x = 0 y = 6 }
 			textureFile = ""
-			font = "hoi4_typewriter16_inverted"
+			font = "classic_hoi4_typewriter16_inverted"
 			borderSize = {x = 0 y = 0}
 			text = "Name"
 			maxWidth = 130
@@ -3030,7 +3030,7 @@ guiTypes = {
 			name = "count"
 			position = { x = 126 y = 6 }
 			textureFile = ""
-			font = "hoi4_typewriter16_inverted"
+			font = "classic_hoi4_typewriter16_inverted"
 			borderSize = {x = 0 y = 0}
 			text = "count"
 			maxWidth = 120

@@ -28,5 +28,6 @@ ideas = {
 		#圣三一
 		TRI_dynamic_topbar_category = {}#分类使用
 		TRI_kirifuji_nagisa_paranoia_level = {}#桐藤渚偏执度
+		TRI_unity_data = {}#团结度
     }
 }

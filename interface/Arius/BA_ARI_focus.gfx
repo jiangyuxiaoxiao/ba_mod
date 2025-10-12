@@ -472,4 +472,29 @@ spriteTypes = {
 		name = "GFX_focus_ARI_research_trinity_books"
 		texturefile = "gfx/interface/goals/Arius/focus_ARI_research_trinity_books.dds"
 	}
+
+	SpriteType = {
+		name = "GFX_focus_ARI_preparation_of_ritual"
+		texturefile = "gfx/interface/goals/Arius/focus_ARI_preparation_of_ritual.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_ARI_charge_of_revenge"
+		texturefile = "gfx/interface/goals/Arius/focus_ARI_charge_of_revenge.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_ARI_communication_network"
+		texturefile = "gfx/interface/goals/Arius/focus_ARI_communication_network.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_ARI_compulsory_labor"
+		texturefile = "gfx/interface/goals/Arius/focus_ARI_compulsory_labor.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_ARI_experiment_of_ritual"
+		texturefile = "gfx/interface/goals/Arius/focus_ARI_experiment_of_ritual.dds"
+	}
 }

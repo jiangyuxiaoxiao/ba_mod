@@ -1,15 +1,21 @@
 on_actions = {
 	on_startup = {
 		effect = {
+			###############阿里乌斯流亡者阵线###############
 			if = {
 				limit = {
 					has_game_rule = {
 						rule = BARE_RULE_story_settings_ALF
 						option = BARE_RULE_story_settings_ALF_SELECTED
-					}		
+					}
 				}
 				random_country = {
 					BARE_RULE_story_settings_ALF_SELECTED_effect = yes
+				}
+			}
+			else = {
+				A47 = {
+					load_oob = "A47_2019"
 				}
 			}
 		}

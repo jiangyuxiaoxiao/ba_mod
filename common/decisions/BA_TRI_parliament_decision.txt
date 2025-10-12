@@ -367,7 +367,7 @@ TRI_parliament_decisions_categories = {
 	}
 	TRI_compaign_for_meeting = {
 		visible = {
-			has_country_flag = TRI_compaign_for_meeting
+			has_country_flag = TRI_precise_and_perfect_compaign
 			has_global_flag = Eden_treaty_negotiation_ongoing
 		}
 		available = {
@@ -553,6 +553,110 @@ TRI_parliament_decisions_categories = {
 		
 		complete_effect = {
 			country_event = TRI_BOP_decision.9
+		}
+	}
+	#传统与新时代
+	TRI_BOP_tradition_new_era = {
+		visible = {
+			has_country_flag = TRI_precise_and_perfect_compaign
+		}
+		cost = 25
+		days_remove = 60
+		days_re_enable = 180
+		
+		modifier = {
+			political_power_cost = 0.5
+		}
+		remove_effect = {
+			add_stability = 0.1
+		}
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 3
+				has_stability < 0.7
+			}
+			modifier = {
+				factor = 0
+				has_stability > 0.9
+			}
+		}
+	}
+	#友邻爱学的重要意义
+	TRI_BOP_friendship_academy = {
+		visible = {
+			has_country_flag = TRI_precise_and_perfect_compaign
+		}
+		available = {
+			command_power > 24.9
+		}
+		cost = 50
+		days_remove = 60
+		days_re_enable = 180
+		complete_effect = {
+			add_command_power = -25
+		}
+		remove_effect = {
+			set_temp_variable = { target_faction = token:BOP_conservative }
+			set_temp_variable = { loyalty_change = 0.03 }
+			TRI_parliament_loyalty_change_faction = yes
+		}
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 3
+				check_variable = { TRI_unity < 60 }
+			}
+			modifier = {
+				factor = 0.2
+				check_variable = { TRI_unity > 80 }
+			}
+		}
+	}
+	#灯塔绽放团结之光
+	TRI_BOP_lighthouse_of_unity = {
+		visible = {
+			has_country_flag = TRI_precise_and_perfect_compaign
+		}
+		available = {
+			command_power > 74.9
+		}
+		cost = 100
+		days_remove = 120
+		days_re_enable = 180
+		complete_effect = {
+			add_command_power = -75
+		}
+		remove_effect = {
+			set_temp_variable = { TRI_unity_change = 4 }
+			TRI_change_unity = yes
+			hidden_effect = {
+				random_list = {
+					1 = {
+						set_temp_variable = { target_faction = token:BOP_conservative }
+					}
+					1 = {
+						set_temp_variable = { target_faction = token:BOP_hardliner }
+					}
+					1 = {
+						set_temp_variable = { target_faction = token:BOP_moderate }
+					}
+				}
+				set_temp_variable = { radicalism = -0.1 }
+				TRI_parliament_loyalty_change_faction = yes
+			}
+			custom_effect_tooltip = TRI_BOP_lighthouse_of_unity_tt
+		}
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 3
+				check_variable = { TRI_unity < 60 }
+			}
+			modifier = {
+				factor = 0.2
+				check_variable = { TRI_unity > 80 }
+			}
 		}
 	}
 
@@ -869,7 +973,7 @@ TRI_bill_voting_decisions_categories = {
 		days_remove = 180
 		days_re_enable = 60
 		modifier = {
-			army_experience = 0.45
+			experience_gain_army = 0.45
 		}
 		complete_effect = {
 			set_country_flag = TRI_temp_bill_activated
@@ -887,7 +991,7 @@ TRI_bill_voting_decisions_categories = {
 		days_remove = 180
 		days_re_enable = 60
 		modifier = {
-			air_experience = 0.45
+			experience_gain_air = 0.45
 		}
 		complete_effect = {
 			set_country_flag = TRI_temp_bill_activated

@@ -469,6 +469,7 @@ ideas = {
 						TRI_generate_unity_rank = yes
 						#添加团结度效果
 						add_dynamic_modifier = { modifier = TRI_unity_modifier }
+						add_to_array = { topbar_array = token:TRI_unity_data }
 				}
 			}
 		}

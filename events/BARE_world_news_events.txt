@@ -1,121 +1,97 @@
 add_namespace = BARE_World_News
-
-
 #on action触发，用于时间控制
 country_event = {
 	id = BARE_World_News.1111
 	title = BARE_World_News.1111.t
 	desc = BARE_World_News.1111.d
-	
 	is_triggered_only = yes
-	
 	#hidden = yes
-
 	immediate = {
-		
 		#vol1.1~1.2
 		news_event = {
 			id = BARE_World_News.1
 			days = 350
 		}
-
 		#百夜堂海之家
 		news_event = {
 			id = BARE_World_News.2
 			days = 1660
 		}
-
 		#便利屋68和风纪委闯入阿拜多斯
 		news_event = {
 			id = BARE_World_News.3
 			days = 175
 		}
-
 		#阿拜多斯攻防战
 		news_event = {
 			id = BARE_World_News.4
 			days = 320
 		}
-
 		#伊凡库帕拉节的举办
 		news_event = {
 			id = BARE_World_News.5
-			days = 700 #延后了
+			days = 700			#延后了
 		}
-
 		#“千年大赏”公布颁奖结果
 		news_event = {
 			id = BARE_World_News.6
-			days = 545 #延后了
+			days = 545			#延后了
 		}
-
 		#百鬼夜行樱花祭
 		news_event = {
 			id = BARE_World_News.7
-			days = 490 #延后了
+			days = 490			#延后了
 		}
-
 		#兔女郎活动
 		news_event = {
 			id = BARE_World_News.8
-			days = 895 #延后了
+			days = 895			#延后了
 		}
-
 		#新春狂想曲
 		news_event = {
 			id = BARE_World_News.9
-			days = 398 #第二年的新春
+			days = 398			#第二年的新春
 		}
-
 		#情人节和大狐狸
 		news_event = {
 			id = BARE_World_News.10
-			days = 774 #第三年的2.14
+			days = 774			#第三年的2.14
 		}
-
 		#万年参走私案
 		news_event = {
 			id = BARE_World_News.11
 			days = 1640
 		}
-
 		#白亚的预告信
 		news_event = {
 			id = BARE_World_News.12
 			days = 1460
 		}
-
 		#歌剧魅影
 		news_event = {
 			id = BARE_World_News.13
 			days = 1180
 		}
-
 		#龙武同舟
 		news_event = {
 			id = BARE_World_News.14
 			days = 1800
 		}
-
 		#FOX逮捕若藻
 		news_event = {
 			id = BARE_World_News.15
 			days = 5
 		}
-
 		#SRT废校！
 		news_event = {
 			id = BARE_World_News.16
 			days = 1600
 		}
-
 	}
-
 	option = {
 		name = BARE_World_News.1111.a
 	}
 }
-
 
 #凯撒陷入绑架学生的丑闻
 news_event = {
@@ -124,10 +100,8 @@ news_event = {
 	title = BARE_World_News.1.t
 	desc = BARE_World_News.1.desc
 	is_triggered_only = yes
-	
-# BARE_SuperEvent_2_effect_8
+	# BARE_SuperEvent_2_effect_8
 	major = yes
-
 	immediate = {
 		hidden_effect = {
 			CAP = {
@@ -135,7 +109,6 @@ news_event = {
 			}
 		}
 	}
-
 	#令人感叹
 	option = {
 		name = BARE_World_News.1.a
@@ -161,11 +134,7 @@ news_event = {
 			set_global_flag = BARE_World_News_1_flag
 			BARE_SuperEvent_2_effect_8 = yes
 		}
-		
 	}
-
-	
-
 	#星野，你没事就好
 	option = {
 		name = BARE_World_News.1.b
@@ -183,7 +152,6 @@ news_event = {
 			BARE_SuperEvent_2_effect_8 = yes
 		}
 	}
-
 	#啊？
 	option = {
 		name = BARE_World_News.1.c
@@ -207,7 +175,6 @@ news_event = {
 			BARE_SuperEvent_2_effect_8 = yes
 		}
 	}
-
 	option = {
 		name = BARE_World_News.1.d
 		trigger = {
@@ -216,7 +183,6 @@ news_event = {
 	}
 }
 
-
 #度假村狩猎
 news_event = {
 	id = BARE_World_News.2
@@ -224,10 +190,7 @@ news_event = {
 	title = BARE_World_News.2.t
 	desc = BARE_World_News.2.desc
 	is_triggered_only = yes
-	
-
 	major = yes
-
 	#至少度假多了个去处
 	option = {
 		name = BARE_World_News.2.a
@@ -241,7 +204,6 @@ news_event = {
 			}
 		}
 	}
-
 	#怎么又是凯撒集团
 	option = {
 		name = BARE_World_News.2.b
@@ -251,7 +213,6 @@ news_event = {
 			}
 		}
 	}
-
 	#开庆典了！
 	option = {
 		name = BARE_World_News.2.c
@@ -264,30 +225,24 @@ news_event = {
 	}
 }
 
-
 #阿拜多斯-格黑娜边境冲突
 news_event = {
 	id = BARE_World_News.3
-	picture = GFX_BA_news_7
+	picture = GFX_BA_news_14
 	title = BARE_World_News.3.t
 	desc = BARE_World_News.3.desc
 	is_triggered_only = yes
-	
 	immediate = {
 		hidden_effect = {
-		    GEH = {
+			GEH = {
 				add_threat = 5
 			}
-	
 			ABY = {
 				add_threat = 5
 			}
 		}
 	}
-	
-
 	major = yes
-
 	#阿拜多斯，那是哪里？
 	option = {
 		name = BARE_World_News.3.a
@@ -305,7 +260,6 @@ news_event = {
 			}
 		}
 	}
-
 	#这里是我们的家园！
 	option = {
 		name = BARE_World_News.3.b
@@ -315,7 +269,6 @@ news_event = {
 			}
 		}
 	}
-
 	#都给我好好写检讨！
 	option = {
 		name = BARE_World_News.3.c
@@ -325,7 +278,6 @@ news_event = {
 			}
 		}
 	}
-
 	#都给我好好写检讨！
 	option = {
 		name = BARE_World_News.3.d
@@ -341,15 +293,13 @@ news_event = {
 	}
 }
 
-
 #阿拜多斯攻防战
 news_event = {
 	id = BARE_World_News.4
-	picture = GFX_BA_news_7
+	picture = GFX_BA_news_15
 	title = BARE_World_News.4.t
 	desc = BARE_World_News.4.desc
 	is_triggered_only = yes
-	
 	immediate = {
 		hidden_effect = {
 			CAP = {
@@ -357,9 +307,7 @@ news_event = {
 			}
 		}
 	}
-
 	major = yes
-
 	#少女的倔强
 	option = {
 		name = BARE_World_News.4.a
@@ -376,7 +324,6 @@ news_event = {
 			}
 		}
 	}
-
 	#星野，我们来了！
 	option = {
 		name = BARE_World_News.4.b
@@ -386,7 +333,6 @@ news_event = {
 			}
 		}
 	}
-
 	#你们这都能翻车？
 	option = {
 		name = BARE_World_News.4.c
@@ -402,18 +348,14 @@ news_event = {
 	}
 }
 
-
 #伊凡库帕拉节的举办
 news_event = {
 	id = BARE_World_News.5
-	picture = GFX_BA_news_8
+	picture = GFX_BA_news_16
 	title = BARE_World_News.5.t
 	desc = BARE_World_News.5.desc
 	is_triggered_only = yes
-	
-
 	major = yes
-
 	#属实是一场盛大的节日庆典
 	option = {
 		name = BARE_World_News.5.a
@@ -425,7 +367,6 @@ news_event = {
 			}
 		}
 	}
-
 	#这一切都归功于伟大的切里诺会长！
 	option = {
 		name = BARE_World_News.5.b
@@ -437,9 +378,6 @@ news_event = {
 	}
 }
 
-
-
-
 #“千年大赏”公布颁奖结果
 news_event = {
 	id = BARE_World_News.6
@@ -447,17 +385,12 @@ news_event = {
 	title = BARE_World_News.6.t
 	desc = BARE_World_News.6.desc
 	is_triggered_only = yes
-	
-
 	major = yes
-
 	#一起玩游戏！
 	option = {
 		name = BARE_World_News.6.a
 	}
 }
-
-
 
 #百鬼夜行樱花祭成功举办
 news_event = {
@@ -466,10 +399,7 @@ news_event = {
 	title = BARE_World_News.7.t
 	desc = BARE_World_News.7.desc
 	is_triggered_only = yes
-	
-
 	major = yes
-
 	#玩的开心！
 	option = {
 		name = BARE_World_News.7.a
@@ -479,7 +409,6 @@ news_event = {
 			}
 		}
 	}
-
 	#令人难忘的庆典
 	option = {
 		name = BARE_World_News.7.b
@@ -493,18 +422,14 @@ news_event = {
 	}
 }
 
-
 #千禧研讨会成员涉嫌金融犯罪被逮捕
 news_event = {
 	id = BARE_World_News.8
-	picture = GFX_BA_news_12
+	picture = GFX_BA_news_17
 	title = BARE_World_News.8.t
 	desc = BARE_World_News.8.desc
 	is_triggered_only = yes
-	
-
 	major = yes
-
 	#还好我没买那个债券
 	option = {
 		name = BARE_World_News.8.a
@@ -516,7 +441,6 @@ news_event = {
 			}
 		}
 	}
-
 	#你们就不能给我省点心吗
 	option = {
 		name = BARE_World_News.8.b
@@ -528,7 +452,6 @@ news_event = {
 	}
 }
 
-
 #新春大骚乱
 news_event = {
 	id = BARE_World_News.9
@@ -536,10 +459,7 @@ news_event = {
 	title = BARE_World_News.9.t
 	desc = BARE_World_News.9.desc
 	is_triggered_only = yes
-	
-
 	major = yes
-
 	#少女的坚持令人敬佩
 	option = {
 		name = BARE_World_News.9.a
@@ -551,7 +471,6 @@ news_event = {
 			}
 		}
 	}
-
 	#为什么新年还要加班呀
 	option = {
 		name = BARE_World_News.9.b
@@ -563,8 +482,6 @@ news_event = {
 	}
 }
 
-
-
 #“灾厄之狐”逍遥法外
 news_event = {
 	id = BARE_World_News.10
@@ -572,8 +489,6 @@ news_event = {
 	title = BARE_World_News.10.t
 	desc = BARE_World_News.10.desc
 	is_triggered_only = yes
-	
-
 	immediate = {
 		hidden_effect = {
 			CEN = {
@@ -581,9 +496,7 @@ news_event = {
 			}
 		}
 	}
-
 	major = yes
-
 	#瓦尔基里怎么废材的吗？
 	option = {
 		name = BARE_World_News.10.a
@@ -595,7 +508,6 @@ news_event = {
 			}
 		}
 	}
-
 	#丢人现眼
 	option = {
 		name = BARE_World_News.10.b
@@ -607,7 +519,6 @@ news_event = {
 	}
 }
 
-
 #山海经“万年参走私案”告破
 news_event = {
 	id = BARE_World_News.11
@@ -615,10 +526,7 @@ news_event = {
 	title = BARE_World_News.11.t
 	desc = BARE_World_News.11.desc
 	is_triggered_only = yes
-	
-
 	major = yes
-
 	#万年参？好吃吗？
 	option = {
 		name = BARE_World_News.11.a
@@ -630,7 +538,6 @@ news_event = {
 			}
 		}
 	}
-
 	#起码事情解决了
 	option = {
 		name = BARE_World_News.11.b
@@ -642,18 +549,14 @@ news_event = {
 	}
 }
 
-
 #地下文物交易被破获
 news_event = {
 	id = BARE_World_News.12
-	picture = GFX_BA_news_13
+	picture = GFX_BA_news_19
 	title = BARE_World_News.12.t
 	desc = BARE_World_News.12.desc
 	is_triggered_only = yes
-	
-
 	major = yes
-
 	#有趣
 	option = {
 		name = BARE_World_News.12.a
@@ -665,7 +568,6 @@ news_event = {
 			}
 		}
 	}
-
 	#过程错误，结果正确，就这样吧
 	option = {
 		name = BARE_World_News.12.b
@@ -677,7 +579,6 @@ news_event = {
 	}
 }
 
-
 #著名歌剧院突发爆炸
 news_event = {
 	id = BARE_World_News.13
@@ -685,7 +586,6 @@ news_event = {
 	title = BARE_World_News.13.t
 	desc = BARE_World_News.13.desc
 	is_triggered_only = yes
-	
 	immediate = {
 		hidden_effect = {
 			GEH = {
@@ -693,9 +593,7 @@ news_event = {
 			}
 		}
 	}
-
 	major = yes
-
 	#有趣
 	option = {
 		name = BARE_World_News.13.a
@@ -707,7 +605,6 @@ news_event = {
 			}
 		}
 	}
-
 	#白捡的业绩太香了
 	option = {
 		name = BARE_World_News.13.b
@@ -719,7 +616,6 @@ news_event = {
 	}
 }
 
-
 #山海经“月影祭”成功举办
 news_event = {
 	id = BARE_World_News.14
@@ -727,10 +623,7 @@ news_event = {
 	title = BARE_World_News.14.t
 	desc = BARE_World_News.14.desc
 	is_triggered_only = yes
-	
-
 	major = yes
-
 	#起码月饼很好吃
 	option = {
 		name = BARE_World_News.14.a
@@ -742,7 +635,6 @@ news_event = {
 			}
 		}
 	}
-
 	#这次我们撑过去了，但下次呢？
 	option = {
 		name = BARE_World_News.14.b
@@ -754,18 +646,14 @@ news_event = {
 	}
 }
 
-
 #“灾厄之狐”被逮捕！
 news_event = {
 	id = BARE_World_News.15
-	picture = GFX_BA_news_2
+	picture = GFX_BA_news_20
 	title = BARE_World_News.15.t
 	desc = BARE_World_News.15.desc
 	is_triggered_only = yes
-	
-
 	major = yes
-
 	#可算少了个大麻烦
 	option = {
 		name = BARE_World_News.15.a
@@ -777,7 +665,6 @@ news_event = {
 			}
 		}
 	}
-
 	#这就是SRT的实力！
 	option = {
 		name = BARE_World_News.15.b
@@ -789,15 +676,13 @@ news_event = {
 	}
 }
 
-
 #SRT废校！
 news_event = {
 	id = BARE_World_News.16
-	picture = GFX_BA_news_2
+	picture = GFX_BA_news_20
 	title = BARE_World_News.16.t
 	desc = BARE_World_News.16.desc
 	is_triggered_only = yes
-	
 	immediate = {
 		hidden_effect = {
 			CEN = {
@@ -805,9 +690,7 @@ news_event = {
 			}
 		}
 	}
-
 	major = yes
-
 	#飞鸟尽，良弓藏
 	option = {
 		name = BARE_World_News.16.a
@@ -819,7 +702,6 @@ news_event = {
 			}
 		}
 	}
-
 	#这并非我们所愿...
 	option = {
 		name = BARE_World_News.16.b
@@ -831,8 +713,6 @@ news_event = {
 	}
 }
 
-
-
 #条约开始
 news_event = {
 	id = BARE_World_News.17
@@ -840,10 +720,7 @@ news_event = {
 	title = BARE_World_News.17.t
 	desc = BARE_World_News.17.desc
 	is_triggered_only = yes
-	
-
 	major = yes
-
 	option = {
 		name = BARE_World_News.17.a
 		trigger = {
@@ -852,46 +729,37 @@ news_event = {
 				TAG = TRI
 				TAG = GEH
 			}
-			
 		}
 		hidden_effect = {
 			if = {
 				limit = {
 					not = {
-						has_global_flag = BARE_SuperEvent_2_effect_9_happened 
+						has_global_flag = BARE_SuperEvent_2_effect_9_happened
 					}
 				}
 				set_global_flag = BARE_SuperEvent_2_effect_9_happened
 				BARE_SuperEvent_2_effect_9 = yes
-				
 			}
-			
 		}
-		
 	}
-
 	option = {
 		name = BARE_World_News.17.b
 		trigger = {
 			is_ai = no
 			TAG = ARI
 		}
-
 		hidden_effect = {
 			if = {
 				limit = {
 					not = {
-						has_global_flag = BARE_SuperEvent_2_effect_9_happened 
+						has_global_flag = BARE_SuperEvent_2_effect_9_happened
 					}
 				}
 				set_global_flag = BARE_SuperEvent_2_effect_9_happened
 				BARE_SuperEvent_2_effect_9 = yes
-				
 			}
-			
 		}
 	}
-
 	option = {
 		name = BARE_World_News.17.c
 		trigger = {
@@ -902,29 +770,58 @@ news_event = {
 				TAG = GEH
 			}
 		}
-
 		hidden_effect = {
 			if = {
 				limit = {
 					not = {
-						has_global_flag = BARE_SuperEvent_2_effect_9_happened 
+						has_global_flag = BARE_SuperEvent_2_effect_9_happened
 					}
 				}
 				set_global_flag = BARE_SuperEvent_2_effect_9_happened
 				BARE_SuperEvent_2_effect_9 = yes
-				
 			}
-			
 		}
 	}
-
 	option = {
 		name = BARE_World_News.17.d
 		trigger = {
 			is_ai = yes
-			
 		}
+	}
+}
 
-
+###圣三一占领阿里乌斯####
+news_event = {
+	id = BARE_World_News.18
+	picture = GFX_BA_news_18
+	title = BARE_World_News.18.t
+	desc = BARE_World_News.18.desc
+	is_triggered_only = yes
+	major = yes
+	
+	#有趣
+	option = {
+		name = BARE_World_News.18.a
+		trigger = {
+			OR = {
+				tag = TRI
+				tag = GEH
+			}	
+		}
+		hidden_effect = {
+			BSE_Fire_Super_Event_index_3 = yes
+		}
+	}
+	option = {
+		name = BARE_World_News.18.b
+		trigger = {
+			NOT = {
+				tag = TRI
+				tag = GEH
+			}
+		}
+		hidden_effect = {
+			BSE_Fire_Super_Event_index_3 = yes
+		}
 	}
 }

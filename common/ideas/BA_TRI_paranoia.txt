@@ -1,7 +1,6 @@
 ideas = {
     country = {
 		TRI_inspected_administration = { #遭到审查的文职部员
-			picture = unknown
             allowed = {
                 always = no
             }
@@ -12,7 +11,6 @@ ideas = {
             }
 		}
 		TRI_inspected_army = { #受到严格审查的陆军
-			picture = unknown
             allowed = {
                 always = no
             }
@@ -29,8 +27,6 @@ ideas = {
 			}
 		}
 		TRI_training_activities_curtailed = { #减少军事演习
-			picture = generic_army_problems
-
 			allowed = {
 				always = no
 			}
@@ -42,7 +38,6 @@ ideas = {
 			}
 		}
 		TRI_inspected_airforce = { #受到严格审查的空军
-			picture = unknown
             allowed = {
                 always = no
             }
@@ -85,12 +80,13 @@ ideas = {
 		TRI_open_up = {}
 		TRI_Unintentional_windfall = {}
 		TRI_conspiracy_against_conspiracy = {}
-		TRI_desperate_fight = {}
+		TRI_desperate_fight_A = {}
 		TRI_sweet_dream_in_one_night = {}
 		TRI_silence = {}
 		TRI_unexpected_one = {}
 		TRI_daring_plan_meticulous_action = {}
 		TRI_lure_the_enemy = {}
+		TRI_desperate_fight_B = {}
 		TRI_moon_fall_sun_rise = {}
 		#偏执度界面的五个社团
 		TRI_paranoia_association_0 = {}

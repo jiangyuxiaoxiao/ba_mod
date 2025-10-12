@@ -25,6 +25,13 @@ defined_text = {
 		localization_key = ELM_default_type
 	}
 
+	text = {
+		trigger = {				
+            has_country_leader_ideology = ELM_ALF_Leader_type
+		}
+		localization_key = ELM_ALF_Leader_type
+	}
+
 	##专制哲学组
 	text = {
 		trigger = {				

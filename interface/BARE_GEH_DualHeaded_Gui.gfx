@@ -13,8 +13,8 @@ spriteTypes = {
 		name = "GFX_dualHeaded_progress"
 		color = { 0.0 0.0 0.0 }
 		colortwo = { 0.0 0.0 0.0 }
-		textureFile1 = "gfx/interface/Gehenna/dualHeaded/dualHeaded_progress_makoto.dds"
-		textureFile2 = "gfx/interface/Gehenna/dualHeaded/dualHeaded_progress_hina.dds"
+		textureFile1 = "gfx/interface/Gehenna/dualHeaded/dualHeaded_progress_hina.dds"
+		textureFile2 = "gfx/interface/Gehenna/dualHeaded/dualHeaded_progress_makoto.dds"
 		size = { x = 341 y = 39 }
 		effectFile = "gfx//FX//progress.lua"
 		horizontal = yes

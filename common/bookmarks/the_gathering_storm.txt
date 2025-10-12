@@ -8,13 +8,17 @@ bookmarks = {
 		default = yes
 		
 		"GEH"={
-			history = ""
+			history = "GEH_GATHERING_STORM_DESC"
 			ideology = no_ideology
 			ideas = {
-				GEH_mild_inside_contradictio
+				GEH_severe_inside_contradiction
+				GEH_factory_management_in_chaos
+				GEH_army_Armed_Forces_text_idea
 			}
 			focuses = {
-				GEH_Restarting_talks
+				GEH_Dealing_with_chaos
+				GEH_Reaching_consensus
+				GEH_Strengthening_law_enforcement
 			}
 		}
 
@@ -23,6 +27,8 @@ bookmarks = {
 			ideology = no_ideology
 			ideas = {
 				TRI_eden_treaty_step_0_modifier_Text_idea
+				TRI_tea_party_artillery_1
+				TRI_special_services_investigations_text_idea
 			}
 			focuses = {
 				TRI_calling_for_convention

@@ -155,6 +155,12 @@ recruit_character = GEH_kirara #忘了
 recruit_character = GEH_hina #风纪委
 recruit_character = GEH_JingJiZhuangTaiWeiYuanHui #格黑娜紧急状态委员会
 
+recruit_character =  GEH_air_force_idea_a
+recruit_character =  GEH_air_force_idea_b
+recruit_character =  GEH_theorist_idea_a
+recruit_character =  GEH_theorist_idea_b
+recruit_character =  GEH_theorist_idea_c
+
 
 add_dynamic_modifier = {
    modifier = GEH_army_Armed_Forces
@@ -172,39 +178,39 @@ set_popularities = {
 	no_ideology = 30
 }
 
-GEH_makoto = {
-	add_to_array = { global.ARI_ShouHaiZheMingDan_ER = THIS}
-	add_to_array = { global.ARI_ShouHaiZheMingDan_SAN = THIS}
-}
-GEH_iroha = {
-	add_to_array = { global.ARI_ShouHaiZheMingDan_ER = THIS}
-	add_to_array = { global.ARI_ShouHaiZheMingDan_SAN = THIS}
-}
-GEH_ibuki = {
-	add_to_array = { global.ARI_ShouHaiZheMingDan_ER = THIS}
-	add_to_array = { global.ARI_ShouHaiZheMingDan_SAN = THIS}
-}
-GEH_makoto = {
-	add_to_array = { global.ARI_ShouHaiZheMingDan_ER = THIS}
-	add_to_array = { global.ARI_ShouHaiZheMingDan_SAN = THIS}
-}
-GEH_iroha = {
-	add_to_array = { global.ARI_ShouHaiZheMingDan_ER = THIS}
-	add_to_array = { global.ARI_ShouHaiZheMingDan_SAN = THIS}
-}
-GEH_hina = {
-	add_to_array = { global.ARI_ShouHaiZheMingDan_SAN = THIS}
-}
-GEH_ako = {
-	add_to_array = { global.ARI_ShouHaiZheMingDan_SAN = THIS}
-}
-GEH_iori = {
-	add_to_array = { global.ARI_ShouHaiZheMingDan_SAN = THIS}
-}
+# GEH_makoto = {
+# 	add_to_array = { global.ARI_ShouHaiZheMingDan_ER = THIS}
+# 	add_to_array = { global.ARI_ShouHaiZheMingDan_SAN = THIS}
+# }
+# GEH_iroha = {
+# 	add_to_array = { global.ARI_ShouHaiZheMingDan_ER = THIS}
+# 	add_to_array = { global.ARI_ShouHaiZheMingDan_SAN = THIS}
+# }
+# GEH_ibuki = {
+# 	add_to_array = { global.ARI_ShouHaiZheMingDan_ER = THIS}
+# 	add_to_array = { global.ARI_ShouHaiZheMingDan_SAN = THIS}
+# }
+# GEH_makoto = {
+# 	add_to_array = { global.ARI_ShouHaiZheMingDan_ER = THIS}
+# 	add_to_array = { global.ARI_ShouHaiZheMingDan_SAN = THIS}
+# }
+# GEH_iroha = {
+# 	add_to_array = { global.ARI_ShouHaiZheMingDan_ER = THIS}
+# 	add_to_array = { global.ARI_ShouHaiZheMingDan_SAN = THIS}
+# }
+# GEH_hina = {
+# 	add_to_array = { global.ARI_ShouHaiZheMingDan_SAN = THIS}
+# }
+# GEH_ako = {
+# 	add_to_array = { global.ARI_ShouHaiZheMingDan_SAN = THIS}
+# }
+# GEH_iori = {
+# 	add_to_array = { global.ARI_ShouHaiZheMingDan_SAN = THIS}
+# }
 
-GEH_chinatsu = {
-	add_to_array = { global.ARI_ShouHaiZheMingDan_SAN = THIS}
-}
+# GEH_chinatsu = {
+# 	add_to_array = { global.ARI_ShouHaiZheMingDan_SAN = THIS}
+# }
 
 
 set_power_balance = {

@@ -1,6 +1,6 @@
 #格黑娜的日常
 GEH_gehenna_daily_life = {
-	icon = "GFX_idea_unknown"
+	icon = "GFX_idea_GEH_temp_idea"
 	enable = { always = yes }
 
 	army_org_factor = GEH_gehenna_daily_life_army_org_factor_factor
@@ -10,13 +10,14 @@ GEH_gehenna_daily_life = {
 }
 #格黑娜产能利用率
 GEH_production_efficiency = {
-	icon = "GFX_idea_unknown"
+	icon = "GFX_idea_GEH_temp_idea"
 
 	production_speed_buildings_factor =  GEH_production_efficiency_production_speed_buildings_factor
 	industrial_capacity_factory = GEH_production_efficiency_industrial_capacity_factory
 }
 #措手不及
 GEH_a_unpredictable_attack = {
+	icon = "GFX_idea_GEH_temp_idea"
 	# army_attack_factor = GEH_a_unpredictable_attack_army_attack_factor
 	# army_defence_factor = GEH_a_unpredictable_attack_army_defence_factor
 	# army_org_regain = GEH_a_unpredictable_attack_army_org_regain
@@ -54,6 +55,10 @@ GEH_army_Armed_Forces = { #格黑娜武装力量
     army_morale_factor = GEH_army_morale_factor #组织度恢复
     no_supply_grace = GEH_no_supply_grace #陆军携行补给
     org_loss_when_moving = GEH_org_loss_when_moving #陆军移动中组织度减少损耗
+	breakthrough_factor =GEH_breakthrough_factor 
+
+	max_planning_factor = GEH_max_planing_factor
+	air_attack_factor = GEH_air_attack_factor
 
 
 

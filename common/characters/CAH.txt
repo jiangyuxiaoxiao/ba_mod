@@ -1,10 +1,10 @@
 characters = {
 	CAH_ceo = {
-		name = CAH_ceo_name
+		name = CAE_president_name
 		portraits = {
 			civilian = {
-				large = GFX_portrait_CAH_ceo
-				small = GFX_portrait_CAH_ceo_small
+				large = GFX_portrait_CAE_president
+				small = GFX_portrait_CAE_president_small
 			}
 		}
 		country_leader = {

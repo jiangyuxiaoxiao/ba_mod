@@ -47,11 +47,17 @@ TRI_paranoia_system = {
 	TRI_the_way_to_get_trust = { #取信之道
 		visible = {
 			has_country_flag = TRI_the_way_to_get_trust
+			TRI_nagisa = {
+				has_trait = TRI_nagisa_Find_the_root_2
+			}
 		}
 		available = {
-			custom_override_tooltip = {
-				tooltip = TRI_the_way_to_get_trust_available_tt
-				check_variable = { TRI_permitted_hoshubu_member = 4 }
+			if = {
+				limit = { is_ai = no }
+				custom_override_tooltip = {
+					tooltip = TRI_the_way_to_get_trust_available_tt
+					check_variable = { TRI_permitted_hoshubu_member > 3 }
+				}
 			}
 		}
 		days_remove = 7
@@ -74,14 +80,17 @@ TRI_paranoia_system = {
 			has_country_flag = TRI_empty_nest_operation
 		}
 		available = {
-			command_power > 59.9
-			has_equipment = { infantry_equipment > 2999 }
+			if = {
+				limit = { is_ai = no }
+				command_power > 49.9
+				has_equipment = { infantry_equipment > 2999 }
+			}
 		}
 		cost = 50
 		days_remove = 35
 		fire_only_once = yes
 		complete_effect = {
-			add_command_power = -60
+			add_command_power = -50
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = -3000

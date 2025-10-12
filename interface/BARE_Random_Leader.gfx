@@ -11,6 +11,10 @@ spriteTypes = {
 		name = "GFX_Portrait_ari_1"
 		texturefile = "gfx/random_leader/ari/ari_1.dds"
 	}
+	SpriteType = { #阿里乌斯
+		name = "GFX_Portrait_ari_1_small"
+		texturefile = "gfx/random_leader/ari/ari_1_small.dds"
+	}
 	SpriteType = { #凯撒
 		name = "GFX_Portrait_cah_1"
 		texturefile = "gfx/random_leader/cah/cah_1.dds"

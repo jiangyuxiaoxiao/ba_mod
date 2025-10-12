@@ -1282,19 +1282,30 @@ ARI_foreign_operations_decisions = {
 		}
 		available = {
 			has_completed_focus = ARI_Trinity_operation
-			custom_override_tooltip = {
-				tooltip = {
-					localization_key = ARI_has_materials
-					AMOUNT = "100"
+			if = {
+				limit = {
+					is_ai = no 
 				}
-				check_variable = { ARI_materials > 99 }
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = ARI_has_materials
+						AMOUNT = "100"
+					}
+					check_variable = { ARI_materials > 99 }
+				}
 			}
+			
 		}
 		days_remove = 30
 		fire_only_once = yes
 		complete_effect = {
-			set_temp_variable = { material_change = -100 }
-			ARI_change_materials = yes
+			if = {
+				limit = {
+					is_ai = no 
+				}
+				set_temp_variable = { material_change = -100 }
+				ARI_change_materials = yes
+			}
 		}
 		remove_effect = {
 			set_variable = { ARI_intelligence_in_TRI = 0 }
@@ -1313,19 +1324,30 @@ ARI_foreign_operations_decisions = {
 		}
 		available = {
 			has_completed_focus = ARI_Gehenna_operation
-			custom_override_tooltip = {
-				tooltip = {
-					localization_key = ARI_has_materials
-					AMOUNT = "100"
+			if = {
+				limit = {
+					is_ai = no
 				}
-				check_variable = { ARI_materials > 99 }
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = ARI_has_materials
+						AMOUNT = "100"
+					}
+					check_variable = { ARI_materials > 99 }
+				}
 			}
 		}
 		days_remove = 30
 		fire_only_once = yes
 		complete_effect = {
-			set_temp_variable = { material_change = -100 }
-			ARI_change_materials = yes
+			if = {
+				limit = {
+					is_ai = no
+				}
+				set_temp_variable = { material_change = -100 }
+				ARI_change_materials = yes
+			}
+		
 		}
 		remove_effect = {
 			set_variable = { ARI_intelligence_in_GEH = 0 }
@@ -1717,7 +1739,15 @@ ARI_foreign_operations_decisions = {
 		days_remove = 30
 		days_re_enable = 150
 		remove_effect = {
-			country_event = ARI_beatrice_operations.19
+			if = {
+				limit = {
+					not = {
+						has_country_flag = ARI_beatrice_operations_19
+					}
+				}
+				set_country_flag = ARI_beatrice_operations_19
+				country_event = ARI_beatrice_operations.19
+			}
 			set_temp_variable = { material_change = 300 }
 			ARI_change_materials = yes
 			set_temp_variable = { revenge_progress_change = -10 }
@@ -1779,7 +1809,13 @@ ARI_foreign_operations_decisions = {
 			ARI_change_materials = yes
 		}
 		remove_effect = {
-			country_event = ARI_beatrice_operations.20
+			if = {
+				limit = {
+					has_country_flag = ARI_beatrice_operations_20
+				}
+				set_character_flag = ARI_beatrice_operations_20
+				country_event = ARI_beatrice_operations.20
+			}
 			set_temp_variable = { intelligence_change = 10 }
 			ARI_traveller_operation_prepare_progress_update_effect = yes
 			ARI_change_intelligence_in_TRI = yes
@@ -2962,11 +2998,11 @@ ARI_black_market_decisions = {
 		ai_will_do = {
 			base = 2
 			modifier = {
-				factor = 0.5
+				factor = 0
 				check_variable = { ARI_materials < 150 }
 			}
 			modifier = {
-				factor = 0.8
+				factor = 0.5
 				check_variable = { ARI_materials < 300 }
 			}
 			modifier = {
@@ -3022,7 +3058,7 @@ ARI_black_market_decisions = {
 		ai_will_do = {
 			base = 3
 			modifier = {
-				factor = 1.5
+				factor = 3
 				check_variable = { ARI_materials < 500 }
 			}
 			modifier = {
@@ -3456,7 +3492,7 @@ ARI_special_training_decisions = {
 			subtract_from_variable = { ARI_special_training_decisions_count = 1 }
 			army_experience = 25
 			custom_effect_tooltip = ARI_night_infiltration_warfare_tt
-			add_to_variable = { ARI_special_force_land_night_attack = 0.2 }
+			add_to_variable = { ARI_special_force_land_night_attack = 0.1 }
 		}
 		ai_will_do = {
 			base = 10
@@ -3516,7 +3552,7 @@ ARI_special_training_decisions = {
 			subtract_from_variable = { ARI_special_training_decisions_count = 1 }
 			army_experience = 25
 			custom_effect_tooltip = ARI_assault_warfare_tt
-			add_to_variable = { ARI_special_force_army_speed_factor = 0.05 }
+			# add_to_variable = { ARI_special_force_army_speed_factor = 0.05 }
 			add_to_variable = { special_forces_attack_factor = 0.1 }
 		}
 		ai_will_do = {
@@ -3584,7 +3620,7 @@ ARI_special_training_decisions = {
 			subtract_from_variable = { ARI_special_training_decisions_count = 1 }
 			custom_effect_tooltip = ARI_wilderness_survival_tt
 			add_to_variable = { ARI_special_force_out_of_supply_factor = -0.15 }
-			add_to_variable = { ARI_special_force_no_supply_grace = 48 }
+			add_to_variable = { ARI_special_force_no_supply_grace = 24 }
 		}
 		ai_will_do = {
 			base = 10
@@ -3617,7 +3653,7 @@ ARI_power_chaser_decisions = {
 					localization_key =  ARI_has_mystic_progress
 					PROGRESS = "100"
 				}
-				check_variable = { ARI_mystic_progress = 100 }
+				check_variable = { ARI_mystic_progress > 99.999 }
 			}
 			if = {
 				limit = {
@@ -3661,17 +3697,19 @@ ARI_power_chaser_decisions = {
 	ARI_final_ascension = { #飞升
 		visible = {
 			has_country_flag = ARI_rank3_achieved
+			
 		}
 
 		fire_only_once = yes
 
 		available = {
+			has_completed_focus = ARI_the_final_step
 			custom_override_tooltip = {
 				tooltip = {
 					localization_key =  ARI_has_mystic_progress
 					PROGRESS = "100"
 				}
-				check_variable = { ARI_mystic_progress = 100 }
+				check_variable = { ARI_mystic_progress > 99.999 }
 			}
 		}
 
@@ -3762,7 +3800,8 @@ ARI_power_chaser_decisions = {
 
 	ARI_find_memory_of_past = { #探索圣徒会的记忆
 		visible = {
-			has_completed_focus = ARI_share_highest_knowledge
+			# has_completed_focus = ARI_share_highest_knowledge
+			has_completed_focus = ARI_mystery_and_contrast
 			NOT = { has_country_flag = ARI_rank3_achieved } #如果rank大于等于4，立刻使得该决议消失
 		}
 
@@ -3800,7 +3839,8 @@ ARI_power_chaser_decisions = {
 
 	ARI_new_weapons_for_projections = { #给投影生产新武器
 		visible = {
-			has_completed_focus = ARI_research_trinity_books
+			# has_completed_focus = ARI_research_trinity_books
+			has_completed_focus = ARI_new_weapon_for_projection
 			NOT = { has_country_flag = ARI_rank3_achieved } #如果rank大于等于4，立刻使得该决议消失
 				##不触发超过五次
 				NOT = {
@@ -3843,8 +3883,8 @@ ARI_power_chaser_decisions = {
 
 				ARI_upgrade_mystery_weapon_buff = yes
 
-				add_to_variable = { ARI_power_chaser_modifier_army_sub_unit_category_special_infantry_defence_factor = 0.03 }
-				add_to_variable = { ARI_power_chaser_modifier_army_sub_unit_category_special_infantry_attack_factor = 0.03 }
+				add_to_variable = { ARI_power_chaser_modifier_army_sub_unit_category_special_infantry_defence_factor = 0.01 }
+				add_to_variable = { ARI_power_chaser_modifier_army_sub_unit_category_special_infantry_attack_factor = 0.02 }
 			}
 		}
 		ai_will_do = {
@@ -3876,87 +3916,89 @@ ARI_traveller_operation_caretaking_decisions = {
 			custom_override_tooltip = {
 				tooltip = ARI_get_back_special_force_count_nomore_for_5times_tt
 				##不触发超过五次
-				NOT = {
-					check_variable = { 
-						var = ARI_get_back_special_force_count
-						value = 5
-						compare = greater_than_or_equals
-					}
+				check_variable = {
+					ARI_lesson_traveller_operation_army_attack_factor < 0
 				}
 			}
 		}
 
 		available = {
-			has_manpower > 999
-			has_equipment = { infantry_equipment > 499 }
-			custom_override_tooltip = {
-				tooltip = {
-					localization_key = ARI_has_materials
-					AMOUNT = "100"
+			if = {
+				limit = {
+					is_ai = yes
 				}
-				check_variable = { ARI_materials > 99 }
-			}
-
-			custom_override_tooltip = {
-				tooltip = ARI_get_back_special_force_count_nomore_for_5times_tt
-
-				##不触发超过五次
-				check_variable = { ARI_get_back_special_force_count < 6 }
+				always = yes
+			}else = {
+				has_manpower > 999
+				has_equipment = { infantry_equipment > 499 }
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = ARI_has_materials
+						AMOUNT = "100"
+					}
+					check_variable = { ARI_materials > 99 }
+				}
 			}
 		}
 
 		days_remove = 30
 
 		complete_effect = {
-			add_manpower = -1000
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = -500
+			if = {
+				limit = {
+					is_ai = no
+				}
+				add_manpower = -1000
+				add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = -500
+					}
+					set_temp_variable = { material_change = -100 }
+					ARI_change_materials = yes
+				}
 			}
-			set_temp_variable = { material_change = -100 }
-			ARI_change_materials = yes
-		}
 		remove_effect = {
+			custom_effect_tooltip = ARI_get_back_special_force_count_nomore_for_5times_tt
 			custom_effect_tooltip = ARI_cut_traveller_operation_debuff_2
 			hidden_effect = {
-				add_to_variable = { ARI_get_back_special_force_count = 1 }
+				# add_to_variable = { ARI_get_back_special_force_count = 1 }
 
-				add_to_variable = { ARI_lesson_traveller_operation_army_attack_factor = 0.05 }
-				add_to_variable = { ARI_lesson_traveller_operation_army_defence_factor = 0.05 }
+				add_to_variable = { ARI_lesson_traveller_operation_army_attack_factor = 0.1 }
+				add_to_variable = { ARI_lesson_traveller_operation_army_defence_factor = 0.1 }
 
 				ARI_check_if_traveller_idea_replaced = yes
 			}
 		}
 		ai_will_do = {
-			base = 3
-			modifier = {
-				factor = 0.6
-				check_variable = { ARI_materials < 300 }
-			}
-			modifier = {
-				factor = 0.8
-				check_variable = { ARI_materials < 800 }
-			}
-			modifier = {
-				factor = 10
-				check_variable = { ARI_materials > 1500 }
-			}
-			modifier = {
-				factor = 0.5
-				has_equipment = { infantry_equipment < 4000 }
-			}
-			modifier = {
-				factor = 0.5
-				has_manpower < 5000
-			}
-			modifier = {
-				factor = 5
-				has_manpower > 100000
-			}
-			modifier = {
-				factor = 5
-				has_equipment = { infantry_equipment > 12000 }
-			}
+			base = 1000
+			# modifier = {
+			# 	factor = 0.6
+			# 	check_variable = { ARI_materials < 300 }
+			# }
+			# modifier = {
+			# 	factor = 0.8
+			# 	check_variable = { ARI_materials < 800 }
+			# }
+			# modifier = {
+			# 	factor = 10
+			# 	check_variable = { ARI_materials > 1500 }
+			# }
+			# modifier = {
+			# 	factor = 0.5
+			# 	has_equipment = { infantry_equipment < 4000 }
+			# }
+			# modifier = {
+			# 	factor = 0.5
+			# 	has_manpower < 5000
+			# }
+			# modifier = {
+			# 	factor = 5
+			# 	has_manpower > 100000
+			# }
+			# modifier = {
+			# 	factor = 5
+			# 	has_equipment = { infantry_equipment > 12000 }
+			# }
 		}
 	}
 	ARI_get_back_revenge_spirit_de = { #重申复仇理想
@@ -3983,83 +4025,129 @@ ARI_traveller_operation_caretaking_decisions = {
 			}
 		}
 		ai_will_do = {
-			base = 20
-			modifier = {
-				factor = 0.5
-				has_political_power < 200
-			}
-			modifier = {
-				factor = 0.2
-				has_manpower < 10000
-			}
-			modifier = {
-				factor = 5
-				has_manpower > 100000
-			}
-			modifier = {
-				factor = 5
-				has_political_power > 400
-			}
+			base = 1000
+			# modifier = {
+			# 	factor = 0.5
+			# 	has_political_power < 200
+			# }
+			# modifier = {
+			# 	factor = 0.2
+			# 	has_manpower < 10000
+			# }
+			# modifier = {
+			# 	factor = 5
+			# 	has_manpower > 100000
+			# }
+			# modifier = {
+			# 	factor = 5
+			# 	has_political_power > 400
+			# }
 		}
 	}
 	ARI_fix_our_supply = { #弥补物资缺口
 		visible = {
 			has_completed_focus = ARI_solve_supply_shorting
-			NOT = { has_country_flag = ARI_have_skiped_solve_supply_shorting } #如果跳过了国策就不用出现
+			check_variable = {
+				ARI_lesson_traveller_operation_goods_factor > 0
+			}
 		}
 
 		available = {
-			custom_override_tooltip = {
-				tooltip = {
-					localization_key = ARI_has_materials
-					AMOUNT = "500"
+			if = {
+				limit = {
+					is_ai = no
 				}
-				check_variable = { ARI_materials > 499 }
+				custom_override_tooltip = {
+					tooltip = {
+						localization_key = ARI_has_materials
+						AMOUNT = "500"
+					}
+					check_variable = { ARI_materials > 499 }
+				}
+			}else = {
+				always = yes
 			}
 		}
 
 		days_remove = 90
 
 		fire_only_once = yes
+
+		complete_effect = {
+			if = {
+				limit = {
+					has_completed_focus = ARI_march_towards_the_goal
+					check_variable = {
+						ARI_lesson_traveller_operation_goods_factor > 0
+					}
+				}
+			    set_variable = {
+					ARI_lesson_traveller_operation_goods_factor = 0.25
+				}
+				set_variable = {
+					ARI_lesson_traveller_operation_industrial_capacity_factory = -0.25
+				}
+				force_update_dynamic_modifier = yes
+			}
+		}
 
 		remove_effect = {
 			custom_effect_tooltip = ARI_cut_traveller_operation_debuff_3
 			hidden_effect = {
-				add_to_variable = { ARI_power_chaser_industrial_capacity_factory = 0.25 }
-				add_to_variable = { ARI_power_chaser_goods_factor = -0.25 }
+				if = {
+					limit = {
+						check_variable = { ARI_lesson_traveller_operation_goods_factor > 0 }
+					}
+					add_to_variable = { ARI_lesson_traveller_operation_industrial_capacity_factory = 0.25 }
+					add_to_variable = { ARI_lesson_traveller_operation_goods_factor = -0.25 }
+				}
+				force_update_dynamic_modifier = yes
+				
 			}
 		}
 		ai_will_do = {
-			base = 20
-			modifier = {
-				factor = 0.4
-				check_variable = { ARI_materials < 800 }
-			}
-			modifier = {
-				factor = 0.8
-				check_variable = { ARI_materials < 1000 }
-			}
-			modifier = {
-				factor = 10
-				check_variable = { ARI_materials > 2000 }
-			}
+			base = 1000
+			# modifier = {
+			# 	factor = 0.4
+			# 	check_variable = { ARI_materials < 800 }
+			# }
+			# modifier = {
+			# 	factor = 0.8
+			# 	check_variable = { ARI_materials < 1000 }
+			# }
+			# modifier = {
+			# 	factor = 10
+			# 	check_variable = { ARI_materials > 2000 }
+			# }
 		}
 	}
 	ARI_deal_with_traitor_de = { #处理“叛徒”
 		visible = {
-			has_completed_focus = ARI_solve_supply_shorting
+			has_completed_focus = ARI_deal_with_traitor
 		}
 		available = {
-			has_manpower > 1999
-			has_equipment = { infantry_equipment > 499 }
+			if = {
+				limit = {
+					is_ai = no
+				}
+				has_manpower > 1999
+				has_equipment = { infantry_equipment > 499 }
+			}else = {
+				always = yes
+			}
 		}
 		days_remove = 90
 		fire_only_once = yes
 		complete_effect = {
-			add_manpower = -2000
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = -500
+			if = {
+				limit = {
+					is_ai = no
+				}
+				add_manpower = -1000
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = -500
+				}
 			}
 		}
 		remove_effect = {
@@ -4072,23 +4160,23 @@ ARI_traveller_operation_caretaking_decisions = {
 			}
 		}
 		ai_will_do = {
-			base = 20
-			modifier = {
-				factor = 0.5
-				has_equipment = { infantry_equipment < 2000 }
-			}
-			modifier = {
-				factor = 0.5
-				has_manpower < 6000
-			}
-			modifier = {
-				factor = 5
-				has_manpower > 100000
-			}
-			modifier = {
-				factor = 5
-				has_equipment = { infantry_equipment > 5000 }
-			}
+			base = 1000
+			# modifier = {
+			# 	factor = 0.5
+			# 	has_equipment = { infantry_equipment < 2000 }
+			# }
+			# modifier = {
+			# 	factor = 0.5
+			# 	has_manpower < 6000
+			# }
+			# modifier = {
+			# 	factor = 5
+			# 	has_manpower > 100000
+			# }
+			# modifier = {
+			# 	factor = 5
+			# 	has_equipment = { infantry_equipment > 5000 }
+			# }
 		}
 	}
 }
@@ -4135,7 +4223,7 @@ ARI_preparation_of_operation_eden_decisions = {
 			}
 		}
 		ai_will_do = {
-			base = 10
+			base = 15
 			modifier = {
 				factor = 0.2
 				check_variable = { ARI_intelligence_in_TRI < 40 }
@@ -4190,7 +4278,7 @@ ARI_preparation_of_operation_eden_decisions = {
 			}
 		}
 		ai_will_do = {
-			base = 10
+			base = 15
 			modifier = {
 				factor = 0.2
 				check_variable = { ARI_intelligence_in_TRI < 40 }
@@ -4245,7 +4333,7 @@ ARI_preparation_of_operation_eden_decisions = {
 			}
 		}
 		ai_will_do = {
-			base = 10
+			base = 15
 			modifier = {
 				factor = 0.4
 				check_variable = { ARI_intelligence_in_GEH < 50 }
@@ -4284,7 +4372,7 @@ ARI_preparation_of_operation_eden_decisions = {
 				check_variable = { ARI_intelligence_in_GEH > 29 }
 			}
 		}
-		days_remove = 15
+		days_remove = 45
 		complete_effect = {
 			set_temp_variable = { intelligence_change = -30 }
 			ARI_change_intelligence_in_GEH = yes
@@ -4348,7 +4436,7 @@ ARI_preparation_of_operation_eden_decisions = {
 				check_variable = { ARI_intelligence_in_GEH > 14 }
 			}
 		}
-		days_remove = 15
+		days_remove = 45
 		complete_effect = {
 			set_temp_variable = { intelligence_change = -15 }
 			ARI_change_intelligence_in_TRI = yes
@@ -4410,7 +4498,7 @@ ARI_preparation_of_operation_eden_decisions = {
 				check_variable = { ARI_materials > 499 }
 			}
 		}
-		days_remove = 15
+		days_remove = 45
 
 		fire_only_once = yes
 
@@ -4482,8 +4570,10 @@ ARI_suppress_resistance_eden_decisions = {
 	ARI_suppress_resistance_eden_decision = {
 		visible = {
 			has_completed_focus = ARI_suppress_resistance_eden_operation
-			NOT = { has_idea = ARI_eden_action_chaos }
-			NOT = { has_idea = ARI_eden_action_chaos_2 }
+			or = {
+				has_idea = ARI_eden_action_chaos
+				has_idea = ARI_eden_action_chaos_2
+			}
 		}
 		available = {
 			has_army_experience > 25
@@ -4538,27 +4628,23 @@ ARI_suppress_resistance_eden_decisions = {
 	#加强契约力量
 	ARI_enhance_contract_power_eden_decision = {
 		visible = {
-			NOT = { has_idea = ARI_eden_mystery_infantry_debuff_1 }
-			NOT = { has_idea = ARI_eden_mystery_infantry_debuff_2 }
-			NOT = { has_idea = ARI_eden_mystery_infantry_debuff_3 }
-			NOT = { has_idea = ARI_eden_mystery_infantry_debuff_4 }
+			or = {
+				has_idea = ARI_eden_mystery_infantry_debuff_1
+				has_idea = ARI_eden_mystery_infantry_debuff_2
+				has_idea = ARI_eden_mystery_infantry_debuff_3
+				has_idea = ARI_eden_mystery_infantry_debuff_4
+			}
 			has_completed_focus =  ARI_enhance_contract_power
 		}
 		available = {
-			has_equipment = {
-				special_infantry_equipment > 499
-			}
+			
 		}
 
-		fire_only_once = yes
+		fire_only_once = no
 
-		days_remove = 60
+		days_remove = 45
 
 		complete_effect = {
-			add_equipment_to_stockpile = {
-				type = special_infantry_equipment
-				amount = -500
-			}
 		}
 
 		remove_effect = {
@@ -4568,7 +4654,7 @@ ARI_suppress_resistance_eden_decisions = {
 				create_unit = {
 					division = "division_template = \"圣徒会的投影\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
 					owner = ROOT
-					count = 6
+					count = 4
 				}
 			}
 		}
@@ -4592,6 +4678,13 @@ ARI_suppress_resistance_eden_decisions = {
 			has_completed_focus = ARI_put_evenything_on_bet
 		}
 		available = {
+			not = {
+				has_idea = ARI_eden_mystery_infantry_debuff_1
+				has_idea = ARI_eden_mystery_infantry_debuff_2
+				has_idea = ARI_eden_mystery_infantry_debuff_3
+				has_idea = ARI_eden_mystery_infantry_debuff_4
+			
+			}
 		}
 
 		fire_only_once = yes
@@ -4621,6 +4714,309 @@ ARI_suppress_resistance_eden_decisions = {
 				factor = 2
 				has_political_power > 200
 			}
+		}
+	}
+
+	#强令部队发起冲锋
+
+	ARI_Eden_treaty_War_Forced_Attack_decisions = {
+		visible = {
+			has_dynamic_modifier = {
+				modifier = Eden_treaty_War_blood_march
+			}
+			has_completed_focus = ARI_coordinate_reinforcement_troops
+		}
+
+		available = {
+
+		}
+
+		days_re_enable = 90
+		days_remove = 20
+
+		modifier = {
+			army_attack_factor = 0.3
+			army_speed_factor = 0.1
+			breakthrough_factor = 0.25
+			land_reinforce_rate = -0.03
+			army_morale_factor = -0.3
+		}
+
+
+
+		complete_effect = {
+			add_to_variable = {
+				ECW_progress_var = -10
+			}
+			ECW_clamp_all_vars_effect = yes
+			force_update_dynamic_modifier = yes
+			custom_effect_tooltip = ARI_Eden_treaty_War_Forced_Attack_decisions_tt_1
+		}
+
+		remove_effect = {
+			add_to_variable = {
+				Eden_treaty_War_blood_march_army_org_factor = -0.05
+			}
+			add_to_variable = {
+				Eden_treaty_War_blood_march_land_reinforce_rate = -0.02
+			}
+			add_to_variable = {
+				Eden_treaty_War_blood_march_army_strength_factor = -0.05
+			}
+			custom_effect_tooltip = ARI_Eden_treaty_War_Forced_Attack_decisions_tt_3
+			force_update_dynamic_modifier = yes
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		
+	}
+
+
+
+	ARI_Eden_treaty_War_Forced_Defense_decisions = {
+		visible = {
+			has_dynamic_modifier = {
+				modifier = Eden_treaty_War_blood_march
+			}
+			has_completed_focus = ARI_coordinate_reinforcement_troops
+		}
+
+		available = {
+
+		}
+
+		days_re_enable = 90
+		days_remove = 20
+
+		modifier = {
+			dig_in_speed_factor = 1
+			army_defence_factor = 0.3
+			coordination_bonus = 0.2
+			experience_loss_factor = 0.15
+		}
+
+
+
+		complete_effect = {
+			add_to_variable = {
+				ECW_progress_var = -10
+			}
+			ECW_clamp_all_vars_effect = yes
+			force_update_dynamic_modifier = yes
+			custom_effect_tooltip = ARI_Eden_treaty_War_Forced_Attack_decisions_tt_1
+		}
+
+		remove_effect = {
+			add_to_variable = {
+				Eden_treaty_War_blood_march_army_org_factor = -0.05
+			}
+			add_to_variable = {
+				Eden_treaty_War_blood_march_land_reinforce_rate = -0.02
+			}
+			custom_effect_tooltip = ARI_Eden_treaty_War_Forced_Attack_decisions_tt_2
+			force_update_dynamic_modifier = yes
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+
+
+	ARI_Eden_treaty_War_Improve_Logistics_System = {
+		visible = {
+			has_dynamic_modifier = {
+				modifier = Eden_treaty_War_blood_march
+			}
+			has_completed_focus = ARI_coordinate_reinforcement_troops
+		}
+
+		available = {
+			has_tech = support_logistics_T3
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+		
+		}
+
+
+
+		complete_effect = {
+			
+		}
+
+		remove_effect = {
+			add_to_variable = {
+				Eden_treaty_War_blood_march_attrition = -0.2
+			}
+			add_to_variable = {
+				Eden_treaty_War_blood_march_experience_loss_factor = -0.05
+			}
+			add_to_variable = {
+				Eden_treaty_War_blood_march_supply_consumption_factor = 0.15
+			}
+			add_to_variable = {
+				Eden_treaty_War_blood_march_army_strength_factor = 0.1
+			}
+			custom_effect_tooltip = ARI_Eden_treaty_War_Improve_Logistics_System_tt
+			force_update_dynamic_modifier = yes
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+
+	ARI_Eden_treaty_War_Plundering_Supplies = {
+		visible = {
+			has_dynamic_modifier = {
+				modifier = Eden_treaty_War_blood_march
+			}
+			has_completed_focus = ARI_coordinate_reinforcement_troops
+		}
+
+		available = {
+			or = {
+				190 = {
+					is_controlled_by = ROOT
+				}
+				120 = {
+					is_controlled_by = ROOT
+
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+		
+		}
+
+
+
+		complete_effect = {
+			
+		}
+
+		remove_effect = {
+			if = {
+				limit = {
+					190 = {
+						is_controlled_by = ROOT
+					}
+				}
+				190 = {
+					add_resistance = 20
+				}
+			}else_if = { 
+				limit = {
+					120 = {
+						is_controlled_by = ROOT
+					}
+				}
+				120 = {
+					add_resistance = 20
+				}
+			}
+
+
+			add_to_variable = {
+				Eden_treaty_War_blood_march_attrition = -0.3
+			}
+			add_to_variable = {
+				Eden_treaty_War_blood_march_experience_loss_factor = -0.05
+			}
+			add_to_variable = {
+				Eden_treaty_War_blood_march_army_strength_factor = 0.1
+			}
+			custom_effect_tooltip = ARI_Eden_treaty_War_Plundering_Supplies_tt
+			force_update_dynamic_modifier = yes
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	ARI_Eden_treaty_War_Captured_Weapons = {
+		visible = {
+			has_dynamic_modifier = {
+				modifier = Eden_treaty_War_blood_march
+			}
+			has_completed_focus = ARI_coordinate_reinforcement_troops
+		}
+
+		available = {
+			or = {
+				231 = {
+					is_controlled_by = ROOT
+				}
+				233 = {
+					is_controlled_by = ROOT
+
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		modifier = {
+		
+		}
+
+
+
+		complete_effect = {
+			
+		}
+
+		remove_effect = {
+			if = {
+				limit = {
+					231 = {
+						is_controlled_by = ROOT
+					}
+				}
+				231 = {
+					add_resistance = 15
+				}
+			}else_if = { 
+				limit = {
+					233 = {
+						is_controlled_by = ROOT
+					}
+				}
+				233 = {
+					add_resistance = 15
+				}
+			}
+
+
+			add_to_variable = {
+				Eden_treaty_War_blood_march_army_speed_factor = 0.15
+			}
+			add_to_variable = {
+				Eden_treaty_War_blood_march_supply_consumption_factor = 0.1
+			}
+			add_to_variable = {
+				Eden_treaty_War_blood_march_army_attack_factor = 0.075
+			}
+			add_to_variable = {
+				Eden_treaty_War_blood_march_army_defence_factor = 0.075
+			}
+			custom_effect_tooltip = ARI_Eden_treaty_War_Improve_Logistics_System_tt
+			force_update_dynamic_modifier = yes
+		}
+
+		ai_will_do = {
+			factor = 100
 		}
 	}
 }

@@ -1,5 +1,5 @@
 capital = 201
-oob = "standard_templates"
+#oob = "COS_oob_2019"
 
 set_stability = 0.50
 set_war_support = 0.50

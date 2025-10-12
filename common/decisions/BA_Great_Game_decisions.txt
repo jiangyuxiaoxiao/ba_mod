@@ -162,6 +162,16 @@ BA_Great_Game_decisions = {
 						set_temp_variable = { enemy = FROM.OVERLORD }
 						Great_Game_invite_to_ally = yes
 					}
+					diplomatic_relation = {
+						country = ROOT
+						relation = offer_military_access
+						active = no
+					}
+					diplomatic_relation = {
+						country = ROOT
+						relation = military_access
+						active = no
+					}
 				}
 				FROM.OVERLORD = {
 					set_variable = { Great_Game_invader = ROOT }
@@ -171,6 +181,16 @@ BA_Great_Game_decisions = {
 					set_variable = { Great_Game_power_score_faction = Great_Game_power_score }
 					set_country_flag = involved_in_Great_Game_as_defender
 					set_country_flag = involved_in_Great_Game_as_ally_leader
+					diplomatic_relation = {
+						country = ROOT
+						relation = offer_military_access
+						active = no
+					}
+					diplomatic_relation = {
+						country = ROOT
+						relation = military_access
+						active = no
+					}
 					if = {
 						limit = {
 							Great_Game_can_be_CEN_overlord = yes
@@ -234,7 +254,7 @@ BA_Great_Game_decisions = {
 		visible = {
 			has_war = no
 			Great_Game_is_involved = no
-			Great_Game_can_be_CEN_overlord = yes
+			original_tag = CEN
 			NOT = { has_country_flag = Great_Game_invade_cd }
 		}
 		available = {
@@ -251,7 +271,7 @@ BA_Great_Game_decisions = {
 				}
 				any_neighbor_country = {
 					OR = {
-						original_tag = ROOT
+						Great_Game_can_be_CEN_overlord = yes
 						AND = {
 							is_subject_of = CEN
 							has_autonomy_state = autonomy_CEN_trusteeship_area
@@ -302,6 +322,16 @@ BA_Great_Game_decisions = {
 						set_temp_variable = { enemy = FROM.OVERLORD }
 						Great_Game_invite_to_ally = yes
 					}
+					diplomatic_relation = {
+						country = ROOT
+						relation = offer_military_access
+						active = no
+					}
+					diplomatic_relation = {
+						country = ROOT
+						relation = military_access
+						active = no
+					}
 				}
 				FROM.OVERLORD = {
 					set_variable = { Great_Game_invader = ROOT }
@@ -311,6 +341,16 @@ BA_Great_Game_decisions = {
 					set_variable = { Great_Game_power_score_faction = Great_Game_power_score }
 					set_country_flag = involved_in_Great_Game_as_defender
 					set_country_flag = involved_in_Great_Game_as_ally_leader
+					diplomatic_relation = {
+						country = ROOT
+						relation = offer_military_access
+						active = no
+					}
+					diplomatic_relation = {
+						country = ROOT
+						relation = military_access
+						active = no
+					}
 					country_event = Great_Game.1
 				}
 			}
@@ -394,6 +434,16 @@ BA_Great_Game_decisions = {
 						set_temp_variable = { enemy = FROM.OVERLORD }
 						Great_Game_invite_to_ally = yes
 					}
+					diplomatic_relation = {
+						country = ROOT
+						relation = offer_military_access
+						active = no
+					}
+					diplomatic_relation = {
+						country = ROOT
+						relation = military_access
+						active = no
+					}
 				}
 				FROM.OVERLORD = {
 					set_variable = { Great_Game_invader = ROOT }
@@ -403,6 +453,16 @@ BA_Great_Game_decisions = {
 					set_variable = { Great_Game_power_score_faction = Great_Game_power_score }
 					set_country_flag = involved_in_Great_Game_as_defender
 					set_country_flag = involved_in_Great_Game_as_ally_leader
+					diplomatic_relation = {
+						country = ROOT
+						relation = offer_military_access
+						active = no
+					}
+					diplomatic_relation = {
+						country = ROOT
+						relation = military_access
+						active = no
+					}
 					if = {
 						limit = {
 							Great_Game_can_be_CEN_overlord = yes
@@ -506,19 +566,31 @@ BA_Great_Game_decisions = {
 		}
 
 		timeout_effect = {
-			if = { #攻方胜利
-				limit = {
-					var:Great_Game_invade_target = { has_capitulated = yes }
-				}
+			custom_effect_tooltip = if_tt
+			custom_effect_tooltip = college_exercise_ongoing_attacker_win_tt
+			effect_tooltip = {
 				Great_Game_invade_succeeded = yes
 			}
-			else = { #守方胜利
+			custom_effect_tooltip = else_tt
+			effect_tooltip = {
 				Great_Game_invade_failed = yes
 			}
-			remove_mission = college_exercise_ongoing_attacker
-			var:Great_Game_invade_target_overlord = {
-				remove_mission = college_exercise_ongoing_defender
+			hidden_effect = {
+				if = { #攻方胜利
+					limit = {
+						var:Great_Game_invade_target = { has_capitulated = yes }
+					}
+					Great_Game_invade_succeeded = yes
+				}
+				else = { #守方胜利
+					Great_Game_invade_failed = yes
+				}
+				remove_mission = college_exercise_ongoing_attacker
+				var:Great_Game_invade_target_overlord = {
+					remove_mission = college_exercise_ongoing_defender
+				}
 			}
+			
 		}
 		cancel_trigger = {
 			surrender_progress > 0.3
@@ -551,15 +623,11 @@ BA_Great_Game_decisions = {
 		}
 
 		timeout_effect = {
-			if = { #攻方胜利
-				limit = {
-					var:Great_Game_invade_target = { has_capitulated = yes }
-				}
-				custom_effect_tooltip = Great_Game_defend_failed_tt
-			}
-			else = { #守方胜利
-				custom_effect_tooltip = Great_Game_defend_succeeded_tt
-			}
+			custom_effect_tooltip = if_tt
+			custom_effect_tooltip = college_exercise_ongoing_attacker_win_tt
+			custom_effect_tooltip = Great_Game_defend_failed_tt
+			custom_effect_tooltip = else_tt
+			custom_effect_tooltip = Great_Game_defend_succeeded_tt
 			effect_tooltip = {
 				Great_Game_get_coins = yes
 			}
@@ -592,6 +660,11 @@ BA_Great_Game_decisions = {
 				var:Great_Game_invade_target_overlord = {
 					NOT = { has_war_with = var:Great_Game_invader }
 				}
+				all_enemy_country = {
+					NOT = {
+						Great_Game_is_involved = yes
+					}
+				}
 			}
 		}
 		complete_effect = {
@@ -605,6 +678,9 @@ BA_Great_Game_decisions = {
 				has_war_with = var:Great_Game_enemy
 			}
 		}
+		cancel_effect = {
+			Great_Game_ally_leave = yes
+		}
 	}
 	Great_Game_invade_cd = {
 		activation = {
@@ -616,7 +692,7 @@ BA_Great_Game_decisions = {
 		available = {
 			always = no
 		}
-		remove_effect = {
+		timeout_effect = {
 			clr_country_flag = Great_Game_invade_cd
 		}
 	}
@@ -690,6 +766,11 @@ BA_Great_Game_decisions_debug = {
 			set_variable = { Great_Game_record_faction^Great_Game_record_count = 2 }
 			set_variable = { Great_Game_record_date^Great_Game_record_count = global.date }
 			Great_Game_add_record = yes
+		}
+	}
+	clr_flag = {
+		complete_effect = {
+			clr_country_flag = Great_Game_invade_cd
 		}
 	}
 }

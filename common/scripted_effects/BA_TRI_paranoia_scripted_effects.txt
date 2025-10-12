@@ -322,10 +322,10 @@ TRI_paranoia_check_association_state = {
 }
 #移除偏执度系统
 BA_TRI_remove_paranoia_system = {
-	custom_effect_tooltip = BA_TRI_remove_paranoia_system_tt
-	hidden_effect = {
-		if = {
-			limit = { has_country_flag = TRI_paranoia_system_active }
+	if = {
+		limit = { has_country_flag = TRI_paranoia_system_active }
+		custom_effect_tooltip = BA_TRI_remove_paranoia_system_tt
+		hidden_effect = {
 			remove_from_array = { Root.topbar_array = token:TRI_kirifuji_nagisa_paranoia_level } 
 			clear_array = TRI_paranoia_association
 			clr_country_flag = TRI_paranoia_system_active
@@ -339,24 +339,10 @@ BA_TRI_remove_paranoia_system = {
 					clr_character_flag = TRI_character_arrested
 				}
 			}
-			TRI_nagisa = {
-				if = {
-					limit = { has_trait = BA_TRI_nagisa_paranoid }
-					remove_trait = { trait = BA_TRI_nagisa_paranoid }
-				}
-				if = {
-					limit = { has_trait = TRI_nagisa_Find_the_root }
-					remove_trait = { trait = TRI_nagisa_Find_the_root }
-				}
-				else_if = {
-					limit = { has_trait = TRI_nagisa_Find_the_root_2 }
-					remove_trait = { trait = TRI_nagisa_Find_the_root_2 }
-				}
-				else_if = {
-					limit = { has_trait = TRI_nagisa_Find_the_root_3 }
-					remove_trait = { trait = TRI_nagisa_Find_the_root_3 }
-				}
-			}
+			remove_country_leader_trait = BA_TRI_nagisa_paranoid
+			remove_country_leader_trait = TRI_nagisa_Find_the_root
+			remove_country_leader_trait = TRI_nagisa_Find_the_root_2
+			remove_country_leader_trait = TRI_nagisa_Find_the_root_3
 			remove_ideas = TRI_inspected_administration
 			remove_ideas = TRI_inspected_army
 			remove_ideas = TRI_training_activities_curtailed

@@ -13,7 +13,7 @@ TRI_greetings_achievement = {
 	happened = {
 		custom_override_tooltip = {
 			tooltip = TRI_greetings_achievement_condition_tt
-			hidden_effect = {
+			hidden_trigger = {
 				date > 2019.01.02
 			}
 		}

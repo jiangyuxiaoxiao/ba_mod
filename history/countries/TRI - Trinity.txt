@@ -678,6 +678,7 @@ recruit_character = TRI_missing_nagisa
 recruit_character = TRI_ui2
 
 
+recruit_character =  TRI_air_force_idea_a
 set_politics = {
 	ruling_party = Progressivism_ideology
 }
@@ -688,25 +689,25 @@ set_popularities = {
 	Liberalism_ideology = 15
 	Authoritarian_ideology = 5
 }
-TRI_nagisa = {
-	add_to_array = { global.ARI_ShouHaiZheMingDan_ER = THIS}
-	add_to_array = { global.ARI_ShouHaiZheMingDan_SAN =  THIS }
-}
-TRI_missing_nagisa = {
-	add_to_array = { global.ARI_ShouHaiZheMingDan_SAN =  THIS }
-}
-TRI_tsurugi  ={
-	add_to_array = { global.ARI_ShouHaiZheMingDan_SAN =  THIS }
-}
+# TRI_nagisa = {
+# 	add_to_array = { global.ARI_ShouHaiZheMingDan_ER = THIS}
+# 	add_to_array = { global.ARI_ShouHaiZheMingDan_SAN =  THIS }
+# }
+# TRI_missing_nagisa = {
+# 	add_to_array = { global.ARI_ShouHaiZheMingDan_SAN =  THIS }
+# }
+# TRI_tsurugi  ={
+# 	add_to_array = { global.ARI_ShouHaiZheMingDan_SAN =  THIS }
+# }
 
 
-TRI_hasumi = {
-	add_to_array = { global.ARI_ShouHaiZheMingDan_SAN =  THIS }
-}
+# TRI_hasumi = {
+# 	add_to_array = { global.ARI_ShouHaiZheMingDan_SAN =  THIS }
+# }
 
-TRI_ichika = {
-	add_to_array = { global.ARI_ShouHaiZheMingDan_SAN =  THIS }
-}
+# TRI_ichika = {
+# 	add_to_array = { global.ARI_ShouHaiZheMingDan_SAN =  THIS }
+# }
 
 # # add_to_array = { global.ARI_ShouHaiZheMingDan_ER = TRI_seia }
 # add_to_array = { global.ARI_ShouHaiZheMingDan_ER = TRI_nagisa }

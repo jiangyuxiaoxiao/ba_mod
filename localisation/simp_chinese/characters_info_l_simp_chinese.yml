@@ -106,6 +106,9 @@
  CEN_haine_name:0 "灰音"
  CEN_sumomo_name:0 "李"
  CEN_kairo_name: "联邦学生会长"
+ Global_Trusteeship_Area_Leader_name: "联邦学生会城市行政管理委员会"
+ Global_Blockade_Zone_Leader_name: "联邦学生会危险区域管制委员会"
+ Global_Suburban_Leader_name: "联邦学生会郊区行政管理委员会"
 
  SRT_yukino_name:0 "七度雪乃"
  SRT_nico_name:0 "妮可"
@@ -244,6 +247,12 @@
  GEH_megu_name:0 "下仓惠"
  GEH_kirara_name:0 "绮良"
  GEH_erika_name:0 "旗见绘梨香"
+ GEH_air_force_idea_a_name:0 "风纪委员会空勤中队"
+ TRI_air_force_idea_a_name:0 "“天使之舞”飞行社团"
+ GEH_air_force_idea_b_name:0 "“深蓝天空”飞行社团"
+ GEH_theorist_idea_a_name:0 "万魔殿战车教导团"
+ GEH_theorist_idea_b_name:0 "风纪委员会教导中队"
+ GEH_theorist_idea_c_name:0 "火力研究部"
 
  MIL_rio_name:0 "莉音"
  POLITICS_MIL_RIO_DESC:0 ""
@@ -338,3 +347,8 @@
  PMC_director_name:0 "凯撒PMC理事"
  PMC_director_trait:0 "私营军事承包商"
  ETC_rabu_name:0 "河驹风兰舞"
+
+ A45_Don_Alanchino_name: "唐·阿兰奇诺"
+ A46_Miao_Tian_Wan_name: "喵天丸"
+ KRO_Reporting_Department_name: "报道部"
+ HIL_CCC_name: "中央控制中心"

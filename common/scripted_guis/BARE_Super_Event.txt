@@ -72,6 +72,7 @@ scripted_gui = {
 			check_variable = {
 				barexp_super_event_index > 0
 			}
+			is_ai = no
 		}
 		
         properties = {

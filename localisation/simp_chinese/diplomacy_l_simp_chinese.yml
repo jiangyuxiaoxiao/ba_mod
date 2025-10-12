@@ -1,5 +1,6 @@
 ﻿l_simp_chinese:
- BA_dip_action_prohibited: "这一外交行动在游戏中不可用"
+ BA_dip_action_prohibited: "§R这一外交行动在游戏中不可用§!"
+ BA_ARI_dip_action_prohibited: "§R我们是潜藏在黑暗中的势力，外交对我们来说毫无意义。§!"
  DIPLO_POSITIVE: "赞成：$VAL|G$"
  DIPLO_NEGATIVE: "反对：$VAL|R$"
  GOOD_BAD_RATIO: "我们至少需要§G赞成§!比§R反对§!多$THRESHOLD|Y$才能让对方接受。现在是$RATIO|Y$。"

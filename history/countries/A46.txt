@@ -86,6 +86,8 @@ set_technology = {
 	infantry_weapons_upgrade_communication_T1 = 1
 	infantry_weapons_upgrade_sighting_T1 = 1
 }
+
+recruit_character = A46_Miao_Tian_Wan
 add_ideas = {
 	BARE_Combat_Readiness_Start_Idea
 	BARE_Global_Extrajudicial_Trusteeship_Area
@@ -98,4 +100,5 @@ set_politics = {
 set_popularities = {
 	no_ideology = 100
 }
+
 

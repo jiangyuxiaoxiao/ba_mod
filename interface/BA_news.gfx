@@ -52,6 +52,40 @@ spriteTypes = {
 		name = "GFX_BA_news_13"
 		textureFile = "gfx/event_pictures/BA_news_event/BA_news_13.dds"
 	}	
+	spriteType = {
+		name = "GFX_BA_news_14"
+		textureFile = "gfx/event_pictures/BA_news_event/BA_news_14.dds"
+	}	
+	spriteType = {
+		name = "GFX_BA_news_15"
+		textureFile = "gfx/event_pictures/BA_news_event/BA_news_15.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_BA_news_16"
+		textureFile = "gfx/event_pictures/BA_news_event/BA_news_16.dds"
+	}	
+	spriteType = {
+		name = "GFX_BA_news_17"
+		textureFile = "gfx/event_pictures/BA_news_event/BA_news_17.dds"
+	}	
+	#
+	spriteType = {
+		name = "GFX_BA_news_18"
+		textureFile = "gfx/event_pictures/BA_news_event/BA_news_18.dds"
+	}	
+	spriteType = {
+		name = "GFX_BA_news_19"
+		textureFile = "gfx/event_pictures/BA_news_event/BA_news_19.dds"
+	}
+	spriteType = {
+		name = "GFX_BA_news_20"
+		textureFile = "gfx/event_pictures/BA_news_event/BA_news_20.dds"
+	}	
+		spriteType = {
+		name = "GFX_BA_news_21"
+		textureFile = "gfx/event_pictures/BA_news_event/BA_news_21.dds"
+	}	
 	#
 	spriteType = {
 		name = "GFX_BA_news_cathedral_war"

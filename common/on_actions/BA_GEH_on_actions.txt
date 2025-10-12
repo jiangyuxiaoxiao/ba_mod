@@ -66,29 +66,49 @@ on_actions = {
 			GEH_monthly_random_daily_event = yes
 		}
 	}
-	on_monthly = {
+	on_monthly_TRI = {
 		effect = {
-			TRI	= {
-				if = {
-					limit = {
-						has_global_flag = BA_2st_eden_pact_begin
-						not = {
-							has_global_flag = BA_2st_eden_pact_end
-						}
+			if = {
+				limit = {
+					has_global_flag = BA_2st_eden_pact_begin
+					not = {
+						has_global_flag = BA_2st_eden_pact_end
 					}
-					TRI = {
+				}
+				set_temp_variable = { weights_change = modifier@Eden_treaty_weights_monthly_gain }
+				Eden_treaty_change_weights = yes
+				GEH = {
 						set_temp_variable = { weights_change = modifier@Eden_treaty_weights_monthly_gain }
-						Eden_treaty_change_weights = yes
-					}
-					GEH = {
-							set_temp_variable = { weights_change = modifier@Eden_treaty_weights_monthly_gain }
-						Eden_treaty_change_weights = yes
-					}
+					Eden_treaty_change_weights = yes
 				}
 			}
 		}
 	}
 
-	
+	# GEH_Hundred_Battles_combat_var
 
+	on_army_leader_won_combat = {
+		effect = {
+			FROM = {
+				if = {
+					limit = {
+						tag = GEH
+					}
+					add_to_variable = {GEH_Hundred_Battles_combat_var = 1}
+				}
+			}
+		}
+	}
+	on_army_leader_lost_combat = {
+		effect = {
+			FROM = {
+				if = {
+					limit = {
+						tag = GEH
+					}
+					add_to_variable = {GEH_Hundred_Battles_combat_var = 1}
+				}
+			}
+		}
+	} 
 }

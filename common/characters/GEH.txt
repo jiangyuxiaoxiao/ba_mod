@@ -28,16 +28,8 @@ characters = {
 				original_tag = GEH
 			}
 			visible = {
-				OR = {
-					NOT = {
-						OR = {
-							has_global_flag = ARI_ZhunBeiDu_Er_JieDuanBiaoZhi							#阿里乌斯准备度二阶段标志
-							has_global_flag = ARI_ZhunBeiDu_San_JieDuanBiaoZhi							#阿里乌斯准备度三阶段标志
-						}
-					}
-					NOT = {
-						has_character_flag = ARI_BeiBangJia						#检测角色是否有被绑架标志
-					}
+				NOT = {
+					has_character_flag = ARI_BeiBangJia						#检测角色是否有被绑架标志
 				}
 			}
 			traits = {
@@ -56,16 +48,8 @@ characters = {
 				thorough_planner
 			}
 			visible = {
-				OR = {
-					NOT = {
-						OR = {
-							has_global_flag = ARI_ZhunBeiDu_Er_JieDuanBiaoZhi							#阿里乌斯准备度二阶段标志
-							has_global_flag = ARI_ZhunBeiDu_San_JieDuanBiaoZhi							#阿里乌斯准备度三阶段标志
-						}
-					}
-					NOT = {
-						has_character_flag = ARI_BeiBangJia						#检测角色是否有被绑架标志
-					}
+				NOT = {
+					has_character_flag = ARI_BeiBangJia						#检测角色是否有被绑架标志
 				}
 			}
 			skill = 3
@@ -121,15 +105,8 @@ characters = {
 				original_tag = GEH
 			}
 			visible = {
-				OR = {
-					NOT = {
-						OR = {
-							has_global_flag = ARI_ZhunBeiDu_San_JieDuanBiaoZhi							#阿里乌斯准备度三阶段标志
-						}
-					}
-					NOT = {
-						has_character_flag = ARI_BeiBangJia						#检测角色是否有被绑架标志
-					}
+				NOT = {
+					has_character_flag = ARI_BeiBangJia						#检测角色是否有被绑架标志
 				}
 			}
 			traits = {
@@ -148,15 +125,8 @@ characters = {
 				harsh_leader
 			}
 			visible = {
-				OR = {
-					NOT = {
-						OR = {
-							has_global_flag = ARI_ZhunBeiDu_San_JieDuanBiaoZhi							#阿里乌斯准备度三阶段标志
-						}
-					}
-					NOT = {
-						has_character_flag = ARI_BeiBangJia						#检测角色是否有被绑架标志
-					}
+				NOT = {
+					has_character_flag = ARI_BeiBangJia						#检测角色是否有被绑架标志
 				}
 			}
 			skill = 3
@@ -190,16 +160,8 @@ characters = {
 				armor_officer
 			}
 			visible = {
-				OR = {
-					NOT = {
-						OR = {
-							has_global_flag = ARI_ZhunBeiDu_Er_JieDuanBiaoZhi							#阿里乌斯准备度二阶段标志
-							has_global_flag = ARI_ZhunBeiDu_San_JieDuanBiaoZhi							#阿里乌斯准备度三阶段标志
-						}
-					}
-					NOT = {
-						has_character_flag = ARI_BeiBangJia						#检测角色是否有被绑架标志
-					}
+				NOT = {
+					has_character_flag = ARI_BeiBangJia						#检测角色是否有被绑架标志
 				}
 			}
 			skill = 1
@@ -218,6 +180,14 @@ characters = {
 				small = GFX_portrait_GEH_ako_small
 			}
 		}
+		country_leader = {
+			ideology = LBM_GEH_After_Terrible_type
+			traits = {
+				
+			}
+			expire = "9999.1.1.1"
+			id = -1
+		}
 		advisor = {
 			slot = high_command
 			idea_token = GEH_ako_hc
@@ -228,15 +198,8 @@ characters = {
 				original_tag = GEH
 			}
 			visible = {
-				OR = {
-					NOT = {
-						OR = {
-							has_global_flag = ARI_ZhunBeiDu_San_JieDuanBiaoZhi							#阿里乌斯准备度三阶段标志
-						}
-					}
-					NOT = {
-						has_character_flag = ARI_BeiBangJia						#检测角色是否有被绑架标志
-					}
+				NOT = {
+					has_character_flag = ARI_BeiBangJia						#检测角色是否有被绑架标志
 				}
 			}
 			traits = {
@@ -257,15 +220,8 @@ characters = {
 				original_tag = GEH
 			}
 			visible = {
-				OR = {
-					NOT = {
-						OR = {
-							has_global_flag = ARI_ZhunBeiDu_San_JieDuanBiaoZhi							#阿里乌斯准备度三阶段标志
-						}
-					}
-					NOT = {
-						has_character_flag = ARI_BeiBangJia						#检测角色是否有被绑架标志
-					}
+				NOT = {
+					has_character_flag = ARI_BeiBangJia						#检测角色是否有被绑架标志
 				}
 			}
 			traits = {
@@ -281,15 +237,8 @@ characters = {
 				skilled_staffer
 			}
 			visible = {
-				OR = {
-					NOT = {
-						OR = {
-							has_global_flag = ARI_ZhunBeiDu_San_JieDuanBiaoZhi							#阿里乌斯准备度三阶段标志
-						}
-					}
-					NOT = {
-						has_character_flag = ARI_BeiBangJia						#检测角色是否有被绑架标志
-					}
+				NOT = {
+					has_character_flag = ARI_BeiBangJia						#检测角色是否有被绑架标志
 				}
 			}
 			skill = 2
@@ -318,15 +267,8 @@ characters = {
 				original_tag = GEH
 			}
 			visible = {
-				OR = {
-					NOT = {
-						OR = {
-							has_global_flag = ARI_ZhunBeiDu_San_JieDuanBiaoZhi							#阿里乌斯准备度三阶段标志
-						}
-					}
-					NOT = {
-						has_character_flag = ARI_BeiBangJia						#检测角色是否有被绑架标志
-					}
+				NOT = {
+					has_character_flag = ARI_BeiBangJia						#检测角色是否有被绑架标志
 				}
 			}
 			traits = {
@@ -344,15 +286,8 @@ characters = {
 				trickster
 			}
 			visible = {
-				OR = {
-					NOT = {
-						OR = {
-							has_global_flag = ARI_ZhunBeiDu_San_JieDuanBiaoZhi							#阿里乌斯准备度三阶段标志
-						}
-					}
-					NOT = {
-						has_character_flag = ARI_BeiBangJia						#检测角色是否有被绑架标志
-					}
+				NOT = {
+					has_character_flag = ARI_BeiBangJia						#检测角色是否有被绑架标志
 				}
 			}
 			skill = 2
@@ -381,15 +316,8 @@ characters = {
 				original_tag = GEH
 			}
 			visible = {
-				OR = {
-					NOT = {
-						OR = {
-							has_global_flag = ARI_ZhunBeiDu_San_JieDuanBiaoZhi							#阿里乌斯准备度三阶段标志
-						}
-					}
-					NOT = {
-						has_character_flag = ARI_BeiBangJia						#检测角色是否有被绑架标志
-					}
+				NOT = {
+					has_character_flag = ARI_BeiBangJia						#检测角色是否有被绑架标志
 				}
 			}
 			traits = {
@@ -407,15 +335,8 @@ characters = {
 				organizer
 			}
 			visible = {
-				OR = {
-					NOT = {
-						OR = {
-							has_global_flag = ARI_ZhunBeiDu_San_JieDuanBiaoZhi							#阿里乌斯准备度三阶段标志
-						}
-					}
-					NOT = {
-						has_character_flag = ARI_BeiBangJia						#检测角色是否有被绑架标志
-					}
+				NOT = {
+					has_character_flag = ARI_BeiBangJia						#检测角色是否有被绑架标志
 				}
 			}
 			skill = 1
@@ -444,16 +365,8 @@ characters = {
 				original_tag = GEH
 			}
 			visible = {
-				OR = {
-					NOT = {
-						OR = {
-							has_global_flag = ARI_ZhunBeiDu_Er_JieDuanBiaoZhi							#阿里乌斯准备度二阶段标志
-							has_global_flag = ARI_ZhunBeiDu_San_JieDuanBiaoZhi							#阿里乌斯准备度三阶段标志
-						}
-					}
-					NOT = {
-						has_character_flag = ARI_BeiBangJia						#检测角色是否有被绑架标志
-					}
+				NOT = {
+					has_character_flag = ARI_BeiBangJia						#检测角色是否有被绑架标志
 				}
 			}
 			traits = {
@@ -477,16 +390,8 @@ characters = {
 				leisurely_manager
 			}
 			visible = {
-				OR = {
-					NOT = {
-						OR = {
-							has_global_flag = ARI_ZhunBeiDu_Er_JieDuanBiaoZhi							#阿里乌斯准备度二阶段标志
-							has_global_flag = ARI_ZhunBeiDu_San_JieDuanBiaoZhi							#阿里乌斯准备度三阶段标志
-						}
-					}
-					NOT = {
-						has_character_flag = ARI_BeiBangJia						#检测角色是否有被绑架标志
-					}
+				NOT = {
+					has_character_flag = ARI_BeiBangJia						#检测角色是否有被绑架标志
 				}
 			}
 			ai_will_do = {
@@ -500,16 +405,8 @@ characters = {
 				harsh_leader
 			}
 			visible = {
-				OR = {
-					NOT = {
-						OR = {
-							has_global_flag = ARI_ZhunBeiDu_Er_JieDuanBiaoZhi							#阿里乌斯准备度二阶段标志
-							has_global_flag = ARI_ZhunBeiDu_San_JieDuanBiaoZhi							#阿里乌斯准备度三阶段标志
-						}
-					}
-					NOT = {
-						has_character_flag = ARI_BeiBangJia						#检测角色是否有被绑架标志
-					}
+				NOT = {
+					has_character_flag = ARI_BeiBangJia						#检测角色是否有被绑架标志
 				}
 			}
 			skill = 2
@@ -533,16 +430,8 @@ characters = {
 				bearer_of_artillery
 			}
 			visible = {
-				OR = {
-					NOT = {
-						OR = {
-							has_global_flag = ARI_ZhunBeiDu_Er_JieDuanBiaoZhi							#阿里乌斯准备度二阶段标志
-							has_global_flag = ARI_ZhunBeiDu_San_JieDuanBiaoZhi							#阿里乌斯准备度三阶段标志
-						}
-					}
-					NOT = {
-						has_character_flag = ARI_BeiBangJia						#检测角色是否有被绑架标志
-					}
+				NOT = {
+					has_character_flag = ARI_BeiBangJia						#检测角色是否有被绑架标志
 				}
 			}
 			skill = 1
@@ -1093,6 +982,147 @@ characters = {
 			defense_skill = 2
 			planning_skill = 3
 			logistics_skill = 1
+		}
+	}
+
+
+	GEH_air_force_idea_a = {
+		name = GEH_air_force_idea_a_name
+		portraits = {
+			civilian = {
+				small = GFX_idea_GEH_temp_idea
+			}
+		}
+
+		advisor = {
+			slot = air_chief
+			idea_token = GEH_air_force_idea_a
+			cost = 100
+			allowed = {
+				original_tag = GEH
+			}
+			available = {
+				original_tag = GEH
+			}
+			traits = {
+				GEH_air_force_idea_a_trait
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+
+	GEH_air_force_idea_b = {
+		name = GEH_air_force_idea_b_name
+		portraits = {
+			civilian = {
+				small = GFX_idea_GEH_temp_idea
+			}
+		}
+
+		advisor = {
+			slot = air_chief
+			cost = 100
+			idea_token = GEH_air_force_idea_b
+			allowed = {
+				original_tag = GEH
+			}
+			available = {
+				original_tag = GEH
+			}
+			traits = {
+				GEH_air_force_idea_b_trait
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+
+	GEH_theorist_idea_a = {
+		name = GEH_theorist_idea_a_name
+		portraits = {
+			civilian = {
+				small = GFX_idea_GEH_temp_idea
+			}
+		}
+
+		advisor = {
+			slot = theorist
+			idea_token = GEH_theorist_idea_a
+			cost = 150
+			allowed = {
+				original_tag = GEH
+			}
+			available = {
+				original_tag = GEH
+			}
+			research_bonus = {
+                armor = 0.15
+            }
+			traits = {
+				GEH_theorist_idea_a_trait
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	GEH_theorist_idea_b = {
+		name = GEH_theorist_idea_b_name
+		portraits = {
+			civilian = {
+				small = GFX_idea_GEH_temp_idea
+			}
+		}
+
+		advisor = {
+			slot = theorist
+			idea_token = GEH_theorist_idea_b
+			cost = 150
+			allowed = {
+				original_tag = GEH
+			}
+			available = {
+				original_tag = GEH
+			}
+			traits = {
+				GEH_theorist_idea_b_trait
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	GEH_theorist_idea_c = {
+		name = GEH_theorist_idea_c_name
+		portraits = {
+			civilian = {
+				small = GFX_idea_GEH_temp_idea
+			}
+		}
+
+		advisor = {
+			slot = theorist
+			idea_token = GEH_theorist_idea_c
+			cost = 150
+			allowed = {
+				original_tag = GEH
+			}
+			available = {
+				original_tag = GEH
+			}
+			traits = {
+				GEH_theorist_idea_c_trait
+			}
+			ai_will_do = {
+				factor = 1
+			}
 		}
 	}
 }

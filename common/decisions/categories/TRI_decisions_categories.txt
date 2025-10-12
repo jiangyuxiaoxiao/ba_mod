@@ -68,6 +68,20 @@ TRI_bill_voting_decisions_categories = {
 	}
 	priority = 1001
 }
+#团结度
+TRI_unity_system = {
+
+	priority = 101
+	icon = generic
+
+	allowed = {
+		original_tag = TRI
+	}
+	visible = {
+		has_country_flag = TRI_unity_system_visible
+	}
+	visible_when_empty = yes
+}
 #焦点
 TRI_parliament_decisions_categories = {
 	icon = tri_parliament
@@ -78,13 +92,13 @@ TRI_parliament_decisions_categories = {
 		has_country_flag = TRI_parliament_available
 	}
 
-	priority = 1000
+	priority = 100
 	visible_when_empty = yes
 }
 #权力平衡
 TRI_BOP_system = {
 
-	priority = 100
+	priority = 99
 	icon = generic
 
 	allowed = {
@@ -104,20 +118,6 @@ TRI_region_interaction_decisions_category = {
 	}
 	visible = {
 	}
-}
-#团结度
-TRI_unity_system = {
-
-	priority = 99
-	icon = generic
-
-	allowed = {
-		original_tag = TRI
-	}
-	visible = {
-		has_country_flag = TRI_unity_system_visible
-	}
-	visible_when_empty = yes
 }
 #调查
 ###AI无法使用GUI，所以用决议替代###

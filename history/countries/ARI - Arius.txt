@@ -79,6 +79,7 @@ set_technology = {
 }
 
 add_ideas = {
+	ecolaws_ari_controlled_by_beatrice
 	millaws_beatrice_order
 	tralaws_closed_economy
 	BARE_Combat_Readiness_Start_Idea #计算开局人力用

@@ -9,6 +9,8 @@ TRI_BeiAliWuSiTuXi = { #被阿里乌斯突袭
 						has_dynamic_modifier = { modifier = TRI_ARI_GEH_JingPiLiJie }
 					}
 					state = 140
+					state = 683
+					state = 684
 				}
 				
 			}

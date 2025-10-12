@@ -1,0 +1,152 @@
+﻿l_simp_chinese: 
+#超事件1
+#  step1: "准备好超事件图片，放在gfx/interface/SuperEvent/SuperEvent_1/SuperEventPictures，注册为“GFX_BARE_SuperEvent_1_(名称大写)”。"
+#  step2: "在common/ideas/BAR_Super_Events.txt中写进4个新的空白hidden_idea，“BARE_SuperEvent_1_(名称大写，超事件标题)”、“BARE_SuperEvent_1_(名称大写，超事件名言)_QT”、“BARE_SuperEvent_1_(名称大写，超事件名言作者)_QN”、“BARE_SuperEvent_1_(名称大写,超事件说明)_T，“BARE_SuperEvent_1_(名称大写，超事件图片名称)_PT:BARE_SuperEvent_1_（名称大写，超事件章节名称）_NT，BARE_SuperEvent_1_（名称大写，超事件导读）_IT””并在本文件本地化。"
+
+
+# BARE_SuperEvent_1_Introduction_Text: "§b本章导读§!"
+# BARE_SuperEvent_1_No_Text: "§b第三章§!"
+# BARE_SuperEvent_1_Title_Text: "§b第二次伊甸条约的签订§!"
+
+# BARE_SuperEvent_1_Quotes_Text: "§r“这是属于我们的，学园与青春的故事！§!”"
+# BARE_SuperEvent_1_Quotes_Name_Text: "§r“——阿慈宫日富美，在古圣堂废墟的演讲”§!"
+
+# BARE_SuperEvent_1_Text: "§b在一系列难以置信的变故后，圣三一和格黑娜这一原先的仇敌在仇恨带来的废墟上结成了同盟，如今，她们抛开了以往分歧，共同对抗阿里乌斯这一扭曲的仇恨带来的怪物。§!"
+# BARE_SuperEvent_1_Photo_Text: "§T3.1 补习授业部在废墟上演讲§!"
+
+
+
+BARE_SuperEvent_1_SECOND_EDEN_TREATY: "§b第二次伊甸条约的签订§"
+BARE_SuperEvent_1_SECOND_EDEN_TREATY_QT: "§r“这是属于我们的，青春的故事！§!”"
+BARE_SuperEvent_1_SECOND_EDEN_TREATY_QN: "§r“——阿慈宫日富美，在古圣堂废墟的演讲”§!"
+BARE_SuperEvent_1_SECOND_EDEN_TREATY_T: "§b在一系列难以置信的变故后，圣三一和格黑娜这一原先的仇敌在仇恨带来的废墟上结成了同盟，如今，她们抛开了以往分歧，共同对抗,并最终击败了阿里乌斯这一扭曲的仇恨带来的怪物。§!"
+BARE_SuperEvent_1_SECOND_EDEN_TREATY_PT: "§T3.1 补习授业部在废墟上演讲§!"
+
+BARE_SuperEvent_1_SECOND_EDEN_TREATY_IT: "§b本章导读§!"
+BARE_SuperEvent_1_SECOND_EDEN_TREATY_NT: "§b第3章§!"
+
+
+
+
+#超事件2
+
+
+#  step1: "准备好超事件图片，放在gfx/interface/SuperEvent/SuperEvent_2/SuperEventPictures，注册为“GFX_BARE_SuperEvent_2_(名称大写)”。"
+#  step2: "在common/ideas/BAR_Super_Events.txt中写进4个新的空白hidden_idea，“BARE_SuperEvent_2_(名称大写，超事件标题)”、“BARE_SuperEvent_2_(名称大写，超事件地点)_A”、“BARE_SuperEvent_2_(名称大写，超时间名言)_D”、“BARE_SuperEvent_2_(名称大写,超事件评论)_M，“””并在本文件本地化。"
+#  step3: "使用时，set_temp_variable = { BARE_SuperEvent_2_temp_var = token:BARE_SuperEvent_2_(名称大写) }，再BAR_fire_super_event = yes。"
+
+
+
+
+
+
+BARE_SuperEvent_2_SuperEventTime: "[?BARE_SuperEvent_2_random_hour]:[?BARE_SuperEvent_2_random_minite]"
+
+
+BARE_SuperEvent_2_EDEN_TREATY_NORMAL: "伊甸条约签署" #废弃
+BARE_SuperEvent_2_EDEN_TREATY_NORMAL_A: "伊甸会场"
+BARE_SuperEvent_2_EDEN_TREATY_NORMAL_D: "在漫长的商讨后，圣三一与格黑娜之间的端暂告段落"
+BARE_SuperEvent_2_EDEN_TREATY_NORMAL_M: "我们要适应时代的变化，坚持不变的则。 —— 吉米·卡特"
+
+BARE_SuperEvent_2_EDEN_TREATY_TRINITY_HOME: "伊甸条约签署" #废弃
+BARE_SuperEvent_2_EDEN_TREATY_TRINITY_HOME_A: "圣三一会场"
+BARE_SuperEvent_2_EDEN_TREATY_TRINITY_HOME_D: "在漫长的商讨后，圣三一与格黑娜间的争端暂告段落"
+BARE_SuperEvent_2_EDEN_TREATY_TRINITY_HOME_M: "这是我们这个时代的和平。 —— 藤渚"
+
+BARE_SuperEvent_2_DOUBLE_TWELVE_COUP: "联邦学生会长交接" #废弃
+BARE_SuperEvent_2_DOUBLE_TWELVE_COUP_A: "联邦学生大楼"
+BARE_SuperEvent_2_DOUBLE_TWELVE_COUP_D: "联邦学生会长代理七神凛卸任，不知火花防卫科长将接任"
+BARE_SuperEvent_2_DOUBLE_TWELVE_COUP_M: "所以，她是谁？ ——SuperBell"
+
+BARE_SuperEvent_2_RED_WINTER_CIVIL_WAR: "和平！赤冬！布丁！" #废弃
+BARE_SuperEvent_2_RED_WINTER_CIVIL_WAR_A: "赤冬联邦"
+BARE_SuperEvent_2_RED_WINTER_CIVIL_WAR_D: "以劳工部为首的赤反对派喊出了反抗学会的口号，赤冬或发生内战？！"
+BARE_SuperEvent_2_RED_WINTER_CIVIL_WAR_M: "布丁超出食用期限请勿食用！ —— 救护士团宣"
+
+BARE_SuperEvent_2_CAESAR_COUP_FAILED: "凯撒的政变计划被挫败！" #废弃
+BARE_SuperEvent_2_CAESAR_COUP_FAILED_A: "夏莱大楼"
+BARE_SuperEvent_2_CAESAR_COUP_FAILED_D: "尽管一度控制了D.U特区，在夏莱和瓦尔里的干预下，政变最终以失败告终"
+BARE_SuperEvent_2_CAESAR_COUP_FAILED_M: "联邦学生会会很尴尬的。 ——ShotStar417"
+
+
+BARE_SuperEvent_2_HELP_HOSHINO: "星野救援成功！"
+BARE_SuperEvent_2_HELP_HOSHINO_A: "阿拜多斯沙漠"
+BARE_SuperEvent_2_HELP_HOSHINO_D: "夏莱成功挫败凯撒集团绑架学生的阴谋"
+BARE_SuperEvent_2_HELP_HOSHINO_M: "唉，凯撒集团怎么这么坏呢 —— hoshinolove"
+
+# BARE_SuperEvent_2_HELP_Hoshino: "星野救援成功！"
+# BARE_SuperEvent_2_HELP_Hoshino_A: "阿拜多斯沙漠"
+# BARE_SuperEvent_2_HELP_Hoshino_D: "夏莱成功挫败凯撒集团绑架学生的阴谋"
+# BARE_SuperEvent_2_HELP_Hoshino_M: "唉，凯撒集团怎么这么坏呢 —— hoshinolove"
+
+BARE_SuperEvent_Sound_Block_1m: "沉默一分钟"
+
+BARE_SuperEvent_2_MIKA_COUP_ARI: "圣三一政变未遂"
+BARE_SuperEvent_2_MIKA_COUP_ARI_A: "政变影像回放"
+BARE_SuperEvent_2_MIKA_COUP_ARI_D: "茶会成员圣园未花伙同阿里乌斯发动政变，但政变宣告失败。"
+BARE_SuperEvent_2_MIKA_COUP_ARI_M: "阿里乌斯？那是什么？ —— 一般路过圣三一学生"
+
+BARE_SuperEvent_2_EDEN_TREATY_START: "第二轮伊甸条约会谈正式开始"
+BARE_SuperEvent_2_EDEN_TREATY_START_A: "历史资料"
+BARE_SuperEvent_2_EDEN_TREATY_START_D: "随着圣三一和格黑娜内部情况的逐渐稳定，第二轮伊甸条约会谈得以开展。"
+BARE_SuperEvent_2_EDEN_TREATY_START_M: "这能带来起码一个时代的和平吗？—— toiletPaperSpeaker"
+
+
+BARE_SuperEvent_2_EDEN_TREATY_STRIKE: "伊甸条约签署现场遭到攻击！"
+BARE_SuperEvent_2_EDEN_TREATY_STRIKE_A: "古圣堂地区"
+BARE_SuperEvent_2_EDEN_TREATY_STRIKE_D: "伊甸条约签署现场遭到不明势力和“幽灵”攻击，目前损伤情况不明。"
+BARE_SuperEvent_2_EDEN_TREATY_STRIKE_M: "所有人员立即撤离古圣堂！—— 圣三一紧急广播系统"
+
+BARE_SuperEvent_2_LSGSJ_GSC_IN: "联邦学生会介入古圣堂之战！"
+BARE_SuperEvent_2_LSGSJ_GSC_IN_A: "D.U.中央区"
+BARE_SuperEvent_2_LSGSJ_GSC_IN_D: "面对全基沃托斯的威胁，联邦学生会和凯撒集团介入战局！"
+BARE_SuperEvent_2_LSGSJ_GSC_IN_M: "各直辖自治区即日起进入紧急状态 —— 联邦学生会公告"
+
+BARE_SuperEvent_2_TRINITY_CRISIS: "圣三一宪政危机"
+BARE_SuperEvent_2_TRINITY_CRISIS_A: "茶话会本部"
+BARE_SuperEvent_2_TRINITY_CRISIS_D: "茶话会陷入合法性危机，桐藤渚首席称将对此负责，并已计划引咎辞职。"
+BARE_SuperEvent_2_TRINITY_CRISIS_M: "我要强调的是，戒严命令依然有效 —— 圣园未花"
+
+BARE_sudden_death_end_text: "随着老师和夫人一起同归于尽，夫人的“投影”军队消失的无影无踪，而原本包围小队的阿里乌斯部队面面相觑，最终，她们走上前去，为小队和那些被当成祭品的学生提供了医疗救护，没有夫人，她们已经没有了任何继续战斗的意义。\n\n而在基沃托斯的战场，联军发现原本打的她们节节败退的圣徒会部队，忽然不再向她们发动攻击，转而攻击那些刚才还和她们并肩作战的阿里乌斯部队。而在之后，她们才得知，在没有夫人的控制后，作为契约主体的“公主”得以命令圣徒会部队，并让她们履行她们真正的职责。\n\n于是，战争结束了，新的伊甸条约在老师和众多学生的鲜血下终于得以签订，也许圣三一和格黑娜之间还有相当的矛盾，但至少在现在，她们愿意尊重老师的遗愿。\n\n而阿里乌斯，依然是新的伊甸条约框架下的“伊甸条约组织”，“公主”-亚津子接过了小队的指挥权，并带着小队，重组了阿里乌斯学生会，亚津子决心用自己的行动，让阿里乌斯得以弥补自己的罪过，并走上一条光明的道路。而那些顽固的极端份子，不论是圣三一，格黑娜，还是阿里乌斯，都要面对“契约”的力量。\n\n基沃托斯的故事仍在继续，但，那就是另外一个篇章了。"
+
+BARE_sudden_death_end_tooltip: "不论如何，祝贺您的凯旋\n——这正代表了您真正精通战争艺术，具备着高超的战略与战术头脑。现在，是重新开始，为基沃托斯带来一个更为美好的结局的时候了。\n《碧蓝档案-自始复新》MOD制作组感谢你的游玩。"
+
+
+###########################
+### CLASSIC SUPER EVENT ###
+###########################
+BAREXP_SE_Title.2: "古圣堂之战"
+BAREXP_SE_Quote.2: "羊羔们宣言说：“看呐，仇恨将被钉在棺木中！”\n于是，恶魔也诅咒道：“有一颗被遗忘的钉子将要锈蚀。”\n\n——圣三一古代寓言"
+BAREXP_SE_Remark.2: "让葬礼开始吧"
+
+BAREXP_SE_Title.3: "伊甸条约凯旋"
+BAREXP_SE_Quote.3: "温柔，但要紧握手中之枪。\n\n——桐藤渚"
+BAREXP_SE_Remark.3: "天使执剑"
+
+BAREXP_SE_Title.4: "伊甸条约凯旋"
+BAREXP_SE_Quote.4: "胜利，即是把纪念碑的基座，浇筑进下个世代的骨髓。\n\n——羽沼真琴"
+BAREXP_SE_Remark.4: "勒石归来"
+
+BAREXP_SE_Title.5: "伊甸条约凯旋"
+BAREXP_SE_Quote.5: "真正的力量来自内心的坚守和信念，\n它拥有如此多的可能，以至于世人称之为“奇迹”。\n\n——歌住樱子"
+BAREXP_SE_Remark.5: "理想者之胜……？"
+
+BAREXP_SE_Title.6: "圣三一紧急状态"
+BAREXP_SE_Quote.6: "我的建议是，忘掉这回事的人应当重新记起这一点：\n圣三一本身，即一台专制的暴力机器。\n\n——仲正一花"
+BAREXP_SE_Remark.6: "力量即秩序……"
+
+#流亡者对圣三一
+BAREXP_SE_Title.7: "阿里乌斯-圣三一战争"
+BAREXP_SE_Quote.7: "不要问是否应点燃火炬，要问黑暗是否仍旧留存；\n对理想主义者的讥讽，当回以解放的子弹。\n\n——「领袖」"
+BAREXP_SE_Remark.7: "前进，阿里乌斯！"
+
+BAREXP_SE_Title.8: "格黑娜进军"
+BAREXP_SE_Quote.8: "任何人，就算是最软弱的懦夫，都可以发动战争。\n不过，只有胜利者有资格结束一切。\n\n——雷帝"
+BAREXP_SE_Remark.8: "靴子落地……"
+
+BAREXP_SE_Title.99: "格黑娜-圣三一之战"
+BAREXP_SE_Quote.99: "在发起战争之前，人们总是被灌输可以得到什么，以及得到这一切将会是如何轻松。对于听信这种诈骗的受害者来说，人行道上的惨状大概也只能算一场序幕。\n\n——守月铃美"
+BAREXP_SE_Remark.99: "那就让它开始吧。"
+
+
+

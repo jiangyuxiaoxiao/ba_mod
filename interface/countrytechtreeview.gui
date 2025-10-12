@@ -51,6 +51,7 @@ guiTypes = {
 			background = {
 				name = "Background"
 				quadTextureSprite ="GFX_tiled_window_2b_border"
+				position = { x=2 y=0 }
 			}
 
 			containerWindowType = {
@@ -354,6 +355,7 @@ guiTypes = {
 			background = {
 				name = "Background"
 				quadTextureSprite ="GFX_tiled_window_2b_border"
+				position = { x=2 y=0 }
 			}
 
 			containerWindowType = {
@@ -521,6 +523,7 @@ guiTypes = {
 			background = {
 				name = "Background"
 				quadTextureSprite ="GFX_tiled_window_2b_border"
+				position = { x=2 y=0 }
 			}
 
 			containerWindowType = {
@@ -702,6 +705,7 @@ guiTypes = {
 			background = {
 				name = "Background"
 				quadTextureSprite ="GFX_tiled_window_2b_border"
+				position = { x=2 y=0 }
 			}
 
 			containerWindowType = {
@@ -878,6 +882,7 @@ guiTypes = {
 			background = {
 				name = "Background"
 				quadTextureSprite ="GFX_tiled_window_2b_border"
+				position = { x=2 y=0 }
 			}
 			
 			containerWindowType = {
@@ -889,10 +894,10 @@ guiTypes = {
 				}
 				clipping = no
 
-				background = {
-					name = "Background"
-					quadTextureSprite ="GFX_techtree_stripes"
-				}
+				#background = {
+				#	name = "Background"
+				#	quadTextureSprite ="GFX_techtree_stripes"
+				#}
 
 				iconType = {
 					name ="air_techtree_bg"
@@ -1110,6 +1115,7 @@ guiTypes = {
 			background = {
 				name = "Background"
 				quadTextureSprite ="GFX_tiled_window_2b_border"
+				position = { x=2 y=0 }
 			}
 			### TODO THESE SHOULD NOT USE RELATIVE POSITIONING, BUT RATHER USE FIXED
 
@@ -1233,6 +1239,7 @@ guiTypes = {
 			background = {
 				name = "Background"
 				quadTextureSprite ="GFX_tiled_window_2b_border"
+				position = { x=2 y=0 }
 			}
 
 			containerWindowType = {
@@ -1956,6 +1963,7 @@ guiTypes = {
 			background = {
 				name = "Background"
 				quadTextureSprite ="GFX_tiled_window_2b_border"
+				position = { x=2 y=0 }
 			}
 
 			containerWindowType = {
@@ -2215,6 +2223,7 @@ guiTypes = {
 			background = {
 				name = "Background"
 				quadTextureSprite ="GFX_tiled_window_2b_border"
+				position = { x=2 y=0 }
 			}
 
 			containerWindowType = {
@@ -2432,6 +2441,7 @@ guiTypes = {
 			background = {
 				name = "Background"
 				quadTextureSprite ="GFX_tiled_window_2b_border"
+				position = { x=2 y=0 }
 			}
 
 			containerWindowType = {
@@ -2796,7 +2806,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "unlock_tech_info_window"
 		position = { x=500 y=100 }
-		size = { width = 550 height = 550 }
+		size = { width = 552 height = 550 }
 		Orientation = UPPER_LEFT
 		moveable = yes
 		#clipping = no
@@ -2808,12 +2818,12 @@ guiTypes = {
 		background = {
 			name = "Background"
 			#SpriteType ="GFX_technology_info_bg"
-			SpriteType = "GFX_tiled_window_thin_border2"
+			SpriteType = "GFX_BAREXP_tiled_window_thin_border2"
 		}
 
 		iconType ={
 			name ="tech_info_top_win"
-			spriteType = "GFX_tech_info_top_win"
+			spriteType = "GFX_BAREXP_tech_info_top_win"
 			position = { x= 1 y = 1 }
 			Orientation = "UPPER_LEFT"
 			alwaystransparent = yes
@@ -2833,7 +2843,7 @@ guiTypes = {
 		iconType ={
 			name ="tech_icon"
 			spriteType = "GFX_tiled_window_transparent"
-			position = { x= 45 y = 47 }
+			position = { x= 45 y = 60 }
 			Orientation = "UPPER_LEFT"
 		}
 
@@ -2866,7 +2876,7 @@ guiTypes = {
 			name = "unlock_with_xp"
 			quadTextureSprite = "GFX_button_261x34"
 			buttonFont = "hoi_20b"
-			position = { x = 177 y = 62 }
+			position = { x = 177 y = 75 }
 			shortcut = "RETURN"
 			clicksound = ui_doctrine_unlock
 		}
@@ -2896,7 +2906,7 @@ guiTypes = {
 
 			background = {
 				name = "Background"
-				quadTextureSprite ="GFX_tiled_paper_bg"
+				quadTextureSprite ="GFX_BAREXP_tiled_paper_bg"
 			}
 
 		}
@@ -2988,21 +2998,11 @@ guiTypes = {
 				name = "research_has_MIO"
 				position = { x = 1 y = 2 }
 				size = { x=200 y=40}
+				text = "RESEARCH"
 				quadTextureSprite = "GFX_BAREXP_government_button"
-				#buttonFont = "hoi_16mbs"
+				buttonFont = "hoi_16mbs"
 				Orientation = "UPPER_RIGHT"
 				shortcut = "RETURN"
-			}
-
-			instantTextboxType = {
-				name = "RESEARCH_label"
-				position = { x = -5 y = 11 }
-				font = "hoi_16mbs"
-				borderSize = {x = 0 y = 0}
-				text = "RESEARCH"
-				maxWidth = 200
-				maxHeight = 40
-				format = center
 			}
 		
 			iconType = {
@@ -5056,7 +5056,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "amount"
 			position = { x = 220 y = 2 }
-			font = "classic_hoi4_typewriter16_inverted"
+			font = "hoi4_typewriter16_inverted"
 			text = ""
 			maxWidth = 100
 			maxHeight = 20

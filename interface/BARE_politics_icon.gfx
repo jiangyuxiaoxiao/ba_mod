@@ -5,16 +5,25 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideologies/no_ideology.dds"
 	}
 
+	##进步组
 	spriteType = {
 		name = "GFX_ideology_PGM_TRI_Nagisa_type"
 		texturefile = "gfx/interface/ideologies/PGM_TRI_Nagisa_type.dds"
 	}
 
+	##平等组
+	spriteType = {
+		name = "GFX_ideology_ELM_ALF_Leader_type"
+		texturefile = "gfx/interface/ideologies/ELM_ALF_Leader_type.dds"
+	}
+
+	##神秘组
 	spriteType = {
 		name = "GFX_ideology_MYC_ARI_Beatrice_type"
 		texturefile = "gfx/interface/ideologies/MYC_ARI_Beatrice_type.dds"
 	}
 
+	##自由组
 	spriteType = {
 		name = "GFX_ideology_LBM_GEH_After_Terrible_type"
 		texturefile = "gfx/interface/ideologies/LBM_GEH_After_Terrible_type.dds"

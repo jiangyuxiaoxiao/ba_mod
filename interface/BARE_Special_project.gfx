@@ -1,0 +1,151 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_sp_ba_T1_opaz_project"
+		texturefile = "gfx/interface/special_project/project_icons/sp_ba_T1_opaz_project.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_ba_T2_opaz_project"
+		texturefile = "gfx/interface/special_project/project_icons/sp_ba_T2_opaz_project.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_ba_T3_opaz_project"
+		texturefile = "gfx/interface/special_project/project_icons/sp_ba_T3_opaz_project.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_ba_T4_opaz_project"
+		texturefile = "gfx/interface/special_project/project_icons/sp_ba_T4_opaz_project.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_ba_T5_opaz_project"
+		texturefile = "gfx/interface/special_project/project_icons/sp_ba_T5_opaz_project.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sp_ba_T1_assult_vehicle_project"
+		texturefile = "gfx/interface/special_project/project_icons/sp_ba_T1_assult_vehicle_project.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_ba_T2_assult_vehicle_project"
+		texturefile = "gfx/interface/special_project/project_icons/sp_ba_T2_assult_vehicle_project.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_ba_T3_assult_vehicle_project"
+		texturefile = "gfx/interface/special_project/project_icons/sp_ba_T3_assult_vehicle_project.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_ba_T4_assult_vehicle_project"
+		texturefile = "gfx/interface/special_project/project_icons/sp_ba_T4_assult_vehicle_project.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_ba_T5_assult_vehicle_project"
+		texturefile = "gfx/interface/special_project/project_icons/sp_ba_T5_assult_vehicle_project.dds"
+	}
+
+
+	spriteType = {
+		name = "GFX_sp_ba_T1_mobile_vehicle_project"
+		texturefile = "gfx/interface/special_project/project_icons/sp_ba_T1_mobile_vehicle_project.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_ba_T2_mobile_vehicle_project"
+		texturefile = "gfx/interface/special_project/project_icons/sp_ba_T2_mobile_vehicle_project.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_ba_T3_mobile_vehicle_project"
+		texturefile = "gfx/interface/special_project/project_icons/sp_ba_T3_mobile_vehicle_project.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_ba_T4_mobile_vehicle_project"
+		texturefile = "gfx/interface/special_project/project_icons/sp_ba_T4_mobile_vehicle_project.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_ba_T5_mobile_vehicle_project"
+		texturefile = "gfx/interface/special_project/project_icons/sp_ba_T5_mobile_vehicle_project.dds"
+	}
+
+
+	spriteType = {
+		name = "GFX_sp_ba_T1_production_project"
+		texturefile = "gfx/interface/special_project/project_icons/sp_ba_T1_production_project.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_ba_T2_production_project"
+		texturefile = "gfx/interface/special_project/project_icons/sp_ba_T2_production_project.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_ba_T3_production_project"
+		texturefile = "gfx/interface/special_project/project_icons/sp_ba_T3_production_project.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_ba_T4_production_project"
+		texturefile = "gfx/interface/special_project/project_icons/sp_ba_T4_production_project.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_ba_T5_production_project"
+		texturefile = "gfx/interface/special_project/project_icons/sp_ba_T5_production_project.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sp_ba_T1_drone_project"
+		texturefile = "gfx/interface/special_project/project_icons/sp_ba_T1_drone_project.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_ba_T2_drone_project"
+		texturefile = "gfx/interface/special_project/project_icons/sp_ba_T2_drone_project.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_ba_T3_drone_project"
+		texturefile = "gfx/interface/special_project/project_icons/sp_ba_T3_drone_project.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_ba_T4_drone_project"
+		texturefile = "gfx/interface/special_project/project_icons/sp_ba_T4_drone_project.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_ba_T5_drone_project"
+		texturefile = "gfx/interface/special_project/project_icons/sp_ba_T5_drone_project.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sp_ba_T1_infantry_weapon_project"
+		texturefile = "gfx/interface/special_project/project_icons/sp_ba_T1_infantry_weapon_project.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_ba_T2_infantry_weapon_project"
+		texturefile = "gfx/interface/special_project/project_icons/sp_ba_T2_infantry_weapon_project.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_ba_T3_infantry_weapon_project"
+		texturefile = "gfx/interface/special_project/project_icons/sp_ba_T3_infantry_weapon_project.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_ba_T4_infantry_weapon_project"
+		texturefile = "gfx/interface/special_project/project_icons/sp_ba_T4_infantry_weapon_project.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_ba_T5_infantry_weapon_project"
+		texturefile = "gfx/interface/special_project/project_icons/sp_ba_T5_infantry_weapon_project.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sp_ba_T1_electronic_project"
+		texturefile = "gfx/interface/special_project/project_icons/sp_ba_T1_electronic_project.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_ba_T2_electronic_project"
+		texturefile = "gfx/interface/special_project/project_icons/sp_ba_T2_electronic_project.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_ba_T3_electronic_project"
+		texturefile = "gfx/interface/special_project/project_icons/sp_ba_T3_electronic_project.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_ba_T4_electronic_project"
+		texturefile = "gfx/interface/special_project/project_icons/sp_ba_T4_electronic_project.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_ba_T5_electronic_project"
+		texturefile = "gfx/interface/special_project/project_icons/sp_ba_T5_electronic_project.dds"
+	}
+	
+}

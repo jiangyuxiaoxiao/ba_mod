@@ -2065,7 +2065,7 @@ guiTypes = {
 			containerWindowType = {
 				name ="scenario_window"
 				position = { x=50% y = -80}
-				show_position = { x=50% y =-30}
+				show_position = { x=50% y =-28}
 				animation_type = decelerated
 				animation_time = 1000
 				size = { width=340 height =128}
@@ -2222,7 +2222,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "selected_nation_label"
-				position = { x = -337 y = 55 }
+				position = { x = -337 y = 60 }
 				textureFile = ""
 				font = "hoi_20bs"
 				borderSize = {x = 0 y = 0}

@@ -1,0 +1,90 @@
+# For minor countries where advisors are not defined
+# Generate them from a generic template
+
+# Political advisors
+every_possible_country = {
+	limit = {
+		NOT = {
+			TAG = HIL
+			TAG = KRO
+			TAG = CAO
+			TAG = CAP
+			TAG = CAB
+			TAG = CAH
+		}
+		has_idea = BARE_Global_Trusteeship_Area
+		
+	}
+	generate_character = {
+		token_base = generic_Global_Trusteeship_Area_Leader
+
+		name = Global_Trusteeship_Area_Leader_name
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Global_Trusteeship_Area_Leader
+			}
+		}
+		country_leader = {
+			ideology = no_ideology_type
+			expire = "9999.1.1.1"
+			id = -1
+		}
+	}
+}
+
+
+
+every_possible_country = {
+	limit = {
+		NOT = {
+			TAG = HIL
+			TAG = KRO
+		}
+		has_idea = BARE_Global_Suburban
+		
+	}
+	generate_character = {
+		token_base = generic_Global_Suburban_Leader
+
+		name = Global_Suburban_Leader_name
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Global_Suburban_Leader
+			}
+		}
+		country_leader = {
+			ideology = no_ideology_type
+			expire = "9999.1.1.1"
+			id = -1
+		}
+		
+	}
+}
+
+
+
+every_possible_country = {
+	limit = {
+		NOT = {
+			TAG = HIL
+			TAG = KRO
+		}
+		has_idea = BARE_Global_Blockade_Zone
+	}
+	generate_character = {
+		token_base = generic_Global_Blockade_Zone_Leader
+
+		name = Global_Blockade_Zone_Leader_name
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Global_Blockade_Zone_Leader
+			}
+		}
+		country_leader = {
+			ideology = no_ideology_type
+			expire = "9999.1.1.1"
+			id = -1
+		}
+	}
+}
+

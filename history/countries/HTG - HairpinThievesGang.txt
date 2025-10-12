@@ -1,5 +1,5 @@
 capital = 200
-oob = "standard_templates"
+#oob = "HTG_oob_2019"
 
 set_stability = 0.50
 set_war_support = 0.50

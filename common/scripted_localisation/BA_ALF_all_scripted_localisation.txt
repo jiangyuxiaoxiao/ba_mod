@@ -1,0 +1,233 @@
+ALF_mrd_total_progress_sl = {
+	name = ALF_mrd_total_progress_sl
+	text = {
+		##0-7
+		trigger = {
+			check_variable = { mrd_total_progress < 8 }
+		}
+		localization_key = mrd_progress_0
+	}
+	text = {
+		##8-14
+		trigger = {
+			check_variable = { mrd_total_progress > 7 }
+		}
+		trigger = {
+			check_variable = { mrd_total_progress < 15 }
+		}
+		localization_key = mrd_progress_1
+	}
+	text = {
+		##15-21
+		trigger = {
+			check_variable = { mrd_total_progress > 14 }
+		}
+		trigger = {
+			check_variable = { mrd_total_progress < 21 }
+		}
+		localization_key = mrd_progress_2
+	}
+	text = {
+		##22-28
+		trigger = {
+			check_variable = { mrd_total_progress > 20 }
+		}
+		localization_key = mrd_progress_3
+	}
+}
+
+ALF_mrd_trainning_progress_sl = {
+	name = ALF_mrd_trainning_progress_sl
+	text = {
+		trigger = {
+			check_variable = { mrd_trainning_progress = 0 }
+		}
+		localization_key = mrd_progress_0
+	}
+	text = {
+		trigger = {
+			check_variable = { mrd_trainning_progress = 1 }
+		}
+		localization_key = mrd_progress_1
+	}
+	text = {
+		trigger = {
+			check_variable = { mrd_trainning_progress = 2 }
+		}
+		localization_key = mrd_progress_2
+	}
+	text = {
+		trigger = {
+			check_variable = { mrd_trainning_progress = 3 }
+		}
+		localization_key = mrd_progress_3
+	}
+}
+
+ALF_mrd_officer_progress_sl = {
+	name = ALF_mrd_officer_progress_sl
+	text = {
+		trigger = {
+			check_variable = { mrd_officer_progress = 0 }
+		}
+		localization_key = mrd_progress_0
+	}
+	text = {
+		trigger = {
+			check_variable = { mrd_officer_progress = 1 }
+		}
+		localization_key = mrd_progress_1
+	}
+	text = {
+		trigger = {
+			check_variable = { mrd_officer_progress = 2 }
+		}
+		localization_key = mrd_progress_2
+	}
+	text = {
+		trigger = {
+			check_variable = { mrd_officer_progress = 3 }
+		}
+		localization_key = mrd_progress_3
+	}
+}
+
+ALF_mrd_modernize_progress_sl = {
+	name = ALF_mrd_modernize_progress_sl
+	text = {
+		trigger = {
+			check_variable = { mrd_modernize_progress = 0 }
+		}
+		localization_key = mrd_progress_0
+	}
+	text = {
+		trigger = {
+			check_variable = { mrd_modernize_progress = 1 }
+		}
+		localization_key = mrd_progress_1
+	}
+	text = {
+		trigger = {
+			check_variable = { mrd_modernize_progress = 2 }
+		}
+		localization_key = mrd_progress_2
+	}
+	text = {
+		trigger = {
+			check_variable = { mrd_modernize_progress = 3 }
+		}
+		localization_key = mrd_progress_3
+	}
+}
+
+ALF_mrd_armor_progress_sl = {
+	name = ALF_mrd_armor_progress_sl
+	text = {
+		trigger = {
+			check_variable = { mrd_armor_progress = 0 }
+		}
+		localization_key = mrd_progress_0
+	}
+	text = {
+		trigger = {
+			check_variable = { mrd_armor_progress = 1 }
+		}
+		localization_key = mrd_progress_1
+	}
+	text = {
+		trigger = {
+			check_variable = { mrd_armor_progress = 2 }
+		}
+		localization_key = mrd_progress_2
+	}
+	text = {
+		trigger = {
+			check_variable = { mrd_armor_progress = 3 }
+		}
+		localization_key = mrd_progress_3
+	}
+}
+
+ALF_mrd_artillery_progress_sl = {
+	name = ALF_mrd_artillery_progress_sl
+	text = {
+		trigger = {
+			check_variable = { mrd_artillery_progress = 0 }
+		}
+		localization_key = mrd_progress_0
+	}
+	text = {
+		trigger = {
+			check_variable = { mrd_artillery_progress = 1 }
+		}
+		localization_key = mrd_progress_1
+	}
+	text = {
+		trigger = {
+			check_variable = { mrd_artillery_progress = 2 }
+		}
+		localization_key = mrd_progress_2
+	}
+	text = {
+		trigger = {
+			check_variable = { mrd_artillery_progress = 3 }
+		}
+		localization_key = mrd_progress_3
+	}
+}
+
+ALF_mrd_air_force_progress_sl = {
+	name = ALF_mrd_air_force_progress_sl
+	text = {
+		trigger = {
+			check_variable = { mrd_air_force_progress = 0 }
+		}
+		localization_key = mrd_progress_0
+	}
+	text = {
+		trigger = {
+			check_variable = { mrd_air_force_progress = 1 }
+		}
+		localization_key = mrd_progress_1
+	}
+	text = {
+		trigger = {
+			check_variable = { mrd_air_force_progress = 2 }
+		}
+		localization_key = mrd_progress_2
+	}
+	text = {
+		trigger = {
+			check_variable = { mrd_air_force_progress = 3 }
+		}
+		localization_key = mrd_progress_3
+	}
+}
+
+ALF_mrd_sf_progress_sl = {
+	name = ALF_mrd_sf_progress_sl
+	text = {
+		trigger = {
+			check_variable = { mrd_sf_progress = 0 }
+		}
+		localization_key = mrd_progress_0
+	}
+	text = {
+		trigger = {
+			check_variable = { mrd_sf_progress = 1 }
+		}
+		localization_key = mrd_progress_1
+	}
+	text = {
+		trigger = {
+			check_variable = { mrd_sf_progress = 2 }
+		}
+		localization_key = mrd_progress_2
+	}
+	text = {
+		trigger = {
+			check_variable = { mrd_sf_progress = 3 }
+		}
+		localization_key = mrd_progress_3
+	}
+}
