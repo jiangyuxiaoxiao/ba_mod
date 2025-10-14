@@ -34,7 +34,7 @@ guiTypes = {
 		buttonType = {
 			name = "endgame_continue_button" 
 			position = {x = 325 y = 847 }	
-			spriteType = "GFX_BAREXP_intro_screen_continue_button"
+			spriteType = "GFX_BAREXP_ending_button_ready_button"
 			shortcut = "SPACE"
 			clicksound = click_close
 		}

@@ -3945,9 +3945,6 @@ focus_tree = {
         prerequisite = {
             focus = ALF_appeal_to_the_students
         }
-        available = {
-            always = no
-        }
         completion_reward = {
             set_faction_name = ALF_EDEN_FACTION
             ALF = {
