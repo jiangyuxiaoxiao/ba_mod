@@ -2266,7 +2266,7 @@ ALF_Uriel_operation_category = {
 			has_completed_focus = ALF_shepherd
 		}
 		available = {
-			#has_war = yes
+			has_war = yes
 			A45 = {
 				exists = yes
 				is_subject = no
@@ -2290,7 +2290,7 @@ ALF_Uriel_operation_category = {
 			has_completed_focus = ALF_peacher
 		}
 		available = {
-			#has_war = yes
+			has_war = yes
 			A46 = {
 				exists = yes
 				is_subject = no
