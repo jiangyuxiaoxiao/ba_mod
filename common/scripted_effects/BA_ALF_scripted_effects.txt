@@ -386,6 +386,58 @@ ALF_EPW_calculate_power_score = {
 	}
 }
 
+ALF_UOP_calculate_power_score = {
+	hidden_effect = {
+		set_variable = {
+			UOP_power_score_from_army = deployed_army_manpower_k
+		}
+		set_variable = {
+			UOP_power_score_from_air = deployed_airforce_manpower_k
+		}
+		every_allied_country = {
+			add_to_variable = {
+				PREV.UOP_power_score_from_army = deployed_army_manpower_k
+			}
+			add_to_variable = {
+				PREV.UOP_power_score_from_air = deployed_airforce_manpower_k
+			}
+		}
+		multiply_variable = {
+			UOP_power_score_from_army = 3
+		}
+		multiply_variable = {
+			UOP_power_score_from_air = 2
+		}
+		set_variable = {
+			UOP_power_score_from_factories = num_of_military_factories
+		}
+		multiply_variable = {
+			UOP_power_score_from_factories = 2
+		}
+		add_to_variable = {
+			UOP_power_score_from_factories = num_of_civilian_factories
+		}
+		set_variable = {
+			UOP_power_score_from_technologies = num_researched_technologies
+		}
+		multiply_variable = {
+			num_researched_technologies = 2
+		}
+		set_variable = {
+			UOP_power_score = UOP_power_score_from_army
+		}
+		add_to_variable = {
+			UOP_power_score = UOP_power_score_from_air
+		}
+		add_to_variable = {
+			UOP_power_score = UOP_power_score_from_factories
+		}
+		add_to_variable = {
+			UOP_power_score = UOP_power_score_from_technologies
+		}
+	}
+}
+
 ALF_reduce_technology_left_behind_effect = {
 	if = {
 		limit = {
@@ -615,6 +667,15 @@ ALF_failure_impact_of_eden_treaty_GEH_stage_0 = {
 		set_cosmetic_tag = GEH_GOV_COSMETIC
 		transfer_state = 141
 		transfer_state = 650
+	}
+	GEH = {
+		transfer_units_fraction = {
+			target = GER
+			size = 0.1
+			keep_unit_leaders_trigger = {
+				always = yes
+			}
+		}
 	}
 	GER = {
 		BARE_RULE_story_settings_ALF_SELECTED_manpower_initialize_effect = yes
@@ -1110,6 +1171,253 @@ ALF_end_2nd_liberation_war_effect = {
 				}
 			}
 			white_peace = PREV
+		}
+	}
+}
+
+initialize_UOP_states_array_effect = {
+	hidden_effect = {
+		##旅者行动
+		684 = {
+			add_to_array = {
+				array = global.ALF_Traveller_state_array
+				value = THIS.id
+			}
+		}
+		683 = {
+			add_to_array = {
+				array = global.ALF_Traveller_state_array
+				value = THIS.id
+			}
+		}
+		140 = {
+			add_to_array = {
+				array = global.ALF_Traveller_state_array
+				value = THIS.id
+			}
+		}
+		529 = {
+			add_to_array = {
+				array = global.ALF_Traveller_state_array
+				value = THIS.id
+			}
+		}
+		120 = {
+			add_to_array = {
+				array = global.ALF_Traveller_state_array
+				value = THIS.id
+			}
+		}
+		349 = {
+			add_to_array = {
+				array = global.ALF_Traveller_state_array
+				value = THIS.id
+			}
+		}
+		348 = {
+			add_to_array = {
+				array = global.ALF_Traveller_state_array
+				value = THIS.id
+			}
+		}
+		135 = {
+			add_to_array = {
+				array = global.ALF_Traveller_state_array
+				value = THIS.id
+			}
+		}
+		373 = {
+			add_to_array = {
+				array = global.ALF_Traveller_state_array
+				value = THIS.id
+			}
+		}
+		134 = {
+			add_to_array = {
+				array = global.ALF_Traveller_state_array
+				value = THIS.id
+			}
+		}
+		130 = {
+			add_to_array = {
+				array = global.ALF_Traveller_state_array
+				value = THIS.id
+			}
+		}
+		504 = {
+			add_to_array = {
+				array = global.ALF_Traveller_state_array
+				value = THIS.id
+			}
+		}
+		133 = {
+			add_to_array = {
+				array = global.ALF_Traveller_state_array
+				value = THIS.id
+			}
+		}
+		131 = {
+			add_to_array = {
+				array = global.ALF_Traveller_state_array
+				value = THIS.id
+			}
+		}
+		649 = {
+			add_to_array = {
+				array = global.ALF_Traveller_state_array
+				value = THIS.id
+			}
+		}
+		128 = {
+			add_to_array = {
+				array = global.ALF_Traveller_state_array
+				value = THIS.id
+			}
+		}
+		129 = {
+			add_to_array = {
+				array = global.ALF_Traveller_state_array
+				value = THIS.id
+			}
+		}
+		685 = {
+			add_to_array = {
+				array = global.ALF_Traveller_state_array
+				value = THIS.id
+			}
+		}
+		127 = {
+			add_to_array = {
+				array = global.ALF_Traveller_state_array
+				value = THIS.id
+			}
+		}
+
+		693 = {
+			add_to_array = {
+				array = global.ALF_Eden_state_array
+				value = THIS.id
+			}
+		}
+		367 = {
+			add_to_array = {
+				array = global.ALF_Eden_state_array
+				value = THIS.id
+			}
+		}
+		687 = {
+			add_to_array = {
+				array = global.ALF_Eden_state_array
+				value = THIS.id
+			}
+		}
+		116 = {
+			add_to_array = {
+				array = global.ALF_Eden_state_array
+				value = THIS.id
+			}
+		}
+		125 = {
+			add_to_array = {
+				array = global.ALF_Eden_state_array
+				value = THIS.id
+			}
+		}
+		115 = {
+			add_to_array = {
+				array = global.ALF_Eden_state_array
+				value = THIS.id
+			}
+		}
+		691 = {
+			add_to_array = {
+				array = global.ALF_Eden_state_array
+				value = THIS.id
+			}
+		}
+		118 = {
+			add_to_array = {
+				array = global.ALF_Eden_state_array
+				value = THIS.id
+			}
+		}
+		114 = {
+			add_to_array = {
+				array = global.ALF_Eden_state_array
+				value = THIS.id
+			}
+		}
+		368 = {
+			add_to_array = {
+				array = global.ALF_Eden_state_array
+				value = THIS.id
+			}
+		}
+		366 = {
+			add_to_array = {
+				array = global.ALF_Eden_state_array
+				value = THIS.id
+			}
+		}
+		124 = {
+			add_to_array = {
+				array = global.ALF_Eden_state_array
+				value = THIS.id
+			}
+		}
+		692 = {
+			add_to_array = {
+				array = global.ALF_Eden_state_array
+				value = THIS.id
+			}
+		}
+		688 = {
+			add_to_array = {
+				array = global.ALF_Eden_state_array
+				value = THIS.id
+			}
+		}
+		122 = {
+			add_to_array = {
+				array = global.ALF_Eden_state_array
+				value = THIS.id
+			}
+		}
+		121 = {
+			add_to_array = {
+				array = global.ALF_Eden_state_array
+				value = THIS.id
+			}
+		}
+		689 = {
+			add_to_array = {
+				array = global.ALF_Eden_state_array
+				value = THIS.id
+			}
+		}
+		113 = {
+			add_to_array = {
+				array = global.ALF_Eden_state_array
+				value = THIS.id
+			}
+		}
+		365 = {
+			add_to_array = {
+				array = global.ALF_Eden_state_array
+				value = THIS.id
+			}
+		}
+		690 = {
+			add_to_array = {
+				array = global.ALF_Eden_state_array
+				value = THIS.id
+			}
+		}
+		123 = {
+			add_to_array = {
+				array = global.ALF_Eden_state_array
+				value = THIS.id
+			}
 		}
 	}
 }

@@ -472,6 +472,7 @@ Hipper_test_decisions_categories = {
 			set_global_flag = EPW_ENDS_global_flag
 			set_country_flag = ALF_ready_for_2nd_liberation_war_flag
 			set_country_flag = ALF_Gabriel_operation_success
+			set_global_flag = ALF_THE_2ND_LIBERATION_WAR_BEGINS_NOW_GLOBAL_FLAG
 			mark_focus_tree_layout_dirty = yes
 		}
 	}
@@ -624,6 +625,17 @@ Hipper_test_decisions_categories = {
 					end_wars = yes
 					end_civil_wars = yes
 				}
+			}
+		}
+	}
+
+	BAREXP_endgame_closing_screen_gui = {
+		visible = {
+			always = yes
+		}
+		complete_effect = {
+		    set_variable = {
+				game_ends_here = 1
 			}
 		}
 	}

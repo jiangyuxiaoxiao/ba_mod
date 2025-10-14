@@ -126,3 +126,13 @@ ALF_ruins_of_civil_war_dynamic_modifier = {
 	local_manpower = -0.7
 	local_supplies = -0.2
 }
+
+##攻势
+ALF_war_operation_dynamic_modifier = {
+	icon = "GFX_idea_unknown"
+	enable = {
+		always = yes
+	}
+	army_attack_factor = 0.2
+	army_defence_factor = 0.2
+}

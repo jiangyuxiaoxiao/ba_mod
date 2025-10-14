@@ -12,3 +12,10 @@ music = {
 		factor = 0
 	}
 }
+
+music = {
+	song = "BARE_SuperEvent_Song_for_the_Beyond"
+	chance = {
+		factor = 0
+	}
+}

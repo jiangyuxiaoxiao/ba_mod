@@ -229,20 +229,7 @@ on_actions = {
                         has_capitulated = yes
                     }
                 }
-                every_country = {
-                    limit = {
-                        has_war_with = ALF
-                    }
-                    white_peace = ALF
-                }
-                ALF = {
-                    set_autonomy = {
-                        target = CAH
-                        autonomous_state = autonomy_bare_trusteeship_area
-                        end_wars = yes
-                        end_civil_wars = yes
-                    }
-                }
+                ##什么都不要发生！！交给另一个action处理！！
             }
             else_if = {
                 limit = {
@@ -256,20 +243,7 @@ on_actions = {
                         has_capitulated = yes
                     }
                 }
-                every_country = {
-                    limit = {
-                        has_war_with = ALF
-                    }
-                    white_peace = ALF
-                }
-                ALF = {
-                    set_autonomy = {
-                        target = CAH
-                        autonomous_state = autonomy_bare_trusteeship_area
-                        end_wars = yes
-                        end_civil_wars = yes
-                    }
-                }
+                ##什么都不要发生！！交给另一个action处理！！
             }
             else_if = {
                 limit = {
@@ -402,6 +376,23 @@ on_actions = {
                 }
                 ALF_end_2nd_liberation_war_effect = yes
             }
+            else_if = {
+                limit = {
+                    FROM = {
+                        OR = {
+                            tag = ALF
+                            is_ally_with = ALF
+                        }
+                    }
+                    ROOT = {
+                        OR = {
+                            tag = A45
+                            tag = A46
+                        }
+                    }
+                }
+                ##什么都不要发生！！交给另一个action处理！！
+            }
             ############################其他情况投降#####################################
             else_if = {
                 #正常投降
@@ -413,6 +404,100 @@ on_actions = {
                 }
             }
             BARE_PEACE_EVENT_POPUP_DEFAULT_FOR_CAPITULATION = yes
+        }
+    }
+
+    on_capitulation = {
+        effect = {
+            ########################光复战争#####################
+            if = {
+                limit = {
+                    FROM = {
+                        OR = {
+                            tag = ALF
+                            is_ally_with = ALF
+                        }
+                    }
+                    ROOT = {
+                        OR = {
+                            tag = A45
+                            tag = A46
+                        }
+                    }
+                }
+                ALF = {
+                    annex_country = {
+                        target = ROOT
+                        transfer_troops = no
+                    }
+                    release_autonomy = {
+                        target = ROOT
+                        autonomy_state = autonomy_bare_trusteeship_area
+                        freedom_level = 0.5
+                    }
+                }
+            }
+            ##公司战争，凯撒重工和凯撒信贷都被踹飞之后##
+            else_if = {
+                limit = {
+                    FROM = {
+                        tag = ALF
+                    }
+                    ROOT = {
+                        tag = CAH
+                    }
+                    CAB = {
+                        has_capitulated = yes
+                    }
+                }
+                every_country = {
+                    limit = {
+                        has_war_with = ALF
+                    }
+                    white_peace = ALF
+                }
+                ALF = {
+                    annex_country = {
+                        target = CAH
+                        transfer_troops = no
+                    }
+                    release_autonomy = {
+                        target = CAH
+                        autonomy_state = autonomy_bare_trusteeship_area
+                        freedom_level = 0.5
+                    }
+                }
+            }
+            else_if = {
+                limit = {
+                    FROM = {
+                        tag = ALF
+                    }
+                    ROOT = {
+                        tag = CAB
+                    }
+                    CAH = {
+                        has_capitulated = yes
+                    }
+                }
+                every_country = {
+                    limit = {
+                        has_war_with = ALF
+                    }
+                    white_peace = ALF
+                }
+                ALF = {
+                    annex_country = {
+                        target = CAH
+                        transfer_troops = no
+                    }
+                    release_autonomy = {
+                        target = CAH
+                        autonomy_state = autonomy_bare_trusteeship_area
+                        freedom_level = 0.5
+                    }
+                }
+            }
         }
     }
 }

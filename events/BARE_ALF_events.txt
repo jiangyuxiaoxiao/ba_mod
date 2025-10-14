@@ -662,6 +662,14 @@ country_event = {
 		if = {
 			limit = {
 				NOT = {
+					has_completed_focus = ALF_change_outfit
+				}
+			}
+			complete_national_focus = ALF_change_outfit
+		}
+		if = {
+			limit = {
+				NOT = {
 					has_completed_focus = ALF_infiltrate_kaiser
 				}
 			}
@@ -1267,12 +1275,24 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			news_event = ALF_news_event.10
+			initialize_UOP_states_array_effect = yes
+			ALF = {
+				ALF_UOP_calculate_power_score = yes
+			}
+			TRA = {
+				ALF_UOP_calculate_power_score = yes
+			}
+			
 		}
 	}
 	option = {
 		name = ALF.63.a
 		set_country_flag = ALF_UOP_begains_flag
 		activate_mission = ALF_UOP_trigger_mission
+		custom_effect_tooltip = unlock_2nd_liberation_war_focus_tree_tt
+		complete_national_focus = ALF_2nd_liberation_war
+		set_global_flag = ALF_THE_2ND_LIBERATION_WAR_BEGINS_NOW_GLOBAL_FLAG
+		mark_focus_tree_layout_dirty = yes
 	}
 }
 

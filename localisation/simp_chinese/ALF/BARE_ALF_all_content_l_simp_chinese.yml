@@ -1,4 +1,5 @@
 ﻿l_simp_chinese:
+ BARE_SuperEvent_Song_for_the_Beyond: "再会之歌"
 ####################
 ##变身名字
 ####################
@@ -283,9 +284,32 @@
  ALF_eden_alliance: "伊甸条约同盟"
  ALF_prepared_for_2nd_liberation_war: "准备第二次解放战争"
  ALF_and_ALLIES_BUFF_TT: "(§Y[ALF.GetNameWithFlag]§!及其盟友§Y[TRT.GetNameWithFlag]§!，§Y[GER.GetNameWithFlag]§!)："
- ALF_way_for_glory: "§Y奔赴荣耀§!"
+ ALF_way_for_glory: "§C奔赴荣耀§!"
  ALF_way_for_glory_desc: "流亡者们并不知道自己是否期待过这一天。“夫人”和她的爪牙已经倒下，而阿里乌斯的旗帜冉冉升起。这似乎应该是她们这场伟大征途的终结：多年以后，勇者击败了魔王，回到了她心心念念的故乡。\n\n但是，流亡者如今已知晓，这一切并不是这样的。流亡者只是夺回了她们本来的枷锁，而新的正义，尚未得到声张。现在，野心家已经窃取了两顶王冠，并且对阿里乌斯磨刀霍霍。\n\n如果说过去教会了流亡者什么，那一定是一个道理：公理绝不退缩。现在，新的正义正在被人呼唤，命运的权杖正为新的阿里乌斯分校紧握：阿里乌斯分校已经整装待发，而她们目标也只有一个，那就是——§G完全胜利！§!"
  ALF_way_for_glory_tt: " \n\n\n\n\n\n£ALF_way_for_glory_pic \n\n\n\n\n§Y出发，掌握你的命运！§!\n\n获得针对§Y[TRI.GetName]§!的战争目标：§Y为所爱的一切……§!§R尽情呐喊吧！§!"
+
+ ALF_2nd_liberation_war: "§Y光复战争§!"
+ ALF_traveller_operation: "§C旅者行动§!"
+ ALF_eden_operation: "§C乐园行动§!"
+ ALF_full_work_schedule: "执行三班倒制度"
+ ALF_ask_for_support: "寻求远邻协助"
+ ALF_ask_for_support_tt: "阿里乌斯分校将§Y尽一切努力寻求帮助§!——幸运的是，§G唇亡齿寒的道理并不难懂§!。"
+ ALF_stop_rebuild_plan: "暂停重建计划"
+ ALF_total_war: "批准总体战方案"
+ ALF_shepherd: "§O牧羊人行动§!"
+ ALF_peacher: "§O传道者行动§!"
+ ALF_another_way: "§O乌列尔行动§!"
+ ALF_final_chance: "§R最终机会§!"
+ ALF_final_chance_desc: "总是存在这样一个观点：即§Y历史由胜利者书写§!。\n\n§G显然，这一观点是为流亡者所反对的§!。因为在这个基础上所发展出来的哲学思想，就像是§O毒树上结出的果实§!。它瓦解了流亡者进行抵抗的正当性，也毫无疑问损害着队伍的士气、\n\n但是，如今已是生死存亡的关头。§Y对阿里乌斯分校而言§!，§R失败即一切化为乌有§!。作战司令部提出了一种方案，即将流亡者所有的炸弹库存§O一次性倾泻出去§!，对敌人的§C所有前线和后方关键目标§!实施§R地毯式打击§!，彻底摧毁敌人的阵线。\n\n尽管如此，这仍是一项需§R慎重考虑§!的决定：这毫无疑问将造成§R不可估量的连带伤害§!，也许十年，也许二十年，这一罪行的审判也终会到来……"
+ ALF_final_chance_tt: "§R不要这么做！§!"
+
+ ALF_like_the_rising_sun: "如日方升"
+ ALF_visit_schale: "登上世界舞台"
+ ALF_bright_new_world: "美丽新世界"
+ ALF_bright_new_world_tt: "§Y游戏结束§!：§G享受您的胜利吧！§!"
+
+ ALF_unplanned_war_dynamic_modifier: "未经计划的攻势"
+
 ####################
 ##军事改革！！！
 ####################
@@ -397,7 +421,7 @@
  ALF_GBO_neutralise_ARI_gov_decision: "瓦解抵抗"
 
  ALF_Uriel_operation_category: "光复战争"
- ALF_Uriel_operation_category_desc: "关于§Y外面的局势§!，流亡者确有一点§R从未料到§!：§O在第二次伊甸条约谈判破裂后§!，§Y圣三一§!与§Y格黑娜§!都遭到了§R野心的反噬§!。这也就意味着，它们曾经至少试图维持的文明假面，现在也不复存在。\n\n实事求是地说，§Y阿里乌斯分校§!确实在这一情况中§C意外扮演了重要的推手§!，以至于本不应该发生的事最终成为了现实。不仅§Y两所学校的命运§!已经在这场意外中§R风雨飘摇§!——§Y阿里乌斯分校§!，也毫无疑问也是这场§C无可避免之洪水§!中的一员。\n\n现在，一切都已经§R绝无回旋余地§!，这场战争既是新生的阿里乌斯分校所§G必然承担的历史使命§!，也将是新生的阿里乌斯分校所面临的§R最后一场考验§!。\n\n§Y胜利条件§!：\n终结§R出笼之兽§!，让一切§G回归正轨§!。\n\n§Y注意：§!这是一场§R仅为胜利§!的§C全面战争§!。\n\n§Y关键目标：§!\n[140.operation_protect_wing_sl]\n[118.operation_protect_wing_sl]\n[305.operation_protect_wing_sl]\n\n§Y主要目标：§!\n[55.operation_protect_wing_sl]\n[116.operation_protect_wing_sl]\n[124.operation_protect_wing_sl]\n[113.operation_protect_wing_sl]\n[306.operation_protect_wing_sl]\n[187.operation_protect_wing_sl]\n[184.operation_protect_wing_sl]\n\n§Y次要目标：§!\n[348.operation_protect_wing_sl]\n[135.operation_protect_wing_sl]\n[127.operation_protect_wing_sl]\n[54.operation_protect_wing_sl]\n[122.operation_protect_wing_sl]\n[107.operation_protect_wing_sl]\n[141.operation_protect_wing_sl]\n[650.operation_protect_wing_sl]\n[173.operation_protect_wing_sl]\n[230.operation_protect_wing_sl]\n[301.operation_protect_wing_sl]\n[176.operation_protect_wing_sl]\n\n"
+ ALF_Uriel_operation_category_desc: "关于§Y外面的局势§!，流亡者确有一点§R从未料到§!：§O在第二次伊甸条约谈判破裂后§!，§Y圣三一§!与§Y格黑娜§!都遭到了§R野心的反噬§!。这也就意味着，它们曾经至少试图维持的文明假面，现在也不复存在。\n\n实事求是地说，§Y阿里乌斯分校§!确实在这一情况中§C意外扮演了重要的推手§!，以至于本不应该发生的事最终成为了现实。不仅§Y两所学校的命运§!已经在这场意外中§R风雨飘摇§!——§Y阿里乌斯分校§!，也毫无疑问也是这场§C无可避免之洪水§!中的一员。\n\n现在，一切都已经§R绝无回旋余地§!，这场战争既是新生的阿里乌斯分校所§G必然承担的历史使命§!，也将是新生的阿里乌斯分校所面临的§R最后一场考验§!。\n\n§Y胜利条件§!：\n终结§R出笼之兽§!，让一切§G回归正轨§!。\n\n§Y注意：§!这是一场§R仅为胜利§!的§C全面战争§!。\n\n§Y伊甸条约的力量：§![?ALF.UOP_power_score]\n§Y钢铁协定的力量：§![?TRA.UOP_power_score]\n\n§Y关键目标：§!\n[140.operation_protect_wing_sl]\n[118.operation_protect_wing_sl]\n[305.operation_protect_wing_sl]\n\n§Y主要目标：§!\n[55.operation_protect_wing_sl]\n[116.operation_protect_wing_sl]\n[124.operation_protect_wing_sl]\n[113.operation_protect_wing_sl]\n[306.operation_protect_wing_sl]\n[187.operation_protect_wing_sl]\n[184.operation_protect_wing_sl]\n\n§Y次要目标：§!\n[348.operation_protect_wing_sl]\n[135.operation_protect_wing_sl]\n[127.operation_protect_wing_sl]\n[54.operation_protect_wing_sl]\n[122.operation_protect_wing_sl]\n[107.operation_protect_wing_sl]\n[141.operation_protect_wing_sl]\n[650.operation_protect_wing_sl]\n[173.operation_protect_wing_sl]\n[230.operation_protect_wing_sl]\n[301.operation_protect_wing_sl]\n[176.operation_protect_wing_sl]\n\n"
  ALF_UOP_infiltrate_target_decision: "获取关于§Y[FROM.GetName]的情报§!"
 
  ALF_UOP_counter_mission: "§Y钢铁协定§!§R进军……§!"
@@ -405,7 +429,19 @@
  ALF_UOP_crack_target_supply_TRA_decision: "破坏§Y[TRA.GetNameWithFlag]§!的后勤枢纽"
  ALF_UOP_crack_target_supply_GEA_decision: "破坏§Y[GEA.GetNameWithFlag]§!的后勤枢纽"
  ALF_UOP_infiltrate_target_flag: "§Y目标§!§G已渗透§!"
- 
+ ALF_UOP_begin_Traveller_operation_decision: "大规模攻势：§Y旅者行动§!"
+ ALF_UOP_begin_Traveller_operation_trigger_tt: "任何§Y旅者行动§!§G指定的省份§!：由§Y[TRA.GetNameWithFlag]§!控制"
+ ALF_UOP_begin_Traveller_operation_decision_tt: "\n所有§Y旅者行动§!§G指定的省份§!："
+ ALF_UOP_Traveller_operation_mission: "进行中的§Y旅者行动§!"
+ ALF_UOP_begin_Eden_operation_decision: "大规模攻势：§Y乐园行动§!"
+ ALF_UOP_begin_Eden_operation_trigger_tt: "任何§Y乐园行动§!§G指定的省份§!：由§Y[TRA.GetNameWithFlag]§!控制"
+ ALF_UOP_begin_Eden_operation_decision_tt: "\n所有§Y乐园行动§!§G指定的省份§!："
+ ALF_UOP_Eden_operation_mission: "进行中的§Y乐园行动§!" 
+ ALF_war_operation_dynamic_modifier: "攻势计划"
+ ALF_UOP_shepherd_operation_decision: "§Y牧羊人§!行动"
+ ALF_UOP_peacher_operation_decision: "§Y传道者§!行动"
+ ALF_UOP_geh_operation_decision: "大规模攻势：§Y乌列尔行动§!"
+ ALF_UOP_geh_operation_mission: "进行中的§Y乌列尔行动§!" 
 ####################
 ##新首都！！！
 ####################
@@ -527,6 +563,9 @@
 
  ecolaws_ALF_command_economic: "指令经济"
  ecolaws_ALF_command_economic_desc: "生产与建设计划直接由学园管理层规划，并由行政机构负责监督执行的经济模式。优势和缺点都极为明显，可以被视为一种常态化的紧急措施。"
+
+ ecolaws_ALF_total_war_economic: "总体战"
+ ecolaws_ALF_command_economic_desc: "§R将一切投入战争的熔炉……§!"
  
  ALF_Special_trade: "重视贸易"
 
@@ -578,6 +617,10 @@
 
  ALF_stand_up_the_committee: "起来，战斗！"
  ALF_they_shall_no_pass: "不许通过"
+ ALF_Unlimited_bombing: "§O无限制轰炸§!"
+ ALF_volunteers_from_farway: "援助远邻"
+ ALF_full_work_schedule_idea: "全力生产"
+ ALF_cancel_rebuild_plan_idea: "暂停重建计划"
 
  ALF_TRA_BUFF: "学园传统（圣三一）"
  ALF_GEA_BUFF: "学园传统（格黑娜）"
@@ -606,7 +649,7 @@
 ##战争目标！！！
 ####################
  ALF_revenge_target_wargoal: "§Y终结历史§!"
- ALF_revenge_target_wargoal_name: "阿里乌斯复仇战争"
+ ALF_revenge_target_wargoal_name: "光复战争"
 
  ALF_pacify_target_wargoal: "恢复秩序"
  ALF_pacify_target_wargoal_name: "$ORDER$$FIRST$平定$SECOND$之战"
@@ -916,7 +959,8 @@
 
  ALF.63.t: "光复战争"
  ALF.63.desc: "对于阿里乌斯分校的最终考验已经降临。正如领袖所指出的那样，阿里乌斯分校不能将此等难关交予后人面对。过往的一切仇恨与迷茫，应当在这里被彻底终结。\n\n改组圣三一学园与大格黑娜学园的野心家们将希望以武力消灭正义的声音，那么阿里乌斯分校就必须告诉她们，这只是独裁者的痴心妄想。\n\n此战将决定阿里乌斯的命运，而我们也唯有全力以赴。"
- ALF.63.a: "让我们开始吧！"
+ ALF.63.a: "让我们敞开天窗说亮话吧！"
+ unlock_2nd_liberation_war_focus_tree_tt: "§G解锁§!§Y光复战争国策树§!"
 
  ALF.64.t: "修订学园宪章"
  ALF.64.desc: "随着我们的全面胜利，阿里乌斯分校已经完全受到了我们的控制。鉴于现在的情况，旧有的宪章已经不再合适。\n\n目前，我们主要有两个选择：要么保存部分旧有制度，建立一个以皇室血统为学园象征的温和制度；要么就干脆一步到位，彻底把漏洞百出的旧宪章替换掉。"

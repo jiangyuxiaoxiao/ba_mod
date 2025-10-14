@@ -1,0 +1,17 @@
+	spriteTypes = { 
+		
+		SpriteType = {
+			name = "GFX_endgame_closing_screen_menu_bg"
+			texturefile = "gfx/interface/endgame_closing_screen/BAREXP_endgame_closing_screen_menu.dds"			
+		}
+
+		SpriteType = {
+			name = "GFX_BAREXP_ENDGAME_CLOSING_SCREEN_COUNTRY_POSTER_SUCCESS_TRI"
+			texturefile = "gfx/interface/endgame_closing_screen/BAREXP_ENDGAME_CLOSING_SCREEN_COUNTRY_POSTER_SUCCESS_TRI.dds"			
+		}
+
+		SpriteType = {
+			name = "GFX_BAREXP_ENDGAME_CLOSING_SCREEN_COUNTRY_POSTER_SUCCESS_ALF"
+			texturefile = "gfx/interface/endgame_closing_screen/BAREXP_ENDGAME_CLOSING_SCREEN_COUNTRY_POSTER_SUCCESS_ALF.dds"			
+		}
+	}
