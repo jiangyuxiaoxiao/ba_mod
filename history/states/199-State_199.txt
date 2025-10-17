@@ -5,6 +5,7 @@ state={
 		4038 4182 5373 6411 7432 8305 11107 
 	}
 	history = {
+		add_extra_state_shared_building_slots = 2
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 2

@@ -561,6 +561,9 @@
  democratic_acceptance: "民主主义外交接纳度"
  fascism_acceptance: "法西斯主义外交接纳度"
  neutrality_acceptance: "中立主义外交接纳度"
+ Progressivism_ideology_acceptance: "进步哲学外交接纳度"
+ Liberalism_ideology_acceptance: "开明哲学外交接纳度"
+ ##
  MODIFIER_RESEARCH_SPEED_FACTOR: "科研速度"
  MODIFIER_RESEARCH_SPEED_FACTOR_DESC: "减少研发新科技所需的时间。"
  research_speed_factor_tt: "$MODIFIER_RESEARCH_SPEED_FACTOR$：$RIGHT|+=%1$"
@@ -2361,3 +2364,5 @@ free_cost_combat_readiness: "额外常备战备值(K)" #上面的数值版，单
 combat_readiness_recovery_percentage: "战备恢复速度" #每个月恢复的战备值的修正，基础值是最大战备上限的1%加战备缺口的8%
 combat_readiness_recovery: "每月额外恢复战备值(K)" #上面的数值版，单位是千
 combat_readiness_factor: "战备比例" #适役人口比例
+
+power_development_research: "电力技术研究速度"
