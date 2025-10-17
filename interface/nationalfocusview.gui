@@ -751,7 +751,7 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "statsarea"
-			position = { x=20 y=220 }
+			position = { x=16 y=220 }
 			size = { width = 97%% height = 98%% }
 			horizontalScrollbar = "bottom_horizontal_slider"
 			verticalScrollbar = "right_vertical_slider"
@@ -766,7 +766,7 @@ guiTypes = {
 		}
 		instantTextboxType = {
 			name = "desc"
-			position = { x = 37 y = 230 }
+			position = { x = 40 y = 230 }
 			textureFile = ""
 			font = "hoi_18mbs"
 			borderSize = {x = 0 y = 0}
