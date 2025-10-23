@@ -1282,7 +1282,6 @@ country_event = {
 			TRA = {
 				ALF_UOP_calculate_power_score = yes
 			}
-			
 		}
 	}
 	option = {
@@ -1310,5 +1309,21 @@ country_event = {
 	option = {
 		name = ALF.64.b
 		set_country_flag = ALF_support_the_new_dawn_flag
+	}
+}
+
+##伊甸条约胜利：好结局
+country_event = {
+	id = ALF.65
+	#picture = GFX_common_event_gui_test
+	title = ALF.65.t
+	desc = ALF.65.desc
+	is_triggered_only = yes
+	option = {
+		name = ALF.65.a
+		complete_national_focus = ALF_like_the_rising_sun
+		news_event = {
+			id = ALF_news_event.9
+		}
 	}
 }

@@ -1930,29 +1930,28 @@ ALF_Uriel_operation_category = {
 			}
 		}
 		complete_effect = {
-			set_country_flag = ALF_Uriel_operation_success
-			complete_national_focus = ALF_like_the_rising_sun
-			hidden_effect = {
-				ALF_end_2nd_liberation_war_effect = yes
-				if = {
-					limit = {
-						TRA = {
-							has_capitulated = no
-						}
-					}
-					ALF_TRA_LIBERATION_WAR_PEACE_EVENT_POPUP_EFFECT = yes
+			if = {
+				limit = {
+					has_global_flag = ALF_FINAL_CHANCE_USED_GLOBAL_FLAG
 				}
-				if = {
-					limit = {
-						GEA = {
-							has_capitulated = no
-						}
-					}
-					ALF_GEA_LIBERATION_WAR_PEACE_EVENT_POPUP_EFFECT = yes
+				##直接结算坏结局
+				BARE_ALF_BAD_END_ENDING_SCREEN_EFFECT = yes
+				set_country_flag = ALF_Uriel_operation_success
+				hidden_effect = {
+					ALF_end_2nd_liberation_war_effect = yes
+					ALF_WINS_EDEN_IRON_PACT_WAR_PEACE_EVENT_POPUP_EFFECT = yes
 				}
 			}
-			news_event = {
-				id = ALF_news_event.9
+			else = {
+				set_country_flag = ALF_Uriel_operation_success
+				hidden_effect = {
+					ALF_end_2nd_liberation_war_effect = yes
+					ALF_WINS_EDEN_IRON_PACT_WAR_PEACE_EVENT_POPUP_EFFECT = yes
+				}
+				country_event = {
+					id = ALF.65
+					days = 1
+				}
 			}
 		}
 		timeout_effect = {
@@ -2263,7 +2262,6 @@ ALF_Uriel_operation_category = {
 		timeout_effect = {
 		}
 	}
-
 	##右侧
 	ALF_UOP_shepherd_operation_decision = {
 		priority = 79
@@ -2288,7 +2286,6 @@ ALF_Uriel_operation_category = {
 			}
 		}
 	}
-
 	ALF_UOP_peacher_operation_decision = {
 		priority = 79
 		days_remove = 7
@@ -2312,7 +2309,6 @@ ALF_Uriel_operation_category = {
 			}
 		}
 	}
-
 	ALF_UOP_geh_operation_decision = {
 		priority = 79
 		days_remove = 45
@@ -2335,13 +2331,11 @@ ALF_Uriel_operation_category = {
 			defense_bonus_against = 0.3
 		}
 		remove_effect = {
-			
 		}
 		complete_effect = {
 			activate_mission = ALF_UOP_geh_operation_mission
 		}
 	}
-
 	ALF_UOP_geh_operation_mission = {
 		priority = 99
 		is_good = no

@@ -418,6 +418,18 @@ Hipper_test_decisions_categories = {
 			BSE_Fire_Super_Event_index_9 = yes
 		}
 	}
+	BAREXP_show_superevent10_gui = {
+		visible = {
+			is_debug = yes
+			has_global_flag = show_se_test_decision_flag
+		}
+		available = {
+			is_ai = no
+		}
+		complete_effect = {
+			BSE_Fire_Super_Event_index_10 = yes
+		}
+	}
 	###查看结算警告###
 	check_war_end_flavor_hipp = {
 		visible = {
@@ -427,7 +439,8 @@ Hipper_test_decisions_categories = {
 			is_ai = no
 		}
 		complete_effect = {
-			TEST_BARE_PEACE_EVENT_POPUP_ARI_WIN_TRI_FOR_CAPITULATION = yes
+			ALF_WINS_EDEN_IRON_PACT_WAR_PEACE_EVENT_POPUP_EFFECT = yes
+			set_global_flag = EDEN_IRON_PACT_WAR_scenario_global_flag
 		}
 	}
 	initializ_ALF_hipp = {
@@ -637,6 +650,15 @@ Hipper_test_decisions_categories = {
 		    set_variable = {
 				game_ends_here = 1
 			}
+		}
+	}
+
+	BAREXP_endgame_closing_screen_ALF_BAD_END = {
+		visible = {
+			always = yes
+		}
+		complete_effect = {
+		    BARE_ALF_BAD_END_ENDING_SCREEN_EFFECT = yes
 		}
 	}
 }

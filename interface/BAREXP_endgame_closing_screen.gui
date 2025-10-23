@@ -62,7 +62,7 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "BAREXP_endgame_slogan"
-			position = {x = 50 y = 250 }  
+			position = {x = 60 y = 250 }  
 			font = "hoi_24header"  
 			text = "BAREXP_ENDGAME_SLOGAN"
 			maxWidth = 775
@@ -73,7 +73,7 @@ guiTypes = {
 		#Put whatever you want about the country here
 		instantTextboxType = {
 			name = "BAREXP_endgame_Summary" 
-			position = {x = 50 y = 290 }
+			position = {x = 60 y = 290 }
 			font = "hoi_18mbs"
 			text = "BAREXP_ENDGAME_SUMMARY"
 			maxWidth = 775

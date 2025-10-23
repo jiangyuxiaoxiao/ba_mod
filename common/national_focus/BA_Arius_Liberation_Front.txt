@@ -3783,6 +3783,7 @@ focus_tree = {
             }
             unlock_decision_category_tooltip = ALF_Uriel_operation_category
             #unlock_decision_tooltip = ALF_UOP_infiltrate_target_decision
+            set_global_flag = EDEN_IRON_PACT_WAR_scenario_global_flag
         }
     }
     ###最终决战
@@ -4264,6 +4265,8 @@ focus_tree = {
                 idea = ALF_Unlimited_bombing
                 days = 30
             }
+            set_global_flag = ALF_FINAL_CHANCE_USED_GLOBAL_FLAG
+            BSE_Fire_Super_Event_index_10 = yes
         }
     }
     #######结算#######
@@ -4308,12 +4311,7 @@ focus_tree = {
         y = 1
         completion_reward = {
 			custom_effect_tooltip = ALF_bright_new_world_tt
-            set_variable = {
-                game_ends_here = 1
-            }
-			hidden_effect = {
-				scoped_play_song = BARE_SuperEvent_Song_for_the_Beyond
-			}
+            BARE_ALF_GOOD_END_ENDING_SCREEN_EFFECT = yes
         }
     }
 }
