@@ -890,7 +890,7 @@ news_event = {
 ##圣三一政变
 news_event = {
 	id = ALF_news_event.5
-	#picture = GFX_BA_news_18
+	picture = GFX_ALF_news_event_5
 	title = ALF_news_event.5.t
 	desc = ALF_news_event.5.desc
 	is_triggered_only = yes
@@ -904,7 +904,7 @@ news_event = {
 ##格黑娜政变
 news_event = {
 	id = ALF_news_event.6
-	#picture = GFX_BA_news_18
+	picture = GFX_ALF_news_event_6
 	title = ALF_news_event.6.t
 	desc = ALF_news_event.6.desc
 	is_triggered_only = yes
