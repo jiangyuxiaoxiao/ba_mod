@@ -3801,6 +3801,10 @@ focus_tree = {
             has_country_flag = ALF_ready_for_2nd_liberation_war_flag
         }
         completion_reward = {
+            news_event = {
+                id = ALF_news_event.11
+                days = 2
+            }
         }
     }
     focus = {
@@ -4280,6 +4284,9 @@ focus_tree = {
         available = {
             always = no
         }
+        allow_branch = {
+            has_country_flag = ALF_2ND_LIBERATION_WAR_SUCCESS_FLAG
+        }
         completion_reward = {
         }
     }
@@ -4311,7 +4318,9 @@ focus_tree = {
         y = 1
         completion_reward = {
 			custom_effect_tooltip = ALF_bright_new_world_tt
-            BARE_ALF_GOOD_END_ENDING_SCREEN_EFFECT = yes
+            country_event = {
+                id = ALF.66
+            }
         }
     }
 }

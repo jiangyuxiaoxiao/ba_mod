@@ -744,6 +744,9 @@ country_event = {
 	desc = ALF.34.desc
 	is_triggered_only = yes
 	immediate = {
+		hidden_effect = {
+			scoped_play_song = BARE_SuperEvent_Sound_lap_time
+		}
 	}
 	option = {
 		name = ALF.34.a
@@ -1321,9 +1324,24 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = ALF.65.a
+		set_country_flag = ALF_2ND_LIBERATION_WAR_SUCCESS_FLAG
+		mark_focus_tree_layout_dirty = yes
 		complete_national_focus = ALF_like_the_rising_sun
 		news_event = {
 			id = ALF_news_event.9
 		}
+	}
+}
+
+country_event = {
+	id = ALF.66
+	#picture = GFX_common_event_gui_test
+	title = ALF.66.t
+	desc = ALF.66.desc
+	is_triggered_only = yes
+	option = {
+		name = ALF.66.a
+		custom_effect_tooltip = ALF_bare_good_end_tt
+		BARE_ALF_GOOD_END_ENDING_SCREEN_EFFECT = yes
 	}
 }

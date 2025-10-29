@@ -19,3 +19,10 @@ music = {
 		factor = 0
 	}
 }
+
+music = {
+	song = "BARE_SuperEvent_Sound_lap_time"
+	chance = {
+		factor = 0
+	}
+}
