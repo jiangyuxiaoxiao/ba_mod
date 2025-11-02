@@ -50,7 +50,7 @@ defined_text = {
 		localization_key = BAREXP_EG_Title_TRI_Successful
 	}
 	text = {
-	    localization_key = BAREXP_BAREXP_ENDGAME_SUMMARY_DEFAULT
+	    localization_key = BAREXP_ENDGAME_TITLE_DEFAULT
 	}
 }
 
@@ -60,24 +60,24 @@ defined_text = {
 	    trigger = {
 			tag = TRI
 		}
-		localization_key = BAREXP_BAREXP_ENDGAME_SUMMARY_TRI_Successful
+		localization_key = BAREXP_ENDGAME_SUMMARY_TRI_Successful
 	}
 	text = {
 	    trigger = {
 			tag = ALF
 			has_country_flag = GOOD_ENDING_ALF_FLAG
 		}
-		localization_key = BAREXP_BAREXP_ENDGAME_SUMMARY_ALF_Successful
+		localization_key = BAREXP_ENDGAME_SUMMARY_ALF_Successful
 	}
 	text = { 
 		trigger = {
 			tag = ALF
 			has_country_flag = BAD_ENDING_ALF_FLAG
 		}
-		localization_key = BAREXP_BAREXP_ENDGAME_SUMMARY_ALF_BAD_Successful
+		localization_key = BAREXP_ENDGAME_SUMMARY_ALF_BAD_Successful
     }
 	text = {
-	    localization_key = BAREXP_BAREXP_ENDGAME_SUMMARY_DEFAULT
+	    localization_key = BAREXP_ENDGAME_SUMMARY_DEFAULT
 	}
 }
 

@@ -18,6 +18,12 @@ category = {
 		GEH_infantry_positive_combat
 		GEH_infantry_idle
 		GEH_infantry_move_out
+		#
+		ALF_infantry_retreat
+		ALF_infantry_neural_combat
+		ALF_infantry_positive_combat
+		ALF_infantry_idle
+		ALF_infantry_move_out
     }
 }
 

@@ -647,9 +647,7 @@ Hipper_test_decisions_categories = {
 			always = yes
 		}
 		complete_effect = {
-		    set_variable = {
-				game_ends_here = 1
-			}
+		    BARE_ALF_GOOD_END_ENDING_SCREEN_EFFECT = yes
 		}
 	}
 
