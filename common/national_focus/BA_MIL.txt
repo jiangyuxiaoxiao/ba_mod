@@ -550,7 +550,7 @@ focus_tree = {
 	}
 	focus = { #俺寻思这能行
 		id = MIL_i_think_it_can
-		icon = GFX_goal_MIL_outlook_of_the_Engineering_Department
+		icon = GFX_goal_MIL_i_think_it_can
 		relative_position_id = MIL_we_need_money
 		search_filters = { FOCUS_MIL }
 		cost = 3
@@ -1616,7 +1616,7 @@ focus_tree = {
 	}
 	focus = { #整合C&C
 		id = MIL_Integrate_C_and_C
-		icon = MIL_Integrate_C_and_C
+		icon = GFX_goal_MIL_Integrate_C_and_C
 		relative_position_id = MIL_Security_Committee_Defense_Reform_Plan
 		search_filters = { FOCUS_MIL }
 		cost = 10
