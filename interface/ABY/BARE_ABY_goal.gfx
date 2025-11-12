@@ -1,0 +1,34 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_goal_ABY_set_conflict"
+        texturefile = "gfx/interface/goals/ABY/focus_ABY_set_conflict.dds"
+    }
+    spriteType = {
+        name = "GFX_goal_ABY_lick_wounds"
+        texturefile = "gfx/interface/goals/ABY/focus_ABY_lick_wounds.dds"
+    }
+    spriteType = {
+        name = "GFX_goal_ABY_spark_in_embers"
+        texturefile = "gfx/interface/goals/ABY/focus_ABY_spark_in_embers.dds"
+    }
+    spriteType = {
+        name = "GFX_goal_ABY_a_moment_of_breath"
+        texturefile = "gfx/interface/goals/ABY/focus_ABY_a_moment_of_breath.dds"
+    }
+    spriteType = {
+        name = "GFX_goal_ABY_every_brave_warrior"
+        texturefile = "gfx/interface/goals/ABY/focus_ABY_every_brave_warrior.dds"
+    }
+    spriteType = {
+        name = "GFX_goal_ABY_every_inch_of_land"
+        texturefile = "gfx/interface/goals/ABY/focus_ABY_every_inch_of_land.dds"
+    }
+    spriteType = {
+        name = "GFX_goal_ABY_every_defensive_weapon"
+        texturefile = "gfx/interface/goals/ABY/focus_ABY_every_defensive_weapon.dds"
+    }
+    spriteType = {
+        name = "GFX_goal_ABY_gsc_response"
+        texturefile = "gfx/interface/goals/ABY/focus_ABY_gsc_response.dds"
+    }
+}

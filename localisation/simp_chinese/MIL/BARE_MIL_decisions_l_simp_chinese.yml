@@ -1,0 +1,45 @@
+﻿l_simp_chinese:
+ MIL_bp_financial_crisis_balance: "财政危机"
+ MIL_bop_stable: "危机已经平息"
+ MIL_bop_almost_stable: "危机接近结束"
+ MIL_bop_relief: "危机得到缓解"
+ MIL_bop_serious: "危机较为严重"
+ MIL_bop_crisis: "危机十分严重"
+ MIL_bop_decision_category: "财政危机应对措施"
+ MIL_bop_decision_category_desc: "通过一系列决议应对当前的财政危机，改善学园经济状况。"
+
+ MIL_bop_cut_useless_clubs: "裁撤无用社团"
+ MIL_bop_cut_useless_clubs_desc: "裁撤部分无用社团以节省经费。"
+ MIL_bop_cut_useless_clubs_tooltip: "权力平衡左移5%"
+
+ MIL_bop_suspend_unimportant_research: "暂停不重要的科研活动"
+ MIL_bop_suspend_unimportant_research_desc: "暂停部分不重要的科研活动以节省经费。"
+ MIL_bop_suspend_unimportant_research_tooltip: "科研速度-5%，权力平衡左移5%"
+
+ MIL_bop_reduce_research_funding: "降低科研经费标准"
+ MIL_bop_reduce_research_funding_desc: "降低科研经费标准以缓解财政压力。"
+ MIL_bop_reduce_research_funding_tooltip: "稳定度-5%，权力平衡左移5%"
+
+ MIL_bop_close_deficit_factory: "关闭亏损工厂"
+ MIL_bop_close_deficit_factory_desc: "关闭一个亏损工厂以减少财政负担。"
+ MIL_bop_close_deficit_factory_tooltip: "随机省份移除一个民用工厂，权力平衡左移10%"
+
+ MIL_bop_large_factory_construction: "进行大型工厂建设"
+ MIL_bop_large_factory_construction_desc: "建设大型工厂以提升生产能力。"
+ MIL_bop_large_factory_construction_tooltip: "消耗5民工，权力平衡右移20%，完成后获得1重工厂，权力平衡左移15%"
+
+ MIL_bop_oparts_research: "进行欧帕兹研究"
+ MIL_bop_oparts_research_desc: "开展欧帕兹相关研究以推动技术进步。"
+ MIL_bop_oparts_research_tooltip: "权力平衡右移10%"
+
+ MIL_bop_upgrade_network_system: "升级校内网络系统"
+ MIL_bop_upgrade_network_system_desc: "升级校内网络系统以提升基础设施水平。"
+ MIL_bop_upgrade_network_system_tooltip: "权力平衡右移10%，完成后在千年随机核心地区获得1基础设施，权力平衡左移5%"
+
+ MIL_bop_upgrade_industrial_facilities: "工业设施升级"
+ MIL_bop_upgrade_industrial_facilities_desc: "升级工业设施以提升生产效率。"
+ MIL_bop_upgrade_industrial_facilities_tooltip: "权力平衡右移15%，完成后获得科技加成卡*1，权力平衡左移20%"
+
+ MIL_bop_full_virtual_system_access: "全面接入“虚数”系统"
+ MIL_bop_full_virtual_system_access_desc: "全面接入“虚数”系统以提升学园整体科技水平。"
+ MIL_bop_full_virtual_system_access_tooltip: "占用15民工，权力平衡左移20%，完成后民族精神追加科研速度+5%、生产效率上限+5%、生产效率增长+5%、工厂产出+5%、每周权力平衡左移1%，权力平衡左移30%"

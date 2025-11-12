@@ -309,6 +309,10 @@ focus_tree = {
 		cost = 10
 		x = 35
 		y = 0
+        completion_reward = {
+            add_political_power = 50
+
+		}		
 	}
 	focus = { #追查失踪的资金
 		id = MIL_find_money
@@ -415,23 +419,29 @@ focus_tree = {
 		icon = GFX_goal_MIL_big_view
 		relative_position_id = MIL_we_need_money
 		search_filters = { FOCUS_MIL }
-		cost = 10
+		cost = 3
 		x = 4
 		y = 2
 		prerequisite = {
 			focus = MIL_no_debt
 		}
+        completion_reward = {
+            add_political_power = 100
+        }	
 	}
 	focus = { #真理部的理想
 		id = MIL_veritas_dream
 		icon = GFX_goal_MIL_veritas_dream
 		relative_position_id = MIL_we_need_money
 		search_filters = { FOCUS_MIL }
-		cost = 10
+		cost = 1000
 		x = -1
 		y = 3
 		prerequisite = {
 			focus = MIL_big_view
+		}
+        completion_reward = {
+            add_political_power = 50
 		}
 	}
 	focus = { #虚数计划
@@ -439,7 +449,7 @@ focus_tree = {
 		icon = GFX_goal_MIL_Imaginary_number_plan
 		relative_position_id = MIL_we_need_money
 		search_filters = { FOCUS_MIL }
-		cost = 10
+		cost = 3
 		x = -1
 		y = 4
 		prerequisite = {
@@ -451,11 +461,14 @@ focus_tree = {
 		icon = GFX_goal_MIL_difficult_development_task
 		relative_position_id = MIL_we_need_money
 		search_filters = { FOCUS_MIL }
-		cost = 10
+		cost = 3
 		x = -2
 		y = 5
 		prerequisite = {
 			focus = MIL_Imaginary_number_plan
+		}
+        completion_reward = {
+			country_event = MIL_event.3
 		}
 	}
 	focus = { #我需要更多咖啡因
@@ -463,11 +476,14 @@ focus_tree = {
 		icon = GFX_goal_MIL_more_coffee
 		relative_position_id = MIL_we_need_money
 		search_filters = { FOCUS_MIL }
-		cost = 10
+		cost = 3
 		x = -2
 		y = 6
 		prerequisite = {
 			focus = MIL_difficult_development_task
+		}
+        completion_reward = {
+			country_event = MIL_event.4
 		}
 	}
 	focus = { #软件硬件一起上
@@ -475,7 +491,7 @@ focus_tree = {
 		icon = GFX_goal_MIL_software_and_hardware
 		relative_position_id = MIL_we_need_money
 		search_filters = { FOCUS_MIL }
-		cost = 10
+		cost = 3
 		x = 0
 		y = 5
 		prerequisite = {
@@ -487,19 +503,24 @@ focus_tree = {
 		icon = GFX_goal_MIL_efforts_of_the_Engineering_department
 		relative_position_id = MIL_we_need_money
 		search_filters = { FOCUS_MIL }
-		cost = 10
+		cost = 3
 		x = 0
 		y = 6
 		prerequisite = {
 			focus = MIL_software_and_hardware
 		}
+	        completion_reward = {
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 2
+				}
+			}
 	}
 	focus = { #“千年网络，风景独好”
 		id = MIL_best_internet
 		icon = GFX_goal_MIL_best_internet
 		relative_position_id = MIL_we_need_money
 		search_filters = { FOCUS_MIL }
-		cost = 10
+		cost = 5
 		x = -1
 		y = 7
 		prerequisite = {
@@ -508,29 +529,35 @@ focus_tree = {
 		prerequisite = {
 			focus = MIL_more_coffee
 		}
+        completion_reward = {
+			country_event = MIL_event.5
+		}
 	}
 	focus = { #工程师部的展望
 		id = MIL_outlook_of_the_Engineering_Department
 		icon = GFX_goal_MIL_outlook_of_the_Engineering_Department
 		relative_position_id = MIL_we_need_money
 		search_filters = { FOCUS_MIL }
-		cost = 10
-		x = 5
+		cost = 1000000
+		x = 4
 		y = 3
 		prerequisite = {
 			focus = MIL_big_view
 		}
+        completion_reward = {
+            add_political_power = 50
+        }
 	}
 	focus = { #俺寻思这能行
 		id = MIL_i_think_it_can
-		icon = GFX_goal_MIL_outlook_of_the_Engineering_Department
+		icon = GFX_goal_MIL_i_think_it_can
 		relative_position_id = MIL_we_need_money
 		search_filters = { FOCUS_MIL }
-		cost = 10
-		x = 5
+		cost = 3
+		x = 4
 		y = 4
 		prerequisite = {
-			focus = MIL_big_view
+			focus = MIL_outlook_of_the_Engineering_Department
 		}
 	}
 	focus = { #你可以质疑大技霸的审美
@@ -538,7 +565,7 @@ focus_tree = {
 		icon = GFX_goal_MIL_it_ugly
 		relative_position_id = MIL_we_need_money
 		search_filters = { FOCUS_MIL }
-		cost = 10
+		cost = 3
 		x = 3
 		y = 5
 		prerequisite = {
@@ -550,11 +577,51 @@ focus_tree = {
 		icon = GFX_goal_MIL_but_useful
 		relative_position_id = MIL_we_need_money
 		search_filters = { FOCUS_MIL }
-		cost = 10
+		cost = 5
 		x = 3
 		y = 6
 		prerequisite = {
 			focus = MIL_it_ugly
+		}
+        completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+						not = {
+							state = 638
+							state = 639
+							state = 640
+							state = 641
+							state = 642
+							state = 643
+						}
+					}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+        completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+						not = {
+							state = 638
+							state = 639
+							state = 640
+							state = 641
+							state = 642
+							state = 643
+						}
+					}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = { #研讨会的订单
@@ -562,11 +629,21 @@ focus_tree = {
 		icon = GFX_goal_MIL_Seminar_order
 		relative_position_id = MIL_we_need_money
 		search_filters = { FOCUS_MIL }
-		cost = 10
-		x = 6
+		cost = 5
+		x = 5
 		y = 6
 		prerequisite = {
 			focus = MIL_i_think_it_can
+		}
+		 completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = { #千年出品，必是精品
@@ -574,7 +651,7 @@ focus_tree = {
 		icon = GFX_goal_MIL_our_product_is_best
 		relative_position_id = MIL_we_need_money
 		search_filters = { FOCUS_MIL }
-		cost = 10
+		cost = 5
 		x = 4
 		y = 7
 		prerequisite = {
@@ -583,13 +660,20 @@ focus_tree = {
 		prerequisite = {
 			focus = MIL_Seminar_order
 		}
+		completion_reward = {
+			add_power_balance_value = {
+                    id = MIL_bp_financial_crisis_balance
+                    value = -0.2
 	}
+			country_event = MIL_event.6
+	}
+}
 	focus = { #新的激励计划
 		id = MIL_New_incentive_plan
 		icon = GFX_goal_MIL_New_incentive_plan
 		relative_position_id = MIL_we_need_money
 		search_filters = { FOCUS_MIL }
-		cost = 10
+		cost = 3
 		x = 10
 		y = 3
 		prerequisite = {
@@ -601,7 +685,7 @@ focus_tree = {
 		icon = GFX_goal_MIL_money_is_fire
 		relative_position_id = MIL_we_need_money
 		search_filters = { FOCUS_MIL }
-		cost = 10
+		cost = 3
 		x = 10
 		y = 4
 		prerequisite = {
@@ -1092,7 +1176,7 @@ focus_tree = {
 		search_filters = { FOCUS_MIL }
 		cost = 10
 		x = 0
-		y = 5
+		y = 4
 		prerequisite = {
 			focus = MIL_noas_Strive
 		}
@@ -1106,10 +1190,22 @@ focus_tree = {
 		relative_position_id = MIL_Prepare_grand_festival
 		search_filters = { FOCUS_MIL }
 		cost = 10
+		x = 0
+		y = 5
+		prerequisite = {
+			focus = MIL_The_eve_of_the_grand_festival
+		}
+	}	
+	focus = { #晄轮大祭成功
+		id = MIL_The_success_of_the_grand_festival
+		icon = GFX_goal_MIL_The_success_of_the_grand_festival
+		relative_position_id = MIL_Prepare_grand_festival
+		search_filters = { FOCUS_MIL }
+		cost = 10
 		x = -2
 		y = 6
 		prerequisite = {
-			focus = MIL_The_eve_of_the_grand_festival
+			focus = MIL_The_beginning_of_the_carnival
 		}
 	}	
 	focus = { #千年隐藏的梦想（隐藏国策）
@@ -1121,7 +1217,7 @@ focus_tree = {
 		x = 2
 		y = 6
 		prerequisite = {
-			focus = MIL_The_eve_of_the_grand_festival	
+			focus = MIL_The_beginning_of_the_carnival
 		}
 	}	
 
@@ -1519,8 +1615,8 @@ focus_tree = {
 		y = 0
 	}
 	focus = { #整合C&C
-		id = MIL_Integrate_C&C
-		icon = GFX_goal_MIL_Integrate_C&C
+		id = MIL_Integrate_C_and_C
+		icon = GFX_goal_MIL_Integrate_C_and_C
 		relative_position_id = MIL_Security_Committee_Defense_Reform_Plan
 		search_filters = { FOCUS_MIL }
 		cost = 10
@@ -1539,7 +1635,7 @@ focus_tree = {
 		x = -5
 		y = 2
 		prerequisite = {
-			focus = MIL_Integrate_C&C	
+			focus = MIL_Integrate_C_and_C	
 		}
 	}	
 	focus = { #Yuuka的约法三章
@@ -1551,7 +1647,7 @@ focus_tree = {
 		x = -3
 		y = 2
 		prerequisite = {
-			focus = MIL_Integrate_C&C	
+			focus = MIL_Integrate_C_and_C	
 		}
 	}	
 	focus = { #特战生训练计划

@@ -1,0 +1,97 @@
+focus_tree = {
+    id = ABY
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = ABY
+        }
+    }
+    default = no
+
+    focus = { #塞特之乱
+        id = ABY_set_conflict
+        icon = GFX_goal_ABY_set_conflict
+        cost = 5
+        x = 0
+        y = 0
+        available = { always = yes }
+        custom_effect_tooltip = ABY_set_conflict_tt
+    }
+
+    focus = { #舔舐伤口
+        id = ABY_lick_wounds
+        icon = GFX_goal_ABY_lick_wounds
+        cost = 2
+        x = 0
+        y = 1
+        prerequisite = { focus = ABY_set_conflict }
+        custom_effect_tooltip = ABY_lick_wounds_tt
+    }
+
+    focus = { #余烬中的星火
+        id = ABY_spark_in_embers
+        icon = GFX_goal_ABY_spark_in_embers
+        cost = 5
+        x = 0
+        y = 2
+        prerequisite = { focus = ABY_lick_wounds }
+        custom_effect_tooltip = ABY_spark_in_embers_tt
+    }
+
+    focus = { #片刻喘息
+        id = ABY_a_moment_of_breath
+        icon = GFX_goal_ABY_a_moment_of_breath
+        cost = 4
+        x = 0
+        y = 3
+        prerequisite = { focus = ABY_spark_in_embers }
+        custom_effect_tooltip = ABY_a_moment_of_breath_tt
+    }
+
+    focus = { #每一位顽强不屈的勇士
+        id = ABY_every_brave_warrior
+        icon = GFX_goal_ABY_every_brave_warrior
+        cost = 2
+        x = -2
+        y = 4
+        prerequisite = { focus = ABY_a_moment_of_breath }
+    }
+
+    focus = { #每一块咫尺千里的故土
+        id = ABY_every_inch_of_land
+        icon = GFX_goal_ABY_every_inch_of_land
+        cost = 2
+        x = 0
+        y = 4
+        prerequisite = { focus = ABY_a_moment_of_breath }
+    }
+
+    focus = { #每一把保境安民的刀枪
+        id = ABY_every_defensive_weapon
+        icon = GFX_goal_ABY_every_defensive_weapon
+        cost = 2
+        x = 2
+        y = 4
+        prerequisite = { focus = ABY_a_moment_of_breath }
+        custom_effect_tooltip = ABY_every_defensive_weapon_tt
+    }
+
+    focus = { #联邦学生会的回应
+        id = ABY_gsc_response
+        icon = GFX_goal_ABY_gsc_response
+        cost = 1
+        x = 0
+        y = 5
+        prerequisite = {
+            focus = ABY_every_brave_warrior
+        }
+        prerequisite = {
+            focus = ABY_every_inch_of_land
+        }
+        prerequisite = {
+            focus = ABY_every_defensive_weapon
+        }
+        custom_effect_tooltip = ABY_gsc_response_tt
+    }
+}
