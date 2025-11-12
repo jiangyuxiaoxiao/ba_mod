@@ -18,6 +18,12 @@ category = {
 		GEH_infantry_positive_combat
 		GEH_infantry_idle
 		GEH_infantry_move_out
+		#
+		ALF_infantry_retreat
+		ALF_infantry_neural_combat
+		ALF_infantry_positive_combat
+		ALF_infantry_idle
+		ALF_infantry_move_out
     }
 }
 
@@ -359,6 +365,113 @@ soundeffect = {
 	playbackrate_random_offset = { 0.0 -0.15 }
 }
 
+##流亡者##（套用阿里乌斯）
+####阿里乌斯####
+
+#撤退
+soundeffect = {
+	name = "ALF_infantry_retreat"
+	
+	sounds = {
+		sound = ARI_retreat_1
+		sound = ARI_retreat_2
+		sound = ARI_retreat_3
+		sound = ARI_retreat_4
+	} 
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 0.7
+	volume_random_offset = {0.0 -0.15}
+	playbackrate_random_offset = { 0.0 -0.15 }
+}
+
+#进攻
+soundeffect = {
+	name = "ALF_infantry_neural_combat"
+	
+	sounds = {
+		sound = ARI_fight_1
+		sound = ARI_fight_2
+		sound = ARI_fight_3
+		sound = ARI_fight_4
+		sound = ARI_fight_5
+		sound = ARI_fight_6
+		sound = ARI_fight_7
+		sound = ARI_fight_8
+	} 
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 0.7
+	volume_random_offset = {0.0 -0.15}
+	playbackrate_random_offset = { 0.0 -0.15 }
+}
+
+
+#进攻
+soundeffect = {
+	name = "ALF_infantry_positive_combat"
+	
+	sounds = {
+		sound = ARI_fight_1
+		sound = ARI_fight_2
+		sound = ARI_fight_3
+		sound = ARI_fight_4
+		sound = ARI_fight_5
+		sound = ARI_fight_6
+		sound = ARI_fight_7
+		sound = ARI_fight_8
+	} 
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 0.7
+	volume_random_offset = {0.0 -0.15}
+	playbackrate_random_offset = { 0.0 -0.15 }
+}
+
+#选中
+soundeffect = {
+	name = "ALF_infantry_idle"
+	
+	sounds = {
+		sound = ARI_idle_1
+		sound = ARI_idle_2
+		sound = ARI_idle_3
+		sound = ARI_idle_4
+		sound = ARI_idle_5
+		sound = ARI_idle_6
+		sound = ARI_idle_7
+		sound = ARI_idle_8
+		sound = ARI_idle_9
+		sound = ARI_idle_10
+		sound = ARI_idle_11
+	} 
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 0.7
+	volume_random_offset = {0.0 -0.15}
+	playbackrate_random_offset = { 0.0 -0.15 }
+}
+
+#移动
+soundeffect = {
+	name = "ALF_infantry_move_out"
+	
+	sounds = {
+		sound = ARI_move_out_1
+		sound = ARI_move_out_2
+		sound = ARI_move_out_3
+		sound = ARI_move_out_4
+		sound = ARI_move_out_5
+		sound = ARI_move_out_6
+		sound = ARI_move_out_7
+		sound = ARI_move_out_8
+	} 
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 0.7
+	volume_random_offset = {0.0 -0.15}
+	playbackrate_random_offset = { 0.0 -0.15 }
+}
 
 
 ##################

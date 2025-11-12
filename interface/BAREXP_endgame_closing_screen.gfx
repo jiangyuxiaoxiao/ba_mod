@@ -15,6 +15,11 @@
 			texturefile = "gfx/interface/endgame_closing_screen/BAREXP_ENDGAME_CLOSING_SCREEN_COUNTRY_POSTER_SUCCESS_ALF.dds"			
 		}
 
+		SpriteType = {
+			name = "GFX_BAREXP_ENDGAME_CLOSING_SCREEN_COUNTRY_POSTER_BAD_SUCCESS_ALF"
+			texturefile = "gfx/interface/endgame_closing_screen/BAREXP_ENDGAME_CLOSING_SCREEN_COUNTRY_POSTER_BAD_SUCCESS_ALF.dds"			
+		}
+
 		spriteType = {
 			name = "GFX_BAREXP_ending_button_ready_button"
 			texturefile = "gfx/interface/endgame_closing_screen/BAREXP_ending_button_ready.dds"

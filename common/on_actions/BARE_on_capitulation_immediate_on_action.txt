@@ -403,6 +403,7 @@ on_actions = {
                     white_peace = ROOT
                 }
             }
+            ###################一些设置###############################
             BARE_PEACE_EVENT_POPUP_DEFAULT_FOR_CAPITULATION = yes
         }
     }

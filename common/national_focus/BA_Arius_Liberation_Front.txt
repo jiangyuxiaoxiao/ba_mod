@@ -405,6 +405,13 @@ focus_tree = {
         y = 1
         available = {
         }
+        bypass = {
+            NOT = {
+                has_dynamic_modifier = {
+                    modifier = ALF_defeated_in_civil_war
+                }
+            }
+        }
         completion_reward = {
             add_political_power = 150
         }
@@ -421,6 +428,14 @@ focus_tree = {
         x = 0
         y = 1
         available = {
+
+        }
+        bypass = {
+            NOT = {
+                has_dynamic_modifier = {
+                    modifier = ALF_defeated_in_civil_war
+                }
+            }
         }
         completion_reward = {
             custom_effect_tooltip = ALF_stable_the_thoughts_tt
@@ -445,6 +460,13 @@ focus_tree = {
         y = 1
         available = {
         }
+        bypass = {
+            NOT = {
+                has_dynamic_modifier = {
+                    modifier = ALF_defeated_in_civil_war
+                }
+            }
+        }
         completion_reward = {
             custom_effect_tooltip = ALF_against_capitulationism_tt
             add_to_variable = {
@@ -465,6 +487,13 @@ focus_tree = {
         x = 1
         y = 1
         available = {
+        }
+        bypass = {
+            NOT = {
+                has_dynamic_modifier = {
+                    modifier = ALF_defeated_in_civil_war
+                }
+            }
         }
         completion_reward = {
             custom_effect_tooltip = ALF_diversionary_reformism_tt
@@ -492,6 +521,7 @@ focus_tree = {
             }
         }
         cancel_if_invalid = no
+        continue_if_invalid = yes
         cost = 5
         x = 0
         y = 2
@@ -513,6 +543,13 @@ focus_tree = {
         x = -1
         y = 1
         available = {
+        }
+        bypass = {
+            NOT = {
+                has_dynamic_modifier = {
+                    modifier = ALF_defeated_in_civil_war
+                }
+            }
         }
         completion_reward = {
             add_political_power = 50
@@ -538,6 +575,13 @@ focus_tree = {
         x = 1
         y = 1
         available = {
+        }
+        bypass = {
+            NOT = {
+                has_dynamic_modifier = {
+                    modifier = ALF_defeated_in_civil_war
+                }
+            }
         }
         completion_reward = {
             custom_effect_tooltip = ALF_create_shared_cognition_tt
@@ -652,6 +696,7 @@ focus_tree = {
             }
         }
         cancel_if_invalid = no
+        continue_if_invalid = yes
         completion_reward = {
             ALF_use_livability_5_pts = yes
             unlock_decision_tooltip = ALF_Livability_for_arms_factory
@@ -850,7 +895,9 @@ focus_tree = {
             #has_country_flag = has_win_war_with_kaiser_flag
         }
         cancel_if_invalid = no
+        continue_if_invalid = yes
         completion_reward = {
+            ALF_use_livability_5_pts = yes
             set_province_name = {
                 id = 3978
                 name = VICTORY_POINTS_3978_ALF
@@ -887,6 +934,7 @@ focus_tree = {
             }
         }
         cancel_if_invalid = no
+        continue_if_invalid = yes
         completion_reward = {
             ALF_use_livability_10_pts = yes
             random_owned_state = {
@@ -1030,6 +1078,7 @@ focus_tree = {
             }
         }
         cancel_if_invalid = no
+        continue_if_invalid = yes
         completion_reward = {
             ALF_use_livability_5_pts = yes
             if = {
@@ -3783,6 +3832,7 @@ focus_tree = {
             }
             unlock_decision_category_tooltip = ALF_Uriel_operation_category
             #unlock_decision_tooltip = ALF_UOP_infiltrate_target_decision
+            set_global_flag = EDEN_IRON_PACT_WAR_scenario_global_flag
         }
     }
     ###最终决战
@@ -3800,13 +3850,17 @@ focus_tree = {
             has_country_flag = ALF_ready_for_2nd_liberation_war_flag
         }
         completion_reward = {
+            news_event = {
+                id = ALF_news_event.11
+                days = 2
+            }
         }
     }
     focus = {
         ##一群失败者……
         id = ALF_those_failured
         icon = GFX_focus_ARI_open_the_curtain
-        cost = 0.5
+        cost = 1
         x = -1
         y = 1
         relative_position_id = ALF_3rd_eden_pact_treaty
@@ -3823,7 +3877,7 @@ focus_tree = {
         ##一群背弃者……
         id = ALF_those_betrayed
         icon = GFX_focus_ARI_open_the_curtain
-        cost = 3
+        cost = 1
         x = 1
         y = 1
         relative_position_id = ALF_3rd_eden_pact_treaty
@@ -3840,7 +3894,7 @@ focus_tree = {
         ##以及一个最绝望的同盟……
         id = ALF_a_Desperate_Alliance
         icon = GFX_focus_ARI_open_the_curtain
-        cost = 3
+        cost = 1
         x = 0
         y = 2
         relative_position_id = ALF_3rd_eden_pact_treaty
@@ -3860,7 +3914,7 @@ focus_tree = {
         ##风纪委员
         id = ALF_appeal_to_the_Discipline_Committee_Member
         icon = GFX_focus_ARI_open_the_curtain
-        cost = 3
+        cost = 2
         x = -2
         y = 1
         relative_position_id = ALF_a_Desperate_Alliance
@@ -3884,7 +3938,7 @@ focus_tree = {
         ##布道者
         id = ALF_appeal_to_the_sisters
         icon = GFX_focus_ARI_open_the_curtain
-        cost = 3
+        cost = 2
         x = 0
         y = 1
         relative_position_id = ALF_a_Desperate_Alliance
@@ -3908,7 +3962,7 @@ focus_tree = {
         ##学生
         id = ALF_appeal_to_the_students
         icon = GFX_focus_ARI_open_the_curtain
-        cost = 3
+        cost = 2
         x = 2
         y = 1
         relative_position_id = ALF_a_Desperate_Alliance
@@ -4022,9 +4076,9 @@ focus_tree = {
         prerequisite = {
             focus = ALF_way_for_glory
         }
-		available = {
-			always = no
-		}
+        available = {
+            always = no
+        }
         allow_branch = {
             has_global_flag = ALF_THE_2ND_LIBERATION_WAR_BEGINS_NOW_GLOBAL_FLAG
         }
@@ -4098,7 +4152,7 @@ focus_tree = {
             focus = ALF_2nd_liberation_war
         }
         completion_reward = {
-			custom_effect_tooltip = ALF_ask_for_support_tt
+            custom_effect_tooltip = ALF_ask_for_support_tt
             hidden_effect = {
                 every_possible_country = {
                     limit = {
@@ -4264,6 +4318,8 @@ focus_tree = {
                 idea = ALF_Unlimited_bombing
                 days = 30
             }
+            set_global_flag = ALF_FINAL_CHANCE_USED_GLOBAL_FLAG
+            BSE_Fire_Super_Event_index_10 = yes
         }
     }
     #######结算#######
@@ -4276,6 +4332,9 @@ focus_tree = {
         y = 1
         available = {
             always = no
+        }
+        allow_branch = {
+            has_country_flag = ALF_2ND_LIBERATION_WAR_SUCCESS_FLAG
         }
         completion_reward = {
         }
@@ -4292,7 +4351,7 @@ focus_tree = {
         x = 0
         y = 1
         completion_reward = {
-			add_political_power = 100
+            add_political_power = 100
         }
     }
     focus = {
@@ -4307,13 +4366,10 @@ focus_tree = {
         x = 0
         y = 1
         completion_reward = {
-			custom_effect_tooltip = ALF_bright_new_world_tt
-            set_variable = {
-                game_ends_here = 1
+            custom_effect_tooltip = ALF_bright_new_world_tt
+            country_event = {
+                id = ALF.66
             }
-			hidden_effect = {
-				scoped_play_song = BARE_SuperEvent_Song_for_the_Beyond
-			}
         }
     }
 }
