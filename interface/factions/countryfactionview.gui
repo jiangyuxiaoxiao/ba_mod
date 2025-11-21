@@ -319,7 +319,7 @@ guiTypes = {
                             margin = { top = 13 bottom = 12}
 
                             background = {
-                                position = { x = 16 y = 0 }
+                                position = { x = 18 y = 0 }
                                 name = "background"
                                 spriteType ="GFX_faction_goals_bg"
                                 alwaystransparent = yes
@@ -328,14 +328,14 @@ guiTypes = {
                             iconType ={
                                 name ="short_term_icon"
                                 spriteType = "GFX_faction_term_diagram_icon_small"
-                                position = { x= 30 y = 0 }
+                                position = { x= 30 y = 1 }
                                 alwaystransparent = yes
                             }
 
                             instantTextboxType = {
                                 name = "short_term_header"
 
-                                position = { x = 50 y = 0 }
+                                position = { x = 50 y = 1 }
                                 font = "hoi_18mbs"
                                 text = "SHORT_TERM"
                                 maxWidth = 130
@@ -347,7 +347,7 @@ guiTypes = {
                             iconType ={
                                 name ="medium_term_icon"
                                 spriteType = "GFX_faction_term_diagram_icon_small"
-                                position = { x= 200 y = 0 }
+                                position = { x= 200 y = 1 }
                                 frame = 2
                                 alwaystransparent = yes
                             }
@@ -355,7 +355,7 @@ guiTypes = {
                             instantTextboxType = {
                                 name = "medium_term_header"
 
-                                position = { x = 220 y = 0 }
+                                position = { x = 220 y = 1 }
                                 font = "hoi_18mbs"
                                 text = "MEDIUM_TERM"
                                 maxWidth = 100
@@ -366,7 +366,7 @@ guiTypes = {
                             iconType ={
                                 name ="long_term_icon"
                                 spriteType = "GFX_faction_term_diagram_icon_small"
-                                position = { x= 360 y = 0 }
+                                position = { x= 375 y = 1 }
                                 frame = 3
                                 alwaystransparent = yes
                             }
@@ -374,7 +374,7 @@ guiTypes = {
                             instantTextboxType = {
                                 name = "long_term_header"
 
-                                position = { x = 380 y = 0 }
+                                position = { x = 395 y = 1 }
                                 font = "hoi_18mbs"
                                 text = "LONG_TERM"
                                 maxWidth = 100
@@ -385,7 +385,7 @@ guiTypes = {
 
                             gridBoxType = {
                                 name = "SHORT_TERM" #dynamicly set
-                                position = { x = 14 y = 32 }
+                                position = { x = 21 y = 32 }
                                 size = { width = 100%% height = 100%% }
                                 slotsize = { width = @goal_item_width height = @goal_item_height }
                                 max_slots_horizontal = 1
@@ -393,7 +393,7 @@ guiTypes = {
                             }
                             gridBoxType = {
                                 name = "MEDIUM_TERM" #dynamicly set
-                                position = { x = 188 y = 32 }
+                                position = { x = 192 y = 32 }
                                 size = { width = 100%% height = 100%% }
                                 slotsize = { width = @goal_item_width height = @goal_item_height }
                                 max_slots_horizontal = 1
@@ -401,7 +401,7 @@ guiTypes = {
                             }
                             gridBoxType = {
                                 name = "LONG_TERM" #dynamicly set
-                                position = { x = 364 y = 32 }
+                                position = { x = 365 y = 32 }
                                 size = { width = 100%% height = 100%% }
                                 slotsize = { width = @goal_item_width height = @goal_item_height }
                                 max_slots_horizontal = 1
@@ -1380,8 +1380,6 @@ guiTypes = {
         size = { width = @goal_item_width height = @goal_item_height }
         clipping = no
 
-
-
         buttonType = {
             name = "background"
             quadTextureSprite = "GFX_faction_goal_slot"
@@ -2128,10 +2126,10 @@ guiTypes = {
 
         instantTextboxType = {
             name = "ratio"
-            position = { x = 6 y = 61 }
+            position = { x = 4 y = 61 }
             font = "hoi_16mbs"
             text = "(XX%)"
-            maxWidth = 45
+            maxWidth = 50
             maxHeight = 20
             format = center
         }
