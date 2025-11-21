@@ -1352,6 +1352,22 @@ guiTypes = {
 				orientation = "upper_left"
 				clicksound = click_checkbox
 			}
+
+
+			icontype = {
+				name = "resources_el_icon"
+				position = { x=413 y=2 }
+				spritetype = "GFX_resources_strip"
+				frame = 2
+			}
+
+			buttontype = {
+				name = "resources_el_checkbox"
+				position = { x = 426 y = 1 }
+				quadtexturesprite ="GFX_generic_checkbox"
+				orientation = "upper_left"
+				clicksound = click_checkbox
+			}
 		}
 
 		buttonType = {
@@ -4711,6 +4727,23 @@ guiTypes = {
 			}
 		}
 		
+		iconType = {
+			name ="dominance_icon"
+			spriteType = "GFX_naval_dominance_support_strip"
+			position = { x= 310 y = 8 }
+			alwaystransparent = yes
+		}
+
+		instantTextboxType = {
+			name = "dominance_value"
+			position = { x = 343 y = 8 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			maxWidth = 50
+			maxHeight = 20
+			format = left
+		}
+		
 		gridBoxType = {
 			name = "resources_grid"
 			position = { x = 376 y = 8 }
@@ -4966,5 +4999,42 @@ guiTypes = {
 			max_slots_vertical = 1
 			format = "UPPER_LEFT"
 		}
+	}
+
+	containerWindowType = {
+		name = "resource_strip_item"
+		position = { x=0 y=0 }
+		size = { width = 70 height = 30 }
+		clipping = no
+
+		background = {
+			name = "bg"
+			quadTextureSprite ="GFX_mini_tooltip"
+		}
+
+		iconType = {
+			name = "energy_ratio_anim"
+			spriteType = "GFX_ongoing_contruction_anim"
+			position = { x = 5 y = 5 }
+		}
+
+		buttonType = {
+			name = "icon"
+			position = { x=4 y=2 }
+			spriteType = "GFX_resources_strip"
+		}
+		
+		instantTextboxType = {
+			name = "value"
+			position = { x=35 y=7 }
+			font = "hoi_16mbs"
+			fixedsize = yes
+			text = "15"
+			maxWidth = 50
+			maxHeight = 30
+			format = left
+			orientation = "UPPER_LEFT"
+		}	
+
 	}
 }
