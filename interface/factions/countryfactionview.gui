@@ -321,7 +321,7 @@ guiTypes = {
                             background = {
                                 position = { x = 18 y = 0 }
                                 name = "background"
-                                spriteType ="GFX_faction_goals_bg"
+                                quadTextureSprite ="GFX_faction_goals_bg"
                                 alwaystransparent = yes
                             }
 
