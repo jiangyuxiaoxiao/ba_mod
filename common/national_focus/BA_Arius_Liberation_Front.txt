@@ -18,7 +18,7 @@ focus_tree = {
     focus = {
         #一场伟大的逃亡
         id = ALF_a_great_march
-        icon = GFX_goal_unknown
+        icon = GFX_goal_ALF_a_great_march
         cost = 53
         x = 7
         y = 1
@@ -32,7 +32,7 @@ focus_tree = {
     focus = {
         #故园
         id = ALF_memory_of_old_home
-        icon = GFX_goal_unknown
+        icon = GFX_goal_ALF_memory_of_old_home
         relative_position_id = ALF_a_great_march
         prerequisite = {
             focus = ALF_a_great_march
@@ -50,7 +50,7 @@ focus_tree = {
     focus = {
         #收敛旧物
         id = ALF_recovery_old_stuff
-        icon = GFX_goal_unknown
+        icon = GFX_goal_ALF_recovery_old_stuff
         relative_position_id = ALF_memory_of_old_home
         prerequisite = {
             focus = ALF_memory_of_old_home
@@ -70,7 +70,7 @@ focus_tree = {
     focus = {
         #新家
         id = ALF_settled_in_new_home
-        icon = GFX_goal_unknown
+        icon = GFX_goal_ALF_settled_in_new_home
         relative_position_id = ALF_a_great_march
         prerequisite = {
             focus = ALF_a_great_march
@@ -88,7 +88,7 @@ focus_tree = {
     focus = {
         #播下新种
         id = ALF_begin_new_journey
-        icon = GFX_goal_unknown
+        icon = GFX_goal_ALF_begin_new_journey
         relative_position_id = ALF_settled_in_new_home
         prerequisite = {
             focus = ALF_settled_in_new_home
@@ -111,7 +111,7 @@ focus_tree = {
     focus = {
         #站稳脚跟
         id = ALF_stand_our_ground
-        icon = GFX_goal_unknown
+        icon = GFX_goal_ALF_stand_our_ground
         relative_position_id = ALF_recovery_old_stuff
         prerequisite = {
             focus = ALF_recovery_old_stuff
