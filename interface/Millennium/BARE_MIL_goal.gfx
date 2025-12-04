@@ -376,8 +376,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/Millennium/GFX_goal_MIL_our_forever_sensei.dds"
 	}
 	spriteType = {
-		name = "GFX_goal_MIL_Can't_without_GSC	"
-		texturefile = "gfx/interface/goals/Millennium/GFX_goal_MIL_Can't_without_GSC	.dds"
+		name = "GFX_goal_MIL_Cant_without_GSC	"
+		texturefile = "gfx/interface/goals/Millennium/GFX_goal_MIL_Cant_without_GSC	.dds"
 	}
 	spriteType = {
 		name = "GFX_goal_MIL_help_GSC"
@@ -416,8 +416,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/Millennium/GFX_goal_MIL_The_Swiss_rolls_that_are_the_favorite_of_the_big_shots_at_tea_parties.dds"
 	}
 	spriteType = {
-		name = "GFX_goal_MIL_Let's_have_an_afternoon_tea_together"
-		texturefile = "gfx/interface/goals/Millennium/GFX_goal_MIL_Let's_have_an_afternoon_tea_together.dds"
+		name = "GFX_goal_MIL_Lets_have_an_afternoon_tea_together"
+		texturefile = "gfx/interface/goals/Millennium/GFX_goal_MIL_Lets_have_an_afternoon_tea_together.dds"
 	}
 	spriteType = {
 		name = "GFX_goal_MIL_Military_exchanges_with_Geh"

@@ -1312,8 +1312,8 @@ focus_tree = {
 	}
 
 	focus = { #或许影响不大，但是不能没有
-		id = MIL_Can't_without_GSC
-		icon = GFX_goal_MIL_Can't_without_GSC	
+		id = MIL_Cant_without_GSC
+		icon = GFX_goal_MIL_Cant_without_GSC	
 		relative_position_id = MIL_Reports_that_have_not_yet_been_submitted
 		search_filters = { FOCUS_MIL }
 		cost = 10
@@ -1434,8 +1434,8 @@ focus_tree = {
 		}
 	}
 	focus = { #“一起来杯下午茶吧”
-		id = MIL_Let's_have_an_afternoon_tea_together
-		icon = GFX_goal_MIL_Let's_have_an_afternoon_tea_together
+		id = MIL_Lets_have_an_afternoon_tea_together
+		icon = GFX_goal_MIL_Lets_have_an_afternoon_tea_together
 		relative_position_id = MIL_Reports_that_have_not_yet_been_submitted
 		search_filters = { FOCUS_MIL }
 		cost = 10

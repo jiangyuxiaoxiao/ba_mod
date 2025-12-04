@@ -3008,11 +3008,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_goal_MIL_Can't_without_GSC	_shine"
-		texturefile = "gfx/interface/goals/Millennium/GFX_goal_MIL_Can't_without_GSC	.dds"
+		name = "GFX_goal_MIL_Cant_without_GSC	_shine"
+		texturefile = "gfx/interface/goals/Millennium/GFX_goal_MIL_Cant_without_GSC	.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/Millennium/GFX_goal_MIL_Can't_without_GSC	.dds"
+			animationmaskfile = "gfx/interface/goals/Millennium/GFX_goal_MIL_Cant_without_GSC	.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -3025,7 +3025,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/Millennium/GFX_goal_MIL_Can't_without_GSC	.dds"
+			animationmaskfile = "gfx/interface/goals/Millennium/GFX_goal_MIL_Cant_without_GSC	.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -3328,11 +3328,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_goal_MIL_Let's_have_an_afternoon_tea_together_shine"
-		texturefile = "gfx/interface/goals/Millennium/GFX_goal_MIL_Let's_have_an_afternoon_tea_together.dds"
+		name = "GFX_goal_MIL_Lets_have_an_afternoon_tea_together_shine"
+		texturefile = "gfx/interface/goals/Millennium/GFX_goal_MIL_Lets_have_an_afternoon_tea_together.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/Millennium/GFX_goal_MIL_Let's_have_an_afternoon_tea_together.dds"
+			animationmaskfile = "gfx/interface/goals/Millennium/GFX_goal_MIL_Lets_have_an_afternoon_tea_together.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -3345,7 +3345,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/Millennium/GFX_goal_MIL_Let's_have_an_afternoon_tea_together.dds"
+			animationmaskfile = "gfx/interface/goals/Millennium/GFX_goal_MIL_Lets_have_an_afternoon_tea_together.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
