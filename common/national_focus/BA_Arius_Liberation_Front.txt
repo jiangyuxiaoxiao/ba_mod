@@ -1162,7 +1162,8 @@ focus_tree = {
         }
         completion_reward = {
             set_cosmetic_tag = ALF_PMC_Company
-            create_faction = ALF_Faction
+            #create_faction = ALF_Faction
+            #现在使用新的阵营框架##
         }
     }
     focus = {
@@ -1209,6 +1210,7 @@ focus_tree = {
             country_event = {
                 id = ALF.26
             }
+            unlock_military_industrial_organization_tooltip = mio:ALF_Gehenna_Volcano_support_equipment_organization
         }
     }
     focus = {
@@ -2234,6 +2236,7 @@ focus_tree = {
         }
         completion_reward = {
             custom_effect_tooltip = ALF_estabilish_Arius_armed_force_tt
+            set_country_flag = ALF_estabilish_Arius_armed_force_flag
             add_to_variable = {
                 ALF_AMF_breakthrough_factor_var = 0.1
             }

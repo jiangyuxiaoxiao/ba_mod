@@ -150,4 +150,10 @@ rule_group_leader_manpower = {
 	}
 }
 
+faction_set_goal_rules = {
+	rules = {
+		ALF_goals_controls_by_script_only
+	}	
+}
+
 
